@@ -1,13 +1,64 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <html lang="en">
-  {% include head.html %}
-  <body>
-      {% include header.html %}
-      <section id="about">
-        {% include about.html %}
-      </section>
-        {{ content }}
-      {% include footer.html %}
-  </body>
+
+{% include head.html %}
+
+<body>
+
+  <div class="row">
+    <div class="large-12 large-centered columns">
+
+      <header class="masthead">
+        <img src="{{ site.baseurl }}/public/profile.jpg" alt="dataplexity.eu">
+      </header>
+
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="large-6 large-offset-3 columns">
+
+      <div class="content-section">
+
+        <p>
+          Welcome to Dataplexity.eu. We are a Vienna based agency that provides new perspectives on social issues on data.
+        </p>
+        <div class="header-icons">
+          <a aria-label="Retrieve information" href="mailto:info@dataplexity.eu"><i class="icon fa fa-envelope"></i></a>
+          <a aria-label="Contact Silvio" href="mailto:s.heinze@dataplexity.eu"><i class="icon fa fa-user"></i></a>
+        </div>
+      </div>
+
+      <main>
+        {% for post in site.posts %}
+          <div class="project-post">
+            <h3><a href="{{ post.site }}">{{ post.title }}</a></h3>
+
+            {{ post.content }}
+
+            <ul>
+              {% if post.site %}
+              {% endif %}
+            </ul>
+
+            <hr />
+          </div>
+        {% endfor %}
+      </main>
+
+      <footer>
+        <p class="copyright">
+          <!-- &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. -->
+          This is the portfio web page of Dataplexity e.U.
+          <a href="/public/datenschutz/index.html">Datenschutzerklärung</a>.
+        </p>
+      </footer>
+
+    </div>
+    </div>
+
+  </div>
+</body>
+
 </html>

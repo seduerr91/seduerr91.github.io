@@ -1,20 +1,30 @@
-# Site settings
-title: Sebastian Duerr
-description: Machine Learning Engineer and Chief Product Owner
-baseurl: "/duerrse" # the subpath of your site, e.g. /blog
-url: www.duerr.se # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+# Permalinks
+permalink:           pretty
 
-# User settings
-username: Sebastian
-user_description: I'm a Chief Product Owner always searching for the next challenge. In my free time, I volunteer, and lately I have been immersed in deep learning.
-project_description: Below find three project of my machine learning and development portfolio.
-user_title: Chief Product Owner
-email: duerr.sebastian@gmail.com
-twitter_username: seduerr91
-github_username: seduerr91
+# Setup
+title:               Dataplexity.eu
+tagline:             An all new perspective on data
+url:                 http://dataplexity.eu
+paginate:            1
+baseurl:             ""
 
-# Google-analytics
-google-analytics:
-  id: ""
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
 
-exclude: ['package.json', 'src' , 'node_modules']
+# About/contact
+author:
+  name:              Silvio Heinze
+  url:               https://silvioheinze.eu
+  email:             s.heinze@dataplexity.eu
+
+# Custom vars
+version:             1
+
+# Gems
+plugins:
+  # - jekyll-paginate
+  # - jekyll-gist
