@@ -1,50 +1,16 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
 
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
-  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146421430-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-146421430-1');
-  </script>
-  <!-- Hotjar Tracking Code for http://www.duerr.se -->
-  <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:1656622,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-  <script type="text/javascript">
-    window.MemberfulOptions = {site: "https://duerr.memberful.com"};
-
-    (function() {
-      var s   = document.createElement('script');
-
-      s.type  = 'text/javascript';
-      s.async = true;
-      s.src   = 'https://d35xxde4fgg0cx.cloudfront.net/assets/embedded.js';
-
-      setup = function() { window.MemberfulEmbedded.setup(); }
-
-      s.addEventListener("load", setup, false);
-
-      ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-    })();
-  </script>
- 
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.png">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
 </head>

@@ -1,68 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: post
+title: Luftdaten.at
+site: http://luftdaten.at
+---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>
-    
-      Jami Gibbs &middot; Software Developer from Chicago.
-    
-  </title>
-
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="shortcut icon" href="/public/favicon.png">
-  <link rel="alternate" type="application/atom+xml" title="Jami Gibbs" href="/atom.xml">
-</head>
-
-
-<body>
-
-  <div class="row">
-    <div class="large-12 large-centered columns">
-
-      <header class="masthead">
-        <img src="/public/profile.jpg" alt="dataplexity.eu">
-      </header>
-
-    </div>
-  </div>
-
-  <div class="row">
-
-    <div class="large-6 large-offset-3 columns">
-
-      <div class="content-section">
-
-        <p>
-          Welcome to Dataplexity.eu. We are a Vienna based agency that provides new perspectives on social issues on data.
-        </p>
-        <div class="header-icons">
-          <a aria-label="Retrieve information" href="mailto:info@dataplexity.eu"><i class="icon fa fa-envelope"></i></a>
-          <a aria-label="Contact Silvio" href="mailto:s.heinze@dataplexity.eu"><i class="icon fa fa-user"></i></a>
-        </div>
-      </div>
-
-      <main>
-        
-          <div class="project-post">
-            <h3><a href="">Scientific Visualizations</a></h3>
-
-            <p>Dataplexity processes comprehensive amounts of data, and display them neatly at scientific fairs or exhibitions.</p>
-
-
-            <ul>
-              
-            </ul>
-
-            <hr />
-          </div>
-        
-          <div class="project-post">
-            <h3><a href="http://luftdaten.at">Luftdaten.at</a></h3>
-
-            <p>Dataplexity is happy to support one of Vienna’s greatest citizen science projects.</p>
+Dataplexity is happy to support one of Vienna's greatest citizen science projects.
 
 <svg width="157px" height="95px" viewBox="0 0 157 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
@@ -91,29 +33,3 @@
         </g>
     </g>
 </svg>
-
-
-            <ul>
-              
-            </ul>
-
-            <hr />
-          </div>
-        
-      </main>
-
-      <footer>
-        <p class="copyright">
-          <!-- &copy; <time datetime="2020-01-25T13:02:36+01:00">2020</time>. -->
-          This is the portfio web page of Dataplexity e.U.
-          <a href="/public/datenschutz/index.html">Datenschutzerklärung</a>.
-        </p>
-      </footer>
-
-    </div>
-    </div>
-
-  </div>
-</body>
-
-</html>

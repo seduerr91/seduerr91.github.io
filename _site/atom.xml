@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Jami Gibbs</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-01-25T13:02:36+01:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Jami Gibbs</name>
+   <email>jami0821@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Scientific Visualizations</title>
+   <link href="http://localhost:4000/2019/06/11/Sci-viz/"/>
+   <updated>2019-06-11T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2019/06/11/Sci-viz</id>
+   <content type="html">&lt;p&gt;Dataplexity processes comprehensive amounts of data, and display them neatly at scientific fairs or exhibitions.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Luftdaten.at</title>
+   <link href="http://localhost:4000/2018/05/06/Luftdaten/"/>
+   <updated>2018-05-06T00:00:00+02:00</updated>
+   <id>http://localhost:4000/2018/05/06/Luftdaten</id>
+   <content type="html">&lt;p&gt;Dataplexity is happy to support one of Vienna’s greatest citizen science projects.&lt;/p&gt;
+
+&lt;svg width=&quot;157px&quot; height=&quot;95px&quot; viewBox=&quot;0 0 157 95&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
+    &lt;!-- Generator: Sketch 57.1 (83088) - https://sketch.com --&gt;
+    &lt;title&gt;Group 2&lt;/title&gt;
+    &lt;g id=&quot;Page-1&quot; stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+        &lt;g id=&quot;Group-2&quot; transform=&quot;translate(-0.003981, 0.799713)&quot; fill-rule=&quot;nonzero&quot;&gt;
+            &lt;path d=&quot;M76.7739808,0.010287386 C61.9539808,0.530287386 49.4039808,7.57028739 44.0839808,17.2202874 C42.0060579,17.0360509 39.9186087,16.9826122 37.8339808,17.0602874 C16.3739808,17.8102874 -0.556019179,31.7402874 0.0139808213,48.1802874 C0.523980821,62.7602874 14.6339808,74.4102874 32.7939808,76.3402874 C37.9539808,87.1202874 49.6639808,94.4502874 63.1139808,93.9802874 C70.3450863,93.7686649 77.3101813,91.2059031 82.9539808,86.6802874 C90.4751798,90.8465456 99.0049678,92.8439838 107.593981,92.4502874 C129.053981,91.7002874 145.993981,77.7602874 145.413981,61.3202874 C145.413981,61.1902874 145.413981,61.0602874 145.413981,60.9302874 C152.203981,56.2102874 156.333981,49.6102874 156.083981,42.4402874 C155.613981,28.9402874 139.793981,18.5402874 120.753981,19.2002874 C118.174126,19.288788 115.605702,19.5864308 113.073981,20.0902874 C109.153981,8.09028739 94.2539808,-0.579712614 76.7939808,0.030287386&quot; id=&quot;Path&quot; fill=&quot;#D2E2EB&quot;&gt;&lt;/path&gt;
+            &lt;polygon id=&quot;Path&quot; fill=&quot;#1D191C&quot; points=&quot;43.8139808 21.6002874 41.6439808 21.2102874 42.4839808 16.6102874 46.7939808 18.4102874 45.9439808 20.4402874 44.1639808 19.7002874&quot;&gt;&lt;/polygon&gt;
+            &lt;path d=&quot;M41.6939808,33.2402874 L39.5239808,32.8502874 L40.5839808,27.0302874 L42.7539808,27.4202874 L41.6939808,33.2402874 Z M39.5739808,44.8902874 L37.4039808,44.4902874 L38.4639808,38.6802874 L40.6339808,39.0702874 L39.5739808,44.8902874 Z M37.4539808,56.5302874 L35.2839808,56.1402874 L36.3439808,50.3102874 L38.5139808,50.7102874 L37.4539808,56.5302874 Z M35.3339808,68.1702874 L33.1739808,67.7802874 L34.1739808,61.9602874 L36.3439808,62.3502874 L35.3339808,68.1702874 Z&quot; id=&quot;Shape&quot; fill=&quot;#0A222B&quot;&gt;&lt;/path&gt;
+            &lt;polygon id=&quot;Path&quot; fill=&quot;#1D191C&quot; points=&quot;35.6139808 78.8002874 31.3339808 77.9102874 32.1139808 73.6002874 34.2839808 74.0002874 33.8839808 76.1902874 36.0639808 76.6502874&quot;&gt;&lt;/polygon&gt;
+            &lt;path d=&quot;M48.1039808,81.4102874 L41.8539808,80.1102874 L42.3039808,77.9502874 L48.5539808,79.2602874 L48.1039808,81.4102874 Z M60.5939808,84.0302874 L54.3539808,82.6802874 L54.8039808,80.5202874 L61.0439808,81.8302874 L60.5939808,84.0302874 Z M73.0839808,86.6802874 L66.8439808,85.3702874 L67.2939808,83.2202874 L73.5439808,84.5202874 L73.0839808,86.6802874 Z&quot; id=&quot;Shape&quot; fill=&quot;#0A222B&quot;&gt;&lt;/path&gt;
+            &lt;polygon id=&quot;Path&quot; fill=&quot;#1D191C&quot; points=&quot;83.4339808 88.8002874 79.3339808 87.9502874 79.7839808 85.7902874 82.1539808 86.2902874 83.1539808 84.0802874 85.1639808 84.9902874&quot;&gt;&lt;/polygon&gt;
+            &lt;path d=&quot;M107.683981,35.3202874 L105.683981,34.4102874 L108.183981,28.9002874 L110.183981,29.8102874 L107.683981,35.3202874 Z M102.683981,46.3202874 L100.683981,45.4102874 L103.183981,39.8902874 L105.183981,40.8002874 L102.683981,46.3202874 Z M97.6839808,57.3202874 L95.6839808,56.4102874 L98.1839808,50.8902874 L100.183981,51.8002874 L97.6839808,57.3202874 Z M92.6839808,68.3202874 L90.6839808,67.4102874 L93.1839808,61.9002874 L95.1839808,62.8102874 L92.6839808,68.3202874 Z M87.6839808,79.3202874 L85.6839808,78.4102874 L88.1939808,72.8902874 L90.1939808,73.8002874 L87.6839808,79.3202874 Z&quot; id=&quot;Shape&quot; fill=&quot;#0A222B&quot;&gt;&lt;/path&gt;
+            &lt;polygon id=&quot;Path&quot; fill=&quot;#1D191C&quot; points=&quot;112.693981 24.2902874 110.693981 23.3802874 112.803981 18.7102874 115.953981 22.7502874 114.223981 24.1102874 113.303981 22.9402874&quot;&gt;&lt;/polygon&gt;
+            &lt;path d=&quot;M121.773981,33.8002874 L117.953981,28.9502874 L119.693981,27.6002874 L123.473981,32.4402874 L121.773981,33.8002874 Z M129.333981,43.4902874 L125.553981,38.6802874 L127.293981,37.3302874 L131.073981,42.1802874 L129.333981,43.4902874 Z M136.893981,53.1802874 L133.113981,48.3302874 L134.843981,46.9802874 L138.623981,51.8302874 L136.893981,53.1802874 Z&quot; id=&quot;Shape&quot; fill=&quot;#0A222B&quot;&gt;&lt;/path&gt;
+            &lt;polygon id=&quot;Path&quot; fill=&quot;#1D191C&quot; points=&quot;147.013981 62.5902874 140.093981 59.7002874 140.753981 58.1302874 140.673981 58.0302874 140.853981 57.8902874 140.943981 57.6702874 141.063981 57.7202874 142.413981 56.6702874&quot;&gt;&lt;/polygon&gt;
+            &lt;path d=&quot;M58.4939808,25.6802874 L52.2239808,23.0702874 L53.0639808,21.0702874 L59.3439808,23.6802874 L58.4939808,25.6802874 Z M71.0539808,30.9202874 L64.7739808,28.3002874 L65.6239808,26.3002874 L71.8939808,28.9202874 L71.0539808,30.9202874 Z M83.6039808,36.1502874 L77.3239808,33.5402874 L78.1739808,31.5402874 L84.4539808,34.1602874 L83.6039808,36.1502874 Z M96.1539808,41.3802874 L89.8839808,38.7602874 L90.7339808,36.7602874 L97.0039808,39.3802874 L96.1539808,41.3802874 Z M108.713981,46.6102874 L102.433981,44.0002874 L103.283981,42.0002874 L109.563981,44.6202874 L108.713981,46.6102874 Z M121.263981,51.8502874 L114.953981,49.2302874 L115.793981,47.2302874 L122.073981,49.8502874 L121.263981,51.8502874 Z M133.823981,57.0802874 L127.543981,54.4702874 L128.393981,52.4702874 L134.663981,55.0902874 L133.823981,57.0802874 Z&quot; id=&quot;Shape&quot; fill=&quot;#0A222B&quot;&gt;&lt;/path&gt;
+            &lt;path d=&quot;M44.2039808,19.5902874 L42.5539808,16.5902874 L49.5539808,16.8102874 L49.4839808,19.0102874 L45.4839808,18.8902874 L44.2039808,19.5902874 Z M62.7239808,19.4202874 L56.1239808,19.2102874 L56.1939808,17.0102874 L62.7939808,17.2202874 L62.7239808,19.4202874 Z M75.9339808,19.8302874 L69.3339808,19.6202874 L69.3939808,17.4202874 L76.0039808,17.6302874 L75.9339808,19.8302874 Z M89.1339808,20.2302874 L82.5339808,20.0302874 L82.6039808,17.8302874 L89.2039808,18.0302874 L89.1339808,20.2302874 Z M102.343981,20.6402874 L95.7439808,20.4402874 L95.8039808,18.2402874 L102.413981,18.4402874 L102.343981,20.6402874 Z M112.653981,20.9602874 L108.953981,20.8502874 L109.023981,18.6502874 L112.723981,18.7602874 L112.653981,20.9602874 Z M50.5739808,31.1702874 L47.3839808,25.3802874 L49.3139808,24.3202874 L52.5039808,30.1102874 L50.5739808,31.1702874 Z M56.9539808,42.7402874 L53.7539808,36.9502874 L55.6839808,35.8902874 L58.8639808,41.6802874 L56.9539808,42.7402874 Z M63.3239808,54.3202874 L60.1439808,48.5302874 L62.0739808,47.4702874 L65.2539808,53.2602874 L63.3239808,54.3202874 Z M69.6939808,65.8902874 L66.5139808,60.1002874 L68.4439808,59.0402874 L71.6239808,64.8302874 L69.6939808,65.8902874 Z M139.613981,64.5102874 L138.773981,62.5102874 L144.883981,59.9902874 L145.723981,61.9902874 L139.613981,64.5102874 Z M127.403981,69.5102874 L126.563981,67.5102874 L132.673981,65.0002874 L133.503981,67.0002874 L127.403981,69.5102874 Z M115.183981,74.5102874 L114.343981,72.5102874 L120.453981,69.9902874 L121.293981,71.9902874 L115.183981,74.5102874 Z M76.0639808,77.4002874 L72.8639808,71.6802874 L74.7939808,70.6202874 L77.9739808,76.4102874 L76.0639808,77.4002874 Z M102.953981,79.6202874 L102.113981,77.6202874 L108.223981,75.1002874 L109.053981,77.1002874 L102.953981,79.6202874 Z M90.7339808,84.6202874 L89.8939808,82.6202874 L96.0039808,80.1102874 L96.8439808,82.1102874 L90.7339808,84.6202874 Z M81.9539808,88.2602874 L79.1939808,83.2602874 L81.1239808,82.2002874 L82.9339808,85.4802874 L83.7639808,85.1402874 L84.6039808,87.1402874 L81.9539808,88.2602874 Z&quot; id=&quot;Shape&quot; fill=&quot;#0A222B&quot;&gt;&lt;/path&gt;
+            &lt;g id=&quot;Group&quot; transform=&quot;translate(27.003981, 11.200287)&quot; fill=&quot;#0C6291&quot;&gt;
+                &lt;path d=&quot;M12.05,6.25 C12.1621177,9.28329267 14.7103594,11.6523053 17.7437654,11.5432978 C20.7771715,11.4342903 23.1487957,8.88847905 23.0428985,5.85496284 C22.9370014,2.82144662 20.3936232,0.447213331 17.36,0.55 C15.8992161,0.599494978 14.5182111,1.22840818 13.5219228,2.29787021 C12.5256345,3.36733223 11.9960118,4.78937524 12.05,6.25&quot; id=&quot;Path&quot;&gt;&lt;/path&gt;
+                &lt;path d=&quot;M80.18,8.85 C80.2866529,11.8848383 82.8327064,14.2589624 85.8675868,14.1535167 C88.9024673,14.048071 91.277604,11.5029622 91.1733656,8.46804 C91.0691272,5.43311784 88.5249634,3.05696888 85.49,3.16 C84.0310125,3.20952979 82.6515683,3.83705757 81.6555679,4.90433486 C80.6595674,5.97161215 80.1287291,7.39107267 80.18,8.85&quot; id=&quot;Path&quot;&gt;&lt;/path&gt;
+                &lt;path d=&quot;M50.48,75.84 C50.5582793,78.0634453 51.9683842,80.0207379 54.0526449,80.799001 C56.1369057,81.5772641 58.4847545,81.0231916 60.0011599,79.3952016 C61.5175653,77.7672117 61.9038183,75.3859938 60.9797714,73.3621426 C60.0557245,71.3382913 58.0034011,70.0704749 55.78,70.15 C52.7455777,70.2585332 50.3731671,72.8055173 50.48,75.84&quot; id=&quot;Path&quot;&gt;&lt;/path&gt;
+                &lt;path d=&quot;M110.95,50.78 C111.056653,53.8148383 113.602706,56.1889624 116.637587,56.0835167 C119.672467,55.978071 122.047604,53.4329622 121.943366,50.39804 C121.839127,47.3631178 119.294963,44.9869689 116.26,45.09 C114.800106,45.1368929 113.419083,45.7636183 112.422524,46.8314942 C111.425965,47.8993701 110.896036,49.3203504 110.95,50.78&quot; id=&quot;Path&quot;&gt;&lt;/path&gt;
+                &lt;path d=&quot;M0.28,65.34 C0.354267932,67.568572 1.76439089,69.5326904 3.85222157,70.3156413 C5.94005224,71.0985922 8.29395543,70.5460096 9.81529285,68.9158005 C11.3366303,67.2855915 11.7254561,64.8991669 10.8002936,62.8703438 C9.875131,60.8415207 7.81838439,59.5703003 5.59,59.65 C2.55409562,59.7585811 0.17881892,62.30384 0.28,65.34&quot; id=&quot;Path&quot;&gt;&lt;/path&gt;
+            &lt;/g&gt;
+        &lt;/g&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
+</content>
+ </entry>
+ 
+
+ 
+ <entry>
+   <title></title>
+   <link href="http://localhost:4000/404.html"/>
+   <id>http://localhost:4000</id>
+   <content type="html">&lt;div class=&quot;page&quot;&gt;
+  &lt;h1 class=&quot;page-title&quot;&gt;404: Page not found&lt;/h1&gt;
+  &lt;p class=&quot;lead&quot;&gt;Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. &lt;a href=&quot;/&quot;&gt;Head back home&lt;/a&gt; to try finding it again.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title></title>
+   <link href="http://localhost:4000/atom.xml"/>
+   <id>http://localhost:4000</id>
+   <content type="html">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;feed xmlns=&quot;http://www.w3.org/2005/Atom&quot;&gt;
+
+ &lt;title&gt;{{ site.title }}&lt;/title&gt;
+ &lt;link href=&quot;{{ site.url }}{{ site.baseurl }}/atom.xml&quot; rel=&quot;self&quot;/&gt;
+ &lt;link href=&quot;{{ site.url }}{{ site.baseurl }}/&quot;/&gt;
+ &lt;updated&gt;{{ site.time | date_to_xmlschema }}&lt;/updated&gt;
+ &lt;id&gt;{{ site.url }}&lt;/id&gt;
+ &lt;author&gt;
+   &lt;name&gt;{{ site.author.name }}&lt;/name&gt;
+   &lt;email&gt;{{ site.author.email }}&lt;/email&gt;
+ &lt;/author&gt;
+
+ {% for post in site.posts %}
+ &lt;entry&gt;
+   &lt;title&gt;{{ post.title | xml_escape }}&lt;/title&gt;
+   &lt;link href=&quot;{{ site.url }}{{ site.baseurl }}{{ post.url }}&quot;/&gt;
+   &lt;updated&gt;{{ post.date | date_to_xmlschema }}&lt;/updated&gt;
+   &lt;id&gt;{{ site.url }}{{ post.id }}&lt;/id&gt;
+   &lt;content type=&quot;html&quot;&gt;{{ post.content | xml_escape }}&lt;/content&gt;
+ &lt;/entry&gt;
+ {% endfor %}
+
+ {% for page in site.pages %}
+ &lt;entry&gt;
+   &lt;title&gt;{{ post.title | xml_escape }}&lt;/title&gt;
+   &lt;link href=&quot;{{ site.url }}{{ site.baseurl }}{{ page.url }}&quot;/&gt;
+   &lt;id&gt;{{ site.url }}{{ page.id }}&lt;/id&gt;
+   &lt;content type=&quot;html&quot;&gt;{{ page.content | xml_escape }}&lt;/content&gt;
+ &lt;/entry&gt;
+ {% endfor %}
+
+&lt;/feed&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title></title>
+   <link href="http://localhost:4000/datenschutz/"/>
+   <id>http://localhost:4000</id>
+   <content type="html">Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten (nachfolgend kurz „Daten“) innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte sowie externen Onlinepräsenzen, wie z.B. unser Social Media Profile auf (nachfolgend gemeinsam bezeichnet als „Onlineangebot“). Im Hinblick auf die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf die Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO).
+
+# VERANTWORTLICHER
+
+Dataplexity e.U.
+Inh.: Silvio Heinze
+Kirchengasse 14/6
+AT-1070 Wien
+
+FN 475066b
+ATU 71326745
+s.heinze@dataplexity.eu
+
+# ARTEN DER VERARBEITETEN DATEN:
+– Bestandsdaten (z.B., Namen, Adressen).
+– Kontaktdaten (z.B., E-Mail, Telefonnummern).
+– Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos).
+– Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).
+– Meta-/Kommunikationsdaten (z.B., Geräte-Informationen, IP-Adressen).
+
+# KATEGORIEN BETROFFENER PERSONEN
+Besucher und Nutzer des Onlineangebotes (Nachfolgend bezeichnen wir die betroffenen Personen zusammenfassend auch als „Nutzer“).
+
+# ZWECK DER VERARBEITUNG
+– Zurverfügungstellung des Onlineangebotes, seiner Funktionen und Inhalte.
+– Beantwortung von Kontaktanfragen und Kommunikation mit Nutzern.
+– Sicherheitsmaßnahmen.
+– Reichweitenmessung/Marketing
+
+# VERWENDETE BEGRIFFLICHKEITEN
+„Personenbezogene Daten“ sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung (z.B. Cookie) oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.
+
+„Verarbeitung“ ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten. Der Begriff reicht weit und umfasst praktisch jeden Umgang mit Daten.
+
+„Pseudonymisierung“ die Verarbeitung personenbezogener Daten in einer Weise, dass die personenbezogenen Daten ohne Hinzuziehung zusätzlicher Informationen nicht mehr einer spezifischen betroffenen Person zugeordnet werden können, sofern diese zusätzlichen Informationen gesondert aufbewahrt werden und technischen und organisatorischen Maßnahmen unterliegen, die gewährleisten, dass die personenbezogenen Daten nicht einer identifizierten oder identifizierbaren natürlichen Person zugewiesen werden.
+
+„Profiling“ jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin besteht, dass diese personenbezogenen Daten verwendet werden, um bestimmte persönliche Aspekte, die sich auf eine natürliche Person beziehen, zu bewerten, insbesondere um Aspekte bezüglich Arbeitsleistung, wirtschaftliche Lage, Gesundheit, persönliche Vorlieben, Interessen, Zuverlässigkeit, Verhalten, Aufenthaltsort oder Ortswechsel dieser natürlichen Person zu analysieren oder vorherzusagen.
+
+Als „Verantwortlicher“ wird die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet, bezeichnet.
+
+„Auftragsverarbeiter“ eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.
+
+# MASSGEBLICHE RECHTSGRUNDLAGE
+Nach Maßgabe des Art. 13 DSGVO teilen wir Ihnen die Rechtsgrundlagen unserer Datenverarbeitungen mit. Sofern die Rechtsgrundlage in der Datenschutzerklärung nicht genannt wird, gilt Folgendes: Die Rechtsgrundlage für die Einholung von Einwilligungen ist Art. 6 Abs. 1 lit. a und Art. 7 DSGVO, die Rechtsgrundlage für die Verarbeitung zur Erfüllung unserer Leistungen und Durchführung vertraglicher Maßnahmen sowie Beantwortung von Anfragen ist Art. 6 Abs. 1 lit. b DSGVO, die Rechtsgrundlage für die Verarbeitung zur Erfüllung unserer rechtlichen Verpflichtungen ist Art. 6 Abs. 1 lit. c DSGVO, und die Rechtsgrundlage für die Verarbeitung zur Wahrung unserer berechtigten Interessen ist Art. 6 Abs. 1 lit. f DSGVO. Für den Fall, dass lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person eine Verarbeitung personenbezogener Daten erforderlich machen, dient Art. 6 Abs. 1 lit. d DSGVO als Rechtsgrundlage.
+
+# SICHERHEITSMASSNAHME
+Wir treffen nach Maßgabe des Art. 32 DSGVO unter Berücksichtigung des Stands der Technik, der Implementierungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der unterschiedlichen Eintrittswahrscheinlichkeit und Schwere des Risikos für die Rechte und Freiheiten natürlicher Personen, geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten.
+
+Zu den Maßnahmen gehören insbesondere die Sicherung der Vertraulichkeit, Integrität und Verfügbarkeit von Daten durch Kontrolle des physischen Zugangs zu den Daten, als auch des sie betreffenden Zugriffs, der Eingabe, Weitergabe, der Sicherung der Verfügbarkeit und ihrer Trennung. Des Weiteren haben wir Verfahren eingerichtet, die eine Wahrnehmung von Betroffenenrechten, Löschung von Daten und Reaktion auf Gefährdung der Daten gewährleisten. Ferner berücksichtigen wir den Schutz personenbezogener Daten bereits bei der Entwicklung, bzw. Auswahl von Hardware, Software sowie Verfahren, entsprechend dem Prinzip des Datenschutzes durch Technikgestaltung und durch datenschutzfreundliche Voreinstellungen (Art. 25 DSGVO).
+
+# ZUSAMMENARBEIT MIT AUFTRAGSVERARBEITERN UND DRITTEN
+Sofern wir im Rahmen unserer Verarbeitung Daten gegenüber anderen Personen und Unternehmen (Auftragsverarbeitern oder Dritten) offenbaren, sie an diese übermitteln oder ihnen sonst Zugriff auf die Daten gewähren, erfolgt dies nur auf Grundlage einer gesetzlichen Erlaubnis (z.B. wenn eine Übermittlung der Daten an Dritte, wie an Zahlungsdienstleister, gem. Art. 6 Abs. 1 lit. b DSGVO zur Vertragserfüllung erforderlich ist), Sie eingewilligt haben, eine rechtliche Verpflichtung dies vorsieht oder auf Grundlage unserer berechtigten Interessen (z.B. beim Einsatz von Beauftragten, Webhostern, etc.).
+
+Sofern wir Dritte mit der Verarbeitung von Daten auf Grundlage eines sog. „Auftragsverarbeitungsvertrages“ beauftragen, geschieht dies auf Grundlage des Art. 28 DSGVO.
+
+# ÜBERMITTLUNGEN IN DRITTLÄNDER
+Sofern wir Daten in einem Drittland (d.h. außerhalb der Europäischen Union (EU) oder des Europäischen Wirtschaftsraums (EWR)) verarbeiten oder dies im Rahmen der Inanspruchnahme von Diensten Dritter oder Offenlegung, bzw. Übermittlung von Daten an Dritte geschieht, erfolgt dies nur, wenn es zur Erfüllung unserer (vor)vertraglichen Pflichten, auf Grundlage Ihrer Einwilligung, aufgrund einer rechtlichen Verpflichtung oder auf Grundlage unserer berechtigten Interessen geschieht. Vorbehaltlich gesetzlicher oder vertraglicher Erlaubnisse, verarbeiten oder lassen wir die Daten in einem Drittland nur beim Vorliegen der besonderen Voraussetzungen der Art. 44 ff. DSGVO verarbeiten. D.h. die Verarbeitung erfolgt z.B. auf Grundlage besonderer Garantien, wie der offiziell anerkannten Feststellung eines der EU entsprechenden Datenschutzniveaus (z.B. für die USA durch das „Privacy Shield“) oder Beachtung offiziell anerkannter spezieller vertraglicher Verpflichtungen (so genannte „Standardvertragsklauseln“).
+
+# RECHTE DER BETROFFENEN PERSONEN
+Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob betreffende Daten verarbeitet werden und auf Auskunft über diese Daten sowie auf weitere Informationen und Kopie der Daten entsprechend Art. 15 DSGVO.
+
+Sie haben entsprechend. Art. 16 DSGVO das Recht, die Vervollständigung der Sie betreffenden Daten oder die Berichtigung der Sie betreffenden unrichtigen Daten zu verlangen.
+
+Sie haben nach Maßgabe des Art. 17 DSGVO das Recht zu verlangen, dass betreffende Daten unverzüglich gelöscht werden, bzw. alternativ nach Maßgabe des Art. 18 DSGVO eine Einschränkung der Verarbeitung der Daten zu verlangen.
+
+Sie haben das Recht zu verlangen, dass die Sie betreffenden Daten, die Sie uns bereitgestellt haben nach Maßgabe des Art. 20 DSGVO zu erhalten und deren Übermittlung an andere Verantwortliche zu fordern.
+
+Sie haben ferner gem. Art. 77 DSGVO das Recht, eine Beschwerde bei der zuständigen Aufsichtsbehörde einzureichen.
+
+# WIDERRUFSRECHT
+Sie haben das Recht, erteilte Einwilligungen gem. Art. 7 Abs. 3 DSGVO mit Wirkung für die Zukunft zu widerrufen
+
+# WIDERSPRUCHSRECHT
+Sie können der künftigen Verarbeitung der Sie betreffenden Daten nach Maßgabe des Art. 21 DSGVO jederzeit widersprechen. Der Widerspruch kann insbesondere gegen die Verarbeitung für Zwecke der Direktwerbung erfolgen.
+
+# COOKIES UND WIDERSPRUCHSRECHT BEI DIREKTWERBUNG
+Als „Cookies“ werden kleine Dateien bezeichnet, die auf Rechnern der Nutzer gespeichert werden. Innerhalb der Cookies können unterschiedliche Angaben gespeichert werden. Ein Cookie dient primär dazu, die Angaben zu einem Nutzer (bzw. dem Gerät auf dem das Cookie gespeichert ist) während oder auch nach seinem Besuch innerhalb eines Onlineangebotes zu speichern. Als temporäre Cookies, bzw. „Session-Cookies“ oder „transiente Cookies“, werden Cookies bezeichnet, die gelöscht werden, nachdem ein Nutzer ein Onlineangebot verlässt und seinen Browser schließt. In einem solchen Cookie kann z.B. der Inhalt eines Warenkorbs in einem Onlineshop oder ein Login-Status gespeichert werden. Als „permanent“ oder „persistent“ werden Cookies bezeichnet, die auch nach dem Schließen des Browsers gespeichert bleiben. So kann z.B. der Login-Status gespeichert werden, wenn die Nutzer diese nach mehreren Tagen aufsuchen. Ebenso können in einem solchen Cookie die Interessen der Nutzer gespeichert werden, die für Reichweitenmessung oder Marketingzwecke verwendet werden. Als „Third-Party-Cookie“ werden Cookies bezeichnet, die von anderen Anbietern als dem Verantwortlichen, der das Onlineangebot betreibt, angeboten werden (andernfalls, wenn es nur dessen Cookies sind spricht man von „First-Party Cookies“).
+
+Wir können temporäre und permanente Cookies einsetzen und klären hierüber im Rahmen unserer Datenschutzerklärung auf.
+
+Falls die Nutzer nicht möchten, dass Cookies auf ihrem Rechner gespeichert werden, werden sie gebeten die entsprechende Option in den Systemeinstellungen ihres Browsers zu deaktivieren. Gespeicherte Cookies können in den Systemeinstellungen des Browsers gelöscht werden. Der Ausschluss von Cookies kann zu Funktionseinschränkungen dieses Onlineangebotes führen.
+
+Ein genereller Widerspruch gegen den Einsatz der zu Zwecken des Onlinemarketing eingesetzten Cookies kann bei einer Vielzahl der Dienste, vor allem im Fall des Trackings, über die US-amerikanische Seite http://www.aboutads.info/choices/ oder die EU-Seite http://www.youronlinechoices.com/ erklärt werden. Des Weiteren kann die Speicherung von Cookies mittels deren Abschaltung in den Einstellungen des Browsers erreicht werden. Bitte beachten Sie, dass dann gegebenenfalls nicht alle Funktionen dieses Onlineangebotes genutzt werden können.
+
+# LÖSCHUNG VON DATEN
+Die von uns verarbeiteten Daten werden nach Maßgabe der Art. 17 und 18 DSGVO gelöscht oder in ihrer Verarbeitung eingeschränkt. Sofern nicht im Rahmen dieser Datenschutzerklärung ausdrücklich angegeben, werden die bei uns gespeicherten Daten gelöscht, sobald sie für ihre Zweckbestimmung nicht mehr erforderlich sind und der Löschung keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Sofern die Daten nicht gelöscht werden, weil sie für andere und gesetzlich zulässige Zwecke erforderlich sind, wird deren Verarbeitung eingeschränkt. D.h. die Daten werden gesperrt und nicht für andere Zwecke verarbeitet. Das gilt z.B. für Daten, die aus handels- oder steuerrechtlichen Gründen aufbewahrt werden müssen.
+
+Nach gesetzlichen Vorgaben in Deutschland, erfolgt die Aufbewahrung insbesondere für 10 Jahre gemäß §§ 147 Abs. 1 AO, 257 Abs. 1 Nr. 1 und 4, Abs. 4 HGB (Bücher, Aufzeichnungen, Lageberichte, Buchungsbelege, Handelsbücher, für Besteuerung relevanter Unterlagen, etc.) und 6 Jahre gemäß § 257 Abs. 1 Nr. 2 und 3, Abs. 4 HGB (Handelsbriefe).
+
+Nach gesetzlichen Vorgaben in Österreich erfolgt die Aufbewahrung insbesondere für 7 J gemäß § 132 Abs. 1 BAO (Buchhaltungsunterlagen, Belege/Rechnungen, Konten, Belege, Geschäftspapiere, Aufstellung der Einnahmen und Ausgaben, etc.), für 22 Jahre im Zusammenhang mit Grundstücken und für 10 Jahre bei Unterlagen im Zusammenhang mit elektronisch erbrachten Leistungen, Telekommunikations-, Rundfunk- und Fernsehleistungen, die an Nichtunternehmer in EU-Mitgliedstaaten erbracht werden und für die der Mini-One-Stop-Shop (MOSS) in Anspruch genommen wird.
+
+# AGENTURDIENSTLEISTUNGEN
+Wir verarbeiten die Daten unserer Kunden im Rahmen unserer vertraglichen Leistungen zu denen konzeptionelle und strategische Beratung, Kampagnenplanung, Software- und Designentwicklung/-beratung oder Pflege, Umsetzung von Kampagnen und Prozessen/ Handling, Serveradministration, Datenanalyse/ Beratungsleistungen und Schulungsleistungen gehören.
+
+Hierbei verarbeiten wir Bestandsdaten (z.B., Kundenstammdaten, wie Namen oder Adressen), Kontaktdaten (z.B., E-Mail, Telefonnummern), Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos), Vertragsdaten (z.B., Vertragsgegenstand, Laufzeit), Zahlungsdaten (z.B., Bankverbindung, Zahlungshistorie), Nutzungs- und Metadaten (z.B. im Rahmen der Auswertung und Erfolgsmessung von Marketingmaßnahmen). Besondere Kategorien personenbezogener Daten verarbeiten wir grundsätzlich nicht, außer wenn diese Bestandteile einer beauftragten Verarbeitung sind. Zu den Betroffenen gehören unsere Kunden, Interessenten sowie deren Kunden, Nutzer, Websitebesucher oder Mitarbeiter sowie Dritte. Der Zweck der Verarbeitung besteht in der Erbringung von Vertragsleistungen, Abrechnung und unserem Kundenservice. Die Rechtsgrundlagen der Verarbeitung ergeben sich aus Art. 6 Abs. 1 lit. b DSGVO (vertragliche Leistungen), Art. 6 Abs. 1 lit. f DSGVO (Analyse, Statistik, Optimierung, Sicherheitsmaßnahmen). Wir verarbeiten Daten, die zur Begründung und Erfüllung der vertraglichen Leistungen erforderlich sind und weisen auf die Erforderlichkeit ihrer Angabe hin. Eine Offenlegung an Externe erfolgt nur, wenn sie im Rahmen eines Auftrags erforderlich ist. Bei der Verarbeitung der uns im Rahmen eines Auftrags überlassenen Daten handeln wir entsprechend den Weisungen der Auftraggeber sowie der gesetzlichen Vorgaben einer Auftragsverarbeitung gem. Art. 28 DSGVO und verarbeiten die Daten zu keinen anderen, als den auftragsgemäßen Zwecken.
+
+Wir löschen die Daten nach Ablauf gesetzlicher Gewährleistungs- und vergleichbarer Pflichten. die Erforderlichkeit der Aufbewahrung der Daten wird alle drei Jahre überprüft; im Fall der gesetzlichen Archivierungspflichten erfolgt die Löschung nach deren Ablauf (6 J, gem. § 257 Abs. 1 HGB, 10 J, gem. § 147 Abs. 1 AO). Im Fall von Daten, die uns gegenüber im Rahmen eines Auftrags durch den Auftraggeber offengelegt wurden, löschen wir die Daten entsprechend den Vorgaben des Auftrags, grundsätzlich nach Ende des Auftrags.
+
+# VERTRAGLICHE LEISTUNGEN
+Wir verarbeiten die Daten unserer Vertragspartner und Interessenten sowie anderer Auftraggeber, Kunden, Mandanten, Klienten oder Vertragspartner (einheitlich bezeichnet als „Vertragspartner“) entsprechend Art. 6 Abs. 1 lit. b. DSGVO, um ihnen gegenüber unsere vertraglichen oder vorvertraglichen Leistungen zu erbringen. Die hierbei verarbeiteten Daten, die Art, der Umfang und der Zweck und die Erforderlichkeit ihrer Verarbeitung, bestimmen sich nach dem zugrundeliegenden Vertragsverhältnis.
+
+Zu den verarbeiteten Daten gehören die Stammdaten unserer Vertragspartner (z.B., Namen und Adressen), Kontaktdaten (z.B. E-Mailadressen und Telefonnummern) sowie Vertragsdaten (z.B., in Anspruch genommene Leistungen, Vertragsinhalte, vertragliche Kommunikation, Namen von Kontaktpersonen) und Zahlungsdaten (z.B., Bankverbindungen, Zahlungshistorie).
+
+Besondere Kategorien personenbezogener Daten verarbeiten wir grundsätzlich nicht, außer wenn diese Bestandteile einer beauftragten oder vertragsgemäßen Verarbeitung sind.
+
+Wir verarbeiten Daten, die zur Begründung und Erfüllung der vertraglichen Leistungen erforderlich sind und weisen auf die Erforderlichkeit ihrer Angabe, sofern diese für die Vertragspartner nicht evident ist, hin. Eine Offenlegung an externe Personen oder Unternehmen erfolgt nur, wenn sie im Rahmen eines Vertrags erforderlich ist. Bei der Verarbeitung der uns im Rahmen eines Auftrags überlassenen Daten, handeln wir entsprechend den Weisungen der Auftraggeber sowie der gesetzlichen Vorgaben.
+
+Im Rahmen der Inanspruchnahme unserer Onlinedienste, können wir die IP-Adresse und den Zeitpunkt der jeweiligen Nutzerhandlung speichern. Die Speicherung erfolgt auf Grundlage unserer berechtigten Interessen, als auch der Interessen der Nutzer am Schutz vor Missbrauch und sonstiger unbefugter Nutzung. Eine Weitergabe dieser Daten an Dritte erfolgt grundsätzlich nicht, außer sie ist zur Verfolgung unserer Ansprüche gem. Art. 6 Abs. 1 lit. f. DSGVO erforderlich oder es besteht hierzu eine gesetzliche Verpflichtung gem. Art. 6 Abs. 1 lit. c. DSGVO.
+
+Die Löschung der Daten erfolgt, wenn die Daten zur Erfüllung vertraglicher oder gesetzlicher Fürsorgepflichten sowie für den Umgang mit etwaigen Gewährleistungs- und vergleichbaren Pflichten nicht mehr erforderlich sind, wobei die Erforderlichkeit der Aufbewahrung der Daten alle drei Jahre überprüft wird; im Übrigen gelten die gesetzlichen Aufbewahrungspflichten.
+ADMINISTRATION, FINANZBUCHHALTUNG, BÜROORGANISATION, KONTAKTVERWALTUNG
+Wir verarbeiten Daten im Rahmen von Verwaltungsaufgaben sowie Organisation unseres Betriebs, Finanzbuchhaltung und Befolgung der gesetzlichen Pflichten, wie z.B. der Archivierung. Hierbei verarbeiten wir dieselben Daten, die wir im Rahmen der Erbringung unserer vertraglichen Leistungen verarbeiten. Die Verarbeitungsgrundlagen sind Art. 6 Abs. 1 lit. c. DSGVO, Art. 6 Abs. 1 lit. f. DSGVO. Von der Verarbeitung sind Kunden, Interessenten, Geschäftspartner und Websitebesucher betroffen. Der Zweck und unser Interesse an der Verarbeitung liegt in der Administration, Finanzbuchhaltung, Büroorganisation, Archivierung von Daten, also Aufgaben die der Aufrechterhaltung unserer Geschäftstätigkeiten, Wahrnehmung unserer Aufgaben und Erbringung unserer Leistungen dienen. Die Löschung der Daten im Hinblick auf vertragliche Leistungen und die vertragliche Kommunikation entspricht den, bei diesen Verarbeitungstätigkeiten genannten Angaben.
+
+Wir offenbaren oder übermitteln hierbei Daten an die Finanzverwaltung, Berater, wie z.B., Steuerberater oder Wirtschaftsprüfer sowie weitere Gebührenstellen und Zahlungsdienstleister.
+
+Ferner speichern wir auf Grundlage unserer betriebswirtschaftlichen Interessen Angaben zu Lieferanten, Veranstaltern und sonstigen Geschäftspartnern, z.B. zwecks späterer Kontaktaufnahme. Diese mehrheitlich unternehmensbezogenen Daten, speichern wir grundsätzlich dauerhaft.
+# REGISTRIERFUNKTION
+Nutzer können ein Nutzerkonto anlegen. Im Rahmen der Registrierung werden die erforderlichen Pflichtangaben den Nutzern mitgeteilt und auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO zu Zwecken der Bereitstellung des Nutzerkontos verarbeitet. Zu den verarbeiteten Daten gehören insbesondere die Login-Informationen (Name, Passwort sowie eine E-Mailadresse). Die im Rahmen der Registrierung eingegebenen Daten werden für die Zwecke der Nutzung des Nutzerkontos und dessen Zwecks verwendet.
+
+Die Nutzer können über Informationen, die für deren Nutzerkonto relevant sind, wie z.B. technische Änderungen, per E-Mail informiert werden. Wenn Nutzer ihr Nutzerkonto gekündigt haben, werden deren Daten im Hinblick auf das Nutzerkonto, vorbehaltlich einer gesetzlichen Aufbewahrungspflicht, gelöscht. Es obliegt den Nutzern, ihre Daten bei erfolgter Kündigung vor dem Vertragsende zu sichern. Wir sind berechtigt, sämtliche während der Vertragsdauer gespeicherten Daten des Nutzers unwiederbringlich zu löschen.
+
+Im Rahmen der Inanspruchnahme unserer Registrierungs- und Anmeldefunktionen sowie der Nutzung des Nutzerkontos, speichern wir die IP-Adresse und den Zeitpunkt der jeweiligen Nutzerhandlung. Die Speicherung erfolgt auf Grundlage unserer berechtigten Interessen, als auch der Nutzer an Schutz vor Missbrauch und sonstiger unbefugter Nutzung. Eine Weitergabe dieser Daten an Dritte erfolgt grundsätzlich nicht, außer sie ist zur Verfolgung unserer Ansprüche erforderlich oder es besteht hierzu besteht eine gesetzliche Verpflichtung gem. Art. 6 Abs. 1 lit. c. DSGVO. Die IP-Adressen werden spätestens nach 7 Tagen anonymisiert oder gelöscht.
+
+# KOMMENTARE UND BEITRÄGE
+Wenn Nutzer Kommentare oder sonstige Beiträge hinterlassen, können ihre IP-Adressen auf Grundlage unserer berechtigten Interessen im Sinne des Art. 6 Abs. 1 lit. f. DSGVO für 7 Tage gespeichert werden. Das erfolgt zu unserer Sicherheit, falls jemand in Kommentaren und Beiträgen widerrechtliche Inhalte hinterlässt (Beleidigungen, verbotene politische Propaganda, etc.). In diesem Fall können wir selbst für den Kommentar oder Beitrag belangt werden und sind daher an der Identität des Verfassers interessiert.
+
+Des Weiteren behalten wir uns vor, auf Grundlage unserer berechtigten Interessen gem. Art. 6 Abs. 1 lit. f. DSGVO, die Angaben der Nutzer zwecks Spamerkennung zu verarbeiten.
+
+Auf derselben Rechtsgrundlage behalten wir uns vor, im Fall von Umfragen die IP-Adressen der Nutzer für deren Dauer zu speichern und Cookies zu verwenden, um Mehrfachabstimmungen zu vermeiden.
+
+Die im Rahmen der Kommentare und Beiträge angegebenen Daten, werden von uns bis zum Widerspruch der Nutzer dauerhaft gespeichert.
+
+# KOMMENTARABONNEMENTS
+Die Nachfolgekommentare können durch Nutzer mit deren Einwilligung gem. Art. 6 Abs. 1 lit. a DSGVO abonniert werden. Die Nutzer erhalten eine Bestätigungsemail, um zu überprüfen, ob sie der Inhaber der eingegebenen Emailadresse sind. Nutzer können laufende Kommentarabonnements jederzeit abbestellen. Die Bestätigungsemail wird Hinweise zu den Widerrufsmöglichkeiten enthalten. Für die Zwecke des Nachweises der Einwilligung der Nutzer, speichern wir den Anmeldezeitpunkt nebst der IP-Adresse der Nutzer und löschen diese Informationen, wenn Nutzer sich von dem Abonnement abmelden.
+
+Sie können den Empfang unseres Abonnements jederzeit kündigen, d.h. Ihre Einwilligungen widerrufen. Wir können die ausgetragenen E-Mailadressen bis zu drei Jahren auf Grundlage unserer berechtigten Interessen speichern bevor wir sie löschen, um eine ehemals gegebene Einwilligung nachweisen zu können. Die Verarbeitung dieser Daten wird auf den Zweck einer möglichen Abwehr von Ansprüchen beschränkt. Ein individueller Löschungsantrag ist jederzeit möglich, sofern zugleich das ehemalige Bestehen einer Einwilligung bestätigt wird.
+
+# KONTAKTAUFNAHME
+Bei der Kontaktaufnahme mit uns (z.B. per Kontaktformular, E-Mail, Telefon oder via sozialer Medien) werden die Angaben des Nutzers zur Bearbeitung der Kontaktanfrage und deren Abwicklung gem. Art. 6 Abs. 1 lit. b. (im Rahmen vertraglicher-/vorvertraglicher Beziehungen), Art. 6 Abs. 1 lit. f. (andere Anfragen) DSGVO verarbeitet.. Die Angaben der Nutzer können in einem Customer-Relationship-Management System (“CRM System”) oder vergleichbarer Anfragenorganisation gespeichert werden.
+
+Wir löschen die Anfragen, sofern diese nicht mehr erforderlich sind. Wir überprüfen die Erforderlichkeit alle zwei Jahre; Ferner gelten die gesetzlichen Archivierungspflichten.
+
+# HOSTING UND E-MAIL-VERSAND
+Die von uns in Anspruch genommenen Hosting-Leistungen dienen der Zurverfügungstellung der folgenden Leistungen: Infrastruktur- und Plattformdienstleistungen, Rechenkapazität, Speicherplatz und Datenbankdienste, E-Mail-Versand, Sicherheitsleistungen sowie technische Wartungsleistungen, die wir zum Zwecke des Betriebs dieses Onlineangebotes einsetzen.
+
+Hierbei verarbeiten wir, bzw. unser Hostinganbieter Bestandsdaten, Kontaktdaten, Inhaltsdaten, Vertragsdaten, Nutzungsdaten, Meta- und Kommunikationsdaten von Kunden, Interessenten und Besuchern dieses Onlineangebotes auf Grundlage unserer berechtigten Interessen an einer effizienten und sicheren Zurverfügungstellung dieses Onlineangebotes gem. Art. 6 Abs. 1 lit. f DSGVO i.V.m. Art. 28 DSGVO (Abschluss Auftragsverarbeitungsvertrag).
+
+# ERHEBUNG VON ZUGRIFFSDATEN UND LOGFILES
+Wir, bzw. unser Hostinganbieter, erhebt auf Grundlage unserer berechtigten Interessen im Sinne des Art. 6 Abs. 1 lit. f. DSGVO Daten über jeden Zugriff auf den Server, auf dem sich dieser Dienst befindet (sogenannte Serverlogfiles). Zu den Zugriffsdaten gehören Name der abgerufenen Webseite, Datei, Datum und Uhrzeit des Abrufs, übertragene Datenmenge, Meldung über erfolgreichen Abruf, Browsertyp nebst Version, das Betriebssystem des Nutzers, Referrer URL (die zuvor besuchte Seite), IP-Adresse und der anfragende Provider.
+
+Logfile-Informationen werden aus Sicherheitsgründen (z.B. zur Aufklärung von Missbrauchs- oder Betrugshandlungen) für die Dauer von maximal 7 Tagen gespeichert und danach gelöscht. Daten, deren weitere Aufbewahrung zu Beweiszwecken erforderlich ist, sind bis zur endgültigen Klärung des jeweiligen Vorfalls von der Löschung ausgenommen.
+
+# REICHWEITENMESSUNG MIT MATOMO
+Im Rahmen der Reichweitenanalyse von Matomo werden auf Grundlage unserer berechtigten Interessen (d.h. Interesse an der Analyse, Optimierung und wirtschaftlichem Betrieb unseres Onlineangebotes im Sinne des Art. 6 Abs. 1 lit. f. DSGVO) die folgenden Daten verarbeitet: der von Ihnen verwendete Browsertyp und die Browserversion, das von Ihnen verwendete Betriebssystem, Ihr Herkunftsland, Datum und Uhrzeit der Serveranfrage, die Anzahl der Besuche, Ihre Verweildauer auf der Website sowie die von Ihnen betätigten externen Links. Die IP-Adresse der Nutzer wird anonymisiert, bevor sie gespeichert wird.
+
+Matomo verwendet Cookies, die auf dem Computer der Nutzer gespeichert werden und die eine Analyse der Benutzung unseres Onlineangebotes durch die Nutzer ermöglichen. Dabei können aus den verarbeiteten Daten pseudonyme Nutzungsprofile der Nutzer erstellt werden. Die Cookies haben eine Speicherdauer von einer Woche. Die durch das Cookie erzeugten Informationen über Ihre Benutzung dieser Webseite werden nur auf unserem Server gespeichert und nicht an Dritte weitergegeben.
+
+Nutzer können der anonymisierten Datenerhebung durch das Programm Matomo jederzeit mit Wirkung für die Zukunft widersprechen, indem sie auf den untenstehenden Link klicken. In diesem Fall wird in ihrem Browser ein sog. Opt-Out-Cookie abgelegt, was zur Folge hat, dass Matomo keinerlei Sitzungsdaten mehr erhebt. Wenn Nutzer ihre Cookies löschen, so hat dies jedoch zur Folge, dass auch das Opt-Out-Cookie gelöscht wird und daher von den Nutzern erneut aktiviert werden muss.
+
+Die Logs mit den Daten der Nutzer werden nach spätestens 6 Monaten gelöscht.
+
+[Bitte setzen Sie an dieser Stelle das IFRAME von Matomo mit dem opt-out cookie ein (und schalten die IP-Anonymisierung im Einstellungsbereich ein)].
+
+# EINBINDUNG VON DIENSTEN UND INHALTEN DRITTER
+Wir setzen innerhalb unseres Onlineangebotes auf Grundlage unserer berechtigten Interessen (d.h. Interesse an der Analyse, Optimierung und wirtschaftlichem Betrieb unseres Onlineangebotes im Sinne des Art. 6 Abs. 1 lit. f. DSGVO) Inhalts- oder Serviceangebote von Drittanbietern ein, um deren Inhalte und Services, wie z.B. Videos oder Schriftarten einzubinden (nachfolgend einheitlich bezeichnet als “Inhalte”).
+
+Dies setzt immer voraus, dass die Drittanbieter dieser Inhalte, die IP-Adresse der Nutzer wahrnehmen, da sie ohne die IP-Adresse die Inhalte nicht an deren Browser senden könnten. Die IP-Adresse ist damit für die Darstellung dieser Inhalte erforderlich. Wir bemühen uns nur solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte verwenden. Drittanbieter können ferner so genannte Pixel-Tags (unsichtbare Grafiken, auch als “Web Beacons” bezeichnet) für statistische oder Marketingzwecke verwenden. Durch die “Pixel-Tags” können Informationen, wie der Besucherverkehr auf den Seiten dieser Website ausgewertet werden. Die pseudonymen Informationen können ferner in Cookies auf dem Gerät der Nutzer gespeichert werden und unter anderem technische Informationen zum Browser und Betriebssystem, verweisende Webseiten, Besuchszeit sowie weitere Angaben zur Nutzung unseres Onlineangebotes enthalten, als auch mit solchen Informationen aus anderen Quellen verbunden werden.
+
+# TWITTER
+Innerhalb unseres Onlineangebotes können Funktionen und Inhalte des Dienstes Twitter, angeboten durch die Twitter Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103, USA, eingebunden werden. Hierzu können z.B. Inhalte wie Bilder, Videos oder Texte und Schaltflächen gehören, mit denen Nutzer Inhalte dieses Onlineangebotes innerhalb von Twitter teilen können.
+Sofern die Nutzer Mitglieder der Plattform Twitter sind, kann Twitter den Aufruf der o.g. Inhalte und Funktionen den dortigen Profilen der Nutzer zuordnen. Twitter ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europäische Datenschutzrecht einzuhalten (https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active). Datenschutzerklärung: https://twitter.com/de/privacy, Opt-Out: https://twitter.com/personalization.
+</content>
+ </entry>
+ 
+ <entry>
+   <title></title>
+   <link href="http://localhost:4000/"/>
+   <id>http://localhost:4000</id>
+   <content type="html">&lt;div class=&quot;posts&quot;&gt;
+  {% for post in paginator.posts %}
+  &lt;article class=&quot;post&quot;&gt;
+    &lt;h1 class=&quot;post-title&quot;&gt;
+      &lt;a href=&quot;{{ site.baseurl }}{{ post.url }}&quot;&gt;
+        {{ post.title }}
+      &lt;/a&gt;
+    &lt;/h1&gt;
+
+    &lt;time datetime=&quot;{{ post.date | date_to_xmlschema }}&quot; class=&quot;post-date&quot;&gt;{{ post.date | date_to_string }}&lt;/time&gt;
+
+    {{ post.content }}
+  &lt;/article&gt;
+  {% endfor %}
+&lt;/div&gt;
+
+&lt;div class=&quot;pagination&quot;&gt;
+  {% if paginator.next_page %}
+    &lt;a class=&quot;pagination-item older&quot; href=&quot;{{ paginator.next_page_path | prepend: site.baseurl }}&quot;&gt;Older&lt;/a&gt;
+  {% else %}
+    &lt;span class=&quot;pagination-item older&quot;&gt;Older&lt;/span&gt;
+  {% endif %}
+  {% if paginator.previous_page %}
+    &lt;a class=&quot;pagination-item newer&quot; href=&quot;{{ paginator.previous_page_path | prepend: site.baseurl }}&quot;&gt;Newer&lt;/a&gt;
+  {% else %}
+    &lt;span class=&quot;pagination-item newer&quot;&gt;Newer&lt;/span&gt;
+  {% endif %}
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title></title>
+   <link href="http://localhost:4000/styles.css"/>
+   <id>http://localhost:4000</id>
+   <content type="html">@import url(&quot;https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css&quot;);
+
+// Foundation
+@import url(&quot;https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css&quot;);
+
+//Font Awesome Icons
+@import url(&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css&quot;);
+
+// Google Fonts
+@import url(&quot;https://fonts.googleapis.com/css?family=Merriweather:400,700&quot;);
+
+@import &quot;variables&quot;;
+@import &quot;base&quot;;
+@import &quot;type&quot;;
+@import &quot;syntax&quot;;
+@import &quot;code&quot;;
+@import &quot;layout&quot;;
+@import &quot;masthead&quot;;
+@import &quot;posts&quot;;
+@import &quot;pagination&quot;;
+@import &quot;message&quot;;
+</content>
+ </entry>
+ 
+
+</feed>
