@@ -2,9 +2,9 @@
 permalink:           pretty
 
 # Setup
-title:               Dataplexity.eu
-tagline:             An all new perspective on data
-url:                 http://dataplexity.eu
+title:               Sebastian Duerr
+tagline:             Aspiring Deep Learning Reseracher
+url:                 http://duerr.se
 paginate:            1
 baseurl:             ""
 
@@ -17,9 +17,9 @@ sass:
 
 # About/contact
 author:
-  name:              Silvio Heinze
-  url:               https://silvioheinze.eu
-  email:             s.heinze@dataplexity.eu
+  name:              Sebastian Duerr
+  url:               https://duerr.se
+  email:             duerr.sebastian@gmail.com
 
 # Custom vars
 version:             1
