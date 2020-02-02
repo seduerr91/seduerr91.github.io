@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Luftdaten.at
+title: Luftdaten
+git: https://github.com/luftdaten-at
 site: http://luftdaten.at
 ---
-
 Dataplexity is happy to support one of Vienna's greatest citizen science projects.
 
 <svg width="157px" height="95px" viewBox="0 0 157 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

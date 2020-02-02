@@ -4,7 +4,7 @@
  <title>Sebastian Duerr</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-01-27T23:25:47+01:00</updated>
+ <updated>2020-01-28T22:03:21+01:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Sebastian Duerr</name>
@@ -59,6 +59,25 @@
  </entry>
  
 
+ 
+ <entry>
+   <title></title>
+   <link href="http://localhost:4000/-index/"/>
+   <id>http://localhost:4000</id>
+   <content type="html">&lt;div class=&quot;posts&quot;&gt;
+  
+&lt;/div&gt;
+
+&lt;div class=&quot;pagination&quot;&gt;
+  
+    &lt;span class=&quot;pagination-item older&quot;&gt;Older&lt;/span&gt;
+  
+  
+    &lt;span class=&quot;pagination-item newer&quot;&gt;Newer&lt;/span&gt;
+  
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title></title>
@@ -278,41 +297,6 @@ Innerhalb unseres Onlineangebotes können Funktionen und Inhalte des Dienstes Tw
 Sofern die Nutzer Mitglieder der Plattform Twitter sind, kann Twitter den Aufruf der o.g. Inhalte und Funktionen den dortigen Profilen der Nutzer zuordnen. Twitter ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europäische Datenschutzrecht einzuhalten (https://www.privacyshield.gov/participant?id=a2zt0000000TORzAAO&amp;status=Active). Datenschutzerklärung: https://twitter.com/de/privacy, Opt-Out: https://twitter.com/personalization.
 
 Erstellt mit Datenschutz-Generator.de von RA Dr. Thomas Schwenke
-</content>
- </entry>
- 
- <entry>
-   <title></title>
-   <link href="http://localhost:4000/"/>
-   <id>http://localhost:4000</id>
-   <content type="html">&lt;div class=&quot;posts&quot;&gt;
-  {% for post in paginator.posts %}
-  &lt;article class=&quot;post&quot;&gt;
-    &lt;h1 class=&quot;post-title&quot;&gt;
-      &lt;a href=&quot;{{ site.baseurl }}{{ post.url }}&quot;&gt;
-        {{ post.title }}
-      &lt;/a&gt;
-    &lt;/h1&gt;
-
-    &lt;time datetime=&quot;{{ post.date | date_to_xmlschema }}&quot; class=&quot;post-date&quot;&gt;{{ post.date | date_to_string }}&lt;/time&gt;
-
-    {{ post.content }}
-  &lt;/article&gt;
-  {% endfor %}
-&lt;/div&gt;
-
-&lt;div class=&quot;pagination&quot;&gt;
-  {% if paginator.next_page %}
-    &lt;a class=&quot;pagination-item older&quot; href=&quot;{{ paginator.next_page_path | prepend: site.baseurl }}&quot;&gt;Older&lt;/a&gt;
-  {% else %}
-    &lt;span class=&quot;pagination-item older&quot;&gt;Older&lt;/span&gt;
-  {% endif %}
-  {% if paginator.previous_page %}
-    &lt;a class=&quot;pagination-item newer&quot; href=&quot;{{ paginator.previous_page_path | prepend: site.baseurl }}&quot;&gt;Newer&lt;/a&gt;
-  {% else %}
-    &lt;span class=&quot;pagination-item newer&quot;&gt;Newer&lt;/span&gt;
-  {% endif %}
-&lt;/div&gt;
 </content>
  </entry>
  
