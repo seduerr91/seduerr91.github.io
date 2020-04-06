@@ -1,30 +1,24 @@
-# Permalinks
-permalink:           pretty
+title:              Clean Blog
+email:              your-email@example.com
+description:        A Blog Theme by Start Bootstrap
+author:             Start Bootstrap
+baseurl:            "/startbootstrap-clean-blog-jekyll"
+url:                "https://blackrockdigital.github.io"
 
-# Setup
-title:               Sebastian Duerr
-tagline:             Aspiring Deep Learning Researcher
-url:                 http://duerr.se
-paginate:            1
-baseurl:             ""
+# Social Profiles
+twitter_username:   SBootstrap
+github_username:    BlackrockDigital
+facebook_username:  StartBootstrap
+linkedin_username:
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
-# About/contact
-author:
-  name:              Sebastian Duerr
-  url:               https://duerr.se
-  email:             duerr.sebastian@gmail.com
-
-# Custom vars
-version:             1
-
-# Gems
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
 plugins:
-  # - jekyll-paginate
-  # - jekyll-gist
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
