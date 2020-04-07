@@ -1,43 +1,37 @@
-title: Texture Theme
-author: GitHub User
-email: your-email@domain.com
-description: > # this means to ignore newlines until "show_exerpts:"
+title: Hello, world! I'm David Freeman
+description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-show_excerpts: true # set to true to show excerpts on the homepage
-baseurl: /texture
+permalink: ':title/'
+baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
+# Author Settings
+author: David Freeman # add your name
+author-img: david-freeman.jpg # add your photo
+about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: artemsheludko # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: # add your Email address
 
-permalink: /posts/:title/
-texture:
-  title: Adam Denisov
-  tagline: Developer. Designer
-  date_format: "%b %-d, %Y"
-  style: black
-  showNav: false
-  showPicker: true
+# Disqus
+discus-identifier: mr-brown # add your discus identifier
 
-  # generate social links in footer
-  social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
-    rss: rss
- 
+# Tracker
+analytics: # Google Analytics
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
-
-# Build settings
-# theme: texture
-
+# Build Settings
+markdown: kramdown
 plugins:
-  - jekyll-seo-tag
-#  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
