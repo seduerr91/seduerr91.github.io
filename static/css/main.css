@@ -10,7 +10,7 @@ body {
 }
 /* Wrapper for page content to push down footer */
 #wrap {
-  padding-bottom: 50px;	
+  padding-bottom: 50px;
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height */
@@ -96,10 +96,10 @@ body {
   margin: 20px 0;
 }
 .container a {
-  color: #27A822;
+  color: #83BCFF;
 }
 .container a:hover {
-  color: #267723;
+  color: #97D2FB;
 }
 .img-responsive {
  display: block;
@@ -120,10 +120,10 @@ body {
   font-size: 15px;
 }
 .panel-default h4 a, h5 a {
-  color: #27A822;
+  color: #83BCFF;
 }
 .panel-default h4 a:hover, h5 a:hover {
-  color: #267723;
+  color: #97D2FB;
 }
 .panel{
   border-style: none;
@@ -164,7 +164,7 @@ body {
   font-size: 18px;
 }
 
-/* Footer 
+/* Footer
 -------------------------------------------------- */
 
 .footer {
@@ -180,5 +180,5 @@ div.footer{
 /*.footer {
   height: 50px;
   padding-bottom: 15px;
-  
+
 }*/
