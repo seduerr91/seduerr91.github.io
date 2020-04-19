@@ -21,10 +21,10 @@ email: duerr.sebastian@gmail.com
 github: seduerr91 # username
 twitter: duerrseb
 linkedin: sebastianduerr
-stackoverflow: username   #e.g: users/2735833/proton1h1
+stackoverflow: users/11903958/sebastian-dürr   #e.g: users/2735833/proton1h1
 #Comment out if you don't want disqus
-disqus: username
-google_analytics: UA-69391421-1
+disqus: seduerr
+google_analytics: UA-146421430-1
 
 
 # needed for travis-ci build
