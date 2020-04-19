@@ -1,34 +1,25 @@
 ---
 layout: post
-title:  A Full and Comprehensive Style Test (HTML)
+title:  Becoming a Machine Learning Scientist with DataCamp
 tags:
-- News
-- Tags
-- Blog
-- Post
+- DataScience
+- Python
+- CoronaChallenge
 ---
 
 > This is Markdown Cheatsheet Demo for **Sustain**, this Jekyll theme. Please check the raw content of this file for the markdown usage.
 
-<p>This is just an <em>ipsis verbis</em> copy of the first example running on the <a href="http://demo.ghost.io">Ghost Demo</a>. This shows how you can use html styling to achieve your hopes.</p>
-
-
-<p>Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.</p>
-
+<h1 id="heading1">Becoming a Machine Learning Scientist</h1>
+<p>Lorem ipsum dolor sit amet, <a title="test link" href="#">test link</a> adipiscing elit. <strong>This is strong.</strong> Nullam dignissim convallis est. Quisque aliquam. <em>This is emphasized.</em> Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. <cite>The New York Times</cite> (That’s a citation). <span style="text-decoration:underline;">Underline.</span> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
 
 <hr />
-
-<h1 id="heading1">Heading 1</h1>
-
-<h2 id="heading2">Heading 2</h2>
-
-<h3 id="heading3">Heading 3</h3>
-
-<h4 id="heading4">Heading 4</h4>
-
-<h5 id="heading5">Heading 5</h5>
-
-<h6 id="heading6">Heading 6</h6>
+<h2 id="heading2">The Path</h2>
+<hr />
+<h2 id="heading2">Staying focused</h2>
+<hr />
+<h2 id="heading2">You can make it</h2>
+<hr />
+<h2 id="heading2">My next steps</h2>
 
 <hr />
 
@@ -235,7 +226,7 @@ The <u>u element</u> example</p>
 <b>Textarea</b>  
 <textarea cols="30" rows="5" >Textarea text</textarea>  
 </label>  
-</fieldset> 
+</fieldset>
 
 <fieldset>  
 <legend>Clickable inputs and buttons</legend>  
@@ -246,7 +237,7 @@ The <u>u element</u> example</p>
 <button type="reset">Reset (button)</button>  
 <button type="button">Button (button)</button>  
 <button type="submit">Submit (button)</button>  
-</fieldset> 
+</fieldset>
 
 <fieldset id="boxsize">  
 <legend>box-sizing tests</legend>  
@@ -254,7 +245,7 @@ The <u>u element</u> example</p>
 <div><input type="email" value="email"></div>  
 <div><input type="search" value="search"></div>  
 <div><input type="url" value="http://example.com"></div>  
-<div><input type="password" value="password"></div> 
+<div><input type="password" value="password"></div>
 
 <div><input type="color" value="#000000"></div>  
 <div><input type="number" value="5"></div>  
@@ -264,18 +255,18 @@ The <u>u element</u> example</p>
 <div><input type="week" value="1970-W01"></div>  
 <div><input type="time" value="18:23"></div>  
 <div><input type="datetime" value="1970-01-01T00:00:00Z"></div>  
-<div><input type="datetime-local" value="1970-01-01T00:00"></div> 
+<div><input type="datetime-local" value="1970-01-01T00:00"></div>
 
 <div><input type="radio"></div>  
-<div><input type="checkbox"></div> 
+<div><input type="checkbox"></div>
 
 <div><select><option>Option 01</option><option>Option 02</option></select></div>  
-<div><textarea cols="30" rows="5" >Textarea text</textarea></div> 
+<div><textarea cols="30" rows="5" >Textarea text</textarea></div>
 
 <div><input type="image" src="http://placekitten.com/90/24" alt="Image (input)"></div>  
 <div><input type="reset" value="Reset (input)"></div>  
 <div><input type="button" value="Button (input)"></div>  
-<div><input type="submit" value="Submit (input)"></div> 
+<div><input type="submit" value="Submit (input)"></div>
 
 <div><button type="reset">Reset (button)</button></div>  
 <div><button type="button">Button (button)</button></div>  
@@ -345,12 +336,12 @@ Spinner.prototype.draw = function() {
   c.beginPath();
   c.arc(this.x, this.y, littleCircle, 0, TWO_PI);
   c.fill();
-  c.closePath(); 
+  c.closePath();
 }
 c.setup = function() {
   spinner = new Spinner();
   spinner.setup();
-} 
+}
 c.update = function() {
   spinner.update();
   hue = ++hue % 360;
