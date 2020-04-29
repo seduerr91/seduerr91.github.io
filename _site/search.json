@@ -1,83 +1,59 @@
 [
   
     {
-      "title"    : "Digital Minimalism",
+      "title"    : "How to become a deep learning engineer",
       "category" : "",
-      "tags"     : "Social Media, Minimalism, Technology",
-      "url"      : "/seduerr91/blog/digital-minimalism",
-      "date"     : "2019-02-20 00:00:00 +0100"
+      "tags"     : "Development, Technology",
+      "url"      : "/seduerr91/blog/machine-learning-engineer",
+      "date"     : "2020-04-21 00:00:00 +0200"
     } ,
   
     {
-      "title"    : "Learn React.js in 5 minutes",
+      "title"    : "How can you travel up to 60 countries in 5 years",
       "category" : "",
-      "tags"     : "React, JavaScript, Web Development",
-      "url"      : "/seduerr91/blog/learn-react-js",
-      "date"     : "2019-02-15 00:00:00 +0100"
+      "tags"     : "Leisure, Traveling",
+      "url"      : "https://blog.usejournal.com/how-to-undo-your-git-failure-b76e31ecac74",
+      "date"     : "2020-04-20 00:00:00 +0200"
     } ,
   
     {
-      "title"    : "Clean Coding",
+      "title"    : "Six continents in 2018",
       "category" : "",
-      "tags"     : "Software Development, Clean Code",
-      "url"      : "/seduerr91/blog/clean-coding",
-      "date"     : "2018-12-10 00:00:00 +0100"
+      "tags"     : "Leisure, Traveling",
+      "url"      : "/seduerr91/blog/six-continents",
+      "date"     : "2020-04-19 00:00:00 +0200"
     } ,
   
     {
-      "title"    : "What the heck is a Callback?",
+      "title"    : "Sailing the Caribbean",
+      "category" : "",
+      "tags"     : "Leisure, Traveling",
+      "url"      : "/seduerr91/blog/sailing",
+      "date"     : "2020-04-18 00:00:00 +0200"
+    } ,
+  
+    {
+      "title"    : "How to run 42.2 km during Corona times.",
       "category" : "",
       "tags"     : "JavaScript, Nodejs, Web Development",
-      "url"      : "/seduerr91/blog/what-the-heck-is-a-callback",
-      "date"     : "2018-12-01 00:00:00 +0100"
+      "url"      : "/seduerr91/blog/isolation-marathon",
+      "date"     : "2020-04-17 00:00:00 +0200"
     } ,
   
     {
-      "title"    : "4 Lessons After 11 Years in Silicon Valley",
+      "title"    : "Be in Peace with Youself.",
       "category" : "",
       "tags"     : "",
-      "url"      : "/seduerr91/blog/four-lessons-after-eleven-years-in-silicon-valley",
-      "date"     : "2018-05-09 00:00:00 +0200"
+      "url"      : "/seduerr91/blog/be-in-peace",
+      "date"     : "2020-04-16 00:00:00 +0200"
     } ,
   
     {
-      "title"    : "GitHub Flow",
+      "title"    : "C-Level Manager",
       "category" : "",
-      "tags"     : "GitHub, Workflow",
-      "url"      : "/seduerr91/blog/github-flow",
-      "date"     : "2017-01-01 00:00:00 +0100"
-    } ,
-  
-    {
-      "title"    : "A better Hello World",
-      "category" : "",
-      "tags"     : "Software Development",
-      "url"      : "/seduerr91/blog/a-better-hello-world",
-      "date"     : "2016-07-23 00:00:00 +0200"
-    } ,
-  
-    {
-      "title"    : "Do not go gentle into that good night",
-      "category" : "",
-      "tags"     : "Poetry",
-      "url"      : "/seduerr91/blog/do-not-go-gentle-into-that-good-night",
-      "date"     : "2016-04-17 00:00:00 +0200"
-    } ,
-  
-    {
-      "title"    : "What is version control?",
-      "category" : "",
-      "tags"     : "Version Control",
-      "url"      : "/seduerr91/blog/what-is-version-control",
-      "date"     : "2016-02-09 00:00:00 +0100"
-    } ,
-  
-    {
-      "title"    : "How to undo your git failure?",
-      "category" : "",
-      "tags"     : "External Post, Git",
-      "url"      : "https://blog.usejournal.com/how-to-undo-your-git-failure-b76e31ecac74",
-      "date"     : "2015-09-25 00:00:00 +0200"
+      "tags"     : "Professional, Management",
+      "url"      : "/seduerr91/blog/c-level-manager",
+      "date"     : "2020-04-15 00:00:00 +0200"
     } 
   
 ]

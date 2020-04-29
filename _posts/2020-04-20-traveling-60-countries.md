@@ -1,6 +1,6 @@
 ---
-title: How to undo your git failure?
-tags: [External Post, Git]
+title: How can you travel up to 60 countries in 5 years
+tags: [Leisure, Traveling]
 style: fill
 color: warning
 description: Using `git reflog` and `git reset` to save your code.

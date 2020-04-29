@@ -1,6 +1,6 @@
 ---
-title: Learn React.js in 5 minutes
-tags: [React, JavaScript, Web Development]
+title: Six continents in 2018
+tags: [Leisure, Traveling]
 style: border
 color: primary
 description: A quick introduction to the popular JavaScript library.
@@ -63,7 +63,7 @@ To get our tiny application to render on the screen we also have to use `ReactDO
 
 ```javascript
 ReactDOM.render(
-    <Hello />, 
+    <Hello />,
     document.getElementById("root")
 );
 ```
