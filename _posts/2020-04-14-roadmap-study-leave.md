@@ -1,5 +1,5 @@
 ---
-title: C-Level Manager
+title: A Roadmap for a Study Leave
 tags: [Professional, Management]
 style: fill
 color: primary
