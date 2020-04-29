@@ -1,7 +1,11 @@
-- name: Adobe Photoshop
+- name: Sketch
   percentage: 95
   color: info
 
-- name: Adobe Illustrator
-  percentage: 90
+- name: Powerpoint
+  percentage: 99
   color: success
+
+- name: Excel
+  percentage: 99
+  color: warning
