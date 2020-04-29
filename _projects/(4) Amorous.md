@@ -1,7 +1,7 @@
 ---
-name: Amorous.me
+name: amorous.me
 tools: [Python, FastAI, Pytorch]
-image:
+image: https://i.imgur.com/7jkLBLp.jpg
 description: Generative romantic text tool.
-external_url: https://www.amorous.me
+external_url: https://amorous-me.github.io/
 ---
