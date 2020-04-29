@@ -2,8 +2,8 @@
 source              : ../
 collections_dir     : docs
 data_dir            : docs/_data
-baseurl             : "/portfolYOU-test"
-repository          : YoussefRaafatNasry/portfolYOU
+baseurl             : "/seduerr"
+repository          : seduerr91/seduerr91
 
 
 ### Navbar Settings ###
@@ -16,9 +16,9 @@ nav_exclude:
 
 ### Author Info ###
 author:
-  name              : YRN
-  image             : https://avatars2.githubusercontent.com/u/41103290
-  github            : YoussefRaafatNasry
+  name              : Sebastian
+  image             : https://avatars1.githubusercontent.com/u/15314980?s=400&u=9c551b66c7b179bac9e55041d24ea61fed501bd3&v=4
+  github            : seduerr91
 
 
 ### Posts ###
