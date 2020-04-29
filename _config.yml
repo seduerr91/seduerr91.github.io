@@ -1,0 +1,80 @@
+### Site Settings ###
+title               : duerr.se
+description         : >-
+                      "I turn coffee :coffee: into code,
+                      run every day
+                      and enjoy my life a lot."
+baseurl             : "/seduerr91"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : seduerr91/seduerr91              # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : YoussefRaafatNasry/portfolYOU
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+
+
+### Author Info ###
+author:
+  name              : Sebastian Duerr
+  image             : https://i.imgur.com/r0yP47U.png
+#  behance           : your_username
+# dribbble          : your_username
+  email             : duerr.sebastian@gmail.com
+  facebook          : seduerr
+  github            : seduerr91
+# gitlab            : your_username
+  instagram         : durrsebastian
+  kaggle            : sebastian91
+  linkedin          : sebastianduerr
+#  medium            : your_username
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+  twitter           : duerrseb
+# vimeo             : your_username
+# youtube           : your_channel_name
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+### Disqus ###
+disqus: your-short-name-disqus                          # Your website Shortname on disqus
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false                                   # Set to true to enable disqus comments
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
