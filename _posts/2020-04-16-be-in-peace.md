@@ -1,6 +1,6 @@
 ---
-title: 4 Lessons After 11 Years in Silicon Valley
-tags: 
+title: Be in Peace with Youself.
+tags:
 style: fill
 color: success
 description: On the realities of opportunity, success, reputation, and relationships in tech.
