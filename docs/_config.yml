@@ -16,11 +16,11 @@ plugins:
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
+  - documentation/partials/**                           # For Documentation Only
   - pages/tags.html
   - pages/404.html
   - pages/index.md
-  - documentation/partials/**                           # For Documentation Only
-
+  
 
 ### Author Info ###
 author:
