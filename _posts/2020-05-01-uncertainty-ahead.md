@@ -9,3 +9,5 @@ description: I will leave my hometown for the last two years behind. Equipped wi
 ## Leaving home
 
 Good-bye.
+
+{% include elements/figure.html image="https://i.imgur.com/aWFBcSu.jpg" caption="Vienna" %}
