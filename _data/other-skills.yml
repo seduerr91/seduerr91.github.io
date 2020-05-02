@@ -1,11 +1,11 @@
-- name: Sketch
-  percentage: 95
+- name: Management
+  percentage: 100
   color: info
 
-- name: Powerpoint
-  percentage: 99
+- name: Teaching
+  percentage: 95
   color: success
 
-- name: Excel
-  percentage: 99
+- name: Research
+  percentage: 90
   color: warning

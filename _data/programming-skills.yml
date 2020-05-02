@@ -3,9 +3,9 @@
   color: danger
 
 - name: Jekyll
-  percentage: 80
+  percentage: 95
   color: info
 
-- name: HTML
-  percentage: 85
+- name: Excel
+  percentage: 100
   color: dark
