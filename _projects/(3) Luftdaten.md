@@ -1,7 +1,7 @@
 ---
 name: Luftdaten.at
-tools: [Node JS, JavaScript, HTML, CSS]
+tools: [Python, IoT]
 image:
-description: Citizen science project to measure air quality in Vienna!
+description: Citizen science project to measure air quality in Austria.
 external_url: https://www.luftdaten.at
 ---
