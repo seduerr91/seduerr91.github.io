@@ -79,3 +79,5 @@ Leisure: Had an amazing week with G. She is so adorable.
 
 #### Resources: 
 [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+<script id="dsq-count-scr" src="//duerr.disqus.com/count.js" async></script>
