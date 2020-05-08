@@ -5,10 +5,10 @@ style: fill
 color: primary
 description: How to find your calling to carve out a strategy for a one year study leave.
 ---
-#### Side note
+##### Side note
 As a strategy and motivation consultant, feel free to contact me if you want to go through your own strategy workshop to find your true calling.
 
-## Introduction: Study leaves in Austria
+### Introduction: Study leaves in Austria
 
 Special perk: After having been working for 52 weeks within the last 24 months, you automatically qualify to take a study leave "Bildungskarenz" in the country of Austria. 
 
@@ -27,7 +27,7 @@ Being equipped with basic financial resources, you ask yourself next:
 
 These are not easy questions but with the help of some guidance, and my skills in project planning, I carved out a roadmap that I deem necessary. In this brief post, I will highlight **how I arrived at a strategy**.
 
-## Getting inspiration
+### Getting inspiration
 
 How do you start with this? There are truly some very inspirational thinkers out there that raise certainly the right questions you should consider. My favorite motivation videos these days:
 
@@ -35,7 +35,7 @@ How do you start with this? There are truly some very inspirational thinkers out
 * [Adam Teddy talks about quarterlife crises](https://www.youtube.com/watch?v=ddek3gQVt9Y)
 * [Beautiful Hawaii narration will make you wanna travel there](https://youtu.be/L3V7LKYPIUQ).
 
-## Finding your interest
+### Finding your interest
 
 So ask yourself: *What do you like? What makes you tick?* I thought of my recent years and about what I enjoyed the most. 
 
@@ -47,7 +47,7 @@ For that reason, I looked into Python - a general purpose language that allows y
 
 After that, I coincidentally read an article in the economist about fastai and I was so interested in what that was. Fast.ai is an amazing introduction to state of the art deep architectures (thank you Jeremy Howard et al. - your work is so **amazing**). Specifically, the approach of how you are getting introduced to the concepts with Jeremy constantly anticipating what the ardent scholar may not be aware of, and thus proactively raising questions and answering them is very helpful. Find it here: [Fast.ai](www.fast.ai).
 
-## Setting up a strategy - where do you want to be and what do you want to do in 2025?
+### Setting up a strategy - where do you want to be and what do you want to do in 2025?
 
 ![Strategy](https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2888&q=80)
 
@@ -59,13 +59,12 @@ Listing my interests are I went to the practices that I could learn at the bank.
 
 3. Derive strong visions from that strategy that will allow you to create work packages for operationalization. Next week, I will highlight how to do that.
 
-## Conclusion
+### Conclusion
 Planning a full year and setting up a strategy can be really easy if you have a recipe for it. Additionally, lisitening to above believers and finding your own strategy is trully an amazing journey to yourself. Give it a try, and please feel free to leave a comment. 
 
 Thank you for your interest.
 
-## Overview
-### In the next weeks publication you'll find: 
+#### Upcoming next week 
 - Deducting a vision for a year: creating a temporal, spatial and content-wise roadmap.
 - The hint: Commit publicly, love yourself, make the ask.
 - Following up on your milestones;  making sure to succeed; bet buddies as well as external commitment (this blog, tweet every day).
@@ -73,13 +72,13 @@ Thank you for your interest.
 --- 
 
 ### Results of this week:
-* MIT project: set up sounds for the experiment, worked on plantios.github.io, had onboarding call with Josepine my project colleague, launched Google Colab infrastucture.
-*DL-Scientist: Started with skill track [Image Processing](https://learn.datacamp.com/skill-tracks/image-processing), started reading through "Website Scraping with Python"; not entirely satisfied > going to work on Friday afternoon, and Sunday.
-*Startup: Found amazing open source project going into my direction. Started with understanding it [here](www.writeup.ai).
-*Public Voice: worked on this blog post, committed to github every day, tweeted, plantios.net.
-*Leisure: Had an amazing week with G. She is so adorable.
+- MIT project: set up sounds for the experiment, worked on plantios.github.io, had onboarding call with Josepine my project colleague, launched Google Colab infrastucture.
+- DL-Scientist: Started with skill track [Image Processing](https://learn.datacamp.com/skill-tracks/image-processing), started reading through "Website Scraping with Python"; not entirely satisfied > going to work on Friday afternoon, and Sunday.
+- Startup: Found amazing open source project going into my direction. Started with understanding it [here](www.writeup.ai).
+- Public Voice: worked on this blog post, committed to github every day, tweeted, plantios.net.
+- Leisure: Had an amazing week with G. She is so adorable.
 
-*Extracurricular*: helped Ted with the webpage of covidvoices.
+- *Extracurricular*: helped Ted with the webpage of covidvoices.
 
 #### Resources: 
 [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
