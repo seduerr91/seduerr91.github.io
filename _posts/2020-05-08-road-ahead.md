@@ -1,5 +1,5 @@
 ---
-title: The Road Ahead - Preparing a Study Roadmap
+title: The Road Ahead - Preparing a Strategy
 tags: [Professional, Management]
 style: fill
 color: primary
