@@ -6,7 +6,7 @@ color: primary
 description: How to find your calling to carve out a strategy for a one year study leave.
 ---
 
-### Results of this week:
+### Results of the week
 - MIT project: set up sounds for the experiment, worked on plantios.github.io, had onboarding call with Josepine my project colleague, launched Google Colab infrastucture.
 - DL-Scientist: Started with skill track [Image Processing](https://learn.datacamp.com/skill-tracks/image-processing), started reading through "Website Scraping with Python"; not entirely satisfied > going to work on Friday afternoon, and Sunday.
 - Startup: Found amazing open source project going into my direction. Started with understanding it [here](www.writeup.ai).
