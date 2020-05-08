@@ -1,7 +1,7 @@
 ---
 name: Study Leave aka Bildungskarenz
 tools: [Python, Tensorflow, PyTorch]
-image: https://i.imgur.com/5x7k3Ub.jpg
+image: https://i.imgur.com/XQI4dXz.jpg
 description: I publish my major achievements per week here.
 ---
 
