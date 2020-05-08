@@ -84,7 +84,7 @@ Thank you for your interest.
 ##### Side note
 As a strategy and motivation consultant, feel free to contact me if you want to go through your own strategy workshop to find your true calling.
 
-#### Resources: 
+#### Resources
 [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 <script id="dsq-count-scr" src="//duerr.disqus.com/count.js" async></script>
