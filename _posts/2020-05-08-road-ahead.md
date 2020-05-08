@@ -5,8 +5,16 @@ style: fill
 color: primary
 description: How to find your calling to carve out a strategy for a one year study leave.
 ---
-##### Side note
-As a strategy and motivation consultant, feel free to contact me if you want to go through your own strategy workshop to find your true calling.
+
+### Results of this week:
+- MIT project: set up sounds for the experiment, worked on plantios.github.io, had onboarding call with Josepine my project colleague, launched Google Colab infrastucture.
+- DL-Scientist: Started with skill track [Image Processing](https://learn.datacamp.com/skill-tracks/image-processing), started reading through "Website Scraping with Python"; not entirely satisfied > going to work on Friday afternoon, and Sunday.
+- Startup: Found amazing open source project going into my direction. Started with understanding it [here](www.writeup.ai).
+- Public Voice: worked on this blog post, committed to github every day, tweeted, plantios.net.
+- Leisure: Had an amazing week with G. She is so adorable.
+
+- *Extracurricular*: helped Ted with the webpage of covidvoices.
+---
 
 ### Introduction: Study leaves in Austria
 
@@ -70,15 +78,8 @@ Thank you for your interest.
 - Following up on your milestones;  making sure to succeed; bet buddies as well as external commitment (this blog, tweet every day).
 
 --- 
-
-### Results of this week:
-- MIT project: set up sounds for the experiment, worked on plantios.github.io, had onboarding call with Josepine my project colleague, launched Google Colab infrastucture.
-- DL-Scientist: Started with skill track [Image Processing](https://learn.datacamp.com/skill-tracks/image-processing), started reading through "Website Scraping with Python"; not entirely satisfied > going to work on Friday afternoon, and Sunday.
-- Startup: Found amazing open source project going into my direction. Started with understanding it [here](www.writeup.ai).
-- Public Voice: worked on this blog post, committed to github every day, tweeted, plantios.net.
-- Leisure: Had an amazing week with G. She is so adorable.
-
-- *Extracurricular*: helped Ted with the webpage of covidvoices.
+##### Side note
+As a strategy and motivation consultant, feel free to contact me if you want to go through your own strategy workshop to find your true calling.
 
 #### Resources: 
 [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
