@@ -31,13 +31,13 @@ Last year in August, I asked for my Bildungskarenz. My employer was not entertai
 Being equipped with basic financial resources, you ask yourself next: 
 * How do you operationalize a year of time? 
 * What do you do in order to make sure not to waste it? 
-* What do you want to do in life? What is your inspirations? 
+* What do you want to do in life? What is your inspiration? 
 
 These are not easy questions but with the help of some guidance, and my skills in project planning, I carved out a roadmap that I deem necessary. In this brief post, I will highlight **how I arrived at a strategy**.
 
 ### Getting inspiration
 
-How do you start with this? There are truly some very inspirational thinkers out there that raise certainly the right questions you should consider. My favorite motivation videos these days:
+How do you start with this? There are some very inspirational thinkers out there that raise certainly the right questions you should consider. My favorite motivation videos these days are:
 
 * [Alan Watts asks "What do you desire?"](https://vimeo.com/60087670)
 * [Adam Teddy talks about quarterlife crises](https://www.youtube.com/watch?v=ddek3gQVt9Y)
@@ -47,28 +47,31 @@ How do you start with this? There are truly some very inspirational thinkers out
 
 So ask yourself: *What do you like? What makes you tick?* I thought of my recent years and about what I enjoyed the most. 
 
-Quite quickly it turned out that *traveling*, *pyhiscal excerise*, and *diving into new cultures* satisfy and motivate me inside out. Also I like riddles, technologies, and not owning a lot of material items but *collecting experiences*. 
+Quite quickly it turned out that *traveling*, *pyhsical excerise*, and *diving into new cultures* satisfy and motivate me inside out. Also, I like riddles, technologies, and not owning a lot of material items but *collecting experiences*. 
 
-Additionally, in my work role I realized that it is nice to manage people but I felt the urge to **craft tangible results**. Being a senior project managser is like aligning with people what they have to deliver, to coordinate them which is honestly a very important role (usually I was coordinating like a hundred people within this cooperation including three feature teams) but at the end of the day they do the work. Hence, I feel this desire to start something on my own. **To craft something**. Some cook, some do woodworks, I wanted to craft code - because I can take it eveywhere and it does not have weight. 
+Additionally, in my work role I realized that it is nice to manage people but I felt the urge to **craft tangible results**. Being a senior project manager often is aligning with people what they have to deliver, to coordinate them which is honestly a very important role (usually I was coordinating like a hundred people within this cooperation, including three feature teams) but at the end of the day: they do the work. Hence, I felt this desire to start something on my own. **To craft something**. Some cook, some do woodworks, I wanted to craft code - because I can take it eveywhere and it does not have weight. 
 
-For that reason, I looked into Python - a general purpose language that allows you to do everything - on a platform called Teamtreehouse (it is nicely done, thanks guys!). After having successfully worked through all Python courses (it felt so nice, *the feeling of flow* was always there like an addiction), I felt a calling to look into data science, and I wanted to learn about the intricacies of neural networks and to understand this supposedly complex concept "artifical intelligence". Turns out, it is not so complicated but rather just some math. However, a good introduction to how neural nets work is certainly [Neural Networks](https://youtu.be/aircAruvnKk). 
+For that reason, I looked into Python - a general purpose language that allows you to do everything - on a platform called Teamtreehouse (it is nicely done, thanks guys!). After having successfully worked through all Python courses (it felt so nice, *the feeling of flow* was always there like an addiction), I felt a calling to look into data science, and I wanted to learn about the intricacies of neural networks and to understand this supposedly complex concept "artifical intelligence". Turns out, it is not so complicated but rather just some math. However, a good introduction to how neural nets work is certainly useful. Specifically, this provided to be a good intro into [Neural Networks](https://youtu.be/aircAruvnKk). 
 
-After that, I coincidentally read an article in the economist about fastai and I was so interested in what that was. Fast.ai is an amazing introduction to state of the art deep architectures (thank you Jeremy Howard et al. - your work is so **amazing**). Specifically, the approach of how you are getting introduced to the concepts with Jeremy constantly anticipating what the ardent scholar may not be aware of, and thus proactively raising questions and answering them is very helpful. Find it here: [Fast.ai](www.fast.ai).
+After knowing the concepts of coding, I coincidentally read an article in the Economist about fast.ai and I was hooked. **Fast.ai** is an amazing introduction to state-of-the-art deep learning architectures (thank you Jeremy Howard et al. - your work is so **amazing**). Specifically, the approach of how one is being introduced to the concepts with Jeremy constantly anticipating what the ardent scholar may not be aware of, and, thus, proactively raising questions and answering them is very helpful. Find it here: [Fast.ai](www.fast.ai).
 
-### Setting up a strategy - where do you want to be and what do you want to do in 2025?
+Know I knew what I wanted. Let us set a strategy next!
+
+### Setting up a strategy - Where do you want to be and what do you want to do in 2025?
 
 ![Strategy](https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2888&q=80)
 
-Listing my interests are I went to the practices that I could learn at the bank. During the last year or so, we went through none less than three strategy workshops (organization, innovation, and project). It felt just natural to apply this to myself. So how do you arrive at a stategy? It is very simple and follows three steps.
+After listing my interests, I went to the reflection practices that I learnt at my former job. During the last year or so, we went through none less than three comprehensive strategy workshops (organization, innovation, and project). It felt just natural to apply this to myself. So, how do you arrive at a stategy?
 
-1. Set a reasonable year in the future, and do funny excerises like writing a newspaper article where you write down what you want to read in the future. Make sure it kind of is challenging enough but also exciting to follow. As this was for my life, I decided to write five aspects that I want to have written in my mental CV / LinkedIn profile later in life. 
+1. Set a reasonable year in the future, and do funny excerises like writing a newspaper article in which you write down what you want to read in the future. Don't forget drawing a picture ;). Make sure, it is challenging enough but also exciting to follow. As this was for my life, I decided to write five aspects that I want to read in my future LinkedIn profile. 
 
-2. Make sure these aspects are achievable, kind of concrete, and will stimulate you. For instance, one of my visions is that I want to have lived in seven different countries for minimum four consecutive months until 2025 (and now I am having four in my list: Germany, Austria, Hong Kong and Hungary).
+2. Make sure these aspects are achievable, kind of specified, and that they will stimulate you. For instance, one of my visions is that I want to have lived in seven different countries for minimum four consecutive months until 2025 (and now I am having four in my list: Germany, Hong Kong, Austria and Hungary).
 
 3. Derive strong visions from that strategy that will allow you to create work packages for operationalization. Next week, I will highlight how to do that.
 
 ### Conclusion
-Planning a full year and setting up a strategy can be really easy if you have a recipe for it. Additionally, lisitening to above believers and finding your own strategy is trully an amazing journey to yourself. Give it a try, and please feel free to leave a comment. 
+
+Planning a full year and setting up a strategy can be really interesting if you have a recipe for it. Additionally, lisitening and consulting believers and finding your own strategy is trully an amazing journey to yourself. Give it a try, and please feel free to leave a comment. 
 
 Thank you for your interest.
 
