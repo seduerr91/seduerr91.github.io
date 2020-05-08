@@ -12,8 +12,8 @@ description: How to find your calling to carve out a strategy for a one year stu
 - Startup: Found amazing open source project going into my direction. Started with understanding it [here](www.writeup.ai).
 - Public Voice: worked on this blog post, committed to github every day, tweeted, plantios.net.
 - Leisure: Had an amazing week with G. She is so adorable.
+- Extracurricular: helped Ted with the webpage of covidvoices.
 
-- *Extracurricular*: helped Ted with the webpage of covidvoices.
 ---
 
 ### Introduction: Study leaves in Austria
