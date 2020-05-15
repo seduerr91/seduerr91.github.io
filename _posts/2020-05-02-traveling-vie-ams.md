@@ -2,7 +2,7 @@
 title: Traveling from Austria to Amsterdam during Corona
 tags: [Travel]
 style: border
-color: warning
+color: danger
 description: Day of traveling towards Ireland.
 ---
 
