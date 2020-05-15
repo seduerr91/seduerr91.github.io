@@ -21,7 +21,6 @@ description: I publish my major achievements per week here.
 - Startup: Further looked into writeup.ai. Understanding the infrastructure with technologies like concurrency, web sockets, APIs, Django Channels, etc. Will need to get it live on a docker container to see it fail :smile: and improve on it. Maybe consider looking in a book. However, I had to move to slots to the future (probably the weekend, because of the MIT deadline). Further postponing after the deadline of May 21 considerable.
 - Public Voice: worked on the roadmap blog post which was concluded from strategy, committed to GitHub every day, tweeted, published plantios.net. Works gut.
 - Leisure: Another fantastic week in this country. I loved our date night. Started reading Lord of the flies. Did workouts every weekday, and yoga every day. Cooked a lot.
-- Extracurricular: rather fewer contributions to Ted's project this week.
 
 
 
