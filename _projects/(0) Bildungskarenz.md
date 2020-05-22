@@ -22,11 +22,13 @@ description: I publish my major achievements per week here.
 - Public Voice: worked on the roadmap blog post which was concluded from strategy, committed to GitHub every day, tweeted, published plantios.net. Works gut.
 - Leisure: Another fantastic week in this country. I loved our date night. Started reading Lord of the flies. Did workouts every weekday, and yoga every day. Cooked a lot.
 
-
-
 ### Results of week May 18-22
 
-tbd
+- MIT project: Got the infrastructure live which was a pain in the ass. However, delivered on time. Peter was very satisfied. Read about it here [Plant Identifier](https://plantions.github.io/project/2020/05/21/infrastructure.html).
+- DL-Scientist: Worked on TimeSeries skill, and finished half a certificate but find constant difficulties of continuing to do these exercises. Will need special review to get more productive.
+- Startup: Had to scale down because of MIT deadline but found an interesting book on my project. Hence, I will finish this book this week, and I commit to spend EUR 300 on Google Cloud Platform to get my product started next week.
+- Public Voice: Blog article is written on coding, yet I want to take time to improve.
+- Leisure: Difficult week for this angel but did my best to help. I followed up on my HIIT workouts and Yoga thoroughly, cooked nicely, and enjoyed the end of my quarantine by running. Can't complain from my side.
 
 ### Results of week May 25-29
 
