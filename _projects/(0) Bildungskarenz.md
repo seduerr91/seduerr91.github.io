@@ -40,9 +40,9 @@ description: I publish my major achievements per week here.
 
 ### Review of Month 1 of Bildungskarenz
 
-- Projects: On track but I find it sometimes difficult to switch from practice (active coding) into studying (following a datacamp session or a book).
+- Projects: On track but I find it sometimes difficult to switch from practice (active coding) into studying (e.g., following a Datacamp session or a book). Remedy: Start with basics via 'Fluent Python'.
 - Interesting findings: Ireland has surprisingly nice weather. Working totally remotely works fine, and your longterm companions are just a call away. Lunch calls work perfectly fine.
-- Roadmap alterations: Geographically, I move to the US is rather possible from the beginning of September 2020. Aside, I enjoy my time in Ireland a lot.
+- Roadmap alterations: Geographically, I move to the US is rather possible from the beginning of September 2020. Aside, I enjoy my time in Ireland a lot. Get away from Datacamp and high-level books and more into Medium blogs, Conference Proceedings and Video blogs on NLP specifically.
 - What I liked: Being with G., virtually meeting my friends also long-term ones (e.g., Garima, Karo), Irish cheddar and cooking a lot, calls with experts in the field.
 - What I did not like: Sometimes feeling a bit dependent on G because I do not know anyone here; Reading 'lord of the flies' > stop it, u German. You do not have to finish it.
 - Optimization potential: Social hacking interventions started (relocation, local Rotaract club, join Meetups), focus more on fields you want to grow in (like deep learning) rather than ML through Datacamp. Follow plan by experts (Shouvik & Jude) - which will be incorporated in new roadmap for Month 2.
