@@ -39,9 +39,9 @@ description: I publish my major achievements per week here.
 - Leisure: Enjoyed beautiful weather in Dublin this week. Live music twice. Ran 30+ km in last 7 days, and will go for an extended run tonight (25km+); followed up on my HIIT workouts and Yoga thoroughly, cooked and prepared breakfast for G.
 
 ### Review of Month 1 of Bildungskarenz
-- Projects: On track but I find
+- Projects: On track but I find it sometimes difficult to switch from practice (active coding) into studying (following a datacamp session or a book).
 - Interesting findings: Ireland has surprisingly nice weather. Working totally remotely works fine, and your longterm companions are just a call away. Lunch calls work perfectly fine.
 - Roadmap alterations: Geographically, I move to the US is rather possible from the beginning of September 2020. Aside, I enjoy my time in Ireland a lot.
-- What I liked: Being with G., virtually meeting my friends also long-term ones (e.g., Garima from Singapore), Irish cheddar and cooking a lot, calls with Experts in the field.
-- What I did not like: Sometimes feeling a bit dependent on G because I do not know anyone here; Reading 'lord of the flies' > stop it u German. You do not have to finish it.
+- What I liked: Being with G., virtually meeting my friends also long-term ones (e.g., Garima, Karo), Irish cheddar and cooking a lot, calls with experts in the field.
+- What I did not like: Sometimes feeling a bit dependent on G because I do not know anyone here; Reading 'lord of the flies' > stop it, u German. You do not have to finish it.
 - Optimization potential: Social hacking interventions started (relocation, local Rotaract club, join Meetups), focus more on fields you want to grow in (like deep learning) rather than ML through Datacamp.
