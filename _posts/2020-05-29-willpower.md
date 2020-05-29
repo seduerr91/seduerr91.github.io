@@ -45,7 +45,7 @@ Please find such a list hereafter:
 
 ![Imgur](https://i.imgur.com/pJpSiXV.png)
 
-### Become Happy
+### Become Happy - Choose the Banana more Often
 Imagine your vision of what you want to be in a year is to lose 5 kg, learn a new language, and get promoted at work.
 You can achieve this by setting up a routine schedule as presented above, run 7km, eat fast food only once a week, sleep routinely and deeply, and thus make all the little decisions that guide you there! Try it out and let me know how it went for you.
 
