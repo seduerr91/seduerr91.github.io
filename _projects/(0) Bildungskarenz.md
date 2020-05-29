@@ -32,4 +32,16 @@ description: I publish my major achievements per week here.
 
 ### Results of week May 25-29
 
-tbd
+- MIT project: Video (regions of interest) and audio (MFCCs) extraction of relevant features functioning. Using Pandas DataFrames for that. Next step is trying different hyper params and correlation analysis. Worked on book Fluent Python to become a Python expert. Very amazing ground work. Will continue summarizing it.
+- DL-Scientist: TimeSeries certificate earned. Won't continue with DataCamp or only interesting projects as it is too highlevel by now.
+- Startup: Got project running with Microservices by external dude. Investment of 300 EUR not reasonable at this moment. Reading into relevant books on concurrency, django projects, websockets, redis in memory databases, and JavaScript. Considering doing a JavaScript training.
+- Public Voice: Blog article on decision-making and willpower. Consider taking a blog afternoon, next week.
+- Leisure: Enjoyed beautiful weather in Dublin this week. Live music twice. Ran 30+ km in last 7 days, and will go for an extended run tonight (25km+); followed up on my HIIT workouts and Yoga thoroughly, cooked and prepared breakfast for G.
+
+### Review of Month 1 of Bildungskarenz
+- Projects: On track but I find
+- Interesting findings: Ireland has surprisingly nice weather. Working totally remotely works fine, and your longterm companions are just a call away. Lunch calls work perfectly fine.
+- Roadmap alterations: Geographically, I move to the US is rather possible from the beginning of September 2020. Aside, I enjoy my time in Ireland a lot.
+- What I liked: Being with G., virtually meeting my friends also long-term ones (e.g., Garima from Singapore), Irish cheddar and cooking a lot, calls with Experts in the field.
+- What I did not like: Sometimes feeling a bit dependent on G because I do not know anyone here.
+- Optimization potential: Social hacking interventions started (relocation, local Rotaract club, join Meetups), focus more on fields you want to grow in (like deep learning) rather than ML through Datacamp.
