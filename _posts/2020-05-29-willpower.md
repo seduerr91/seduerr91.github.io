@@ -1,5 +1,5 @@
 ---
-title: Making the Right Decisions.
+title: Making Better Decisions
 tags: [Motivation]
 style: fill
 color: success
