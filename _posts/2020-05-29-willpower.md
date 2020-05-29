@@ -32,7 +32,7 @@ After having stated these benefits of these bubbles that humans should ignite, o
 There is also an answer, and practice to this. In the past, researchers proved that twenty days are usually sufficient time to build up routines, and maintaining them like: If you manage to keep a practice for twenty days, you will be able to keep it forever. Usually this concept proves very useful if you are trying to learn something new, too. The only difficulty arises from setting up such a schedule. Normally, I set up an Excel table that allows me to share it with friends that hold me accountable. This document is structured with boxes to tick each day, to ensure I follow strictly. To ensuring this strict following, I usually integrate a penalty as well that would be paid if I miss out on one of my challenges.
 Please find such a list hereafter:
 
-![Imgur](https://i.imgur.com/k2hMjJA.png)
+![Imgur](https://i.imgur.com/pJpSiXV.png)
 
 ### Become Happy
 Imagine your vision of what you want to be in a year is to lose 5 kg, learn a new language, and get promoted at work.
