@@ -44,4 +44,4 @@ description: I publish my major achievements per week here.
 - Roadmap alterations: Geographically, I move to the US is rather possible from the beginning of September 2020. Aside, I enjoy my time in Ireland a lot.
 - What I liked: Being with G., virtually meeting my friends also long-term ones (e.g., Garima, Karo), Irish cheddar and cooking a lot, calls with experts in the field.
 - What I did not like: Sometimes feeling a bit dependent on G because I do not know anyone here; Reading 'lord of the flies' > stop it, u German. You do not have to finish it.
-- Optimization potential: Social hacking interventions started (relocation, local Rotaract club, join Meetups), focus more on fields you want to grow in (like deep learning) rather than ML through Datacamp.
+- Optimization potential: Social hacking interventions started (relocation, local Rotaract club, join Meetups), focus more on fields you want to grow in (like deep learning) rather than ML through Datacamp. Follow plan by experts (Shouvik & Jude) - which will be incorporated in new roadmap for Month 2.
