@@ -1,9 +1,8 @@
 ### Site Settings ###
 title               : duerr.se
 description         : >-
-                      I turn coffee :coffee: into code,
-                      run every day
-                      and enjoy my life a lot.
+                      I turn :coffee: into :computer:, love :running:
+                      and enjoy :sleeping:.
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : seduerr91/seduerr91              # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
