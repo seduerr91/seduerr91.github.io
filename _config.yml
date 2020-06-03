@@ -77,3 +77,4 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+  - datenschutz.md
