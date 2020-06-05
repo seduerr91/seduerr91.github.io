@@ -5,7 +5,19 @@ image: https://i.imgur.com/XQI4dXz.jpg
 description: I publish my major achievements per week here.
 ---
 
-## Bildungskarenz Progress Overview
+# Bildungskarenz Progress Overview
+
+## June 2020
+
+### Results of week June 1-5
+
+- MIT project: Another presentation with Peter was due. He mentioned twice that there was quite a progress on the project. Aside, he wanted to have access to the code and to try it himself. That makes me confident that I am on a good way. He is such a strong and inspiring mentor.
+- DL-Scientist: I learnt a lot from the MIT project this week on data science topics specifically when it comes to dealing with messy data. Next week, I will focus more on the fundamentals of Python again.
+- Startup: I hosted my first Websocket server and I will continue with this project next Monday. Also, I will become an e-resident of Estonia.
+- Public Voice: Blog article on traveling, but also I published the results from talking to interview experts in the field of Data Science, Machine Learning and Deep Learning.
+- Leisure: Enjoyed beautiful long weekend in Dublin and found friends from Rotaract and have a super funny flat mate now. I am arriving in this country. The week with G. was hard for her but we made the best out of it. I like being with her a lot.
+
+## May 2020
 
 ### Results of week May 4-8
 - MIT project: set up sounds for the experiment, worked on plantios.github.io, had onboarding call with Josepine my project colleague, launched Google Colab infrastucture.
