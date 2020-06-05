@@ -5,7 +5,7 @@ style: fill
 color: warning
 description: Read how to travel to 60 countries in 5 years.
 ---
-Before 2013, I have been to five different countries. Since then, I have been to sixty-two. Traveling changed my life. Entirely. 
+Before 2013, I have been to five different countries. Since then, I have been to sixty-two. Traveling changed my life. Entirely.
 
 __'It is not that we have a short time to live but that we waste most of it. Life is long enough, and it has been given to us in generous measure for accomplishing the greatest things.'__
 *Seneca, the Younger.*
@@ -20,9 +20,9 @@ Ever since I realized that all my prejudice were to an extent pointless, traveli
 ![Traveling](https://images.unsplash.com/photo-1531219432768-9f540ce91ef3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80)
 *Photo by Ben White on Unsplash*
 
-### Overcoming Travel Predjudices 
+### Overcoming Travel Predjudices
 
-Hereafter, I show how I usually come up with affordable trips. The cost of traveling is usually composed of traveling to the location, paying for accommodation, and the cost of living. 
+Hereafter, I show how I usually come up with affordable trips. The cost of traveling is usually composed of traveling to the location, paying for accommodation, and the cost of living.
 - Traveling: Flight prices within Europe in pre-Corona times were super cheap. If you compare flights, on web services like 'Hopper', 'Skyscanner', or 'Google Flights', you will be able to find or subscribe to very economic deals.
 - Accommodation: Hostels are just a great way to get in touch with people, and to find friends. While sharing rooms may not be everyone's priority AirBnB offers just super affordable accommodation and unique experiences in remote areas.
 - Cost of Living: With a student ID, the recommendation of friends, or them navigate you, free walking tours you can find cheap and wonderful attractions, affordable but yummy restaurants, and the best bars (and their happy hour times) easily.
@@ -36,15 +36,15 @@ Hereafter, I show how I usually come up with affordable trips. The cost of trave
 
 Today the world looks different as I see the benefits of getting around:
 - __Unique experiences__: Paragliding over Medellin, swimming with gigantic turtles in the Caribbean, summiting a 4000m mountain in Malaysia, or do a camel ride through the Sahara in south Morocco a few of the memories I made for my lifetime. Whenever something becomes stressful, I just remember myself of these special unique situations that I survived and so the stress is much easier for me to handle.
-- __Self-confidence__: With the exposure to different countries and cultures, you start to learn that you can survive and manage to deal with people and - most importantly - yourself all over the world. It is a boost for your self-confidence because again. 
+- __Self-confidence__: With the exposure to different countries and cultures, you start to learn that you can survive and manage to deal with people and - most importantly - yourself all over the world. It is a boost for your self-confidence because again.
 - __Open mindedness__: Genuinely, with traveling you appreciate diversity, different interests, political opinions, and basic values much more because you get to see them through the eyes and in the environment of a conversation partner. I love to read the Economist and whenever I get to articles about other countries that I have traveled before, I understand much more why people would behave the way they do.
 
-I truly hope you get these benefits for yourself, too! Start squeezing the best out of your life.
+I truly hope you get these benefits for yourself, too! Start squeezing the best out of your life. It may transform you too.
 
 ![Laughing Child](https://images.unsplash.com/photo-1472162072942-cd5147eb3902?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)
 *Photo by Ben White on Unsplash*
 
---- 
+---
 
 List of the 62 countries I have visited (Countries are defined following the American iPhone App 'been'):
 
