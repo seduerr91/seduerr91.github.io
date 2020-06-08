@@ -1,0 +1,51 @@
+[
+  
+    {
+      "title"    : "The Transformative Impact of Traveling",
+      "category" : "",
+      "tags"     : "Motivation",
+      "url"      : "/blog/traveling",
+      "date"     : "2020-06-05 00:00:00 +0100"
+    } ,
+  
+    {
+      "title"    : "Making Better Decisions",
+      "category" : "",
+      "tags"     : "Motivation",
+      "url"      : "/blog/willpower",
+      "date"     : "2020-05-29 00:00:00 +0100"
+    } ,
+  
+    {
+      "title"    : "Notes from Interviews with Industry Experts",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/experts",
+      "date"     : "2020-05-29 00:00:00 +0100"
+    } ,
+  
+    {
+      "title"    : "How Crafting Code Can Change Your Life",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/coding",
+      "date"     : "2020-05-22 00:00:00 +0100"
+    } ,
+  
+    {
+      "title"    : "It is Your Time - Following Your Roadmap",
+      "category" : "",
+      "tags"     : "Coding, Motivation",
+      "url"      : "/blog/roadmap",
+      "date"     : "2020-05-15 00:00:00 +0100"
+    } ,
+  
+    {
+      "title"    : "2025 - Preparing a Strategy",
+      "category" : "",
+      "tags"     : "Personal, Motivation",
+      "url"      : "/blog/strategy",
+      "date"     : "2020-05-08 00:00:00 +0100"
+    } 
+  
+]
