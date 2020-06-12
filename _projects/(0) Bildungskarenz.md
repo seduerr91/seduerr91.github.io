@@ -17,6 +17,14 @@ description: I publish my major achievements per week here.
 - Public Voice: Blog article on traveling, but also I published the results from talking to interview experts in the field of Data Science, Machine Learning and Deep Learning.
 - Leisure: Enjoyed beautiful long weekend in Dublin and found friends from Rotaract and have a super funny flat mate now. I am arriving in this country. The week with G. was hard for her but we made the best out of it. I like being with her a lot.
 
+### Results of week June 8-12
+
+- MIT Project: Worked particularly on data processing and data visualization. I am very happy with what I achieved but it also used a lot of time during this week. Yesterday, I worked until 10pm on it.
+- DL-Scientist: I did work on the Python Fundamentals book on Tuesday evening and Wednesday morning. Progress is there, but a bit slow. However, I am quite busy in any way and can't blame myself.
+- Startup: Finished with the Websocket book (and running it), continued with Django Microservices book.
+- Public Voice: Wrote an extensive blog article on MIT project and its current status.
+- Leisure: Starting to learn Russian. Evgeniya got me in touch with a learning platform. Cooked a lot with my flat mate Peter, worked out a lot with Youtube videos and Karo. Had a double date with Yvette, Geniya, Peter, and me. Also, a crazy Hungarian night last week.
+
 ## May 2020
 
 ### Results of week May 4-8
