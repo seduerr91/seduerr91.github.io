@@ -2,7 +2,7 @@
 title: The Transformative Impact of Traveling
 tags: [Motivation]
 style: fill
-color: warning
+color: secondary
 description: Read how to travel to 60 countries in 5 years.
 ---
 Before 2013, I have been to five different countries. Since then, I have been to sixty-two. Traveling changed my life. Entirely.
