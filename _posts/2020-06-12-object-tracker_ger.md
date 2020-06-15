@@ -38,7 +38,7 @@ Ich hatte nicht erwartet, dass sich Pflanzen anders bewegen, wenn eine Person fr
 
 ### Sound Vorbereitungen
 
-Um neue Videos zu erstellen, mussten wir zuerst positive und negative Stimmen-Audios erstellen. Durch ein :snake: Skript haben wir verschiedene Tondateien zusammengeführt, in welchen auf einen Hörreiz (positive oder negativ) zehn oder sechzig Sekunden Stille folgt, bis der nächste kommt. Die Emotionen (positiv vs. negativ) wurden abgewechselt, um Umgebungsvariablen wie Sonneneinstrahlung, Tageszeit oder Raumtemperatur konstant zu halten.
+Um neue Videos zu erstellen, mussten wir zuerst positive und negative Stimmen-Audios erstellen. Durch ein Python :snake: Skript haben wir verschiedene Tondateien zusammengeführt, in welchen auf einen Hörreiz (positive oder negativ) zehn oder sechzig Sekunden Stille folgt, bis der nächste kommt. Die Emotionen (positiv vs. negativ) wurden abgewechselt, um Umgebungsvariablen wie Sonneneinstrahlung, Tageszeit oder Raumtemperatur konstant zu halten.
 
 Exemplarischer Ausschnitt aus dem [Algorithmus zur Erstellung von Sounddateien] (https://github.com/plantions/creatingEmotionAudios):
 
@@ -55,7 +55,7 @@ kombiniert = wavs[0]
 
 Beim Erstellen dieser Audiodateien lernte ich:
 - Das Zusammenspiel von Sample Rates, die Definition eines Computers für Stille (realtiv umfangreicher Datensatz) und die Komplexität riesiger Data set-Ordnerstrukturen.
-- Wie Schallwellen vom Menschen empfangen werden: Die Art und Weise, wie ein Computer sie nutzt und was wir hören unterscheidet sich dramatisch. Daher verwenden wir das [MFCCs](https://towardsdatascience.com/extract-features-of-music-75a3f9bc265d), um verschiedene menschliche Organe (hauptsächlich das Zusammenspiel von Hals, Kiefer und Zunge) für die Analyse zu simulieren.
+- Wie Schallwellen vom Menschen empfangen werden: Die Art und Weise, wie ein Computer sie nutzt und was wir hören unterscheidet sich dramatisch. Daher verwenden wir das [MFCC](https://towardsdatascience.com/extract-features-of-music-75a3f9bc265d), um verschiedene menschliche Organe (hauptsächlich das Zusammenspiel von Hals, Kiefer und Zunge) für die Analyse zu simulieren.
 - Wir mussten die Sounddateien kurzfristig einer Empfehlung unseres Mentors anpassen und konnten von unserem flexiblen Ansatz zur Erstellung mittels Skript schnell und aufwandsarm reagieren.
 
 ### Video Aufzeichnung
@@ -78,7 +78,9 @@ Im Folgenden wird nun die aktuelle Version des Objekttrackers vorgestellt, mit d
 
 ### Überblick über aktuelles Objekt-Tracker Tool
 
-Das [aktuelle Objektverfolgungstool] (https://github.com/plantions/video-edge-extractor/blob/master/Emotion_Tracker.ipynb) besteht aus fünf Datenverarbeitungsschritten. Diese sind: das Hochladen eines Videos, die Auswahl von Hyperparametern für verschiedene Videos, die Verarbeitung und Darstellung des Videos, die eigentliche Datenanalyse bzw. -manipulation und als Ergebnis eine interaktive Visualisierung der Bewegungen. Im Folgenden wird ein kurzer Überblick gegeben, was in den einzelnen Schritten geschieht und was ich bei der Entwicklung des Tools gelernt habe.
+Das [aktuelle Objektverfolgungstool](https://github.com/plantions/video-edge-extractor/blob/master/Emotion_Tracker.ipynb) besteht aus fünf Datenverarbeitungsschritten. Diese sind:
+
+das Hochladen eines Videos, die Auswahl von Hyperparametern für verschiedene Videos, die Verarbeitung und Darstellung des Videos, die eigentliche Datenanalyse bzw. -manipulation und als Ergebnis eine interaktive Visualisierung der Bewegungen. Im Folgenden wird ein kurzer Überblick gegeben, was in den einzelnen Schritten geschieht und was ich bei der Entwicklung des Tools gelernt habe.
 
 #### 0. Schritt: Video hochladen
 ![Funktion zum Hochladen](https://i.imgur.com/6VB4WCP.png)
@@ -86,7 +88,7 @@ Das [aktuelle Objektverfolgungstool] (https://github.com/plantions/video-edge-ex
 Was geht hier vor?
 
 - Eine einfache Upload-Funktion zum Hochladen beliebiger Videos in die Google Colab-Umgebung.
-- Im Hintergrund werden alle notwendigen Tools (':snake: libraries') vorgeladen.
+- Im Hintergrund werden alle notwendigen Tools ('Python :snake: libraries') vorgeladen.
 
 Was habe ich gelernt?
 
@@ -139,9 +141,7 @@ Was habe ich gelernt?
 
 - Erstellen und Manipulieren von :panda_face: DataFrames, einschließlich Schwenken, Entfernen von Duplikaten, Abfragen, Filtern, Invertieren, usw.
 - Verarbeitung von Audiodateien in einer Shell, Extrahieren von Abtastraten und MFCC-Features.
-- Zusammenführen verschiedener :panda_face: Datenstrukturen unter Verwendung von Primärschlüsseln und 'outer/inner' joints.
-
-![Datenmanipulation und -analyse mit :panda_face:](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
+- Zusammenführen verschiedener :panda_face: Datenstrukturen unter Verwendung von Primärschlüsseln und 'outer/inner' joints ([Datenmanipulation und -analyse mit :panda_face:](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)).
 
 #### 4. Schritt: Interaktive Visualisierung
 
@@ -154,8 +154,8 @@ Was geht hier vor?
 
 Was habe ich gelernt?
 
-- [Plotten mit Altair](https://altair-viz.github.io/getting_started/overview.html).
-- Breite vs. lange Datenformate und wie man diese erreicht.
+- [Dynamische Visualisierungen mit Altair](https://altair-viz.github.io/getting_started/overview.html).
+- Breite vs. lange Datenformate und wie man diese umwandelt.
 
 #### 5. Zusätzliche Funktionen
 
@@ -169,7 +169,7 @@ Für Entwicklungs- und Testzwecken habe ich zusätzliche Funktionen erzeugt. Die
 
 ### Nächste Schritte
 
-Nun, da die Datenpipeline funktionsfähig ist und erste Datenanalysen funktionieren, wird ein Instrument zum Evaluation glücklicher oder trauriger Emotionen hinzugefügt. Das folgende Bild zeigt vielversprechende Tracking-Spots.
+Nun, da die Datenpipeline funktionsfähig ist und erste Datenanalysen Ergebnisse liefern, wird im nächsten Schritt ein Tool zum Evaluation glücklicher oder trauriger Emotionen hinzugefügt. Das folgende Bild zeigt vielversprechende Tracking-Spots.
 
 ![Richtige Tracking-Spots](https://i.imgur.com/FK4dQqk.png)
 
