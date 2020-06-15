@@ -6,7 +6,6 @@ color: warning
 description: German Article: Deutscher Fassung meines Artikels über mein Projekt mit Professor Peter Gloor vom MIT in Boston.
 ---
 
-
 Anmerkung: Dies sind sehr initiale Forschungergebnisse, welche bisher nicht extern validiert wurden.
 
 Pflanzen reagieren auf positive und negative emotionale Stimmen unterschiedlich. - Warte! Was? Pflanzen __reagieren__? Was tun sie? Letzteres war meine Reaktion, als ich mit dieser Forschung konfrontiert wurde, die ich im Folgenden vorstelle.
