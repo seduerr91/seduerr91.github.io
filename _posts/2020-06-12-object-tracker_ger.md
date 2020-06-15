@@ -9,32 +9,36 @@ description: Deutscher Fassung meines Artikels über mein Projekt mit Professor 
 
 Anmerkung: Dies ist eine sehr junge Forschung und bisher nicht extern validiert.
 
-Pflanzen reagieren auf positive und negative emotionale Stimmen unterschiedlich. - Warte! Was? Pflanzen __reagieren__? Was tun sie? Letzteres war meine Reaktion, als ich mit dieser Forschung konfrontiert wurde, die ich im Folgenden präsentiere.
+Pflanzen reagieren auf positive und negative emotionale Stimmen unterschiedlich. - Warte! Was? Pflanzen __reagieren__? Was tun sie? Letzteres war meine Reaktion, als ich mit dieser Forschung konfrontiert wurde, die ich im Folgenden vorstelle.
 
-## Erste Ergebnisse der manuellen Objekterkennung
+Vorher findet sich aber ein Videoausschnitt einer frühen Version des Objekttrackers, der für die Mimose eingesetzt wird, um eine Vorstellung davon zu bekommen, was der Objekttracker macht:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xgAhZQMkE7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Erste Ergebnisse der manuellen Objektverfolgung
 
 Erste Forschungsunterfangen meiner Kollegin Josephine deuten darauf hin, dass bestimmte Pflanzen (wir experimentieren mit der Mimose, _Mimosa Pudica_, und der Codario, _Codariocalyx Motorius_) ihre Blätter schneller anheben und beschleunigen, wenn sie verschiedenen Arten von Musik (1) oder stimmlichen Emotionen (2) ausgesetzt sind:
 
-(1) Codario und verschiedene Musikarten: (2)
+(1) Codario und verschiedene Musikarten
 
 ![Musikarten](https://i.imgur.com/9cwEpuj.png)
 
-Diese Diagramme veranschaulichen die Zeit, die die Codario benötigt, um auf verschiedene auditive Stimuli wie "Stille", "Metal", "Techno", "klassisch" und "Jodeln" zu reagieren (letzteres verdient die Erwähnung unseres [Mentors] (https://cci.mit.edu/pgloor/), der Schweizer ist). Man stellt fest, dass die Pflanze unter Jodeln wesentlich schneller reagierte als bei Stille. Die nächste Analyse zeigt, ob man Bewegungen auch bei glücklichen oder traurigen menschlichen Stimmen bei einer Pflanze feststellt: :smile:
+Diese Diagramme veranschaulichen die Zeit, die die Codario benötigt, um auf verschiedene auditive Stimuli wie "Stille", "Metal", "Techno", "klassisch" und "Jodeln" zu reagieren (letzteres verdient die Erwähnung unseres [Mentors] (https://cci.mit.edu/pgloor/), der Schweizer ist). Man stellt fest, dass die Pflanze unter Jodeln wesentlich schneller reagierte als bei Stille. Die nächste Analyse zeigt, wie sich Pflanzen bei glücklichen oder traurigen menschlichen Stimmen verhalten: :smile:
 
 (2) Codario und verschiedene Emotionen
 
-Überraschenderweise zeigt sich, dass die Codario ihre Blätter tatsächlich viermal höher und auch länger anhebt, wenn sie glücklichen auditiven Emotionen lauscht. Anmerkung: Für dieses Experiment verwenden wir einen [professionellen Datensatz] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5955500/) von Künstlern, die dieselben positiven Sätze sowohl auf sehr positive als auch auf sehr negative Weise wiederholen.
+Überraschenderweise zeigt sich, dass die Codario ihre Blätter tatsächlich viermal höher und auch länger anhebt, wenn sie glücklichen auditiven Emotionen lauscht. Anmerkung: Für dieses Experiment verwenden wir einen [professionellen Datensatz](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5955500/) von Künstlern, die dieselben positiven Sätze sowohl auf sehr positive als auch auf sehr negative Weise wiederholen.
 
 ![Emotionen](https://i.imgur.com/EkNwJIA.png)
 *Die Farben sind verschiedene Blätter derselben Pflanze, und man kann erkennen, dass die linke y-Achse für die verschiedenen Pflanzen unterschiedlich ist.*
 
 ## Datenerfassung
 
-Ich hatte nicht erwartet, dass sich Pflanzen anders bewegen, wenn eine Person fröhliche oder traurige Formulierungen spricht. Aktuell replizieren wir diese frühen Ergebnisse mit umfangreicheren Datenmengen und automatisieren die Datenanalyse mit maschinellem Lernen ('Machine Learning'). Dafür erzeugten wir mehr von der wichtigsten Währung der heutigen Zeit: Daten.
+Ich hatte nicht erwartet, dass sich Pflanzen anders bewegen, wenn eine Person fröhliche oder traurige Formulierungen spricht. Aktuell replizieren wir diese frühen Ergebnisse mit umfangreicheren Datenmengen und automatisieren die Datenanalyse mittels maschinellem Lernen ('Machine Learning'). Dafür erzeugten wir zuerst mehr von der wichtigsten Währung der heutigen Zeit: Daten.
 
 ### Sound Vorbereitungen
 
-Um neue Videos zu erstellen, mussten wir zuerst positive und negative Stimmen - Audios erstellen. Durch ein :snake: Skript haben wir verschiedene Tondateien zusammengeführt, in welchen auf einen Hörreiz (positive oder negativ) zehn oder sechzig Sekunden Stille folgt, bis der nächste kommt. Die Emotionen (positiv vs. negativ) wurden abgewechselt, um Umgebungsvariablen wie Sonneneinstrahlung, Tageszeit oder Raumtemperatur konstant zu halten.
+Um neue Videos zu erstellen, mussten wir zuerst positive und negative Stimmen-Audios erstellen. Durch ein :snake: Skript haben wir verschiedene Tondateien zusammengeführt, in welchen auf einen Hörreiz (positive oder negativ) zehn oder sechzig Sekunden Stille folgt, bis der nächste kommt. Die Emotionen (positiv vs. negativ) wurden abgewechselt, um Umgebungsvariablen wie Sonneneinstrahlung, Tageszeit oder Raumtemperatur konstant zu halten.
 
 Exemplarischer Ausschnitt aus dem [Algorithmus zur Erstellung von Sounddateien] (https://github.com/plantions/creatingEmotionAudios):
 
@@ -50,7 +54,7 @@ kombiniert = wavs[0]
 ```
 
 Beim Erstellen dieser Audiodateien lernte ich:
-- Das Zusammenspiel von Sample Ratesö die Definition eines Computers für Stille (realtiv umfangreicher Datensatz) und die Komplexität riesiger Data set-Ordnerstrukturen.
+- Das Zusammenspiel von Sample Rates, die Definition eines Computers für Stille (realtiv umfangreicher Datensatz) und die Komplexität riesiger Data set-Ordnerstrukturen.
 - Wie Schallwellen vom Menschen empfangen werden: Die Art und Weise, wie ein Computer sie nutzt und was wir hören unterscheidet sich dramatisch. Daher verwenden wir das [MFCCs](https://towardsdatascience.com/extract-features-of-music-75a3f9bc265d), um verschiedene menschliche Organe (hauptsächlich das Zusammenspiel von Hals, Kiefer und Zunge) für die Analyse zu simulieren.
 - Wir mussten die Sounddateien kurzfristig einer Empfehlung unseres Mentors anpassen und konnten von unserem flexiblen Ansatz zur Erstellung mittels Skript schnell und aufwandsarm reagieren.
 
@@ -74,9 +78,7 @@ Im Folgenden wird nun die aktuelle Version des Objekttrackers vorgestellt, mit d
 
 ### Überblick über aktuelles Objekt-Tracker Tool
 
-Das [aktuelle Objektverfolgungstool] (https://github.com/plantions/video-edge-extractor/blob/master/Emotion_Tracker.ipynb) besteht aus fünf Datenverarbeitungsschritten. Diese sind: das Hochladen eines Videos, die Auswahl von Hyperparametern für verschiedene Videos, die Verarbeitung und Darstellung des Videos, die eigentliche Datenanalyse bzw. -manipulation und als Ergebnis eine interaktive Visualisierung der Bewegungen. Im Folgenden wird ein kurzer Überblick gegeben, was in den einzelnen Schritten geschieht und was ich bei der Entwicklung des Tools gelernt habe. Nachfolgend finden Sie ein Video einer frühen Version des Objekttrackers, der für die Mimose eingesetzt wird, um eine Vorstellung davon zu bekommen, wie dies aussieht:
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xgAhZQMkE7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Das [aktuelle Objektverfolgungstool] (https://github.com/plantions/video-edge-extractor/blob/master/Emotion_Tracker.ipynb) besteht aus fünf Datenverarbeitungsschritten. Diese sind: das Hochladen eines Videos, die Auswahl von Hyperparametern für verschiedene Videos, die Verarbeitung und Darstellung des Videos, die eigentliche Datenanalyse bzw. -manipulation und als Ergebnis eine interaktive Visualisierung der Bewegungen. Im Folgenden wird ein kurzer Überblick gegeben, was in den einzelnen Schritten geschieht und was ich bei der Entwicklung des Tools gelernt habe.
 
 #### 0. Schritt: Video hochladen
 ![Funktion zum Hochladen](https://i.imgur.com/6VB4WCP.png)
