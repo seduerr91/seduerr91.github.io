@@ -25,6 +25,14 @@ description: I publish my major achievements per week here.
 - Public Voice: Wrote an extensive blog article on MIT project and its current status, also added tracking and a Datenschutz page to the webpage.
 - Leisure: Starting to learn Russian. Evgeniya got me in touch with a learning platform. Cooked a lot with my flat mate Peter, worked out a lot with Youtube videos and Karo. Had a double date with Yvette, Geniya, Peter, and me. Also, a crazy Hungarian night last week.
 
+### Results of week June 15-19
+
+- inserted this week.
+
+### Results of week June 22-26
+### Results of week June 29- June 03
+
+
 ## May 2020
 
 ### Results of week May 4-8
