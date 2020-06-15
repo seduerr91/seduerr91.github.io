@@ -9,9 +9,9 @@ Anmerkung: Dies sind sehr initiale Forschungergebnisse, welche bisher nicht exte
 
 Pflanzen reagieren auf positive und negative emotionale Stimmen unterschiedlich. - Warte! Was? Pflanzen __reagieren__? Was tun sie? Letzteres war meine Reaktion, als ich mit dieser Forschung konfrontiert wurde, die ich im Folgenden vorstelle.
 
-Vorher findet sich aber ein Videoausschnitt einer frühen Version des Objekttrackers, der für die Mimose eingesetzt wird, um eine Vorstellung davon zu bekommen, was der Objekttracker macht:
+Anbei ein Videoausschnitt des Objekttrackers getestet mit einer fliegenden Paprika:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xgAhZQMkE7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Za6oUCQ0QVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Erste Ergebnisse der manuellen Objektverfolgung
 
@@ -124,6 +124,12 @@ Was habe ich gelernt?
 - Videoverarbeitung mit der Machine Learning-Bibliothek OpenCV4. Sehr empfehlenswert.
 - Die Datenextraktion kann sehr verwirrend sein. Man brauchte die Grundlagen der Programmiersprache Python. Vielen Dank an Paul Steppacher für die Hilfe.
 - Unterschiedliche Videocodecs wie MPEG, MP4 usw. sind nicht dasselbe und funktionieren auch nicht gleich.
+
+Objekttrackers, der für die Mimose eingesetzt wird, um eine Vorstellung davon zu bekommen, wie gut das Objekttracking funktioniert:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xgAhZQMkE7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 #### 3. Schritt: Analyse
 
