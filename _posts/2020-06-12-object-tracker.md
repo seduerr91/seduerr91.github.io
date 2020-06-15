@@ -9,6 +9,10 @@ __Note: This is very nascent research and until now, not externally validated.__
 
 'Plants respond to positive and negative emotional voices differently.' - Wait! What? Plants _respond_? What do they do? The later would be my reaction when I got confronted with the research that I am presenting hereafter.
 
+## Exemplary object tracking of a flying Paprika
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Za6oUCQ0QVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Initial Results from Manual Object Detection
 
 Initial research from my colleague Josephine indicates that specific plants (we are conducting experiments with the mimosa, _i.e. Mimosa Pudica_, and the codario, _i.e. Codariocalyx Motorius_) raise and accelerate their leaves faster if they are exposed to different types of music (1), or vocal emotions (2):
