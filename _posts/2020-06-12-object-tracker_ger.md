@@ -1,9 +1,9 @@
 ---
-title: Tracking Object Movements with Machine Learning (Open CV)
+title: Objekterkennung mittels Machine Learning (German)
 tags: [Coding]
 style: fill
-color: light
-description: Plants respond to happy emotions. This article illustrates how to use Machine Learning to show this repeatedly.
+color: warning
+description: Deutscher Fassung meines Artikels über mein Projekt mit Professor Peter Gloor vom MIT in Boston.
 ---
 
 
