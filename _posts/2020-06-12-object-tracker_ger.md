@@ -74,40 +74,37 @@ Im Folgenden wird nun die aktuelle Version des Objekttrackers vorgestellt, mit d
 
 ### Überblick über aktuelles Objekt-Tracker Tool
 
-Das [aktuelle Objektverfolgungs-Tool] (https://github.com/plantions/video-edge-extractor/blob/master/Emotion_Tracker.ipynb) besteht aus fünf Datenverarbeitungsschritten. Diese sind das Hochladen eines Videos, die Auswahl von Hyperparametern für verschiedene Videos (immer noch eine Art iterativer Ansatz), die Verarbeitung und Darstellung des Videos, die eigentliche Datenanalyse bzw. -manipulation und als Ergebnis eine interaktive Visualisierung der Bewegung. Im Folgenden wird ein kurzer Überblick darüber gegeben, was in den einzelnen Schritten geschieht und was ich bei der Entwicklung des Videos gelernt habe. Nachfolgend finden Sie ein Video einer frühen Version des Objekttrackers, der auf der Mimose eingesetzt wird, um eine Vorstellung davon zu bekommen, was geschieht:
+Das [aktuelle Objektverfolgungstool] (https://github.com/plantions/video-edge-extractor/blob/master/Emotion_Tracker.ipynb) besteht aus fünf Datenverarbeitungsschritten. Diese sind: das Hochladen eines Videos, die Auswahl von Hyperparametern für verschiedene Videos, die Verarbeitung und Darstellung des Videos, die eigentliche Datenanalyse bzw. -manipulation und als Ergebnis eine interaktive Visualisierung der Bewegungen. Im Folgenden wird ein kurzer Überblick gegeben, was in den einzelnen Schritten geschieht und was ich bei der Entwicklung des Tools gelernt habe. Nachfolgend finden Sie ein Video einer frühen Version des Objekttrackers, der für die Mimose eingesetzt wird, um eine Vorstellung davon zu bekommen, wie dies aussieht:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xgAhZQMkE7U" frameborder="0" allow="Beschleunigungsmesser; Autoplay; verschlüsselte Medien; Gyroskop; Bild-im-Bild" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xgAhZQMkE7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### 0. Schritt: Video hochladen
-
-Funktion zum Hochladen](https://i.imgur.com/6VB4WCP.png)
+![Funktion zum Hochladen](https://i.imgur.com/6VB4WCP.png)
 
 Was geht hier vor?
 
 - Eine einfache Upload-Funktion zum Hochladen beliebiger Videos in die Google Colab-Umgebung.
-- Im Hintergrund werden alle notwendigen Tools (':snake: libraries') vorinstalliert.
-- Einige Konstanten werden zugewiesen.
+- Im Hintergrund werden alle notwendigen Tools (':snake: libraries') vorgeladen.
 
 Was habe ich gelernt?
 
 - Das Importieren umfangreicher Videodateien (durch Einbinden von Google Drive für große Dateien).
 - Das Hochladen kurzer Videodateien (durch interaktive Upload-Funktionen).
-- Bereinigen alter Dateien, die während der Videoverarbeitung erstellt werden, um Platz zu sparen.
+- Bereinigen alter Dateien, die während der Videoverarbeitung erstellt werden, um Speicherplatz zu optimieren.
 
-#### 1. Schritt: Wählen Sie Hyperparameter
+#### 1. Schritt: Wählen der Hyperparameter
 
 ![Hyperparame](https://i.imgur.com/3dJPV0O.png)
 
 Was geht hier vor?
 
-- Das interaktive Front-End-Formular nimmt Ihre Eingaben verschiedener Parameter auf, die für verschiedene Videoeinstellungen benötigt werden.
-- Die Klassen für die Objektverfolgung werden initialisiert. Sie sind so konstruiert, dass sie eine Region von Interesse verfolgen (x-, y-Koordinaten).
-- Die Aktualisierungsklasse für jedes zusätzliche Einzelbild wird initialisiert (Verwendung auf den x-, y-Koordinaten).
+- Das interaktive Front-End-Formular nimmt die Eingaben verschiedener Parameter entgegen, die für verschiedene Videosetups vorzunehmen sind.
+- Die Klassen für die automatisierte Objektverfolgung werden initialisiert. Sie sind so konstruiert, dass sie eine Region von interessanten Punkten verfolgen (x-, y-Koordinaten).
 
 Was habe ich gelernt?
 
-- Wie [Dilation und Erosion] (https://docs.opencv.org/2.4/doc/tutorials/imgproc/erosion_dilatation/erosion_dilatation.html) funktionieren.
-- Was [Maskenschwellenwert](https://docs.opencv.org/3.4/d7/d4d/tutorial_py_thresholding.html) macht.
+- Wie [Dilation und Erosion](https://docs.opencv.org/2.4/doc/tutorials/imgproc/erosion_dilatation/erosion_dilatation.html) funktionieren.
+- Was der [Maskenschwellenwert](https://docs.opencv.org/3.4/d7/d4d/tutorial_py_thresholding.html) macht.
 - Das [Kontur-Feature](https://docs.opencv.org/trunk/dd/d49/tutorial_py_contour_features.html) und seine Verwendung.
 
 #### 2. Schritt: Verarbeitung & Betrachten des Videos
@@ -116,15 +113,15 @@ Was habe ich gelernt?
 
 Was geht hier vor?
 
-- Jedes Bild (30 Bilder pro Sekunde, 720 für 12 Minuten) wird mit den in Schritt 1 eingestellten Parametern erfasst und analysiert.
-- Die exportierten Daten (x- und y-Koordinaten, Breite und Höhe der umschließenden Box sowie die ID) werden während der Verarbeitung des Videos extrahiert und gespeichert.
-- Das resultierende Video wird so konvertiert, dass es direkt im Jupyter-Notebook betrachtet werden kann.
+- Jedes Bild (30 Bilder pro Sekunde, 720s für ein 12 minütiges Video) wird mit den in Schritt 1 eingestellten Parametern erfasst und analysiert.
+- Die exportierten Daten (x- und y-Koordinaten, Breite und Höhe der umschließenden Box sowie die ID) werden während der Verarbeitung des Videos extrahiert und in eine Datenstruktur gespeichert.
+- Das resultierende Video wird konvertiert, so dass es direkt im Jupyter-Notebook (Google Colab) betrachtet werden kann.
 
 Was habe ich gelernt?
 
-- Videoverarbeitung mit der Machine Learning-Bibliothek OpenCV4. Ich habe diese Bibliothek noch nie zuvor benutzt, und sie war sozusagen der Anfang des Projekts. Sie funktioniert sehr gut und ist ein sehr leistungsfähiges Werkzeug. Ich musste ein Buch durcharbeiten, um die Grundlagen und notwendigen fortgeschrittenen Konzepte zu erfassen.
-- Die Datenextraktion kann sehr schwierig und verwirrend sein. Man brauchte die Grundlagen der Programmiersprache Python. Vielen Dank an Paul Steppacher für seine Hilfe.
-- Unterschiedliche Videocodecs wie MPEG, MP4 usw. sind nicht dasselbe und funktionieren auch nicht gleich. Konvertierungen sind entscheidend und ein sehr iterativer Prozess.
+- Videoverarbeitung mit der Machine Learning-Bibliothek OpenCV4. Sehr empfehlenswert.
+- Die Datenextraktion kann sehr verwirrend sein. Man brauchte die Grundlagen der Programmiersprache Python. Vielen Dank an Paul Steppacher für die Hilfe.
+- Unterschiedliche Videocodecs wie MPEG, MP4 usw. sind nicht dasselbe und funktionieren auch nicht gleich.
 
 #### 3. Schritt: Analyse
 
@@ -134,12 +131,44 @@ Was geht hier vor?
 
 - Verarbeitung der Datenpunkte, die in Schritt 2 aus dem Video extrahiert wurden.
 - Extrahieren der Audiodatei und Erstellen von Features, die für die Audioanalyse verwendet werden können.
-- Eingriffe zur Synchronisierung der Audio- und Videodatenpunkte.
+- Datenadaptionen zur Synchronisierung der Audio- und Videodatenpunkte.
 
 Was habe ich gelernt?
 
-- Erstellen und Manipulieren von :panda_face: DataFrames einschließlich Techniken wie: Schwenken, Entfernen von Duplikaten, Abfragen, Filtern, Invertieren, usw.
-- Verarbeitung von Audiodateien: Unterverarbeitung in einer Shell in einem Jupyter-Notebook, Extrahieren von Abtastraten und MFCC-Funktionen.
-- Zusammenführen verschiedener :panda_face: Datenrahmen unter Verwendung von Primärschlüsseln und 'outer/inner' Join Unterscheidungen.
+- Erstellen und Manipulieren von :panda_face: DataFrames, einschließlich Schwenken, Entfernen von Duplikaten, Abfragen, Filtern, Invertieren, usw.
+- Verarbeitung von Audiodateien in einer Shell, Extrahieren von Abtastraten und MFCC-Features.
+- Zusammenführen verschiedener :panda_face: Datenstrukturen unter Verwendung von Primärschlüsseln und 'outer/inner' joints.
 
-Datenmanipulation und -analyse mit :panda_face:](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
+![Datenmanipulation und -analyse mit :panda_face:](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
+
+#### 4. Schritt: Interaktive Visualisierung
+
+![Altair](https://i.imgur.com/3X9jQLS.png)
+
+Was geht hier vor?
+
+- Die resultierenden Datenpunkte werden zu einer langen Datenstruktur konvertiert, um sie für die grafische API Altair vorzubereiten.
+- Die maximale Inputmenge von 5000 Datenpunkten wird ausgenutzt, um die Bewegung des Objekts und die Begleitgeräusche zu visualisieren.
+
+Was habe ich gelernt?
+
+- [Plotten mit Altair](https://altair-viz.github.io/getting_started/overview.html).
+- Breite vs. lange Datenformate und wie man diese erreicht.
+
+#### 5. Zusätzliche Funktionen
+
+![Zusätzliche Funktionen](https://i.imgur.com/3WNYImh.png)
+
+Für Entwicklungs- und Testzwecken habe ich zusätzliche Funktionen erzeugt. Diese umfassen:
+- Eine Datenexportfunktion.
+- Eine Funktion zur Visualisierung von Korrelationen: 'Interaktive Scatter Plots'. Anmerkung: Das interaktive Streudiagramm befindet sich noch in der Entwicklung.
+- Eine Funktion zur Messung der Videodauer: 'Check for Movie Duration'.
+- Ein Feature zum Abrufen des 'Frames per Second'-Wertes eines Videos: 'Getting FPS of Video'.
+
+### Nächste Schritte
+
+Nun, da die Datenpipeline funktionsfähig ist und erste Datenanalysen funktionieren, wird ein Instrument zum Evaluation glücklicher oder trauriger Emotionen hinzugefügt. Das folgende Bild zeigt vielversprechende Tracking-Spots.
+
+![Richtige Tracking-Spots](https://i.imgur.com/FK4dQqk.png)
+
+Vielen Dank für Kommentare und Interesse!
