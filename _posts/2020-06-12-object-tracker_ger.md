@@ -1,9 +1,9 @@
 ---
-title: Objekterkennung mittels Machine Learning (German)
+title: Objekterkennung mittels Machine Learning
 tags: [Coding]
 style: fill
 color: warning
-description: Deutscher Fassung meines Artikels über mein Projekt mit Professor Peter Gloor vom MIT in Boston.
+description: German Article: Deutscher Fassung meines Artikels über mein Projekt mit Professor Peter Gloor vom MIT in Boston.
 ---
 
 
