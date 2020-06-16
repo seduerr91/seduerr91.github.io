@@ -1,11 +1,11 @@
-- name: Management
+- name: Running
   percentage: 100
   color: info
 
-- name: Teaching
+- name: Reading
   percentage: 95
   color: success
 
-- name: Research
+- name: Cooking
   percentage: 90
   color: warning
