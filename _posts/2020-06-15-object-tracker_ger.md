@@ -21,7 +21,7 @@ Erste Forschungsunterfangen meiner Kollegin Josephine deuten darauf hin, dass be
 
 ![Musikarten](https://i.imgur.com/9cwEpuj.png)
 
-Diese Diagramme veranschaulichen die Zeit, die die Codario benötigt, um auf verschiedene auditive Stimuli wie "Stille", "Metal", "Techno", "klassisch" und "Jodeln" zu reagieren (letzteres verdient die Erwähnung unseres [Mentors] (https://cci.mit.edu/pgloor/), der Schweizer ist). Man stellt fest, dass die Pflanze unter Jodeln wesentlich schneller reagierte als bei Stille. Die nächste Analyse zeigt, wie sich Pflanzen bei glücklichen oder traurigen menschlichen Stimmen verhalten: :smile:
+Diese Diagramme veranschaulichen die Zeit, die die Codario benötigt, um auf verschiedene auditive Stimuli wie "Stille", "Metal", "Techno", "klassisch" und "Jodeln" zu reagieren (letzteres verdient die Erwähnung unseres [Mentors](https://cci.mit.edu/pgloor/), der Schweizer ist). Man stellt fest, dass die Pflanze unter Jodeln wesentlich schneller reagierte als bei Stille. Die nächste Analyse zeigt, wie sich Pflanzen bei glücklichen oder traurigen menschlichen Stimmen verhalten: :smile:
 
 (2) Codario und verschiedene Emotionen
 
@@ -38,7 +38,7 @@ Ich hatte nicht erwartet, dass sich Pflanzen anders bewegen, wenn eine Person fr
 
 Um neue Videos zu erstellen, mussten wir zuerst positive und negative Stimmen-Audios erstellen. Durch ein Python :snake: Skript haben wir verschiedene Tondateien zusammengeführt, in welchen auf einen Hörreiz (positive oder negativ) zehn oder sechzig Sekunden Stille folgt, bis der nächste kommt. Die Emotionen (positiv vs. negativ) wurden abgewechselt, um Umgebungsvariablen wie Sonneneinstrahlung, Tageszeit oder Raumtemperatur konstant zu halten.
 
-Exemplarischer Ausschnitt aus dem [Algorithmus zur Erstellung von Sounddateien] (https://github.com/plantions/creatingEmotionAudios):
+Exemplarischer Ausschnitt aus dem [Algorithmus zur Erstellung von Sounddateien](https://github.com/plantions/creatingEmotionAudios):
 
 ```
 während der Zähler < (len(happy_sounds) + len(sad_sounds))/2:
@@ -60,7 +60,7 @@ Beim Erstellen dieser Audiodateien lernte ich:
 
 Unser Mentor erzeugte für uns mit den Sound-Dateien neue Datensätze, indem er seine Pflanzen filmte, während sie unseren verschiedenen Tondateien stundenlang ausgesetzt waren. Wir sind sehr dankbar für die entstandenen Videodateien, da sie eine Fülle von visuellen und akustischen Geräuschen enthalten. Das ist besonders nützlich, weil wir mit realistischen Datensätzen näher an der tatsälichen Arbeit eines Machine Learning Engineers dran sind. Daher müssen wir eine Fülle von Datenmanipulationen durchführen, um unsere Daten verwerten zu können.
 
-## My job: Automatisierung der 'Glücksanalyse mittels maschinellem Lernen'.
+## My Job: Automatisierung der 'Glücksanalyse durch Machine Learning'.
 
 Wir evaluierten verschiedene Werkzeuge des maschinellen Lernens (dlib, OpenCV, Sci-Kit-Image) und den gesamten Prozess der Bewegtbild- _aka Video-_ analyse, um indirekte Emotionen der Sprecher anhand der Pflanzenreaktionen herauszuholen.
 
@@ -70,7 +70,7 @@ Als nächstes richten wir eine Cloud-basierte Infrastruktur ein, um unsere klein
 
 ![Google Colab-Übersicht](https://i.imgur.com/mWm041e.png)
 
-Im Folgenden wird nun die aktuelle Version des Objekttrackers vorgestellt, mit dem wir viele interessante Punkte gleichzeitig verfolgen und dabei umfassende Datenmengen erzeugen können. Nachfolgend findet sich ein Beispiel wie diese aussehen kann:
+Im Folgenden wird nun die aktuelle Version des Objekttrackers vorgestellt, mit dem wir viele interessante Punkte gleichzeitig verfolgen und dabei umfassende Datenmengen erzeugen können. Nachfolgend findet sich ein Beispiel wie dies aussehen kann:
 
 ![Unmengen von Tracking-Punkten](https://i.imgur.com/fe5HRlD.png)
 
@@ -78,7 +78,7 @@ Im Folgenden wird nun die aktuelle Version des Objekttrackers vorgestellt, mit d
 
 Das [aktuelle Objektverfolgungstool](https://github.com/plantions/video-edge-extractor/blob/master/Emotion_Tracker.ipynb) besteht aus fünf Datenverarbeitungsschritten. Diese sind:
 
-das Hochladen eines Videos, die Auswahl von Hyperparametern für verschiedene Videos, die Verarbeitung und Darstellung des Videos, die eigentliche Datenanalyse bzw. -manipulation und als Ergebnis eine interaktive Visualisierung der Bewegungen. Im Folgenden wird ein kurzer Überblick gegeben, was in den einzelnen Schritten geschieht und was ich bei der Entwicklung des Tools gelernt habe.
+(1) das Hochladen eines Videos, (2) die Auswahl von Hyperparametern für verschiedene Videos, (3) die Verarbeitung und Darstellung des Videos, (4) die eigentliche Datenanalyse bzw. -manipulation und als (5) Ergebnis eine interaktive Visualisierung der Bewegungen. Im Folgenden gibt's einen kurzen Überblick, was in den einzelnen Schritten passiert und was ich bei der Entwicklung des Tools Neues gelernt habe.
 
 #### 0. Schritt: Video hochladen
 ![Funktion zum Hochladen](https://i.imgur.com/6VB4WCP.png)
@@ -177,4 +177,4 @@ Nun, da die Datenpipeline funktionsfähig ist und erste Datenanalysen Ergebnisse
 
 ![Richtige Tracking-Spots](https://i.imgur.com/FK4dQqk.png)
 
-Vielen Dank für Kommentare und Interesse!
+Vielen Dank für Kommentare und Interesse! Schreibt mir gerne ein Mail mit Feedback an sduerr@mit.edu.
