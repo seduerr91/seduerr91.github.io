@@ -27,11 +27,31 @@ description: I publish my major achievements per week here.
 
 ### Results of week June 15-19
 
-- inserted this week.
+- MIT Project: On Tuesday, there was another coordination call with Peter and he was again very happy with our results. He now started producing more and more videos and he seems to like our project a lot as he sends out mails every day. Also, the MIT started sending out mails about the Fall term, and I was informed this week that the semester will start in Boston. Currently, I cannot say if this means that I can also move over to the states as the Vice Provost of Research needs to invite Visiting Grad Students again but, so far, I can continue remotely. Ultimately, opening up is better than everything virtual.
+- DL-Scientist: I am constantly working on the fundamentals book 'Fluent Python' which has a very
+- Project: This week, I was looking into different Django books and - honestly - caught myself skimming them to superficially. I am doing this to deeply understand the technologies I need for my service. It does not make sense to follow books word by word, yet, I have to be more rigour in my research because in a year's time I do not want to be proud on the fact that I finished 300 books and did not rmb anything but I want to have worked through 10 good ones, and really learnt something. Hence, ___Django 3 By Example____ is now my book of choice to work on. It has 14 chapters, and I will have to finish a chapter every working day (Monday through Thursday), otherwise: 50 EURs to the charity I do not like. I made an [overview of the dates and the chapters to finish timely](https://i.imgur.com/zJWMIUs.png).
+- Public Voice: This week, I wrote on developing banking products in highly complex organizations which was my main job at the bank. I tried to make it as tangible by using storytelling to make it more tangible. The whole idea is to try a different writing style. Additionally, I firstly shared my works on the MIT project with both German and English speaking friends and evaluated the behaviour of my readers thoroughly on my site. It was interesting to firstly see, how people are interacting with my content, and it quickly made me change some phrases. On Wednesday, I had 50 people on my page.
+- Leisure: This Monday, I met with 4 friends to play volleyball as it was a very beautiful evening. Also, I did some nice cooking for G. Sport-wise, I did workouts every day, and finally some yoga again yesterday, but I really have to go for an extensive run soon! Yesterday night, I continued with learning Russian. It is such an interesting experience to learn a new alphabet.
+
+Reflections of the week: ___More focus on the few & keeping my mind fit are essential.___ I really have to focus more on a few excellent inputs (*Fluent Pyton* and *Django 3 by Example*) are excellent choices. Also, I am starting to feel that my memory capacity decreases. To counter that, I will make more calls and talk about the projects and what I learnt (aunts, interested friends, developers), and continue to learn Russian to stimulate the building of fresh synapses in my brain continuously.
+
+_Heads up: I will take my first two days off on July 2 and July 3 to have an extended weekend in Belfast, Northern Ireland._
 
 ### Results of week June 22-26
+
+- MIT Project:
+- DL-Scientist:
+- Project:
+- Public Voice:
+- Leisure:  
+
 ### Results of week June 29- June 03
 
+- MIT Project:
+- DL-Scientist:
+- Project:
+- Public Voice:
+- Leisure:  
 
 ## May 2020
 
