@@ -6,16 +6,24 @@ color: info
 description: Developing products in large corporations involves lots of coordination and timing.
 ---
 
+# Introduction
+
 The nation-wide marketing campaign was set up for Wednesday, and they put a lot of budget into it and the product. Marketers and management kept on asking if the roll-out deadline will be kept. Yet, on Friday afternoon before that designated Wednesday, we still needed to get the final approval by the head of compliance and his boss the CEO. This CEO of a bank with approx. 50.000 employees globally, had an appointment in the Austrian national bank, and my strongest support was currently in the United States of America for a business trip (Head of IT of the biggest regional bank). I had to somewhat sync these people to get approval by compliance and to ultimately roll-out the product. Why couldn't things be easier?
+
+# The task at hand
 
 Rewind to February that year: The steering committee (consisting of eight different major banks) of my project stream (consisting of fourteen different projects mostly banking products) instructed me to _roll-out an online credit card product with very little manual interactions_.  This means that in my role as a Chief Product Owner, I have to orchestrate a lot of resources (web developers, web designers, business and requirements analysts, marketing, internal communications, IT operations, business operations, legal, compliance, while constantly keeping the steering committee in the loop) throughout summer to get the product live. To complicate things, marketing planned a nation-wide marketing campaign and decided to make it an integral part of this campaign.
 
 ![Credit Card black](https://images.unsplash.com/photo-1531190260877-c8d11eb5afaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
 *Thanks to Two Paddles Axe and Leatherwork on Unsplash.*
 
+# Setting up projects
+
 Before starting even ideating the online product application process, business analysts were instructed to evaluate the market, conduct competitor analyses, and to agree on the terms of the banking product. Usually, it was most fruitful to get as many people as possible to contribute to a central Confluence page by briefing everybody, demanding them to deliver their input and to have very structured meetings so that everybody feels accommodated and taken seriously in the process. This usually makes people happy to contribute. For that, you often need some extra rounds of consolidation, to make sure key stakeholders allocate their time to your project. In this case, it was key to also bring the sector's lawyers on board to not get stopped later. Also, compliance was part of it, but they were not too critical with the concept of the product.
 
 After setting up the specifications and getting funding to start the project, it was important to quickly start with an ideation workshop in which the customer journey would be mapped against the products specifications, the limitations of our IT infrastructure, and the input of the UX designers and external experiments with test people. Ideally, such a product development in an ideation workshop would start from scratch but in banking with existing products and running manual in-branch processes, you cannot question everything if you ever want to steer everyone towards one central goal: rolling out a credit card product. Therefore, we made sure we find the best compromise for everyone to get towards an MVP and dealing with conflicting but irrelevant topics later.
+
+# The task at hand s
 
 So after two very stressful days, we had a virtual click-dummy that would immediately be shared with all the entities, including the law department (for the integration of checkboxes), the business side (to challenge the process and, e.g. to double-check that we are not forgetting any inputs for rating,), the development team (to reiterate feasibility and giving an estimation about the scope of the product given the fixed timeframe we had) and a bunch of more people for coordination purposes.
 
