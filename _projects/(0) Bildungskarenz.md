@@ -19,11 +19,13 @@ description: I publish my major achievements per week here.
 
 ### Results of week 8: June 22-26
 
-- MIT Project:
-- DL-Scientist:
-- Project:
-- Public Voice:
-- Leisure:  
+- MIT Project: This week I did have quite some internet issues but could progress on five out of eight sprint goals. I will work on one this weekend to make up. Also the executive order made me look into alternative geographical locations. Tuesday was a non-productive day.
+- DL-Scientist: I worked on the *Fluent Python* book and made quite some progress. It is a lot of information but important to get into it.
+- Project: Solid progress on the book *Django 3 by Example* by finishing three chapters. It is a lot but very helpful. Tuesday was non productive.
+- Public Voice: Blog article on the data manipulation is out. Not my best but it is like this week ;).
+- Leisure: This week, I ran 33 km in three days to mentally deal with the executive order that may prevent me from physically relocating to Boston. Luckily, I can do all of my projects remotely.
+
+Overall, this was not my most satisfying week but I made up some alternative plans, consulted some important people, and still progressed. Thank you Ted for the call. Keep it up bro! Yet, I concluded that I will make a skill list, get these skills together in the upcoming weeks, and then solely go for projects using these skills in the second part of my Karenz.
 
 ### Results of week 7: June 15-19
 
