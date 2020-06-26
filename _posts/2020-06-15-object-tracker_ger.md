@@ -7,7 +7,7 @@ description: German Article - Deutscher Fassung meines Artikels über mein Proje
 ---
 Anmerkung: Dies sind sehr initiale Forschungergebnisse, welche bisher nicht extern validiert wurden.
 
-Pflanzen reagieren auf positive und negative emotionale Stimmen unterschiedlich. - Warte! Was? Pflanzen __reagieren__? Was tun sie? Letzteres war meine Reaktion, als ich mit dieser Forschung konfrontiert wurde, die ich im Folgenden vorstelle.
+Pflanzen reagieren auf positive und negative emotionale Stimmen unterschiedlich. - Warte! Wie? Pflanzen reagieren...? Was tun sie? Letzteres war meine Reaktion, als ich mit dieser Forschung konfrontiert wurde, die ich im Folgenden vorstelle.
 
 Anbei ein Videoausschnitt des Objekttrackers getestet mit einer fliegenden Paprika:
 
@@ -28,7 +28,7 @@ Diese Diagramme veranschaulichen die Zeit, die die Codario benötigt, um auf ver
 Überraschenderweise zeigt sich, dass die Codario ihre Blätter tatsächlich viermal höher und auch länger anhebt, wenn sie glücklichen auditiven Emotionen lauscht. Anmerkung: Für dieses Experiment verwenden wir einen [professionellen Datensatz](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5955500/) von Künstlern, die dieselben positiven Sätze sowohl auf sehr positive als auch auf sehr negative Weise wiederholen.
 
 ![Emotionen](https://i.imgur.com/EkNwJIA.png)
-*Die Farben sind verschiedene Blätter derselben Pflanze, und man kann erkennen, dass die linke y-Achse für die verschiedenen Pflanzen unterschiedlich ist.*
+*Die Farben sind verschiedene Blätter derselben Pflanze, und man kann erkennen, dass die linke y-Achse für die verschiedenen Emotionen unterschiedlich ist.*
 
 ## Datenerfassung
 
@@ -36,35 +36,35 @@ Ich hatte nicht erwartet, dass sich Pflanzen anders bewegen, wenn eine Person fr
 
 ### Sound Vorbereitungen
 
-Um neue Videos zu erstellen, mussten wir zuerst positive und negative Stimmen-Audios erstellen. Durch ein Python :snake: Skript haben wir verschiedene Tondateien zusammengeführt, in welchen auf einen Hörreiz (positive oder negativ) zehn oder sechzig Sekunden Stille folgt, bis der nächste kommt. Die Emotionen (positiv vs. negativ) wurden abgewechselt, um Umgebungsvariablen wie Sonneneinstrahlung, Tageszeit oder Raumtemperatur konstant zu halten.
+Um neue Videos zu erstellen, mussten wir zuerst positive und negative Stimmen-Audios erstellen. Durch ein Python :snake: Skript haben wir verschiedene Tondateien zusammengeführt, in welchen auf einen akustischen Reiz (positive oder negativ) zehn oder sechzig Sekunden Stille folgt, bis der nächste kommt. Die Emotionen (positiv vs. negativ) wurden abgewechselt, um Umgebungsvariablen wie Sonneneinstrahlung, Tageszeit oder Raumtemperatur konstant zu halten.
 
 Exemplarischer Ausschnitt aus dem [Algorithmus zur Erstellung von Sounddateien](https://github.com/plantions/creatingEmotionAudios):
 
 ```
 während der Zähler < (len(happy_sounds) + len(sad_sounds))/2:
     wavset.append(fröhliche_Klänge[Zähler])
-    wavset.append ("extra_Klänge/Stille_60s.wav")
+    wavset.append("extra_Klänge/Stille_60s.wav")
     wavset.append(sad_sounds[Zähler])
-    wavset.append ("extra_Klänge/Stille_60s.wav")
+    wavset.append("extra_Klänge/Stille_60s.wav")
     Zähler += 1
 wavs = [AudioSegment.from_wav(wav) für wav im wavset]
 kombiniert = wavs[0]
 ```
 
 Beim Erstellen dieser Audiodateien lernte ich:
-- Das Zusammenspiel von Sample Rates, die Definition eines Computers für Stille (realtiv umfangreicher Datensatz) und die Komplexität riesiger Data set-Ordnerstrukturen.
+- Das Zusammenspiel von Sample Rates, die Definition eines Computers für Stille (relativ umfangreicher Datensatz) und die Komplexität riesiger Datansatz-Ordnerstrukturen.
 - Wie Schallwellen vom Menschen empfangen werden: Die Art und Weise, wie ein Computer sie nutzt und was wir hören unterscheidet sich dramatisch. Daher verwenden wir das [MFCC](https://towardsdatascience.com/extract-features-of-music-75a3f9bc265d), um verschiedene menschliche Organe (hauptsächlich das Zusammenspiel von Hals, Kiefer und Zunge) für die Analyse zu simulieren.
-- Wir mussten die Sounddateien kurzfristig einer Empfehlung unseres Mentors anpassen und konnten von unserem flexiblen Ansatz zur Erstellung mittels Skript schnell und aufwandsarm reagieren.
+- Wir mussten die Sounddateien kurzfristig einer Empfehlung unseres Mentors anpassen und konnten von unserem flexiblen Ansatz zur Erstellung mittels Skripts schnell und aufwandsarm reagieren.
 
 ### Video Aufzeichnung
 
-Unser Mentor erzeugte für uns mit den Sound-Dateien neue Datensätze, indem er seine Pflanzen filmte, während sie unseren verschiedenen Tondateien stundenlang ausgesetzt waren. Wir sind sehr dankbar für die entstandenen Videodateien, da sie eine Fülle von visuellen und akustischen Geräuschen enthalten. Das ist besonders nützlich, weil wir mit realistischen Datensätzen näher an der tatsälichen Arbeit eines Machine Learning Engineers dran sind. Daher müssen wir eine Fülle von Datenmanipulationen durchführen, um unsere Daten verwerten zu können.
+Unser Mentor erzeugte für uns mit den Sound-Dateien neue Datensätze, indem er seine Pflanzen filmte, während sie unseren verschiedenen Tondateien stundenlang ausgesetzt waren. Wir sind sehr dankbar für die entstandenen Videodateien, da sie eine Fülle von visuellen und akustischen Geräuschen enthalten. Das ist besonders nützlich, weil wir mit realistischen Datensätzen näher an der tatsächlichen Arbeit eines Machine Learning Engineers sind. Daher müssen wir eine Fülle von Datenmanipulationen durchführen, um unsere Daten verwerten zu können.
 
 ## My Job: Automatisierung der 'Glücksanalyse durch Machine Learning'.
 
 Wir evaluierten verschiedene Werkzeuge des maschinellen Lernens (dlib, OpenCV, Sci-Kit-Image) und den gesamten Prozess der Bewegtbild- _aka Video-_ analyse, um indirekte Emotionen der Sprecher anhand der Pflanzenreaktionen herauszuholen.
 
-### Cloud-Supercomputer, Werkzeuge des machinellen Lernens und moderne Codingservices
+### Cloud-Supercomputer, Werkzeuge des maschinellen Lernens und moderne Codingservices
 
 Als nächstes richten wir eine Cloud-basierte Infrastruktur ein, um unsere kleinen MacBooks __nicht__ zu sehr zu quälen. Dieser Cloud-Dienst heißt Google Colab und stellt sicher, dass wir immense Rechenleistung (z.B. 26 GB RAM) zum Lernen zur Verfügung haben, um unsere Videos schnell zu verarbeiten. So sieht diese Entwicklungsinfrastruktur aus:
 
@@ -129,8 +129,6 @@ Objekttrackers, der für die Mimose eingesetzt wird, um eine Vorstellung davon z
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xgAhZQMkE7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
 #### 3. Schritt: Analyse
 
 ![Datenanalyse](https://i.imgur.com/mJLGmpp.png)
@@ -173,7 +171,7 @@ Für Entwicklungs- und Testzwecken habe ich zusätzliche Funktionen erzeugt. Die
 
 ### Nächste Schritte
 
-Nun, da die Datenpipeline funktionsfähig ist und erste Datenanalysen Ergebnisse liefern, wird im nächsten Schritt ein Tool zum Evaluation glücklicher oder trauriger Emotionen hinzugefügt. Das folgende Bild zeigt vielversprechende Tracking-Spots.
+Nun, da die Datenpipeline funktionsfähig ist und erste Datenanalysen Ergebnisse liefern, wird im nächsten Schritt ein Tool zur Evaluation glücklicher oder trauriger Emotionen hinzugefügt. Das folgende Bild zeigt vielversprechende Tracking-Spots.
 
 ![Richtige Tracking-Spots](https://i.imgur.com/FK4dQqk.png)
 
