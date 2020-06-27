@@ -5,13 +5,13 @@ style: fill
 color: danger
 description: Feature Engineering of OpenCV Output with Python Pandas.
 ---
-Together with Prof. Peter Gloor from MIT, Josephine and I work on an plant tracker. In our project __[plantions](www.plantions.github.io)__ it is the aim to read human emotions through the observation of plants. [Here](https://seduerr91.github.io/blog/object-tracker), you can find introduction to the project in its entirety.
+Together with Prof. Peter Gloor from MIT, Josephine and I work on an plant tracker. In our project __[plantions](www.plantions.github.io)__ we aim to read human emotions through the observation of plants. [Here](https://seduerr91.github.io/blog/object-tracker), you can find an introduction to the project.
 
-Please find the [Project](https://plantions.github.io/project/2020/06/25/instructions.html) and a manual on its use here. This post takes a deep dive into the data engineering part (alias Step 3: Analysis). Before that, I take the outputs from the OpenCV algorithm (based on cv2.adaptiveThreshold, cv2.morphologyEx, and cv2.findContours) to process them for further analysis. The OpenCV algorithms will be subject to a subsequent post.
+Please find the tool and a manual on its use [here](https://plantions.github.io/project/2020/06/25/instructions.html). This post takes a deep dive into the data engineering part. Before that, the tool take the outputs from the object tracking process (based on OpenCV's cv2.adaptiveThreshold, cv2.morphologyEx, and cv2.findContours). The OpenCV algorithm will be subject to a subsequent post.
 
-This article is structured in _Video_ and _Audio_ Processing, and _Merging the resulting data sets_.
+This article is structured in three parts: _Video Processing_, _Audio Processing_, and _Merging the Resulting Data Sets_.
 
-## 1. Video Data Processing
+## 1. Video Processing
 
 ```python
 data = motion_array
@@ -25,7 +25,9 @@ After the processing of any video, I get a NumPy array named motion_array. This 
 
 As Pandas DataFrames (a high performant structured table) is very effective in terms of data manipulation it is a first task to create a Pandas DataFrame from the NumPy array 'data'. The following line of code takes the NumPy data array as an input, and transforms it into a DataFrame with the column names 'ID','X','Y','W','H', and 'Frame'.
 
+```python
 df_video = pd.DataFrame(data=data[0:,0:], index=[i for i in range(data.shape[0])], columns=['ID','X','Y','W','H','Frame'])
+```
 
 Now the actual data manipulation starts. In order to get the elapsed time for any frame, the column 'Frame' needs to be divided by the 'frame_rate' (30 fps). This approach gives a very comprehensive amount of data. Imagine you have a 12 minute long video, with 20 moving points. That will leave you with _12 minutes * 60 seconds * 30 frames per second x 6 column values x 20 moving points = 2.5M_ data points. Therefore, I decided to only, every tenth millisecond. This is achieved by round the Elapsed time to one digit, and then removing all duplicates on their first occurrence. For further analysis, we do not need the bounding boxes, hence, we exclude teh w, h values. In the initial process, only the Y-Values that relate to
 
@@ -58,7 +60,7 @@ Lastly, the pivoting features of Pandas are being used to prepare the video data
 df_pivoted_video = pd.pivot_table(df_video, values=["Y"], index=pd.Grouper(key='Elapsed'), columns=["ID"],)
 ```
 
-# 2. Audio Data Processing
+# 2. Audio Processing
 
 In order to get the audio data, the video is processed once again, to extract, and then unpack the audio data. The first of these two steps need to be in a sub shell script because the 'ffmpeg' algorithm does not run in plain Python.
 Afterwards, I am taking the very useful 'librosa' module to extract 'mfccs' - a voice feature for analysis - from the audio part of the video.
@@ -107,7 +109,7 @@ df_audio_w_time_w_o_dups = df_audio_w_time.drop_duplicates(subset='Elapsed_t', k
 df_audio_w_time_w_o_dups
 ```
 
-# 3. Merge Video and Audio DataFrames
+# 3. Merging the Resulting Data Sets
 
 As a final step, the audio dataFrame and the video dataFrame are merged both on the elapsed time. As some points may not move from one second to the next, it can be assumed that the point will be on the same position on the next frame, respectively that it has not moved before, and therefore it is assumed that the x, y - value was the same before. This is being done by the functions of backward and forward filling.
 
