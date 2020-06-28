@@ -1,13 +1,13 @@
 - name: FluentPy
-  percentage: 19
+  percentage: 55
   color: danger
 
 - name: PyDjango
-  percentage: 36
+  percentage: 72
   color: info
 
 - name: WebScraping
-  percentage: 10
+  percentage: 70
   color: success
 
 - name: StanfordML
