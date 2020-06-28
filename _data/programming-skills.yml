@@ -1,11 +1,23 @@
-- name: Python
-  percentage: 90
+- name: Python Fundamentals
+  percentage: 19
   color: danger
 
-- name: Jekyll
-  percentage: 95
+- name: Python Django
+  percentage: 36
   color: info
 
-- name: Excel
-  percentage: 100
+- name: Python WebScraping
+  percentage: 10
+  color: success
+
+- name: Stanford ML
+  percentage: 0
   color: dark
+
+- name: JS React
+  percentage: 0
+  color: primary
+
+- name: Elements of Statistic
+  percentage: 0
+  color: warning
