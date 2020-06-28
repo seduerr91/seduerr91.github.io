@@ -1,23 +1,23 @@
-- name: Python Fundamentals
+- name: FluentPy
   percentage: 19
   color: danger
 
-- name: Python Django
+- name: PyDjango
   percentage: 36
   color: info
 
-- name: Python WebScraping
+- name: WebScraping
   percentage: 10
   color: success
 
-- name: Stanford ML
+- name: StanfordML
   percentage: 0
   color: dark
 
-- name: JS React
+- name: JSReact
   percentage: 0
   color: primary
 
-- name: Elements of Statistic
+- name: ESL2
   percentage: 0
   color: warning

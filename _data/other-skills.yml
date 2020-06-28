@@ -1,16 +1,16 @@
-- name: Running min. 1000km
+- name: Running 1000km
   percentage: 60
   color: danger
 
-- name: Travel to 75 Countries
+- name: 75 Countries
   percentage: 83
   color: info
 
-- name: Living in 7 Countries
+- name: Living in 7
   percentage: 57
   color: success
 
-- name: Fluent in 4 Languages
+- name: 4 Languages
   percentage: 50
   color: dark
 
@@ -18,6 +18,6 @@
   percentage: 80
   color: primary
 
-- name: Philosophie
+- name: Philosophy
   percentage: 80
   color: warning
