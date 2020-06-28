@@ -2,7 +2,7 @@
 title: OpenCV Code from Object Tracker
 tags: [Coding]
 style: fill
-color: secondary
+color: warning
 description: Pure barely annotated code from the Object Tracker project.
 ---
 
