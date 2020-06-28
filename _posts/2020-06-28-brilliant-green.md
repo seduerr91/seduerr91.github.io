@@ -2,7 +2,7 @@
 title: Brilliant Green
 tags: [Coding]
 style: fill
-color: secondary
+color: light
 description: My Summary of the Book Brilliant Green
 ---
 
