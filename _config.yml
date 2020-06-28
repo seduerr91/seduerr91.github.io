@@ -1,9 +1,8 @@
 ### Site Settings ###
 title               : duerr.se
 description         : >-
-                      I turn :coffee: into :computer:, love :running:
-                      and enjoy :sleeping:.
-baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+                      The hardest prison to escape is your mind. On full year leave.
+baseurl             : ""                               # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : seduerr91/seduerr91              # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
 
@@ -23,7 +22,7 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Sebastian Duerr
-  image             : https://i.imgur.com/r0yP47Um.png
+  image             : https://i.imgur.com/m4jlWgEs.jpg
 #  behance           : your_username
 # dribbble          : your_username
   email             : duerr.sebastian@gmail.com
