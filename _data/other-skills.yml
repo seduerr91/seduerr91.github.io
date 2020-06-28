@@ -1,11 +1,23 @@
-- name: Running
-  percentage: 100
+- name: Running min. 1000km
+  percentage: 60
+  color: danger
+
+- name: Travel to 75 Countries
+  percentage: 83
   color: info
 
-- name: Reading
-  percentage: 95
+- name: Living in 7 Countries
+  percentage: 57
   color: success
 
-- name: Cooking
-  percentage: 90
+- name: Fluent in 4 Languages
+  percentage: 50
+  color: dark
+
+- name: Investment Banking
+  percentage: 80
+  color: primary
+
+- name: Philosophie
+  percentage: 80
   color: warning
