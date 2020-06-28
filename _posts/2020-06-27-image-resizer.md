@@ -1,9 +1,9 @@
 ---
-title: Resizing Images
+title: Resizing Multiple Images in Python
 tags: [Coding]
 style: fill
 color: success
-description: How to resize all images within one folder.
+description: Resizing Multiple Images in a Folder while Keeping the Aspect Ratio Python.
 ---
 I need to equally size all images within a folder for my weekend project on a new web page.
 For that, you firstly need to import PIL, os and sys. PIL is the :snake: image library, and os and sys are needed for navigating the file system of your operating system.
@@ -36,4 +36,4 @@ resize()
 print('done')
 ```
 
-This way, you do not need to manually manipulate images in your file system. 
+This way, you do not need to manually manipulate images in your file system.
