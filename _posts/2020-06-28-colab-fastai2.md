@@ -2,7 +2,7 @@
 title: Running FastAI2 in Google Colab
 tags: [Coding]
 style: fill
-color: secondary
+color: danger
 description: Installing the environment to run the FastAI2 module in Google Colaboratory.
 ---
 
