@@ -2,7 +2,7 @@
 title: Run the Django Social Network
 tags: [Coding]
 style: fill
-color: warning
+color: primary
 description: Coding instruction on Django Social Network from Django by Example.
 ---
 
