@@ -11,8 +11,8 @@ description: Coding instruction on Django Social Network from Django by Example.
 ### Setting up the Virtual Environment
 ```python
 mkdir env
-python3 -m venv env/bookmarks
-source env/bookmarks/bin/activate
+python3 -m venv env
+source env/bin/activate
 ```
 
 ### Installing the Modules
