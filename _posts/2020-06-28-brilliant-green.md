@@ -29,4 +29,4 @@ Definitions of intelligence include logic, communication, memory, and problem-s
 - solve problems that face them. Plants grow in directions that maximize light, they close their stomata to preserve water, and they release chemicals to deter predators.
 Mancuso asks whether we should deny plants thought because they don’t have a brain. Thought, in the traditional sense, requires some level of consciousness.
 
-Where Brilliant Green is strongest is that the book makes the reader question both how we think about other living creatures, and the terminology we use to describe concepts like problem-solving, communication, and cognition. Mancuso does so by using some purposely button-pushing terms to describe plant behavior, such as “choice,” “knowing,” calculating,” and “planning.”
+Where Brilliant Green is strongest is that the book makes the reader question both how we think about other living creatures, and the terminology we use to describe concepts like problem-solving, communication, and cognition. 
