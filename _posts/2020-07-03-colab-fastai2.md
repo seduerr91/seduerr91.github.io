@@ -9,6 +9,7 @@ description: Installing the environment to Run the FastAI2 Python module on Goog
 ## Setting up Google Colab for FastAI2 & the lessons of course-v4
 
 Complexity: low +.
+
 Duration: 2 minutes (4 min if you need a Google Drive Account).
 
 Follow these eight steps to, get FastAI2 running.
