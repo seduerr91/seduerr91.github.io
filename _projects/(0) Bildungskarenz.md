@@ -1,21 +1,31 @@
 ---
 name: Study Leave aka Bildungskarenz
-tools: [Python, Tensorflow, PyTorch]
+tools: [Python, PyTorch]
 image: https://i.imgur.com/XQI4dXz.jpg
 description: I publish my major achievements per week here.
 ---
 
 # Bildungskarenz Progress Overview
 
+## July 2020
+
+### Results of week 10: July 03-July 10
+
+- MIT Project: Worked on the OpenCV algorithm this week but due to Web Shop that I also developed in this week, I ran into a temporal shortage. Hence, Josephine and I agreed to postpone next meeting with Peter from July 14 to July 28. MIT and Harvard sued the USDHS this week.
+- DL-Scientist: I learnt a lot this week through the Django 3 by Design Book which took roughly my whole Monday (9-midnight), Tuesday (9-mdidnight), and large junks of Wednesday.
+- Project: See above.
+- Public Voice: Blog article on introduction to deep neural networks.
+- Leisure: Had only two runs: Monday and Thursday, saw G. on Monday, Wednesday, Thursday. Rained for 50 hours straight. This was quite depressing. Booked a flight to Germany to counter my Irish experience.
+
 ## June 2020
 
-### Results of week 9: June 29-June 03
+### Results of week 9: June 29-July 03
 
-- MIT Project:
-- DL-Scientist:
-- Project:
-- Public Voice:
-- Leisure:  
+- MIT Project: On Tuesday there was the fourth coordination call with Peter. He was positive again and Josephine was perceiving it very positively. I worked both days at the weekend for some hours, and on Monday until Midnight.
+- DL-Scientist: This week, I did not get a big chance to look into Fluent Python because of the MIT and then some other side topics but I will focus on it again today. Yet, I learnt a lot about OpenCV4.
+- Project: I worked through two chapters of the book Django 3 by Example (Chapter 5 and 6), and made a roadmap for it. It is very useful as I now learnt about the In-Memory database Redis, and I am looking forward to the next chapters.
+- Public Voice: I submitted seven blog articles on my web page and a few more on the MIT project within the last week.
+- Leisure: Had a serious talk with G. Did run 3x, and did Yoga again twice in a long time.
 
 ### Results of week 8: June 22-26
 
