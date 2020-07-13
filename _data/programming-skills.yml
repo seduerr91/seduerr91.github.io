@@ -1,23 +1,15 @@
-- name: FluentPy
-  percentage: 55
+- name: Python
+  percentage: 40
   color: danger
 
-- name: PyDjango
-  percentage: 72
+- name: Django
+  percentage: 86
   color: info
 
-- name: WebScraping
-  percentage: 70
-  color: success
-
-- name: StanfordML
-  percentage: 0
+- name: Machine Learning
+  percentage: 100
   color: dark
 
-- name: JSReact
-  percentage: 0
+- name: Deep Learning
+  percentage: 100
   color: primary
-
-- name: ESL2
-  percentage: 0
-  color: warning
