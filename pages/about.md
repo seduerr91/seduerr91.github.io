@@ -8,7 +8,7 @@ weight: 3
 # **About Me**
 
 Hi I am **Sebastian**,<br>
-I am a very friendly character. I love to do sports, and to code.
+friends described me once as a social butterfly. I love yoga, cooking, running, and coding.
 
 <div class="row">
 {% include about/skills.html title="Programming Interests" source=site.data.programming-skills %}
