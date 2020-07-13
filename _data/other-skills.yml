@@ -1,23 +1,15 @@
 - name: Running 1000km
-  percentage: 60
+  percentage: 63
   color: danger
 
 - name: 75 Countries
   percentage: 83
   color: info
 
-- name: Living in 7
+- name: Living in 7 Countries
   percentage: 57
   color: success
 
 - name: 4 Languages
   percentage: 50
   color: dark
-
-- name: Investment Banking
-  percentage: 80
-  color: primary
-
-- name: Philosophy
-  percentage: 80
-  color: warning
