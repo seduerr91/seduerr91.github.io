@@ -8,7 +8,7 @@ weight: 3
 # **About Me**
 
 Hi I am **Sebastian**,<br>
-I am a very ambitious character, love to do extreme amounts sports, and learned to code by myself. Get in touch with me for projects.
+I am a very friendly character. I love to do sports, and to code.
 
 <div class="row">
 {% include about/skills.html title="Programming Interests" source=site.data.programming-skills %}
