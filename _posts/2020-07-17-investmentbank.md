@@ -9,7 +9,8 @@ description: Notes on Comparable Company Analysis, Preceding Transaction Analysi
 ## Introduction to Investment Banking
 
 This article briefly introduces the field of investment banking. It is structured into three domains: valuation, leveraged buyouts, and mergers & acquisitions.
-[Cash](https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80)
+
+![Cash](https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80)
 Photo by Alexander Mils on Unsplash
 
 ### Domain 1: Valuation
@@ -32,7 +33,7 @@ Share Data| Basic Shares Outstanding, Options and Warrants Data| 10-K, 10-Q, 8-K
 Market Data | Share Price Data, Credit Ratings | Bloomberg, Rating Agencies
 
 #### Overview Comparable Company Analysis
-[CCA](https://i.imgur.com/b7KC34l.png)
+![CCA](https://i.imgur.com/b7KC34l.png)
 
 2. Preceding Transaction Analysis
 
@@ -46,7 +47,7 @@ Sales Process & Deal Nature | auctions, hostile situation, merger of equals
 Purchase Considerations | use of stock as a meaning full portion, use of cash
 
 #### Overview Preceding Transaction Analysis
-[PTA](https://i.imgur.com/WUkHxBz.png)
+![PTA](https://i.imgur.com/WUkHxBz.png)
 
 3. Discounted Cashflow Analysis
 
@@ -77,7 +78,7 @@ Accounts Payable | Amounts owed by a company for products & services already pur
 Accrued Liabilities and other current Liabilities | Expenses such as salaries, rents, interest and taxes incurred but not yet paid.
 
 #### Overview Discounted Cashflow Analysis
-[DFC](https://i.imgur.com/amoBeK8.png)
+![DFC](https://i.imgur.com/amoBeK8.png)
 
 ### Leveraged Buyouts
 
@@ -91,7 +92,7 @@ The premise is to craft a viable financing structure for the target based on its
 The sponsors work with investment banks to determine the preferred financing structure. M&A advisory context provides the basis for determining an implied valuation range.
 
 #### Leveraged Buyout Analysis
-[LBO](https://i.imgur.com/8mTKuT4.png)
+![LBO](https://i.imgur.com/8mTKuT4.png)
 
 ### Mergers & Acquisitions
 
@@ -105,9 +106,9 @@ Sell-side advisors are responsible for identifying the seller's priorities from 
 On the buy-side, the discussion of M&A strategies and motivations, including the deal rationale and synergies and form of financing and the deal structure is handled. A comprehensive analysis for a target is based on CCA, PTA, DCF, and LBO analysis is conducted and displayed on the 'football field'.
 
 #### Football Field 'Share Price'
-[FF](https://i.imgur.com/D4dGjmO.png)
+![FF](https://i.imgur.com/D4dGjmO.png)
 
 Then, the analysis at various prices (AVP) and contribution analysis are conducted. The AVP displays the implied multiples paid at a range of transaction values and offer prices. The contribution analysis analyses the financial 'contributions' made by the acquirers and target to the pro forma entity before any transaction adjustment. Then, the detailed merger consequences to fine-tune the ultimate purchase price, deal structure & financing mix. This examines the pro forma impact of the transaction son the acquirer. As well as the accretion/dilution analysis which researches the impact on earnings. Balance sheet effects which impact on credit statistics.
 
 #### Analysis at Various Prices
-[AVP](https://i.imgur.com/BNDhy3E.png)
+![AVP](https://i.imgur.com/BNDhy3E.png)
