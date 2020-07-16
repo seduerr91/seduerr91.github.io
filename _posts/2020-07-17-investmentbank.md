@@ -2,7 +2,7 @@
 title: Introduction to Investment Banking
 tags: [Management & Banking]
 style: fill
-color: light
+color: dark
 description: Notes on Comparable Company Analysis, Preceding Transaction Analysis, LBO, M&A, etc.
 ---
 
