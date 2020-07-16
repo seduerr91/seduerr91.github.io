@@ -1,6 +1,6 @@
 ---
 title: Developing Banking Products in a Highly Complex Organization
-tags: [Management]
+tags: [Management & Banking]
 style: fill
 color: primary
 description: Developing products in large corporations involves lots of coordination and timing.
