@@ -6,12 +6,12 @@ color: dark
 description: Notes on Comparable Company Analysis, Preceding Transaction Analysis, LBO, M&A, etc.
 ---
 
-This article briefly introduces the field of investment banking. It is structured into three domains: valuation, leveraged buyouts, and mergers & acquisitions.
+This article briefly introduces the field of investment banking. It is structured into three steps: valuation, leveraged buyouts, and mergers & acquisitions.
 
 ![Cash](https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80)
 Photo by Alexander Mils on Unsplash
 
-### Domain 1: Valuation
+### Step 1: Valuation
 
 The valuation of focus assets, i.e. targets, usually is done by deploying the analysis of (1) comparable companies, (2) preceding transaction, and (3) discounted cash flow.
 
@@ -82,7 +82,7 @@ Accrued Liabilities and other current Liabilities | Expenses such as salaries, r
 
 [Inspect an Exemplary Discounted Cashflow Analysis.](https://i.imgur.com/amoBeK8.png)
 
-### Leveraged Buyouts
+### Step 2: Leveraged Buyouts
 
 After having identified a target, and conducting thorough financial due diligence, the financing structure of the investments has to be defined. In a private equity endeavour this is done via leveraged buyouts.
 
@@ -99,7 +99,7 @@ The sponsors work with investment banks to determine the preferred financing str
 
 M&A advisory context provides the basis for determining an implied valuation range.
 
-### Mergers & Acquisitions
+### Step 3: Mergers & Acquisitions
 
 M&A involves the two sides which are the sell and the buy-side.
 
