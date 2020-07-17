@@ -9,6 +9,14 @@ description: I publish my major achievements per week here.
 
 ## July 2020
 
+### Results of week 11: July 10-July 17
+
+- MIT Project: Almost my entire contributions went into the project see below, which is why I will only do MIT from Monday until July 28, and only a blog next Friday.
+- DL-Scientist: 
+- Project:
+- Public Voice: This weeks blog article was on
+- Leisure:
+
 ### Results of week 10: July 03-July 10
 
 - MIT Project: Worked on the OpenCV algorithm this week but due to Web Shop that I also developed in this week, I ran into a temporal shortage. Hence, Josephine and I agreed to postpone next meeting with Peter from July 14 to July 28. MIT and Harvard sued the USDHS this week.
