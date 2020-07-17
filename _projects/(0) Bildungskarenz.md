@@ -12,10 +12,10 @@ description: I publish my major achievements per week here.
 ### Results of week 11: July 10-July 17
 
 - MIT Project: Almost my entire contributions went into the project see below, which is why I will only do MIT from Monday until July 28, and only a blog next Friday.
-- DL-Scientist: 
-- Project:
-- Public Voice: This weeks blog article was on
-- Leisure:
+- DL-Scientist: Learnt a lot through project this week including, API design, API calls, caching of queries, setting up async communication on a web socket with a Channels layer.
+- Project: Worked also Saturday and Sunday on the book Django by Example 3, and finished all the 14 chapters / 550 pages, having implemented a full blog, social network, web shop, and e-learning platform. This was necessary to get thorough understanding of today's basic software production processes.
+- Public Voice: This weeks blog article is on investment banking, a legacy of my wishes to get into private equity two years ago.
+- Leisure: I ran significant distances this week, had some nice BBQs with Evgeniya, and will be traveling the whole weekend.
 
 ### Results of week 10: July 03-July 10
 
