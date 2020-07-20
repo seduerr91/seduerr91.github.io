@@ -201,8 +201,11 @@ Now, that the data pipeline is functional and initial data analyses are operatin
 ## Literature
 
 [1] Stefan Mancuso - Brilliant Green
+
 [2] [Automatically Detect and Track Multiple Fish Swimming in Shallow Water with Frequent Occlusion](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0106506)
+
 [3] [Inferring the structure and dynamics of interactions in schooling fish](https://www.pnas.org/content/108/46/18720.short)
+
 [4] [Upwash exploitation and downwash avoidance by flap phasing in ibis formation flight](https://www.nature.com/articles/nature12939)
 
 Thank you for comments and your interest!
