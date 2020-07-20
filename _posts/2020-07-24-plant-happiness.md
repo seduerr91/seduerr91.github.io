@@ -40,22 +40,23 @@ Through computing the acceleration of one fish as a function of the position and
 
 Also fish control motion by modulating speeds and by turning is observed. To reflect this, the authors decompose the force into two components, the component along a fish’s direction of motion (speeding up and slowing down; the “speeding force”), and the component perpendicular to its direction of motion (the “turning force”).Their analysis three shoals of fish concludes that when both neighbors are far in front of, or far behind, the focal fish (2-4 body lengths), there is a strong tendency to speed up/slow down.
 
-In the work [Upwash exploitation and downwash avoidance by flap phasing in ibis formation flight](https://www.nature.com/articles/nature12939) individuals of northern bald ibises fly in a V flock position in aerodynamically optimum positions, in that they agree with theoretical aerodynamic predictions. Furthermore, birds show wingtip path coherence when flying in V positions, flapping spatially in phase and thus enabling upwash capture to be maximized throughout the entire flap cycle. Reduces heart rate and wing-beat frequency. Initial Data Processing: Interpolation replaced missing values in the GPS; GPS and accelerometer data were passed through a fourth-order Butterworth filter.
-- For centroid calculus of the flock, MATLAB function ‘centroid’ was used which calculates the centroid of a polygon. The MATLAB centroid function treated each bird as a point of a polygon, and determined the centroid for each time point.
+In the work [Upwash exploitation and downwash avoidance by flap phasing in ibis formation flight](https://www.nature.com/articles/nature12939) individuals of northern bald ibises fly in a V flock position in aerodynamically optimum positions, in that they agree with theoretical aerodynamic predictions. Furthermore, birds show wingtip path coherence when flying in V positions, flapping spatially in phase and thus enabling upwash capture to be maximized throughout the entire flap cycle. Reduces heart rate and wing-beat frequency. Initial Data Processing: Interpolation replaced missing values in the GPS; GPS and accelerometer data were passed through a fourth-order Butterworth filter. For centroid calculus of the flock, MATLAB function ‘centroid’ was used which calculates the centroid of a polygon. The MATLAB centroid function treated each bird as a point of a polygon, and determined the centroid for each time point.
 
 ## Methodology
 
 This Methodology is structured in three parts: sound file preparation, object recognition, and data processing.
 
-### Sound file preparation
+### Sound File Preparation
 
 Our mentor provided us with data sets by filming his plants while they were exposed to our different hour-long sound files. We are super grateful for the resulting video files as they contain a lot of visual and audio noise. This is particularly useful because you want realistic data sets, and the world - as we all know - is messy and full of noises. Hence, we have to do a significant amount of data wrangling.
 
-###
+### Object Detection and Tracking
 
-### Data processing
+T.B. integrated.
 
-### 1. Video Processing
+### Data Processing
+
+#### 1. Video Processing
 
 ```python
 data = motion_array
@@ -97,7 +98,7 @@ Lastly, the pivoting features of Pandas are being used to prepare the video data
 df_pivoted_video = pd.pivot_table(df_video, values=["Y"], index=pd.Grouper(key='Elapsed'), columns=["ID"],)
 ```
 
-# 2. Audio Processing
+#### 2. Audio Processing
 
 In order to get the audio data, the video is processed once again, to extract, and then unpack the audio data. The first of these two steps need to be in a sub shell script because the 'ffmpeg' algorithm does not run in plain Python.
 Afterwards, I am taking the very useful 'librosa' module to extract 'mfccs' - a voice feature for analysis - from the audio part of the video.
@@ -146,7 +147,7 @@ df_audio_w_time_w_o_dups = df_audio_w_time.drop_duplicates(subset='Elapsed_t', k
 df_audio_w_time_w_o_dups
 ```
 
-# 3. Merging the Resulting Data Sets
+#### 3. Merging the Resulting Data Sets
 
 As a final step, the audio dataFrame and the video dataFrame are merged both on the elapsed time. As some points may not move from one second to the next, it can be assumed that the point will be on the same position on the next frame, respectively that it has not moved before, and therefore it is assumed that the x, y - value was the same before. This is being done by the functions of backward and forward filling.
 
