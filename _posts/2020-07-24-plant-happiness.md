@@ -2,7 +2,7 @@
 title: Reporting Human Happiness through Observing Plants
 tags: [Coding]
 style: fill
-color: warning
+color: success
 description: This manuscripts reports findings on human happiness through observing plants exposed to human emotion.
 ---
 
