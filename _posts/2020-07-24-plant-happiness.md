@@ -58,17 +58,18 @@ The nature of the Kalman filter provides the main rationale for creating a Leaf 
 Each Leaf object will act as a holder for a Kalman filter, a color histogram (calculated on the first detection of the object and used as a reference for the subsequent frames), and a tracking window, which will be used by the MeanShift algorithm. Furthermore, each Leaf has an ID, which we will display so that we can easily distinguish between all of the Leafs being tracked. Let's proceed sequentially through the class's implementation:
 
 1. As arguments, the Leaf class's constructor takes an ID, an initial frame in HSV format, and an initial tracking window. Here are the declarations of the class and its constructor:
+
 ```python
 import cv2
 import numpy as np
 
 class Leaf():
-"""A tracked Leaf with a state including an ID, tracking window, histogram, and Kalman filter.
-"""
-                def __init__(self, id, hsv_frame, track_window):
-```                  
+#A tracked Leaf with a state including an ID, tracking window, histogram, and Kalman filter.
+def __init__(self, id, hsv_frame, track_window)
+```
 
-2. To begin the constructor's implementation, we define variables for the ID, the tracking window, and the MeanShift algorithm's termination criteria:
+2. To begin the constructor's implementation, we define variables for the ID, the tracking window, and the MeanShift algorithm's termination criteria.
+
 ```python
 self.id = id
 self.track_window = track_window
