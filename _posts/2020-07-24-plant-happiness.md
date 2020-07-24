@@ -181,8 +181,8 @@ if num_history_frames_populated < history_length:
 ```
 
 6. Once the background subtractor's history is full, we do more processing on each newly captured frame. Specifically, we apply the same approach we used with background subtractors earlier in this chapter: we perform thresholding, erosion, and dilation on the foreground mask; and then we detect contours, which might be moving objects:
-```python
 
+```python
 # Create the thresholded image.
 _, thresh = cv2.threshold(fg_mask, 127, 255, cv2.THRESH_BINARY)
 cv2.erode(thresh, erode_kernel, thresh, iterations=2)
