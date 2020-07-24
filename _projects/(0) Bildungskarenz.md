@@ -9,6 +9,14 @@ description: I publish my major achievements per week here.
 
 ## July 2020
 
+### Results of week 11: July 20-July 24
+
+- MIT Projects: Dedicated major work this week. Currently huge issues with correct tracking. Will work through weekend convinced I will achieve proper results. Writing a paper on the side. Will be counted as this week's blog article and published there.
+- DL-Scientist: This week only MIT is a priority.  
+- Project: Paused until further steps are possible.
+- Public Voice: Blog article on MIT project.
+- Leisure: Amazing trip through West Ireland last weekend, hiccups with G. reduced this week's output. Weekend will be used to support progress.
+
 ### Results of week 11: July 10-July 17
 
 - MIT Project: Almost my entire contributions went into the project see below, which is why I will only do MIT from Monday until July 28, and only a blog next Friday.
