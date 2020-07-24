@@ -13,7 +13,7 @@ description: I publish my major achievements per week here.
 
 - MIT Projects: Dedicated major work this week. Currently huge issues with correct tracking. Will work through weekend convinced I will achieve proper results. Writing a paper on the side. Will be counted as this week's blog article and published there.
 - DL-Scientist: This week only MIT is a priority.  
-- Project: Paused until further steps are possible.
+- Project: Paused until further steps are possible, worked on quarterly review on Travel day on Wednesday.
 - Public Voice: Blog article on MIT project.
 - Leisure: Amazing trip through West Ireland last weekend, hiccups with G. reduced this week's output. Weekend will be used to support progress.
 
