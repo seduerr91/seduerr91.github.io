@@ -8,24 +8,18 @@ description: This manuscripts reports findings on human happiness through observ
 
 ## Introduction
 
-(1) Who cares?
+Plants alter their movement to positive and negative emotional auditive stimuli differently [1]. This research is using machine learning and to investigate how an individual’s behavior are driven by and influenced by her/his emotions. This research integrates first results from using plants (currently Mimosa Pudica and Codariocalyx Motorius) as bio-sensors for emotions and compare these against voice and facial emotion recognition.
 
-'Plants respond to positive and negative emotional voices differently.' - Wait! What? Plants _respond_? What do they do? This research is using machine learning and to investigate how an individual’s behaviors are driven by and influenced by her/his emotions. This research integrates first results from using plants (currently Mimosa Pudica and Codariocalyx Motorius) as bio-sensors for emotions and compare these against voice and facial emotion recognition.
-
-(2) What do we know, what we don't know, and so what?
-
-In accordance with the research of Stefano Mancuso (2015) [1], initial research from Josephine Van Delden indicates that specific plants (we are conducting experiments with the Mimosa Pudica, and the Codariocalyx Motorius raise and accelerate their leaves faster if they are exposed to different types of music, or vocal emotions. This work seeks to integrate machine learning techniques to fully automatize image processing of plants within certain during day light levels.
+In accordance with the research of Mancuso (2015) [1], and initial research from Josephine Van Delden [to insert] indicates that Mimosa Pudica and Codariocalyx Motorius raise and accelerate their leaves faster if they are exposed to different types of audio exposure, or vocal emotions. Using these fundamental hypothesis, we are automatizing the process of plant tracking to evaluate individual's happiness.
 
 Relevant research on object detection and tracking are in which the authors [2] propose a sophisticated detection (DoH blob, extreme points, ellipse fitting and constraint) and tracking (motion prediction, feature matching, initial trajectory, and trajectory linking) method to track fish swarms. The article from [3] on fish shoals observes the kinematics of complex integrated systems by mapping the instantaneous acceleration (behavioral response) of a focal fish due to the influence of its neighbors. Thirdly, in the seminal article of [4] the authors examine flapping in spatial phases of bald ibises by using centroid analysis.
-
-(3) What will we learn?
 
 In this article, we will learn about using techniques in object detection and recognition to perform on stationary integrated systems in the form of Mimosa Pudica and Codariocalyx Motorius. Following the research invitation by [2] to replicate their approach to kinematic data from other animals and other species of fish to determine which aspects of the effective forces are universal signatures of biological groups are we are examining carnivore plants, i.e. Mimosa Pudica and Codariocalyx Motorius by following the research question:
 
 "How can object detection and recognition patterns be leveraged to use plants (currently Mimosa Pudica and Codariocalyx Motorius) as bio-sensors for emotions?"
 
-This manuscripts, touches upon related works in the field of object recognition and tracking, explains the methodological approach of state of the art software tools, and integrates the results the software performs.
-A discussion and conclusion round of the article.
+Next, related works in the field of object recognition and tracking, explains the methodological approach of state of the art software tools, and integrates the results the software performs.
+Followed by discussion and conclusion.
 
 ## Related Works
 
