@@ -57,8 +57,8 @@ Each Leaf object will act as a holder for a Kalman filter, a color histogram (ca
 import cv2
 import numpy as np
 
+# A tracked Leaf with a state including an ID, tracking window, histogram, and Kalman filter.
 class Leaf():
-#A tracked Leaf with a state including an ID, tracking window, histogram, and Kalman filter.
 def __init__(self, id, hsv_frame, track_window)
 ```
 
@@ -138,7 +138,8 @@ This is all the functionality and data that we need to associate with an individ
 Now that we have a Leaf class to maintain data about the tracking of each Leaf, let's implement our program's main function. We will look at the parts of the implementation sequentially:
 
 1. We begin by loading a video file, initializing a background subtractor, and setting the background subtractor's history length (that is, the number of frames affecting the
-background model):
+background model)
+
 ```python
 def main():
 cap = cv2.VideoCapture('Leafs.avi')
@@ -146,24 +147,31 @@ cap = cv2.VideoCapture('Leafs.avi')
 bg_subtractor = cv2.createBackgroundSubtractorKNN()
 history_length = 20 bg_subtractor.setHistory(history_length)
 ```
+
 2. Then, we define morphology kernels:
+
 ```python
 erode_kernel = cv2.getStructuringElement( cv2.MORPH_ELLIPSE, (3, 3))
 dilate_kernel = cv2.getStructuringElement( cv2.MORPH_ELLIPSE, (8, 3))
 ```
+
 3. We define a list called Leafs, which is initially empty. A little later, we will add Leaf objects to this list. We also set up a frame counter, which we will use to determine whether enough frames have elapsed to fill the background subtractor's history. Here are the relevant definitions of the variables:
+
 ```python
 Leafs = []
 num_history_frames_populated = 0
 ```
 4. Now, we start a loop. At the start of each iteration, we try to read a video frame. If this fails (for instance, at the end of the video file), we exit the loop:
+
 ```python
 while True:
   grabbed, frame = cap.read()
   if (grabbed is False):
     break
 ```
+
 5. Proceeding with the body of the loop, we update the background subtractor based on the newly captured frame. If the background subtractor's history is not yet full, we simply continue to the next iteration of the loop. Here is the relevant code:
+
 ```python
 # Apply the KNN background subtractor.
 fg_mask = bg_subtractor.apply(frame)
@@ -171,6 +179,7 @@ fg_mask = bg_subtractor.apply(frame)
 if num_history_frames_populated < history_length:
   num_history_frames_populated += 1 continue
 ```
+
 6. Once the background subtractor's history is full, we do more processing on each newly captured frame. Specifically, we apply the same approach we used with background subtractors earlier in this chapter: we perform thresholding, erosion, and dilation on the foreground mask; and then we detect contours, which might be moving objects:
 ```python
 
@@ -181,11 +190,14 @@ cv2.dilate(thresh, dilate_kernel, thresh, iterations=2)
 # Detect contours in the thresholded image.
 contours, hier = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 ```
+
 7. We also convert the frame to HSV format because we intend to use histograms in this format for MeanShift. The following line of code performs the conversion:
+
 ```python
 hsv_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 ```
 8. Once we have contours and an HSV version of the frame, we are ready to detect and track moving objects. We find and draw a bounding rectangle for each contour that is large enough to be a Leaf. Moreover, if we have not yet populated the Leafs list, we do so now by adding a new Leaf object based on each bounding rectangle (and the corresponding region of the HSV image). Here is the subloop that handles the contours in the manner we have just described:
+
 ```python
 # Draw rectangles around large contours.
 # Also, if no Leafs are being tracked yet, create some.
@@ -197,19 +209,24 @@ for c in contours:
         Leafs.append(Leaf(id, frame, hsv_frame, (x, y, w, h)))
         id += 1
 ```
+
 9. By now, we have a list of Leafs whom we are tracking. We call each Leaf object's update method, to which we pass the original BGR frame (for use in drawing) and the HSV frame (for use in tracking with MeanShift). Remember that each Leaf object is responsible for drawing its own information (text, the tracking rectangle, and the Kalman filter's prediction). Here is the subloop that updates the Leafs list:
+
 ```python
 # Update the tracking of each Leaf.
 for Leaf in Leafs:
   Leaf.update(frame, hsv_frame)
 ```
+
 10. Finally, we display the tracking results in a window, and we allow the user to exit the program at any time by pressing the Esc key:
+
 ```python
 cv2.imshow('Leafs Tracked', frame)
 k = cv2.waitKey(110) if k == 27: # Escape
   break
 if __name__ == "__main__": main()
 ```
+
 There you have it: MeanShift working in tandem with the Kalman filter to track moving objects. All being well, you should see tracking results visualized in the following manner:
 In this cropped screenshot, the green rectangle with the thin border is the detected contour, the cyan rectangle with the thick border is the Kalman-corrected MeanShift tracking rectangle, and the blue dot is the center position predicted by the Kalman filter.
 
