@@ -1,12 +1,16 @@
 ---
-title: Check your basil,check your happiness.
+title: Check your basil, check your happiness
 tags: [Coding]
 style: fill
 color: success
 description: Exploring Human Emotions through Bio Sensors.
 ---
 
-This article briefly summarizes findings on differnt
+This article introduces...
+- findings my experiences with different object detection and tracking tools
+- with a focus on PlantCV's capabilities,
+- lists the new videos I created for further analysis, and
+- introduces to my concept for the next steps.
 
 ### Object detection and tracking tools
 
