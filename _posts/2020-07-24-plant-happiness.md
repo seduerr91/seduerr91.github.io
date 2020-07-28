@@ -34,4 +34,6 @@ Unhealthy basil, many leaves|[here]()
 Healthy basil, few leaves|[here]()
 Unhealthy basil, few leaves|[here]()
 
-### Next Steps
+### Project 'Show me your basil'
+
+https://drive.google.com/file/d/1FjNXeMPaLJNyggLKS7OI0_XcHgBqT_vz/view?usp=sharing
