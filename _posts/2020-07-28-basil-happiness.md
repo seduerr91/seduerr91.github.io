@@ -2,7 +2,7 @@
 title: Check your basil, check your happiness
 tags: [Coding]
 style: fill
-color: success
+color: dark
 description: Exploring Human Emotions through Bio Sensors.
 ---
 
@@ -30,7 +30,7 @@ Conclusion:
 Given this bare plant, I detected the plant properties and the structure of the plant.
 
 #### Bare Plant
-![Bare plant](https://i.imgur.com/RTiwZrK.jpg)
+![Imgur](https://i.imgur.com/HmnyCEum.jpg)
 #### Bare Properties
 ![Plant Properties](https://i.imgur.com/WEXUOST.png)
 #### Bare Structure
@@ -38,9 +38,9 @@ Given this bare plant, I detected the plant properties and the structure of the 
 
 PlantCV also allows to determine the branch points or the leaf path lenghts.
 #### Branch Points
-! Branch Points
+![Imgur](https://i.imgur.com/qyRRk2J.png)
 #### Leaf Path Lengths
-! LENGTH
+![Imgur](https://i.imgur.com/WYTTm00.png)
 
 Additionally, you can detect the leaf color patterns, potentially inferencing a plants' health.
 #### Health of Plants
@@ -53,9 +53,9 @@ Additionally, you can detect the leaf color patterns, potentially inferencing a 
 In order to conduct further analysis, I made videos with two different basils. One was old and already close to his end of life, while the other one was a *bio* basil, freshly bought. I did two rounds with more leaves and with less leaves on the basils for tracking purposes. Find the videos behind the the links in the table.
 
 #### Healthy Basil
-!
+![Imgur](https://i.imgur.com/Vm4adepm.jpg)
 #### Unhealthy Basil
-!
+![Imgur](https://i.imgur.com/fWhXr1Xm.jpg)
 
 The following table introduces the basil videos.
 
