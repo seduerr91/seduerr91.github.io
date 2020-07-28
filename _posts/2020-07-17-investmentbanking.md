@@ -6,7 +6,7 @@ color: dark
 description: Notes on Comparable Company Analysis, Preceding Transaction Analysis, LBO, M&A, etc.
 ---
 
-This article briefly introduces the field of investment banking. It is structured into three steps: valuation, leveraged buyouts, and mergers & acquisitions.
+This article introduces the field of investment banking. It is structured into three steps: valuation, leveraged buyouts, and mergers & acquisitions.
 
 ![Cash](https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80)
 Photo by Alexander Mils on Unsplash
