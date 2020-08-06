@@ -6,7 +6,7 @@ color: warning
 description: Summary of the Illustrated Transformer by J. Alammar.
 ---
 
-The article [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/) by J. Alammar is a must read on deep learning in the field of natural language processing (NLP). Also, this was recommended in one of the expert interview that I [conducted](https://seduerr91.github.io/blog/experts). This article will close with a brief summary of the [contemporary literature review from Thomas Wolf](https://www.youtube.com/watch?v=G5lmya6eKtc&feature=youtu.be) of Huggingface.co.
+The article [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/) by J. Alammar is a must read on deep learning in the field of natural language processing (NLP). Also, this was recommended in one of the expert interview that I [conducted](https://seduerr91.github.io/blog/experts).
 
 ### Review of Attention
 
