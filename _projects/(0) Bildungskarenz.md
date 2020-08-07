@@ -7,9 +7,26 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+## August 2020
+
+### Results of week 14: August 3-August 7
+
+- MIT Projects: Dedicated major work this week.
+- Project: Paused until after MIT, worked on quarterly review on Travel day on Wednesday.
+- Public Voice: No new article because of vacay next week.
+- Leisure: Worked for days from Monte. Did quarterly review for Q1.
+
 ## July 2020
 
-### Results of week 11: July 20-July 24
+### Results of week 13: July 27-July 31
+
+- MIT Projects: Call with Peter on Tuesday. He loved the basil and citizen science approach.
+- DL-Scientist: This week only MIT is a priority.  
+- Project: Paused until after MIT, worked on quarterly review on Travel day on Wednesday.
+- Public Voice: Blog article on MIT project part 2.
+- Leisure: Nice time at home with Parents/AMS.
+
+### Results of week 12: July 20-July 24
 
 - MIT Projects: Dedicated major work this week. Currently issues with correct tracking. Will work through weekend convinced I will achieve proper results. Writing a paper on the side. Will be counted as this week's blog article and published there.
 - DL-Scientist: This week only MIT is a priority.  
