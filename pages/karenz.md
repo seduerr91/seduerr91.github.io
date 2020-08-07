@@ -9,6 +9,10 @@ description: I publish my major achievements per week here.
 
 ## August 2020
 
+### Results of week 15: August 10-August 14
+
+- Vacay.
+
 ### Results of week 14: August 3-August 7
 
 - MIT Projects: Dedicated major work this week.
