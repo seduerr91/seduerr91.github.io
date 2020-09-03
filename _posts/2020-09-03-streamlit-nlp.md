@@ -18,8 +18,10 @@ I’m going to be sharing the process in this article, using GPT-2 as an example
 
 Just clone the sample git via entering the following in your terminal.
 
-'''python
+'''python3
+
 git clone https://github.com/seduerr91/gpt2-streamlit.git
+
 '''
 
 ### Set up a virtual environment
@@ -27,10 +29,12 @@ git clone https://github.com/seduerr91/gpt2-streamlit.git
 Set up a virtual environment, start it and install all the necessary requirements with the following code.
 
 '''python3
+
 mkdir env
 python3 -m venv env/educa
 source env/educa/bin/activate
 pip3 install -r requirements.txt
+
 '''
 
 ### Load GPT-2 from Transformers
@@ -42,11 +46,9 @@ In this example, we are going to work out of a single Python script. Here is the
 
 '''python3  
 
-
 import streamlit as st
 from transformers import pipeline, set_seed
 from transformers.pipelines import TextGenerationPipeline
-
 
 class TextGenerator:
     def __init__(self):
@@ -71,13 +73,11 @@ The st.cache decorator tells Streamlit to skip execution if the function has bee
 
 '''python3
 
-
 @st.cache(allow_output_mutation=True)
 def instantiate_generator():
     generator = TextGenerator()
     generator.load_generator()
     return generator
-
 
 if __name__ == '__main__':
     st.title('GPT-2 Demo')
