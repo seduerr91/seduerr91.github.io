@@ -7,11 +7,37 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+## September 2020
+
+### Results of week 20: September 14-September 18
+
+- Experiments in Zurich/Rheinau
+
+### Results of week 19: September 7-September 11
+
+- Successful interview with Narrativa.
+- Summary of NLP Deep Learning Chapter 2.
+
 ## August 2020
+
+### Results of week 18: August 31-September 4
+
+- Successful interview with Narrativa.
+- Summary of NLP Deep Learning
+
+### Results of week 17: August 24-August 28
+
+- Worked in Math Faculty of Uni Vienna with Paul. Certificate in Deep Learning NLP.
+- Trip to Ireland to spend birthday with Evgeniya.
+
+### Results of week 16: August 17-August 21
+
+- Worked in Math Faculty of Uni Vienna with Paul. Certificate in Deep Learning.
+- Weekend in Budapest with David and Albert.
 
 ### Results of week 15: August 10-August 14
 
-- Vacay.
+- Vacay in Montenegro.
 
 ### Results of week 14: August 3-August 7
 
