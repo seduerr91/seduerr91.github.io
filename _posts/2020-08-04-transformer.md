@@ -2,7 +2,7 @@
 title: The Transformer review
 tags: [Coding]
 style: fill
-color: warning
+color: white
 description: Summary of the Illustrated Transformer by J. Alammar.
 ---
 
