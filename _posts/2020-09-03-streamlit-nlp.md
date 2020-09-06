@@ -47,3 +47,16 @@ Run via 'python3 app.py'
 
 
 ## Run it online
+Inspired by [this article](https://towardsdatascience.com/deploy-streamlit-on-heroku-9c87798d2088.)
+Write: heroku login
+Next: heroku create
+
+Then insert:
+
+git add .
+git commit -m "Enter your message here"
+git push heroku master
+
+No for web running:
+
+heroku ps:scale web=1
