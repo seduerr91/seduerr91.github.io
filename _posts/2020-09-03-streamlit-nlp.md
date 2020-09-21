@@ -1,9 +1,9 @@
 ---
-title: NLG Paramters and Algorithms
+title: Running GPT2 Inference through a Streamlit Interface on GCP
 tags: [Coding]
 style: fill
 color: secondary
-description: An overview of different hyperparamters of deep neural networks for text generation.
+description: These are non-working instructions for running a Deep Neural Network on a Streamlit server.
 ---
 
 Inpsired by [this article](https://towardsdatascience.com/prototyping-machine-learning-models-with-streamlit-1134c34e9620).
