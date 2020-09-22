@@ -6,7 +6,7 @@ color: success
 description: Studenten und Professor untersuchen Bewegungen und elektrostatisches Gefälle von Pflanzen, die Eurythmie exporniert wurden.
 ---
 
-"Vergangenen Sonntag hatten wir Tag der offenen Tür und haben in einem Blindtest mehrere duzend Gäste bekocht. Dabei haben wir Randen (dt. rote Beete) zu einer Suppe gekocht und konnten feststellen, dass die Randen, welche in den vergangenen Wochen Eurythmie ausgesetzt waren, besser schmeckten", teilte uns Hans Braunwalder, unser Gastgeber, vom Gut Rheinau, mit.
+"Vergangenen Sonntag hatten wir Tag der offenen Tür. An diesem Tag haben wir in einem Blindtest mehrere dutzend Gäste bekocht. Dabei haben wir Randen (dt. rote Beete) zu einer Suppe gekocht und konnten feststellen, dass die Randen, welche regelmäßig Eurythmie ausgesetzt waren, besser schmeckten", teilte uns Hans Braunwalder, unser Gastgeber, vom Gut Rheinau, mit.
 
 # Experimente an Pflanzen, die mit Eurythmie betanzt wurden
 
@@ -30,7 +30,7 @@ Im Versuchsaufbau richteten wir dafür zwei Kameras auf den Eurethmietänzer um 
 
 ![Imgur](https://i.imgur.com/VpKoP5A.jpg)
 
-Insgesamt haben wir 11 Versuchsreihen durchgeführt, um unsere Daten zu erheben. Dabei konnten wir gleichmäßig betanzte (in den vergangenen Wochen Eurythmie ausgesetzten Pflanzen) und nicht-betanzte Pflanzen aufzeichnen. Der Versuchsablauf begann damit, adss wir jeweils zwei Pflanzen mit der sogenannten Spikerbox verbunden haben, um das Aktionspotenzial in der Pflanze während einer Betanzung zu erheben. Zusätzlich wurde eine freistehende Pflanze identifiziert, um etwaige Auffälligkeiten daran aufzuzeichnen und der Tänzer angewiesen sich an einem Punkt (in etwa 1m von dem Pflanzenbeet entfernt) zu positionieren. In der Regel wurde dann jedes Beet von Pflanzen ca. 1,5 Minuten betanzt und dabei die Daten gesammelt. Die nachfolgende Tabelle weist die durchgeführten Experimente aus.
+Insgesamt haben wir 11 Versuchsreihen durchgeführt, um unsere Daten zu erheben. Dabei konnten wir gleichmäßig betanzte (in den vergangenen Wochen Eurythmie ausgesetzten Pflanzen) und nicht-betanzte Pflanzen aufzeichnen. Der Versuchsablauf begann damit, dass wir jeweils zwei Pflanzen mit der sogenannten Spikerbox verbunden haben, um das Aktionspotenzial in der Pflanze während einer Betanzung zu erheben. Zusätzlich wurde eine freistehende Pflanze identifiziert, um etwaige Auffälligkeiten daran aufzuzeichnen und der Tänzer angewiesen sich an einem Punkt (in etwa 1m von dem Pflanzenbeet entfernt) zu positionieren. In der Regel wurde dann jedes Beet von Pflanzen ca. 1,5 Minuten betanzt und dabei die Daten gesammelt. Die nachfolgende Tabelle weist die durchgeführten Experimente aus.
 
 # Tabelle 1 - durchgeführte Experimente
 
@@ -70,7 +70,7 @@ Die Mimosa Pudica hebt ihre Blätter höher und länger anhebt, wenn sie glückl
 
 ![Emotionen](https://i.imgur.com/EkNwJIA.png)
 
-Diese Erkenntnisse liessen uns erwarten, dass wir ebenfalls Bewegungen an den Pflanzen auf einem organischen Baürnhof feststellen würden, wenn diese den Reizen der eurythmischen Betanzung ausgesetzt sind.
+Diese Erkenntnisse ließen uns erwarten, dass wir ebenfalls Bewegungen an den Pflanzen auf einem organischen Baürnhof feststellen würden, wenn diese den Reizen der eurythmischen Betanzung ausgesetzt sind.
 
 # Erwartete Ergebnisse  
 
@@ -78,19 +78,19 @@ T.B. analyzed.
 
 - Keine Bewegungen an den Pflanzen auszumachen, die nicht durch Winde zustandegekommen sind.
 - Korrelation zwischen Bewegungen des Eurythmietänzers und dem Aktionspotenzial in den Pflanzen.
-- Unterschiede im Aktionspotenzial zwischen wöchentlich eurythmisch behandelten Pflanzen und denen, die nicht regelmässig betanzt werden.
+- Unterschiede im Aktionspotenzial zwischen wöchentlich eurythmisch behandelten Pflanzen und denen, die nicht regelmäßig betanzt werden.
 
 # Interpretation
 
-Der Baürnhofbetreiber Hans Braunwalder ist fest davon überzeugt, dass das Betanzen von Pflanzen einen positiven Einfluss auf den Geschmack (erhöhter Zuckergehalt) der Pflanzen hat. Wir können durch unsere Messungen bestätigen/widerlegen, dass es Unterschiede im Erheben des Aktionspotenzial in den regelmässig betanzten zu den unbetanzten Pflanzen gibt. Auch konnten wir feststellen, dass die Pflanze verändertem Aktionspotenzial ausgesetzt ist, wenn diese betanzt wird.
+Der Baürnhofbetreiber Hans Braunwalder ist fest davon überzeugt, dass das Betanzen von Pflanzen einen positiven Einfluss auf den Geschmack (erhöhter Zuckergehalt) der Pflanzen hat. Wir können durch unsere Messungen bestätigen/widerlegen, dass es Unterschiede im Erheben des Aktionspotenzial in den regelmäßig betanzten zu den unbetanzten Pflanzen gibt. Auch konnten wir feststellen, dass die Pflanze verändertem Aktionspotenzial ausgesetzt ist, wenn diese betanzt wird.
 
 # Limitationen
 
 Unseres sorgfältig durchgeführten Experimente haben einige Limitationen. Diese sind der Einfluss durch verursachte Vibrationen, Wettereinflüsse
 
 - änderungen am Aktionspontenzial könnten Vibrationen, die durch den Tänzer ausgelöst wurden, sein. Druch das Einhalten eines Abstandes von einem Meter versuchten wir den Einfluss durch solche Vibrationen zu verhindern.  
-- Die Einflüsse von Wetter, bspw. Wind oder Sonnenschein, könnten die Messungen beeinflussen. Um dies Auszuschliessen haben wir einen Tag mit einer sehr geringen Windstärke zur Durchführung unserer Ergebnisse gewählt. Zusätzlich haben wir bei den Aufzeichnungen an den Pflanzen einen Windschutz aufgestellt, um Bewebungen zu verhindern. Auch haben wir verschiedene Versuche an den gleichen Pflanzen mehrfach durchgeführt, um Abweichungen zu berücksichtigen.
-- Weitere Einfluesse oder die Forscher selbst koennten die Bewegungen beeinflusst haben. Wir haben auf externe Einfluesse, bspw. durch vorbeifahrende Traktoren reagiert, und waehrend dieser Zeit keine Messungen vorgenommen. Auch haben wir als Forscher bewusst Abstand gehalten und die Pflanzen auch immer mindestens 30 Minuten 'zur Ruhe kommen lassen'.
+- Die Einflüsse von Wetter, bspw. Wind oder Sonnenschein, könnten die Messungen beeinflussen. Um dies Auszuschließen haben wir einen Tag mit einer sehr geringen Windstärke zur Durchführung unserer Ergebnisse gewählt. Zusätzlich haben wir bei den Aufzeichnungen an den Pflanzen einen Windschutz aufgestellt, um Bewebungen zu verhindern. Auch haben wir verschiedene Versuche an den gleichen Pflanzen mehrfach durchgeführt, um Abweichungen zu berücksichtigen.
+- Weitere Einflüsse oder die Forscher selbst koennten die Bewegungen beeinflusst haben. Wir haben auf externe Einflüsse, bspw. durch vorbeifahrende Traktoren reagiert, und waehrend dieser Zeit keine Messungen vorgenommen. Auch haben wir als Forscher bewusst Abstand gehalten und die Pflanzen auch immer mindestens 30 Minuten 'zur Ruhe kommen lassen'.
 
 # Nächste Versuche
 
