@@ -47,7 +47,7 @@ Die nachfolgende Tabelle weist die durchgeführten Experimente aus.
 
 # Tabelle 1 - durchgeführte Experimente
 
-Versuch#, Name und Tanz |	Uhrzeit	| Pflanze und Anmerkungen
+Versuch |	Uhrzeit	| Pflanze und Anmerkungen
 ---|---|---
 1_10-38-randen-planeten-eu	|10:38|	Randen_Planeten EU - Runde 1
 2_11-23-bohnen-obersonnig	|11:23|Tote Bohnen - Runde 1 - Obersonnig
@@ -99,7 +99,7 @@ Der Bauernhofbetreiber Hans Braunwalder ist fest davon überzeugt, dass das Beta
 
 Unseres sorgfältig durchgeführten Experimente haben ihre Limitationen. Diese sind der Einfluss durch verursachte Vibrationen, Wettereinflüsse sowie potenzielle Beeinflussung durch uns als Forscher auf dem freien Feld:
 
-Erstens könnten änderungen am Aktionspontenzial durch Vibrationen bspw. durch die ruhigen Bewegungen des Tänzer ausgelöst worden sein. Druch das Einhalten eines Abstandes von einem Meter versuchten wir den Einfluss durch solche Vibrationen zu verhindern. Auch schwingte Bauer Hans lediglich seine Arme (doublecheck) während der Betanzung.
+- Erstens könnten änderungen am Aktionspontenzial durch Vibrationen bspw. durch die ruhigen Bewegungen des Tänzer ausgelöst worden sein. Druch das Einhalten eines Abstandes von einem Meter versuchten wir den Einfluss durch solche Vibrationen zu verhindern. Auch schwingte Bauer Hans lediglich seine Arme (doublecheck) während der Betanzung.
 - Die Einflüsse von Wetter, bspw. Bewegungen durch Wind oder Ausrichten der Pflanze nach dem Sonnenschein, könnten die Messungen beeinflussen. Um dies Auszuschließen haben wir einen Tag mit einer sehr geringen Windstärke (<5km/h (doublecheck)) zur Durchführung unserer Ergebnisse gewählt. Zusätzlich haben wir bei den Aufzeichnungen an den Pflanzen einen Windschutz aufgestellt, um Bewegungen zu verhindern. Auch haben wir verschiedene Versuche an den gleichen Pflanzen mehrfach zu unterschiedlichen Tageszeiten durchgeführt, um entstehende Abweichungen aufgrund des Sonnenstandes nachträglich aus den Daten filtern zu können.
 - Weitere Einflüsse oder wir als Forscher könnten die selbst Bewegungen und das Aktionspotenzial in den Pflanzen beeinflusst haben. Um dies zu vermeiden, haben wir auf externe Einflüsse, bspw. durch vorbeifahrende Traktoren reagiert, und während dieser Zeit keine Messungen vorgenommen. Auch haben wir als Forscher mehrere Meter (jeweils >3m) Abstand gehalten und die Pflanzen/Beete jeweils mindestens 30 Minuten 'zur Ruhe kommen lassen'.
 
