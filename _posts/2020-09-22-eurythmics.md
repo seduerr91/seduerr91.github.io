@@ -71,15 +71,15 @@ Bevor wir die Ergebnisse unserer Auswertungen präsentieren, möchten wir vorab 
 
 In früheren Auswertungen konnten wir feststellen, dass Pflanzen auf positive und negative emotionale Stimmen in unterschiedlicher Weise reagieren. Erste Forschungsunterfangen zeigten, dass bestimmte Pflanzen (wir experimentieren mit der _Mimosa Pudica_ und _Codariocalyx Motorius_ ihre Blätter schneller anheben und beschleunigen, wenn sie verschiedenen Arten von Musik (1) oder stimmlichen Emotionen (2) ausgesetzt sind. Die beiden folgenden Darstellungen illustrieren diesen Effekt.
 
-## Mimosa Pudica und verschiedene Musikarten
+## Codariocalyx und verschiedene Musikarten
 
 ![Musikarten](https://i.imgur.com/9cwEpuj.png)
 
-Oben aufgeführte Diagramme veranschaulichen die Zeit, die die Mimosa Pudica benötigt, um auf verschiedene auditive Stimuli wie "Stille", "Metal", "Techno", "klassisch" und "Jodeln" zu reagieren. Wir stellten fest, dass die Pflanze unter Jodeln wesentlich schneller reagierte als bei Stille. Unsere weitere Analyse zeigt, wie sich Pflanzen bei glücklichen oder traurigen menschlichen Stimmen verhalten.
+Oben aufgeführte Diagramme veranschaulichen die Zeit, die die Codariocalyx benötigt, um auf verschiedene auditive Stimuli wie "Stille", "Metal", "Techno", "klassisch" und "Jodeln" zu reagieren. Wir stellten fest, dass die Pflanze unter Jodeln wesentlich schneller reagierte als bei Stille. Unsere weitere Analyse zeigt, wie sich Pflanzen bei glücklichen oder traurigen menschlichen Stimmen verhalten.
 
-## Mimosa Pudica und verschiedene Emotionen
+## Codariocalyx und verschiedene Emotionen
 
-Die Mimosa Pudica hebt ihre Blätter höher und länger anhebt, wenn sie glücklichen auditiven Emotionen exponiert ist. Anmerkung: Für dieses Experiment verwendeten wir einen [professionellen Datensatz](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5955500/) von Künstlern, die positive Sätze sowohl auf positive als auch auf negative Weise wiederholten.
+Die Codariocalyx hebt ihre Blätter höher und länger anhebt, wenn sie glücklichen auditiven Emotionen exponiert ist. Anmerkung: Für dieses Experiment verwendeten wir einen [professionellen Datensatz](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5955500/) von Künstlern, die positive Sätze sowohl auf positive als auch auf negative Weise wiederholten.
 
 ![Emotionen](https://i.imgur.com/EkNwJIA.png)
 
