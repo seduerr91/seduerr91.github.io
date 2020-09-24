@@ -6,13 +6,13 @@ color: success
 description: Studenten und Professor untersuchen Bewegungen und elektrostatisches Gefälle von Pflanzen, die Eurythmie exporniert wurden.
 ---
 
-# Bericht vom Mittwoch, den 16.09.2020, Gut Rheinau
+## Bericht vom Mittwoch, den 16.09.2020, Gut Rheinau
 
 _"Vergangenen Sonntag hatten wir Tag der offenen Tür. An diesem Tag haben wir in einem Blindtest mehrere dutzend Gäste bekocht. Dabei haben wir Randen (dt. rote Beete) zu einer Suppe gekocht und konnten feststellen, dass die Randen, welche regelmäßig Eurythmie ausgesetzt waren, besser schmeckten"_,
 
 teilte uns Hans Braunwalder unser Gastgeber bei der Einleitung zu unseren für diesen Tag geplanten Versuchen auf dem Gut Rheinau mit.
 
-# Experimente an Pflanzen, die mit Eurythmie betanzt wurden
+## Experimente an Pflanzen, die mit Eurythmie betanzt wurden
 
 Am 16. September 2020, kamen wir in den Norden Zürichs, um zu untersuchen ob sich Randen, Tomaten und Bohnen, die neben sorgfältiger Pflege und Bewässerung, wöchentlich mit Eurythmie behandelt werden, anders Verhalten als solche, die diese zusätzliche, spezielle Behandlung nicht erhalten haben.
 
@@ -24,15 +24,15 @@ Die Bauern vom Gut Rheinau nutzen die Eurythmie, um einen Teil ihrer Pflanzen in
 
 Um dieses Phänomen wissenschaftlich aufzuarbeiten führten wir 22 Experimente in 11 Versuchsreihen durch. Dabei sammelten wir Daten in zweierlei Hinsicht: Zum einen richteten wir Kameras auf den Eurethmietänzer Hans um seine Bewegung aufzunehmen und eine Kamera auf eine seiner Pflanze, um Ungewöhnlichkeiten zu identifizieren. Zum Anderen erhebten wir die Spannung von den Blättern der jeweiligen Pflanzen zur Wurzel mit einem speziellen Spanungsmessgerät (der Plant SpikerBox, welche den elektrischen Potentialunterschied zwischen Pflanze und Erde misst). Die nachfolgenden Bilder illustrieren diesen Versuchsaufbau.
 
-## Aufzeichnung von Pflanzenreaktionen
+#### Aufzeichnung von Pflanzenreaktionen
 
 ![Imgur](https://i.imgur.com/TESaDAx.jpg)
 
-## Aufzeichnung des Eurythmietänzers Hans
+#### Aufzeichnung des Eurythmietänzers Hans
 
 ![Imgur](https://i.imgur.com/N5jaffT.jpg)
 
-## Aktionspotenzialmessungen an den Pflanzen
+#### Aktionspotenzialmessungen an den Pflanzen
 
 ![Imgur](https://i.imgur.com/VpKoP5A.jpg)
 
@@ -45,7 +45,7 @@ Insgesamt haben wir 11 Versuchsreihen (mit je zwei Messgeräten) durchgeführt, 
 
 Die nachfolgende Tabelle weist die durchgeführten Experimente aus.
 
-# Tabelle 1 - durchgeführte Experimente
+## Tabelle 1 - durchgeführte Experimente
 
 Versuch |	Uhrzeit	| Pflanze und Anmerkungen
 ---|---|---
@@ -67,17 +67,17 @@ Nachfolgend findet sich ein Beispiel mit der obersonnigen Betanzungsabfolge für
 
 Bevor wir die Ergebnisse unserer Auswertungen präsentieren, möchten wir vorab unsere bisherigen Forschungsergebnisse und die daraus resultierenden Hypothesen vorstellen. Mit diesen sind wir an diesem Tag an das Gut Rheinau gekommen.
 
-# Bisherige Forschungsergebnisse
+## Bisherige Forschungsergebnisse
 
 In früheren Auswertungen konnten wir feststellen, dass Pflanzen auf positive und negative emotionale Stimmen in unterschiedlicher Weise reagieren. Erste Forschungsunterfangen zeigten, dass bestimmte Pflanzen (wir experimentieren mit der Mimosa Pudica und Codariocalyx Motorius) ihre Blätter schneller anheben und beschleunigen, wenn sie verschiedenen Arten von Musik (1) oder stimmlichen Emotionen (2) ausgesetzt sind. Die beiden folgenden Darstellungen illustrieren unsere Versuchsergebnisse.
 
-## Codariocalyx und verschiedene Musikarten
+#### Codariocalyx und verschiedene Musikarten
 
 ![Musikarten](https://i.imgur.com/9cwEpuj.png)
 
 Oben aufgeführte Diagramme veranschaulichen die Zeit, die die Codariocalyx benötigt, um auf verschiedene auditive Stimuli wie "Stille", "Metal", "Techno", "klassisch" und "Jodeln" zu reagieren. Wir stellten fest, dass die Pflanze unter Jodeln wesentlich schneller reagierte als bei Stille. Unsere weitere Analyse zeigt, wie sich Pflanzen bei glücklichen oder traurigen menschlichen Stimmen verhalten.
 
-## Codariocalyx und verschiedene Emotionen
+#### Codariocalyx und verschiedene Emotionen
 
 Die Codariocalyx hebt ihre Blätter höher und länger anhebt, wenn sie glücklichen auditiven Emotionen exponiert ist. Anmerkung: Für dieses Experiment verwendeten wir einen [professionellen Datensatz](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5955500/) von Künstlern, die positive Sätze sowohl auf positive als auch auf negative Weise wiederholten.
 
@@ -85,17 +85,17 @@ Die Codariocalyx hebt ihre Blätter höher und länger anhebt, wenn sie glückli
 
 Aus diesen Erkenntnissen bildeten wir die Hypothese, dass wir Bewegungen an den Pflanzen auf einem organischen Bauernhof feststellen können, wenn diese den Reizen der eurythmischen Betanzung ausgesetzt sind.
 
-# Erwartete Ergebnisse (dies haben wir zu analysieren)
+## Erwartete Ergebnisse (dies haben wir zu analysieren)
 
 1. Keine Bewegungen an den Pflanzen auszumachen, die nicht durch Winde zustandegekommen sind.
 2. Korrelation zwischen Bewegungen des Eurythmietänzers und dem Aktionspotenzial in den Pflanzen.
 3. Unterschiede im Aktionspotenzial zwischen wöchentlich eurythmisch behandelten Pflanzen und denen, die nicht regelmäßig betanzt werden.
 
-# Interpretation
+## Interpretation
 
 Der Bauernhofbetreiber Hans Braunwalder ist fest davon überzeugt, dass das Betanzen von Pflanzen einen positiven Einfluss auf den Geschmack (erhöhter Zuckergehalt) der Pflanzen hat. Wir können durch unsere Messungen bestätigen/widerlegen, dass es Unterschiede im Erheben des Aktionspotenzial in den regelmäßig betanzten zu den unbetanzten Pflanzen gibt. Auch konnten wir feststellen, dass die Pflanze ihr Aktionspotenzial ändert, wenn diese betanzt wird.
 
-# Limitationen
+## Limitationen
 
 Unseres sorgfältig durchgeführten Experimente haben ihre Limitationen. Diese sind der Einfluss durch verursachte Vibrationen, Wettereinflüsse sowie potenzielle Beeinflussung durch uns als Forscher auf dem freien Feld:
 
@@ -103,7 +103,7 @@ Unseres sorgfältig durchgeführten Experimente haben ihre Limitationen. Diese s
 - Die Einflüsse von Wetter, bspw. Bewegungen durch Wind oder Ausrichten der Pflanze nach dem Sonnenschein, könnten die Messungen beeinflussen. Um dies Auszuschließen haben wir einen Tag mit einer sehr geringen Windstärke (<5km/h (doublecheck)) zur Durchführung unserer Ergebnisse gewählt. Zusätzlich haben wir bei den Aufzeichnungen an den Pflanzen einen Windschutz aufgestellt, um Bewegungen zu verhindern. Auch haben wir verschiedene Versuche an den gleichen Pflanzen mehrfach zu unterschiedlichen Tageszeiten durchgeführt, um entstehende Abweichungen aufgrund des Sonnenstandes nachträglich aus den Daten filtern zu können.
 - Weitere Einflüsse oder wir als Forscher könnten die selbst Bewegungen und das Aktionspotenzial in den Pflanzen beeinflusst haben. Um dies zu vermeiden, haben wir auf externe Einflüsse, bspw. durch vorbeifahrende Traktoren reagiert, und während dieser Zeit keine Messungen vorgenommen. Auch haben wir als Forscher mehrere Meter (jeweils >3m) Abstand gehalten und die Pflanzen/Beete jeweils mindestens 30 Minuten 'zur Ruhe kommen lassen'.
 
-# Nächste Versuche
+## Nächste Versuche
 
 Ob ein Betanzen der Pflanzen des eigenen Gartens empfehlenswert ist, können wir zu diesem Zeitpunkt nicht abschliessend feststellen. Dafür planen wir weitere Versuche und an das Gut Rheinau zurückzukehren. Auch möchten wir Umweltfaktoren wie Luftqualität, Temperatur, Luftfeuchtigkeit und Langzeitstudien über mehrere Stunden erheben.
 
