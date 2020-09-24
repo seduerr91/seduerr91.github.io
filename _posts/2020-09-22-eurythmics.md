@@ -40,7 +40,7 @@ Insgesamt haben wir 11 Versuchsreihen (mit je zwei Messgeräten) durchgeführt, 
 
 - Wir verbindeten jeweils zwei Pflanzen mit unserem speziellen Spanungsmessgerät (Plant SpikerBox), um das elektrostatische Gefälle in der Pflanze während einer professionellen eurythmischen Tanzeinlage durch Bauer Hans zu erheben. Zusätzlich evaluierten wir diese Messungen durch sogenannte Baseline-Aufzeichnungen (d.h. Messaufzeichnungen ohne Tänzer), um dessen Einfluss identifizieren zu können.
 - Zusätzlich wurde eine freistehende Pflanze identifiziert und mit Kameras fokussiert, um etwaige Bewegungsauffälligkeiten aufzuzeichnen.
-- Der Tänzer wurde jedes Mal gebeten sich an einem definiereten Punkt (ca. 1m von dem Pflanzenbeet entfernt) zu positionieren, um konstanten Abstand zu den Beeten zu halten. Wir filmten den Bauern Hans, um das Aktionspotenzial in der Pflanze mit den Tanzbewegungen vergleichen zu können.
+- Der Tänzer wurde jedes Mal gebeten sich an einem definierten Punkt (ca. 1m von dem Pflanzenbeet entfernt) zu positionieren, um konstanten Abstand zu den Beeten zu halten. Wir filmten den Bauern Hans, um das Aktionspotenzial in der Pflanze mit den Tanzbewegungen vergleichen zu können.
 - In der Regel wurde jedes Beet von Pflanzen ca. 1,5 Minuten betanzt und dabei die angesprochenen Daten gesammelt.
 
 Die nachfolgende Tabelle weist die durchgeführten Experimente aus.
@@ -65,11 +65,11 @@ Nachfolgend findet sich ein Beispiel mit der obersonnigen Betanzungsabfolge für
 
 ![Imgur](https://i.imgur.com/SzcGPZ6.jpg)
 
-Bevor wir die Ergebnisse unserer Auswertungen präsentieren, möchten wir vorab unsere bisherigen Forschungsergebnisse und die daraus resultierenden Hypothesen vorstellen mit welchen wir an diesem Tag in das Gut Rheinau gekommen sind.
+Bevor wir die Ergebnisse unserer Auswertungen präsentieren, möchten wir vorab unsere bisherigen Forschungsergebnisse und die daraus resultierenden Hypothesen vorstellen. Mit diesen sind wir an diesem Tag an das Gut Rheinau gekommen.
 
 # Bisherige Forschungsergebnisse
 
-In früheren Auswertungen konnten wir feststellen, dass Pflanzen auf positive und negative emotionale Stimmen in unterschiedlicher Weise reagieren. Erste Forschungsunterfangen zeigten, dass bestimmte Pflanzen (wir experimentieren mit der _Mimosa Pudica_ und _Codariocalyx Motorius_ ihre Blätter schneller anheben und beschleunigen, wenn sie verschiedenen Arten von Musik (1) oder stimmlichen Emotionen (2) ausgesetzt sind. Die beiden folgenden Darstellungen illustrieren diesen Effekt.
+In früheren Auswertungen konnten wir feststellen, dass Pflanzen auf positive und negative emotionale Stimmen in unterschiedlicher Weise reagieren. Erste Forschungsunterfangen zeigten, dass bestimmte Pflanzen (wir experimentieren mit der Mimosa Pudica und Codariocalyx Motorius) ihre Blätter schneller anheben und beschleunigen, wenn sie verschiedenen Arten von Musik (1) oder stimmlichen Emotionen (2) ausgesetzt sind. Die beiden folgenden Darstellungen illustrieren unsere Versuchsergebnisse.
 
 ## Codariocalyx und verschiedene Musikarten
 
