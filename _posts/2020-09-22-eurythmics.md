@@ -22,7 +22,7 @@ Die Eurythmie kann seelische und geistige Inhalte durch Körperbewegungen und Ge
 
 Die Bauern vom Gut Rheinau nutzen die Eurythmie, um einen Teil ihrer Pflanzen in kontrollierten Zeitintervallen durch das Tanzen von Obersonniger, Untersonniger oder ähnlicher Plantenketten zu betanzen. Laut Bauer Hans ergeben sich daraus geschmackliche Unterschiede in den Pflanzen, die betanzt werden. So sagen er und seine Kollegen den betanzten Pflanzen bspw. mehr Zuckergehalt und bessere Konsistenz nach.
 
-Um dieses Phänomen wissenschaftlich aufzuarbeiten führten wir 22 Experimente in 11 Versuchsreihen durch. Dabei sammelten wir Daten in zweierlei Hinsicht: Zum einen richteten wir Kameras auf den Eurethmietänzer Hans um seine Bewegung aufzunehmen und eine Kamera auf eine seiner Pflanze, um Ungewöhnlichkeiten zu identifizieren. Zum Anderen erhebten wir die Spannung von den Blättern der jeweiligen Pflanzen zur Wurzel mit einem Aktionspotenzialmesser (elektrostatisches Gefälle entlang der Pflanze). Die nachfolgenden Bilder illustrieren diesen Versuchsaufbau.
+Um dieses Phänomen wissenschaftlich aufzuarbeiten führten wir 22 Experimente in 11 Versuchsreihen durch. Dabei sammelten wir Daten in zweierlei Hinsicht: Zum einen richteten wir Kameras auf den Eurethmietänzer Hans um seine Bewegung aufzunehmen und eine Kamera auf eine seiner Pflanze, um Ungewöhnlichkeiten zu identifizieren. Zum Anderen erhebten wir die Spannung von den Blättern der jeweiligen Pflanzen zur Wurzel mit einem speziellen Spanungsmessgerät (der Plant SpikerBox, welche den elektrischen Potentialunterschied zwischen Pflanze und Erde misst). Die nachfolgenden Bilder illustrieren diesen Versuchsaufbau.
 
 ## Aufzeichnung von Pflanzenreaktionen
 
@@ -38,7 +38,7 @@ Um dieses Phänomen wissenschaftlich aufzuarbeiten führten wir 22 Experimente i
 
 Insgesamt haben wir 11 Versuchsreihen (mit je zwei Messgeräten) durchgeführt, um unsere Daten zu erheben. Dabei konnten wir regelmäßig betanzte (in den vergangenen Wochen Eurythmie ausgesetzten Pflanzen) und nicht-betanzte Pflanzen aufzeichnen. Der Versuchsablauf gestaltete sich wie folgt:
 
-- Wir verbindeten jeweils zwei Pflanzen mit unserem Aktionspotenzialmesser (sogenannte Spikerbox), um das elektrostatische Gefälle in der Pflanze während einer professionellen eurythmischen Tanzeinlage durch Bauer Hans zu erheben. Zusätzlich evaluierten wir diese Messungen durch sogenannte Baseline-Aufzeichnungen (d.h. Messaufzeichnungen ohne Tänzer), um dessen Einfluss identifizieren zu können.
+- Wir verbindeten jeweils zwei Pflanzen mit unserem speziellen Spanungsmessgerät (Plant SpikerBox), um das elektrostatische Gefälle in der Pflanze während einer professionellen eurythmischen Tanzeinlage durch Bauer Hans zu erheben. Zusätzlich evaluierten wir diese Messungen durch sogenannte Baseline-Aufzeichnungen (d.h. Messaufzeichnungen ohne Tänzer), um dessen Einfluss identifizieren zu können.
 - Zusätzlich wurde eine freistehende Pflanze identifiziert und mit Kameras fokussiert, um etwaige Bewegungsauffälligkeiten aufzuzeichnen.
 - Der Tänzer wurde jedes Mal gebeten sich an einem definiereten Punkt (ca. 1m von dem Pflanzenbeet entfernt) zu positionieren, um konstanten Abstand zu den Beeten zu halten. Wir filmten den Bauern Hans, um das Aktionspotenzial in der Pflanze mit den Tanzbewegungen vergleichen zu können.
 - In der Regel wurde jedes Beet von Pflanzen ca. 1,5 Minuten betanzt und dabei die angesprochenen Daten gesammelt.
