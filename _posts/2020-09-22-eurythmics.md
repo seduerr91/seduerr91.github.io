@@ -79,13 +79,13 @@ Oben aufgeführte Diagramme veranschaulichen die Zeit, die die Codariocalyx ben�
 
 #### Codariocalyx und verschiedene Emotionen
 
-Die Codariocalyx hebt ihre Blätter höher und länger anhebt, wenn sie glücklichen auditiven Emotionen exponiert ist. Anmerkung: Für dieses Experiment verwendeten wir einen [professionellen Datensatz](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5955500/) von Künstlern, die positive Sätze sowohl auf positive als auch auf negative Weise wiederholten.
+Die Codariocalyx hebt ihre Blätter höher und länger, wenn sie glücklichen auditiven Emotionen exponiert ist. Anmerkung: Für dieses Experiment verwendeten wir einen [professionellen Datensatz](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5955500/) von Künstlern, die positive Sätze sowohl auf positive als auch auf negative Weise wiederholten.
 
 ![Emotionen](https://i.imgur.com/EkNwJIA.png)
 
-Aus diesen Erkenntnissen bildeten wir die Hypothese, dass wir Bewegungen an den Pflanzen auf einem organischen Bauernhof feststellen können, wenn diese den Reizen der eurythmischen Betanzung ausgesetzt sind.
+Aus diesen Erkenntnissen bildeten wir die Hypothese, dass wir ebenfalls Bewegungen an den Pflanzen auf einem organischen Bauernhof feststellen können, wenn diese menschlichen Reizen ausgesetzt sind. Den Hinweisen vom Gut Rheinau folgend, untersuchten wir am 16. September 2020 das Zusammenspiel von eurythmischer Betanzung und den Reaktionen von verschiedenen Pflanzen.
 
-## Erwartete Ergebnisse (dies haben wir zu analysieren)
+## Erwartete Ergebnisse (dies haben wir zu analysieren __doublecheck__)
 
 1. Keine Bewegungen an den Pflanzen auszumachen, die nicht durch Winde zustandegekommen sind.
 2. Korrelation zwischen Bewegungen des Eurythmietänzers und dem Aktionspotenzial in den Pflanzen.
@@ -93,15 +93,15 @@ Aus diesen Erkenntnissen bildeten wir die Hypothese, dass wir Bewegungen an den 
 
 ## Interpretation
 
-Der Bauernhofbetreiber Hans Braunwalder ist fest davon überzeugt, dass das Betanzen von Pflanzen einen positiven Einfluss auf den Geschmack (erhöhter Zuckergehalt) der Pflanzen hat. Wir können durch unsere Messungen bestätigen/widerlegen, dass es Unterschiede im Erheben des Aktionspotenzial in den regelmäßig betanzten zu den unbetanzten Pflanzen gibt. Auch konnten wir feststellen, dass die Pflanze ihr Aktionspotenzial ändert, wenn diese betanzt wird.
+Der Bauernhofbetreiber Hans Braunwalder ist fest davon überzeugt, dass das Betanzen von Pflanzen einen positiven Einfluss auf den Geschmack (erhöhter Zuckergehalt) der Pflanzen hat. Wir können durch unsere Messungen bestätigen/widerlegen, dass es Unterschiede im Erheben des Aktionspotenzial in den regelmäßig betanzten zu den unbetanzten Pflanzen gibt. Auch konnten wir feststellen, dass manche Pflanzen ihr Aktionspotenzial ändern, wenn diese betanzt werden.
 
 ## Limitationen
 
-Unseres sorgfältig durchgeführten Experimente haben ihre Limitationen. Diese sind der Einfluss durch verursachte Vibrationen, Wettereinflüsse sowie potenzielle Beeinflussung durch uns als Forscher auf dem freien Feld:
+Unseres sorgfältig durchgeführten Experimente haben ihre Limitationen. Diese sind u.a. der Einfluss durch verursachte Vibrationen, Wettereinflüsse sowie potenzielle Beeinflussung durch uns als Forscher auf dem freien Feld:
 
-- Erstens könnten änderungen am Aktionspontenzial durch Vibrationen bspw. durch die ruhigen Bewegungen des Tänzer ausgelöst worden sein. Druch das Einhalten eines Abstandes von einem Meter versuchten wir den Einfluss durch solche Vibrationen zu verhindern. Auch schwingte Bauer Hans lediglich seine Arme (doublecheck) während der Betanzung.
-- Die Einflüsse von Wetter, bspw. Bewegungen durch Wind oder Ausrichten der Pflanze nach dem Sonnenschein, könnten die Messungen beeinflussen. Um dies Auszuschließen haben wir einen Tag mit einer sehr geringen Windstärke (<5km/h (doublecheck)) zur Durchführung unserer Ergebnisse gewählt. Zusätzlich haben wir bei den Aufzeichnungen an den Pflanzen einen Windschutz aufgestellt, um Bewegungen zu verhindern. Auch haben wir verschiedene Versuche an den gleichen Pflanzen mehrfach zu unterschiedlichen Tageszeiten durchgeführt, um entstehende Abweichungen aufgrund des Sonnenstandes nachträglich aus den Daten filtern zu können.
-- Weitere Einflüsse oder wir als Forscher könnten die selbst Bewegungen und das Aktionspotenzial in den Pflanzen beeinflusst haben. Um dies zu vermeiden, haben wir auf externe Einflüsse, bspw. durch vorbeifahrende Traktoren reagiert, und während dieser Zeit keine Messungen vorgenommen. Auch haben wir als Forscher mehrere Meter (jeweils >3m) Abstand gehalten und die Pflanzen/Beete jeweils mindestens 30 Minuten 'zur Ruhe kommen lassen'.
+- Erstens könnten Änderungen am Aktionspontenzial durch Vibrationen bspw. durch die ruhigen Bewegungen des Tänzer ausgelöst worden sein. Druch das Einhalten eines Abstandes von einem Meter versuchten wir den möglichen Einfluss durch solche Vibrationen jedoch zu minimieren. Auch schwingte Bauer Hans lediglich seine Arme (__doublecheck__) während der Betanzung.
+- Die Einflüsse von Wetter, bspw. Bewegungen durch Wind oder Ausrichten der Pflanze nach dem Sonnenschein, könnten die Messungen beeinflussen. Um dies Auszuschließen haben wir einen Tag mit einer sehr geringen Windstärke (<5km/h __doublecheck__) zur Durchführung unserer Ergebnisse gewählt. Zusätzlich haben wir bei den Aufzeichnungen an den Pflanzen einen Windschutz aufgestellt, um Bewegungen durch Windeinfluss auszuschließen. Weiters haben wir verschiedene Versuche an den gleichen Pflanzen mehrfach zu unterschiedlichen Tageszeiten durchgeführt, um entstehende Abweichungen aufgrund des Sonnenstandes nachträglich aus den Daten zu filtern.
+- Weitere Einflüsse - bspw. wir als Forscher - könnten Bewegungen und das Aktionspotenzial in den Pflanzen beeinflusst haben. Um dies zu vermeiden, haben wir auf externe Einflüsse, bspw. durch vorbeifahrende Traktoren reagiert, und während dieser Zeit keine Messungen vorgenommen. Auch haben wir als Forscher mehrere Meter (jeweils >3m) Abstand gehalten und die Pflanzen/Beete jeweils mindestens 30 Minuten 'zur Ruhe kommen lassen'.
 
 ## Nächste Versuche
 
