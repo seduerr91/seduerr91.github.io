@@ -2,7 +2,7 @@
 title: Hosting the Infilling Model through a FastAPI on GCP
 tags: [Coding]
 style: fill
-color: danger
+color: success
 description: BERT masking does not allow to infill multiple words into a sentence context. Researchers from Stanford addressed this. I made it available through an API.
 ---
 
@@ -44,32 +44,39 @@ Link to GAE
 
 Thank you to Javier who suggested me to find a solution to this problem.
 
-## Sources
-
-- [Machine Learning Models with Streamlit](https://towardsdatascience.com/prototyping-machine-learning-models-with-streamlit-1134c34e9620): Allowed me to understand how I can run neural networks locally.
-- [HuggingFace Pipelines](https://huggingface.co/transformers/main_classes/pipelines.html): Serves as instructions 
-- [Deploy FastAPI App on Google Cloud Platform](https://www.tutlinks.com/deploy-fastapi-app-on-google-cloud-platform/): Introduces to 
-
-- [Git Infilling by Language Modeling (ILM)](https://github.com/chrisdonahue/ilm)
-- [Build And Host Fast Data Science Applications Using FastAPI](https://towardsdatascience.com/build-and-host-fast-data-science-applications-using-fastapi-823be8a1d6a0)
-- [Deploying Transformer Models](https://chatbotslife.com/deploying-transformer-models-1350876016f)
-- [How to properly ship and deploy your machine learning model](https://towardsdatascience.com/how-to-properly-ship-and-deploy-your-machine-learning-model-8a8664b763c4)
-
 # Starting with adapting the Infilling Language Model
 
 In order to have a lightweight infilling language model, all libraries, files and scripts were removed that are not related to inference. The resulting inference method was then wrapped into the 'class Infiller()' which we need for the API in 'main.py'. Fin the infill.py below.
 
-Gist from Infill.py
 <script src="https://gist.github.com/seduerr91/9183c728c18461c98c2f8ab5b9517009.js"></script>
 
-Gist from Main.py
+The main.py
+
+We serve the uvicorn server through the main.py file with 'uvicorn main:app'. It does...
+
 <script src="https://gist.github.com/seduerr91/e389a2c212452f459c37346530a388b0.js"></script>
 
-Gist from requirements.py
+The requirements.txt looks liek this. You run it via 'pip3 install -r requirements.txt'.
+
 <script src="https://gist.github.com/seduerr91/60ae1fdc383ece9daa5007f3a180240e.js"></script>
 
-Gist from Dockerfile
+Gist from app.yaml is deployed via 'gcloud app deloy app.yaml'. This guide gives a very brief [introduction](https://www.tutlinks.com/deploy-fastapi-app-on-google-cloud-platform/) in how to deploy any microservice via FastAPI on Google Cloud Platform.
+
+<script src="https://gist.github.com/seduerr91/2fcd135a83023cbcfefb66b373b9ec58.js"></script>
+
+The Dockerfile is being run through the app.yaml
+
 <script src="https://gist.github.com/seduerr91/5cdbd83bd095a421120e06d209d7fe24.js"></script>
 
-Gist from app.yaml
-<script src="https://gist.github.com/seduerr91/2fcd135a83023cbcfefb66b373b9ec58.js"></script>
+Following instructions will 
+
+
+## Sources
+
+- [Machine Learning Models with Streamlit](https://towardsdatascience.com/prototyping-machine-learning-models-with-streamlit-1134c34e9620): Allowed me to understand how I can run neural networks locally.
+- [HuggingFace Pipelines](https://huggingface.co/transformers/main_classes/pipelines.html): Serves as instructions 
+- [Deploy FastAPI App on Google Cloud Platform](https://www.tutlinks.com/deploy-fastapi-app-on-google-cloud-platform/): Introduces to a step-by-step guide on how to deploy to Google Cloud Platform.
+- [Git Infilling by Language Modeling (ILM)](https://github.com/chrisdonahue/ilm)
+- [Build And Host Fast Data Science Applications Using FastAPI](https://towardsdatascience.com/build-and-host-fast-data-science-applications-using-fastapi-823be8a1d6a0)
+- [Deploying Transformer Models](https://chatbotslife.com/deploying-transformer-models-1350876016f)
+- [How to properly ship and deploy your machine learning model](https://towardsdatascience.com/how-to-properly-ship-and-deploy-your-machine-learning-model-8a8664b763c4)
