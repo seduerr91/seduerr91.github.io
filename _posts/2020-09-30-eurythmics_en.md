@@ -1,9 +1,9 @@
 ---
-title: Elektrostatische Entladung von betanzten Pflanzen
+title: Electrostatic discharge of danced plants
 tags: [Coding]
 style: fill
-color: success
-description: Studenten und Professor untersuchen Bewegungen und elektrostatisches Gefälle von Pflanzen, die Eurythmie exporniert wurden.
+color: info
+description: Students and professor study movements and electrostatic gradient of plants exported eurythmy.
 ---
 
 ## Report from Wednesday, 16.09.2020, Gut Rheinau
