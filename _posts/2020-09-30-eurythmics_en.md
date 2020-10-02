@@ -8,21 +8,21 @@ description: Students and professor study movements and electrostatic gradient o
 
 ## Report from Wednesday, 16.09.2020, Gut Rheinau
 
-Last Sunday we had an open house. On this day we cooked for several dozen guests in a blind test. We cooked beetroot soup and found that the beetroot, which was regularly exposed to eurythmy, tasted better"_,
+_'Last Sunday we were open. On this special day, we cooked for several dozen guests in a blind test. We cooked beetroot soup and found that the beetroot, which was regularly exposed to eurythmy, tasted better than the one that was not"_
 
-our host Hans Braunwalder informed us during the introduction to our experiments planned for this day on the Rheinau estate.
+Our host Hans Braunwalder informed us during the introduction to our experiments planned for this day on the Rheinau farm.
 
 ## Experiments on plants danced with eurythmy
 
-On September 16, 2020, we came to the north of Zurich to investigate whether beetroot, tomatoes and beans, which, in addition to careful care and irrigation, are treated weekly with eurythmy, behave differently from those who have not received this additional, special treatment.
+On September 16, 2020, we came to his farm to investigate whether beetroot, tomatoes and beans, which, in addition to thorough care and irrigation, are treated weekly with eurythmy, behave differently from those who have not received this additional, special treatment.
 
 Eurythmy sees itself as the art of making visible in language and music effective laws and relationships through human movement. For this purpose various means of design such as gestures, colors and spatial forms are used.
 
 Eurythmy can represent mental and spiritual content through body movements and gestures (sense, sound, sentence, sound and motif gestures). For this purpose, texts and music are transformed into movements with the help of a wide range of interpretative possibilities. The possibility of expressing speech and sounds distinguishes eurythmy from many other rhythmic forms of representation.
 
-The farmers of Gut Rheinau use eurythmy to dance a part of their plants in controlled time intervals by dancing upper suns, lower suns or similar chains of planets. According to farmer Hans, this results in differences in the taste of the plants that are danced. For example, he and his colleagues say that the plants danced have a higher sugar content and better consistency.
+The farmers of Gut Rheinau use eurythmy to dance to a part of their plants in controlled time intervals. There dance movements are upper suns, lower suns or similar chains of planet movements. According to farmer Hans, this results in differences in the taste of the plants that are danced. For example, he and his colleagues say that the plants danced have a higher sugar content and better consistency.
 
-To scientifically investigate this phenomenon, we conducted 22 experiments in 11 test series. We collected data in two ways: First, we directed cameras at the Eurethmie dancer Hans to record his movements and a camera at one of his plants to identify unusual features. Secondly, we measured the voltage from the leaves of the respective plants to the roots using a special voltage meter (the Plant SpikerBox, which measures the electrical potential difference between the plant and the earth). The following pictures illustrate this experimental setup.
+To scientifically investigate this phenomenon, we conducted 22 experiments in 11 test series. We collected data in two ways: First, we directed cameras at the eurythmy dancer Hans to record his movements and a camera at one of his plants to identify unusual features. Secondly, we measured the voltage from the leaves of the respective plants to the roots using a special voltage meter (the Plant SpikerBox, which measures the electrical potential difference between the plant and the earth). The following pictures illustrate this experimental setup.
 
 #### Recording of plant reactions
 
@@ -38,7 +38,7 @@ To scientifically investigate this phenomenon, we conducted 22 experiments in 11
 
 In total, we conducted 11 test series (with two measuring instruments each) to collect our data. We were able to regularly record danced (plants exposed to eurythmy in the past weeks) and non-danced plants. The test procedure was as follows:
 
-- We connected two plants at a time with our special tension measuring device (Plant SpikerBox) to record the electrostatic gradient in the plant during a professional eurythmy dance performance by Bauer Hans. In addition, we evaluated these measurements by means of so-called baseline recordings (i.e. measurement recordings without dancers) to be able to identify their influence.
+- We connected two plants at a time with our special tension measuring device (Plant SpikerBox) to record the electrostatic gradient in the plant during a professional eurythmy dance performance by Bauer Hans. In addition, we evaluated these measurements by means of so-called baseline recordings (i.e. measurement recordings without dancers) to be able to distill their influence.
 - In addition, a free-standing plant was identified and focused with cameras to record any movement abnormalities.
 - Each time the dancer was asked to position himself at a defined point (about 1m away from the plant bed) to keep a constant distance to the beds. We filmed the farmer Hans to be able to compare the action potential in the plant with the dance movements.
 - As a rule, each bed of plants was danced for about 1.5 minutes and the data was collected.
@@ -61,9 +61,9 @@ Trial | Time | Plant and notes
 10_15-22-randen-untersonnig|15:22 |Randen, Mercury 2
 11_15-35-tomato-danced|15:35|Tomatoes 2 with Eurethmy
 
-Below is an example with the above mentioned dance sequence for the borders.
+Below is an example with the above mentioned dance sequence for the beetroots.
 
-Imgur](https://i.imgur.com/SzcGPZ6.jpg)
+![Imgur](https://i.imgur.com/SzcGPZ6.jpg)
 
 Before we present the results of our evaluations, we would like to introduce our previous research results and the hypotheses resulting from them. With these we came to the Rheinau Estate on this day.
 
@@ -73,7 +73,7 @@ In previous evaluations, we have found that plants respond to positive and negat
 
 #### Codariocalyx and different types of music
 
-Types of music](https://i.imgur.com/9cwEpuj.png)
+![Types of music](https://i.imgur.com/9cwEpuj.png)
 
 The above diagrams illustrate the time it takes Codariocalyx to respond to various auditory stimuli such as "silence", "metal", "techno", "classical" and "yodelling". We found that the plant reacted much faster under yodelling than under silence. Our further analysis shows how plants behave with happy or sad human voices.
 
@@ -81,19 +81,19 @@ The above diagrams illustrate the time it takes Codariocalyx to respond to vario
 
 The Codariocalyx lifts its leaves higher and longer when exposed to happy auditory emotions. Note: For this experiment we used a [professional data set](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5955500/) of artists who repeated positive sentences in both positive and negative ways.
 
-emotions](https://i.imgur.com/EkNwJIA.png)
+![emotions](https://i.imgur.com/EkNwJIA.png)
 
-From these findings we formed the hypothesis that we can also detect movement in plants on an organic farm when they are exposed to human stimuli. Following the advice of the Rheinau estate, we investigated on 16 September 2020 the interaction between eurythmic dance and the reactions of different plants.
+From these findings we formed the hypothesis that we can also detect movement in plants on an organic farm when they are exposed to human stimuli. Following the advice of the Rheinau farm, we investigated the interaction between eurythmic dance and the reactions of different plants.
 
 ## Expected results (we have to analyze this __doublecheck__)
 
-1. no movements on the plants that are not caused by winds.
-2. correlation between movements of the eurythmy dancer and the action potential in the plants.
-3. differences in action potential between plants treated weekly with eurythmy and those that are not danced regularly.
+1. No movements on the plants that are not caused by winds.
+2. Correlation between movements of the eurythmy dancer and the action potential in the plants.
+3. Differences in action potential between plants treated weekly with eurythmy and those that are not danced regularly.
 
 ## Interpretation
 
-The farm operator Hans Braunwalder is firmly convinced that the dancing of plants has a positive influence on the taste (increased sugar content) of the plants. We can confirm / disprove by our measurements that there are differences in the uplifting of the action potential in the regularly danced and the unvanced plants. We also found that some plants change their action potential when they are danced.
+The farm operator Hans Braunwalder is firmly convinced that the dancing of plants has a positive influence on the taste (increased sugar content) of the plants. We can confirm / disprove by our measurements that there are differences in the uplifting of the action potential in the regularly danced and the undanced plants. We also found that some plants change their action potential when they are danced.
 
 ## Limitations
 
@@ -105,6 +105,6 @@ Our carefully conducted experiments have their limitations. These are, among oth
 
 ## Next experiments
 
-At this point, we cannot conclusively determine whether it is advisable to dance the plants in your own garden. Therefore we are planning further experiments and to return to the Rheinau estate. We would also like to survey environmental factors such as air quality, temperature, humidity and long-term studies over several hours.
+At this point, we cannot conclusively determine whether it is advisable to dance the plants in your own garden. Therefore we are planning further experiments, and to return to the Rheinau farm. We would also like to survey environmental factors such as air quality, temperature, humidity and long-term studies over several hours.
 
 Finally, we would like to thank Gut Rheinau for their hospitality, their efforts and the opportunity to collect data.
