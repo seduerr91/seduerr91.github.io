@@ -26,35 +26,21 @@ In order to use this service in production it needs to be made availble through 
 ### Running the Infilling Model on Google Cloud Platform
 
 1. In order to run this please create a new project on [Google Cloud Platform](https://cloud.google.com/). For the new project being created, give Project name, Project ID, Billing account and click Create.
-
 ![Imgur](https://i.imgur.com/tTvOugf.png)
-
 2. Activate the Cloud Shell in the upper right corner to execute a few lines of code in order to host the ILM-API.
-
 ![Imgur](https://i.imgur.com/IHxxlJu.png)
-
 3. Next, clone the [ILM-API Repository](https://github.com/seduerr91/ilm-api) from GitHub. Type the following command in the Cloud Shell to clone the FastAPI repository on to GCP: 
-
     git clone https://github.com/seduerr91/ilm-api.git
-
 [Optionally], you now can create a virtual environment. Find instructions [here](https://docs.python.org/3/tutorial/venv.html).
-
 4. Install Requirements for the FastAPI and the ILM. The project related libraries are located in requirements.txt. To install all the modules in one go, run the following command:
-
     pip3 install -r requirements.txt
-
 5. To deploy the FastAPI app on App Engine and access it via a custom domain or default your-proj-id.appspot.com, we need to create gcloud app and deploy our app. You will be prompted to select the region. It is always a best practice to choose the region nearest to the geographical location where the consumers access this application. Doing so is expected increase the response times from our application. In the cloud shell, type the following command to create the app:
-
     gcloud app create
-
 6. Deploy FastAPI app on GCP App Engine. GCP App Engine requires all the deployment configuration to be defined in a yaml file. Our repository has already has a yaml file named app.yaml that has the deployment configuration defined. Run the following command in Google Cloud Shell to deploy the FastAPI app to Google App Engine. You will be prompted to continue. Press Y and hit enter to proceed with the deployment.
-
     gcloud app deploy app.yaml
-
 7. Browse the FastAPI deployed on GCP App Engine. Generally your app is deployed on the url that has the following format. your-project-id.appspot.com. In case you are not sure what the project id is, then type the following command to view your application in the web browser.
-
     gcloud app browse
-
+    
 #### Congratulations: You just hosted the Infilling Model (Donahue et al. 2020) based on the Deep Neural Architecture GPT-2 via FastAPI as a microservice.
 
 [Optional] <!-- Reload Server with new features -->
