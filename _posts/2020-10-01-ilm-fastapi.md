@@ -13,17 +13,17 @@ This article is based on the works of the Infilling Language Model (ILM) framewo
 The Git that produces this infilling output can be found [here](https://github.com/seduerr91/ilm-api). 
 The instructions for deployment as a micro service on Google Cloud Engine can be found below.
 
-## What is infilling?
+### What is infilling?
 
 Text infilling is the task of predicting missing spans of text which are consistent with the preceding and subsequent text.
 
-## The Task: Making ILM Available Through as a Micros Service
+### The Task: Making ILM Available Through as a Micro Service
 
 In order to use this service in production it needs to be made availble through an API for which we use FastAPI. The resulting API can be tested [here](https://ilmapi.uc.r.appspot.com/docs) and renders as depicted below:
 
 ![Imgur](https://i.imgur.com/kbHNMpM.png)
 
-## Running the Infilling Model on Google Cloud Platform by Yourself
+### Running the Infilling Model on Google Cloud Platform
 
 1. In order to run this please create a new project on [Google Cloud Platform](https://cloud.google.com/). For the new project being created, give Project name, Project ID, Billing account and click Create.
 
@@ -66,32 +66,32 @@ In order to use this service in production it needs to be made availble through 
 <!-- Get logs -->
 gcloud app logs tail -s default
 
-## Some Words About the Code Files
+### Some Words About the Code Files
 
-### Infill.py
+#### Infill.py
 
 In order to have a lightweight infilling language model, all libraries, files and scripts were removed that are not related to inference. The resulting inference method was then wrapped into the 'class Infiller()' which we need for the API in 'main.py'. Fin the infill.py below.
 
 <script src="https://gist.github.com/seduerr91/9183c728c18461c98c2f8ab5b9517009.js"></script>
 
-### The main.py
+#### The main.py
 
 We serve the uvicorn server through the main.py file with 'uvicorn main:app'. It does...
 
 <script src="https://gist.github.com/seduerr91/e389a2c212452f459c37346530a388b0.js"></script>
 
-### Requirements.txt
+#### Requirements.txt
 
 The requirements.txt looks liek this. You run it via 'pip3 install -r requirements.txt'. It does not take much.
 
 <script src="https://gist.github.com/seduerr91/60ae1fdc383ece9daa5007f3a180240e.js"></script>
 
-### YAML Configuration to deploy FastAPI on Google App Engine
+#### YAML Configuration to deploy FastAPI on Google App Engine
 Google Cloud Platform allows App Engine to perform deployment based on a configuration defined in a yaml file. For us to host the FastAPI on Google App Engine, the yaml configuration needs to have the following configuration.
 
 <script src="https://gist.github.com/seduerr91/2fcd135a83023cbcfefb66b373b9ec58.js"></script>
 
-### The Dockerfile
+#### The Dockerfile
 
 The Dockerfile is being run through the app.yaml
 
@@ -99,7 +99,7 @@ The Dockerfile is being run through the app.yaml
 
 Following instructions will allow you to run the [files](https://www.tutlinks.com/deploy-fastapi-app-on-google-cloud-platform/).
 
-## Resources
+#### Resources
 
 - [Git Infilling by Language Modeling (ILM)](https://github.com/chrisdonahue/ilm)
 - [HuggingFace Pipelines](https://huggingface.co/transformers/main_classes/pipelines.html)
@@ -109,12 +109,12 @@ Following instructions will allow you to run the [files](https://www.tutlinks.co
 - [How to properly ship and deploy your machine learning model](https://towardsdatascience.com/how-to-properly-ship-and-deploy-your-machine-learning-model-8a8664b763c4)
 - [Setting Up Virtual Environments](https://docs.python.org/3/tutorial/venv.html)
 
-## Acknolegdements
+#### Acknolegdements
 
 Thank you to Javier and the team of Narrativa who suggested me to find a solution to this problem. Also a big thanks to HuggingFace, the Team from Stanford around Mr. Donahue, and my WifiTribe with which I am currently living as a Digital Nomad.
 
-## Who am I?
+#### Who am I?
 
 I am Sebastian Duerr a Deep Learning Research Scientist. In my former life, I was a managing at Austria's biggest bank but I am diving into Deep Learning Architectures in the field of NLP. In the future, I want to work remotely whenever I want to in the field of NLP. 
 
-Drop me a message on [linkedIn](https://www.linkedin.com/in/sebastianduerr/).
+Drop me a message on [linkedIn](https://www.linkedin.com/in/sebastianduerr/) if you want to get in touch. :)
