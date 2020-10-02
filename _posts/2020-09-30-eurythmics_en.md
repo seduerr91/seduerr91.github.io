@@ -1,6 +1,6 @@
 ---
 title: Electrostatic discharge of danced plants
-tags: [Coding]
+tags: [Research]
 style: fill
 color: info
 description: Students and professor study movements and electrostatic gradient of plants exported eurythmy.
