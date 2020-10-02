@@ -2,7 +2,7 @@
 title: Hosting the Infilling Model through a FastAPI on GCP
 tags: [Coding]
 style: fill
-color: warniing
+color: danger
 description: BERT masking does not allow to infill multiple words into a sentence context. Researchers from Stanford addressed this. I made it available through an API.
 ---
 
