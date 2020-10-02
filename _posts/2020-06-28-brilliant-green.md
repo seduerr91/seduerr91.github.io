@@ -1,6 +1,6 @@
 ---
 title: Brilliant Green
-tags: [Coding]
+tags: [Research]
 style: fill
 color: light
 description: My Summary of the Book Brilliant Green
