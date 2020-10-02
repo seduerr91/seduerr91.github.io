@@ -30,45 +30,36 @@ In order to use this service in production it needs to be made availble through 
 2. Activate the Cloud Shell in the upper right corner to execute a few lines of code in order to host the ILM-API.
 ![Imgur](https://i.imgur.com/IHxxlJu.png)
 3. Next, clone the [ILM-API Repository](https://github.com/seduerr91/ilm-api) from GitHub. Type the following command in the Cloud Shell to clone the FastAPI repository on to GCP: 
-    git clone https://github.com/seduerr91/ilm-api.git
+    _git clone https://github.com/seduerr91/ilm-api.git_
 [Optionally], you now can create a virtual environment. Find instructions [here](https://docs.python.org/3/tutorial/venv.html).
 4. Install Requirements for the FastAPI and the ILM. The project related libraries are located in requirements.txt. To install all the modules in one go, run the following command:
-    pip3 install -r requirements.txt
+    _pip3 install -r requirements.txt_
 5. To deploy the FastAPI app on App Engine and access it via a custom domain or default your-proj-id.appspot.com, we need to create gcloud app and deploy our app. You will be prompted to select the region. It is always a best practice to choose the region nearest to the geographical location where the consumers access this application. Doing so is expected increase the response times from our application. In the cloud shell, type the following command to create the app:
-    gcloud app create
+    _gcloud app create_
 6. Deploy FastAPI app on GCP App Engine. GCP App Engine requires all the deployment configuration to be defined in a yaml file. Our repository has already has a yaml file named app.yaml that has the deployment configuration defined. Run the following command in Google Cloud Shell to deploy the FastAPI app to Google App Engine. You will be prompted to continue. Press Y and hit enter to proceed with the deployment.
-    gcloud app deploy app.yaml
+    _gcloud app deploy app.yaml_
 7. Browse the FastAPI deployed on GCP App Engine. Generally your app is deployed on the url that has the following format. your-project-id.appspot.com. In case you are not sure what the project id is, then type the following command to view your application in the web browser.
-    gcloud app browse
+    _gcloud app browse_
     
 #### Congratulations: You just hosted the Infilling Model (Donahue et al. 2020) based on the Deep Neural Architecture GPT-2 via FastAPI as a microservice.
-
-[Optional] <!-- Reload Server with new features -->
-
-
-<!-- Get the link to the API -->
-
-
-<!-- Get logs -->
-gcloud app logs tail -s default
 
 ### Some Words About the Code Files
 
 #### Infill.py
 
-In order to have a lightweight infilling language model, all libraries, files and scripts were removed that are not related to inference. The resulting inference method was then wrapped into the 'class Infiller()' which we need for the API in 'main.py'. Fin the infill.py below.
+The inference method is wrapped into the 'class Infiller()' which we need for the API in 'main.py'. This piece of code loads the datamodel, sets an exemplary context, appends the specific tokens to the context file, and runs the inference to generate the infilling sentences.
 
 <script src="https://gist.github.com/seduerr91/9183c728c18461c98c2f8ab5b9517009.js"></script>
 
 #### The main.py
 
-We serve the uvicorn server through the main.py file with 'uvicorn main:app'. It does...
+We serve the uvicorn server through the main.py file with 'uvicorn main:app' and it hosts the POST APIs for the server queries.
 
 <script src="https://gist.github.com/seduerr91/e389a2c212452f459c37346530a388b0.js"></script>
 
 #### Requirements.txt
 
-The requirements.txt looks liek this. You run it via 'pip3 install -r requirements.txt'. It does not take much.
+The requirements.txt is very brief but it installs a lot of dependencies. In this example torch (PyTorch) is being used but you can also use Tensorflow by Google if this is your preference.
 
 <script src="https://gist.github.com/seduerr91/60ae1fdc383ece9daa5007f3a180240e.js"></script>
 
@@ -79,11 +70,11 @@ Google Cloud Platform allows App Engine to perform deployment based on a configu
 
 #### The Dockerfile
 
-The Dockerfile is being run through the app.yaml
+The Dockerfile is being excecuted via the app.yaml. It hosts a Python3.7 container, copies the app, installs the requirements.txt needed, and executes the main app.
 
 <script src="https://gist.github.com/seduerr91/5cdbd83bd095a421120e06d209d7fe24.js"></script>
 
-Following instructions will allow you to run the [files](https://www.tutlinks.com/deploy-fastapi-app-on-google-cloud-platform/).
+It takes quite some time to host the service (like 3-5 minutes) but it happens quickly.
 
 #### Resources
 
@@ -97,10 +88,10 @@ Following instructions will allow you to run the [files](https://www.tutlinks.co
 
 #### Acknolegdements
 
-Thank you to Javier and the team of Narrativa who suggested me to find a solution to this problem. Also a big thanks to HuggingFace, the Team from Stanford around Mr. Donahue, and my WifiTribe with which I am currently living as a Digital Nomad.
+Thanks to Javier and the team of Narrativa who suggested me to find a solution to this problem. Also a big thanks to HuggingFace, the Team from Stanford around Mr. Donahue, and WifiTribe with which I am currently living as a Digital Nomad and doing my research and education remotely.
 
 #### Who am I?
 
-I am Sebastian Duerr a Deep Learning Research Scientist. In my former life, I was a managing at Austria's biggest bank but I am diving into Deep Learning Architectures in the field of NLP. In the future, I want to work remotely whenever I want to in the field of NLP. 
+I am Sebastian Duerr a NLP Deep Learning Research Scientist. In my former life, I managed at Austria's biggest bank. In the future, I want to work remotely whenever I want to & in the field of NLP.
 
 Drop me a message on [linkedIn](https://www.linkedin.com/in/sebastianduerr/) if you want to get in touch. :)
