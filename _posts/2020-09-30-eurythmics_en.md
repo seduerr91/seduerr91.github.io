@@ -26,15 +26,15 @@ To scientifically investigate this phenomenon, we conducted 22 experiments in 11
 
 #### Recording of plant reactions
 
-[Imgur](https://i.imgur.com/TESaDAx.jpg)
+![Imgur](https://i.imgur.com/TESaDAx.jpg)
 
 #### Recording of the eurythmy dancer Hans
 
-[Imgur](https://i.imgur.com/N5jaffT.jpg)
+![Imgur](https://i.imgur.com/N5jaffT.jpg)
 
 #### Action potential measurements on the plants
 
-[Imgur](https://i.imgur.com/VpKoP5A.jpg)
+![Imgur](https://i.imgur.com/VpKoP5A.jpg)
 
 In total, we conducted 11 test series (with two measuring instruments each) to collect our data. We were able to regularly record danced (plants exposed to eurythmy in the past weeks) and non-danced plants. The test procedure was as follows:
 
