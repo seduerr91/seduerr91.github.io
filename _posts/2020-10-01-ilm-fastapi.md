@@ -1,10 +1,12 @@
 ---
-title: Hosting the Infilling Model (based on GPT-2) through FastAPI on GCP
+title: Hosting your text infilling (based on GPT-2) through FastAPI on GCP
 tags: [Coding]
 style: fill
 color: danger
 description: This micro-service allows infilling multiple words into a context through AI. Researchers from Stanford addressed this. I made their work available through an API.
 ---
+
+This micro-service allows infilling multiple words into a context through AI. Researchers from Stanford addressed this. I made their work available through an API.
 
 The following article explains how to implement a NLP architecture trained for infilling. It gives different infilling recommendations for a given context.
 
