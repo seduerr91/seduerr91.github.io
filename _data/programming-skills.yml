@@ -1,15 +1,15 @@
 - name: Python
-  percentage: 40
+  percentage: 100
   color: danger
-
-- name: Django
-  percentage: 86
-  color: info
 
 - name: Machine Learning
   percentage: 100
   color: dark
 
-- name: Deep Learning
+- name: NLP Deep Learning
   percentage: 100
   color: primary
+
+- name: Django
+  percentage: 86
+  color: info
