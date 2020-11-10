@@ -39,14 +39,20 @@ Additionally, it is necessary to force the old versions of torch==1.4.0, transfo
 
 Lastly, once you manage to fine-tune T5 with the PAWS paraphrases, you evaluate them with the script. The respective github code, can be found [here](#tbd). 
 
-### Step 4: Start Inference 
+### Step 4: Start Inference to Create a New Dataset Based on Your Corpus
 
-### Step 5: Find a Useful Architecture and Datasets
+Next, you can use the fine-tuned T5 Architecture to create paraphrases from every input. As seen in the introductory image. Next, we used the following code to run a client proprietary corpus through the fine-tuned archtecture to get paraphrases based on their given text samples. The code can be found [here](#btd) and looks as follows: 
 
-### Step 6: Using the fine-tuning with a GUI
+![Imgur](https://i.imgur.com/x4uAPMT.png)
 
-https://github.com/renatoviolin/T5-paraphrase-generation
+Again, we evaluate how the paraphrases compare to the original input on bleu. The results were pretty interesting. 
 
+### Step 5: Using the fine-tuning with a GUI
+
+Finally, to make the service useful we can provide it as an API as we did with the infilling model [here](#tbd) or with this frontend which is also included in the [github](https://github.com/renatoviolin/T5-paraphrase-generation).
+
+
+Thank you for reading this article. I'd be curious about your opinion.
 
 #### Who am I?
 
