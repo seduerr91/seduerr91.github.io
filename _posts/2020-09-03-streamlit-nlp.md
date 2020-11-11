@@ -2,7 +2,7 @@
 title: Running GPT2 Inference through a Streamlit Interface on GCP
 tags: [Coding]
 style: fill
-color: secondary
+color: primary
 description: These are non-working instructions for running a Deep Neural Network on a Streamlit server.
 ---
 
