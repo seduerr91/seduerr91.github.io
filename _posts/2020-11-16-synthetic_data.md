@@ -1,5 +1,5 @@
 ---
-title: Create Synthetic Textual Datasets with T5, PAW and a Custom Text Corpus
+title: Create Synthetic Textual Datasets with T5, PAWS and a Custom Text Corpus
 tags: [Coding]
 style: fill
 color: primary
