@@ -18,8 +18,6 @@ The process of creating such a synthetic data set is illustrated hereafter (all 
 ![Imgur](https://i.imgur.com/Z4iZ1Aj.jpg)
 
 
-### (1) Fine tune T5 with PAWS data set to teach ‘paraphrase: ‘(T5-P)
-
 Since Google's [T5](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html) has been trained on multiple tasks (e.g., text summarization, question-answering, sentence correctness (cola), and sentence similarity (stsb)) solely through Text-to-Text tasks, it is useful for extension. We benefit from this capability by fine tuning it with the [PAWS dataset](https://github.com/google-research-datasets/paws) which consists of approximately 50.000 labeled paraphrases. 
 
 ![Imgur](https://i.imgur.com/oga2G7V.jpg)
@@ -27,14 +25,10 @@ Since Google's [T5](https://ai.googleblog.com/2020/02/exploring-transfer-learnin
 After that, we created a T5-P(araphrase) which is able to create paraphrases from texts with no specific context. However, this one is not optimally suited for our business journal context. Hence, we need a text corpus that makes sound more _biz_.
 
 
-### (2) Fine tune T5-P with Custom Data to Create Synthetic Data
-
 ![Imgur](https://i.imgur.com/PlUg2jG.jpg)
 
 As a next step, we use our custom data (i.e., an business text corpora) to create paraphrases with our new capability of T5-P(araphrase), i.e. __paraphrasing__. Although, we only have a very small corpora (330 samples), we use these to create a data set from it. The resulting synthetic data set has the original 330 samples in the first column, and the created paraphrases in a second column. 
 
-
-### (3) Use T5 to Ensure Synthetic Data’s Syntatical & Semantical Quality
 
 ![Imgur](https://i.imgur.com/X9U1jN8.jpg)
 
@@ -44,8 +38,6 @@ Therefore, we use  a trick: Google's T5 is also trained for similarity (feature:
 
 Yet, our sentences can still be syntactically incorrect which we, again, can evaluate with T5 itself. Checking for correctness is being done by using 'cola: [sentence]' which we apply to the synthetic paraphrases. _Only three out of 313 samples were rejected._ 
 
-
-### (4) Fine tune T5-P with Qualified Synthetic Data for Custom Paraphrases
 
 ![Imgur](https://i.imgur.com/VQNLBNq.jpg)
 
