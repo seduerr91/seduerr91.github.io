@@ -12,7 +12,7 @@ Read this article, to learn how to bring paraphrasing to Google's T5 & fine tuni
 
 ![Imgur](https://i.imgur.com/Y6awmWp.gif)
 
-This project was concluded with the help of Javier from [Narrativa.com](www.narrativa.com) a Spanish deep learning company that helps companies, such as the Wall Street Journal, to create texts with the help of AI. Among the many challenges of supervised machine learning, their dependency on large labeled datasets ranks as the highest. 
+This project was concluded with the help of Javier from [Narrativa.com](http://ww.narrativa.com) a Spanish deep learning company that helps companies to create texts with the help of AI. Among the many challenges of supervised machine learning, their dependency on large labeled datasets ranks as the highest. 
 
 Compiling high-quality datasets is expensive and hard to scale. That problem is more accentuated for smaller organizations. Our generative method allows generating fake datasets that match the distribution of labeled datasets, making it possible to accelerate the training of machine learning models. 
 
