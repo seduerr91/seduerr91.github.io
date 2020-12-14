@@ -1,5 +1,5 @@
 - name: Running 1000km
-  percentage: 96
+  percentage: 100
   color: danger
 
 - name: 75 Countries
