@@ -7,6 +7,41 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+### Narrativa, 14.12.2020
+
+Talking Points 
+- mT5 Paraphrasing in Spanish Inference, Model on huggingface.co/seduerr
+- Linguistic Realizer is pretty damn good.
+- Further Aspects:
+    - JavaScript React
+    - BigBird official code and pretrained models are out
+
+To Do Until Next Time
+- Try mT5 German with 5 iterations, on mT5 base
+- Train on verbs first person singular (he, she, it) > Extract both the pron and the verb
+- Refine Linguistic Realizer? Set a .90 limit?
+- Write a Blog Article about it
+
+Appointments
+- Next Appointment: 21.12.2020
+- Then: 04.01.2020
+
+### Narrativa, 30.11.2020
+
+What I did: 
+- Testing of T5 with German
+- Testing of mT5 with Spanish (only small worked, base seems to have an issue with the tokeniser) > does not do inference
+- Working on the Linguistic realiser -> making it masked_sentence > solutions; took me forever.. :(
+
+
+What I will do next:
+- Approach to continue with Linguistic Realizer: _ file used on GDrive is linguistic_targets
+- Make a pronoun dict and only return pronouns that are in that lookup dictionary (cola these for quality!)
+- Integrate code snippet from Javier for getting the probabilities for pronouns (define a confidence interval, if possible, under which all others are rejected)
+- Make mt5 work with Spanish and transformers 4.0.0rc
+
+https://huggingface.co/seduerr/mt5-paraphrases-espanol?text=paraphrase%3A+Es+un+buen+d%C3%ADa.
+
 ## September 2020
 
 ### Results of week 20: September 14-September 18
