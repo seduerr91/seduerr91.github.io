@@ -1,15 +1,15 @@
-- name: Python
+- name: Python Django, Flask
   percentage: 100
   color: danger
 
-- name: Machine Learning
+- name: JavaScript React
   percentage: 100
   color: dark
 
-- name: NLP Deep Learning
+- name: Python Deep Learning
   percentage: 100
   color: primary
 
-- name: Django
-  percentage: 86
+- name: Golang
+  percentage: 100
   color: info
