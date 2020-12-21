@@ -7,6 +7,25 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+### Narrativa, 21.12.2020
+
+[X] Train on verbs first person singular (he, she, it) > Extract both the pron and the verb
+[X] Write a Blog Article about it
+[X] Test mT5 German with 5 iterations on mT5 base; test T5 German, too.
+
+Narrativa, Call 04.01.2021
+To Do:
+- Find a syntax to indicate which word to change: sentence = "He live[VERB] in a new country."
+- Use space top 10-100 alternatives, with highest probability > check for lemma (infinitive) and compare.
+- Consider using NLTK right away.
+- Test against other masked models (e.g., BERT/AlBERTa) and try just using plain T5 again without fine-tuning.
+- First identify them in HuggingFace; then try them in HuggingFace (e.g., BERT is quite old by now).
+
+Next task ‘Creative but Correct Sentence Joiner’
+- Check out BERT2BERT (decoder - encoder): for paraphrasing etc. aka Sentence Fusion
+- Related article
+- Join two sentences, and join then with a conjunctions: “He loves soccer. He plays every day.” >> “He loves soccer and plays it every day.”; so far Narrativa does with comma & and as a conjunction. >> Check for the term of doing this; it could be in the HuggingFace overview.
+
 ### Narrativa, 14.12.2020
 
 Talking Points 
