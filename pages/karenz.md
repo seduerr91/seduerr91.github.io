@@ -7,6 +7,25 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+### Narrativa, 11.01.2021
+
+- Linguistic Realizer: Pronouns yes, verbs not, works better with text2text; 
+    - masked model
+    - verb conjugator nlp
+
+- Sentence fusion next
+    - Paper
+    - Linking sentences but keeping them entirely with connectives
+    - Check BERT2BERT
+
+- AI Guild Speech coordination with David
+
+- Persuasive NLG: 
+    - Literature review
+    - Style transfer, politeness transfer, shortener
+    - Editor tool?
+
+
 ### Narrativa, 21.12.2020
 
 [X] Train on verbs first person singular (he, she, it) > Extract both the pron and the verb
