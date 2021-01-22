@@ -7,6 +7,17 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+
+Narrativa Call, 20.01.2021
+
+- Sentence Fusion Model.
+- Presentation with 1000 peeps, 29.01. Review / Integration.
+- Sentence-casing / true-casing.
+- Look at the data again which are good improvement.
+- Simple NLG
+- Two calls with two Pharma companies: text2text; transform a sentence from future tense to past tense.
+
+
 ### Narrativa, 11.01.2021
 
 - Linguistic Realizer: Pronouns yes, verbs not, works better with text2text; 
