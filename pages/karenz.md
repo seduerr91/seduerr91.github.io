@@ -8,7 +8,7 @@ description: I publish my major achievements per week here.
 # Bildungskarenz Progress Overview
 
 
-Narrativa Call, 20.01.2021
+### Narrativa Call, 20.01.2021
 
 - Sentence Fusion Model.
 - Presentation with 1000 peeps, 29.01. Review / Integration.
