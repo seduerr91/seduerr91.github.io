@@ -7,6 +7,11 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+### Narrativa Call, 25.01.2021
+
+- Sentence Fusion: Deep Dive Analysis what Wiki Dataset can do. 
+- Presentation: Go through slides.
+- Truecaser: Does not work with Narrativa obviously. 
 
 ### Narrativa Call, 20.01.2021
 
