@@ -7,6 +7,11 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+### Narrativa Call, 03.02.2021
+
+- Implementation of demo for [Tense Switcher](https://colab.research.google.com/drive/1CC1YohzpFp5JbF5KqCu_B9n1AC4IqD9m#scrollTo=j5rH6r2l0DXE)
+- Contrast Model see chat is stored here on [HuggingFace](https://huggingface.co/seduerr/pai_con)
+
 ### Narrativa Call, 25.01.2021
 
 - Sentence Fusion: Deep Dive Analysis what Wiki Dataset can do. 
