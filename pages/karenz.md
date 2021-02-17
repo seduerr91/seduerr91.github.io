@@ -7,6 +7,14 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+### Narrativa Call, 17.02.2021
+
+- Pai Fuser Online: https://paifuser-zfz6md3z3q-wl.a.run.app/
+- [Tense Switcher](https://colab.research.google.com/drive/1CC1YohzpFp5JbF5KqCu_B9n1AC4IqD9m#scrollTo=j5rH6r2l0DXE) with example by GSK.
+- Loss on T5 Training [here on paraphrasing task](https://colab.research.google.com/drive/1z_Ho0n1pEiHWkIyEEI7jwz6E438o3sP-#scrollTo=LC4Pk4c89V0W) 
+- Message by Darina from Bayes Esports: Bayes Esports is a company that specialised in esports data and analysis. A potential project is to provide analysts with interesting insights about the match while the match is going on. These can be facts like "player X just broke the record for the most gold farmed in the first 10 mins of the game" or "team X has had its longest killing streak in history". Eventually we want to progress to things like "if player X gets one more kill, they will break the record for the longest streak in history".
+We have a large amount of historical data to build this upon and receive high-resolution live data during the match. We also have access to what historically has been considered interesting facts by analysts to learn from. My task is to create the machinery that would filter the historical data and find whatever is interesting, and then wrap it in a sentence.
+
 ### Narrativa Call, 03.02.2021
 
 - Implementation of demo for [Tense Switcher](https://colab.research.google.com/drive/1CC1YohzpFp5JbF5KqCu_B9n1AC4IqD9m#scrollTo=j5rH6r2l0DXE)
