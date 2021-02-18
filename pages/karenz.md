@@ -7,6 +7,13 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+### Call with Peter Gloor, 18.02.2021
+
+- Concept / Technology [Slides](https://docs.google.com/presentation/d/1BcBGVxVkE43Dc5fhU41Zo0UAaL1AW_zC4G2s_muqTWY/edit#slide=id.gb2fc198945_0_8)
+- Prototype [Persuai.de](https://persuaide.github.io/)
+- Poster Session at [Persuasive2021](https://persuasive2021.bournemouth.ac.uk/)
+- Next Steps: Need for related articles for a inter-rater experiment setup & questionnaire design.
+
 ### Narrativa Call, 17.02.2021
 
 - [Pai Fuser Online](https://paifuser-zfz6md3z3q-wl.a.run.app/)
