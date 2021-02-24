@@ -7,6 +7,33 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+### Narrativa Call, 24.02.2021
+
+* Message by Darina from Bayes Esports: 
+    * Bayes Esports is a company that specialised in esports data and analysis. A potential project is to provide analysts with interesting insights about the match while the match is going on. 
+    * These can be facts like “player X just broke the record for the most gold farmed in the first 10 mins of the game” or “team X has had its longest killing streak in history”. 
+    * Eventually we want to progress to things like “if player X gets one more kill, they will break the record for the longest streak in history”. 
+    * We have a large amount of historical data to build this upon and receive high-resolution live data during the match. We also have access to what historically has been considered interesting facts by analysts to learn from. 
+    * My task is to create the machinery that would filter the historical data and find whatever is interesting, and then wrap it in a sentence.
+    * WRITE DIRECTLY TO INFO@NARRATIVA.COM > Message David / make a quick demo.
+
+Regarding: “player X just broke the record for the most gold farmed in the first 10 mins of the game” or “team X has had its longest killing streak in history”. 
+        * We can create queries, but they may be better equipped at doing this. 
+        * We are able to usually write texts based on the data, and to generate. That is our strength. 
+
+* Pai Fuser Online: 
+    * Return only the group of token that create the nexus (concatenation). >>> So not the whole retype is being used. Just return the concat value.
+    * Try to use it in English on the soccer data (register for this weird dropbox thing again): use soccer/football examples, long complex sentences.
+    * Otherwise use approach with special tokens (to identify the separator). 
+    * Make the task potentially/somehow simpler for the model.
+
+* Tense Switcher with example by GSK.
+    * Integrate marks of tense; create a dictionary)
+
+* Think of How to Make Sentence Aggregation happen: Q&A Datasets? Google TAPAS?
+
+
+
 ### Call with Peter Gloor, 18.02.2021
 
 - Concept / Technology [Slides](https://docs.google.com/presentation/d/1BcBGVxVkE43Dc5fhU41Zo0UAaL1AW_zC4G2s_muqTWY/edit#slide=id.gb2fc198945_0_8)
