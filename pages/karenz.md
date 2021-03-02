@@ -7,6 +7,38 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+### Narrativa Call, 26.02.2021
+
+Narrativa Call
+
+- Video on the Datalift #3 will be there in a few weeks.
+- Thank you for the quarantine possibility.
+- What is the status quo on the investments
+- What will I do at Narrativa?
+- What will I earn?
+- What valuation does Narrativa have? What share (ESOP) would I be eligible for? 
+- Raiffeisen wage net 3600 EUR / month
+- Can I become fully remote and Digital Nomad on a freelance setup?
+- What are the next steps? What is the perspective? 
+
+Honesty
+
+- Status Quo: I really like what I do at Narrativa and I want to learn how a work agreement looks like. 
+- I wanted to ask you for options since I need to know what to tell to Raiffeisen. I will quit my job, and work on unemployment benefits for a little while. 
+- Register a company in Estonia. :)
+- I am working with two friends now on persuasive AI tool, and we are moving quickly. Much quicker than I thought. Prototype live since last week.
+- I still do the things for Narrativa (except last week bc of death of Javiers dad), because I really love my tasks and everything. 
+- Maybe I shall try for another 2 - 3 months and then I message you? We can continue to work in the meantime?
+
+Status Quo
+
+- Location: 
+- Working as a Freelance: Employee, Contract, Payment, Not eligible for ESOP. He wants that!
+- Question: Salary; net is higher.
+- Cost average: 4-5 years of experience payment. 
+- 30 - 35k gross; as freelance 40-42k (3k / month).
+- Will increase salary. 
+
 ### Narrativa Call, 24.02.2021
 
 * Message by Darina from Bayes Esports: 
