@@ -7,6 +7,47 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+### Narrativa Call, 16.03.2021
+
+#### Topics:
+- Fuser
+- Aggregation
+- Narrativa from May 2021
+
+#### Fuser Online:
+- Return only the group of token that create the nexus (concatenation). »> So not the whole retype is being used. Just return the concat value.
+- Try to use it in English on the soccer data (register for this weird dropbox thing again): use soccer/football examples, long complex sentences.
+- Fuser trained on sports with loss:
+  - INFO:__main__:loss = tensor(0.0639, device='cuda:0')
+  - INFO:__main__:train_loss = tensor(0.0639, device='cuda:0')
+  - INFO:__main__:val_loss = tensor(0.0651, device='cuda:0')
+- Sample sentence: The team has a bad defence they already received 25 goals. The forwards shot few goals in total 5.
+
+I added two folders with both models to the gitlab repo: nrt_rd_sandbox.
+
+##### Sample Value Fuser General Response
+
+![Imgur](https://i.imgur.com/eoyV56k.png)
+
+##### Sample Value Fuser Soccer Response
+
+![Imgur](https://i.imgur.com/ODQBFoy.png)
+
+#### Sentence Aggregation
+
+Research related articles:
+
+- Use T5-summarizing feature to aggregate statements as provided in the example. A test return was: 
+  - Input: John's bicycle is red. Mary's bicycle is yellow. Tom’s bicycle is blue. Tom’s bicycle is red.
+  - Output: John's bicycle is red. Mary's bicycle is yellow.
+- Use Q&A feature to aggregate statements as provided in the example on [HuggingFace](https://huggingface.co/bert-large-cased-whole-word-masking-finetuned-squad?text=Where+do+I+live%3F). A test return was: 
+  - Input: Context: John's bicycle is red. Mary's bicycle is yellow. Tom’s bicycle is blue. Tom’s bicycle is red. Question: Which people have a red bicycle?
+  - Output: John. 
+- [Spanish News aggregation tool that I do not fully understand by now](https://github.com/dnul/news-aggregation/tree/master/noticias)
+- [Table based approach that seems very promising](https://github.com/persuaide/LogicNLG)
+- [Nice paper from 2011](https://www.aclweb.org/anthology/R11-1012.pdf): Efficient Algorithm for Context Sensitive Aggregation in Natural Language Generation
+- [Pixel Aggregation Network](https://github.com/liuch37/pan-pytorch)
+
 ### Narrativa Call, 26.02.2021
 
 Narrativa Call
