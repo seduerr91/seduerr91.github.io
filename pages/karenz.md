@@ -17,7 +17,7 @@ description: I publish my major achievements per week here.
 #### Fuser Online:
 - Return only the group of token that create the nexus (concatenation). »> So not the whole retype is being used. Just return the concat value.
 - Try to use it in English on the soccer data (register for this weird dropbox thing again): use soccer/football examples, long complex sentences.
-- Fuser trained on sports with loss:
+- [Fuser](https://colab.research.google.com/drive/1Je9lRaZiVljlXf8MQI5uCJUgEc8ijMCt#scrollTo=CBvGdmXRjmW7) trained on sports with loss:
   - INFO:__main__:loss = tensor(0.0639, device='cuda:0')
   - INFO:__main__:train_loss = tensor(0.0639, device='cuda:0')
   - INFO:__main__:val_loss = tensor(0.0651, device='cuda:0')
