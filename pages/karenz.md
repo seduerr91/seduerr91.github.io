@@ -43,10 +43,10 @@ Research related articles:
 - Use Q&A feature to aggregate statements as provided in the example on [HuggingFace](https://huggingface.co/bert-large-cased-whole-word-masking-finetuned-squad?text=Where+do+I+live%3F). A test return was: 
   - Input: Context: John's bicycle is red. Mary's bicycle is yellow. Tom’s bicycle is blue. Tom’s bicycle is red. Question: Which people have a red bicycle?
   - Output: John. 
-- [Spanish News aggregation tool that I do not fully understand by now](https://github.com/dnul/news-aggregation/tree/master/noticias)
-- [Table based approach that seems very promising](https://github.com/persuaide/LogicNLG)
-- [Nice paper from 2011](https://www.aclweb.org/anthology/R11-1012.pdf): Efficient Algorithm for Context Sensitive Aggregation in Natural Language Generation
-- [Pixel Aggregation Network](https://github.com/liuch37/pan-pytorch)
+- [Table based approach that seems very promising](https://github.com/persuaide/LogicNLG), test the [prototype](https://wenhuchen.github.io/logicnlg.github.io/).
+- [Nice paper from 2011](https://www.aclweb.org/anthology/R11-1012.pdf): Efficient Algorithm for Context Sensitive Aggregation in Natural Language Generation. Forward Search did not score significant results. Implement that?
+-[Sentence Aggregation Dataset](https://www.aclweb.org/anthology/C16-1101.pdf)
+
 
 ### Narrativa Call, 26.02.2021
 

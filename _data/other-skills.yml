@@ -1,15 +1,15 @@
-- name: Running 1000km
-  percentage: 100
+- name: Running 1800km
+  percentage: 30
   color: danger
 
 - name: 75 Countries
-  percentage: 83
+  percentage: 87
   color: info
 
 - name: Living in 7 Countries
-  percentage: 57
+  percentage: 86
   color: success
 
 - name: 4 Languages
-  percentage: 50
+  percentage: 100
   color: dark
