@@ -25,6 +25,12 @@ description: I publish my major achievements per week here.
 
 I added two folders with both models to the gitlab repo: nrt_rd_sandbox.
 
+### Call Results:
+
+- Focus on Sentence Aggregation
+- Make the git work but try a simpler table
+- Try the Google Tapas Table Approach
+
 ##### Sample Value Fuser General Response
 
 ![Imgur](https://i.imgur.com/eoyV56k.png)
