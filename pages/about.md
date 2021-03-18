@@ -9,7 +9,7 @@ weight: 3
 
 Hi I am **Sebastian**, friends describe me as a social butterfly. I love yoga, cooking, running, and coding.
 
-![Imgur](https://i.imgur.com/m4jlWgE.jpg)
+![Imgur](https://i.imgur.com/m4jlWgEm.jpg)
 
 <div class="row">
 {% include about/timeline.html %}
