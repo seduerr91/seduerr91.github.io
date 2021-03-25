@@ -7,6 +7,46 @@ description: I publish my major achievements per week here.
 
 # Bildungskarenz Progress Overview
 
+### Feedback Persuai.de 23. March 2021
+
+Feedback to Persuai.de Colleagues
+
+Teddy:
+- Positives: 
+    - does all the tasks that are so important but non-technical (YC), 
+    - awesome business expertise
+- Optimization: 
+    - take care about yourself (take breaks for walks, swims, etc), 
+    - read what got you here won’t get you there> sometime very stressed
+
+Krzysiek: 
+- Positives: 
+    - so proactive and helpful, 
+    - explains so much and has experience (git cola)
+- Optimization: 
+    - Communication what you are working on
+    - Coordination (tense switcher)
+
+Feedback from Persuai.de Colleagues
+Teddy:
+Positives:
+- 80/20 will do attitude
+- involved in biz and tech to understand the company
+
+Optimization:
+- forget perspective of other people + take a breath
+- not showing gratitude of being in certain situations
+
+Krzysiek:
+
+Positives:
+- always kind & careful
+- great energy for projects
+
+Optimization:
+- be more direct regarding directions
+
+
 ### Narrativa Call, 16.03.2021
 
 #### Topics:
