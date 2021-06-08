@@ -2,7 +2,7 @@
 title: How to Use the Generative Text Infilling Model based on Artificial Intelligence
 tags: [Coding]
 style: fill
-color: light
+color: success
 description: This micro-service allows infilling multiple words into a context. This article explains how to use it.
 ---
 

@@ -2,7 +2,7 @@
 title: How to define and measure persuasiveness?
 tags: [Research]
 style: fill
-color: primary
+color: warning
 description: An attempt to define persuasiveness in a natural text context.
 ---
 ### A Concept for Persuasiveness?
