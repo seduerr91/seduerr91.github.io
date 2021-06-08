@@ -1,9 +1,9 @@
 - name: Running 1800km
-  percentage: 30
+  percentage: 51
   color: danger
 
 - name: 75 Countries
-  percentage: 87
+  percentage: 88
   color: info
 
 - name: Living in 7 Countries
