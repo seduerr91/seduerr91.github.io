@@ -5,9 +5,13 @@ image: https://i.imgur.com/XQI4dXz.jpg
 description: 
 ---
 
-# Links:
+# Important Startup / Management Books
 
 - [Never Split the Difference](https://www.freshworks.com/crm/sales/sdr-sales-development-reps/summary-of-never-split-the-difference-blog/)
+- [Startup CEO](https://tech.co/news/startup-ceo-matt-blumberg-2013-09)
+- [Traffic Secrets](https://www.getstoryshots.com/books/traffic-secrets-summary/)
+
+# Never Split the Difference
 
 ## Chapter 1: The New Rules
 How to Become the Smartest Person…in Any Room
@@ -223,8 +227,6 @@ Let your known knowns guide you, but don’t let them blind you from what you do
 
 Move the discussion away from the deal, dig into worldviews. Take the discussion away from the negotiation table and into the emotions and life of the other party. That’s where Black Swans live.  People find comfort in similarity. They are more likely to concede to someone who they have common beliefs with. You need to try and find that common ground.
 
-- [Startup CEO](https://tech.co/news/startup-ceo-matt-blumberg-2013-09)
-
 # Startup CEO
 
 Elevator pitch: Matt Blumberg has written an instructional manual for being a CEO, which covers the broad topics of storytelling, team building, execution, boards of directors, and managing yourself. He shares lots of his own tips, tricks, and processes, and explains how your role changes as the company grows.
@@ -367,7 +369,6 @@ At the end of the year, take stock of your own career. Are you having fun? Are y
 
 Being a startup CEO is lonely, thankless, hard, risky, and stressful, but it can also be the “best job in the world.”
 
-- [Traffic Secrets](https://www.getstoryshots.com/books/traffic-secrets-summary/)
 
 # Traffic Secrets
 
