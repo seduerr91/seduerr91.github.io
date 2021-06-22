@@ -2,7 +2,7 @@
 title: Ensuring Ethical AI at Persuaide
 tags: [Persuaide]
 style: fill
-color: warning
+color: dark
 description: Ethical AI is a responsibilty. At Persuaide, we are responsible.
 ---
 
