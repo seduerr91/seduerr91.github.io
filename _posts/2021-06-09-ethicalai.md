@@ -3,46 +3,55 @@ title: Ensuring Ethical AI at Persuaide
 tags: [Persuaide]
 style: fill
 color: dark
-description: Ethical AI is a responsibilty. At Persuaide, we are responsible.
+description: Ethical AI is a responsibility. At Persuaide, we are responsible.
 ---
 
 ![AI Image](https://media-exp1.licdn.com/dms/image/C4D12AQFqq5vJ__j_Sg/article-inline_image-shrink_1500_2232/0/1606731220359?e=1629936000&v=beta&t=JZmxFqOE6Ziyau1SnFT1QoQRwXCoJQbISZ0IzenC2ag)
 
-The ethical use of AI in a noble and non-dentrimental way is a challenge. Mentally combine ethical AI with  persuasion technology and you may wonder if the people behind Persuaide are insane. There are reports of technical interference (Brexit campaign, US elections) in which artificial intelligence had a profound impact. 
+## Ethical Use of Artificial Intelligence
 
-In this article we will outline that our technology platform has the capability to impact individual commiunication. However, we outline our commitment to ensure that Persuaide is for noble purposes. This matters so much to us that we it became part of Persuaide's moral code. This is our excerpt regarding __Responsible and Ethical AI__:
+The ethical use of AI in a noble and non-detrimental way is a challenge. Think of combining _ethical AI_ with _persuasion technology_ and you may be wondering if the people behind Persuaide are serious. There are reports of technical interference (Brexit campaign, US elections) in which artificial intelligence had a profound impact. 
 
-_"We are committed to AI responsibility. We believe that Artificial Intelligence is powerful and should only be used ethically and for the benefit of human life. It should never be used to the detriment of one individual over another. To ensure transparency, we commit to openly educate society about our work and the theories behind our algorithms. Second, we commit to working closely with our customers to ensure that our software is used only for the benefit of all humanity and never to the advantage of one individual over another."_
+In this article, we will explain that our technology platform can impact individual communication. However, we emphasize our commitment that _Persuaide is for noble purposes_. This is part of Persuaide's moral code regarding __Responsible and Ethical AI__:
 
-In the following, we address the transparency to educate society about our works and the theories behind central algorithms. Last, we communicate how we ensure that our software is used only for the benefit of all humanity. Let us begin.
+_"We are committed to AI responsibility. We believe that Artificial Intelligence is powerful and should only be used ethically and for the benefit of human life. It should never be used to the detriment of one individual over another. To ensure transparency, we commit to openly educate society about our __work__ and the __theories__ behind our algorithms. Second, we commit to working closely with our customers to ensure that our software is used only for the __benefit of all humanity__ and never to the advantage of one individual over another."_
 
-Persuaide is a platform that allows everyone to communicate better with the help of artificial intelligence. Our __work__ is based on soundly defined academic evidence.
+In the following, we address above-mentioned transparency to educate society about our works and the theories behind central algorithms. Last, we communicate how we ensure that our software is used only for the benefit of all humanity. Let us begin.
 
-In order to understand how persuasion and technology (i.e. natural language processing or generation) can be combined, we conducted a [literature review](https://arxiv.org/abs/2101.05786) to understand the complexities of the two fields. In brief, we identified some fifty determinants that explain how people are susceptible in different ways to persuasion and specific types of communication. These are clustered into four categories benevolence, linguistic appropriacy, logical argumentation and trustworthiness. Persuaide minds these determinants and has them implemented in their code base.
+## Research and Work regarding Persuaide
 
-Next, we also want to understand how humans actually adapt texts or emails to make them more persuasive. Therefore, we conducted an experiment ([Read the study here](https://arxiv.org/abs/2104.12454)) that allowed us to identify adaptations that make a text more persuasive.Consequently, we theorize successful persuasiveness in Natural Language Generation (Duerr & Gloor 2021, p. 11) as the alignment of tonal formality, emotionality, and comprehensiveness with a recipient in a structured and logically coherent manner in a text. Persuaide minds these findings and has them implemented in their code base.
+Persuaide is a platform that allows everyone to communicate better with the help of artificial intelligence. Our research and __work__ is based on soundly defined academic evidence.
 
-In regard of __theories__, we relate to four major ones. These are the Theory of Cognitive Dissonance (Festinger 1957), Language Expectancy Theory (Burgoon et al. 2002), Probabilistic Models (Wyer 1970), and Balance Theory (Heider 1958).
+In order to understand how persuasion and technology (i.e., natural language processing or generation) can be combined, we conducted a [literature review](https://arxiv.org/abs/2101.05786) to understand the interdependencies of these two fields. In brief, we identified some fifty determinants that explain how people are susceptible to persuasion in different ways and specific types of communication. These are clustered into four broad categories: benevolence, linguistic appropriacy, logical argumentation, and trustworthiness. Persuaide minds these determinants and has them implemented in its codebase.
+
+Next, we want to understand how humans actually adapt texts. Therefore, we conducted an experiment ([Read the study here](https://arxiv.org/abs/2104.12454)) that allowed us to identify adaptations that make a text more persuasive. From our findings, we theorize successful persuasiveness in natural language generation as __the alignment of tonal formality, emotionality, and comprehensiveness with a recipient in a structured and logically coherent manner in a text.__ Persuaide minds such adaptations and has them implemented in its codebase.
+
+## Theories underlying Persuaide
+
+In regard to __theories__, we relate to four of them: the Theory of Cognitive Dissonance (Festinger 1957), Language Expectancy Theory (Burgoon et al. 2002), Probabilistic Models (Wyer 1970), and Balance Theory (Heider 1958).
  
-Festinger’s Theory of Cognitive Dissonance focuses a persuadee's perceived benevolence which can be dissonant, consonant, or irrelevant to each other. The magnitude of dissonance determines one’s motivation to reduce it.
+Festinger’s _Theory of Cognitive Dissonance_ focuses a persuadee's perceived benevolence which can be dissonant, consonant, or irrelevant to each other. The magnitude of dissonance determines one's motivation to reduce it. The more consonant a relationship is, the higher are the chances that persuasion is successful.
 
-_Language Expectancy Theory_ language expectancy theory identifies written or spoken language as rule-based system. Expectations are often consistent with sociological and cultural norms. Preferences tend to relate to societal standards and cultural values. Negative expectations inhibit persuasion, e.g., when persuader makes use of language considered socially unacceptable.
+_Language Expectancy Theory_ identifies written or spoken language as a rule-based system. Expectations are often consistent with sociological and cultural norms. Preferences tend to relate to societal standards and cultural values. Negative expectations inhibit persuasion, e.g., when persuader makes use of language considered socially unacceptable.
 
 The third central theory pertains to _probalistic models_. Probability models are based on the rules of formal logic and probability. They predict beliefs regarding the conclusion of reasoning. Beliefs can be ascertained through subjective probabilities.
 
 Lastly, _balance theory_ focuses on the relationship between persuader and persuadee. The persuadee's attitude towards the persuader can be balanced or unbalanced. If it is in balance, then a persuader has greater chances for persuasion.
 
-The third part of this article, is on how we ensure that our software is used only for the benefit of all humanity. Certainly, we are not able to fully control how humans use our platorm. Therefore, we have measures implemented that prevent inappropriate usage scenarios. This way, we avoid the misuse of Persuaide and debiasing through three major layers. 
+## Making Persuaide Beneficial to Humanity 
 
-Firstly, every data point that we process is being checked for politically inappropriate or potentially offensive language. We collated a wide range of inappropriate terms, and in order to keep our algorithms clean and avoid model drift, we are rejecting any data processing in the presence of such terms. Our ethical officer had a great time optimizing and collating this list.
+This part explains how we ensure that our software is used for the benefit of all humanity. Certainly, we are not able to fully control how humans interact with our platform. To be cautious, we implemented measures that inhibit inappropriacy. This way, we avoid the misuse of Persuaide and foster debiasing. We have three steps for this:
 
-Secondly, we have deep neural nets in place that scan statements for hate speech and subconscious biases. Our technology identifies concepts such as irony, sarcasm and potential elements of hatred or cultural inacceptabilities in them. 
+Step one: Every single data point that we process is being checked for politically inappropriate or potentially offensive language. We collated a wide range of inappropriate terms and expressions. In order to keep our algorithms clean and prevent model drift, we are rejecting data processing in the presence of inappropriacy.
 
-Thirdly, we are using anonymization algorithms to never process any personal data in our deep neural nets. The inherent complex and large scale transformer architectures that we are using do make tracing of certain texts computationally very expensive, and, therefore, almost impossible but on top of that we use masking and alteration algorithms that make sure that a plethora of entities, e.g. names, company names and geographical locations, are always anonymized.
+Secondly, we deployed deep neural nets that scan textual pieces for hate speech and subconscious biases. Our technology correctly classifies linguistically complex concepts such as irony, sarcasm, subversive violence, hatred, or cultural inacceptability. 
 
-Also with our threefold approach, we cannot guarantee a 100% bias free algorithmic approach but internal experiments conducted with ethical AI experts and consultations of digital privacy laywers allow us to be convinced that we filter out 99% of inappropriateness. We confidently can say that we are using state of the art measures to ensure that Persuaide remains ethical.
+As the last step, we use anonymization algorithms never to process personal data in our deep neural nets. Our inherent complex and large-scale transformer architectures render tracing texts computationally expensive and, therefore, almost impossible. Yet, on top of that, we also use masking and alteration algorithms that make sure that a plethora of entities, e.g., names, company names, and geographical locations, are _always_ anonymized.
+
+Despite our three steps, we cannot guarantee a 100% bias-free algorithmic approach. Nonetheless, our internal experiments conducted by ethical AI experts, supplemented by consultations of a digital privacy lawyer, convince us to filter out 99% of inappropriateness. In a nutshell, we confidently communicate that we are using state-of-the-art measures to ensure that Persuaide remains ethical. Persuaide is for the greater good of humanity.
 
 At Persuaide, we set on a mission to help everybody to become better at communication.
+
 Thank you,
 
 Your team from Persuaide
