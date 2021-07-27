@@ -21,6 +21,8 @@ nav_exclude:                                            # The following paths ar
   - pages/job-description.md
   - pages/30.md
   - pages/biz.md
+  - pages/blogideas.md
+  - pages/books.md
 
 
 ### Author Info ###
