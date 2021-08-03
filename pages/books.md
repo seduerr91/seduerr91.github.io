@@ -1,22 +1,22 @@
-### Mating in Captivity
+# Mating in Captivity
 
-Synopsis
-Mating in Captivity takes on tough questions, grappling with the obstacles and anxieties that arise when our quest for secure love conflicts with our pursuit of passion. She invites us to explore the complicated union of monogamy and sexual desire. She also explains what it takes to bring lust home. Sexual excitement doesn’t always play by the rules of good citizenship. It is politically incorrect. It thrives on power plays, unfair advantages, and the space between self and other. More exciting, playful, even poetic sex is possible. Still, first we must kick egalitarian ideals and emotional housekeeping out of our bedrooms.
-
-About Esther Perel
-Esther Perel is a psychotherapist and New York Times bestselling author. She is fluent in nine languages, runs a therapy practice in New York City, and serves as an organizational consultant for Fortune 500 companies. Perel’s TED talks have more than 20 million views. Perel is also an executive producer and host of the popular podcast Where Should We Begin? 
-
-Why the Quest for Security Saps Erotic Vitality
+## Why the Quest for Security Saps Erotic Vitality
 “Today, we turn to one person to provide what an entire village once did: a sense of grounding, meaning, and continuity. At the same time, we expect our committed relationships to be romantic as well as emotionally and sexually fulfilling. Is it any wonder that so many relationships crumble under the weight of it all?”
 
-– ESTHER PEREL
-Humans naturally seek security. Subsequently, the majority of humans commit to long-term monogamous relationships. This decision is made based on the security associated with this relationship rather than our sexual drive. As well as having a propensity for security, we also have an equally strong drive for adventure and excitement. However, security and excitement are challenging to combine. Hence, humans struggle to lust with the same person that they seek comfort and stability. Importantly, Esther Perel explains that it is not impossible.
+## Humans seek Security
+- Humans naturally seek security. Subsequently, the majority of humans commit to long-term monogamous relationships. 
+- This decision is made based on the security associated with this relationship rather than our sexual drive. 
+- Propensity for security, we also have an equally strong drive for adventure and excitement. 
+- However, security and excitement are challenging to combine. Hence, humans struggle to lust with the same person that they seek comfort and stability, which is not possible.
 
-It is easy to see that as security increases in a relationship, desire often fades. Hence, desire often fades as relationships lengthen. Perel describes how there are two standpoints where people can stand in a relationship. Either people are romantics who desire intensity and adventure over stability or realists who value security over passions. However, people are often left disappointed on both ends of the spectrum. Healthy relationships often require a degree of both desire and security. 
+- It is easy to see that as security increases in a relationship, desire often fades. 
+- Hence, desire often fades as relationships lengthen. Perel describes how there are two standpoints where people can stand in a relationship. 
+- Either people are romantics who desire intensity and adventure over stability or realists who value security over passions. 
+- However, people are often left disappointed on both ends of the spectrum. Healthy relationships often require a degree of both desire and security. 
+- Perel believes that love and desire are not mutually exclusive. Still, they do not generally take place at the same time. The reasoning being that security and passions are separate human needs that are underpinned by different motives.
 
-Perel believes that love and desire are not mutually exclusive. Still, they do not generally take place at the same time. The reasoning being that security and passions are separate human needs that are underpinned by different motives.
-
-Perel says that the reality of intimate friction is entirely unsurprising given the recent evolution of modern social support systems. For many of us, the ideas of extended family and a close-knit community have been all but dismantled. In its place is a more anxious, transplanted independence. Intimacy has become overburdened with unrealistic expectations. We expect our partners to be passionate and sexual, but we also expect them to adopt several other roles. We expect them to provide us with creativity, intellectual discussions, psychological advice, stress-busting, caregiving, and work management. These things are fantastic to have in a partner, and everyone is entitled to their own set of needs and desires. However, nobody is going to be perfect at everything. If you believe your partner should be perfect, you will struggle when your partner decides to behave in a way that is true to their authentic self. The sense of safety that you’ve manufactured becomes threatened, and you will react with negative emotions. If you drop your ideas of perfection, you can create a sense of independence within the relationship. You can provide your relationship with the space to exhale and grow organically.
+- Perel says that the reality of intimate friction is entirely unsurprising given the recent evolution of modern social support systems. For many of us, the ideas of extended family and a close-knit community have been all but dismantled. In its place is a more anxious, transplanted independence. Intimacy has become overburdened with unrealistic expectations. 
+- We expect our partners to be passionate and sexual, but we also expect them to adopt several other roles. We expect them to provide us with creativity, intellectual discussions, psychological advice, stress-busting, caregiving, and work management. These things are fantastic to have in a partner, and everyone is entitled to their own set of needs and desires. However, nobody is going to be perfect at everything. If you believe your partner should be perfect, you will struggle when your partner decides to behave in a way that is true to their authentic self. The sense of safety that you’ve manufactured becomes threatened, and you will react with negative emotions. If you drop your ideas of perfection, you can create a sense of independence within the relationship. You can provide your relationship with the space to exhale and grow organically.
 
 Love Seeks Closeness, but Desire Needs Distance
 “Love enjoys knowing everything about you; desire needs mystery. Love likes to shrink the distance that exists between me and you, while desire is energized by it. If intimacy grows through repetition and familiarity, eroticism is numbed by repetition. It thrives on the mysterious, the novel, and the unexpected. Love is about having; desire is about wanting. An expression of longing, desire requires ongoing elusiveness. It is less concerned with where it has already been than passionate about where it can still go. But too often, as couples settle into the comforts of love, they cease to fan the flame of desire. They forget that fire needs air.”
