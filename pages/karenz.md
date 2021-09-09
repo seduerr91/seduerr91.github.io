@@ -4,6 +4,18 @@ tools: [Python, PyTorch]
 image: https://i.imgur.com/XQI4dXz.jpg
 description: I publish my major achievements per week here.
 ---
+# The next step. Finding a job.
+
+September 9, 2021
+
+
+
+September 8, 2021
+
+- I worked on my math book. One more hour.
+- I had a workout.
+- I gave feedback for Y Combinator application & worked on 
+- I applied for 5 jobs and updated my CV.
 
 # Bildungskarenz Progress Overview
 
