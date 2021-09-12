@@ -2,7 +2,7 @@
 title: Finding a base datasets 
 tags: [Persuaide, engineering]
 style: fill
-color: dark
+color: primary
 description: Finding a dataset for your purpose.
 ---
 

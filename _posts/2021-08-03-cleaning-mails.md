@@ -2,7 +2,7 @@
 title: Introducing the Dataset Creation Blog Series in Natural Language Processing
 tags: [Persuaide, engineering]
 style: fill
-color: dark
+color: secondary
 description: Creating own datasets with SpaCy, PanDas based on Research.
 ---
 
