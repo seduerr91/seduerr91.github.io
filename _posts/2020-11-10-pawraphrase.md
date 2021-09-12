@@ -2,7 +2,7 @@
 title: Invoking more Creativity with Pawraphrases based on T5 
 tags: [Coding]
 style: fill
-color: dark
+color: secondary
 description: This micro-service allows to find paraphrases for a given text based on T5.
 ---
 
