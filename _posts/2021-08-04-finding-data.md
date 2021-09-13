@@ -6,9 +6,9 @@ color: primary
 description: Finding a dataset for your purpose.
 ---
 
-The following statement is not quite an invention but by now even you may have realized: 'data is the new gold'. Still, let us try to understand why?
+The following statement is not quite an invention but by now even you may have realized: 'data is the new gold'. Why is that?
 
-## Why data is gold
+## Why Data is Gold
 
 It is quite philosophical but in a world where most of us live in abundance of cheap food and water, it is information that may give you an asymetric advantages over others. This information can be investment tips or persuasion techniques, guidelines or nasty information about a person. All of this information, or data, allows you to either become richer, potentially get that lady or guy to like you, or to actually blackmail someone else. 
 
