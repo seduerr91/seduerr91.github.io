@@ -6,9 +6,29 @@ description: I publish my major achievements per week here.
 ---
 # The next step. Finding a job.
 
+September 13, 2021
+- Worked on PERM. How to proceed?
+- Run with MC
+- Work on Math
+- Work on Data Science
+
+September 10, 2021
+- Purchased shampoo
+- Worked out with MC and Sharon
+- Did Groceries
+- Had lunch with Jordan
+- Researched job opportunities
+- Worked on Persuaide with Team
+- Worked on Math book
+- Worked on Data Science Summary
+- Went running
+
 September 9, 2021
-
-
+- Apply for 2 jobs
+- Buy white shoes
+- Purchase shampoo
+- Purchase white socks
+- Go to hair dresser
 
 September 8, 2021
 
