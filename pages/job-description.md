@@ -9,7 +9,7 @@ description: This is what I want to do as a job after my Bildungskarenz.
 
 ### Requirements
 
-- __Location__: First two years local, after remote should be possible.
+- __Location__: First three months local, after remote should be possible.
 - __Minimum Compensation__: 75.000 EUR p.a. or 120.000 CHF,-
 - __Vacation__: min. 25 days p.a., flexible preferred
 - __Company Size__: <50 employees.
@@ -29,6 +29,6 @@ description: This is what I want to do as a job after my Bildungskarenz.
 - Toolkit: PyTorch, Spacy, Huggingface Transformers, Pandas, NumPy, OpenCV, SciKit Learn
 - Result-driven Master in Business and Computer Science (graduated with honours)
 - Professional research ability and critical thinking skills (2 years as a researcher)
-- Proficient programming in Python (one year in a Startup, two years in club)
+- Proficient programming in Python (one year in a Startup, two years in Uni)
 - Excellent communicator, team-player (years of soccer, digital nomad)
 - Extremes: highest montain 6088m, marathon in isolation in 3h55, running 1800km in 2021.

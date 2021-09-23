@@ -38,13 +38,11 @@ Trying to speed up the negotiation process is a mistake that many negotiators ma
 According to Chris Voss, there are three types of voices available to negotiators:
 
 The late-night FM DJ voice: Basically, keep it calm and slow. Use this selectively to make a point. When done properly, the late-night FM DJ voice has the power to create an aura of authority and trust without making the other party defensive.
-The playful/positive voice: This should be your default voice.  It’s the voice of an easygoing, good-natured person. Your attitude is light and encouraging.
+The playful/positive voice: This should be your default voice. It’s the voice of an easygoing, good-natured person. Your attitude is light and encouraging.
 The direct/assertive voice: This should be used as rarely as possible because this has the potential to create pushback.
 When people are in a positive frame of mind, they are more likely to think quickly and to collaborate and problem-solve. Positivity creates mental agility in both you as well as the other party.
 
 Mirroring works magic. Repeat the last three words (or the critical one to three words) of what someone has just said because we fear what is different and find comfort in similarity. Using mirroring encourages the other party to empathize and bond with you, keep people talking, buy your party some time, and eventually reveal their strategy.
-
-A study by psychologist Richard Wiseman on two groups of waiters concluded that the average tip of the waiters who mirrored was 70 percent more than of those who used positive reinforcement.
 
 The five-step process according to the author to own any negotiation process is:
 
@@ -57,21 +55,21 @@ The five-step process according to the author to own any negotiation process is:
 ## Chapter 3: Don’t Feel Their Pain, Label It
 How to Create Trust with Tactical Empathy
 
-For a negotiation to be successful there has to be a specific and careful preparation for how to proceed with the other party taking into consideration all available prior information.CLICK TO TWEET
+For a negotiation to be successful there has to be a specific and careful preparation for how to proceed with the other party taking into consideration all available prior information.
 
-Tactical empathy is understanding the feelings and mindset of the other party at the moment and also hearing what is behind those feelings so that you can increase your influence in all the moments that follow. When you closely observe a person’s face, gestures, and tone of voice, your brain begins to align with theirs in a process called neural resonance, and that gives you a window into what they think and feel.
+Tactical empathy is understanding the feelings and mindset of the other party at the moment and also hearing what is behind those feelings so that you can increase your influence in all the moments that follow. When you closely observe a person’s face, gestures, and tone of voice, your brain begins to align with theirs in a process called *neural resonance*, and that gives you a window into what they think and feel.
 
 Labeling is a way of validating someone’s emotion by acknowledging it. The first step to labeling is detecting the other party’s emotional state. The trick to spotting feelings is to pay close attention to changes people undergo when they respond to external events. And more often than not, in a negotiation scenario, these external events are your words. Once you’ve spotted an emotion you want to highlight, the next step is to label it aloud. Labels can be phrased as statements or questions. Labels almost always begin with the following phrases:
 
 “It seems like…”
 “It looks like…”
 “It sounds like…”
+
 People’s emotions have two levels. A “presenting” behavior, which is the part above the surface that one can see and hear; and the “underlying” feeling which is the motivation behind the behavior.
 
 Great negotiators address those underlying emotions by labeling. Labeling negatives diffuse them, and labeling positives reinforce them. Labeling helps de-escalate situations because it acknowledges the other party’s feelings rather than continuing to act them out.
 
 The golden rule is to understand that you’re dealing with a human who wants to be appreciated and understood. Labels can help reinforce positive perceptions and dynamics.
-
 
 ## Chapter 4: Beware “Yes”—Master “No”
 How to Generate Momentum and Make It Safe to Reveal the Real Stakes
@@ -90,7 +88,8 @@ I don’t understand;
 I can’t afford it;
 I need more information;
 I’d prefer talking to someone else.
-And there are three kinds of “Yes”:
+
+There are three kinds of “Yes”:
 
 Counterfeit: This is one where the other party plans on saying “No” but feels that a “Yes” is an easier escape route.
 Confirmation: This is a generally innocent, reflexive response to a black or white question. 
