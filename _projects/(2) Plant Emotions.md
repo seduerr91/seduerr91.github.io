@@ -1,5 +1,5 @@
 ---
-name: Plantions.net
+name: Plantions.net [2020]
 tools: [Plants, Machine Learning]
 image: https://i.imgur.com/Ry6GHuP.png
 description: Evaluating happiness through plants with ML.
