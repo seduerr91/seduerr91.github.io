@@ -27,24 +27,23 @@ nav_exclude:                                            # The following paths ar
 
 ### Author Info ###
 author:
-  name              : Sebastian Duerr
-  image             : https://i.imgur.com/r0yP47Um.png
+name              : Sebastian Duerr
+image             : https://i.imgur.com/r0yP47Um.png
 #  behance           : your_username
 # dribbble          : your_username
-  email             : duerr.sebastian@gmail.com
-  facebook          : seduerr
-  github            : seduerr91
-# gitlab            : your_username
-  instagram         : durrsebastian
-  kaggle            : sebastian91
-  linkedin          : sebastianduerr
-#  medium            : your_username
+email             : duerr.sebastian@gmail.com
+facebook          : seduerr
+github            : seduerr91
+gitlab            : seduerr
+kaggle            : sebastian91
+linkedin          : sebastianduerr
+medium            : duerr.sebastian
 # soundcloud        : your_username
-# spotify           : your_username
+# spotify           : 
 # stackoverflow     : your_user_id
 # tumblr            : your_username.tumblr.com
 # twitch            : your_username
-  twitter           : duerrseb
+twitter           : duerrseb
 # vimeo             : your_username
 # youtube           : your_channel_name
 
