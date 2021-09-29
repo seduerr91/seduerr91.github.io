@@ -23,6 +23,23 @@ Trained in Information Systems at Germany's best [University (German only)](http
 
 ![Imgur](https://i.imgur.com/m4jlWgEm.jpg)
 
+## My Raiffeisen Product responsibilities was on the following products:
+
+- Credit loan small (customers, app integration)
+- Credit loan medium  (customers, web app integration)
+- Credit loan in-branch (customers, banking system integration)
+- Credit card application (customers, web app integration)
+- Online account opening new customers (new customers, web app) 
+- Online savings opening new customers (new customers, web app) 
+- Online savings opening old customers (new customers, web app) 
+- Leasing upper Austria (customers, web app integration)
+- Leasing residual states Austria (customers, web app integration)
+- Construction savings plan (customers, web app integration)
+- Accident & travel Insurance (customers, web app integration)
+- Insurance renewals (customers, web app integration)
+- Product application management tool (internal tool, web app)
+- Sales funnel management tool (internal, coordinative role)
+
 <div class="row">
 {% include about/timeline.html %}
 </div>
