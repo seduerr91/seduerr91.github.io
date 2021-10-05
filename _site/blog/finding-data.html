@@ -84,114 +84,68 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1><b>Notes from Interviews with Industry Experts</b></h1>
+  <h1><b>Finding a base datasets</b></h1>
 
 <p class="post-metadata text-muted">
-  29 May 2020 -  
-  <b>2 mins read time</b>
+  04 August 2021 -  
+  <b>3 mins read time</b>
 
   <br>Tags: 
     
-    <a class="text-decoration-none no-underline" href="/blog/tags#coding">
-      <span class="tag badge badge-pill text-primary border border-primary">Coding</span>
+    <a class="text-decoration-none no-underline" href="/blog/tags#persuaide">
+      <span class="tag badge badge-pill text-primary border border-primary">Persuaide</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#engineering">
+      <span class="tag badge badge-pill text-primary border border-primary">engineering</span>
     </a>
     </p>
 
-<p>Notes from Interviews with Industry Experts in Data Science, Machine Learning, and Deep Learning.</p>
+<p>The following statement is not quite an invention but by now even you may have realized: ‘data is the new gold’. Why is that?</p>
 
-<p><img src="https://images.unsplash.com/photo-1467746474745-41dd2c7524ce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1650&amp;q=80" alt="Experts">
-<em>Photo by Rita Morais on Unsplash</em></p>
+<h2 id="why-data-is-gold">Why Data is Gold</h2>
 
-<h3 id="topic-1-ml--statistics-foundations">Topic 1: ML &amp; Statistics Foundations</h3>
+<p>It is quite philosophical but in a world where most of us live in abundance of cheap food and water, it is information that may give you an asymetric advantages over others. This information can be investment tips or persuasion techniques, guidelines or nasty information about a person. All of this information, or data, allows you to either become richer, potentially get that lady or guy to like you, or to actually blackmail someone else.</p>
 
+<p>The dominating large &amp; successful companies from California, you name them, understood this quite a while ago, and created a lot of wealth by compiling datasets based on psychological means to place the perfect ads to users. It is good for humanity, if they are careful with these datasets because in the wrong hands (“Cambridge Analytica”), there can be quite some abuse be happening. Yet, you inspiring deep learner may wonder: how can I then get hands on data to learn new capabilities? For that, let us figure out where to find some of the open source datasets.</p>
+
+<h2 id="research-approach-for-new-features">Research Approach for new Features</h2>
+
+<p>Before looking for the creation of a new dataset, make sure that what you looking for is not already out there on the market. Hence, scan Google Search (mostly on Medium.com) for related problems. 
+If not successful research on Google Scholar for related scientific articles, and see if anyone else faced your challenge.</p>
+
+<p>Then there are - more or less official databases ot search for datasets such as</p>
 <ul>
-  <li>Inspiration: The very cool blog by <a href="https://algorithms-tour.stitchfix.com">Stitchfix</a>
-</li>
-  <li>Statistic &amp; ML Fundamentals:
-    <ul>
-      <li>work through the book ‘Introduction to Statistical Learning’.</li>
-      <li>Elements of Statistical Learning (&amp; its hands-on in R or Python).</li>
-      <li>Coursera Course: Andrew Ng’s course on Machine Learning from <a href="https://www.coursera.org/learn/machine-learning/home/welcome">Stanford</a>
-</li>
-    </ul>
-  </li>
-  <li>Software Engineering: work on product deployment: Study on Writeup.ai (e.g., Startup Scripts); an intro is the book ‘Monetize Machine Learning’.</li>
-  <li>Udacity Course: Preparing for <a href="https://www.udemy.com/course/data-science-career-guide-interview-preparation/">Coding Interviews</a>
-</li>
-  <li>Public Voice:
-    <ul>
-      <li>Blogging is useful if you present in a nice way - recruiters may find it useful and intuitive # To Do: Make sure to make videos as they are easy to understand.</li>
-      <li>Make scientific contributions.</li>
-    </ul>
-  </li>
+  <li>Google Dataset Search.</li>
+  <li>Kaggle.com datasets.</li>
+  <li>Huggingface datasets.</li>
 </ul>
 
-<h3 id="topic-2-coding-language-proficiency">Topic 2: Coding Language Proficiency</h3>
+<p>that all have some more or less good and annotated datasets.
+Pro Tip: I love to checkout Github Repository Search  because people tend to upload a lot of data there.</p>
 
-<ul>
-  <li>Programming Languages: Python, C, JavaScript</li>
-  <li>Python:
-    <ul>
-      <li>Become expert in fundamentals by carefully reading ‘Fluent Python’</li>
-      <li>Work on Python 101 Challenges (e.g., hacker rank, leet code)</li>
-    </ul>
-  </li>
-  <li>JavaScript: Do few courses on <a href="https://join.teamtreehouse.com/100-days-of-code/?_ga=2.238278912.1635496758.1590398997-278633462.1590221785">TeamTreehouse</a>
-</li>
-  <li>C: Read the <a href="http://cslibrary.stanford.edu/101/EssentialC.pdf">C-Python Article</a> from Stanford</li>
-  <li>Additionally: Get proficient in relevant skills: Concurrency, Micro-Services with Django, Redis, Websockets, JS React.</li>
-</ul>
+<h2 id="what-to-watch-out-for">What to watch out for</h2>
 
-<p><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt="Coding Langs">
-<em>Photo by Chris Ried on Unsplash</em></p>
+<p>Usually, I am working on sequence-to-sequence modeling, hence it is important to get simple transformations, i.e. moving from input statement to output statement in an understandable manner. For instance, a transition can be having two sentences being combined into one:</p>
 
-<h3 id="topic-3-nlp---deep-learning-applications">Topic 3: NLP - Deep Learning Applications</h3>
+<p>Input: “The sun is shining. I want to go to the beach.”
+Output: “The sun is shining, therefore I want to go to the beach.”</p>
 
-<ul>
-  <li>Deep Dive into NLP
-    <ul>
-      <li>Read fundamentals: the ‘illustrated transformer’ <a href="http://jalammar.github.io/illustrated-transformer/">blog post</a>
-</li>
-      <li>HuggingFace
-        <ul>
-          <li>Revise paper review from <a href="https://youtu.be/G5lmya6eKtc">Thomas Wolf</a> as of April, 2020.</li>
-          <li>Review and watch their additional videos.</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Architectures: Understand LSTM and further architectures, read papers on that/Medium articles</li>
-  <li>Academic material
-    <ul>
-      <li>Join MIT classes on NLP / Deep Learning in Winter and Spring Term</li>
-      <li>Check for material from Girafski &amp; Chris Manning: look in their research papers / read their books</li>
-    </ul>
-  </li>
-</ul>
+<p>If you find enough of such example in a wide range of different capabilities. This one is called sentence fusing, and in the DiscoFuse dataset by Google, you got a couple of million of thesee combinations. That is the perfect playground to fine tune neural nets and teach them how to fuse sentences.</p>
 
-<p><img src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=749&amp;q=80" alt="Neural net">
-<em>Photo by Joshua Sortino on Unsplash</em></p>
+<h2 id="coming-up-with-new-capabilities-is-different">Coming up with new capabilities is different</h2>
 
-<h3 id="topic-4-tool-recommendations">Topic 4: Tool Recommendations</h3>
+<p>However, when you want to create new capabilities you have to try a whole lotta different approach. If you want to create a dataset that no one ever has created before you have to put in quite some research and work. Yet, you will need a base dataset that represents your domain most. For instance, if you are working on emails, then it is good to have emails as a base.</p>
 
-<ul>
-  <li>Airflow for Automation/Scheduling (more for the pipeline engineers).</li>
-  <li>Domino Data Lab: A platform similar to Github but specialized for data science projects.</li>
-  <li>Tableau for exploration with a great competition for people who design dashboards (IronViz).</li>
-  <li>Book for ML algorithms is DataSmart because they implement them from scratch, e.g., clustering (using Excel to show what is behind the packages and its math).</li>
-</ul>
+<p>In this blog series, we gonna focus on the scenario of making extroverted messages more introverted in an email context, and the other way round. Therefore, we have to start with a email dataset (there is not many but try the Enron dataset) in order to have a solid base. Up in the next article, we gonna focus on cleaning our base dataset.</p>
+
+<p>Please let me know what you think and get in touch with me.</p>
+
+<p>Sebastian</p>
 
 <hr>
 
-<h5 id="side-notes">Side Notes</h5>
-
-<ul>
-  <li>Reminder: MIT squeeze a lot out of it because of all the connections and job opportunities. Focus on doing research.</li>
-  <li>Startup: Focus carefully, do not make it take out time too much; may prevent you too much on working on deep learning aspects.</li>
-  <li>Kaggle industry perspective: consists of loads of dummy datasets, companies do not necessarily put a lot of weight on Kaggle because data is too clean.</li>
-  <li>Focus: Find your focus in the deep learning world like NLP only.</li>
-  <li>Potential future role: Forward Deployment Engineer: Consulting &amp; Engineering, e.g. implementing and presenting PoCs.</li>
-</ul>
+<p>Hi, I am Sebastian from Persuaide. Our mission is to improve how the world communicates and persuades for the good with Natural Language Processing. <strong>Our ask</strong>: Please support us on our journey by joining our waiting list (www.persuai.de). Thank you!</p>
 
 
 

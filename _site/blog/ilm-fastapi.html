@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I turn :coffee: into :computer:, love :running: and enjoy :sleeping:.">
+
+  <title>duerr.se</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+
+<!-- Hotjar Tracking Code for https://seduerr91.github.io/
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1834284,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146421430-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146421430-1');
+</script>
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>duerr.se</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+<a class="nav-item nav-link " href="/datenschutz.html"></a>
+
+      <a class="nav-item nav-link " href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>Hosting your text infilling (based on GPT-2) through FastAPI on GCP</b></h1>
+
+<p class="post-metadata text-muted">
+  01 October 2020 -  
+  <b>5 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#coding">
+      <span class="tag badge badge-pill text-primary border border-primary">Coding</span>
+    </a>
+    </p>
+
+<p>This micro-service allows infilling multiple words into a context through AI. Researchers from Stanford addressed this. I made their work available through an API.</p>
+
+<p>The following article explains how to implement a NLP architecture trained for infilling. It gives different infilling recommendations for a given context.</p>
+
+<p><img src="https://i.imgur.com/Qh0FFjN.png" alt="Imgur"></p>
+
+<p>Text infilling is the task of predicting missing spans of text which are consistent with the preceding and subsequent text. This implementation is based on the works of the Infilling Language Model (ILM) framework outlined in the ACL 2020 paper <a href="https://arxiv.org/abs/2005.05339">Enabling language models to fill in the blanks</a> by Donahue et al. (2020). With this micro-service, you can generate infillings into a specific context by simply adding a ‘_‘-token. Such an infilling can be done with words, n-grams (multiple words), or sentences.</p>
+
+<ul>
+  <li>If you want to test the infilling model, go ahead and click <a href="https://ilmapi.uc.r.appspot.com/docs">here</a>. It renders as depicted below.</li>
+  <li>A guide on how to use this service can be found <a href="https://seduerr91.github.io/blog/ilmapi-instructions">here</a>.</li>
+  <li>The git repository with the source code is stored <a href="https://github.com/seduerr91/ilm-api">here</a>.</li>
+</ul>
+
+<p><img src="https://i.imgur.com/kbHNMpM.png" alt="Imgur"></p>
+
+<h3 id="deploying-the-infilling-model-on-google-cloud-platform">Deploying the Infilling Model on Google Cloud Platform</h3>
+
+<ol>
+  <li>To deploy this micro-service by yourself please create a new project on <a href="https://cloud.google.com/">Google Cloud Platform</a>. For the new project to be created, you have to choose a <em>project name</em>, <em>project ID</em>, <em>billing account</em>, and, then, to click <em>Create</em>.
+<img src="https://i.imgur.com/tTvOugf.png" alt="Imgur">
+</li>
+  <li>Next, activate Google’s <em>Cloud Shell</em> in the upper right corner of GCP to execute a few lines of code to host the ILM-API.
+<img src="https://i.imgur.com/IHxxlJu.png" alt="Imgur">
+</li>
+  <li>Now, we clone the <a href="https://github.com/seduerr91/ilm-api">ILM-API Repository</a> from GitHub. Fort that, type the following command in the Cloud Shell: 
+ <strong>git clone https://github.com/seduerr91/ilm-api.git</strong>
+</li>
+  <li>As a next step, install the requirements. These project related libraries are located in the file <em>requirements.txt</em>. To install all these modules in one go, run the following command:
+ <strong>pip3 install -r requirements.txt</strong>
+</li>
+  <li>To deploy the FastAPI app on App Engine and in the next step, we need to create a gcloud app and to it. (By executing the next command, you will be prompted to select a region. Simply choose the region nearest to the geographical location where your consumers access this micro-service.) In the cloud shell, type the following command to create the app:
+ <strong>gcloud app create</strong>
+</li>
+  <li>You are almost there! Now, we deploy the FastAPI app on GCP App Engine. Therefore, run the following command in Google Cloud Shell to deploy the FastAPI app to Google App Engine. You will be prompted to continue. Press Y and hit enter to proceed with the deployment. It takes quite some time to host the service (like 3-5 minutes), once you execute: 
+ <strong>gcloud app deploy app.yaml</strong>
+</li>
+  <li>Browse to your micro-service deployed on GCP App Engine. Generally, your app is deployed on the URL that has the following format. your-project-id.appspot.com. In case you are not sure what the project id is, then type the following command to view your application in the web browser:
+ <strong>gcloud app browse</strong>
+</li>
+</ol>
+
+<h4 id="congratulations-you-just-hosted-the-your-own-infilling-micro-service-based-on-the-deep-neural-architecture-gpt-2-via-fastapi">Congratulations: You just hosted the your own infilling micro-service based on the Deep Neural Architecture GPT-2 via FastAPI.</h4>
+
+<p>Next, we take a brief look at the source code, to better understand what we just did.</p>
+
+<h3 id="some-remarks-about-the-code-files">Some Remarks About the Code Files</h3>
+
+<h4 id="infillpy">infill.py</h4>
+<p>The inference method is wrapped into the ‘class Infiller()’ which we need for the API in ‘main.py’. This loads the data model, sets an exemplary context, appends the specific tokens to the context file, and, runs the inference to generate the infilling sentences.</p>
+
+<script src="https://gist.github.com/seduerr91/9183c728c18461c98c2f8ab5b9517009.js"></script>
+
+<h4 id="mainpy">main.py</h4>
+<p>We serve the uvicorn server through the main.py file via ‘uvicorn main:app’. This hosts the POST APIs for the server queries.</p>
+
+<script src="https://gist.github.com/seduerr91/e389a2c212452f459c37346530a388b0.js"></script>
+
+<h4 id="requirementstxt">requirements.txt</h4>
+<p>The requirements.txt is very brief but it installs all required dependencies. In this example torch (PyTorch) is being used but you can also use Tensorflow if this is your preference.</p>
+
+<script src="https://gist.github.com/seduerr91/60ae1fdc383ece9daa5007f3a180240e.js"></script>
+
+<h4 id="appyaml">app.yaml</h4>
+<p>Google Cloud Platform allows the App Engine to perform deployment based on a configuration defined in a YAML file. For us to host the FastAPI on Google App Engine, the YAML configuration needs to have the following configuration.</p>
+
+<script src="https://gist.github.com/seduerr91/2fcd135a83023cbcfefb66b373b9ec58.js"></script>
+
+<h4 id="the-dockerfile">The Dockerfile</h4>
+
+<p>The Dockerfile is being executed via the app.yaml. It hosts a Python3.7 container, copies the app’s source code, installs the requirements needed, and executes the main app.</p>
+
+<script src="https://gist.github.com/seduerr91/5cdbd83bd095a421120e06d209d7fe24.js"></script>
+
+<h4 id="resources">Resources</h4>
+
+<p>This micro-service is build on the shoulders of the following giants:</p>
+
+<ul>
+  <li><a href="https://github.com/chrisdonahue/ilm">Git Infilling by Language Modeling (ILM)</a></li>
+  <li><a href="https://huggingface.co/transformers/main_classes/pipelines.html">HuggingFace Pipelines</a></li>
+  <li><a href="https://www.tutlinks.com/deploy-fastapi-app-on-google-cloud-platform/">Deploy FastAPI App on Google Cloud Platform</a></li>
+  <li><a href="https://towardsdatascience.com/build-and-host-fast-data-science-applications-using-fastapi-823be8a1d6a0">Build And Host Fast Data Science Applications Using FastAPI</a></li>
+  <li><a href="https://chatbotslife.com/deploying-transformer-models-1350876016f">Deploying Transformer Models</a></li>
+  <li><a href="https://towardsdatascience.com/how-to-properly-ship-and-deploy-your-machine-learning-model-8a8664b763c4">How to properly ship and deploy your machine learning model</a></li>
+  <li><a href="https://docs.python.org/3/tutorial/venv.html">Setting Up Virtual Environments</a></li>
+</ul>
+
+<h4 id="acknolegdements">Acknolegdements</h4>
+
+<p>Thanks to Javier and the team of <a href="narrativa.com">Narrativa</a> that asked me to host the micro-service. Also, a big thanks to <a href="huggingface.co">HuggingFace</a>, the Team from Stanford around Mr. Donahue. Also, thanks to <a href="wifitribe.co">WifiTribe</a> with which I am currently living as a Digital Nomad. It is a very amazing bunch of people. I am doing my research and education remotely.</p>
+
+<h4 id="who-am-i">Who am I?</h4>
+
+<p>I am Sebastian an NLP Deep Learning Research Scientist. In my former life, I was a manager at Austria’s biggest bank. In the future, I want to work remotely whenever I want to &amp; in the field of NLP.</p>
+
+<p>Drop me a message on <a href="https://www.linkedin.com/in/sebastianduerr/">LinkedIn</a> if you want to get in touch or have any questions. Thank you!</p>
+
+
+
+<div class="pt-5">
+  
+</div>
+
+</div>
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Sebastian Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+
+  <div class="container-fluid justify-content-center">
+<a class="social mx-1" href="mailto:duerr.sebastian@gmail.com" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.facebook.com/seduerr" style="color: #6c757d" onmouseover="this.style.color='#3b5998'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-facebook fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.github.com/seduerr91" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.gitlab.com/seduerr" style="color: #6c757d" onmouseover="this.style.color='#fca326'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-gitlab fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.kaggle.com/sebastian91" style="color: #6c757d" onmouseover="this.style.color='#20beff'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-kaggle fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.linkedin.com/in/sebastianduerr" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1" href="https://medium.com/@duerr.sebastian" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.twitter.com/duerrseb" style="color: #6c757d" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div>
+
+</footer>
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+</body>
+
+</html>

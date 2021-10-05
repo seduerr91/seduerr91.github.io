@@ -30,7 +30,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
 
-<!-- Hotjar Tracking Code for https://seduerr91.github.io/ -->
+<!-- Hotjar Tracking Code for https://seduerr91.github.io/
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -40,7 +40,7 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+</script> -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146421430-1"></script>
@@ -55,15 +55,15 @@
 </head>
 
 
-<body class="d-flex flex-column h-100">
+<body class="h-100 d-flex flex-column">
 
   <main class="flex-shrink-0 container mt-5">
-  <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-themed">
 
   <a class="navbar-brand" href="/"><h5><b>duerr.se</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <i class="fas fa-1x fa-bars text-themed"></i>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -78,11 +78,12 @@
 
       
 
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
     </div>
   </div>
 
 </nav>
-  <div class="col-lg-10 mx-auto mt-5 post">
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <h1><b>2025 - Preparing a Strategy</b></h1>
 
 <p class="post-metadata text-muted">
@@ -90,10 +91,6 @@
   <b>5 mins read time</b>
 
   <br>Tags: 
-    
-    <a class="text-decoration-none no-underline" href="/blog/tags#personal">
-      <span class="tag badge badge-pill text-primary border border-primary">Personal</span>
-    </a>
     
     <a class="text-decoration-none no-underline" href="/blog/tags#motivation">
       <span class="tag badge badge-pill text-primary border border-primary">Motivation</span>
@@ -175,19 +172,7 @@
 
 
 <div class="pt-5">
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    var disqus_shortname = 'duerr';
-    (function() {
-      var disqus = document.createElement('script');
-      disqus.type = 'text/javascript';
-      disqus.async = true;
-      disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-</noscript>
+  
 </div>
 
 </div>
@@ -208,12 +193,14 @@
       <i class="fab fa-facebook fa-1x"></i>
     </a><a class="social mx-1" href="https://www.github.com/seduerr91" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-github fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.instagram.com/durrsebastian" style="color: #6c757d" onmouseover="this.style.color='#405de6'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-instagram fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.gitlab.com/seduerr" style="color: #6c757d" onmouseover="this.style.color='#fca326'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-gitlab fa-1x"></i>
     </a><a class="social mx-1" href="https://www.kaggle.com/sebastian91" style="color: #6c757d" onmouseover="this.style.color='#20beff'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-kaggle fa-1x"></i>
     </a><a class="social mx-1" href="https://www.linkedin.com/in/sebastianduerr" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1" href="https://medium.com/@duerr.sebastian" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
     </a><a class="social mx-1" href="https://www.twitter.com/duerrseb" style="color: #6c757d" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-twitter fa-1x"></i>
     </a>
@@ -222,6 +209,8 @@
 
 </footer>
 
+
+  
   <!-- GitHub Buttons -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -244,6 +233,7 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
+
 
 </body>
 

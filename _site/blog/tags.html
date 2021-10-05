@@ -30,7 +30,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
 
-<!-- Hotjar Tracking Code for https://seduerr91.github.io/ -->
+<!-- Hotjar Tracking Code for https://seduerr91.github.io/
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -40,7 +40,7 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+</script> -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146421430-1"></script>
@@ -55,15 +55,15 @@
 </head>
 
 
-<body class="d-flex flex-column h-100">
+<body class="h-100 d-flex flex-column">
 
   <main class="flex-shrink-0 container mt-5">
-  <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-themed">
 
   <a class="navbar-brand" href="/"><h5><b>duerr.se</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <i class="fas fa-1x fa-bars text-themed"></i>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -78,22 +78,63 @@
 
       
 
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
     </div>
   </div>
 
 </nav>
-  <div class="col-lg-10 mx-auto mt-5 post">
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
   <!-- Collect tags from all posts --><!-- List tags & related posts -->
 
 <div class="py-3">
   <h4 id="coding">Coding</h4>
   <ol>
-  <a href="/blog/experts"><li>Notes from Interviews with Industry Experts</li></a>
+  <a href="/blog/ethics-alignment"><li>Ethics behind Recipient Alignment</li></a>
+    <small class="text-muted"> - 10 September 2021</small>
+    <br><a href="/blog/ml-ops"><li>Integrating Extroversion into Recipient Alignment</li></a>
+    <small class="text-muted"> - 05 September 2021</small>
+    <br><a href="/blog/finetuning"><li>Invoking more Creativity with Pawraphrases based on T5</li></a>
+    <small class="text-muted"> - 30 August 2021</small>
+    <br><a href="/blog/lingu"><li>Developing a Linguistic Realizer</li></a>
+    <small class="text-muted"> - 12 December 2020</small>
+    <br><a href="/blog/synthetic_data"><li>4 Steps to Create Synthetic Datasets with T5, PAWS and Your Text Corpus</li></a>
+    <small class="text-muted"> - 16 November 2020</small>
+    <br><a href="/blog/pawraphrase"><li>Invoking more Creativity with Pawraphrases based on T5</li></a>
+    <small class="text-muted"> - 10 November 2020</small>
+    <br><a href="/blog/ilmapi-instructions"><li>How to Use the Generative Text Infilling Model based on Artificial Intelligence</li></a>
+    <small class="text-muted"> - 02 October 2020</small>
+    <br><a href="/blog/ilm-fastapi"><li>Hosting your text infilling (based on GPT-2) through FastAPI on GCP</li></a>
+    <small class="text-muted"> - 01 October 2020</small>
+    <br><a href="/blog/streamlit-nlp"><li>Running GPT2 Inference through a Streamlit Interface on GCP</li></a>
+    <small class="text-muted"> - 03 September 2020</small>
+    <br><a href="/blog/nlg"><li>NLG Parameters and Algorithms</li></a>
+    <small class="text-muted"> - 03 September 2020</small>
+    <br><a href="/blog/nlp-review"><li>NLP Recent Paper Review</li></a>
+    <small class="text-muted"> - 07 August 2020</small>
+    <br><a href="/blog/transformer"><li>The Transformer review</li></a>
+    <small class="text-muted"> - 04 August 2020</small>
+    <br><a href="/blog/dnn"><li>An Introduction to Deep Neural Networks</li></a>
+    <small class="text-muted"> - 10 July 2020</small>
+    <br><a href="/blog/colab-fastai2"><li>Running FastAI2 in Google Colab</li></a>
+    <small class="text-muted"> - 03 July 2020</small>
+    <br><a href="/blog/image-resizer"><li>Resizing Multiple Images in Python</li></a>
+    <small class="text-muted"> - 27 June 2020</small>
+    <br><a href="/blog/object-tracker"><li>Tracking Object Movements with Machine Learning (Open CV)</li></a>
+    <small class="text-muted"> - 12 June 2020</small>
+    <br><a href="/blog/experts"><li>Notes from Interviews with Industry Experts</li></a>
     <small class="text-muted"> - 29 May 2020</small>
     <br><a href="/blog/coding"><li>How Crafting Code Can Change Your Life</li></a>
     <small class="text-muted"> - 22 May 2020</small>
-    <br><a href="/blog/roadmap"><li>It is Your Time - Following Your Roadmap</li></a>
-    <small class="text-muted"> - 15 May 2020</small>
+    <br>
+  </ol>
+</div>
+<hr class="bg-light">
+
+<div class="py-3">
+  <h4 id="management-banking">Management &amp; Banking</h4>
+  <ol>
+  <a href="/blog/investmentbanking"><li>Introduction to Investment Banking</li></a>
+    <small class="text-muted"> - 17 July 2020</small>
     <br>
   </ol>
 </div>
@@ -116,10 +157,70 @@
 <hr class="bg-light">
 
 <div class="py-3">
-  <h4 id="personal">Personal</h4>
+  <h4 id="persuaide">Persuaide</h4>
   <ol>
-  <a href="/blog/strategy"><li>2025 - Preparing a Strategy</li></a>
-    <small class="text-muted"> - 08 May 2020</small>
+  <a href="/blog/extroversion-implementation"><li>Technical Implementation in SpaCy.</li></a>
+    <small class="text-muted"> - 25 August 2021</small>
+    <br><a href="/blog/extroversion-implementation-strategy"><li>Implementation Strategy extroverted writing.</li></a>
+    <small class="text-muted"> - 20 August 2021</small>
+    <br><a href="/blog/extroversion-theory"><li>The theory of extroverted writing.</li></a>
+    <small class="text-muted"> - 15 August 2021</small>
+    <br><a href="/blog/large-mail-data"><li>Using a lot of mails.</li></a>
+    <small class="text-muted"> - 10 August 2021</small>
+    <br><a href="/blog/dataset-search"><li>Finding a base datasets</li></a>
+    <small class="text-muted"> - 05 August 2021</small>
+    <br><a href="/blog/finding-data"><li>Finding a base datasets</li></a>
+    <small class="text-muted"> - 04 August 2021</small>
+    <br><a href="/blog/cleaning-mails"><li>Introducing the Dataset Creation Blog Series in Natural Language Processing</li></a>
+    <small class="text-muted"> - 03 August 2021</small>
+    <br><a href="/blog/foundings-startup"><li>What I learnt from Kickstarting Persuaide</li></a>
+    <small class="text-muted"> - 15 July 2021</small>
+    <br><a href="/blog/persuaide-idea"><li>A Brief Summary of Persuaide</li></a>
+    <small class="text-muted"> - 08 July 2021</small>
+    <br><a href="/blog/ethicalai"><li>Ensuring Ethical AI at Persuaide</li></a>
+    <small class="text-muted"> - 09 June 2021</small>
+    <br><a href="/blog/tools"><li>Writing Emails that Others Want to Read</li></a>
+    <small class="text-muted"> - 08 June 2021</small>
+    <br><a href="/blog/resonate"><li>How to Resonate With Your Recipients</li></a>
+    <small class="text-muted"> - 07 June 2021</small>
+    <br><a href="/blog/perm"><li>How Persuasive is Your Text?</li></a>
+    <small class="text-muted"> - 06 June 2021</small>
+    <br>
+  </ol>
+</div>
+<hr class="bg-light">
+
+<div class="py-3">
+  <h4 id="research">Research</h4>
+  <ol>
+  <a href="/blog/persuasiveness"><li>How to define and measure persuasiveness?</li></a>
+    <small class="text-muted"> - 20 March 2021</small>
+    <br><a href="/blog/eurythmics"><li>Elektrostatische Entladung von betanzten Pflanzen</li></a>
+    <small class="text-muted"> - 22 September 2020</small>
+    <br><a href="/blog/brilliant-green"><li>Brilliant Green</li></a>
+    <small class="text-muted"> - 28 June 2020</small>
+    <br>
+  </ol>
+</div>
+<hr class="bg-light">
+
+<div class="py-3">
+  <h4 id="engineering">engineering</h4>
+  <ol>
+  <a href="/blog/extroversion-implementation"><li>Technical Implementation in SpaCy.</li></a>
+    <small class="text-muted"> - 25 August 2021</small>
+    <br><a href="/blog/extroversion-implementation-strategy"><li>Implementation Strategy extroverted writing.</li></a>
+    <small class="text-muted"> - 20 August 2021</small>
+    <br><a href="/blog/extroversion-theory"><li>The theory of extroverted writing.</li></a>
+    <small class="text-muted"> - 15 August 2021</small>
+    <br><a href="/blog/large-mail-data"><li>Using a lot of mails.</li></a>
+    <small class="text-muted"> - 10 August 2021</small>
+    <br><a href="/blog/dataset-search"><li>Finding a base datasets</li></a>
+    <small class="text-muted"> - 05 August 2021</small>
+    <br><a href="/blog/finding-data"><li>Finding a base datasets</li></a>
+    <small class="text-muted"> - 04 August 2021</small>
+    <br><a href="/blog/cleaning-mails"><li>Introducing the Dataset Creation Blog Series in Natural Language Processing</li></a>
+    <small class="text-muted"> - 03 August 2021</small>
     <br>
   </ol>
 </div>
@@ -143,12 +244,14 @@
       <i class="fab fa-facebook fa-1x"></i>
     </a><a class="social mx-1" href="https://www.github.com/seduerr91" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-github fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.instagram.com/durrsebastian" style="color: #6c757d" onmouseover="this.style.color='#405de6'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-instagram fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.gitlab.com/seduerr" style="color: #6c757d" onmouseover="this.style.color='#fca326'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-gitlab fa-1x"></i>
     </a><a class="social mx-1" href="https://www.kaggle.com/sebastian91" style="color: #6c757d" onmouseover="this.style.color='#20beff'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-kaggle fa-1x"></i>
     </a><a class="social mx-1" href="https://www.linkedin.com/in/sebastianduerr" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1" href="https://medium.com/@duerr.sebastian" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
     </a><a class="social mx-1" href="https://www.twitter.com/duerrseb" style="color: #6c757d" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-twitter fa-1x"></i>
     </a>
@@ -157,6 +260,8 @@
 
 </footer>
 
+
+  
   <!-- GitHub Buttons -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -179,6 +284,7 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
+
 
 </body>
 

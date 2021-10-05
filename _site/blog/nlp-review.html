@@ -84,11 +84,11 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1><b>Notes from Interviews with Industry Experts</b></h1>
+  <h1><b>NLP Recent Paper Review</b></h1>
 
 <p class="post-metadata text-muted">
-  29 May 2020 -  
-  <b>2 mins read time</b>
+  07 August 2020 -  
+  <b>3 mins read time</b>
 
   <br>Tags: 
     
@@ -97,101 +97,60 @@
     </a>
     </p>
 
-<p>Notes from Interviews with Industry Experts in Data Science, Machine Learning, and Deep Learning.</p>
+<p>In his presentation from April 2020, Thomas Wolf, presents recent works in the field of Artificial Intelligence.</p>
 
-<p><img src="https://images.unsplash.com/photo-1467746474745-41dd2c7524ce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1650&amp;q=80" alt="Experts">
-<em>Photo by Rita Morais on Unsplash</em></p>
-
-<h3 id="topic-1-ml--statistics-foundations">Topic 1: ML &amp; Statistics Foundations</h3>
+<p>Current research directions in the field of NLP are:</p>
 
 <ul>
-  <li>Inspiration: The very cool blog by <a href="https://algorithms-tour.stitchfix.com">Stitchfix</a>
-</li>
-  <li>Statistic &amp; ML Fundamentals:
-    <ul>
-      <li>work through the book ‘Introduction to Statistical Learning’.</li>
-      <li>Elements of Statistical Learning (&amp; its hands-on in R or Python).</li>
-      <li>Coursera Course: Andrew Ng’s course on Machine Learning from <a href="https://www.coursera.org/learn/machine-learning/home/welcome">Stanford</a>
-</li>
-    </ul>
-  </li>
-  <li>Software Engineering: work on product deployment: Study on Writeup.ai (e.g., Startup Scripts); an intro is the book ‘Monetize Machine Learning’.</li>
-  <li>Udacity Course: Preparing for <a href="https://www.udemy.com/course/data-science-career-guide-interview-preparation/">Coding Interviews</a>
-</li>
-  <li>Public Voice:
-    <ul>
-      <li>Blogging is useful if you present in a nice way - recruiters may find it useful and intuitive # To Do: Make sure to make videos as they are easy to understand.</li>
-      <li>Make scientific contributions.</li>
-    </ul>
-  </li>
+  <li>model size and computational efficiency</li>
+  <li>out-of-domain generalization</li>
+  <li>fine tuning and sample efficiency</li>
+  <li>common sense and inductive bias</li>
 </ul>
 
-<h3 id="topic-2-coding-language-proficiency">Topic 2: Coding Language Proficiency</h3>
+<h3 id="model-size">Model size</h3>
 
+<p>Regarding model size the most recent developments were usually based on <strong>increasingly big models</strong> such as T5 by Google, MegatronLM by Nvidia, or BART / XLM-R by Facebook Research. These models usually have over 1 billion parameters.</p>
+
+<p>This is a problem because of the narrowing research competition and the environmental cost that come with the training of these models.</p>
+
+<p>However, works on <strong>smaller models</strong> because the big ones are usually overparametrized are a research stream. Thomas Wolf presents three techniques, i.e. distillation, pruning, and quantization to address the reduction of model size.</p>
 <ul>
-  <li>Programming Languages: Python, C, JavaScript</li>
-  <li>Python:
-    <ul>
-      <li>Become expert in fundamentals by carefully reading ‘Fluent Python’</li>
-      <li>Work on Python 101 Challenges (e.g., hacker rank, leet code)</li>
-    </ul>
-  </li>
-  <li>JavaScript: Do few courses on <a href="https://join.teamtreehouse.com/100-days-of-code/?_ga=2.238278912.1635496758.1590398997-278633462.1590221785">TeamTreehouse</a>
-</li>
-  <li>C: Read the <a href="http://cslibrary.stanford.edu/101/EssentialC.pdf">C-Python Article</a> from Stanford</li>
-  <li>Additionally: Get proficient in relevant skills: Concurrency, Micro-Services with Django, Redis, Websockets, JS React.</li>
+  <li>
+<strong>Distillation</strong> deals with taking a teacher model (like BERT) and using a student model (e.g., TinyBERT) to reduce inference cost, while capitalizing on the inductive biases learned by large models.</li>
+  <li>
+<strong>Pruning</strong> can be done for heads, weights, and layers.</li>
+  <li>
+<strong>Quantization</strong> refers to the change of the data type (i.e., FP32 to INT8).</li>
 </ul>
 
-<p><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt="Coding Langs">
-<em>Photo by Chris Ried on Unsplash</em></p>
+<p>Additionally, researchers trace how increasing amounts of data improve result quality in NLP challenges. This can be done for pre-training (e.g. the XLNet vs. BERT debates) or in fine-tuning (scores on the Winograd Schema Challenge or MaskedWiki.)</p>
 
-<h3 id="topic-3-nlp---deep-learning-applications">Topic 3: NLP - Deep Learning Applications</h3>
+<p>Generally, the power law of natural language modelling (NLM) confers that <em>compute, dataset size and parameters</em> need to be scaled up in tandem. RoBERTa-large with 2.2T tokens compared to BERT-large with only 137B tokens had a significantly better result in zero-shot evaluation on birth-year comparisons.</p>
 
-<ul>
-  <li>Deep Dive into NLP
-    <ul>
-      <li>Read fundamentals: the ‘illustrated transformer’ <a href="http://jalammar.github.io/illustrated-transformer/">blog post</a>
-</li>
-      <li>HuggingFace
-        <ul>
-          <li>Revise paper review from <a href="https://youtu.be/G5lmya6eKtc">Thomas Wolf</a> as of April, 2020.</li>
-          <li>Review and watch their additional videos.</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Architectures: Understand LSTM and further architectures, read papers on that/Medium articles</li>
-  <li>Academic material
-    <ul>
-      <li>Join MIT classes on NLP / Deep Learning in Winter and Spring Term</li>
-      <li>Check for material from Girafski &amp; Chris Manning: look in their research papers / read their books</li>
-    </ul>
-  </li>
-</ul>
+<h3 id="in-domain-vs-out-of-domain-generalization">In-domain vs. Out-of-domain Generalization</h3>
 
-<p><img src="https://images.unsplash.com/photo-1488229297570-58520851e868?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=749&amp;q=80" alt="Neural net">
-<em>Photo by Joshua Sortino on Unsplash</em></p>
+<p>Out-of-domain generalizations relates to the ability of a trained Neural Network to also solve NLP tasks outside the training domain. Let us assume that a neural net was only trained on wikipedia articles then it would write texts or solve masked tasks only with wikipedia-like answers. In a forum like platform like Reddit the neural network would be easily spotted.</p>
 
-<h3 id="topic-4-tool-recommendations">Topic 4: Tool Recommendations</h3>
+<h3 id="the-limits-of-nlu-and-the-rise-of-nlg">The limits of NLU and the rise of NLG</h3>
 
-<ul>
-  <li>Airflow for Automation/Scheduling (more for the pipeline engineers).</li>
-  <li>Domino Data Lab: A platform similar to Github but specialized for data science projects.</li>
-  <li>Tableau for exploration with a great competition for people who design dashboards (IronViz).</li>
-  <li>Book for ML algorithms is DataSmart because they implement them from scratch, e.g., clustering (using Excel to show what is behind the packages and its math).</li>
-</ul>
+<p>The NL Decathlon is a test consisting of different tasks like translation, question answering and summarization. It is used to evaluate different models and test their quality of natural language generation (NLG).</p>
 
-<hr>
+<h3 id="a-fundamental-flaw-the-lack-of-robustness">A fundamental flaw: the lack of robustness</h3>
 
-<h5 id="side-notes">Side Notes</h5>
+<p>Still, neural nets in NLP easily fall into local minima meaning that they are confused if certain parts of a text are changed. Solutions to this could be better <em>regularizaton</em>, <em>ensembles and multi-tasking</em> but will result in high cost of training.</p>
 
-<ul>
-  <li>Reminder: MIT squeeze a lot out of it because of all the connections and job opportunities. Focus on doing research.</li>
-  <li>Startup: Focus carefully, do not make it take out time too much; may prevent you too much on working on deep learning aspects.</li>
-  <li>Kaggle industry perspective: consists of loads of dummy datasets, companies do not necessarily put a lot of weight on Kaggle because data is too clean.</li>
-  <li>Focus: Find your focus in the deep learning world like NLP only.</li>
-  <li>Potential future role: Forward Deployment Engineer: Consulting &amp; Engineering, e.g. implementing and presenting PoCs.</li>
-</ul>
+<h3 id="the-inductive-bias-question">The inductive bias question</h3>
+
+<p>Models can be brittle and spurious. Brittle refers to failing when text is modified, even when meaning is preserved. While spurious models memorize artifacts and biases instead of truly learning.</p>
+
+<h3 id="common-sense">Common Sense</h3>
+
+<p>The limits of distributional hypothesis proposes that certain types of information are difficult to learn from raw text. E.g., humans do not state the obvious (sheep are white, but everybody talks about black sheep), so structural knowledge (a table that says that sheep are white), multimodal learning (show a lot of sheep to the computer from pictures) or humans in the loop may be the remedy. Just like humans are also learning from multimodal contexts (after all we have multiple senses).</p>
+
+<h3 id="the-continual-learning-question">The continual-learning question</h3>
+
+<p>What does the neural network need to know, what could it forget? Current transfer learning only performs adaptions once but we need models that continuously retain and accumulate knowledge across many tasks. So no distinction between pretraining and adaption should be made.</p>
 
 
 

@@ -1,11 +1,275 @@
 [
   
     {
+      "title"    : "Ethics behind Recipient Alignment",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/ethics-alignment",
+      "date"     : "2021-09-10 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Integrating Extroversion into Recipient Alignment",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/ml-ops",
+      "date"     : "2021-09-05 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Invoking more Creativity with Pawraphrases based on T5",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/finetuning",
+      "date"     : "2021-08-30 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Technical Implementation in SpaCy.",
+      "category" : "",
+      "tags"     : "Persuaide, engineering",
+      "url"      : "/blog/extroversion-implementation",
+      "date"     : "2021-08-25 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Implementation Strategy extroverted writing.",
+      "category" : "",
+      "tags"     : "Persuaide, engineering",
+      "url"      : "/blog/extroversion-implementation-strategy",
+      "date"     : "2021-08-20 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "The theory of extroverted writing.",
+      "category" : "",
+      "tags"     : "Persuaide, engineering",
+      "url"      : "/blog/extroversion-theory",
+      "date"     : "2021-08-15 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Using a lot of mails.",
+      "category" : "",
+      "tags"     : "Persuaide, engineering",
+      "url"      : "/blog/large-mail-data",
+      "date"     : "2021-08-10 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Finding a base datasets",
+      "category" : "",
+      "tags"     : "Persuaide, engineering",
+      "url"      : "/blog/dataset-search",
+      "date"     : "2021-08-05 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Finding a base datasets",
+      "category" : "",
+      "tags"     : "Persuaide, engineering",
+      "url"      : "/blog/finding-data",
+      "date"     : "2021-08-04 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Introducing the Dataset Creation Blog Series in Natural Language Processing",
+      "category" : "",
+      "tags"     : "Persuaide, engineering",
+      "url"      : "/blog/cleaning-mails",
+      "date"     : "2021-08-03 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "What I learnt from Kickstarting Persuaide",
+      "category" : "",
+      "tags"     : "Persuaide",
+      "url"      : "/blog/foundings-startup",
+      "date"     : "2021-07-15 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "A Brief Summary of Persuaide",
+      "category" : "",
+      "tags"     : "Persuaide",
+      "url"      : "/blog/persuaide-idea",
+      "date"     : "2021-07-08 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Ensuring Ethical AI at Persuaide",
+      "category" : "",
+      "tags"     : "Persuaide",
+      "url"      : "/blog/ethicalai",
+      "date"     : "2021-06-09 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Writing Emails that Others Want to Read",
+      "category" : "",
+      "tags"     : "Persuaide",
+      "url"      : "/blog/tools",
+      "date"     : "2021-06-08 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "How to Resonate With Your Recipients",
+      "category" : "",
+      "tags"     : "Persuaide",
+      "url"      : "/blog/resonate",
+      "date"     : "2021-06-07 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "How Persuasive is Your Text?",
+      "category" : "",
+      "tags"     : "Persuaide",
+      "url"      : "/blog/perm",
+      "date"     : "2021-06-06 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "How to define and measure persuasiveness?",
+      "category" : "",
+      "tags"     : "Research",
+      "url"      : "/blog/persuasiveness",
+      "date"     : "2021-03-20 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Developing a Linguistic Realizer",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/lingu",
+      "date"     : "2020-12-12 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "4 Steps to Create Synthetic Datasets with T5, PAWS and Your Text Corpus",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/synthetic_data",
+      "date"     : "2020-11-16 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Invoking more Creativity with Pawraphrases based on T5",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/pawraphrase",
+      "date"     : "2020-11-10 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "How to Use the Generative Text Infilling Model based on Artificial Intelligence",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/ilmapi-instructions",
+      "date"     : "2020-10-02 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Hosting your text infilling (based on GPT-2) through FastAPI on GCP",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/ilm-fastapi",
+      "date"     : "2020-10-01 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Elektrostatische Entladung von betanzten Pflanzen",
+      "category" : "",
+      "tags"     : "Research",
+      "url"      : "/blog/eurythmics",
+      "date"     : "2020-09-22 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Running GPT2 Inference through a Streamlit Interface on GCP",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/streamlit-nlp",
+      "date"     : "2020-09-03 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "NLG Parameters and Algorithms",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/nlg",
+      "date"     : "2020-09-03 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "NLP Recent Paper Review",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/nlp-review",
+      "date"     : "2020-08-07 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "The Transformer review",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/transformer",
+      "date"     : "2020-08-04 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Introduction to Investment Banking",
+      "category" : "",
+      "tags"     : "Management & Banking",
+      "url"      : "/blog/investmentbanking",
+      "date"     : "2020-07-17 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "An Introduction to Deep Neural Networks",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/dnn",
+      "date"     : "2020-07-10 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Running FastAI2 in Google Colab",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/colab-fastai2",
+      "date"     : "2020-07-03 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Brilliant Green",
+      "category" : "",
+      "tags"     : "Research",
+      "url"      : "/blog/brilliant-green",
+      "date"     : "2020-06-28 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Resizing Multiple Images in Python",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/image-resizer",
+      "date"     : "2020-06-27 00:00:00 +0400"
+    } ,
+  
+    {
+      "title"    : "Tracking Object Movements with Machine Learning (Open CV)",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/object-tracker",
+      "date"     : "2020-06-12 00:00:00 +0400"
+    } ,
+  
+    {
       "title"    : "The Transformative Impact of Traveling",
       "category" : "",
       "tags"     : "Motivation",
       "url"      : "/blog/traveling",
-      "date"     : "2020-06-05 00:00:00 +0100"
+      "date"     : "2020-06-05 00:00:00 +0400"
     } ,
   
     {
@@ -13,7 +277,7 @@
       "category" : "",
       "tags"     : "Motivation",
       "url"      : "/blog/willpower",
-      "date"     : "2020-05-29 00:00:00 +0100"
+      "date"     : "2020-05-29 00:00:00 +0400"
     } ,
   
     {
@@ -21,7 +285,7 @@
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/experts",
-      "date"     : "2020-05-29 00:00:00 +0100"
+      "date"     : "2020-05-29 00:00:00 +0400"
     } ,
   
     {
@@ -29,23 +293,23 @@
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/coding",
-      "date"     : "2020-05-22 00:00:00 +0100"
+      "date"     : "2020-05-22 00:00:00 +0400"
     } ,
   
     {
       "title"    : "It is Your Time - Following Your Roadmap",
       "category" : "",
-      "tags"     : "Coding, Motivation",
+      "tags"     : "Motivation",
       "url"      : "/blog/roadmap",
-      "date"     : "2020-05-15 00:00:00 +0100"
+      "date"     : "2020-05-15 00:00:00 +0400"
     } ,
   
     {
       "title"    : "2025 - Preparing a Strategy",
       "category" : "",
-      "tags"     : "Personal, Motivation",
+      "tags"     : "Motivation",
       "url"      : "/blog/strategy",
-      "date"     : "2020-05-08 00:00:00 +0100"
+      "date"     : "2020-05-08 00:00:00 +0400"
     } 
   
 ]
