@@ -1,8 +1,8 @@
 ---
-title: Invoking more Creativity with Pawraphrases based on T5 
+title: Finetuning a DNN for Extroversion
 tags: [Coding]
 style: fill
-color: secondary
+color: light
 description: This micro-service allows to find paraphrases for a given text based on T5.
 ---
 

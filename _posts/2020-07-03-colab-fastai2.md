@@ -27,6 +27,6 @@ Follow these eight steps to, get FastAI2 running.
 
 Please mind: You may need to input the first cell into all the notebooks to have access to your files.
 
- *** Tested on MacBook Air in Chrome Browser on July 03, 2020. ***
+*** Tested on MacBook Air in Chrome Browser on July 03, 2020. ***
 
 Credits to the FastAI Team! You guys are awesome!
