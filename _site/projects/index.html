@@ -30,7 +30,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
 
-<!-- Hotjar Tracking Code for https://seduerr91.github.io/ -->
+<!-- Hotjar Tracking Code for https://seduerr91.github.io/
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -40,7 +40,7 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+</script> -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146421430-1"></script>
@@ -55,15 +55,15 @@
 </head>
 
 
-<body class="d-flex flex-column h-100">
+<body class="h-100 d-flex flex-column">
 
   <main class="flex-shrink-0 container mt-5">
-  <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-themed">
 
   <a class="navbar-brand" href="/"><h5><b>duerr.se</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <i class="fas fa-1x fa-bars text-themed"></i>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -78,111 +78,74 @@
 
       
 
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
     </div>
   </div>
 
 </nav>
-  <!-- Remote Projects JS -->
-<script src="/assets/js/remote-projects.js"></script>
-
+    
 <div class="card-columns m-3 mt-5">
 
   <!-- Remote Projects -->
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="" class="project card text-dark"><div class="card-body">
-      <h5 id="-name" class="card-title">
-<i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> | 
-      </h5>
-      <p id="-desc" class="card-text"></p>
-      <p id="-tools" class="card-text"></p>
-    </div>
-  </a>
-</div>
-
-    <script>get_tools("seduerr91/git-for-wizards")</script>
-
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="" class="project card text-dark"><div class="card-body">
-      <h5 id="-name" class="card-title">
-<i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> | 
-      </h5>
-      <p id="-desc" class="card-text"></p>
-      <p id="-tools" class="card-text"></p>
-    </div>
-  </a>
-</div>
-
-    <script>get_tools("seduerr91/arduino-visitor-counter")</script>
-
   
 
   <!-- Local Projects -->
   <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/0-bildungskarenz" class="project card text-dark"><img id="study-leave-aka-bildungskarenz-img" class="card-img-top" src="https://i.imgur.com/XQI4dXz.jpg" alt="Study Leave aka Bildungskarenz"><div class="card-body">
-      <h5 id="study-leave-aka-bildungskarenz-name" class="card-title">Study Leave aka Bildungskarenz
+  <a href="https://www.persuai.de" class="project card text-themed"><img id="persuaide-2020-img" class="card-img-top" src="https://i.postimg.cc/L6TD4ZL5/persuaide-long.png" alt="Persuaide [2020]"><div class="card-body">
+      <h5 id="persuaide-2020-name" class="card-title">Persuaide [2020]
       </h5>
-      <p id="study-leave-aka-bildungskarenz-desc" class="card-text">I publish my major achievements per week here.</p>
-      <p id="study-leave-aka-bildungskarenz-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">Tensorflow</span><span class="badge badge-pill text-primary border border-primary ml-1">PyTorch</span></p>
+      <p id="persuaide-2020-desc" class="card-text">Become more persuasive with the help of AI.</p>
+      <p id="persuaide-2020-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">SpaCy</span><span class="badge badge-pill text-primary border border-primary ml-1">Transformers</span></p>
     </div>
   </a>
 </div>
 
   <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="/projects/1-machine-learning" class="project card text-dark"><img id="machine-learning-apprentice-img" class="card-img-top" src="https://i.imgur.com/5x7k3Ub.jpg" alt="Machine Learning Apprentice"><div class="card-body">
-      <h5 id="machine-learning-apprentice-name" class="card-title">Machine Learning Apprentice
+  <a href="https://plantions.github.io/" class="project card text-themed"><img id="plantions-net-2020-img" class="card-img-top" src="https://i.imgur.com/Ry6GHuP.png" alt="Plantions.net [2020]"><div class="card-body">
+      <h5 id="plantions-net-2020-name" class="card-title">Plantions.net [2020]
       </h5>
-      <p id="machine-learning-apprentice-desc" class="card-text">Studying the intricacies of machine learning with a special focus on deep neural network structures.</p>
-      <p id="machine-learning-apprentice-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">Tensorflow</span><span class="badge badge-pill text-primary border border-primary ml-1">PyTorch</span></p>
+      <p id="plantions-net-2020-desc" class="card-text">Evaluating happiness through plants with ML.</p>
+      <p id="plantions-net-2020-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Plants</span><span class="badge badge-pill text-primary border border-primary ml-1">Machine Learning</span></p>
     </div>
   </a>
 </div>
 
   <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://bonmotco.github.io/" class="project card text-dark"><img id="bonmot-co-img" class="card-img-top" src="https://i.imgur.com/CE1XIwh.jpg" alt="Bonmot.co"><div class="card-body">
-      <h5 id="bonmot-co-name" class="card-title">Bonmot.co
+  <a href="https://www.luftdaten.at" class="project card text-themed"><img id="luftdaten-at-2019-img" class="card-img-top" src="https://i.imgur.com/BdHPHha.jpg" alt="Luftdaten.at [2019]"><div class="card-body">
+      <h5 id="luftdaten-at-2019-name" class="card-title">Luftdaten.at [2019]
       </h5>
-      <p id="bonmot-co-desc" class="card-text">Generative Network that writes your trips.</p>
-      <p id="bonmot-co-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">HTML</span><span class="badge badge-pill text-primary border border-primary ml-1">jekyll</span></p>
+      <p id="luftdaten-at-2019-desc" class="card-text">Citizen science project to measure air quality in Austria.</p>
+      <p id="luftdaten-at-2019-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">IoT</span></p>
     </div>
   </a>
 </div>
 
   <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://www.luftdaten.at" class="project card text-dark"><img id="luftdaten-at-img" class="card-img-top" src="https://i.imgur.com/BdHPHha.jpg" alt="Luftdaten.at"><div class="card-body">
-      <h5 id="luftdaten-at-name" class="card-title">Luftdaten.at
+  <a href="https://github.com/seduerr91/tense-switcher" class="project card text-themed"><img id="tense-switcher-2021-img" class="card-img-top" src="https://iili.io/RQY65x.md.jpg" alt="Tense Switcher [2021]"><div class="card-body">
+      <h5 id="tense-switcher-2021-name" class="card-title">Tense Switcher [2021]
       </h5>
-      <p id="luftdaten-at-desc" class="card-text">Citizen science project to measure air quality in Austria.</p>
-      <p id="luftdaten-at-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">IoT</span></p>
+      <p id="tense-switcher-2021-desc" class="card-text">Change the tense of any text to either present, past or future.</p>
+      <p id="tense-switcher-2021-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">SpaCy</span><span class="badge badge-pill text-primary border border-primary ml-1">FastAPI</span></p>
     </div>
   </a>
 </div>
 
   <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://amorous-me.github.io/" class="project card text-dark"><img id="amorous-me-img" class="card-img-top" src="https://i.imgur.com/7jkLBLp.jpg" alt="amorous.me"><div class="card-body">
-      <h5 id="amorous-me-name" class="card-title">amorous.me
+  <a href="https://github.com/seduerr91/persuasiveness-metric" class="project card text-themed"><img id="measuring-persuasiveness-2021-img" class="card-img-top" src="https://iili.io/RQYgUb.png" alt="Measuring Persuasiveness [2021]"><div class="card-body">
+      <h5 id="measuring-persuasiveness-2021-name" class="card-title">Measuring Persuasiveness [2021]
       </h5>
-      <p id="amorous-me-desc" class="card-text">Generative romantic text tool.</p>
-      <p id="amorous-me-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">FastAI</span><span class="badge badge-pill text-primary border border-primary ml-1">Pytorch</span></p>
+      <p id="measuring-persuasiveness-2021-desc" class="card-text">This project compares the persuasiveness of any English email to 20.000 others.</p>
+      <p id="measuring-persuasiveness-2021-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">SpaCy</span><span class="badge badge-pill text-primary border border-primary ml-1">Software Engineering</span><span class="badge badge-pill text-primary border border-primary ml-1">FastAPI</span></p>
     </div>
   </a>
 </div>
 
   <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://plantions.github.io/" class="project card text-dark"><img id="plantions-net-img" class="card-img-top" src="https://i.imgur.com/Ry6GHuP.png" alt="Plantions.net"><div class="card-body">
-      <h5 id="plantions-net-name" class="card-title">Plantions.net
+  <a href="https://medium.com/@duerr.sebastian/4-steps-to-create-synthetic-datasets-with-t5-paws-and-your-text-corpus-fc48bd9fc901" class="project card text-themed"><img id="paraphrase-generator-2020-img" class="card-img-top" src="https://miro.medium.com/max/1400/1*uvSIqhOzRwNVUAssoFfyQA.gif" alt="Paraphrase Generator [2020]"><div class="card-body">
+      <h5 id="paraphrase-generator-2020-name" class="card-title">Paraphrase Generator [2020]
       </h5>
-      <p id="plantions-net-desc" class="card-text">Evaluating happiness through plants with ML.</p>
-      <p id="plantions-net-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Plants</span><span class="badge badge-pill text-primary border border-primary ml-1">Machine Learning</span></p>
-    </div>
-  </a>
-</div>
-
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="https://www.covidvoices.github.io" class="project card text-dark"><img id="covidvoices-img" class="card-img-top" src="https://i.imgur.com/rSEKBBH.jpg" alt="CovidVoices"><div class="card-body">
-      <h5 id="covidvoices-name" class="card-title">CovidVoices
-      </h5>
-      <p id="covidvoices-desc" class="card-text">Support for Teds project.</p>
-      <p id="covidvoices-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">jekyll</span><span class="badge badge-pill text-primary border border-primary ml-1">videos</span></p>
+      <p id="paraphrase-generator-2020-desc" class="card-text">Fine-tuning a Deep Neural Net for Sentence Fusion</p>
+      <p id="paraphrase-generator-2020-tools" class="card-text"><span class="badge badge-pill text-primary border border-primary ml-1">Python</span><span class="badge badge-pill text-primary border border-primary ml-1">T5</span><span class="badge badge-pill text-primary border border-primary ml-1">Transformers</span><span class="badge badge-pill text-primary border border-primary ml-1">FastAPI</span></p>
     </div>
   </a>
 </div>
@@ -190,6 +153,7 @@
   
 
 </div>
+
   </main>
 
   <footer class="mt-auto py-3 text-center">
@@ -207,12 +171,14 @@
       <i class="fab fa-facebook fa-1x"></i>
     </a><a class="social mx-1" href="https://www.github.com/seduerr91" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-github fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.instagram.com/durrsebastian" style="color: #6c757d" onmouseover="this.style.color='#405de6'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-instagram fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.gitlab.com/seduerr" style="color: #6c757d" onmouseover="this.style.color='#fca326'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-gitlab fa-1x"></i>
     </a><a class="social mx-1" href="https://www.kaggle.com/sebastian91" style="color: #6c757d" onmouseover="this.style.color='#20beff'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-kaggle fa-1x"></i>
     </a><a class="social mx-1" href="https://www.linkedin.com/in/sebastianduerr" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1" href="https://medium.com/@duerr.sebastian" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
     </a><a class="social mx-1" href="https://www.twitter.com/duerrseb" style="color: #6c757d" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='#6c757d'">
       <i class="fab fa-twitter fa-1x"></i>
     </a>
@@ -221,6 +187,8 @@
 
 </footer>
 
+
+  
   <!-- GitHub Buttons -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -243,6 +211,7 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
+
 
 </body>
 

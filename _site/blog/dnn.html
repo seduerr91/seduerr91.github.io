@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I turn :coffee: into :computer:, love :running: and enjoy :sleeping:.">
+
+  <title>duerr.se</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+
+<!-- Hotjar Tracking Code for https://seduerr91.github.io/
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1834284,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146421430-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146421430-1');
+</script>
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>duerr.se</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+<a class="nav-item nav-link " href="/datenschutz.html"></a>
+
+      <a class="nav-item nav-link " href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>An Introduction to Deep Neural Networks</b></h1>
+
+<p class="post-metadata text-muted">
+  10 July 2020 -  
+  <b>6 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#coding">
+      <span class="tag badge badge-pill text-primary border border-primary">Coding</span>
+    </a>
+    </p>
+
+<p>The following blog article is based on my learnings from the FastAI lectures version 3 from 2019. I carefully summarized the lessons of Jeremy Howard.</p>
+
+<h2 id="introduction-to-a-neural-network">Introduction to a Neural Network</h2>
+
+<p>The terms ‘Neural Networks’ in the context of ‘Deep Learning’ a subset of Machine Learning is a concept that allows to classify images with high confidence, the detection and recognition of objects, the creation of images or text from little input, amongst many other use cases. So called ‘deep neural networks’ allow humanity to outsource many manual tasks by training such networks on tasks, and then, once trained, using them for inference.</p>
+
+<h3 id="why-do-neural-networks-work">Why do Neural Networks work?</h3>
+
+<p>The theorem called the ‘<a href="https://en.wikipedia.org/wiki/Universal_approximation_theorem">Universal Approximation</a>’ makes deep neural networks so good at solving human tasks like classification. The theorem states: ‘In the mathematical theory of artificial neural networks, universal approximation theorem type results state that a feed-forward network constructed of artificial neurons can approximate arbitrary well real-valued continuous functions on compact subsets of R.’
+This means that if you have stacks of linear functions and non-linearities (i.e. Deep Neural Networks), then your model can approximate any function arbitrarily closely. Given the millions of parameter, in like 1000+ layers that a deep neural network is processing, there is enough flexibility to represent nature’s complexities.
+But what is actually approximating and processed in a deep neural network? Basically, it is just the multiplication of matrices. The foundations are quite simple.</p>
+
+<h3 id="mathematical-foundations-behind-neural-networks">Mathematical Foundations behind Neural Networks</h3>
+
+<p>The following two images from the excellent Youtube series by <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">ThreeBlueOneBrown</a> allow to see how Computer Vision is made mathematical for Deep Learning purposes. Here, we can see how a simple image of a number is dismantled into different pixels.</p>
+
+<p><img src="https://i.imgur.com/DLlKB1W.png" alt="Imgur"></p>
+
+<p>And this one complements the previous one by indicating how the representation flows into a Deep Neural net.</p>
+
+<p><img src="https://i.imgur.com/2eqI7Ny.png" alt="Imgur"></p>
+
+<p>Generally, Neural Networks (deep or shallow ones) are simple dot product multiplications consisting of weights (i.e. parameters) and activations. While weights store data and are used to do the calculations, activations are the results of the calculus. In each layer of a Neural Network, matrices are multiplied.</p>
+
+<p><img src="https://i.imgur.com/QsP308l.png" alt="Matrix Multiplication Example"></p>
+
+<p>For example a <strong>(3,1) matrix</strong> multiplied with a <strong>(3,5) matrix</strong> will result in a <strong>(5,1) matrix</strong>. The resulting matrix will then be run through an activation function. The <em>activated</em> <strong>(5,1) matrix</strong>, will then, in turn, be used to compute matrix values. Due to the laws of matrix multiplication, the next matrix will be an arbitrary <strong>(5, 8) matrix</strong>, and so on.</p>
+
+<h3 id="input-types-and-preprocessing">Input Types and Preprocessing</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Input Types</th>
+      <th>Preprocessing</th>
+      <th>Input</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Text, Tabular, Images, Audio, Video</td>
+      <td>Tokenization, Numericalization, Principal Component Analysis, Matrix Factorization, Warping, Zooming, …</td>
+      <td>From preprocessed Input take a random <em>mini-batch</em> for Stochastic Gradient Descent.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Related Terms:</strong></p>
+
+<ul>
+  <li>Epoch: Complete run of all data points through the neural network. Note: Do not run it too often, else you may cause overfitting.</li>
+  <li>Mini-batch: Random bunch of inputs used to update weights.</li>
+  <li>Gradient Descent: Algorithm that minimizes functions. It starts with an initial sets of parameters. Then, it iteratively moves towards a set of params that minimize the loss function.</li>
+  <li>Stochastic Gradient Descent: Gradient descent using random mini-batches.</li>
+  <li>Tokenization: Representing a word/linguistic concept in tokens after text was converted.</li>
+  <li>Numericalization: Take all words of a text corpus, uniqueify &amp; sort them due to occurrence. Take maximal 60k words.</li>
+  <li>Matrix factorization: Number of factors is width of embedding matrix that are latent features.</li>
+  <li>Principal Component Analysis: Linear transformation that extracts smaller number of features from input matrix.</li>
+  <li>Image augmentation: Warping, zooming, rotating, padding, affine functions.</li>
+  <li>Text augmentation: Over/undersampling, reversing text.</li>
+  <li>Tabular data examples: Fraud detection, sales forecasting, pricing, credit risk.</li>
+</ul>
+
+<h3 id="neural-net-architectures">Neural Net Architectures</h3>
+
+<p>The following image depicts a Neural Network Architecture.</p>
+
+<p><img src="https://i.imgur.com/k3xySU2.png" alt="Neural Network Architecture"></p>
+
+<p><strong>The presented terms are defined as:</strong></p>
+
+<ul>
+  <li>Transfer learning: Takes a model that works pretty well and trains last layers to fit your needs.</li>
+  <li>Tensor: Shape where every row &amp; every column is of the same length, e.g. 4x3 matrix.</li>
+  <li>Architecture: Math function to fit params to (e.g., y=x*a).</li>
+  <li>Params/Coefficients: Numbers to update.</li>
+  <li>Wikitext-103: Subset of most of articles from Wikipedia; knowing language and the world.</li>
+  <li>Discriminative Learning Rate: Use different learning rates at different layers in the model.</li>
+  <li>Recurrent Neural Network: Recurrently going through layers and adding inputs (e.g. words).</li>
+  <li>Generative Adversarial Network: Generate text or images by letting compete two different layers in a model.</li>
+  <li>U-Net: The left side starts with a big image and gradually makes it smaller until eventually you just have one prediction; U-Net takes all these and makes it bigger again &amp; takes a copy across at every step of the downward path.</li>
+</ul>
+
+<h3 id="activation-functions">Activation Functions</h3>
+
+<p>Are functions that, e.g., allow for classification of certain objects. Functions relating to the activation function are:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Activation(Layer+1) = activation function( W(Layer) * a(Layer) + b(Layer) )
+Activation: softmax
+With activation function: sigmoid
+With W: weight
+With a: activation
+With b: bias
+
+Back-Propagation is calculating the reverse.
+</code></pre></div></div>
+
+<ul>
+  <li>Softmax: Function where all activations add up to 1 and are &gt; 0.</li>
+  <li>Bias: Numbers representing features (e.g. personal taste) &amp; thus add flexibility &amp; semantics (latent factors).</li>
+  <li>Back propagation: Calculating Grads with respect to all matrices, and then updating by subtracting LR*grad.</li>
+  <li>Activation Function: ReLU (rectified linear unit) is max(0, x) or sigmoid (-1, 1).</li>
+</ul>
+
+<h3 id="fitting-and-regularization">Fitting and Regularization</h3>
+
+<p>The major goal of training deep neural networks is the avoidance of over- or underfitting. This can be optimized by initialization, and the use of stochastic gradient descent.</p>
+
+<p>Terms:</p>
+<ul>
+  <li>Overfitting: Pertains to fitting the data too closely. Therfeore, the model will not generalize well on unseen data.</li>
+  <li>Underfitting: Defines too generic fitting approach which does not perform well even on training data.</li>
+  <li>Regularization: Takes parameters &amp; penalizes complexity but squares them to only have positives.</li>
+</ul>
+
+<h3 id="the-learning-process-stochastic-gradient-descent">The Learning Process: Stochastic Gradient Descent</h3>
+
+<p><img src="https://i.imgur.com/NWbraDx.png" alt="Learning Rate"></p>
+
+<h3 id="task-overview-nlp">Task Overview NLP</h3>
+
+<p>This table gives an overview over the Status Quo deep learning applications in the field of Natural Language Processing.</p>
+
+<p><img src="https://i.imgur.com/Vkx8Ozt.png" alt="Imgur"></p>
+
+<p>Try some out by yourself</p>
+
+<p><a href="https://colab.research.google.com/drive/15ZchFHIuazhaon5tOAoVYQQttOg3R6GC#scrollTo=QeeB0h5C_3q4">Colab on Text Generation</a></p>
+
+<h3 id="where-are-we-heading">Where are we heading?</h3>
+
+<p>The next step unavoidably is AGI… Google DeepMind is researching on it, and it is super cool.</p>
+
+<p><strong>Related Terms:</strong></p>
+<ul>
+  <li>Learning rate: The LR states how quickly params are updated in a model.</li>
+  <li>Loss function: Indicates how far/close your model performs on training data compared to the correct answer by compounding parameters &amp; activations.
+    <ul>
+      <li>Mean Squared Error (MSE): Loss function (ŷ-y)^2.mean(), i.e. how far  is the line from all data points in plot.</li>
+      <li>Cross Entropy Loss: Negative log-likelihood loss that penalizes incorrect confident &amp; correct unconfident predictions.</li>
+    </ul>
+  </li>
+  <li>Super Convergence: One cycle uses low learning rate &amp; high momentum and the other way round.</li>
+  <li>Weight Decay: Subtracts some constant and weights every time a batch is processed.</li>
+  <li>Momentum: Update of a step is based on x of derivative and 1-x of previous direction.</li>
+  <li>RMS Prop: Uses exponentially weighted moving average (EWMA) w/ gradient squared (if grad is small).</li>
+  <li>Adam: Uses RMS Prop &amp; Momentum divided by EWMA and takes .9 step in previous steps direction.</li>
+  <li>Dropout: Taking out a number of Activations.</li>
+</ul>
+
+
+
+<div class="pt-5">
+  
+</div>
+
+</div>
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Sebastian Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+
+  <div class="container-fluid justify-content-center">
+<a class="social mx-1" href="mailto:duerr.sebastian@gmail.com" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.facebook.com/seduerr" style="color: #6c757d" onmouseover="this.style.color='#3b5998'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-facebook fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.github.com/seduerr91" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.gitlab.com/seduerr" style="color: #6c757d" onmouseover="this.style.color='#fca326'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-gitlab fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.kaggle.com/sebastian91" style="color: #6c757d" onmouseover="this.style.color='#20beff'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-kaggle fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.linkedin.com/in/sebastianduerr" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1" href="https://medium.com/@duerr.sebastian" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-medium fa-1x"></i>
+    </a><a class="social mx-1" href="https://www.twitter.com/duerrseb" style="color: #6c757d" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='#6c757d'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div>
+
+</footer>
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+</body>
+
+</html>
