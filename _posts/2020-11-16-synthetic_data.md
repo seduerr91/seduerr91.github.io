@@ -6,9 +6,9 @@ color: primary
 description: Extending T5's capabilities with paraphrasing for synthetic dataset creation.
 ---
 
-Does your organization train deep neural nets to extends its capabilities? Is the biggest problem the data quallity? 
+Does your organization train deep neural nets to extend its capabilities? Is the data quality a limiting factor? 
 
-Read this article, to learn how to bring paraphrasing to Google's T5 & fine tuning it with custom textual data sets for synthetic dataset creation.
+Read this article, to learn how to bring paraphrasing to Google's T5 & fine- tuning it with custom textual data sets for synthetic dataset creation.
 
 ![Imgur](https://i.imgur.com/Y6awmWp.gif)
 
@@ -16,7 +16,7 @@ This project was concluded with the help of Javier from [Narrativa.com](http://w
 
 Compiling high-quality datasets is expensive and hard to scale. That problem is more accentuated for smaller organizations. Our generative method allows generating fake datasets that match the distribution of labeled datasets, making it possible to accelerate the training of machine learning models. 
 
-The process of creating such a synthetic data set is illustrated hereafter (all the used code can be found in the following [Github Repository](https://github.com/seduerr91/synthetic_pub). In the following, we will discuss these steps individually.
+The process of creating such a synthetic data set is illustrated hereafter (the code base can be found in the following [Github Repository](https://github.com/seduerr91/synthetic_pub). In the following, we will discuss these steps individually.
 
 Since Google's [T5](https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html) has been trained on multiple tasks (e.g., text summarization, question-answering, sentence correctness (cola), and sentence similarity (stsb)) solely through Text-to-Text tasks, it is useful for extension. We benefit from this capability by fine tuning it with the [PAWS dataset](https://github.com/google-research-datasets/paws) which consists of approximately 50.000 labeled paraphrases. 
 
