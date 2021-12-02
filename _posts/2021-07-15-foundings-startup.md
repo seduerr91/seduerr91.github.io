@@ -13,7 +13,6 @@ Doing a structured literature review to understand how persuasion and text work 
 Find amazing companions that are inspired by the idea. 
 Apply for funding. Be all excited.
 
-
 ## Major Challenges
 
 - Everybody is nice. Really? Peter Gloor.
