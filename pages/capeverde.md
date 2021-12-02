@@ -27,7 +27,7 @@ This is its [location](https://goo.gl/maps/zktFyETNYNQkDv787).
 
 ### Lifestyle 
 - Do you think there are many options of international food (or rather local)? No international food, except Italian and Portuguese. 
-- We are both gluten-free, do you think restaurants mind that? Except for the rice, you will be ok. The main dish here is cachupa, gluten free. Just say no Rice a lot of times. 
+- We are both gluten-free, do you think restaurants mind that? The main dish here is cachupa, gluten free. 
 - Are there bars filled with locals and expats or will it rather be just tourists? Depends on the island. Sal is just a tourist location (so we don't go there). Mindelo is 95% locals. That's why we are here. :)
 - I love Cabo Verde, perfect to escape winter, different culture, live music everywhere, safe and fun. BUT it depends on the island, each island could be a different country.
 - I prefer culture, Mindelo is the capital of culture. If you prefer white sand beaches and calmness, then Boa Vista would be better for you. But from your questions, you need a small city so you have gyms, yoga and activities. Therefore, Mindelo is for you. And now, I go swim with turtles.
