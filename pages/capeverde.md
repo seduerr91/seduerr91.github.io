@@ -9,7 +9,7 @@ tools: [Survey]
 
 This is its [location](https://goo.gl/maps/zktFyETNYNQkDv787).
 
-#### Quote from Goncalo our local: 
+#### Quote from Goncalo our local
 
 _I love Cabo Verde, perfect to escape winter, different culture, live music everywhere, safe and fun. BUT it depends on the island, each island could be a different country._
 
