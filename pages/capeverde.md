@@ -3,7 +3,9 @@ name: Cape Verde with friends
 tools: [Survey]
 ---
 
-![Golden Beach](https://i.imgur.com/7rV3cbj.jpg)
+# If you want to be updated, then please fill out this survey: [click here](https://forms.gle/TDMSmKiWCFhSB89R6).
+
+![Golden Beach](https://i.imgur.com/PaVQHBl.jpg)
 
 ### Where the heck is Cape Verde?
 
@@ -24,7 +26,7 @@ _I love Cabo Verde, perfect to escape winter, different culture, live music ever
 - Airbnb options are affordable
 - This [Discord channel](https://www.remoteworkingcaboverde.com/en) offers several all-included studios for 500 euros that are incredible. 
 
-![Beach](https://i.imgur.com/nkUU2Ds.jpg)
+![Boat](https://i.imgur.com/HSqVOB0.jpg)
 
 ### Activities
 - There is quite a community that meets every single day for working and after working. :) 
@@ -51,7 +53,7 @@ Goncalo's resume: I prefer culture, and Mindelo is the capital of culture. If yo
 - 4 hours to NYC
 - 2 hours to Berlin
 
-![Desert](https://i.imgur.com/MK6Zx18.jpg)
+![Mountain at Sea](https://i.imgur.com/D8pcC53.jpg)
 
 ### Some hard facts
 
@@ -59,5 +61,9 @@ Goncalo's resume: I prefer culture, and Mindelo is the capital of culture. If yo
 - [Overview Video on Geography Now!](https://www.youtube.com/watch?v=q99tzGgkd4k)
 - [Low Cost of living](https://www.expatistan.com/cost-of-living/country/cape-verde?currency=USD)
 - Flights: Round trip flights from Portugal $522 direct, $360 with a layover.
+
+![Hiking](https://i.imgur.com/MhT6MsM.jpg)
+
+# If you want to be updated, then please fill out this survey: [click here](https://forms.gle/TDMSmKiWCFhSB89R6).
 
 ![Castle](https://i.imgur.com/yeAhenQ.jpg)
