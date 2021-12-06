@@ -62,7 +62,7 @@ Goncalo's resume: I prefer culture, and Mindelo is the capital of culture. If yo
 - [Low Cost of living](https://www.expatistan.com/cost-of-living/country/cape-verde?currency=USD)
 - Flights: Round trip flights from Portugal $522 direct, $360 with a layover.
 
-![Hiking](https://i.imgur.com/MhT6MsM.jpg)
+![Hiking](https://i.imgur.com/D8pcC53l.jpg)
 
 # If you want to be updated, then please fill out this survey: [click here](https://forms.gle/TDMSmKiWCFhSB89R6).
 
