@@ -5,7 +5,7 @@ tools: [Survey]
 
 # If you want to be updated, then please fill out this survey: [click here](https://forms.gle/TDMSmKiWCFhSB89R6).
 
-![Golden Beach](https://i.imgur.com/PaVQHBl.jpg)
+![Golden Beach](https://i.imgur.com/PaVQHBlm.jpg)
 
 ### Where the heck is Cape Verde?
 
@@ -26,7 +26,7 @@ _I love Cabo Verde, perfect to escape winter, different culture, live music ever
 - Airbnb options are affordable
 - This [Discord channel](https://www.remoteworkingcaboverde.com/en) offers several all-included studios for 500 euros that are incredible. 
 
-![Boat](https://i.imgur.com/HSqVOB0.jpg)
+![Boat](https://i.imgur.com/HSqVOB0m.jpg)
 
 ### Activities
 - There is quite a community that meets every single day for working and after working. :) 
