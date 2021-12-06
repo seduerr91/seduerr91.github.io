@@ -5,7 +5,7 @@ tools: [Survey]
 
 # If you want to be updated, then please fill out this survey: [click here](https://forms.gle/TDMSmKiWCFhSB89R6).
 
-![Golden Beach](https://i.imgur.com/PaVQHBlm.jpg)
+![Imgur](https://i.imgur.com/PaVQHBll.jpg)
 
 ### Where the heck is Cape Verde?
 
