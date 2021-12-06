@@ -53,8 +53,6 @@ Goncalo's resume: I prefer culture, and Mindelo is the capital of culture. If yo
 - 4 hours to NYC
 - 2 hours to Berlin
 
-![Mountain at Sea](https://i.imgur.com/D8pcC53.jpg)
-
 ### Some hard facts
 
 - [Cabo Verde Internet @ 30mbit](https://www.speedtest.net/global-index/cape-verde)
