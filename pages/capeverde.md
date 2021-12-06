@@ -26,7 +26,7 @@ _I love Cabo Verde, perfect to escape winter, different culture, live music ever
 - Airbnb options are affordable
 - This [Discord channel](https://www.remoteworkingcaboverde.com/en) offers several all-included studios for 500 euros that are incredible. 
 
-![Boat](https://i.imgur.com/HSqVOB0m.jpg)
+![Boat](https://i.imgur.com/HSqVOB0l.jpg)
 
 ### Activities
 - There is quite a community that meets every single day for working and after working. :) 
