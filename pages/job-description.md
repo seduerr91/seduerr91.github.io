@@ -5,6 +5,10 @@ image: https://i.imgur.com/XQI4dXz.jpg
 description: This is what I want to do as a job after my Bildungskarenz.
 ---
 
+# The Plan of the Next Steps
+- Live in Vienna, then Germany until June & visit a few places from there. 
+- July fly to the US.
+
 # Joy's Preferred Living Conditions
 - clean/modern apartment (feels super clean being there, not old and dirty, or gross bed with lumpy smelly pillows 😭)
 - location - walking distance to cafes/restaurants/yoga studios/cowork/etc
