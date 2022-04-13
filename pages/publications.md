@@ -17,12 +17,10 @@ description: This is a summary page of links and documents related to me.
 
 ### Blog Posts 
 
-- (4 Steps to Create Synthetic Datasets with T5, PAWS and Your Text Corpus)[https://medium.com/@duerr.sebastian/4-steps-to-create-synthetic-datasets-with-t5-paws-and-your-text-corpus-fc48bd9fc901]
-- (Hosting your Text Generating Infilling Micro-Service with FastAPI on GCP
-)[https://medium.com/analytics-vidhya/hosting-your-text-generating-infilling-micro-service-with-fastapi-on-gcp-ecf92f9d3c0f]
-- (What makes a message persuasive?)[https://medium.com/@duerr.sebastian/what-makes-a-message-persuasive-4c04322df929]
-
-- Own Blog: duerr.se/blog
+- [4 Steps to Create Synthetic Datasets with T5, PAWS and Your Text Corpus](https://medium.com/@duerr.sebastian/4-steps-to-create-synthetic-datasets-with-t5-paws-and-your-text-corpus-fc48bd9fc901)
+- [Hosting your Text Generating Infilling Micro-Service with FastAPI on GCP](https://medium.com/analytics-vidhya/hosting-your-text-generating-infilling-micro-service-with-fastapi-on-gcp-ecf92f9d3c0f)
+- [What makes a message persuasive?](https://medium.com/@duerr.sebastian/what-makes-a-message-persuasive-4c04322df929)
+- More than 30 articles on [my own Blog](duerr.se/blog).
 
 ### Conference Participations
 
