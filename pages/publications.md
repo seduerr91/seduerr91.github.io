@@ -36,16 +36,16 @@ description: This is a summary page of links and documents related to me.
 
 ### HuggingFace Models
 
-- I contributed 36 models to HuggingFace: https://huggingface.co/seduerr
+- I contributed 36 models to [HuggingFace](https://huggingface.co/seduerr).
 
 ### Classes Taught in University
 
-In total I taught students in 21 student classes with on average 40 students.
+In total I taught students in 21 student classes with an average of 40 students each.
 
 - 2011: Foundations of Information Systems
 - 2012: Mathematics for Economists 1, Mathematics for Economists 2, Foundations of Information Systems
 - 2013: 2x Mathematics for Economists 1, 2x Mathematics for Economists 2, Algorithms & Data Structures
 - 2014: Mathematics for Economists 1, Mathematics for Economists 2, Excel Tutorial
-- 2015: Mathematics for Economists 1, Mathematics for Economists 2, Excel Tutorial, Information Systems Management II
-- 2016: Information Systems Management II, Information Systems Management I, Excel Tutorial
-- 2017: Information Systems Management II, Information Systems Management I, Excel Tutorial
+- 2015: Mathematics for Economists 1, Mathematics for Economists 2, Excel Tutorial, Information Systems Management II: Business Process Management
+- 2016: Information Systems Management II: Business Process Management, Information Systems Management I: Standardization and Networks, Excel Tutorial
+- 2017: Information Systems Management II: Business Process Management, Information Systems Management I: Standardization and Networks, Excel Tutorial
