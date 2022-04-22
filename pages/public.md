@@ -16,7 +16,7 @@ description: This is a summary page of links and documents related to me.
 - __A Literature Review on Enterprise Social Media Collaboration in Virtual Teams: Challenges, Determinants, Implications and Impacts__ in _Proceedings of the ACM SIGMIS CPR Conference, Washington D.C.Proceedings of the ACM SIGMIS CPR Conference, Washington D.C._
 
 ### Blog Posts 
-
+- [Gain valuable corporate insights from a 10-k report in 5 easy steps with dense passage retrieval (DPR) and extractive question answering (extractiveQA) using deepset.ai’s Haystack](https://medium.com/@duerr.sebastian/gain-valuable-corporate-insights-from-a-10-k-report-in-5-easy-steps-with-dense-passage-retrieval-8e0cac743c7d)
 - [4 Steps to Create Synthetic Datasets with T5, PAWS and Your Text Corpus](https://medium.com/@duerr.sebastian/4-steps-to-create-synthetic-datasets-with-t5-paws-and-your-text-corpus-fc48bd9fc901)
 - [Hosting your Text Generating Infilling Micro-Service with FastAPI on GCP](https://medium.com/analytics-vidhya/hosting-your-text-generating-infilling-micro-service-with-fastapi-on-gcp-ecf92f9d3c0f)
 - [What makes a message persuasive?](https://medium.com/@duerr.sebastian/what-makes-a-message-persuasive-4c04322df929)
@@ -36,7 +36,7 @@ description: This is a summary page of links and documents related to me.
 
 ### HuggingFace Models
 
-- I contributed 36 models to [HuggingFace](https://huggingface.co/seduerr).
+I contributed 36 models to [HuggingFace](https://huggingface.co/seduerr).
 
 ### Classes Taught in University
 
