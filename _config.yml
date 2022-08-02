@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : duerr.se
 description         : >-
-                      :blue_heart: Joy in my life. :palm_tree: Friends around me.
+                      :blue_heart: Joy in my life. :palm_tree: Friends around me. Welcome to my blog where I share my experiences, tips and tricks in the field of deep learning. Here you will find everything that you need to know about implementing Deep Learning in practical applications.
 baseurl             : ""                               
 repository          : seduerr91/seduerr91              
 remote_theme        : YoussefRaafatNasry/portfolYOU
