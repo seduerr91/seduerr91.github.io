@@ -68,7 +68,9 @@
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-<a class="nav-item nav-link " href="/datenschutz.html"></a>
+<a class="nav-item nav-link " href="/pages/public">Publications</a>
+
+      <a class="nav-item nav-link " href="/datenschutz.html"></a>
 
       <a class="nav-item nav-link " href="/projects/">Projects</a>
 
@@ -97,9 +99,9 @@
     </a>
     </p>
 
-<p>Does your organization train deep neural nets to extends its capabilities? Is the biggest problem the data quallity?</p>
+<p>Does your organization train deep neural nets to extend its capabilities? Is the data quality a limiting factor?</p>
 
-<p>Read this article, to learn how to bring paraphrasing to Google’s T5 &amp; fine tuning it with custom textual data sets for synthetic dataset creation.</p>
+<p>Read this article, to learn how to bring paraphrasing to Google’s T5 &amp; fine- tuning it with custom textual data sets for synthetic dataset creation.</p>
 
 <p><img src="https://i.imgur.com/Y6awmWp.gif" alt="Imgur"></p>
 
@@ -107,7 +109,7 @@
 
 <p>Compiling high-quality datasets is expensive and hard to scale. That problem is more accentuated for smaller organizations. Our generative method allows generating fake datasets that match the distribution of labeled datasets, making it possible to accelerate the training of machine learning models.</p>
 
-<p>The process of creating such a synthetic data set is illustrated hereafter (all the used code can be found in the following <a href="https://github.com/seduerr91/synthetic_pub">Github Repository</a>. In the following, we will discuss these steps individually.</p>
+<p>The process of creating such a synthetic data set is illustrated hereafter (the code base can be found in the following <a href="https://github.com/seduerr91/synthetic_pub">Github Repository</a>. In the following, we will discuss these steps individually.</p>
 
 <p>Since Google’s <a href="https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html">T5</a> has been trained on multiple tasks (e.g., text summarization, question-answering, sentence correctness (cola), and sentence similarity (stsb)) solely through Text-to-Text tasks, it is useful for extension. We benefit from this capability by fine tuning it with the <a href="https://github.com/google-research-datasets/paws">PAWS dataset</a> which consists of approximately 50.000 labeled paraphrases.</p>
 
@@ -169,7 +171,6 @@
 
 </div>
   </main>
-
   <footer class="mt-auto py-3 text-center">
 
   <small class="text-muted mb-2">
@@ -179,23 +180,6 @@
   <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
 
   <div class="container-fluid justify-content-center">
-<a class="social mx-1" href="mailto:duerr.sebastian@gmail.com" style="color: #6c757d" onmouseover="this.style.color='#db4437'" onmouseout="this.style.color='#6c757d'">
-      <i class="fas fa-envelope fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.facebook.com/seduerr" style="color: #6c757d" onmouseover="this.style.color='#3b5998'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-facebook fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.github.com/seduerr91" style="color: #6c757d" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-github fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.gitlab.com/seduerr" style="color: #6c757d" onmouseover="this.style.color='#fca326'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-gitlab fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.kaggle.com/sebastian91" style="color: #6c757d" onmouseover="this.style.color='#20beff'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-kaggle fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.linkedin.com/in/sebastianduerr" style="color: #6c757d" onmouseover="this.style.color='#007bb5'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-linkedin-in fa-1x"></i>
-    </a><a class="social mx-1" href="https://medium.com/@duerr.sebastian" style="color: #6c757d" onmouseover="this.style.color='#00ab6c'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-medium fa-1x"></i>
-    </a><a class="social mx-1" href="https://www.twitter.com/duerrseb" style="color: #6c757d" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='#6c757d'">
-      <i class="fab fa-twitter fa-1x"></i>
-    </a>
 
 </div>
 
@@ -225,8 +209,6 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 </script>
-
-
 </body>
 
 </html>
