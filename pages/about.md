@@ -9,6 +9,15 @@ weight: 3
 
 Hi there, 
 
+<p> <py-script>
+
+from datetime import datetime
+now = datetime.now()
+now.strftime(f">>Today is %d/%m/%Y, and I am more than happy to welcome you on this web page.<<<")
+    </py-script>
+</p>
+
+
 I am **Sebastian**. I have a passion for NLP. So much so that I took a sabbatical from my management job to become an NLP engineer. If you meet me, chances are I'm training another deep neural network, either for my job or for fun. Besides coding, I love yoga, hiking, cooking, and running. 
 
 My **Management Expertise** stems from Product Development as a senior manager (2 years), and my **Software Engineering Skills** shine when it comes to Natural Language Processing (3 years). Hence, I am both a manager and an engineer.
