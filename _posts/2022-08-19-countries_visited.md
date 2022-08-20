@@ -8,7 +8,7 @@ description: I've been to 75 countries.
 
 ### North Ireland
 
-![image](../assets/countries/resized/North Ireland.jpg)
+![image](../assets/countries/resized/North_Ireland.jpg)
 
 ### Bolivia
 
@@ -38,10 +38,6 @@ description: I've been to 75 countries.
 
 ![image](../assets/countries/resized/Cambodia.jpg)
 
-###
-
-![image](../assets/countries/resized/.DS_Store)
-
 ### Estonia
 
 ![image](../assets/countries/resized/Estonia.jpg)
@@ -56,7 +52,7 @@ description: I've been to 75 countries.
 
 ### Hong Kong
 
-![image](../assets/countries/resized/Hong Kong.jpg)
+![image](../assets/countries/resized/Hong_Kong.jpg)
 
 ### Czechia
 
@@ -100,13 +96,13 @@ description: I've been to 75 countries.
 
 ### St Lucia
 
-![image](../assets/countries/resized/St Lucia.jpg)
+![image](../assets/countries/resized/St_Lucia.jpg)
 
 ### Switzerland
 
 ![image](../assets/countries/resized/Switzerland.jpg)
 
-### ChinaJPG
+### China
 
 ![image](../assets/countries/resized/ChinaJPG.jpg)
 
@@ -120,7 +116,7 @@ description: I've been to 75 countries.
 
 ### Sri Lanka
 
-![image](../assets/countries/resized/Sri Lanka.jpg)
+![image](../assets/countries/resized/Sri_Lanka.jpg)
 
 ### Bulgaria
 
@@ -148,7 +144,7 @@ description: I've been to 75 countries.
 
 ### San Marino
 
-![image](../assets/countries/resized/San Marino.jpg)
+![image](../assets/countries/resized/San_Marino.jpg)
 
 ### Spain
 
@@ -192,7 +188,7 @@ description: I've been to 75 countries.
 
 ### St Vincent
 
-![image](../assets/countries/resized/St Vincent.jpg)
+![image](../assets/countries/resized/St_Vincent.jpg)
 
 ### Peru
 
@@ -220,7 +216,7 @@ description: I've been to 75 countries.
 
 ### United States
 
-![image](../assets/countries/resized/United States.jpg)
+![image](../assets/countries/resized/United_States.jpg)
 
 ### Wales
 
