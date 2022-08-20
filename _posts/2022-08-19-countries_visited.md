@@ -162,6 +162,14 @@ description: I've been to 75 countries.
 
 ![image](../assets/countries/Sri_Lanka.jpg)
 
+### Qatar
+
+![image](../assets/countries/Qatar.jpg)
+
+### Panama
+
+![image](../assets/countries/Panama.jpg)
+
 ### Peru
 
 ![image](../assets/countries/Peru.jpg)
