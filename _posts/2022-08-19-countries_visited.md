@@ -10,280 +10,308 @@ description: I've been to 75 countries.
 
 ### Argentina
 
-![image](../assets/countries/resized/Argentina.jpg)
+![image](../assets/countries/Argentina.jpg)
 
 ### Brazil
 
-![image](../assets/countries/resized/Brazil.jpg)
+![image](../assets/countries/Brazil.jpg)
 
 ### Jordan
 
-![image](../assets/countries/resized/Jordan.jpg)
+![image](../assets/countries/Jordan.jpg)
 
 ### Liechtenstein
 
-![image](../assets/countries/resized/Liechtenstein.jpg)
+![image](../assets/countries/Liechtenstein.jpg)
 
 ### Luxembourg
 
-![image](../assets/countries/resized/Luxembourg.jpg)
+![image](../assets/countries/Luxembourg.jpg)
 
 ## 2021
 
 ### Mauritius
 
-![image](../assets/countries/resized/Mauritius.jpg)
+![image](../assets/countries/Mauritius.jpg)
 
 ### Bulgaria
 
-![image](../assets/countries/resized/Bulgaria.jpg)
+![image](../assets/countries/Bulgaria.jpg)
 
 ### Romania
 
-![image](../assets/countries/resized/Romania.jpg)
+![image](../assets/countries/Romania.jpg)
 
 ### Georgia
 
-![image](../assets/countries/resized/Georgia.jpg)
+![image](../assets/countries/Georgia.jpg)
 
 ## 2020
 
 ### Martinique
 
-![image](../assets/countries/resized/Martinique.jpg)
+![image](../assets/countries/Martinique.jpg)
 
 ### Serbia
 
-![image](../assets/countries/resized/Serbia.jpg)
+![image](../assets/countries/Serbia.jpg)
 
 ### St Vincent
 
-![image](../assets/countries/resized/St_Vincent.jpg)
+![image](../assets/countries/St_Vincent.jpg)
 
 ### Lebanon
 
-![image](../assets/countries/resized/Lebanon.jpg)
+![image](../assets/countries/Lebanon.jpg)
 
 ### St Lucia
 
-![image](../assets/countries/resized/St_Lucia.jpg)
+![image](../assets/countries/St_Lucia.jpg)
 
 ### Montenegro
 
-![image](../assets/countries/resized/Montenegro.jpg)
+![image](../assets/countries/Montenegro.jpg)
 
 ### North Ireland
 
-![image](../assets/countries/resized/North_Ireland.jpg)
+![image](../assets/countries/North_Ireland.jpg)
 
 ## 2019
 
 ### Malta
 
-![image](../assets/countries/resized/Malta.jpg)
+![image](../assets/countries/Malta.jpg)
 
 ### Cyprus
 
-![image](../assets/countries/resized/Cyprus.jpg)
+![image](../assets/countries/Cyprus.jpg)
 
 ## 2018
 
+### New_Zealand
+
+![image](../assets/countries/New_Zealand.jpg)
+
+### Bosnia
+
+![image](../assets/countries/Bosnia.jpg)
+
+### Macedonia
+
+![image](../assets/countries/Macedonia.jpg)
+
+### Vatican
+
+![image](../assets/countries/Vatican.jpg)
+
+### Egypt
+
+![image](../assets/countries/Egypt.jpg)
+
 ### United_Arab_Emirates
 
-![image](../assets/countries/resized/United_Arab_Emirates.jpg)
+![image](../assets/countries/United_Arab_Emirates.jpg)
 
 ### Greece
 
-![image](../assets/countries/resized/Greece.jpg)
+![image](../assets/countries/Greece.jpg)
 
 ### Albania
 
-![image](../assets/countries/resized/Albania.jpg)
+![image](../assets/countries/Albania.jpg)
 
 ### Finland
 
-![image](../assets/countries/resized/Finland.jpg)
+![image](../assets/countries/Finland.jpg)
 
 ### Lithuania
 
-![image](../assets/countries/resized/Lithuania.jpg)
+![image](../assets/countries/Lithuania.jpg)
 
 ### Slovakia
 
-![image](../assets/countries/resized/Slovakia.jpg)
+![image](../assets/countries/Slovakia.jpg)
 
 ### Morocco
 
-![image](../assets/countries/resized/Morocco.jpg)
+![image](../assets/countries/Morocco.jpg)
 
 ### Australia
 
-![image](../assets/countries/resized/Australia.jpg)
+![image](../assets/countries/Australia.jpg)
 
 ### Latvia
 
-![image](../assets/countries/resized/Latvia.jpg)
+![image](../assets/countries/Latvia.jpg)
 
 ### Estonia
 
-![image](../assets/countries/resized/Estonia.jpg)
+![image](../assets/countries/Estonia.jpg)
 
 ### Colombia
 
-![image](../assets/countries/resized/Colombia.jpg)
+![image](../assets/countries/Colombia.jpg)
 
 ### Bolivia
 
-![image](../assets/countries/resized/Bolivia.jpg)
+![image](../assets/countries/Bolivia.jpg)
 
 ## 2017
 
 ### Sri Lanka
 
-![image](../assets/countries/resized/Sri_Lanka.jpg)
+![image](../assets/countries/Sri_Lanka.jpg)
 
 ### Peru
 
-![image](../assets/countries/resized/Peru.jpg)
+![image](../assets/countries/Peru.jpg)
 
 ### Wales
 
-![image](../assets/countries/resized/Wales.jpg)
+![image](../assets/countries/Wales.jpg)
 
 ### Iceland
 
-![image](../assets/countries/resized/Iceland.jpg)
+![image](../assets/countries/Iceland.jpg)
 
 ## 2016
 
 ### Croatia
 
-![image](../assets/countries/resized/Croatia.jpg)
+![image](../assets/countries/Croatia.jpg)
 
 ### Ireland
 
-![image](../assets/countries/resized/Ireland.jpg)
+![image](../assets/countries/Ireland.jpg)
 
 ### Slovenia
 
-![image](../assets/countries/resized/Slovenia.jpg)
+![image](../assets/countries/Slovenia.jpg)
 
 ### Portugal
 
-![image](../assets/countries/resized/Portugal.jpg)
+![image](../assets/countries/Portugal.jpg)
 
 ### Mexico
 
-![image](../assets/countries/resized/Mexico.jpg)
+![image](../assets/countries/Mexico.jpg)
 
 ## 2015
 
 ### United States
 
-![image](../assets/countries/resized/United_States.jpg)
+![image](../assets/countries/United_States.jpg)
 
 ### Canada
 
-![image](../assets/countries/resized/Canada.jpg)
+![image](../assets/countries/Canada.jpg)
 
 ### Sweden
 
-![image](../assets/countries/resized/Sweden.jpg)
+![image](../assets/countries/Sweden.jpg)
 
 ### Denmark
 
-![image](../assets/countries/resized/Denmark.jpg)
+![image](../assets/countries/Denmark.jpg)
 
 ### Czechia
 
-![image](../assets/countries/resized/Czechia.jpg)
+![image](../assets/countries/Czechia.jpg)
 
 ## 2014
 
 ### China
 
-![image](../assets/countries/resized/ChinaJPG.jpg)
+![image](../assets/countries/ChinaJPG.jpg)
 
 ### Thailand
 
-![image](../assets/countries/resized/Thailand.jpg)
+![image](../assets/countries/Thailand.jpg)
 
 ### Philippines
 
-![image](../assets/countries/resized/Philippines.jpg)
+![image](../assets/countries/Philippines.jpg)
 
 ### Vietnam
 
-![image](../assets/countries/resized/Vietnam.jpg)
+![image](../assets/countries/Vietnam.jpg)
 
 ### Japan
 
-![image](../assets/countries/resized/Japan.jpg)
+![image](../assets/countries/Japan.jpg)
 
 ### Israel
 
-![image](../assets/countries/resized/Israel.jpg)
+![image](../assets/countries/Israel.jpg)
 
 ### Hong Kong
 
-![image](../assets/countries/resized/Hong_Kong.jpg)
+![image](../assets/countries/Hong_Kong.jpg)
 
 ### Macau
 
-![image](../assets/countries/resized/Macau.jpg)
+![image](../assets/countries/Macau.jpg)
 
 ### Malaysia
 
-![image](../assets/countries/resized/Malaysia.jpg)
+![image](../assets/countries/Malaysia.jpg)
 
 ### Taiwan
 
-![image](../assets/countries/resized/Taiwan.jpg)
+![image](../assets/countries/Taiwan.jpg)
 
 ### Cambodia
 
-![image](../assets/countries/resized/Cambodia.jpg)
+![image](../assets/countries/Cambodia.jpg)
 
 ### Switzerland
 
-![image](../assets/countries/resized/Switzerland.jpg)
+![image](../assets/countries/Switzerland.jpg)
 
 ## 2013
 
 ### Poland
 
-![image](../assets/countries/resized/Poland.jpg)
+![image](../assets/countries/Poland.jpg)
 
 ## before 2013
 
+### Italy
+
+![image](../assets/countries/Italy.jpg)
+
 ### Netherlands
 
-![image](../assets/countries/resized/Netherlands.jpg)
+![image](../assets/countries/Netherlands.jpg)
 
 ### Spain
 
-![image](../assets/countries/resized/Spain.jpg)
+![image](../assets/countries/Spain.jpg)
 
 ### Austria
 
-![image](../assets/countries/resized/Austria.jpg)
+![image](../assets/countries/Austria.jpg)
 
 ### San Marino
 
-![image](../assets/countries/resized/San_Marino.jpg)
+![image](../assets/countries/San_Marino.jpg)
 
 ### Germany
 
-![image](../assets/countries/resized/Germany.jpg)
+![image](../assets/countries/Germany.jpg)
 
 ### Hungary
 
-![image](../assets/countries/resized/Hungary.jpg)
+![image](../assets/countries/Hungary.jpg)
 
 ### England
 
-![image](../assets/countries/resized/England.jpg)
+![image](../assets/countries/England.jpg)
 
 ### Belgium
 
-![image](../assets/countries/resized/Belgium.jpg)
+![image](../assets/countries/Belgium.jpg)
+
+### France
+
+![image](../assets/countries/France.jpg)
