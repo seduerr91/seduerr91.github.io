@@ -98,7 +98,7 @@ description: I've been to 75 countries.
 
 ### 55. United Arab Emirates
 
-![image](../assets/countries/United_Arab_Emirates.jpg)
+![image](../assets/countries/United_Arab_Emirates.png)
 
 ### 54. Egypt
 
