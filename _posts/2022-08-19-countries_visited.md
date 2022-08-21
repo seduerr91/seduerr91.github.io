@@ -167,7 +167,7 @@ description: I've been to 75 countries.
 
 ### 39. Panama
 
-![image](../assets/countries/Panama.jpg)
+![image](../assets/countries/Panama.png)
 
 ### 38. Iceland
 
@@ -241,7 +241,7 @@ description: I've been to 75 countries.
 
 ### 22. China
 
-![image](../assets/countries/ChinaJPG.jpg)
+![image](../assets/countries/China.jpg)
 
 ### 21. Malaysia
 
@@ -289,11 +289,13 @@ description: I've been to 75 countries.
 
 ![image](../assets/countries/Poland.jpg)
 
-## before 2013
+## 2012
 
 ### 10. Hungary
 
 ![image](../assets/countries/Hungary.jpg)
+
+## before 2012
 
 ### 9. San Marino
 
