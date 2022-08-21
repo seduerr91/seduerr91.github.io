@@ -167,7 +167,7 @@ description: I've been to 75 countries.
 
 ### 39. Panama
 
-![image](../assets/countries/Panama.png)
+![image](../assets/countries/Panama.jpg)
 
 ### 38. Iceland
 
