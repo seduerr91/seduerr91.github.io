@@ -1,5 +1,5 @@
 ---
-title: A brief guideline on Installing Resonaid
+title: A brief guideline on Using Resonaid
 tags: [Instructions]
 style: fill
 color: warning
