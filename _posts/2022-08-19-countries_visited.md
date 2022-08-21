@@ -88,7 +88,7 @@ I've been to 75 countries and I have a picture from every single one of them. Tr
 
 ![image](../assets/countries/Malta.jpg)
 
-### 57. New_Zealand
+### 57. New Zealand
 
 ![image](../assets/countries/New_Zealand.jpg)
 
