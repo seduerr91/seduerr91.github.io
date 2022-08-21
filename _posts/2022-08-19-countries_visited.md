@@ -1,10 +1,12 @@
 --- 
 title: A Picture of Every Country I've Visited
-tags: [Instructions]
+tags: [travel]
 style: fill
 color: success
 description: I've been to 75 countries. 
 ---
+
+I've been to 75 countries and I have a picture from every single one of them. Travel is the best way to see the world and learn about new cultures. Never stop being curious and exploring - there's always something new to discover.
 
 ## 2022
 
