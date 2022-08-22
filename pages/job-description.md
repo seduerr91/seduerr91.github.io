@@ -5,6 +5,16 @@ image: https://i.imgur.com/XQI4dXz.jpg
 description: This is what I want to do as a job after my Bildungskarenz.
 ---
 
+## Dump for code snippets
+
+When expo upgrade breaks:
+I deleted the yarn.lock file & .expo folder and tried running expo upgrade and it worked.
+<https://stackoverflow.com/questions/63829104/failed-to-install-expo-package-with-error-yarnpkg-exited-with-non-zero-code-1>
+
+
+
+
+
 # The Plan of the Next Steps
 - Live in Vienna, then Germany until June & visit a few places from there. 
 - July fly to the US.
