@@ -5,41 +5,12 @@ image: https://i.imgur.com/XQI4dXz.jpg
 description: This is what I want to do as a job after my Bildungskarenz.
 ---
 
-## Dump for code snippets
-
-When expo upgrade breaks:
-I deleted the yarn.lock file & .expo folder and tried running expo upgrade and it worked.
-<https://stackoverflow.com/questions/63829104/failed-to-install-expo-package-with-error-yarnpkg-exited-with-non-zero-code-1>
-
-
-
-
-
-# The Plan of the Next Steps
-- Live in Vienna, then Germany until June & visit a few places from there. 
-- July fly to the US.
-
-# Joy's Preferred Living Conditions
-- clean/modern apartment (feels super clean being there, not old and dirty, or gross bed with lumpy smelly pillows 😭)
-- location - walking distance to cafes/restaurants/yoga studios/cowork/etc
-- safe location
-- one bedroom apartment, not a studio (incl. separate living room / kitchen) >>> Nope.
-- modern kitchen with utilities
-- less than $1000 each per month
-- washing machine
-- fast wifi
-
-bougie nice to haves
-- dishwasher
-- patio/deck
-
-
 # Favorite Role: Deep Learning Engineer in Natural Language Processing Startup
 
 ### Requirements
 
 - __Location__: First three months local, after remote should be possible.
-- __Minimum Compensation__: 75.000 EUR p.a. or 120.000 CHF,-
+- __Minimum Compensation__: 75.000 EUR p.a. or 120.000 USD/CHF,-
 - __Vacation__: min. 25 days p.a., flexible preferred
 - __Company Size__: <50 employees.
 - __Industry__: Tech, Finance, Data
