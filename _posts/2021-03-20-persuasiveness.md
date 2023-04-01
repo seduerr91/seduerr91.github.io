@@ -5,7 +5,7 @@ style: fill
 color: warning
 description: An attempt to define persuasiveness in a natural text context.
 ---
-### A Concept for Persuasiveness?
+### A Concept for Persuasiveness
 
 In persuasion, the persuader induces a particular kind of mental state in the persuadee, e.g., through threats, but unlike an expression of sentiment, persuasion intends a change in the mental state of the persuadee (Iyer & Sycara 2019). 
 
