@@ -9,20 +9,11 @@ weight: 3
 
 Hi there, 
 
-<p> <py-script>
-
-from datetime import datetime
-now = datetime.now()
-now.strftime(f">>Today is %d/%m/%Y, and I am more than happy to welcome you on this web page.<<<")
-    </py-script>
-</p>
-
-
-I am **Sebastian**. I have a passion for NLP. So much so that I took a sabbatical from my management job to become an NLP engineer. If you meet me, chances are I'm training another deep neural network, either for my job or for fun. Besides coding, I love yoga, hiking, cooking, and running. 
+I am **Sebastian**. I have a passion for NLP. So much so that I took a sabbatical from my management job to become an NLP engineer. If you meet me, chances are I'm training another deep neural network, either for my job or for fun. Besides coding, I love yoga, hiking, cooking, and running.
 
 My **Management Expertise** stems from Product Development as a senior manager (2 years), and my **Software Engineering Skills** shine when it comes to Natural Language Processing (3 years). Hence, I am both a manager and an engineer.
 
-Prior to my current role Machine Learning Engineer, my main focus was on training deep neural networks / NLP. I worked as a visiting student in Peter Gloor's laboratory at the MIT Center for Collective Intelligence and contributied as an NLP Engineer at Narrativa. I got a chance to present my work for Narrativa at [datalift #3 - a Data Science conference](https://www.youtube.com/watch?v=myXANO-Mvo4). During my sabbatical, I certified in [Machine Learning](https://www.datacamp.com/statement-of-accomplishment/track/fcc43394ed8ce4a8b20daf705e4c3e976c6e028e), [Deep Learning in NLP](https://www.coursera.org/account/accomplishments/certificate/2N9ZQ8BVSG8H), and went through [Y Combinator's Startup School](https://www.startupschool.org/users/shWfuCCKk/certificate). 
+Prior to my current role Data Engineer at Corteva, my main focus was on training deep neural networks for NLP tasks. I worked as a visiting student in Peter Gloor's laboratory at the MIT Center for Collective Intelligence and contributied as an NLP Engineer at Narrativa. I got a chance to present my work for Narrativa at [datalift #3 - a Data Science conference](https://www.youtube.com/watch?v=myXANO-Mvo4). During my sabbatical, I certified in [Machine Learning](https://www.datacamp.com/statement-of-accomplishment/track/fcc43394ed8ce4a8b20daf705e4c3e976c6e028e), [Deep Learning in NLP](https://www.coursera.org/account/accomplishments/certificate/2N9ZQ8BVSG8H), and went through [Y Combinator's Startup School](https://www.startupschool.org/users/shWfuCCKk/certificate). 
 
 Before my sabbatical at MIT I assumed a role as *Chief Product Owner* (senior project manager) for the consumer products of Austria's biggest bank. It was their digital business management boutique **Raiffeisen Digital**. My responsibilities focused on the entire life cycle of consumer banking products with more than 80,000 clicks per month (e.g. [granting of loans](https://www.raiffeisen.at/ooe/de/privatkunden/kredit-leasing/konsumkredit.html), [opening of accounts](https://www.raiffeisen.at/ooe/de/privatkunden/konto/girokonto.html) or [qualifying for a credit card](https://www.raiffeisen.at/ooe/de/privatkunden/karte/kreditkarte.html)). That meant the coordination of fourteen projects for product development, optimization and operation. Besides, I gained expertise in disciplinary management of two business analysts (Paul and Damaris), technical and budgetary management for three agile dev teams (end2end, leasing, and finance) as well as timely coordination with executive management, product specialists, marketing, sales and business support units.
 
