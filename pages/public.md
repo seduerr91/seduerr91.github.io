@@ -4,16 +4,19 @@ tools: []
 image: https://i.imgur.com/XQI4dXz.jpg
 description: An easily navigable directory containing pertinent documents, links, and information related to my personal and professional endeavors.
 ---
+## Portfolio
+
+
 
 ### Scholarly Contributions
 
-- __Interpreting Persuasiveness: Unpacking Influential Factors Across Nine Exploratory Case Studies__, Published on _arXiv.org · Apr 24, 2021_
-- __Persuasive Natural Language Generation: A Comprehensive Literature Review__, Published on _arXiv.org · Jan 1, 2021_
-- __Dancing Rhythmically with Nature: Evaluating Plant Reaction to Human Gestures in an Anthroposophic Ecosystem__, Published on _arXiv.org · Dec 25, 2020_
-- __Digital Organizational Culture Explained: Findings from Detailed Case Studies__, Published in _Proceedings of the Hawaii International Conference on System Sciences 2018 (HICSS-51) · Sep 1, 2017_
-- __Discovering Digital Innovation: The Synergistic Effect of Organizational and Knowledge Recombination__, Published in _Proceedings of the 13th International Conference on Wirtschaftsinformatik , St. Gallen, CH · Feb 1, 2017_
-- __The Curiosity Factor: Influences on User Acceptance of Social Networking Sites__, Published in _Proceedings of the 22nd Americas Conference on Information Systems (AMCIS), San Diego (CA) Aug 1, 2016_
-- __Analyzing Enterprise Social Media Collaboration in Virtual Teams: Challenges, Determinants, Implications and Impact__, Published in _Proceedings of the ACM SIGMIS CPR Conference, Washington D.C._
+- __What Makes a Message Persuasive? Identifying Adaptations Towards Persuasiveness in Nine Exploratory Case StudiesWhat Makes a Message Persuasive? Identifying Adaptations Towards Persuasiveness in Nine Exploratory Case Studies__ on _arXiv.org · Apr 24, 2021arXiv.org · Apr 24, 2021_ [Link](https://arxiv.org/pdf/2104.12454.pdf)
+- __Persuasive Natural Language Generation - A Literature Review Persuasive Natural Language Generation - A Literature Review__ on _arXiv.org · Jan 1, 2021arXiv.org · Jan 1, 2021_ [Link](https://arxiv.org/abs/2104.12454)
+- __Eurythmic Dancing with Plants: Measuring Plant Response to Human Body Movement in an Anthroposophic Environment__ on _arxiv.org · Dec 25, 2020arxiv.org · Dec 25, 2020_ [Link](https://arxiv.org/abs/2012.12978)
+- __What is Digital Organizational Culture? Insights from Exploratory Case Studies__ in _Proceedings of the Hawaii International Conference on System Sciences 2018 (HICSS-51) · Sep 1, 2017_ [Link](https://scholarspace.manoa.hawaii.edu/items/eb0597d6-e165-4088-8d78-9417b9e91ce8)
+- __Navigating Digital Innovation - The Complementary Effect of Organizational and Knowledge RecombinationNavigating Digital Innovation - The Complementary Effect of Organizational and Knowledge Recombination__ in _Proceedings of the 13th International Conference on Wirtschaftsinformatik , St. Gallen, CH · Feb 1, 2017_ [Link](https://www.semanticscholar.org/paper/Navigating-Digital-Innovation-The-Complementary-of-D%C3%BCrr-Wagner/950046ef8199275ec97b10222786d9cb7dece7d1)
+- __A Temptation to Stalk: The Impact of Curiosity on User Acceptance of Social Networking Sites__ in _Proceedings of the Proceedings of the 22nd Americas Conference on Information Systems (AMCIS), San Diego (CA) Aug 1, 2016_ [Link](https://aisel.aisnet.org/amcis2016/Adoption/Presentations/16/)
+- __A Literature Review on Enterprise Social Media Collaboration in Virtual Teams: Challenges, Determinants, Implications and Impacts__ in _Proceedings of the ACM SIGMIS CPR Conference, Washington D.C.Proceedings of the ACM SIGMIS CPR Conference, Washington D.C._ [Link](https://dl.acm.org/doi/10.1145/2890602.2890611)
 
 ### Thought Leadership Pieces  
 - [Transforming a 10-k report into actionable insights with DPR and extractiveQA: A 5-step guide using Haystack by deepset.ai](https://medium.com/@duerr.sebastian/gain-valuable-corporate-insights-from-a-10-k-report-in-5-easy-steps-with-dense-passage-retrieval-8e0cac743c7d)
