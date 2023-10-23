@@ -5,8 +5,6 @@ permalink: /about/
 weight: 3
 ---
 
-**My Journey: From a Passionate NLP Engineer to a Global Technological Leader**
-
 Hello, I'm Sebastian, a fervent Natural Language Processing (NLP) engineer and an accomplished manager. My life mission has been carving a distinctive career trajectory molded by my zeal for integrating technology with business. Beyond my technological acumen, I'm a global explorer, having spent two vibrant years as a digital nomad across 25 diverse nations. Four languages - English, Spanish, French, and German - are effortlessly part of my conversational repertoire, demonstrating my proficiency in thriving amidst diverse cultures. 
 
 My linguistic finesse extends to masterfully coding languages, including Golang, Python, JavaScript, and SQL. Alongside communication, decoding the digital language that powers today's technology is my passion.
