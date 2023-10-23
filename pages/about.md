@@ -5,38 +5,25 @@ permalink: /about/
 weight: 3
 ---
 
-# **About Me**
+**My Journey: From a Passionate NLP Engineer to a Global Technological Leader**
 
-Hi there, 
+Hello, I'm Sebastian, a fervent Natural Language Processing (NLP) engineer and an accomplished manager. My life mission has been carving a distinctive career trajectory molded by my zeal for integrating technology with business. Beyond my technological acumen, I'm a global explorer, having spent two vibrant years as a digital nomad across 25 diverse nations. Four languages - English, Spanish, French, and German - are effortlessly part of my conversational repertoire, demonstrating my proficiency in thriving amidst diverse cultures. 
 
-I am **Sebastian**. I have a passion for NLP. So much so that I took a sabbatical from my management job to become an NLP engineer. If you meet me, chances are I'm training another deep neural network, either for my job or for fun. Besides coding, I love yoga, hiking, cooking, and running.
+My linguistic finesse extends to masterfully coding languages, including Golang, Python, JavaScript, and SQL. Alongside communication, decoding the digital language that powers today's technology is my passion.
 
-My **Management Expertise** stems from Product Development as a senior manager (2 years), and my **Software Engineering Skills** shine when it comes to Natural Language Processing (3 years). Hence, I am both a manager and an engineer.
+My journey began at Germany's distinguished University of Bamberg, where I studied Information Systems and bagged both a B.Sc and an M.Sc, graduating with honors. This experience ignited my interest in digital innovation that led to my fruitful two-year stint as a research assistant, collaborating with renowned professors to contribute to the latest research.
 
-Prior to my current role Data Engineer at Corteva, my main focus was on training deep neural networks for NLP tasks. I worked as a visiting student in Peter Gloor's laboratory at the MIT Center for Collective Intelligence and contributied as an NLP Engineer at Narrativa. I got a chance to present my work for Narrativa at [datalift #3 - a Data Science conference](https://www.youtube.com/watch?v=myXANO-Mvo4). During my sabbatical, I certified in [Machine Learning](https://www.datacamp.com/statement-of-accomplishment/track/fcc43394ed8ce4a8b20daf705e4c3e976c6e028e), [Deep Learning in NLP](https://www.coursera.org/account/accomplishments/certificate/2N9ZQ8BVSG8H), and went through [Y Combinator's Startup School](https://www.startupschool.org/users/shWfuCCKk/certificate). 
+Working as the Chief Product Owner for consumer products at Raiffeisen Digital, Austria's leading bank, I had the opportunity to refine my leadership skills. Guiding various teams through complex projects taught me to maneuver challenging professional scenarios. However, my thirst for knowledge was far from satisfied. 
 
-Before my sabbatical at MIT I assumed a role as *Chief Product Owner* (senior project manager) for the consumer products of Austria's biggest bank. It was their digital business management boutique **Raiffeisen Digital**. My responsibilities focused on the entire life cycle of consumer banking products with more than 80,000 clicks per month (e.g. [granting of loans](https://www.raiffeisen.at/ooe/de/privatkunden/kredit-leasing/konsumkredit.html), [opening of accounts](https://www.raiffeisen.at/ooe/de/privatkunden/konto/girokonto.html) or [qualifying for a credit card](https://www.raiffeisen.at/ooe/de/privatkunden/karte/kreditkarte.html)). That meant the coordination of fourteen projects for product development, optimization and operation. Besides, I gained expertise in disciplinary management of two business analysts (Paul and Damaris), technical and budgetary management for three agile dev teams (end2end, leasing, and finance) as well as timely coordination with executive management, product specialists, marketing, sales and business support units.
+In pursuit of further mastery in NLP, I took a sabbatical - a bold departure from the comfort of a well-settled managerial role. This led me back to academia, from being a visiting student at the esteemed MIT Center for Collective Intelligence to my hands-on experience as an NLP Engineer at Narrativa. The journey was enriched by completing certification courses in machine learning, deep learning in NLP, and entrepreneurship at Y Combinator's Startup School.
 
-Trained in Information Systems at Germany's best [University (German only)](https://www.uni-bamberg.de/presse/pm/artikel/che-masterbefragung-2020/) in that field in 2020, I hold a B.Sc. and M.Sc. (with honors) from the University of Bamberg. In addition, I was a research assistant for two years at the University of Bamberg and the German Graduate School of Management and Law, where I worked closely with Prof. Dr. Tim Weitzel, Prof. Dr. Heinz-Theo Wagner, and Dr. Prof. Daniel Beimborn on digital innovations.
+Now, with over five years of valuable NLP experience, I have become a respected figure in the industry. I take pride in my contributions, particularly in developing and training deep neural networks for NLP tasks.
+
+Despite my professional accomplishments, I believe in maintaining a balanced life. Thus, I devote time to yoga, hiking, cooking, and running. These activities keep me grounded and connect me to nature.
+
+Presently, I am an integral part of the team at Artica. Here, I have the opportunity to seamlessly bridge the gap between management and engineering using my unique blend of business acumen and technical expertise. My philosophy of coupling practical knowledge with groundbreaking innovation aims to revolutionize natural language processing. My unique multilingual and multicultural approach empowers me to propel forward in the NLP field, setting new standards in the realm of global technological leadership.
 
 ![Imgur](https://i.imgur.com/m4jlWgEm.jpg)
-
-## My Raiffeisen Product responsibilities was on the following products:
-
-- Credit loan small (customers, app integration)
-- Credit loan medium  (customers, web app integration)
-- Credit loan in-branch (customers, banking system integration)
-- Credit card application (customers, web app integration)
-- Online account opening new customers (new customers, web app) 
-- Online savings opening new customers (new customers, web app) 
-- Online savings opening old customers (new customers, web app) 
-- Leasing upper Austria (customers, web app integration)
-- Leasing residual states Austria (customers, web app integration)
-- Construction savings plan (customers, web app integration)
-- Accident & travel Insurance (customers, web app integration)
-- Insurance renewals (customers, web app integration)
-- Product application management tool (internal tool, web app)
-- Sales funnel management tool (internal, coordinative role)
 
 <div class="row">
 {% include about/timeline.html %}
