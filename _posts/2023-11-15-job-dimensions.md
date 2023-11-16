@@ -10,7 +10,7 @@ Navigating the ever-evolving tech industry in search of the perfect job can be a
 
 In this article, we look at the various aspects that can guide an AI or NLP professional — whether you're an AI Engineer, NLP Engineer, Data Engineer, or Software Engineer focused on NLP features — to find a company that aligns with both your career ambitions and personal values.
 
-![desk](https://unsplash.com/photos/cup-of-coffee-near-macbook-pro-DJ7bWa-Gwks)
+![desk](https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 ## Criteria for Choosing the Right Tech Employer
 
@@ -40,7 +40,7 @@ When plotting the coordinates for your professional journey, the following facto
 ### Reputation
 **What's the company's industry stand?** A place that's both well-known and respected can add considerable prestige to your resume.
 
-![apps](https://unsplash.com/photos/space-gray-iphone-x-9e9PD9blAto)
+![apps](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 ## The Tech Company Scoreboard
 
