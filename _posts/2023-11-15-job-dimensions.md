@@ -2,7 +2,7 @@
 title: Navigating the Tech Landscape: Finding Your Ideal Job in AI and NLP
 tags: [Career, Job Search, Artificial Intelligence, NLP, Technology]
 style: informational
-color: tech
+color: dark
 description: An analytical approach to choosing the right company for your tech career.
 ---
 
