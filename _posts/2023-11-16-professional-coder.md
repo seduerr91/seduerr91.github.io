@@ -10,6 +10,8 @@ description: Elevate your coding skills with our strategic Q1/2024 roadmap, feat
 
 In the fast-paced world of technology, keeping up to date with the latest coding skills is essential. To become a coding professional, one must adopt a structured approach that encompasses learning, practice, and communication. In this article, we discuss strategies to sharpen your coding abilities and provide a timeline for achieving proficiency in various relevant domains by Q1/2024.
 
+![coding](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
 ## Sharpening the Saw with Speed Coding
 
 **Learn VIM:** One of the best ways to increase your code velocity is to master your editor. VIM is still the choice of many professionals due to its efficiency. To make learning VIM an enjoyable experience, try playing games like "VIM Adventures" that gamify the learning process.
@@ -21,6 +23,8 @@ In the fast-paced world of technology, keeping up to date with the latest coding
 **Revisiting Core Concepts:** Even experienced coders need to revisit fundamental concepts periodically. Refresh your knowledge on Object-Oriented Python, Data Engineering, AI, by reviewing your summaries and digesting the book "Cracking the Coding Interview." Don't forget to catch up on Product Analytics to align your technical skills with impactful business analysis.
 
 ## Read, Study, and Watch
+
+![study](https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1546&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 **Effective Golang:** To stay versatile, broaden your language proficiency by studying "Effective Golang." Its robustness and efficiency have made it a favorite for many backend systems.
 
@@ -39,6 +43,8 @@ In the fast-paced world of technology, keeping up to date with the latest coding
 **LinkedIn Presence:** Maintain an active LinkedIn profile to share your progress, join discussions and connect with other professionals.
 
 **Teaching Roles and YouTube:** Pursue a teaching role, perhaps as a part-time mentor or by creating educational content on YouTube. Teaching forces you to learn topics at a deeper level and improves your public speaking capabilities.
+
+![voice](https://images.unsplash.com/photo-1541592553160-82008b127ccb?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 Now, let's map out this journey on a timeline:
 
