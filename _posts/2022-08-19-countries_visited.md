@@ -1,8 +1,8 @@
 ---
 title: A Glimpse of Every Country I've Journeyed To
 tags: [travel]
-style: adventurous
-color: vibrant
+style: fill
+color: dark
 description: An exciting visual journey through 75 countries. 
 ---
 
