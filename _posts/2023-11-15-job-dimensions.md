@@ -1,5 +1,5 @@
 ---
-title: Navigating the Tech Landscape: Finding Your Ideal Job in AI and NLP
+title: Navigating the Tech Landscape - Finding Your Ideal Job in AI and NLP
 tags: [Career, Job Search, Artificial Intelligence, NLP, Technology]
 style: informational
 color: dark
