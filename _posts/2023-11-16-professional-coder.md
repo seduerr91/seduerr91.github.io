@@ -2,7 +2,7 @@
 title: Mastering the Code - A Coder’s Strategic Roadmap to Professional Expertise by Q1/2024
 tags: [Coding Mastery, Software Development, Professional Development, Tech Skills, Programming Languages, Code Challenges, Software Engineering Philosophy, Coding Education, Career Roadmap, Tech Community]
 style: fill
-color: primary
+color: info
 description: Elevate your coding skills with our strategic Q1/2024 roadmap, featuring hands-on practice, learning resources, and sharing expertise through teaching and community engagement.
 ---
 
@@ -48,23 +48,23 @@ In the fast-paced world of technology, keeping up to date with the latest coding
 
 Now, let's map out this journey on a timeline:
 
-| Quarter | Activity                          | Duration                          |
-|---------|-----------------------------------|-----------------------------------|
-| Q1/2024 | Revisit Object-Oriented Python    | 2 weeks                           |
-|         | Study Data Engineering            | 2 weeks                           |
-|         | Refresh AI Knowledge              | 1 week                            |
-|         | Review 'Cracking the Coding ...'  | 1 week                            |
-|         | Dive into Product Analytics       | 2 weeks                           |
-|         | Play VIM Adventures               | Ongoing, during any idle times    |
-|         | Practice with CharaChorder        | Daily practice, 15-30 mins        |
-|         | Read 'Effective Golang'           | 3 weeks                           |
-|         | Study Philosophy of Software Eng  | 2 weeks                           |
-|         | Watch Neetcode Videos             | Ongoing, 3-4 videos per week      |
-|         | Complete Gophercises              | Bi-weekly exercises               |
-|         | Tackle Neetcode challenges        | Daily, 1-2 problems               |
-|         | Write about Software Architecture | 1 article every two weeks         |
-|         | Engage on LinkedIn                | Weekly posts/comments             |
-|         | Prepare and post YouTube content  | 1 video every week                |
-|         | Seek Teaching Opportunities       | Apply/interview during Q1         |
+| Quarter | Activity                          | Duration                       |
+| ------- | --------------------------------- | ------------------------------ |
+| Q1/2024 | Revisit Object-Oriented Python    | 2 weeks                        |
+|         | Study Data Engineering            | 2 weeks                        |
+|         | Refresh AI Knowledge              | 1 week                         |
+|         | Review 'Cracking the Coding ...'  | 1 week                         |
+|         | Dive into Product Analytics       | 2 weeks                        |
+|         | Play VIM Adventures               | Ongoing, during any idle times |
+|         | Practice with CharaChorder        | Daily practice, 15-30 mins     |
+|         | Read 'Effective Golang'           | 3 weeks                        |
+|         | Study Philosophy of Software Eng  | 2 weeks                        |
+|         | Watch Neetcode Videos             | Ongoing, 3-4 videos per week   |
+|         | Complete Gophercises              | Bi-weekly exercises            |
+|         | Tackle Neetcode challenges        | Daily, 1-2 problems            |
+|         | Write about Software Architecture | 1 article every two weeks      |
+|         | Engage on LinkedIn                | Weekly posts/comments          |
+|         | Prepare and post YouTube content  | 1 video every week             |
+|         | Seek Teaching Opportunities       | Apply/interview during Q1      |
 
 Remember that becoming a pro coder isn't just about the hard technical skills; it's also about being part of a community and contributing back through knowledge sharing. By following this structured approach and timeline, you'll not only improve your coding proficiency but also establish yourself as a well-rounded, influential professional in the tech industry.
