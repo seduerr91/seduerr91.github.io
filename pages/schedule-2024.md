@@ -40,5 +40,5 @@ description: Getting fit again.
   - [30 Minute Level 5](https://youtu.be/eLYxY8ZbRAQ?si=VBTJOZF6UiIzgmSs)
 
 - Hikes: In the North Cascades.
-- Study: [Reading](/_posts/2023-11-19-books.md), Mental Maps and [Coding](/_posts/2023-11-16-professional-coder.md).
-- Friends: [Activities](/_posts/2023-11-19-activities.md)
+- Study: [Reading](/posts/books.md), Mental Maps and [Coding](/posts/professional-coder.md).
+- Friends: [Activities](/posts/activities.md)
