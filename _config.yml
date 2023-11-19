@@ -2,16 +2,6 @@
 title               : Seb Duerr
 description         : >-
                       :blue_heart: Joy in my life.
-                      | Day       | Morning                   | Daytime | Evening                     |
-                      | --------- | ------------------------- | ------- | --------------------------- |
-                      | Monday    | Workout                   | Work    | Pickleball                  |
-                      | Tuesday   | Run                       | Work    | Dancing                     |
-                      | Wednesday | Workout                   | Work    | Meetups                     |
-                      | Thursday  | Run                       | Work    | Pickleball + Domestic Tasks |
-                      | Friday    | Workout                   | Work    | Revel with friends          |
-                      | Saturday  | Hike or run or Pickleball | Study   | Revel with friends          |
-                      | Sunday    | Study                     | -       | Yoga with Joy               |
-
 baseurl             : ""                               
 repository          : seduerr91/seduerr91              
 remote_theme        : YoussefRaafatNasry/portfolYOU
