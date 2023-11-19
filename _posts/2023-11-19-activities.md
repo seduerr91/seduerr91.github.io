@@ -1,5 +1,5 @@
 ---
-title: Cultivating Connections: Social Activities for Friends and Spouses
+title: Cultivating Connections - Social Activities for Friends and Spouses
 tags: [Lifestyle, Relationships, Cooking, Technology, Photography, Arts]
 style: fill
 color: light

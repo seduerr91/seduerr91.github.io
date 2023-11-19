@@ -13,9 +13,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="I turn :coffee: into :computer:, love :running: and enjoy :sleeping:.">
+  <meta name="description" content="Welcome to the personal web page of Seb Duerr. Explore his journey, achievements, and passions in technology, art, and innovation. Get inspired by his work and stay updated with his latest projects and collaborations.">
 
-  <title>duerr.se</title>
+  <title>Seb Duerr</title>
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
   <!-- Font Awesome CDN -->
@@ -30,9 +30,6 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
 
-  <!-- PyScript -->
-  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-
 </head>
 
 
@@ -41,15 +38,16 @@
   <main class="flex-shrink-0 container mt-5">
     <nav class="navbar navbar-expand-lg navbar-themed">
 
-  <a class="navbar-brand" href="/"><h5><b>duerr.se</b></h5></a>
+  <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-1x fa-bars text-themed"></i>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
-<a class="nav-item nav-link " href="/pages/public">Publications</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+
+      <a class="nav-item nav-link " href="/pages/schedule-2024">Schedule 2024</a>
 
       <a class="nav-item nav-link " href="/datenschutz.html"></a>
 
@@ -84,7 +82,7 @@
 
 <p>Read this article, to learn how to bring paraphrasing to Google’s T5 &amp; fine- tuning it with custom textual data sets for synthetic dataset creation.</p>
 
-<p><img src="https://i.imgur.com/Y6awmWp.gif" alt="Imgur"></p>
+<p><img src="https://i.imgur.com/Y6awmWp.gif" alt="Imgur" /></p>
 
 <p>This project was concluded with the help of Javier from <a href="http://ww.narrativa.com">Narrativa.com</a> a Spanish deep learning company that helps companies to create texts with the help of AI. Among the many challenges of supervised machine learning, their dependency on large labeled datasets ranks as the highest.</p>
 
@@ -96,14 +94,14 @@
 
 <h3 id="1-fine-tune-t5-with-paws-data-set-to-teach-paraphrase--t5-p">(1) Fine tune T5 with PAWS data set to teach ‘paraphrase: ‘ (T5-P)</h3>
 
-<p><img src="https://i.imgur.com/JVG4DbO.jpg" alt="Imgur">
+<p><img src="https://i.imgur.com/JVG4DbO.jpg" alt="Imgur" />
 (<em>Credits of Pictograms to FreePik from Flaticon.com</em>)</p>
 
 <p>After that, we created a T5-P(araphrase) which can create paraphrases from texts with no specific context. However, this one is not optimally suited for our business journal context. Hence, we need a text corpus that makes sound more <em>biz</em>.</p>
 
 <h3 id="2-fine-tune-t5-p-with-custom-data-to-create-synthetic-data">(2) Fine tune T5-P with Custom Data to Create Synthetic Data</h3>
 
-<p><img src="https://i.imgur.com/5j4jWwP.jpg" alt="Imgur">
+<p><img src="https://i.imgur.com/5j4jWwP.jpg" alt="Imgur" />
 (<em>Credits of Pictograms to FreePik from Flaticon.com</em>)</p>
 
 <p>As a next step, we use our custom data (i.e., an business text corpus) to create paraphrases with our new capability of T5-P(araphrase), i.e. <strong>paraphrasing</strong>. Although we only have a small corpus (330 samples), we use these to create a data set from it.</p>
@@ -112,7 +110,7 @@
 
 <h3 id="3-use-t5-to-ensure-synthetic-datas-syntatical--semantical-quality">(3) Use T5 to Ensure Synthetic Data’s Syntatical &amp; Semantical Quality</h3>
 
-<p><img src="https://i.imgur.com/SiEby3I.jpg" alt="Imgur">
+<p><img src="https://i.imgur.com/SiEby3I.jpg" alt="Imgur" />
 (<em>Credits of Pictograms to FreePik from Flaticon.com</em>)</p>
 
 <p>Before, enabling our T5-P to create business paraphrases, we want to ensure that we only fine tune it with semantically congruent and syntactically correct samples. Hence, we have to evaluate our newly created synthetic data set.</p>
@@ -125,7 +123,7 @@
 
 <h3 id="4-fine-tune-t5-p-with-qualified-synthetic-data-for-custom-paraphrases">(4) Fine tune T5-P with Qualified Synthetic Data for Custom Paraphrases</h3>
 
-<p><img src="https://i.imgur.com/9526sFI.jpg" alt="Imgur">
+<p><img src="https://i.imgur.com/9526sFI.jpg" alt="Imgur" />
 (<em>Credits of Pictograms to FreePik from Flaticon.com</em>)</p>
 
 <p>Finally, we fine tune our T5-P(araphrase) model with our synthetically created data set (that is both syntactically and semantically correct). After that, we can create very authentic paraphrases sounding like our business corpora (cf. introductory image).</p>

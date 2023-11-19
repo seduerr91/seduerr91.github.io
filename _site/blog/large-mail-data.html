@@ -13,9 +13,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="I turn :coffee: into :computer:, love :running: and enjoy :sleeping:.">
+  <meta name="description" content="Welcome to the personal web page of Seb Duerr. Explore his journey, achievements, and passions in technology, art, and innovation. Get inspired by his work and stay updated with his latest projects and collaborations.">
 
-  <title>duerr.se</title>
+  <title>Seb Duerr</title>
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
   <!-- Font Awesome CDN -->
@@ -30,9 +30,6 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
 
-  <!-- PyScript -->
-  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-
 </head>
 
 
@@ -41,15 +38,16 @@
   <main class="flex-shrink-0 container mt-5">
     <nav class="navbar navbar-expand-lg navbar-themed">
 
-  <a class="navbar-brand" href="/"><h5><b>duerr.se</b></h5></a>
+  <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-1x fa-bars text-themed"></i>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
-<a class="nav-item nav-link " href="/pages/public">Publications</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+
+      <a class="nav-item nav-link " href="/pages/schedule-2024">Schedule 2024</a>
 
       <a class="nav-item nav-link " href="/datenschutz.html"></a>
 
@@ -94,7 +92,7 @@ The entirety of the data comes in a nested json structure, that needs parsing an
 This step is always needed, and there are different packages that can be used to work with. 
 Out of preference, the author uses Python Pandas on a Google Colab Infrastructure in the following.</p>
 
-<p><img src="https://i.postimg.cc/tCWCn07r/Screenshot-2021-09-12-at-22-01-21.png" alt="Screenshot-2021-09-12-at-22-01-21.png">](https://postimg.cc/KRcyCHPL)</p>
+<p><img src="https://i.postimg.cc/tCWCn07r/Screenshot-2021-09-12-at-22-01-21.png" alt="Screenshot-2021-09-12-at-22-01-21.png" />](https://postimg.cc/KRcyCHPL)</p>
 
 <h1 id="an-exemplary-email-">An exemplary email 📃</h1>
 
@@ -105,7 +103,7 @@ The quotation (quot) may prove useful to evaluate the relation between the two c
 Visual markers such as the separators (sep) or the tech may also not be of interest for creating an initial email dataset but could be revisited later.
 We do not see much value in evaluating the message signature (msig) since it is usually pre-compiled and not written by a human.</p>
 
-<p><img src="https://i.postimg.cc/WzMLzvSg/Screenshot-2021-09-12-at-22-03-00.png" alt="Screenshot-2021-09-12-at-22-03-00.png">](https://postimg.cc/2L8X9gsS)</p>
+<p><img src="https://i.postimg.cc/WzMLzvSg/Screenshot-2021-09-12-at-22-03-00.png" alt="Screenshot-2021-09-12-at-22-03-00.png" />](https://postimg.cc/2L8X9gsS)</p>
 
 <h1 id="getting-a-data-overview">Getting a Data Overview</h1>
 
@@ -114,7 +112,7 @@ We do not see much value in evaluating the message signature (msig) since it is 
 (2) Next, we choose our mail headers, such as subject, from, to, and most importantly the boolean value ‘in_reply_to‘ to identify the perception of a mail (see previous slide).
 (3) Last, we select all the segments that are of importance to us, such as paragraph, closing, salutation, to get the plain text. Further segments such as quotation may also be of interest. More on that in the excursus: ‘export mail-response pairs’.</p>
 
-<p><img src="https://i.postimg.cc/T3NSR1GB/Screenshot-2021-09-12-at-22-04-01.png" alt="Screenshot-2021-09-12-at-22-04-01.png">](https://postimg.cc/68Rzc98h)</p>
+<p><img src="https://i.postimg.cc/T3NSR1GB/Screenshot-2021-09-12-at-22-04-01.png" alt="Screenshot-2021-09-12-at-22-04-01.png" />](https://postimg.cc/68Rzc98h)</p>
 
 <h1 id="parsing-json">Parsing .json</h1>
 
@@ -125,7 +123,7 @@ Yet, we only have the nested structure of the json files, so they need to be fla
 The trick is to use the string start and end indicators from the segments and to apply them to the plain text. The illustration in the lower left sketches the idea behind it. 
 The parsing happened up to a nesting level of 6, since that was considered to be simple enough mails (and also allowed not to run out of the 32 GB RAM of Google Colab). Batching would have helped to prevent that but it resulted in enough data.</p>
 
-<p><img src="https://i.postimg.cc/DZn1HQHh/Screenshot-2021-09-12-at-22-04-35.png" alt="Screenshot-2021-09-12-at-22-04-35.png">](https://postimg.cc/p9c9njPc)</p>
+<p><img src="https://i.postimg.cc/DZn1HQHh/Screenshot-2021-09-12-at-22-04-35.png" alt="Screenshot-2021-09-12-at-22-04-35.png" />](https://postimg.cc/p9c9njPc)</p>
 
 <h1 id="-sentence-level-email-data">💿 Sentence-level Email Data</h1>
 
