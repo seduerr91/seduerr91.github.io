@@ -36,7 +36,6 @@ The **Perfect Schedule** exemplified is as follows:
 
 **Health 2024: A Vision Forged in Well-being**
 
-
 Our expedition extends beyond the mere allotment of time; it encompasses the holistic conquest of **Health 2024**. The goal is clear - a body balanced under the scale at a weight less than 160 lbs, having shed from the current 174 lbs. Posture towers as a pillar in this vision, reinforced through back workouts and the stretching tranquility of yoga. Appearance, that outward reflection of inner health, gleams through the dedication to workouts and the vigor of running.
 
 ![nutri](https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bnV0cml0aW9ufGVufDB8fDB8fHww)
@@ -44,3 +43,6 @@ Our expedition extends beyond the mere allotment of time; it encompasses the hol
 Let's talk **Nutrition** for it anchors our physicality. The chosen path is one devoid of gluten, ensuring sustenance without unwelcome reaction. Libations are reserved for the weekend - wine, the sophistication of gin, the clarity of vodka, and the effervescence of hard seltzers. The mandate is clear – dine out sparingly, limiting such indulgences to a maximum of twice per week. Meanwhile, the table at home praises the satiety of nuts, the simplicity of eggs, the humble rice, and the rich spread of peanut butter.
 
 In summation, the perfect schedule is not a mere alignment of tasks and leisure; it is a philosophy. It is the humble acknowledgment that our days are canvases and we, the artists. With every brush stroke of activity, interaction, and nourishment, we paint our existence in vibrant hues of health and fulfillment. Thus, let us all embark on tailoring our perfect schedule, a testament to living not just well, but wonderfully.
+
+**Resources**
+
