@@ -2,7 +2,7 @@
 title: NLP Recent Paper Review
 tags: [Coding]
 style: fill
-color: info
+color: secondary
 description: Summary of Review by HuggingFace on recent NLP papers.
 ---
 

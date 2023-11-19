@@ -2,7 +2,7 @@
 title: How to Use the Generative Text Infilling Model
 tags: [Coding]
 style: fill
-color: light
+color: warning
 description: This micro-service allows infilling multiple words into a context. This article explains how to use it.
 ---
 

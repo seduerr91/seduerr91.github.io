@@ -2,7 +2,7 @@
 title: Dense Passage Retrieval of 10-k Reports with Haystack
 tags: [Instructions]
 style: fill
-color: primary
+color: danger
 description: Gaining valuable insights by questioning a 10-k report
 ---
 
@@ -55,31 +55,31 @@ Results:
 
 __Answers to: What are efforts regarding digital experiences?__
 
-Rank |  Answer
----|---
-1|  eCommerce efforts and innovation
-2|	investments in eCommerce, technology, acquisitions, joint ventures, store remodels and other customer initiatives
-3|	Same Day Pickup and Same Day Delivery
-4|	social media, online advertising, and email
-5|	security of our digital platforms and keep them operating within acceptable parameters
+| Rank | Answer                                                                                                            |
+| ---- | ----------------------------------------------------------------------------------------------------------------- |
+| 1    | eCommerce efforts and innovation                                                                                  |
+| 2    | investments in eCommerce, technology, acquisitions, joint ventures, store remodels and other customer initiatives |
+| 3    | Same Day Pickup and Same Day Delivery                                                                             |
+| 4    | social media, online advertising, and email                                                                       |
+| 5    | security of our digital platforms and keep them operating within acceptable parameters                            |
 
 __Answers to: What are the strategic priorities?__
 
-Rank |  Answer
----|---
-1|	improving our customer-facing initiatives in stores and clubs and creating a seamless omni-channel experience for our customers
-2|	Price transparency, assortment of products, customer experience, convenience, ease and the speed and cost of shipping
-3|	to make every day easier for busy families, operate with discipline, sharpen our culture and become digital, and make trust a competitive advantage
-4|	improving our customer-facing initiatives in stores and clubs and creating a seamless omni-channel experience for our customers
-5| strategic capital allocation
+| Rank | Answer                                                                                                                                              |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | improving our customer-facing initiatives in stores and clubs and creating a seamless omni-channel experience for our customers                     |
+| 2    | Price transparency, assortment of products, customer experience, convenience, ease and the speed and cost of shipping                               |
+| 3    | to make every day easier for busy families, operate with discipline, sharpen our culture and become digital, and make trust a competitive advantage |
+| 4    | improving our customer-facing initiatives in stores and clubs and creating a seamless omni-channel experience for our customers                     |
+| 5    | strategic capital allocation                                                                                                                        |
 
 __Answers to: What is the company's growth?__
 
-Rank |	Answer
----|---
-1|	ticket and transaction growth
-2|	net sales
-3|	fiscal 2019
-4|	$2.8 billion or 2.3%
-5|	23% of our consolidated net sales
+| Rank | Answer                            |
+| ---- | --------------------------------- |
+| 1    | ticket and transaction growth     |
+| 2    | net sales                         |
+| 3    | fiscal 2019                       |
+| 4    | $2.8 billion or 2.3%              |
+| 5    | 23% of our consolidated net sales |
 
