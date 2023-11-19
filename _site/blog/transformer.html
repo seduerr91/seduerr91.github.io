@@ -13,9 +13,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="I turn :coffee: into :computer:, love :running: and enjoy :sleeping:.">
+  <meta name="description" content="Welcome to the personal web page of Seb Duerr. Explore his journey, achievements, and passions in technology, art, and innovation. Get inspired by his work and stay updated with his latest projects and collaborations.">
 
-  <title>duerr.se</title>
+  <title>Seb Duerr</title>
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
   <!-- Font Awesome CDN -->
@@ -30,9 +30,6 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
 
-  <!-- PyScript -->
-  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-
 </head>
 
 
@@ -41,15 +38,16 @@
   <main class="flex-shrink-0 container mt-5">
     <nav class="navbar navbar-expand-lg navbar-themed">
 
-  <a class="navbar-brand" href="/"><h5><b>duerr.se</b></h5></a>
+  <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-1x fa-bars text-themed"></i>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
-<a class="nav-item nav-link " href="/pages/public">Publications</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+
+      <a class="nav-item nav-link " href="/pages/schedule-2024">Schedule 2024</a>
 
       <a class="nav-item nav-link " href="/datenschutz.html"></a>
 
@@ -118,11 +116,11 @@
   <li>After embedding the words in the input sequence, each of them flows through each of the two layers of the encoder. Each word in each position flows through its own path in the encoder. There are dependencies between these paths in the sa layer. The ffn layer does not have these dependencies which is why they various paths can be executed in parallel.</li>
 </ul>
 
-<p><img src="http://jalammar.github.io/images/t/encoder_with_tensors_2.png" alt="encoder"></p>
+<p><img src="http://jalammar.github.io/images/t/encoder_with_tensors_2.png" alt="encoder" /></p>
 
 <h4 id="self-attention-at-a-high-level">Self-Attention at a High Level</h4>
 
-<p><img src="http://jalammar.github.io/images/t/transformer_self-attention_visualization.png" alt="attention"></p>
+<p><img src="http://jalammar.github.io/images/t/transformer_self-attention_visualization.png" alt="attention" /></p>
 
 <ul>
   <li>”The animal didn’t cross the street because it was too tired”. What does ‘it’ in the sentence refer to? The street or the animal?</li>
@@ -153,7 +151,7 @@
   <li>The result will be sent along to the ffn network.</li>
 </ul>
 
-<p><img src="http://jalammar.github.io/images/t/self-attention-output.png" alt="self attention"></p>
+<p><img src="http://jalammar.github.io/images/t/self-attention-output.png" alt="self attention" /></p>
 
 <h4 id="matrix-calculation-of-self-attention">Matrix Calculation of Self-attention</h4>
 
@@ -162,13 +160,13 @@
   <li>Every row in the X matrix corresponds to a word in the input sentence. We again see the difference in size of the embedding vector (512, or 4 boxes in the figure), and the q/k/v vectors (64, or 3 boxes in the figure):</li>
 </ul>
 
-<p><img src="http://jalammar.github.io/images/t/self-attention-matrix-calculation.png" alt="multi"></p>
+<p><img src="http://jalammar.github.io/images/t/self-attention-matrix-calculation.png" alt="multi" /></p>
 
 <ul>
   <li>Finally, since we’re dealing with matrices, we can condense steps two through six in one formula to calculate the outputs of the self-attention layer.</li>
 </ul>
 
-<p><img src="http://jalammar.github.io/images/t/self-attention-matrix-calculation-2.png" alt="2-6"></p>
+<p><img src="http://jalammar.github.io/images/t/self-attention-matrix-calculation-2.png" alt="2-6" /></p>
 
 <h4 id="the-beast-with-many-heads">The Beast with Many Heads</h4>
 
@@ -182,7 +180,7 @@
   <li>If we do the same self-attention calculation we outlined above, just eight different times with different weight matrices, we end up with eight different Z matrices. Yet, the feed-forward layer is not expecting eight matrices – it’s expecting a single matrix (a vector for each word).Therefore, we concat the matrices then multiple them by an additional weights matrix WO.</li>
 </ul>
 
-<p><img src="http://jalammar.github.io/images/t/transformer_multi-headed_self-attention-recap.png" alt="self attention"></p>
+<p><img src="http://jalammar.github.io/images/t/transformer_multi-headed_self-attention-recap.png" alt="self attention" /></p>
 
 <h4 id="representing-the-order-of-the-sequence-using-positional-encoding">Representing The Order of The Sequence Using Positional Encoding</h4>
 
@@ -190,7 +188,7 @@
   <li>One thing that’s missing from the model as we have described it so far is a way to account for the order of the words in the input sequence. To address this, the transformer adds a vector to each input embedding. These vectors follow a specific pattern that the model learns, which helps it determine the position of each word, or the distance between different words in the sequence. The intuition here is that adding these values to the embeddings provides meaningful distances between the embedding vectors once they’re projected into Q/K/V vectors and during dot-product attention.</li>
 </ul>
 
-<p><img src="http://jalammar.github.io/images/t/transformer_positional_encoding_vectors.png" alt="order"></p>
+<p><img src="http://jalammar.github.io/images/t/transformer_positional_encoding_vectors.png" alt="order" /></p>
 
 <h4 id="the-residuals">The Residuals</h4>
 
@@ -198,17 +196,17 @@
   <li>One detail in the architecture of the encoder that we need to mention before moving on, is that each sub-layer (self-attention, ffnn) in each encoder has a residual connection around it, and is followed by a layer-normalization step.</li>
 </ul>
 
-<p><img src="http://jalammar.github.io/images/t/transformer_resideual_layer_norm.png" alt="normalize"></p>
+<p><img src="http://jalammar.github.io/images/t/transformer_resideual_layer_norm.png" alt="normalize" /></p>
 
 <h4 id="the-decoder-side">The Decoder Side</h4>
 
 <p>The encoder start by processing the input sequence. The output of the top encoder is then transformed into a set of attention vectors K and V. These are to be used by each decoder in its “encoder-decoder attention” layer which helps the decoder focus on appropriate places in the input sequence.</p>
 
-<p><img src="http://jalammar.github.io/images/t/transformer_decoding_1.gif" alt="de1"></p>
+<p><img src="http://jalammar.github.io/images/t/transformer_decoding_1.gif" alt="de1" /></p>
 
 <p>The following steps repeat the process until a special symbol is reached indicating the transformer decoder has completed its output. The output of each step is fed to the bottom decoder in the next time step, and the decoders bubble up their decoding results just like the encoders did. And just like we did with the encoder inputs, we embed and add positional encoding to those decoder inputs to indicate the position of each word.</p>
 
-<p><img src="http://jalammar.github.io/images/t/transformer_decoding_2.gif" alt="de2-5"></p>
+<p><img src="http://jalammar.github.io/images/t/transformer_decoding_2.gif" alt="de2-5" /></p>
 
 <p>In the decoder, the self-attention layer is only allowed to attend to earlier positions in the output sequence. This is done by masking future positions (setting them to -inf) before the softmax step in the self-attention calculation.</p>
 

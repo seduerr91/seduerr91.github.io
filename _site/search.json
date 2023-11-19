@@ -1,27 +1,99 @@
 [
   
     {
+      "title"    : "The Transformative Power of Reading - A NLP Engineer&#39;s Perspective",
+      "category" : "",
+      "tags"     : "reading, cognitive development, stress reduction, empathy, book recommendations",
+      "url"      : "/blog/books",
+      "date"     : "2023-11-19 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Cultivating Connections - Social Activities for Friends and Spouses",
+      "category" : "",
+      "tags"     : "Lifestyle, Relationships, Cooking, Technology, Photography, Arts",
+      "url"      : "/blog/activities",
+      "date"     : "2023-11-19 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Mastering the Code - A Coder’s Strategic Roadmap to Professional Expertise by Q1/2024",
+      "category" : "",
+      "tags"     : "Coding Mastery, Software Development, Professional Development, Tech Skills, Programming Languages, Code Challenges, Software Engineering Philosophy, Coding Education, Career Roadmap, Tech Community",
+      "url"      : "/blog/professional-coder",
+      "date"     : "2023-11-16 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "The Ultimate City Living Guide",
+      "category" : "",
+      "tags"     : "Relocation, City Life, Lifestyle",
+      "url"      : "/blog/where-2-live",
+      "date"     : "2023-11-15 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Navigating the Tech Landscape - Finding Your Ideal Job in AI and NLP",
+      "category" : "",
+      "tags"     : "Career, Job Search, Artificial Intelligence, NLP, Technology",
+      "url"      : "/blog/job-dimensions",
+      "date"     : "2023-11-15 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Setting Personal and Professional Life Goals for 2035",
+      "category" : "",
+      "tags"     : "Life Goals, Personal Development, NLP, Career Growth, Health and Fitness, Real Estate Investment",
+      "url"      : "/blog/goals-2035",
+      "date"     : "2023-11-15 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Mastering the Art of Balance - A Guide to the Perfect Weekly Schedule",
+      "category" : "",
+      "tags"     : "Productivity,, Health, and, Wellness,, Work-Life, Balance,, Time, Management,, Healthy, Eating,, Fitness, Routine,, Socializing",
+      "url"      : "/blog/perfect-schedule",
+      "date"     : "2023-11-14 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Trip Itineraries for 2024",
+      "category" : "",
+      "tags"     : "Travel",
+      "url"      : "/blog/itineraries-2024",
+      "date"     : "2023-11-12 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Oaxacan Wonders and Mexico City Marvels",
+      "category" : "",
+      "tags"     : "travel",
+      "url"      : "/blog/mexico-nov-2023",
+      "date"     : "2023-11-06 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "My Global Journey - Living in Seven Different Countries",
+      "category" : "",
+      "tags"     : "Travel",
+      "url"      : "/blog/7-countries",
+      "date"     : "2022-08-20 00:00:00 -0700"
+    } ,
+  
+    {
+      "title"    : "A Glimpse of Every Country I&#39;ve Journeyed To",
+      "category" : "",
+      "tags"     : "travel",
+      "url"      : "/blog/countries_visited",
+      "date"     : "2022-08-19 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Dense Passage Retrieval of 10-k Reports with Haystack",
       "category" : "",
       "tags"     : "Instructions",
       "url"      : "/blog/using-deepset-for-biz",
       "date"     : "2022-04-14 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "A brief guideline on Installing Resonaid",
-      "category" : "",
-      "tags"     : "Instructions",
-      "url"      : "/blog/install-resonaid",
-      "date"     : "2021-10-06 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "Integrating Extroversion into Recipient Alignment",
-      "category" : "",
-      "tags"     : "Coding",
-      "url"      : "/blog/ml-ops",
-      "date"     : "2021-09-05 00:00:00 -0700"
     } ,
   
     {
@@ -81,62 +153,6 @@
     } ,
   
     {
-      "title"    : "Introducing the Dataset Creation Blog Series in Natural Language Processing",
-      "category" : "",
-      "tags"     : "Persuaide, engineering",
-      "url"      : "/blog/cleaning-mails",
-      "date"     : "2021-08-03 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "What I learnt from Kickstarting Persuaide",
-      "category" : "",
-      "tags"     : "Persuaide",
-      "url"      : "/blog/foundings-startup",
-      "date"     : "2021-07-15 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "A Brief Summary of Persuaide",
-      "category" : "",
-      "tags"     : "Persuaide",
-      "url"      : "/blog/persuaide-idea",
-      "date"     : "2021-07-08 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "Ensuring Ethical AI at Persuaide",
-      "category" : "",
-      "tags"     : "Persuaide",
-      "url"      : "/blog/ethicalai",
-      "date"     : "2021-06-09 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "Writing Emails that Others Want to Read",
-      "category" : "",
-      "tags"     : "Persuaide",
-      "url"      : "/blog/tools",
-      "date"     : "2021-06-08 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "How to Resonate With Your Recipients",
-      "category" : "",
-      "tags"     : "Persuaide",
-      "url"      : "/blog/resonate",
-      "date"     : "2021-06-07 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "How Persuasive is Your Text?",
-      "category" : "",
-      "tags"     : "Persuaide",
-      "url"      : "/blog/perm",
-      "date"     : "2021-06-06 00:00:00 -0700"
-    } ,
-  
-    {
       "title"    : "What makes a message persuasive?",
       "category" : "",
       "tags"     : "Research",
@@ -185,14 +201,6 @@
     } ,
   
     {
-      "title"    : "NLG Parameters and Algorithms",
-      "category" : "",
-      "tags"     : "Coding",
-      "url"      : "/blog/nlg",
-      "date"     : "2020-09-03 00:00:00 -0700"
-    } ,
-  
-    {
       "title"    : "NLP Recent Paper Review",
       "category" : "",
       "tags"     : "Coding",
@@ -209,14 +217,6 @@
     } ,
   
     {
-      "title"    : "Introduction to Investment Banking",
-      "category" : "",
-      "tags"     : "Management & Banking",
-      "url"      : "/blog/investmentbanking",
-      "date"     : "2020-07-17 00:00:00 -0700"
-    } ,
-  
-    {
       "title"    : "An Introduction to Deep Neural Networks",
       "category" : "",
       "tags"     : "Coding",
@@ -225,27 +225,11 @@
     } ,
   
     {
-      "title"    : "Running FastAI2 in Google Colab",
-      "category" : "",
-      "tags"     : "Coding",
-      "url"      : "/blog/colab-fastai2",
-      "date"     : "2020-07-03 00:00:00 -0700"
-    } ,
-  
-    {
       "title"    : "Brilliant Green",
       "category" : "",
       "tags"     : "Research",
       "url"      : "/blog/brilliant-green",
       "date"     : "2020-06-28 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "Resizing Multiple Images in Python",
-      "category" : "",
-      "tags"     : "Coding",
-      "url"      : "/blog/image-resizer",
-      "date"     : "2020-06-27 00:00:00 -0700"
     } ,
   
     {
@@ -262,22 +246,6 @@
       "tags"     : "Motivation",
       "url"      : "/blog/traveling",
       "date"     : "2020-06-05 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "Making Better Decisions",
-      "category" : "",
-      "tags"     : "Motivation",
-      "url"      : "/blog/willpower",
-      "date"     : "2020-05-29 00:00:00 -0700"
-    } ,
-  
-    {
-      "title"    : "Notes from Interviews with Industry Experts",
-      "category" : "",
-      "tags"     : "Coding",
-      "url"      : "/blog/experts",
-      "date"     : "2020-05-29 00:00:00 -0700"
     } ,
   
     {
