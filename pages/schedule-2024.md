@@ -1,3 +1,10 @@
+---
+title: Schedule 2024
+tags: [Health]
+style: fill
+color: danger
+description: Getting fit again.
+---
 # My Schedule
 
 | Day       | Morning                   | Daytime | Evening                     |
