@@ -1,3 +1,9 @@
+---
+name: Object-Oriented Python
+tools: []
+description: An easily navigable directory containing pertinent documents, links, and information related to my personal and professional endeavors.
+---
+
 ## Chapter 1, Systems Design
 
 - Flat | Object: collection of data & associated behavior
