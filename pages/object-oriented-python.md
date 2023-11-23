@@ -63,7 +63,7 @@ description: Walking through Wuerzburg
 - Upper steep | Superclass (parent class): class being inherited from
 - Lower steep | Subclass: is derived from parents class or extends it by adding functionality
 
-```
+```python
 class Contact(object): 			# syntax: class(superclass)
 	all_contacts: List["Contact"] = [] 	# class variable
 	def __init__(self, name: str, email: str) -> None:
@@ -74,14 +74,14 @@ class Contact(object): 			# syntax: class(superclass)
 
 - Cinema | Class Variable: all_contacts is shared by all instances of the class, there is only one list!
 
-```
+```python
 class Supplier(Contact): 			# inheritance, having also name & email available for use
 	def order(self, order: "Order") -> None
 		print(f"This would send an {order} to {self.name}") 	# name can be used
 ```
 - Parking | Overriding: altering or replacing a method of the superclass w/ a new method with the same name in the subclass. This replacement will automatically be called. Avoid duplicated code with super: 
 
-```
+```python
 		class Friend(Contact):
 	def __init__(self, name, email, phone: str): 	# overrides superclass Contact's init
 		super.__init__(name, mail) 	# binds instance to parent class, inits itself
@@ -90,7 +90,7 @@ self.phone = phone 		# sets phone attrib
 - 2. Gate | Multiple inheritance: subclass inherits from 2+ parent classes
   - Restaurant | In Python with mixins: mixin class definitions are meant to be inherited to provide extra functionality.
 - Require two classes: (1) requ of the mixin, (2) aspect the mixin provides
-```
+```python
 class Emailable(Protocol): email: str		 		# hint: Emailable
 class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
 # "if MailSender is emailable (i.e. has an email: str) field, then send_email"
@@ -98,7 +98,7 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
 
 - Upper Parking | Emailable hint is a protocol: "contract for features of a class" telling mypy that every subclass of Emailable objects must support email attribute
   - 	Multiple inheritance is done well, if resulting class has no unique features and is a combination of mixins > contact initializer will add a new contact + mails can be send by mixin
-```
+```python
 class EmailableContact(Contact, MailSender): pass  	# this is multiple inheritance 
 ```
 - Franken Museum | Multiple inheritance can create diamond problems, that are being resolved by the MRO (method resolution order)
@@ -256,7 +256,7 @@ class EmailableContact(Contact, MailSender): pass  	# this is multiple inheritan
 - Sanderrasen | Iterable: object w/ elements to be iterated over
 - Adalbero Kirche | Comprehensions: 
     - can be used to map inputs to outputs, applying filters along the way
-    - highly optimized & readable, work with lists [ ], sets { }, dicts { : }, and NamedTuples
+    - highly optimized & readable, work with lists, sets, dicts, and NamedTuples
     - sample = [int(x) for x in numbers if x < 100] [mapping in source if filter]
 - Eichendorffapo | PYTHONHASHSEED var: can be set to impose an order
 - Ararat | Generator expressions: 
@@ -369,7 +369,7 @@ class EmailableContact(Contact, MailSender): pass  	# this is multiple inheritan
 - Estenfeld | Non-preemptive: coroutines explicitly hand control to each other at specific points, removing need for locking 
 - Kürnach | Sleeper async code sample:
 
-```
+```python
 async def sleepers():			#  coroutine, async def + await make sleepers interleaved
 	tasks = [asyncio.create_task(await asyncio.sleep(3) for i in range(4)]
 	await asyncio.gather(*tasks)		# returns control to event loop
