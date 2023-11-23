@@ -27,9 +27,14 @@ nav_exclude:                                            # The following paths ar
   - pages/code-snippets.md
   - pages/2024.md
   - pages/investing.md
-  - pages/object-oriented-python.md
+  - pages/algorithms-and-data-structures.md
+  - pages/beautiful-questions.md
   - pages/cloud-infrastructure.md
-
+  - pages/object-oriented-python.md
+  - pages/deep-learning.md
+  - pages/funny-stories.md
+  - pages/machine-learning.md
+  - pages/philosophy.md
 
 
 ### Author Info ###
