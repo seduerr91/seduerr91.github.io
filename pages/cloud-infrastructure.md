@@ -6,7 +6,6 @@ color: danger
 description: A modern cloud infrastructure
 ---
 
-
 ## Tooling to set up Kubernetes in AWS - Bamberg
 
 Brennerstr. | AWS Control Plane Types:
