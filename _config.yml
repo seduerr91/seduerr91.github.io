@@ -27,6 +27,8 @@ nav_exclude:                                            # The following paths ar
   - pages/code-snippets.md
   - pages/2024.md
   - pages/investing.md
+  - pages/object-oriented-python.md
+  - pages/cloud-infrastructure.md 
 
 
 
