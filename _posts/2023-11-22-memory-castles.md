@@ -14,16 +14,16 @@ Each of us has the power to enhance our memory by constructing elaborate virtual
 
 Imagine standing at the entrance of your mind's castle. With every step you take, you embark on a journey along a path you've uniquely designed, passing through rooms dedicated to specific topics. Let's take a walk through some of my memory castles:
 
-- [Cloud Infrastructure](/pages/castles/cloud-infrastructure.md) in the
-- [Object Oriented Development in Python](/pages/castles/object-oriented-python.md) through beautiful Wuerzburg.
-- [Machine Learning](/pages/castles/machine-learning.md) in our wonderful flat in Schottenfeldgasse 55, 1070 Vienna.
-- [Software Philosophy](/pages/castles/software-philosophy.md) strolling through Seattle, WA.
-- [Algorithms and Data Structures](/pages/castles/algorithms-and-data-structures.md) through the most liveable city of Vienna, Austria.
-- [Deep Learning Concepts](/pages/castles/deep-learning.md) in 
-- [Beautiful Questions](/pages/castles/beautiful-questions.md) in 
-- [Philosophical Concepts I live after](/pages/castles/philosophy.md)
-- [Golang Syntax](/pages/castles/golang.md) from our home in Snoqualmie the Ridge to Bellevue, WA.
-- [Funny Stories of my Life](/pages/castles/funny-stories.md) in.
+- [Cloud Infrastructure](/pages/cloud-infrastructure) in the
+- [Object Oriented Development in Python](/pages/object-oriented-python) through beautiful Wuerzburg.
+- [Machine Learning](/pages/machine-learning) in our wonderful flat in Schottenfeldgasse 55, 1070 Vienna.
+- [Software Philosophy](/pages/software-philosophy) strolling through Seattle, WA.
+- [Algorithms and Data Structures](/pages/algorithms-and-data-structures) through the most liveable city of Vienna, Austria.
+- [Deep Learning Concepts](/pages/deep-learning) in 
+- [Beautiful Questions](/pages/beautiful-questions) in 
+- [Philosophical Concepts I live after](/pages/philosophy)
+- [Golang Syntax](/pages/golang) from our home in Snoqualmie the Ridge to Bellevue, WA.
+- [Funny Stories of my Life](/pages/funny-stories) in.
 
 ### Conclusion: Your Mind Holds Limitless Estate
 
