@@ -1,7 +1,7 @@
 ---
 title: Unlocking the Secrets of the Memory Palace
 tags: [Memory, Knowledge Canon, Learning, Lifelong]
-description: My memories forever.
+description: "Moonwalking with Einstein" by Joshua Foer explores the powerful mnemonic device known as the "method of loci" or the memory palace technique. By constructing elaborate, imaginary structures within our minds, filled with rooms and pathways that correspond to different pieces of information, individuals can greatly enhance their ability to memorize vast amounts of data.
 style: fill
 color: success
 ---
@@ -14,8 +14,11 @@ Each of us has the power to enhance our memory by constructing elaborate virtual
 
 Imagine standing at the entrance of your mind's castle. With every step you take, you embark on a journey along a path you've uniquely designed, passing through rooms dedicated to specific topics. Let's take a walk through some of my memory castles:
 
-- [Cloud Infrastructure](/pages/cloud-infrastructure) in the
+- [Cloud Infrastructure](/pages/cloud-infrastructure) in the amazing town of Bamberg.
 - [Object Oriented Development in Python](/pages/object-oriented-python) through beautiful Wuerzburg.
+
+To Do
+
 - [Machine Learning](/pages/machine-learning) in our wonderful flat in Schottenfeldgasse 55, 1070 Vienna.
 - [Software Philosophy](/pages/software-philosophy) strolling through Seattle, WA.
 - [Algorithms and Data Structures](/pages/algorithms-and-data-structures) through the most liveable city of Vienna, Austria.
