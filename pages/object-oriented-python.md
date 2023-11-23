@@ -24,7 +24,7 @@ description: Walking through Wuerzburg
 - Busbf | Multiple Inheritance: the son has his mother's eyes and his dad's nose; Python resolves conflicts with method order resolution (MRO)
 - BF | 4 + 1 View Technique:
 - Vorplatz | Context view: describes actors/systems that use tool
-    - Anzeigen | Logical view: data entities, static attributes and relationships (heart of it :))
+    - Anzeigen | Logical view: data entities, static attributes and relationships (heart of it :)
     - Automaten | Process view: how data is processed in activity or sequence diagram
     - Hallway | Development view: code components to be build & relations amongst those
     - Elevator | Physical view: cloud, deployment and integration details
