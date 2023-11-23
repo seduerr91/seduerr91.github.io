@@ -183,7 +183,7 @@ class EmailableContact(Contact, MailSender): pass  	# this is multiple inheritan
     - immutable sequence of unicode chars
     - encode chars to create bytes, decode bytes to recover chars
     - format strings with f-strings f"hello {name[0]}" # can contain vars or even code
-    - escape braces by using them twice "{{" will format to "{"
+    - escape braces by using them twice will format to one
 - JuliusSpital | Sets: represent unordered group of unique items, incredibly efficient for uniqueness
     - purpose: identify things that are in set or not
     - method: union | (if in either, duplicates are added once), intersection & (if in both), summetric_difference ^ (in one or the other but not both)
