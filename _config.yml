@@ -17,24 +17,21 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
-  - pages/karenz.md
-  - pages/job-description.md
-  - pages/30.md
-  - pages/biz.md
   - pages/blogideas.md
-  - pages/books.md
-  - pages/mental-castles.md
-  - pages/code-snippets.md
-  - pages/2024.md
-  - pages/investing.md
-  - pages/algorithms-and-data-structures.md
-  - pages/beautiful-questions.md
-  - pages/cloud-infrastructure.md
-  - pages/object-oriented-python.md
-  - pages/deep-learning.md
-  - pages/funny-stories.md
-  - pages/machine-learning.md
-  - pages/philosophy.md
+  - pages/hidden-2024.md
+  - pages/hidden-investing.md
+  - pages/castle-mental-castles.md
+  - pages/castle-algorithms-and-data-structures.md
+  - pages/castle-beautiful-questions.md
+  - pages/castle-cloud-infrastructure.md
+  - pages/castle-object-oriented-python.md
+  - pages/castle-deep-learning.md
+  - pages/castle-funny-stories.md
+  - pages/castle-machine-learning.md
+  - pages/castle-philosophy.md
+  - pages/castle-software-philosophy.md
+  - pages/castle-regex.md
+  - pages/castle-clean-code.md
 
 
 ### Author Info ###
