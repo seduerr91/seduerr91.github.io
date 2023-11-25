@@ -14,19 +14,26 @@ Each of us has the power to enhance our memory by constructing elaborate virtual
 
 Imagine standing at the entrance of your mind's castle. With every step you take, you embark on a journey along a path you've uniquely designed, passing through rooms dedicated to specific topics. Let's take a walk through some of my memory castles:
 
-- [Cloud Infrastructure](/pages/cloud-infrastructure) in the amazing town of Bamberg.
-- [Object Oriented Development in Python](/pages/object-oriented-python) through beautiful Wuerzburg.
+#### Engineering
 
-To Do
+- [Object Oriented Development in Python](/pages/castle-object-oriented-python): Cycling through beautiful Wuerzburg.
+- [Algorithms and Data Structures](/pages/algorithms-and-data-structures): A stroll through the most liveable city of Vienna, Austria.
+- [Machine Learning](/pages/castle-machine-learning) Memories of a great home in Schottenfeldgasse 55, 1070 Vienna.
+- [Deep Learning Concepts](/pages/castle-deep-learning): Deep appreciation for my parents home in Eichelsee.
+- [Golang Syntax](/pages/castle-golang) A drive from our home in Snoqualmie the Ridge to Bellevue, WA.
+- [Cloud Infrastructure](/pages/castle-cloud-infrastructure): Discovering the amazing town of Bamberg.
+- [Architectural Principles](pages/castle-architectural-principles): Getting to Pickleball in our Ridge Community Park.
 
-- [Machine Learning](/pages/machine-learning) in our wonderful flat in Schottenfeldgasse 55, 1070 Vienna.
-- [Software Philosophy](/pages/software-philosophy) strolling through Seattle, WA.
-- [Algorithms and Data Structures](/pages/algorithms-and-data-structures) through the most liveable city of Vienna, Austria.
-- [Deep Learning Concepts](/pages/deep-learning) in 
-- [Beautiful Questions](/pages/beautiful-questions) in 
-- [Philosophical Concepts I live after](/pages/philosophy)
-- [Golang Syntax](/pages/golang) from our home in Snoqualmie the Ridge to Bellevue, WA.
-- [Funny Stories of my Life](/pages/funny-stories) in.
+#### Concepts for Life
+
+- [Beautiful Questions](/pages/castle-beautiful-questions): Walking the cosmopolitan city of Hong Kong.
+
+## Open 
+
+- [Software Philosophy](/pages/castle-software-philosophy) strolling through Seattle, WA.
+- [Philosophies that molded me](/pages/castle-philosophy) in select places I did visit in my life.
+- [Funny Stories of my Life](/pages/castle-funny-stories) in Dublin, Ireland.
+
 
 ### Conclusion: Your Mind Holds Limitless Estate
 
