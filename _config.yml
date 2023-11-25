@@ -34,6 +34,7 @@ nav_exclude:                                            # The following paths ar
   - pages/castle-clean-code.md
   - pages/castle-golang.md
   - pages/castle-architectural-principles.md
+  - pages/castle-personal-mba.md
 
 
 
