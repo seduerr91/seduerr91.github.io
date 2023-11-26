@@ -354,19 +354,75 @@ Stimulus -> Freedom to choose how to respond -> Response
 
 ## Secrets of the Millionaire Mind
 
-
+- Rich people think big, poor people think small.
+  - Poor people go to different super markets to find the best deals.
+  - Rich people value themselves $1000 per hour, and cultivate that.
+- Rich people focus oon opportunities, poor people focus on obstacles.
+  - Poor: I would start that company but there is a lot of competition.
+  - Rich: Competition acknowledged but is there unique value to create?
+- Rich people admire other rich people, poor people resent rich and successful people.
+  - Poor: He had to kill many babies for that car.
+  - Rich: I can have one, too. 
+- Rich people are willing to promote themselves and their value. Poor people think negatively about selling and promotion. 
+- Rich people choose to get paid based on results, poor people choose to get paid on time.
+- Rich people manage their money well, poor people mismanage their money well.
+- Rich people have their money work hard for them, poor people work hard for their money.
+- Rich people constantly learn and grow, poor people already now.
 
 ## The Millionaire Fastlane
+
+- The side walk: living from paycheck to paycheck (match income w/ expense), can have huge income but has no financial intelligence. Screwed if they lose their job.
+- The slow lane: Go to school, get a decent job, invest in stocks, with 65 you can be wealthy, sell soul for 40 years. 
+- The fast lane: the more value you give to the world, the richer you will become. 
+  - Value * people = money.
+  - Most people cannot provide value.
+
 ## The Science of Persuasion
+
+- Reciprocity: Obligation to give when you receive.
+- Scarcity: People want more of those things they have less of.
+- Authority: People will follow credible knowledge experts.
+- Consistency: Looking for and asking for commitments that can be made.
+- Liking: Similarity, compliments, cooperation.
+- Consensus: People will look to take actions of others to determine their own.
+
 ## Contagious
+
+- Social Currency: people share what makes them look good (post fancy food on Social Media)
+- Triggers: How are we reminded of the product? 
+  - A song named Friday, can be played every Friday.
+  - Kitkats sales dropped so they linked it to coffee, although it tastes better with hot chocolate.
+- Emotion: strong emotion = shares, but do not use negative emotions.
+- Public: What is everybody else doing?
+  - Neighbors drive Tesla, we gotta, too.
+  - Apple logo was upside down, but public image was more important.
+- Practical value: Is it really helpful? 
+- Stories: Blendtec in Youtube series "Will it blend?" can't tell story without it.
+
 ## Predictably Irrational
+
+- The truth about relativity: everything is relative even if it should not be.
+  - Only a breadmaker for $99 didn't sell.
+  - Adding another one for $199 made the first one sell, because people could relate to it. We don't know how much things should cost.
+  - Restaurants usually offer $10, $35 and $70 wine, and most people pick the $35 one.
+- The cost of zero cost: 
+  - Free shipping of Amazon - people derive utility due to loss aversion.
+  - "Free stuff" has downside due to system one.
+  - People wait for free ice-cream - well, they pay with their time.
+- The cost of social norms: rather meet market norms ($200/h) or social norms (appreciation)
+  - car is broken: offer $5 to help but they would get offended.
+  - people confuse market norms with social norms.
+  - lawyers were asked to work for $30/h and rejected it, but they worked for free. 
+- The problem of procastination and self-control:
+  - Why we can't make ourselves do, what we need to do.
+  - In a study: students were supposed to submit 3 papers at end of semester, or each after 4/8/12 weeks. The second approach was much more successful.
+  - Set artificial deadlines.
+  - Generate a drastic punishment => $500 to a charity you hate.
+
 ## The Paradox of Choice
-## Jab, Jab, Jab, Right Hook
-## The Selfish Gene
 
+- Choices should make you better of but they paralyze you.
+- Too many "breads" in store: you start to compare and people spend on average more time, get cognitively depleted.
+- Restaurants: Have many offers but 5 specials of the day that have the highest margins.
+- Improve life: Choose one breakfast combination, find one outfit. Make it easy.
 
-
-
-## Think and Grow Rich
-## Never Split the Difference
-## Rich Dad & Poor Dad
