@@ -23,9 +23,9 @@ Don't get an MBA for knowledge, that is all here.
 
 | Business Knowledge                                                | Places in Europe |
 | ----------------------------------------------------------------- | ---------------- |
-| [Leadership & Motivation](/pages/castle-leadership-motivation.md) | Bucharest        |
+| [Leadership & Motivation](/pages/castle-leadership-motivation.md) | London           |
 | [Investment Banking](/pages/castle-investment-banking.md)         | Paris            |
-| [Personal MBA](/pages/castle-personal-mba.md)                     | London           |
+| [Personal MBA](/pages/castle-personal-mba.md)                     | Budapest         |
 | [Never Split the Difference](/pages/castle-difference.md)         | Sofia            |
 | [Think Again](/pages/castle-think-again.md)                       | Bratislava       |
 
