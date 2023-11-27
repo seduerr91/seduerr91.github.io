@@ -70,9 +70,17 @@ description: Getting fit again.
 
 - Follow Coding Study Plan
 
-| Topic | Backtracing | Graphs | Advanced Graphs | 1-D Dynamic | 2-D Dynamic | Greedy | Intervals | Math | Bi Manipulation | Array & Hashing | Two Pointers | Sliding Window | Stack | Binary Search | Linked List | Trees | Tries | Heap / Prio Q |
-| ----- | ----------- | ------ | --------------- | ----------- | ----------- | ------ | --------- | ---- | --------------- | --------------- | ------------ | -------------- | ----- | ------------- | ----------- | ----- | ----- | ------------- |
-| Week  | 1           | 2      | 3               | 4           | 5           | 6      | 7         | 8    | 9               | 10              | 11           | 12             | 13    | 14            | 15          | 16    | 17    | 18            |
+| Topic           | Week | Topic           | Week |
+| --------------- | ---- | --------------- | ---- |
+| Backtracing     | 1    | Array & Hashing | 10   |
+| Graphs          | 2    | Two Pointers    | 11   |
+| Advanced Graphs | 3    | Sliding Window  | 12   |
+| 1-D Dynamic     | 4    | Stack           | 13   |
+| 2-D Dynamic     | 5    | Binary Search   | 14   |
+| Greedy          | 6    | Linked List     | 15   |
+| Intervals       | 7    | Trees           | 16   |
+| Math            | 8    | Tries           | 17   |
+| Bi Manipulation | 9    | Heap / Prio Q   | 18   |
 
 - Study [Mental Castles](/pages/castles) & get tested by Joy.
 - Conduct [Coding tasks](/posts/professional-coder.md).
