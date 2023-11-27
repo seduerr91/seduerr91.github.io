@@ -1,9 +1,6 @@
 ---
-title: Schedule 2024
-tags: [Health]
-style: fill
-color: danger
-description: Getting fit again.
+layout: page
+permalink: /2024.html
 ---
 
 ## Objectives 2024: Health 
