@@ -94,6 +94,6 @@ Every week I shall stick to this schedule, adapt when traveling.
 | Tuesday   | Run                       | Work    | Dancing with Joy            |
 | Wednesday | Workout                   | Work    | Meetups                     |
 | Thursday  | Run                       | Work    | Pickleball + Domestic Tasks |
-| Friday    | Workout                   | Work    | Hang with friends           |
+| Friday    | Workout                   | Work    | Yoga + Hang with friends    |
 | Saturday  | Hike or run or Pickleball | Study   | Hang with friends           |
 | Sunday    | Study                     | -       | Yoga with Joy               |
