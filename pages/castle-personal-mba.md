@@ -3,7 +3,7 @@ name: The Personal MBA
 tags: [Mental Castle]
 style: fill
 color: danger
-description: 
+description: Budapest
 ---
 
 - Value Creation:

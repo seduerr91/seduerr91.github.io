@@ -31,11 +31,11 @@ I took time to summarize the books that I consider the most valuable when it com
 
 #### Business
 
-- **Leadership & Motivation**: 
-- **Investment Banking**: 
-- **Personal MBA**: 
-- **Never Split the Difference**: 
-- **Think Again**: 
+- **Leadership & Motivation**: We will go on a run through Soviet-shaped Bucharest in Romania.
+- **Investment Banking**: Explore the beauties of the city of love, Paris.
+- **Personal MBA**: We'll need a lot of memories for this one, so Budapest, it will be.
+- **Never Split the Difference**: Sofia in Bulgaria has some beautiful memories to offer.
+- **Think Again**: Bratislava, Vienna's little sister, shows what makes a great employee and human.
 
 #### Humanities
 
