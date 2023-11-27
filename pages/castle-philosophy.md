@@ -6,7 +6,9 @@ color: danger
 description: 
 ---
 
-## Robert Greene - 48 Laws of Power
+Places I visited: 
+
+## `Jerusalem` Robert Greene - 48 Laws of Power
 
 A morning in Mauritius ... 
 
@@ -22,7 +24,7 @@ A morning in Mauritius ...
 - `Running`: Make your accomplishments seem effortless.
 - `Crying`: Never appear too perfect.
 
-## Billionaire Maxim
+## `Tel Aviv` Billionaire Maxim
 
 A walk in Eichelsee from our home to the Mayers via Waldstrasse.
 
@@ -37,7 +39,7 @@ A walk in Eichelsee from our home to the Mayers via Waldstrasse.
 - `Oliver`: Heaven on earth is a state, not a place.
 - `Mayers`: Tomorrow is a bonus, not a right.
 
-## Mental Math
+## `Beirut` Mental Math
 
 Memorizing numbers as names with Tony Marloshkovips.
 
@@ -54,7 +56,7 @@ Memorizing numbers as names with Tony Marloshkovips.
 | 9      | pub               | p,b     | coffee                |
 | 0      | sweet             | s,z     | Joy                   |
 
-## How to Stop Worrying and Start Living
+## `Cyprus` How to Stop Worrying and Start Living
 
 - What is the worst thing that can happen? 
   - Grades don't count that much
@@ -72,14 +74,14 @@ Memorizing numbers as names with Tony Marloshkovips.
   - gather a bunch of stuff like a house or a car but realize it will be worth a million
   - however, would you sell your leg for a billion?
 
-## Thinking Fast and Slow - Daniel Kahneman
+## `Istanbul` Thinking Fast and Slow - Daniel Kahneman
 
-#### Systems
+#### `` Systems
 
 - System 1: Fast, automatic thinking (lion-bird kills the kid) => stupid assumptions but allows us to run away.
 - System 2: Slow but logical.
 
-#### Biases and Fallacies
+#### `` Biases and Fallacies
 
 - Anchoring: is tallest redwood 180ft or 1200 ft? average guess is 282ft, respectively 844ft; we don't know what things shall cost (microwave mrsp)
 - Availability bias: don't follow mainstream media (they sell horror), almost non-existing probability can be present (plane crash)
@@ -93,7 +95,7 @@ Memorizing numbers as names with Tony Marloshkovips.
 - The halo effect: Rosy glasses, I like him and everything is correct. Two women commit same crime but one is beautiful. 
 - The hindsight bias: be an expert after an event has occurred, stock is going to rise/fall.
 
-## Flow: Psychology of Optimal Experience
+## `Sofia` Flow: Psychology of Optimal Experience
 
 - *"A person can make himself happy, or miserable, regardless of what is actually happening `outside` just by changing the contents of consciousness"*.
 - If you have a bigger house, you'd be happy but no! That is not how it works.
@@ -110,7 +112,7 @@ Memorizing numbers as names with Tony Marloshkovips.
 
 
 
-## How to Win Friends and Influence People
+## `Ohrid` How to Win Friends and Influence People
 
 - Become genuinely interested in other people: If you meet a painter ask what they paint. Most people wait creepily to voice their perspective. Stop that.
 - Show respect for the other man's opinion. Never tell a man he is wrong: Border discussion.
@@ -119,7 +121,7 @@ Memorizing numbers as names with Tony Marloshkovips.
 - If you are wrong, admit it quickly and emphatically: Mistake like driving too fast.
 - Make the other person feel important and do it sincerely: Thank you for doing your job.
 
-## How to be happy
+## `Athens` How to be happy
 
 *"The primary cause of unhappiness is never due to the situation but what we think of it"*, Eckhardt Tolle.
 
@@ -127,7 +129,7 @@ Memorizing numbers as names with Tony Marloshkovips.
 Stimulus -> Freedom to choose how to respond -> Response
 ```
 
-## The Way of the Superior Man
+## `Corfu` The Way of the Superior Man
 
 - Stop hoping for the completion of anything in life: Doing a Ph.D. for 4 years and wait until you are finished. To realize, that you will just do another job after. Pick a job you enjoy. Like engineering.
 - Don't get lost in tasks and duties: organize stuff, clean everything vs. pursuing your purpose. You don't wanna die and want them to say: They always cleaned everything.
@@ -139,7 +141,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - What she wants is not what she says: No = Yes.
 - You are responsible for the growth and intimacy: after a time you are losing attraction, that is normal. Hence, research, keep her interesting, hold her and lead her.
 
-## On the Shortness of Life - Seneca, the Younger
+## `Vlore` On the Shortness of Life - Seneca, the Younger
 
 - *"It is not that we have a short time to live but that we waste much of it. Life is long, and it's been given to us in generous measure for accomplishing the greatest things..."*
 - At the end of their life, most people complain about too little time in their life.
@@ -154,7 +156,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 
 - *You can always make another dollar, but you will never have another hour. Use your time.*
 
-## Start with Why
+## `Tirana` Start with Why
 
 - I hate reading & teachers can't inspire me <=> mentors can.
 - Teachers teach: 
@@ -167,7 +169,7 @@ Stimulus -> Freedom to choose how to respond -> Response
   - Then, pick up a book.
 - Frequently, companies advertise product specs & how well they work but they should advertise: "We value efficiency as much as you do" coz "People don't buy what you do; they buy why you do it."
 
-## The 7 Habits of Highly Effective People
+## `Budva` The 7 Habits of Highly Effective People
 
 - Be proactive: focus on things you can change, e.g. not inflation.
 - Begin with the end in mind: You are at your funeral.
@@ -177,7 +179,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Synergize: Picking apples from a tree works better together.
 - Sharpen the saw: Cut the tree down faster with a saw.
 
-## The Art of War
+## `Kotor` The Art of War
 
 - Know your enemy and thyself and in a hundred battles you will never be in peril.
   - Business is modern day warfare.
@@ -188,14 +190,14 @@ Stimulus -> Freedom to choose how to respond -> Response
   - Everybody is obsessed with suing. 
   - Picking up the phone costs nothing, fighting does. Particularly time and energy.
 
-## Man's Search for Meaning
+## `Mostar` Man's Search for Meaning
 
 - The pursuit of happiness: Will Smith wants to become a stock broker, i.e. Hollywood's version of happiness.
 - Happiness cannot be pursued, it is a birth certificate. Everybody has it. We just have to find it.
 - Bus vs. Ferrari: It is only a different experience. However, if you are happy in the bus, you will not be happy in the Ferrari.
 - If something "bad" happens we get pissed off, but we do not have to. It is always a chance to practice virtue.
 
-## Stoicism
+## `Split` Stoicism
 
 - If you are renting a house, and you are told that rent will increase in a year, reaction will be okay. If it happens unplanned than most people get very negative: expectations are wrong.
 - *"If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it.; and this you have the power to revoke at any moment."*
@@ -203,7 +205,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - *"When another one blames you or hates you, or people voice similar criticism, go to their souls, penetrate insinde and see what sort of people they are. You will realize that there is no need to be racked with anxiety that they should hold any particular opinion about you."* => Bill Gates/Elon Musk won't call you a loser, but you are just negative if your life sucks. 
 - *"How much time he gains who does not look to see what his neighbor says or does or thinks but only at what he does himself, to make it just and holy."* => My grandma was always super negative, but was all that she did alright?
 
-## The Power of Now
+## `Zadar` The Power of Now
 
 - Most people wake up with negative thoughts, although those won't happen or can be overcome (a C grade does not mean that you do not not have a future)
 - If you are not aware of your thinking, then your brain can be quite dangerous
@@ -217,7 +219,7 @@ Stimulus -> Freedom to choose how to respond -> Response
   - happiness is not in the peak (Helicopter could just drop you off; or wandering around the mountain).
   - happiness is constantly climbing towards your goals.
 
-## Antifragile
+## `Zagreb` Antifragile
 
 - Box that says fragile: what is the opposite? Most people say robust, i.e. neutral but it is not
 - It is becoming stronger: The more you are being kicked around the more you turn into a diamond
@@ -225,7 +227,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Do not be a masochist, but in the gym you also train to get better, so why not in life? 
 - Be anti-fragile by practicing your virtue, intellect and relationships.
 
-## The Four Agreements
+## `Ljubljana` The Four Agreements
 
 - Be impeccable with your word.
   - Don't critique or complain.
@@ -239,7 +241,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Always do your best.
   - No one abuses us more than we abuse ourselves.
 
-## The War of Art
+## `Trieste` The War of Art
 
 - The biggest lie: "I am not scared!". 
   - Go to a random girl in a bar and ask her. 
@@ -248,7 +250,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - People are scared all the time: Henry Fonder threw up every time before a broadway show.
 - Be Professional: I am afraid, what needs to be done. Grow: The more, the better.
 
-## The 80/20 Principle
+## `Rimini` The 80/20 Principle
 
 - About 205 of the beer drinkers, consume 80% of all beer.
 - Minority of causes impacts majority of effects.
@@ -256,7 +258,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Social interactions: two or three people account for good times. 
 - Relationship: guy spends five hours but he focuses on TV & facebook vs. making it one hour about here.
 
-## The Prince
+## `Florence` The Prince
 
 - The book is information which is not inherently wrong or right, it is, however, powerful so it is good to be aware but not live all your relationships in a Macchiavellian style.
 - "*How we live is so different from how we ought to live that he who studies what ought to be done rather than what is done will learn the way to his downfall rather than to his preservation.*"
@@ -276,7 +278,7 @@ Stimulus -> Freedom to choose how to respond -> Response
   - Cesare Borgia was known for using force. People were scared when he arrested a lot of them. Then, he was cut in half on the market square, and people were not scared anymore. The winner was the prince.
   - Youtube channels with bad ads: I am really honest with you... really?
 
-## Learned Optimism
+## `Milan` Learned Optimism
 
 - Dog 1 can escape shocks, dog 2 cannot (pavlov conditioning).
 - New environment: both can escape, dog 2 will not. -> learned helplessness.
@@ -285,7 +287,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Benefits of pessimists: likely to suffer from depression, not enjoying life, likely to give up.
 - It really depends on the mindset. However, balance optimism with pessimism to not become delusional.
 
-## The Six Pillars of Self-Esteem
+## `Lyon` The Six Pillars of Self-Esteem
 
 - The practice of living consciously: being unconscious vs. being present to the moment.
 - The practice of self-acceptance: improve what you can, accept what you cannot.
@@ -294,7 +296,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - The practice of living purposefully: Entrepreneur has higher self-esteem because he has a purpose.
 - The practice of personal integrity: act against rules that you don't believe in, your inner voice matters the most.
 
-## Outliers
+## `Tours` Outliers
 
 - Teacher material (4000h), good (8000h), world class (10000h)
 - Hours of practice set you apart.
@@ -303,7 +305,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - As long as you are good enough, deliberate practice is what sets you apart. => solely focus on getting better at your craft.
 
 
-## The 4 Hour Work Week
+## `Nantes` The 4 Hour Work Week
 
 - Is it possible to work for four hours? Yes. Can most people do it? No.
 - Key is in 
@@ -311,7 +313,7 @@ Stimulus -> Freedom to choose how to respond -> Response
   - "outsourcing": Use GPT-4 as much as possible.
   - "elimination": Sharpen the saw, remove long processes first.
 
-## The Slight Edge
+## `Saint-Malo` The Slight Edge
 
 - You have the choice between a lemonade and a glass of water. Most people pick the soda, because you are not going to wake up unhealthy tomorrow. 
 - People often believe: "It matters to do the important things right", so we eat kale one day.
@@ -320,7 +322,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Have a vision of who you want to b e in a year. 
 - But then how many times is the answer no to health? - Take responsibility: choose bananas over cookies.
 
-## The One Thing
+## `PAris` The One Thing
 
 - A familiar strategy: You read about personal development and realize you suck -> "I can improve" -> "I want to improve everything": Wake up at 5am, go to gym, go to MMA, write a book.
 - Outcomes: 
@@ -329,7 +331,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - The one thing, every successful person focuses on one thing: basketball, piano, or NLP.
 - Forget balance - you cannot be balanced. Do focus on one thing only.
 
-## Mastery
+## `Brussels` Mastery
 
 - Gym: No more strong progress after some time. 
 - Reason: You get better every day, but improvements diminish in returns.
@@ -343,7 +345,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Awake the dimensional mind: conventional mind (skill), dimensional mind (creativity) = mastery
 - "The intuitive mind is a sacked gift and the rational mind is a faithful servant. We have created a society that honors the servant and has forgotten the gift.", Einstein.
 
-## The Magic of Thinking Big
+## `Antwerp` The Magic of Thinking Big
 
 - Find a decent job - just a decent job - works for most people.
 - Most people cannot think big -> however, that is the first step (be millionaire by mid 20s). Don't set finish line a hundred meter apart, work hard / smart.
@@ -352,7 +354,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Henry Ford: *"The man who can, and the man who cannot are both right."*
 - Excusitis: If you know all about success, why are you not? Don't be pitied. That is too easy.
 
-## Secrets of the Millionaire Mind
+## `Tilburg` Secrets of the Millionaire Mind
 
 - Rich people think big, poor people think small.
   - Poor people go to different super markets to find the best deals.
@@ -369,7 +371,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Rich people have their money work hard for them, poor people work hard for their money.
 - Rich people constantly learn and grow, poor people already now.
 
-## The Millionaire Fastlane
+## `Amsterdam` The Millionaire Fastlane
 
 - The side walk: living from paycheck to paycheck (match income w/ expense), can have huge income but has no financial intelligence. Screwed if they lose their job.
 - The slow lane: Go to school, get a decent job, invest in stocks, with 65 you can be wealthy, sell soul for 40 years. 
@@ -377,7 +379,7 @@ Stimulus -> Freedom to choose how to respond -> Response
   - Value * people = money.
   - Most people cannot provide value.
 
-## The Science of Persuasion
+## `Bremen` The Science of Persuasion
 
 - Reciprocity: Obligation to give when you receive.
 - Scarcity: People want more of those things they have less of.
@@ -386,7 +388,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Liking: Similarity, compliments, cooperation.
 - Consensus: People will look to take actions of others to determine their own.
 
-## Contagious
+## `Hamburg` Contagious
 
 - Social Currency: people share what makes them look good (post fancy food on Social Media)
 - Triggers: How are we reminded of the product? 
@@ -399,7 +401,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Practical value: Is it really helpful? 
 - Stories: Blendtec in Youtube series "Will it blend?" can't tell story without it.
 
-## Predictably Irrational
+## `Copenhagen` Predictably Irrational
 
 - The truth about relativity: everything is relative even if it should not be.
   - Only a breadmaker for $99 didn't sell.
@@ -419,10 +421,9 @@ Stimulus -> Freedom to choose how to respond -> Response
   - Set artificial deadlines.
   - Generate a drastic punishment => $500 to a charity you hate.
 
-## The Paradox of Choice
+## `Gothenburg` The Paradox of Choice
 
 - Choices should make you better of but they paralyze you.
 - Too many "breads" in store: you start to compare and people spend on average more time, get cognitively depleted.
 - Restaurants: Have many offers but 5 specials of the day that have the highest margins.
 - Improve life: Choose one breakfast combination, find one outfit. Make it easy.
-
