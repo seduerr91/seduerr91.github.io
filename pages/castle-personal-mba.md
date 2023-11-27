@@ -6,6 +6,8 @@ color: danger
 description: Budapest
 ---
 
+Budapesti
+
 - Value Creation:
   - Identifying and fixing unmet needs is the essence of value creation, with the potential to be highly profitable.
   - Every successful business is built on the concept of creating something that enhances people's lives or solves a problem.

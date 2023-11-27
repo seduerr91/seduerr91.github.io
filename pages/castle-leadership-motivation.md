@@ -4,9 +4,10 @@ title: Leadership & Motivation
 tags: [Mental Castle]
 style: fill
 color: danger
-description: 
+description: London
 ---
 
+London
 
 ## Joseph Nye - The Powers to Lead
 

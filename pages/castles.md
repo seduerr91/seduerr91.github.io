@@ -23,10 +23,10 @@ Don't get an MBA for knowledge, that is all here.
 
 | Business Knowledge                                                | Places in Europe |
 | ----------------------------------------------------------------- | ---------------- |
+| [Personal MBA](/pages/castle-personal-mba.md)                     | Budapest         |
 | [Leadership & Motivation](/pages/castle-leadership-motivation.md) | London           |
 | [Investment Banking](/pages/castle-investment-banking.md)         | Paris            |
-| [Personal MBA](/pages/castle-personal-mba.md)                     | Budapest         |
-| [Never Split the Difference](/pages/castle-difference.md)         | Sofia            |
+| [Never Split the Difference](/pages/castle-difference.md)         | Bucharesti       |
 | [Think Again](/pages/castle-think-again.md)                       | Bratislava       |
 
 Humans are so complex, let us understand them better.
@@ -35,6 +35,6 @@ Humans are so complex, let us understand them better.
 
 | Humanities Knowledge                                     | Places Outside Europe |
 | -------------------------------------------------------- | --------------------- |
-| [Philosophies](/pages/castle-philosophy)                 | South American Places |
+| [Philosophies](/pages/castle-philosophy)                 | Places I stayed at    |
 | [Beautiful Questions](/pages/castle-beautiful-questions) | City of Hong Kong     |
 | [Funny Stories](/pages/castle-funny-stories)             | City of Dublin        |
