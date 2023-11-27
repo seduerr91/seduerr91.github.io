@@ -10,18 +10,18 @@ description: Getting fit again.
 
 1. Spend time with my Joy and Friends.
 2. Weight less than 161 lbs/73 kg.
-3. Passing [posture test](https://www.csiortho.com/blog/2018/november/take-our-posture-test-how-to-tell-if-you-have-ba/#:~:text=Have%20someone%20measure%20the%20space,posture%20and%20a%20curved%20spine.): 
-4. Be a public voice in NLP: 
+3. Continuously pass the [posture test](https://www.csiortho.com/blog/2018/november/take-our-posture-test-how-to-tell-if-you-have-ba/#:~:text=Have%20someone%20measure%20the%20space,posture%20and%20a%20curved%20spine.).
+4. Be a public voice in NLP.
 5. Get into Hero Company.
 
-## 1. Joy and My Friends
+### 1. Joy and My Friends
 
-- Dance with Joy
-- Do Yoga with Joy
-- Cook with Joy
-- [Activities](/posts/activities.md) with Friends
+- Dance with Joy.
+- Do Yoga with Joy.
+- Cook healthy with Joy.
+- [Activities](/posts/activities.md) with Friends.
 
-## 2. Achieving my Dream Weight
+### 2. Achieving my Dream Weight
 
 - Take weight weekly Sunday afternoon.
 - Run with SLU runners, NBBR, Issaquah Alp Runners, Green Lake Runners.
@@ -34,11 +34,11 @@ description: Getting fit again.
 - Play Pickle Ball. 
 - Dance with Joy.
 - Hikes: In the North Cascades.
-- Gluten-free nutrition.
+- Healthy, gluten-free nutrition.
 - Drinks only on Friday and Saturday (only gluten-free).
 - Healthy nutrition & eat out less than 3x per week.
 
-## 3. Attaining a Better Posture
+### 3. Attaining a Better Posture
 
 - Measure posture weekly: 
   - Stand against the wall, with the back of head touching it. Place heels 6 inches out from the wall.
@@ -56,9 +56,9 @@ description: Getting fit again.
   7. Pigeon Stretch (30-45s)
   8. Glute Bridges (2x 10-15 reps)
 - Yoga 2x per week.
-- Workouts focused once back 1 per week.
+- Dedicated workout focused one the back once per week.
 
-## 4. Be A Public Voice in NLP
+### 4. Be A Public Voice in NLP
 
 - Start the NLP walk.
 - Talk at 2 conferences
@@ -66,8 +66,10 @@ description: Getting fit again.
 - Post 12 high value posts.
 - Post 52 linkedin messages.
 
-## 5. Get into Hero Company
+### 5. Get into Hero Company
 
+- Study [Mental Castles](/pages/castles) & get tested by Joy.
+- Conduct [Coding tasks](/posts/professional-coder.md).
 - Follow Coding Study Plan
 
 | Topic           | Week | Topic           | Week |
@@ -82,19 +84,16 @@ description: Getting fit again.
 | Math            | 8    | Tries           | 17   |
 | Bi Manipulation | 9    | Heap / Prio Q   | 18   |
 
-- Study [Mental Castles](/pages/castles) & get tested by Joy.
-- Conduct [Coding tasks](/posts/professional-coder.md).
-
 ## Resulting Schedule
 
-Every week I shall stick to this schedule, except for travels. 
+Every week I shall stick to this schedule, adapt when traveling.
 
 | Day       | Morning                   | Daytime | Evening                     |
 | --------- | ------------------------- | ------- | --------------------------- |
-| Monday    | Workout                   | Work    | Pickleball                  |
-| Tuesday   | Run                       | Work    | Dancing                     |
+| Monday    | Workout                   | Work    | Pickleball + Yoga           |
+| Tuesday   | Run                       | Work    | Dancing with Joy            |
 | Wednesday | Workout                   | Work    | Meetups                     |
 | Thursday  | Run                       | Work    | Pickleball + Domestic Tasks |
-| Friday    | Workout                   | Work    | Revel with friends          |
-| Saturday  | Hike or run or Pickleball | Study   | Revel with friends          |
+| Friday    | Workout                   | Work    | Hang with friends           |
+| Saturday  | Hike or run or Pickleball | Study   | Hang with friends           |
 | Sunday    | Study                     | -       | Yoga with Joy               |
