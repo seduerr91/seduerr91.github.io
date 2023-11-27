@@ -21,19 +21,7 @@ description: Getting fit again.
 - Cook with Joy
 - [Activities](/posts/activities.md) with Friends
 
-## 2. My Weekly Schedule
-
-| Day       | Morning                   | Daytime | Evening                     |
-| --------- | ------------------------- | ------- | --------------------------- |
-| Monday    | Workout                   | Work    | Pickleball                  |
-| Tuesday   | Run                       | Work    | Dancing                     |
-| Wednesday | Workout                   | Work    | Meetups                     |
-| Thursday  | Run                       | Work    | Pickleball + Domestic Tasks |
-| Friday    | Workout                   | Work    | Revel with friends          |
-| Saturday  | Hike or run or Pickleball | Study   | Revel with friends          |
-| Sunday    | Study                     | -       | Yoga with Joy               |
-
-## 3. Achieving my Dream Weight Weight
+## 2. Achieving my Dream Weight
 
 - Take weight weekly Sunday afternoon.
 - Run with SLU runners, NBBR, Issaquah Alp Runners, Green Lake Runners.
@@ -50,7 +38,7 @@ description: Getting fit again.
 - Drinks only on Friday and Saturday (only gluten-free).
 - Healthy nutrition & eat out less than 3x per week.
 
-## 4. Attaining a Better Posture
+## 3. Attaining a Better Posture
 
 - Measure posture weekly: 
   - Stand against the wall, with the back of head touching it. Place heels 6 inches out from the wall.
@@ -88,3 +76,17 @@ description: Getting fit again.
 
 - Study [Mental Castles](/pages/castles) & get tested by Joy.
 - Conduct [Coding tasks](/posts/professional-coder.md).
+
+## Resulting Schedule
+
+Every week I shall stick to this schedule, except for travels. 
+
+| Day       | Morning                   | Daytime | Evening                     |
+| --------- | ------------------------- | ------- | --------------------------- |
+| Monday    | Workout                   | Work    | Pickleball                  |
+| Tuesday   | Run                       | Work    | Dancing                     |
+| Wednesday | Workout                   | Work    | Meetups                     |
+| Thursday  | Run                       | Work    | Pickleball + Domestic Tasks |
+| Friday    | Workout                   | Work    | Revel with friends          |
+| Saturday  | Hike or run or Pickleball | Study   | Revel with friends          |
+| Sunday    | Study                     | -       | Yoga with Joy               |
