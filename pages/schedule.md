@@ -19,7 +19,7 @@ description: Getting fit again.
 - Dance with Joy.
 - Do Yoga with Joy.
 - Cook healthy with Joy.
-- [Activities](/posts/activities.md) with Friends.
+- [Activities](/blog/activities) with Friends.
 
 ### 2. Achieving my Dream Weight
 
@@ -69,7 +69,7 @@ description: Getting fit again.
 ### 5. Get into Hero Company
 
 - Study [Mental Castles](/pages/castles) & get tested by Joy.
-- Conduct [Coding tasks](/posts/professional-coder.md).
+- Conduct [Coding tasks](/posts/professional-coder).
 - Follow Coding Study Plan
 
 | Topic           | Week | Topic           | Week |
