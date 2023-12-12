@@ -4,7 +4,7 @@ title: Investment Banking
 tags: [Mental Castle]
 style: fill
 color: danger
-description: 
+description: Paris
 ---
 
 ## Investment Banking

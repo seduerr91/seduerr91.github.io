@@ -3,7 +3,7 @@ title: Architectural Design
 tags: [Mental Castle]
 style: fill
 color: danger
-description: Architectural design patterns while going to the Tennis Courts
+description: Pickleball in Snoq Ridge
 ---
 
 ## Architectural Design - Walk to Tennis Courts on Snoqualmie Ridge

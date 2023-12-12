@@ -3,7 +3,7 @@ title: Deep Learning Terms
 tags: [Mental Castle]
 style: fill
 color: danger
-description: Walk through the cozy home of my parents in Brueckenstrasse in Eichelsee.
+description: My parents home.
 ---
 
 - `Enter property`: Transfer learning: take a great model & retrain end layers to fit it to own needs

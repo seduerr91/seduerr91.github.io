@@ -3,7 +3,7 @@ title: Cloud Infrastructure
 tags: [Mental Castle]
 style: fill
 color: danger
-description: A modern cloud infrastructure
+description: A walk through Bamberg
 ---
 
 ## Tooling to set up Kubernetes in AWS

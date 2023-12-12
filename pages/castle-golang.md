@@ -3,7 +3,7 @@ title: Golang Basics
 tags: [Mental Castle]
 style: fill
 color: danger
-description: Everything you need to know about Golang
+description: Snoqualmie to work
 ---
 
 Drive from Snoqualmie Home in Woodlands to Bellevue.

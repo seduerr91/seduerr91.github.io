@@ -3,7 +3,7 @@ title: Never Split the Difference
 tags: [Mental Castle]
 style: fill
 color: danger
-description: 
+description: Bucuresti
 ---
 
 Action Items from "Never Split the Difference" Summary in Bucuresti.
