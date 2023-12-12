@@ -3,7 +3,7 @@ title: Machine Learning
 tags: [Mental Castle]
 style: fill
 color: danger
-description: Mental castle of Machine Learning inpired by the book Product Analytics as a walk through my former home in Vienna.
+description: Schottenfeldgasse 55-3
 ---
 
 A walk through Schottenfeldgasse 55/3 in the name of Machine Learning.
