@@ -10,19 +10,17 @@ Places I visited:
 
 ## `Jerusalem` Robert Greene - 48 Laws of Power
 
-A morning in Mauritius ... 
-
-- `Sunshine in Room`: Never outshine your master.
-- `Brush teeth`: Win through actions never argument.
-- `Evelyn`: Infection: Avoid the unhappy.
-- `Vladimir`: When asking for help appeal to people's self-interest.
-- `Teddy`: Use absence to increase respect and honor.
-- `Arnold`: Think as you like but behave like others.
-- `Krzysiek`: Play to people's fantasies.
-- `Sports cloth`: Be royal in your own fashion.
-- `Neighbor`: Preach the need for change but never reform too much at once.
-- `Running`: Make your accomplishments seem effortless.
-- `Crying`: Never appear too perfect.
+- Never outshine your master.
+- Win through actions never argument.
+- Infection: Avoid the unhappy.
+- When asking for help appeal to people's self-interest.
+- Use absence to increase respect and honor.
+- Think as you like but behave like others.
+- Play to people's fantasies.
+- Be royal in your own fashion.
+- Preach the need for change but never reform too much at once.
+- Make your accomplishments seem effortless.
+- Never appear too perfect.
 
 ## `Tel Aviv` Billionaire Maxim
 
@@ -322,7 +320,7 @@ Stimulus -> Freedom to choose how to respond -> Response
 - Have a vision of who you want to b e in a year. 
 - But then how many times is the answer no to health? - Take responsibility: choose bananas over cookies.
 
-## `PAris` The One Thing
+## `Paris` The One Thing
 
 - A familiar strategy: You read about personal development and realize you suck -> "I can improve" -> "I want to improve everything": Wake up at 5am, go to gym, go to MMA, write a book.
 - Outcomes: 
