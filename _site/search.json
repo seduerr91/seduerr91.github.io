@@ -1,6 +1,22 @@
 [
   
     {
+      "title"    : "Giving Thanks - The People Who Shaped My Journey",
+      "category" : "",
+      "tags"     : "Language, Communication, Persuasion, Writing Techniques",
+      "url"      : "/blog/grateful",
+      "date"     : "2023-11-23 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Unlocking the Secrets of the Memory Palace",
+      "category" : "",
+      "tags"     : "Memory, Knowledge Canon, Learning, Lifelong",
+      "url"      : "/blog/memory-castles",
+      "date"     : "2023-11-22 00:00:00 -0800"
+    } ,
+  
+    {
       "title"    : "The Transformative Power of Reading - A NLP Engineer&#39;s Perspective",
       "category" : "",
       "tags"     : "reading, cognitive development, stress reduction, empathy, book recommendations",

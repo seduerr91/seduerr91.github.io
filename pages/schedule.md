@@ -9,7 +9,7 @@ permalink: /2024.html
 2. Weight less than 161 lbs/73 kg.
 3. Continuously pass the [posture test](https://www.csiortho.com/blog/2018/november/take-our-posture-test-how-to-tell-if-you-have-ba/#:~:text=Have%20someone%20measure%20the%20space,posture%20and%20a%20curved%20spine.).
 4. Be a public voice in NLP.
-5. Get into Hero Company.
+5. Be happy and thrive at Cordial.com.
 
 ### 1. Joy and My Friends
 
