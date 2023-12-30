@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Welcome to the personal web page of Seb Duerr. Explore my journey and passions in technology, art, and innovation. Stay updated with my latest projects and collaborations.">
+
+  <title>Seb Duerr</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/pages/castle-leadership-motivation"></a>
+
+      <a class="nav-item nav-link " href="/datenschutz.html"></a>
+
+      <a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+
+      <a class="nav-item nav-link " href="/pages/castle-investment-banking"></a>
+
+      <a class="nav-item nav-link " href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h2 id="tooling-to-set-up-kubernetes-in-aws">Tooling to set up Kubernetes in AWS</h2>
+
+<p><code class="language-plaintext highlighter-rouge">Brennerstr.</code>: AWS Control Plane Types:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Aldi</code>: EKS instance: managed kubernetes solution, AWS cares for updates, providing availability, auth, security, load balancing, scaling for $72/month.</li>
+  <li><code class="language-plaintext highlighter-rouge">Rewe</code>: Self-managed: AWS as IaaS, deploy kubernetes with kubeadmin or rancher, requires human labor</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Katharinenstr.</code>: Workernodes:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">1</code>: Self-managed nodes: provide own node groups and attach them to cluster
+maximum flexibility and scaling is included
+additional management overhead: 
+needed to use services like AWS outposts
+only always has identical instance types: you cannot combine ARM64 ubuntu and a x86 AMI instance</li>
+  <li><code class="language-plaintext highlighter-rouge">11</code>: EKS managed nodeGroups: pay per use
+    <ul>
+      <li>takes care of provisioning and connecting them to EKS cluster</li>
+      <li>updates nodes (security and OS)  to latest AMI (Amazon Machine Image)</li>
+      <li>choose between on-demand instances and spot instances (spot: can lead to node drains, don’t use for stateful or fault intolerant workloads)</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Stadtwerke</code>: AWS Fargate: Containers as a service, paying only for workload
+    <ul>
+      <li>no config overhead but no control over environment</li>
+      <li>can’t ssh into node, can’t use GPU</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Zollnerstr.</code>: Considering Multicluster:</p>
+<ul>
+  <li>tool kubermatic helps managing multiple clusters and to provision them</li>
+  <li>AWS eksctl or the web UI are sufficient</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Feki Mensa</code>: Deployment Pipeline:</p>
+<ul>
+  <li>GitOps approach with ArgoCD or Flux</li>
+  <li>git triggered CICD pipeline with images pushed to container registry available in the cluster (ECR)</li>
+  <li>additional environment repos watched by ArgoCD or Flux holding kustomize files / helm charts</li>
+</ul>
+
+<h2 id="inference-service-on-kubernetes">Inference Service on Kubernetes</h2>
+
+<p><code class="language-plaintext highlighter-rouge">Feki Bib</code>: Deployment and Load Balancing:</p>
+<ul>
+  <li>have multiple instances of inference service and route through ingress gateway</li>
+  <li>default kubernetes service can do load balancing of routing request to an instance</li>
+  <li>ray can create a single point of entry and ray takes care of load balancing in application code, we need to provision computing resources (ray clusters) for the workload to run on, e.g. with worker pods</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Mathe Faq</code>: Container Spec:</p>
+<ul>
+  <li>package inference services in (multiple) container image(s)</li>
+  <li>provide health and readiness endpoints in the container to leverage kubernetes autohealing</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Sporthallen</code>: Node Spec:</p>
+<ul>
+  <li>which node group type (managed, self-managed, spot or on demand)</li>
+  <li>resource size: # CPU, memory, # GPU</li>
+  <li>Node groups per application: taints on nodegroups to ensure correct scheduling of workloads</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Umkleiden</code>: Tenancy Separation:</p>
+<ul>
+  <li>Dedicated clusters per tenant: master cluster as an entry point, each tenant would have separate computing resources, custom models, no interference</li>
+  <li>Single cluster and dedicated worker node pools per tenant: still separation of tenants</li>
+  <li>Shared workers: better util, one client could disrupt service for other clients</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Sportplatz</code>: Monitoring: monitoring, alerting and log management stack
+Prometheus and alertmanager for metrcos
+Grafana for analytics, monitoring and visualization
+Jaeger for distributed tracing</p>
+
+<p><code class="language-plaintext highlighter-rouge">Rechenzentrum</code>: Autoscaling:</p>
+<ul>
+  <li>Vertical auto scaling: scaling of computer resources (CPUs, memory, GPUs)
+    <ul>
+      <li>Node cordening: if a lot of nodes are underutilized, autoscalers will take care of trying to shift the remaining load on some workers to other workers.</li>
+    </ul>
+  </li>
+  <li>Horizontal auto scaling: provisioning and deletion of new workers depending on load.
+    <ul>
+      <li>Ray manages with cluster Autoscaler</li>
+    </ul>
+  </li>
+  <li>Pod level vertical auto scaling: use kubernetes native vertical Pod Autoscaler automatically</li>
+  <li>Pod level horizontal auto scaling: either AWS horizontal pod autoscaler or ray operator</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Validationautomat</code>: GPU Utilization:</p>
+<ul>
+  <li>GPU can only be claimed in whole numbers (not fractional), we need to split GPU up between pods, otherwise they would be underutilized</li>
+  <li>on physical level:
+    <ul>
+      <li>use Nvidia GPUS with MIG (multi instance gpus): can split GPU into slices, each of which get dedicated cpu memory and time resources</li>
+    </ul>
+  </li>
+  <li>on software level:
+    <ul>
+      <li>use CUDA timesharing features: meaning CUDA processes get scheduled and take over the whole GPU which results in full context switches and memory swapping</li>
+      <li>MPS: aws-virtual-gpu-device plug-in: deployed as demonset, configures MPS on nodes and enables us to claim virtual GPUs in containers, avoid OOM errors (since there is no physical memory separation)</li>
+      <li>GPU resource management timesharing: integrated in ray framework abstracting the setup away and allow fractional GPU slices in the actual application code, relying on ML frameworks</li>
+    </ul>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Main Entrance</code>: Storage Provider:</p>
+<ul>
+  <li>elastic block storage (EBS): fastest option in terms of raw performance, attached to one node only, not easy to scale</li>
+  <li>elastic file system (EFS): highly scalable NFS that can be shared between nodes, great to share models</li>
+  <li>S3 buckets: great for long-term storing, cheap and can interface with analytic tools</li>
+</ul>
+
+<h2 id="weissenburgstr--running-multiple-nlp-models-to-achieve-efficient-gpu-util"><code class="language-plaintext highlighter-rouge">Weissenburgstr</code>: | Running Multiple NLP models to achieve efficient GPU util</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">McFit</code>: Setup: Single cluster and shared worker approach, customers are segregated just on request level via API keys.</li>
+  <li><code class="language-plaintext highlighter-rouge">Hotel Garni</code>: Slicing of inference containers:
+    <ul>
+      <li>Scheduler: Different nodes so that scheduler uses appropriate nodes for different workload</li>
+      <li>Reader containers:
+        <ul>
+          <li>on-demand node groups for stability, keeping models in memory without drains</li>
+          <li>host instances of GPUs with MIG support, to accommodate needs of different models</li>
+          <li>split reader in different classes via Deployments with different models and labels targeting different nodegroups (via tolerations)</li>
+          <li>Monitoring, testing, and analytics can optimize parameters of different nodegroups and models</li>
+          <li>a node group with GPU time sharing, and a fitting reader image, which hosts very rarely used models</li>
+          <li>use of EFS storage to share models and spin up new ones faster</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Bambados</code>: DocumentStore/Retriever containers: simple containers for both</li>
+  <li><code class="language-plaintext highlighter-rouge">Volkspark</code>: ‘Front end’ services:
+    <ul>
+      <li>providing pipeline creation, search endpoint, scheduling, retrying failed searches</li>
+      <li>Simple Ingress Gateway routing strategy: based on HTTP parameters requests get routed to different versions of the reader service or via URL params or info in the body</li>
+      <li>Could consider also a service mesh solution for routing</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Freibad</code>: Monitoring and testing: is key to figure out what causes performance bottlenecks, and how changes in configuration affect the results
+    <ul>
+      <li>grafana and prometheus to track useful metrics: average request response times, load, error count</li>
+      <li>jaeger: create and distribute tracing IDs for all calls, to aggregate information on average request response time, time spent in every service etc.</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Stadion</code>: Challenges:
+    <ul>
+      <li>Slicing Request service into different classes based on models and finding the right configuration of the respective node groups to fully utilize GPU memory.</li>
+      <li>balancing resource planning for smooth operation during request spikes.</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Sebastian Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+
+  <div class="container-fluid justify-content-center">
+
+</div>
+
+</footer>
+
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
