@@ -14,7 +14,7 @@ Each of us has the power to enhance our memory by constructing elaborate virtual
 
 Imagine standing at the entrance of your mind's castle. With every step you take, you embark on a journey along a path you've uniquely designed, passing through rooms dedicated to specific topics. Think of the entrance to your parents home as the color brown, the kitchen is blue, the living room all in green, the bed room is red, and the restrooms are yellow. Close your eyes, imagine all of these rooms in their respective colors. And now repeat it in your mind... just by walking through their place. Does it work? Could you memorize them? This is basically how it works. 
 
-I took time to summarize the books that I consider the most valuable when it comes to aspects such as software engineering, business and humanities. Below you find my castles and the wonderful places that I am allowed to enjoy over and over again, when I walk these memory [castles](pages/castles).
+I took time to summarize the books that I consider the most valuable when it comes to aspects such as software engineering, business and humanities. Below you find my castles and the wonderful places that I am allowed to enjoy over and over again, when I walk these memory [castles](pages/castles.md).
 
 #### Engineering
 
