@@ -1,11 +1,11 @@
 ---
-name: Proficient Portfolio
+name: Portfolio
 tools: []
 image: https://i.imgur.com/XQI4dXz.jpg
 description: An easily navigable directory containing pertinent documents, links, and information related to my personal and professional endeavors.
 ---
 
-## Portfolio
+# Portfolio
 
 ### Scholarly Contributions
 
