@@ -6,68 +6,32 @@ color: danger
 description: Mental castle on Software Engineering Philosophy inpired by the book by Ousterhout
 ---
 
-- `Mercer Island`: **The Nature of Complexity**
-  - Complexity increases costs by complicating modifications and error handling. Manifestations:
-    - `Water Bridge` Change amplification: Simple changes requiring widespread modifications.
-    - `Seward Park` Cognitive load: Needing extensive knowledge to complete tasks.
-    - `Exit 2C` Unknown unknowns: Lack of clarity in solutions or outcomes.
+This mental castle is a walk through Onni, SLU, from the Pickleball Gym to the Fairview Postboxes.
 
-- **Causes of Complexity**
-  - `Lumen Field`: Dependencies between components and 
-  - `T-Mobile Park`: Obscurity of important information.
+# Design Principles
 
-- `Parking Lot`: **Tactical vs. Strategic Programming**
-  - `Showbox Sodo`: Tactical programming is fast programming without iterations. Bad idea.
-  - `Enter 99 Tunnel`: Strategic programming advocates for investment in design, beyond just developing working code.
+- `Pickleball Gym` | Complexity is incremental: you have to sweat the small stuff.
+- `You need players` | Working code isn’t enough.
+- `Shitty net` | Make continual small investments to improve system design.
+- `Serve deep` | Modules should be deep.
+- `Couch area` | Interfaces should be designed to make the most common usage as simple as possible.
+- `Music/Toilet/Main Door` | Different layers should have different abstractions.
+- `Hallway -1 Outside Gym` | Pull complexity downward.
+- `Non-closing door under Stairs` | Define errors (and special cases) out of existence.
+- `Stairs` | Design it twice.
+- `Token` | Comments should describe things that are not obvious from the code.
 
-- `99 Tunnel`: **Code for the Reader, Not the Writer**
-  - Code should be obvious to those reading it, not just to the writer.
+# Red Flags
 
-- `99 Tunnel End`: **Deep Modules vs. Shallow Modules**
-  - Deep modules with powerful functionality and simple interfaces are preferred over shallow modules with complex interfaces and less functionality.
-  - `Dexter Ave`: Unix file I/O is cited as an example of a deep module.
-  - `Apple`: A misconception is to focus on small components in order rather than creating deep components, leading to more complexity.
-
-- `Harrison Street`: **General-purpose Modules**
-  - A somewhat general-purpose approach is ideal, providing simpler interfaces.
-  - Reducing the number of methods without losing capability leads to general-purpose methods.
-
-- `Museum of Pop Culture`: **Avoid Pass-through Variables**: They add complexity by forcing awareness in intermediate methods.
-  - Context objects are used to store global state and reduce method signature complexity, despite having disadvantages.
-
-- `Space Needle`: **Pass-through Methods**
-  - Such methods increase interface complexity without adding functionality.
-  - New methods should only be added if they contribute significant functionality.
-
-- `DIDO Concert Venue`: **Pull Complexity Downwards**
-  - A simple module interface is more critical than a simple implementation.
-  - Complexities should be brought into the module’s implementation to simplify interfaces.
-
-- `Climate Pledge Arena`: **Define Errors Out of Existence**
-  - Exception handling is a significant complexity source.
-  - Automatically handle certain cases to minimize error handling.
-
-- `McCaw Hall Nutcracker`: **Thoughtful Approach to Code Comments**
-  - Comments should capture information not obvious from the code and should be written with system design in mind for higher quality.
-  - Different types of comments should be written clearly and maintain consistency with code updates.
-
-- `Monorail`: **Naming and Whitespace in Code**
-  - Good naming is crucial for clarity and reduces complexity.
-  - Whitespace helps segment code logically for better readability.
-
-- `Westlake Station`: **Test-Driven Development (TDD) Limitations**
-  - TDD might focus too much on specific features rather than on sound design and abstractions.
-
-- `The Nest Rooftop`: **Importance of Consistency**
-  - Consistency across naming, style, interfaces, and design patterns reduces learning time and error rates.
-  - Conventions should be documented and enforced, sometimes automatically.
-
-- `Pike Place Starbucks`: **Issues with Implementation Inheritance**
-  - Implementation inheritance complicates dependencies and information leakage between classes.
-  - Composition may be an alternative with less complexity.
-
-- `Wet Market`: **Challenges with Event-driven Programming**
-  - The indirect nature of event-driven programming can obscure control flow, increasing complexity.
-
-- `Gum wall`: **Adopting a 'Design It Twice' Approach**
-  - Considering multiple design options for each decision is likely to yield better solutions.
+- `Onni Hallway` | Shallow Module: the interface for a class or method isn’t much simpler than its implementation.
+- `Renters Office` | Information Leakage: a design decision is reflected in multiple modules.
+- `Seattle Times` | Temporal Decomposition: the code structure is based on the order in which operations are executed, not on information hiding.
+- `Hotel Lobby` | Overexposure: An API forces callers to be aware of rarely used features in order to use commonly used features.
+- `Cycle Room` | Repetition: a nontrivial piece of code is repeated over and over.
+- `Gym Room` | Pass-Through Method: a method does almost nothing except pass its arguments to another method with a similar signature.
+- `Swimming Pool` | Special-General Mixture: special-purpose code is not cleanly separated from general purpose code.
+- `Conference Rooms` | Conjoined Methods: two methods have so many dependencies that its hard to understand the implementation of one without understanding the implementation of the other.
+- `Tapping Token Twice to get to Fairview` | Comment Repeats Code: all of the information in a comment is immediately obvious from the code next to the comment.
+- `Front Desk Lady` | Vague Name: the name of a variable or method is so imprecise that it doesn’t convey much useful information.
+- `Entrance to Fairview` | Hard to Describe: in order to be complete, the documentation for a variable or method must be long.
+- `Postbox Name Tag Trick` | Nonobvious Code: the behavior or meaning of a piece of code cannot be understood easily.
