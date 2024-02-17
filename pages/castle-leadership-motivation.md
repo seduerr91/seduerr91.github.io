@@ -1,4 +1,3 @@
-
 ---
 title: Leadership & Motivation
 tags: [Mental Castle]

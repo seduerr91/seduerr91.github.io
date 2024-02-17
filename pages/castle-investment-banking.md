@@ -1,4 +1,3 @@
-
 ---
 title: Investment Banking
 tags: [Mental Castle]
