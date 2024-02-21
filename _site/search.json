@@ -1,6 +1,46 @@
 [
   
     {
+      "title"    : "Insights from Text-to-SQL Conversion Research",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/state-of-ai",
+      "date"     : "2024-02-21 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Insights from Text-to-SQL Conversion Research",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/nlq-sql-4-related_research",
+      "date"     : "2024-02-21 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Where to go from here",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/nlq-sql-3-where-to-go",
+      "date"     : "2024-02-21 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Differences between Software Engineers and Data Scientists",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/nlq-sql-2-technical",
+      "date"     : "2024-02-21 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Leveraging Large Language Models for Intuitive SQL Queries",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/nlq-sql-1-overview",
+      "date"     : "2024-02-21 00:00:00 -0800"
+    } ,
+  
+    {
       "title"    : "Differences between Software Engineers and Data Scientists",
       "category" : "",
       "tags"     : "Coding",
