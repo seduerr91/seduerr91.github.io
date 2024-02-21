@@ -3,7 +3,7 @@ tags: [Coding]
 title: Leveraging Large Language Models for Intuitive SQL Queries
 description: In regard to object-oriented aspects
 style: fill
-color: primary
+color: secondary
 ---
 
 

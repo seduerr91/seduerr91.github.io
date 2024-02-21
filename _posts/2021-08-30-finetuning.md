@@ -2,7 +2,7 @@
 title: Finetuning a DNN for Extroversion
 tags: [Coding]
 style: fill
-color: primary
+color: secondary
 description: This micro-service allows to find paraphrases for a given text based on T5.
 ---
 

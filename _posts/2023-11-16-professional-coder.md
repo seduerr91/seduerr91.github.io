@@ -2,7 +2,7 @@
 title: Mastering the Code - A Coder’s Strategic Roadmap to Professional Expertise by Q1/2024
 tags: [Coding Mastery, Software Development, Professional Development, Tech Skills, Programming Languages, Code Challenges, Software Engineering Philosophy, Coding Education, Career Roadmap, Tech Community]
 style: fill
-color: primary
+color: secondary
 description: Elevate your coding skills with our strategic Q1/2024 roadmap, featuring hands-on practice, learning resources, and sharing expertise through teaching and community engagement.
 ---
 

@@ -2,7 +2,7 @@
 title: The theory of extroverted writing.
 tags: [Persuaide, engineering]
 style: fill
-color: primary
+color: secondary
 description: The theory of extroverted writing.
 ---
 

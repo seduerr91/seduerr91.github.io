@@ -2,7 +2,7 @@
 title: Software Philosophy
 tags: [Mental Castle]
 style: fill
-color: primary
+color: secondary
 description: Mental castle on Software Engineering Philosophy inpired by the book by Ousterhout
 ---
 

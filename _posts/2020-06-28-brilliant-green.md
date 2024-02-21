@@ -2,7 +2,7 @@
 title: Brilliant Green
 tags: [Research]
 style: fill
-color: primary
+color: secondary
 description: My Summary of the Book Brilliant Green
 ---
 

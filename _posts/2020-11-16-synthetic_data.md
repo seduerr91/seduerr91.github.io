@@ -2,7 +2,7 @@
 title: 4 Steps to Create Synthetic Datasets with T5, PAWS and Your Text Corpus
 tags: [Coding]
 style: fill
-color: primary
+color: secondary
 description: Extending T5's capabilities with paraphrasing for synthetic dataset creation.
 ---
 

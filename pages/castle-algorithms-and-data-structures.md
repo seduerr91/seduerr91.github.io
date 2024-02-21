@@ -2,7 +2,7 @@
 title: Algorithms and Data Structures
 tags: [Mental Castle]
 style: fill
-color: primary
+color: secondary
 description: Vienna
 ---
 
