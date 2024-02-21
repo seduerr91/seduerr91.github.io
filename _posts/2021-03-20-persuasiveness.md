@@ -2,7 +2,7 @@
 title: What makes a message persuasive?
 tags: [Research]
 style: fill
-color: success
+color: primary
 description: An attempt to define persuasiveness in a natural text context.
 ---
 ### A Concept for Persuasiveness

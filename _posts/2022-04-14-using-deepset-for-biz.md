@@ -2,7 +2,7 @@
 title: Dense Passage Retrieval of 10-k Reports with Haystack
 tags: [Instructions]
 style: fill
-color: danger
+color: primary
 description: Gaining valuable insights by questioning a 10-k report
 ---
 
