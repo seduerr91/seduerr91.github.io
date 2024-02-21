@@ -2,7 +2,7 @@
 title: Cultivating Connections - Social Activities for Friends and Spouses
 tags: [Lifestyle, Relationships, Cooking, Technology, Photography, Arts]
 style: fill
-color: light
+color: primary
 description: An exploration of diverse and enriching activities designed to strengthen bonds with friends and loved ones, with a personal touch.
 ---
 
