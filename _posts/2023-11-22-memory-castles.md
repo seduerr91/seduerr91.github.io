@@ -3,7 +3,7 @@ title: Unlocking the Secrets of the Memory Palace
 tags: [Memory, Knowledge Canon, Learning, Lifelong]
 description: Moonwalking with Einstein by Joshua Foer explores the powerful mnemonic device known as the method of loci or the memory palace technique. 
 style: fill
-color: primary
+color: secondary
 ---
 
 Do you ever wonder how memory champions are able to recall hundreds of random words, numbers, or even the order of several decks of cards? "Moonwalking with Einstein" by Joshua Foer delves into the ancient mnemonic technique known as the "method of loci," more commonly referred to as the memory palace. And guess what? You can build your own memory castles too! Let’s explore how. Moving forward, I call them memory castles, but is really just the same thing.

@@ -2,7 +2,7 @@
 title: Philosophy
 tags: [Mental Castle]
 style: fill
-color: primary
+color: secondary
 description: 
 ---
 

@@ -2,7 +2,7 @@
 title: Mastering the Art of Balance - A Guide to the Perfect Weekly Schedule
 tags: Productivity, Health and Wellness, Work-Life Balance, Time Management, Healthy Eating, Fitness Routine, Socializing
 style: fill
-color: primary
+color: secondary
 description: Dive into the art of crafting a balanced weekly schedule that promotes productivity, health, and well-being. Learn how to blend work, fitness, nutrition, and social activities into a harmonious lifestyle that not only fulfills your duties but also nourishes your soul and brings joy to your everyday life.
 ---
 

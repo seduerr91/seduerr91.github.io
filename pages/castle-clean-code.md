@@ -2,7 +2,7 @@
 title: Clean Code
 tags: [Mental Castle]
 style: fill
-color: primary
+color: secondary
 description: My flat in Wuerzburg
 ---
 

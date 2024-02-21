@@ -2,7 +2,7 @@
 name: Object-Oriented Python
 tags: [Mental Castle]
 style: fill
-color: primary
+color: secondary
 description: Walking through Medieval Wuerzburg
 ---
 

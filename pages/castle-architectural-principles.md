@@ -2,7 +2,7 @@
 title: Architectural Design
 tags: [Mental Castle]
 style: fill
-color: primary
+color: secondary
 description: Pickleball in Snoq Ridge
 ---
 

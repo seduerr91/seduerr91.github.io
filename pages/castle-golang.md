@@ -2,7 +2,7 @@
 title: Golang Basics
 tags: [Mental Castle]
 style: fill
-color: primary
+color: secondary
 description: Snoqualmie to work
 ---
 

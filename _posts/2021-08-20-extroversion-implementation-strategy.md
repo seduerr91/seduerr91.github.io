@@ -2,7 +2,7 @@
 title: Implementation Strategy extroverted writing.
 tags: [Persuaide, engineering]
 style: fill
-color: primary
+color: secondary
 description: Implementation Strategy.
 ---
 

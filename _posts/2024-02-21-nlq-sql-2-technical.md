@@ -3,7 +3,7 @@ tags: [Coding]
 title: Differences between Software Engineers and Data Scientists
 description: In regard to object-oriented aspects
 style: fill
-color: primary
+color: secondary
 ---
 
 ## Article 2 - Technical 

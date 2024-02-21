@@ -2,7 +2,7 @@
 title: A Glimpse of Every Country I've Journeyed To
 tags: [travel]
 style: fill
-color: primary
+color: secondary
 description: An exciting visual journey through 75 countries. 
 ---
 

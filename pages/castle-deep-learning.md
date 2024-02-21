@@ -2,7 +2,7 @@
 title: Deep Learning Terms 
 tags: [Mental Castle]
 style: fill
-color: primary
+color: secondary
 description: My parents home.
 ---
 

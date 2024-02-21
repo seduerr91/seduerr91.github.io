@@ -3,7 +3,7 @@ tags: [Coding]
 title: Insights from Text-to-SQL Conversion Research
 description: Insights from Text-to-SQL Conversion Research
 style: fill
-color: primary
+color: secondary
 ---
 
 For the curious mind, I did a literature review to understand how other professionals in the field address the complexity of this task. Feel free to browse my summary:
