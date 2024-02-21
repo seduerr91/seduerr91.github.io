@@ -2,7 +2,7 @@
 title: Hosting your text infilling (based on GPT-2) through FastAPI on GCP
 tags: [Coding]
 style: fill
-color: danger
+color: primary
 description: This micro-service allows infilling multiple words into a context through AI. Researchers from Stanford addressed this. I made their work available through an API.
 ---
 

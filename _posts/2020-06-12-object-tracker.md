@@ -2,7 +2,7 @@
 title: Tracking Object Movements with Machine Learning (Open CV)
 tags: [Coding]
 style: fill
-color: warning
+color: primary
 description: Plants respond to happy emotions. This article illustrates how to use Machine Learning to show this repeatedly.
 ---
 __Note: This is very nascent research and until now, not externally validated.__

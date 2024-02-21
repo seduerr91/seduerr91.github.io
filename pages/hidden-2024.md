@@ -2,7 +2,7 @@
 title: Vision 2024
 tags: [Travel]
 style: fill
-color: danger
+color: primary
 description: Back to a City
 ---
 

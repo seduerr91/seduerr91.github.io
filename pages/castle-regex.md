@@ -2,7 +2,7 @@
 title: Regex
 tags: [Mental Castle]
 style: fill
-color: danger
+color: primary
 description: Regular expressions mentally mapped with Sommernachtsfest Eichelsee
 ---
 

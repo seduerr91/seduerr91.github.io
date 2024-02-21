@@ -2,7 +2,7 @@
 title: Funny Stories
 tags: [Mental Castle]
 style: fill
-color: danger
+color: primary
 description: 
 ---
 
