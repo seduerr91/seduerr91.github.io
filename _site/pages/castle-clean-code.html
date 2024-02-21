@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Clean Code">
+  <meta property="og:description" content="My flat in Wuerzburg">
+  <meta property="og:image" content="https://i.imgur.com/r0yP47Um.png">
+
+  <title>Seb Duerr</title>
+  <meta name="description" content="My flat in Wuerzburg">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+    <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-1x fa-bars text-themed"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/datenschutz.html"></a>
+  
+        <a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+  
+        <a class="nav-item nav-link " href="/projects/">Projects</a>
+  
+        <a class="nav-item nav-link " href="/blog/">Blog</a>
+  
+        <a class="nav-item nav-link " href="/about/">About</a>
+  
+        
+  
+        <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+      </div>
+    </div>
+  
+  </nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h2 id="flat-meaningful-names"><code class="language-plaintext highlighter-rouge">Flat</code>: Meaningful names</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Bed</code>: Use intention-revealing names: e.g., elapsedTimeinDays = 6</li>
+  <li><code class="language-plaintext highlighter-rouge">Shirts</code>: Avoid disinformation: grouping of accounts shouldn’t refer to AccountsList</li>
+  <li><code class="language-plaintext highlighter-rouge">Big Robe</code>: Make meaningful distinctions: use source and target, don’t use noise words, don’t use variable, list</li>
+  <li><code class="language-plaintext highlighter-rouge">Window</code>: Use pronounceable names: dtarcrd &gt; datarecord</li>
+  <li><code class="language-plaintext highlighter-rouge">Kitchen</code>: Use searchable names: Work_Days_Per_Week = 5</li>
+  <li><code class="language-plaintext highlighter-rouge">Fridge</code>: Avoid mental mapping: i, j,k is fine, not more tho</li>
+  <li><code class="language-plaintext highlighter-rouge">Stove</code>: Class names: should have noun phrase like Customer</li>
+  <li><code class="language-plaintext highlighter-rouge">Window</code>: Method names: should be a verb or verb phrase like createAccount</li>
+  <li><code class="language-plaintext highlighter-rouge">Bathroom</code>: Pick one per concept: instead of get/retrieve/fetch only use get if same concept</li>
+  <li><code class="language-plaintext highlighter-rouge">Toilet</code>: Use solution domain: use computer science, ML terms</li>
+  <li><code class="language-plaintext highlighter-rouge">Stand</code>: Use problem domain: use problem space if you don’t have terms</li>
+  <li><code class="language-plaintext highlighter-rouge">Shower</code>: Add meaningful context: create a class Address for street, state, name, firstName</li>
+</ul>
+
+<h2 id="living-room-functions"><code class="language-plaintext highlighter-rouge">Living Room</code>: Functions</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Couch</code>: Small: 20-30 lines</li>
+  <li><code class="language-plaintext highlighter-rouge">Vitrine</code>: Blocks: code within if/else/while should be one line long</li>
+  <li><code class="language-plaintext highlighter-rouge">Glasstable</code>: Do one thing: if you can extract a sub-function with a diff name, you do more</li>
+  <li><code class="language-plaintext highlighter-rouge">Desk</code>: Arguments:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Screen</code>: Monadic: fileExists(‘file.csv’)</li>
+      <li><code class="language-plaintext highlighter-rouge">Laptop</code>: Flag arguments: don’t pass bool values</li>
+      <li><code class="language-plaintext highlighter-rouge">Chair/Mouse</code>: Dyadic/Triads: try to avoid</li>
+      <li><code class="language-plaintext highlighter-rouge">Keyboard</code>: Objects: reduce number by creating objects</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Drawers</code>: Command-Query separation: should either do something or answer something</li>
+  <li><code class="language-plaintext highlighter-rouge">Pinwall</code>: Extract try-catch blocks: outsource to own funcs</li>
+  <li><code class="language-plaintext highlighter-rouge">Door</code>: Don’t repeat yourself: bloats code &amp; creates spaces for errors</li>
+</ul>
+
+<h2 id="hallway-comments"><code class="language-plaintext highlighter-rouge">Hallway</code> Comments</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Neighbor</code>: Don’t comment on bad code.</li>
+  <li><code class="language-plaintext highlighter-rouge">4 Stairs</code>: Explain yourself in code: if(employee.isElligibleForFullBenefits())</li>
+  <li><code class="language-plaintext highlighter-rouge">Postbox</code>: Good comments:</li>
+  <li><code class="language-plaintext highlighter-rouge">Garage</code>: legal comments: copyright, authorship</li>
+  <li><code class="language-plaintext highlighter-rouge">Bicycle</code>: informative comments: explaining regex</li>
+  <li><code class="language-plaintext highlighter-rouge">Sporthalle</code>: explanation of intent</li>
+  <li><code class="language-plaintext highlighter-rouge">Sports grounds</code>: warning of consequences: Don’t run until you want to wait</li>
+  <li><code class="language-plaintext highlighter-rouge">Japanese Carden</code>: ToDo comments</li>
+  <li><code class="language-plaintext highlighter-rouge">Deutschhaus</code>: Avoid nonlocal info: put comment to place where it happens</li>
+</ul>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Seb Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+  
+  <div class="container-fluid justify-content-center">
+  
+  </div>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

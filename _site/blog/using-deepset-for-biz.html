@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dense Passage Retrieval of 10-k Reports with Haystack">
+  <meta property="og:description" content="Gaining valuable insights by questioning a 10-k report">
+  <meta property="og:image" content="https://i.imgur.com/r0yP47Um.png">
+
+  <title>Seb Duerr</title>
+  <meta name="description" content="Gaining valuable insights by questioning a 10-k report">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+    <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-1x fa-bars text-themed"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/datenschutz.html"></a>
+  
+        <a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+  
+        <a class="nav-item nav-link " href="/projects/">Projects</a>
+  
+        <a class="nav-item nav-link active" href="/blog/">Blog</a>
+  
+        <a class="nav-item nav-link " href="/about/">About</a>
+  
+        
+  
+        <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+      </div>
+    </div>
+  
+  </nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>Dense Passage Retrieval of 10-k Reports with Haystack</b></h1>
+
+<p class="post-metadata text-muted">
+  14 April 2022 -  
+  <b>3 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#instructions">
+      <span class="tag badge badge-pill text-primary border border-primary">Instructions</span>
+    </a>
+    </p>
+
+<h1 id="an-account-executives-approach-to-cold-calling">An Account Executives Approach to Cold Calling</h1>
+
+<p><a href="https://www.linkedin.com/in/ben-riall-ab24a246">Ben Riall</a> works for Adobe as an executive account manager. He has started and successfully excited a company, has written a book, and currently creates an online course.</p>
+
+<p>With thirty big accounts a year, he is very very careful on who to engage with. And he makes sure he know everything. Therefore, he reads business and annual reports (<a href="https://www.investopedia.com/terms/1/10-k.asp">10-k</a>), and looks for certain aspects such as: ’Does the target company grow in digital experiences (or is this a strategic initiative)?’, because then he has a reason to contact someone in that enterprise. In such a target company there are 10 people that are relevant to contact.</p>
+
+<p>Yet, Ben believes in cold calling. While mail and LinkedIn messages don’t really work since they are too impersonal. He would only benefit from a tool that could find key insights for him in business plans or on the LinkedIn profiles or answer certain questions. So let us tackling his situation!</p>
+
+<p>Questions he would ask are:</p>
+
+<ul>
+  <li>Are there digital experiences are they doing that ?</li>
+  <li>What are the strategic priorities?</li>
+  <li>Is the company growing ?</li>
+  <li>Do they have cash or not?</li>
+  <li>Is there things I have not thought about yet?</li>
+</ul>
+
+<p>So how can we parse and get answers to these questions?</p>
+
+<h1 id="better-retrieval-via-dense-passage-retrieval">Better Retrieval via “Dense Passage Retrieval”</h1>
+
+<p>The Retriever has a huge impact on the performance of our overall search pipeline. It can be sparse or dense.</p>
+
+<h4 id="sparse">Sparse</h4>
+<p>Family of algorithms based on counting the occurrences of words (bag-of-words) resulting in very sparse vectors with length = vocab size.</p>
+
+<p><strong>Examples</strong>: BM25, TF-IDF</p>
+
+<p><strong>Pros</strong>: Simple, fast, well explainable</p>
+
+<p><strong>Cons</strong>: Relies on exact keyword matches between query and text</p>
+
+<h4 id="dense">Dense</h4>
+<p>These retrievers use neural network models to create “dense” embedding vectors. Within this family there are two different approaches:</p>
+
+<p>a) Single encoder: Use a <strong>single model</strong> to embed both query and passage.<br />
+b) Dual-encoder: Use <strong>two models</strong>, one to embed the query and one to embed the passage</p>
+
+<p>Recent work suggests that dual encoders work better, likely because they can deal better with the different nature of query and passage (length, style, syntax …).</p>
+
+<p><strong>Examples</strong>: REALM, DPR, Sentence-Transformers</p>
+
+<p><strong>Pros</strong>: Captures semantinc similarity instead of “word matches” (e.g. synonyms, related topics …)</p>
+
+<p><strong>Cons</strong>: Computationally more heavy, initial training of model</p>
+
+<p>Results:</p>
+
+<p><strong>Answers to: What are efforts regarding digital experiences?</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Answer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>eCommerce efforts and innovation</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>investments in eCommerce, technology, acquisitions, joint ventures, store remodels and other customer initiatives</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Same Day Pickup and Same Day Delivery</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>social media, online advertising, and email</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>security of our digital platforms and keep them operating within acceptable parameters</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Answers to: What are the strategic priorities?</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Answer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>improving our customer-facing initiatives in stores and clubs and creating a seamless omni-channel experience for our customers</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Price transparency, assortment of products, customer experience, convenience, ease and the speed and cost of shipping</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>to make every day easier for busy families, operate with discipline, sharpen our culture and become digital, and make trust a competitive advantage</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>improving our customer-facing initiatives in stores and clubs and creating a seamless omni-channel experience for our customers</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>strategic capital allocation</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Answers to: What is the company’s growth?</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Answer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>ticket and transaction growth</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>net sales</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>fiscal 2019</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>$2.8 billion or 2.3%</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>23% of our consolidated net sales</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<div class="pt-5">
+  
+</div>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Seb Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+  
+  <div class="container-fluid justify-content-center">
+  
+  </div>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Chapter 1, Systems Design">
+  <meta property="og:description" content="Walking through Medieval Wuerzburg">
+  <meta property="og:image" content="https://i.imgur.com/r0yP47Um.png">
+
+  <title>Seb Duerr</title>
+  <meta name="description" content="Walking through Medieval Wuerzburg">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+    <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-1x fa-bars text-themed"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/datenschutz.html"></a>
+  
+        <a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+  
+        <a class="nav-item nav-link " href="/projects/">Projects</a>
+  
+        <a class="nav-item nav-link " href="/blog/">Blog</a>
+  
+        <a class="nav-item nav-link " href="/about/">About</a>
+  
+        
+  
+        <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+      </div>
+    </div>
+  
+  </nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h2 id="chapter-1-systems-design">Chapter 1, Systems Design</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Flat</code>: Object: collection of data &amp; associated behavior</li>
+  <li><code class="language-plaintext highlighter-rouge">Mennas</code>: Class: kind of an object, e.g. apples or barrels</li>
+  <li><code class="language-plaintext highlighter-rouge">Flasher</code>: Association: most basic way of two instances of objects being related
+    <ul>
+      <li>cardinality: specific number or range</li>
+      <li>multiplicity: more than one instance</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Neunerplatz</code>: Attribute: state of an object (e.g. raw, ripe) aka property / instance variable</li>
+  <li>Fraunhofer: Behaviors: methods of classes are actions, can accept params &amp; return values</li>
+  <li><code class="language-plaintext highlighter-rouge">Friedensbridge</code>: Encapsulation: hiding information that isn’t relevant (APIs, television)</li>
+  <li><code class="language-plaintext highlighter-rouge">CCW</code>: Abstraction: dealing w/ level of detail that is most appropriate to deal w/ task (mechanic vs. driver)</li>
+  <li><code class="language-plaintext highlighter-rouge">Roentgen</code>: Composition: collection of multiple objects to create a new one, chess: 2 players, 64 positions</li>
+  <li><code class="language-plaintext highlighter-rouge">FH</code>: Aggregation: aggregate objects can exist independently (vs. a position cannot w/o the board)</li>
+  <li><code class="language-plaintext highlighter-rouge">Wald</code>: Inheritance: classes can inherit attributes &amp; methods from other classes (e.g., king or queen inherit chess_set &amp; color, but define own shape &amp; move)</li>
+  <li><code class="language-plaintext highlighter-rouge">Post</code>: Polymorphism: ability to treat a class differently depending on which subclass is implemented (board.move() may move car, chess figure &gt; duck typing)</li>
+  <li><code class="language-plaintext highlighter-rouge">Busbf</code>: Multiple Inheritance: the son has his mother’s eyes and his dad’s nose; Python resolves conflicts with method order resolution (MRO)</li>
+  <li><code class="language-plaintext highlighter-rouge">Bahnhof</code>: 4 + 1 View Technique:</li>
+  <li><code class="language-plaintext highlighter-rouge">Vorplatz</code>: Context view: describes actors/systems that use tool
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Anzeigen</code>: Logical view: data entities, static attributes and relationships (heart of it :)</li>
+      <li><code class="language-plaintext highlighter-rouge">Automaten</code>: Process view: how data is processed in activity or sequence diagram</li>
+      <li><code class="language-plaintext highlighter-rouge">Hallway</code>: Development view: code components to be build &amp; relations amongst those</li>
+      <li><code class="language-plaintext highlighter-rouge">Elevator</code>: Physical view: cloud, deployment and integration details</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="chapter-2-objects-in-python">Chapter 2, Objects in Python</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Postbox</code>: Core rule: everything is an object, every object is defined being an instant of min one class</li>
+  <li><code class="language-plaintext highlighter-rouge">Ramp</code>: Variables: is a reference to an object, like a yellow sticky note</li>
+  <li><code class="language-plaintext highlighter-rouge">Street</code>: Type hints: are type annotations, not enforced; use mypy to check for types; example: def odd(n: int = 2) -&gt; bool: return n%2 != 0</li>
+  <li><code class="language-plaintext highlighter-rouge">Sporthalle</code>: Classes: defined e.g. as ‘class Point:‘ followed by the class contents indented; use CapWording</li>
+  <li><code class="language-plaintext highlighter-rouge">Kirche</code>: Adding attributes: can be done with dot notation (p1 = Point(), p1.x = 5)</li>
+  <li><code class="language-plaintext highlighter-rouge">Buga</code>: Adding behavior: define methods like functions but required by methods: with ‘self’ (n times)</li>
+  <li><code class="language-plaintext highlighter-rouge">Landwirtschaftsamt</code>: Default values: set standard values for arguments in functions</li>
+  <li><code class="language-plaintext highlighter-rouge">Norma</code>: Initialization method <strong>init</strong>(self, x:float, y:float): now, the Point class can never go without an x or y value.</li>
+  <li><code class="language-plaintext highlighter-rouge">Enter DH</code>:  Docstrings: use docstrings to annotate code, pip doctest can locate and confirm code examples</li>
+  <li><code class="language-plaintext highlighter-rouge">Deutschhaus</code> Board: Modules:
+    <ul>
+      <li>module are Python files</li>
+      <li>module names are file’s stem (w/o .py-ending)</li>
+      <li>import: import <module>: from <module> import <class> (as <shortname>)</shortname></class></module></module></li>
+      <li>never: import * from <module></module></li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Chemie</code>: Organization:
+    <ul>
+      <li>src: will hold the code and packages; additionally docs &amp; test</li>
+      <li>packages are folders with an <strong>init</strong>.py, to be found</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Stairs</code>: Absolute vs. relative imports:
+    <ul>
+      <li>import statement uses period operator to separate packages and modules (ecom.prod)</li>
+      <li>relative imports: are done with . in the same folder .. in the parent &gt; avoid</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Toilet</code>: Global keyword: tells Python that variables inside a function shall be available at module-level.</li>
+  <li><code class="language-plaintext highlighter-rouge">Mensa</code>: Immediate execution: All module-level code is executed right away, therefore always use if <strong>name</strong> == “<strong>main</strong>”</li>
+  <li><code class="language-plaintext highlighter-rouge">K13</code>: Adulthood: in python there is no “private”; only a leading underscore indicates that a variable shouldn’t be used, yet it can still be accessed</li>
+  <li><code class="language-plaintext highlighter-rouge">EXIT</code>: Virtual environments: should always be used, and added to .gitignore because of different versions: cd project-dir &gt; python -m venv env &gt; source env/bin/activat</li>
+</ul>
+
+<h2 id="chapter-3-when-objects-are-alike">Chapter 3, When Objects Are Alike</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Gate 1</code>: Basic inheritance: every class inherits from object</li>
+  <li><code class="language-plaintext highlighter-rouge">Upper steep</code>: Superclass (parent class): class being inherited from</li>
+  <li><code class="language-plaintext highlighter-rouge">Lower steep</code>: Subclass: is derived from parents class or extends it by adding functionality</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Contact</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span> 			<span class="c1"># syntax: class(superclass)
+</span>	<span class="n">all_contacts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="s">"Contact"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span> 	<span class="c1"># class variable
+</span>	<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">email</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
+		<span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span> 	<span class="c1"># self: each time a different name is appended to an object
+</span>		<span class="bp">self</span><span class="p">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">email</span> 
+		<span class="n">contact</span><span class="p">.</span><span class="n">all_contacts</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="c1"># append any new contact
+</span></code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Summer Cinema</code>: Class Variable: all_contacts is shared by all instances of the class, there is only one list!</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Supplier</span><span class="p">(</span><span class="n">Contact</span><span class="p">):</span> 			<span class="c1"># inheritance, having also name &amp; email available for use
+</span>	<span class="k">def</span> <span class="nf">order</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">order</span><span class="p">:</span> <span class="s">"Order"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span>
+		<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"This would send an </span><span class="si">{</span><span class="n">order</span><span class="si">}</span><span class="s"> to </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="s">"</span><span class="p">)</span> 	<span class="c1"># name can be used
+</span></code></pre></div></div>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Parking</code>: Overriding: altering or replacing a method of the superclass w/ a new method with the same name in the subclass. This replacement will automatically be called. Avoid duplicated code with super:</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>		<span class="k">class</span> <span class="nc">Friend</span><span class="p">(</span><span class="n">Contact</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">phone</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span> 	<span class="c1"># overrides superclass Contact's init
+</span>		<span class="nb">super</span><span class="p">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">mail</span><span class="p">)</span> 	<span class="c1"># binds instance to parent class, inits itself
+</span><span class="bp">self</span><span class="p">.</span><span class="n">phone</span> <span class="o">=</span> <span class="n">phone</span> 		<span class="c1"># sets phone attrib
+</span></code></pre></div></div>
+<ul>
+  <li>
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">Gate</code>: Multiple inheritance: subclass inherits from 2+ parent classes
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">Restaurant</code>:
+            <ul>
+              <li>In Python with mixins: mixin class definitions are meant to be inherited to provide extra functionality.</li>
+              <li>Require two classes: (1) requ of the mixin, (2) aspect the mixin provides</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">Emailable</span><span class="p">(</span><span class="n">Protocol</span><span class="p">):</span> <span class="n">email</span><span class="p">:</span> <span class="nb">str</span>		 		<span class="c1"># hint: Emailable
+</span><span class="k">class</span> <span class="nc">MailSender</span><span class="p">(</span><span class="n">Emailable</span><span class="p">):</span> <span class="k">def</span> <span class="nf">send_email</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span> 	<span class="c1"># this is the mixin
+# "if MailSender is emailable (i.e. has an email: str) field, then send_email"
+</span></code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Upper Parking</code>: Emailable hint is a protocol: “contract for features of a class” telling mypy that every subclass of Emailable objects must support email attribute
+    <ul>
+      <li>Multiple inheritance is done well, if resulting class has no unique features and is a combination of mixins &gt; contact initializer will add a new contact + mails can be send by mixin
+        <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">EmailableContact</span><span class="p">(</span><span class="n">Contact</span><span class="p">,</span> <span class="n">MailSender</span><span class="p">):</span> <span class="k">pass</span>  	<span class="c1"># this is multiple inheritance 
+</span></code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Franken Museum</code>: Multiple inheritance can create diamond problems, that are being resolved by the MRO (method resolution order)</li>
+  <li><code class="language-plaintext highlighter-rouge">3. Gate with water</code>: **kwargs: collects all additional keywords into a dict</li>
+  <li>
+    <ol>
+      <li><code class="language-plaintext highlighter-rouge">Gate</code>: Polymorphism:
+        <ul>
+          <li>different behaviors happen based on subclass being used, w/o knowing what the subclass is</li>
+          <li>example: WavFile or MP3File can be subclasses of AudioFile that each implement play() in a different way; the play() function encapsulates (hides info details) the decompression algos of the AudioFiles</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Front garden</code>: Duck typing: allows to use any object that provides the required behavior w/o forcing subclassing</li>
+</ul>
+
+<h2 id="chapter-4-expecting-the-unexpected">Chapter 4, Expecting the Unexpected</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Sushi place</code>: Exceptions: are objects inherited from BaseException</li>
+  <li><code class="language-plaintext highlighter-rouge">Doener</code>: Error Categories:</li>
+  <li><code class="language-plaintext highlighter-rouge">Parking</code>: Something went wrong: e.g., SyntaxError or NameError</li>
+  <li><code class="language-plaintext highlighter-rouge">Traffic lights</code>: Python Runtime: e.g., RuntimeError (update version of a dependency)</li>
+  <li><code class="language-plaintext highlighter-rouge">Old Main Bridge</code>: Design problem: e.g., ZeroDivisionError (compute avg of an empty list)</li>
+  <li><code class="language-plaintext highlighter-rouge">Weinschoppen</code>: interface Errors: e.g., OSError (a file isn’t where it is supposed to be)</li>
+  <li><code class="language-plaintext highlighter-rouge">Woehrl</code>: Raising an Exception example: “if not wordlist: raise ValueError(“No word in wordlist”)”, then program is exited, unless an ‘except’ clause handles the error</li>
+  <li><code class="language-plaintext highlighter-rouge">Brunnen</code>: ‘try … except xx’: Handle errors by wrapping them, yet never use except alone (bad coding!)</li>
+  <li><code class="language-plaintext highlighter-rouge">Rathaus</code>: ‘as’ keyword: captures exceptions as a variable</li>
+  <li><code class="language-plaintext highlighter-rouge">Rewe</code>: ‘finally’ clause: is always executed (e.g., clean up a database, close an open file)</li>
+  <li><code class="language-plaintext highlighter-rouge">Ralf</code>: exceptions aren’t exceptional: use them / catch them whenever they can appear</li>
+  <li><code class="language-plaintext highlighter-rouge">Rolex</code>: Python mentality: It’s easier to ask for forgiveness (run code, wait for exceptions), than permission (trying to catch every possible error upfront, which takes a lot of time).</li>
+</ul>
+
+<h2 id="chapter-5-when-to-use-object-oriented-programming">Chapter 5, When to Use Object-Oriented Programming</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Sternla</code>: Object-orientation:
+    <ul>
+      <li>if you have data &amp; behavior &lt;&gt; data structures if only data, functions if only behavior</li>
+      <li>if you have interaction between objects: you can use inheritance</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Fielmann</code>: Decorator @property: making methods that look like attributes
+    <ul>
+      <li>Glasses: Use cases: attrib validation, lazy processing, access control or caching content</li>
+      <li>Lenses: When: methods for actions, attributes in <strong>init</strong>(), properties for setting/getting</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Dom</code>: Manager objects: rely on composite design (knitting objects together) and act like office managers</li>
+  <li><code class="language-plaintext highlighter-rouge">Hugendubel</code>: Eager vs. lazy:
+    <ul>
+      <li>eager: unzip everything, search, zip everything</li>
+      <li>lazy: unzip to zip file by file &gt; achieved by properties</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="chapter-6-abstract-base-classes-and-operator-overloading">Chapter 6, Abstract Base Classes and Operator Overloading</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">McDonalds</code>: Metaclass/abstract base class:
+    <ul>
+      <li>creating class definitions with placeholders (clearer than raising NotImplementedError)</li>
+      <li>can’t be used themselves (implemented with ellipses …)</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Cafe Schoenborn</code>: Jobs of classes (done by metaclass “type”):
+    <ul>
+      <li>act as container for methods and attribute definitions</li>
+      <li>create and manage instances through special methods</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Frauenkirche</code>: Collections.abc defines abcs for built-ins collections, e.g. container (in), iterable (for), length (len); change them by changing those</li>
+  <li><code class="language-plaintext highlighter-rouge">City Lib</code>: Operator Overloading: (+, -, /, *) are implemented by special methods; overload them e.g. / in pathlib module</li>
+</ul>
+
+<h2 id="chapter-7-python-data-structures">Chapter 7, Python Data Structures</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Kaufhof</code>: Empty objects: it’s not possible to set any attributes on empty objects</li>
+  <li>&lt;&gt; Empty classes: class MyObject: pass; m = MyObject(); m.x = 5 will work</li>
+  <li><code class="language-plaintext highlighter-rouge">H&amp;M</code>: Tuples: a = 45, =&gt; (45,)
+    <ul>
+      <li>Control: store a specific value, like coordinates or rgb colors</li>
+      <li>Down: immutable, hence having a hash value, can be unpacked, and sliced</li>
+      <li>Sport: created by separating values w/ comma &amp; inside of other objects w/ brackets</li>
+      <li>Boxers: Python will always print them w/ brackets in canonical representation</li>
+      <li>Leave: disadvantage: can be confusing w/o any key / description</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Marco Polo</code>: Named Tuples: ‘tuples with attitude’, class Stock(NamedTuple): symbol:str; current: float
+    <ul>
+      <li>values can be passed in positional or as keywords</li>
+      <li>attributed can be accessed by name</li>
+      <li>immutability only refers to attribute of tuple contained elements can be mutable</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Esprit</code>: Dataclasses: sample: @dataclass class StockDefaults: name: str; current: float = 0.0
+    <ul>
+      <li>can be stateful with mutable objects, include equality comparison</li>
+      <li>@dataclass(order = True): allows to compare</li>
+      <li>@dataclass(order = True, frozen = True): is like NamedTuple</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Mueller</code>: Dictionaries: demo_dict.get(“Joy”) is fast w/ hash; demo_dict.get(“Joy”, “not found”) for KeyErrors
+    <ul>
+      <li>keys(), values() and items() return iterator over these (items as a tuple with (k, v))</li>
+      <li>hash collision can lead to slowdowns</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Pizza Hut</code>: When to use which?
+    <ul>
+      <li>@dataclass</li>
+      <li>If data is immutable: NamedTuple</li>
+      <li>Dicts are best when complete set of keys isn’t known</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Eiscafe</code>: Defaultdict: Whenever a key is accessed that isn’t already in the dict, a default is created
+    <ul>
+      <li>Useful for creating containers of data</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">DeuBa</code>: Counter: beefed-up dict where keys are counted &amp; values are the quantities
+    <ul>
+      <li>collections.Counter[sample_list].most_common(1) 	# returns the top 1 most common value</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Sportladen</code>: Lists: in Py should be used, if we want to store one type of instances only
+    <ul>
+      <li>type hinting with list[int]</li>
+      <li>sort() sorts case-sensitive, i.e. Z is before a</li>
+      <li>mix of unsortable elems will return TypeError</li>
+      <li>immutable sequence of unicode chars</li>
+      <li>encode chars to create bytes, decode bytes to recover chars</li>
+      <li>format strings with f-strings f”hello {name[0]}” # can contain vars or even code</li>
+      <li>escape braces by using them twice will format to one</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">JuliusSpital</code>: Sets: represent unordered group of unique items, incredibly efficient for uniqueness
+    <ul>
+      <li>purpose: identify things that are in set or not</li>
+      <li>method: union: (if in either, duplicates are added once), intersection &amp; (if in both), summetric_difference ^ (in one or the other but not both)</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Metzger</code>: Queues: implements FIFO, order of implementation
+    <ul>
+      <li>collections.deque w/ popleft() &amp; append() 	# most efficient if not concurrent</li>
+      <li>queue w/ get () &amp; put() 				# most efficient if concurrent</li>
+      <li>as a Python “list” w/ pop() &amp; append() 		# else</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="chapter-8-the-intersection-of-object-oriented-and-functional-programming">Chapter 8, The Intersection of Object-Oriented and Functional Programming</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Zeitzeichen</code>: Built-ins: Python avoids the narrow viewpoint of ‘it must always be object.method()’
+    <ul>
+      <li>len(myobj) is more readable than myobj.<strong>length</strong>()</li>
+      <li>reversed(): takes any sequence and returns a copy in reverse order</li>
+      <li>enumerate(): returns a tuple with an index, and a value of an object</li>
+      <li>eval(), exec() &amp; compile() are dangerous as they execute string code</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">BuergerSpital</code>: Method Overloading: multiple methods with the same name that accept different sets of params (Java poop!)
+    <ul>
+      <li>overloading params: allow alternative types using Union[…] as hints</li>
+      <li>overloading the method: use patterns of params</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Theater</code>: Parameters:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Stage</code>: positional only: all arguments need to be provided in order; no keyword enforced with “/”: def pos(a,b,/,c) # a &amp; b are required as first two + naming (a=’4’) is permitted</li>
+      <li><code class="language-plaintext highlighter-rouge">Vorhang</code>: positional or keywords: e.g., all args in order, mandatory args in order without defaults</li>
+      <li><code class="language-plaintext highlighter-rouge">Decke</code>: keywords only: keyword only argos are place after *, e.g.</li>
+      <li>def kw(a,b,*,c, d) # c &amp; d need to be called with a kw; e.g, kw(4, 5, c=3, d=6)</li>
+      <li>Licht: optional params: by specifying default values; these are evaluated exactly once when func is first created; hence set default values to ‘None’ or reset lists with ‘sam = [] if sam is None else sam</li>
+      <li><code class="language-plaintext highlighter-rouge">Sitz</code>: <em>args: def get_webpages(</em>links): * accepts any number of arguments and puts them all in a tuple named links</li>
+      <li><code class="language-plaintext highlighter-rouge">Lehne</code>: **kwargs: accepts arbitrary keyword arguments; it’s possible to pass any keyword, be careful!</li>
+      <li><code class="language-plaintext highlighter-rouge">Ich</code>: unpacking arguments show_args(**more args): useful for mapping user input</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Residenzplatz</code>: Callable Objects:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">parking</code>: def a_function(): top-level objects and are passed around to execute once a condition is met</li>
+      <li><code class="language-plaintext highlighter-rouge">Ampel</code>: callbacks: used for reactions (e.g., when a user clicks)</li>
+      <li><code class="language-plaintext highlighter-rouge">statue</code>: monkey patching: myobj.do_something = do_another_thing will patch all instances of myobj and create chaos; only use in automated testing to await expensive API-calls</li>
+      <li><code class="language-plaintext highlighter-rouge">balcony</code>: Adding <strong>call</strong>() method: makes objects callable, and allows them to be stateful (funcs cannot!)</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Weinkeller</code>: File I/O:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">entrance</code>: open(): opens OS files, &amp; returns a Python file object, names can be relative or absolute</li>
+      <li><code class="language-plaintext highlighter-rouge">statue</code>: Pathlib works with ‘/’</li>
+      <li><code class="language-plaintext highlighter-rouge">basement</code>: Pass a mode when opening: ‘w’: write, ‘a’: append, ‘r’: read, ‘b’: binary</li>
+      <li><code class="language-plaintext highlighter-rouge">Faesser</code>: read(): returns entire contend, readlines() returns list of all lines</li>
+      <li><code class="language-plaintext highlighter-rouge">table</code>: explicitly use ‘\n’ character, coz only print() has newlines in python</li>
+      <li><code class="language-plaintext highlighter-rouge">candles</code>: always close() filebuffers with a contextmanager</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Garten</code>: Context manager with:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">oben</code>: using with statement ensures a context (api-call, file buffer, threading) is closed even if an error happens making finally: close() unnecessary, even returns partial results</li>
+      <li>with source_path.open() as source_file 	# binds context to variable</li>
+      <li><code class="language-plaintext highlighter-rouge">unten</code>: ALWAYS WRAP FILES INTO WITH STATEMENTS</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">B. Neumann</code>: Yield: produces the first result of a sequence of results</li>
+</ul>
+
+<h2 id="chapter-9-strings-serialization-and-file-paths">Chapter 9, Strings, Serialization, and File Paths</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">TB Recht</code>: Format language: .2f # show decimal point # show two places after decimals # show input as floating</li>
+  <li><code class="language-plaintext highlighter-rouge">UniCafe</code>: Custom formatters: e.g. datetime module</li>
+  <li><code class="language-plaintext highlighter-rouge">Loma/SNF</code>: Regex: special chars, separation, individual, range, escape, negator, anchors</li>
+  <li><code class="language-plaintext highlighter-rouge">Laufstil</code>: Matching Patterns:
+    <ul>
+      <li>re.match 		# match a regex</li>
+      <li>re.compile		# compile to be more efficient</li>
+      <li>re.search 		# matches only first instance</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Wohnzimmer</code>: Pathlib:
+    <ul>
+      <li>cwd()			# returns current working dir</li>
+      <li>.parent / .absolute	# returns parent or absolute path</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Ringpark</code>: pickle: oo-way to store object state
+    <ul>
+      <li>dump(): accepts an object to be written</li>
+      <li>load(): read serialized object’s state from a file-like object</li>
+      <li>attention: pickle is specific to major Python releases -&gt; only good for temp persistence, and risky!</li>
+      <li>unpickable: dynamic attribs, open network sockets</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Sandermare</code>: json: human-readable, only data can be serialized -&gt; safe</li>
+</ul>
+
+<h2 id="chapter-10-the-iterator-pattern">Chapter 10, The Iterator Pattern</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">tegut</code>: Design Pattern: attempt to bring formal definition of correctly designed structures to SE, like to bridges</li>
+  <li><code class="language-plaintext highlighter-rouge">Mensa</code>: Iterator: object w/ next() &amp; done() method</li>
+  <li><code class="language-plaintext highlighter-rouge">Sanderrasen</code>: Iterable: object w/ elements to be iterated over</li>
+  <li><code class="language-plaintext highlighter-rouge">Adalbero Kirche</code>: Comprehensions:
+    <ul>
+      <li>can be used to map inputs to outputs, applying filters along the way</li>
+      <li>highly optimized &amp; readable, work with lists, sets, dicts, and NamedTuples</li>
+      <li>sample = [int(x) for x in numbers if x &lt; 100] [mapping in source if filter]</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Eichendorffapotheke</code>: PYTHONHASHSEED var: can be set to impose an order</li>
+  <li><code class="language-plaintext highlighter-rouge">Ararat</code>: Generator expressions:
+    <ul>
+      <li>lazy comprehensions producing values on demand</li>
+      <li>syntax () 	# generator, not a tuple</li>
+      <li>use if a file (e.g., logs) may be too large to fit in memory or when calc sum, min, max in a func when we don’t actually need a list / dict / set</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Ludwigkai</code>: Generator functions:
+    <ul>
+      <li>yield statement returns an item &amp; then suspends the function</li>
+      <li>when called again via .next() it will start where it left off</li>
+      <li>use over generator expressions, e.g. for exception handling</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Stadtstrand</code>: Yield from: useful for chained generators, with each being lazy avoiding to full up memory</li>
+  <li><code class="language-plaintext highlighter-rouge">Löwenbrücke</code>: Lambda objects: anonymous functions callable w/ params used w/ map or filter</li>
+  <li><code class="language-plaintext highlighter-rouge">Mergentheimer</code>: Walrus operator (:=) : compute a result and test if it’s truthy</li>
+</ul>
+
+<h2 id="chapter-11-common-design-patterns">Chapter 11, Common Design Patterns</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Ruderzentrum</code>: Decorator design pattern: used to add features to functions or classes, apply directly or with @ syntax: @ log_args
+    <ul>
+      <li>allows to wrap an object w/ a core functionality with other objects to alter their functionality</li>
+      <li>in Python (due to duck typing) there is no need to formalize relations w/ abstract interface defs</li>
+      <li>use cases: logging decorator, zipping info, saving info, register decorated classes</li>
+      <li>decorator funcs can be used w/</li>
+      <li>print_args(myfunc) 	# using one func around another</li>
+      <li>monkey-patching</li>
+      <li>@ decorator syntax</li>
+      <li>example: lru_cache(64) 		# least recently used 64 results will be cached /saved temporarily</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Judenbühlweg</code>: Observer design pattern: simplify writing GUIs, formalize relationships between objects as plug-ins: notifyZonk
+    <ul>
+      <li>used for state monitoring or event handling like clicks in GUI</li>
+      <li>allows a given object to be monitored by an unknown &amp; dynamic group of observer objects, the core object being observed needs to implement an interface that makes it observable</li>
+      <li>the observer can be notified via the <strong>call</strong>() method</li>
+      <li>use case: complex cloud applications can suffer from chaos, we can use observers to record state changes, making recovery and restart easier</li>
+      <li>adding totally different types of observers to do different kind of things</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Sebastianisteig</code>: Strategy design pattern: decompose problems, use Strategy objects as plug-ins: Desktop Background
+    <ul>
+      <li>implement different solutions to a single problem</li>
+      <li>core class chooses the most appropriate implementation (concurrent, memory-heavy, etc.)</li>
+      <li>use cases: sorting algos or desktop background scaling</li>
+      <li>binding of the strategy instance happens as late as possible</li>
+      <li>partially true discussion “because Python has first-class funcs, the strategy pattern is unnecessary”</li>
+      <li>Strategy pattern can be implemented without the class definitions as functions not methods</li>
+      <li>difference to mixins: mixins created in source code, while strategy objects can be created at runtime, allowing a late binding</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Zollhaus</code>: Command design pattern: summarize a collection of changes that are applied to other objects: Fancy Dice
+    <ul>
+      <li>‘passive classes’: hold objects and maintain internal state (observer pattern)</li>
+      <li>‘active classes’: reach out into other objects to take action (command pattern)</li>
+      <li>CP involves a hierarchy of classes that each do something</li>
+      <li>A core class can create a command (list) to carry out an action.</li>
+      <li>complex example with a dice roll command &amp; further adjustments ‘as commands’</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Steinbachtal</code>: State design pattern: define processing where there is a change in state and in behavior: GPS processing
+    <ul>
+      <li>represents state transition systems, where an object’s behavior is constrained by the state it is in + there are narrowly defined transitions</li>
+      <li>two types of classes:</li>
+      <li>core: maintain current state &amp; forward actions</li>
+      <li>state: typically hidden from other state objects</li>
+      <li>GPS example: core NMEA state; classes: Message, Reader, Waiting, Header, Body, Checksum, End</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Annaschlucht</code>: Singleton design pattern: when you need to be sure there is only one specific instance: module imports
+    <ul>
+      <li>antipattern, basic idea: allow exactly one instance of a certain object to exist</li>
+      <li>In most languages, you make the constructor of the Singleton class private, but in Python we’re all adults :)</li>
+      <li>Python provides built-in Singleton patterns:</li>
+      <li>Python modules: import module will create a singleton instance</li>
+      <li>Python class definitions: a class can only be created once in a namespace</li>
+      <li>To use module level variables (instead of Singletons), instantiate the class after you defined it; e.g., class Body(NMEAState): … =&gt; BODY = Body() =&gt; now single state objects are being reused</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="chapter-12-advanced-design-patterns">Chapter 12, Advanced Design Patterns</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Frankenwarte</code>: Adapter: Insert an intermediary so a client can use a class, even if it’s not a perfect match</li>
+  <li><code class="language-plaintext highlighter-rouge">Höhenweg mit Blick</code>: Façade: create a unified interface over a number of objects</li>
+  <li><code class="language-plaintext highlighter-rouge">Nikolaushof</code>: Flyweight: implement kind of lazy initialization, instead of copying objects, we use class that share common pool of data</li>
+  <li><code class="language-plaintext highlighter-rouge">Käppele</code>: Abstract Factory: can be used to build a class that can emit instances that will work together</li>
+  <li><code class="language-plaintext highlighter-rouge">Leistenstrasse</code>: Composite: used for complex document types like XML / HTML</li>
+  <li><code class="language-plaintext highlighter-rouge">St. Burkard</code>: Template patterns: if a number of similar, complex classes, then we can leave gaps as openings in templates</li>
+</ul>
+
+<h2 id="chapter-13-testing-object-oriented-programs">Chapter 13, Testing Object-Oriented Programs</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Brueckenbaeck</code>: Reasons:
+    <ul>
+      <li>ensure code is working the way the dev thinks it does</li>
+      <li>code continues working after changes to it</li>
+      <li>ensure dev understood the requirements</li>
+      <li>ensure code has a maintainable interface</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Guru Indian</code>: TDD: write tests first &amp; only unwritten code should be untested, makes you consider how code is used</li>
+  <li><code class="language-plaintext highlighter-rouge">Jahnterassen</code>: Unit tests: components work in isolation
+    <ul>
+      <li>use assert statement to verify results</li>
+      <li>python -m pytest: searches for ‘tests’ folder and files named ‘test_’ and executes them</li>
+      <li>pytest suppresses print() if test passes</li>
+      <li>setup_module() and teardown_module(): run before &amp; after test to e.g. create &amp; close a socket</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Africa Festival</code>: Integration tests: components work when integrated</li>
+  <li><code class="language-plaintext highlighter-rouge">Bruecke dt. Einheit</code>: Coverage: ensures all lines of code ar tested,”coverage_report -m pytest tests html’</li>
+  <li><code class="language-plaintext highlighter-rouge">Cinemaxx</code>: Pattern:
+    <ul>
+      <li>GIVEN … AND …: data from test case &amp; conditions	data = [1,2,3]</li>
+      <li>WHEN: what we will do					m = average(data)</li>
+      <li>THEN: expected result 					assert m = 2</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">das Boot</code>: Boundary value analysis: decompose weird inputs into method</li>
+  <li><code class="language-plaintext highlighter-rouge">Parkhaus</code>: Equivalence partitioning: use ‘valid’ and ‘invalid’ data</li>
+  <li><code class="language-plaintext highlighter-rouge">Steinburg</code>: fixtures: functions to build a GIVEN condition prior to WHEN step, example:
+    <ul>
+      <li>@pytest.fixture: def valid_stats(): return Statslist([1,2,3,4,4]</li>
+      <li>@pytest.mark.skipif(sys.version_info &lt; (3,9), reason=’requires Python 3.9’)</li>
+      <li>@scope: create fixtures that last longer than one test</li>
+      <li>@pytest.mark.xfail: mark if test should fail</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Weingut am Stein</code>: Mocks: isolate a unit under test, requires object that is expensive or risky to use</li>
+  <li><code class="language-plaintext highlighter-rouge">Psychiatrie</code>: Sentinel: use to create opaque objects</li>
+  <li><code class="language-plaintext highlighter-rouge">Bahnhof</code>: Bugs: write test(s) that proves a bug is occurring, write the code to make the tests stop failing</li>
+</ul>
+
+<h2 id="chapter-14-concurrency">Chapter 14, Concurrency</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Berliner Ring</code>: Concurrency: making a computer do multiple things at once.</li>
+  <li><code class="language-plaintext highlighter-rouge">McFit</code>: Threads: sequence of byte-code that may be interrupted and resumed; problem: shares data, concurrency is illusion</li>
+  <li><code class="language-plaintext highlighter-rouge">Europastern</code>: GIL (global interpreter lock): constraints scheduling, managers memory, garbage collection &amp; calls</li>
+  <li><code class="language-plaintext highlighter-rouge">Kaufland</code>: Multiprocessing: spins up new OS processes (w/ interpreters), pools implement interprocess communication, problems: sharing data between processes create overhead as communication requires serialization</li>
+  <li><code class="language-plaintext highlighter-rouge">Burger King</code>: Futures (promise): object that wraps a function call, that func is run in background [asyncio.create_task()]</li>
+  <li><code class="language-plaintext highlighter-rouge">Uniklinik</code>: Asyncio: combines futures with even loop coroutines</li>
+  <li><code class="language-plaintext highlighter-rouge">Mediamarkt</code>: Coroutine: interleaves, function that is waiting for an event &amp; can provide events to other coroutines [async def]</li>
+  <li><code class="language-plaintext highlighter-rouge">Hornbach</code>: Interleaving: multitasking, an application can be processing data while also be waiting for the next request</li>
+  <li><code class="language-plaintext highlighter-rouge">Ikea</code>: Event loop: switches control among coroutines waiting for events [await] &amp; [asyncio.gather()]</li>
+  <li><code class="language-plaintext highlighter-rouge">Estenfeld</code>: Non-preemptive: coroutines explicitly hand control to each other at specific points, removing need for locking</li>
+  <li><code class="language-plaintext highlighter-rouge">Kürnach</code>: Sleeper async code sample:</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="k">def</span> <span class="nf">sleepers</span><span class="p">():</span>			<span class="c1">#  coroutine, async def + await make sleepers interleaved
+</span>	<span class="n">tasks</span> <span class="o">=</span> <span class="p">[</span><span class="n">asyncio</span><span class="p">.</span><span class="n">create_task</span><span class="p">(</span><span class="k">await</span> <span class="n">asyncio</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)]</span>
+	<span class="k">await</span> <span class="n">asyncio</span><span class="p">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">tasks</span><span class="p">)</span>		<span class="c1"># returns control to event loop
+</span><span class="n">asyncio</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">sleepers</span><span class="p">())</span>			<span class="c1"># start event loop, executing sleepers coroutine
+</span></code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Unterpleichfeld</code>: Async keyword: documentation notifying python that the coroutine contains await calls</li>
+  <li><code class="language-plaintext highlighter-rouge">Bergtheim</code>: Synchronous execution: coroutine execs code until await =&gt; returns control to event loop =&gt; event loop executes any other task ​​=&gt; whenever a child task completes, event loop sends result to coroutine =&gt; coroutine continues until await/return</li>
+</ul>
+
+<h2 id="graphql-vs-rest-api">GraphQL vs REST API</h2>
+
+<ul>
+  <li>REST API:
+    <ul>
+      <li>Client requests data from the server in predetermined structure.</li>
+      <li>Structure is defined by a set of endpoints and methods that the client must use to access the data.</li>
+    </ul>
+  </li>
+  <li>GraphQL: allows clients to specify exactly what data they need.
+    <ul>
+      <li>More flexibility and scalability, as the client does not need to know the exact structure of the data they are requesting.</li>
+      <li>Allows clients to request multiple resources in a single query, reducing the number of calls to the server and improving performance.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="amazon-redshift">Amazon Redshift</h2>
+
+<ol>
+  <li>Amazon Redshift is a cloud-based, fully managed, petabyte-scale data warehouse service.</li>
+  <li>Amazon Redshift is designed to provide fast query performance by using columnar storage technology and parallelizing queries over multiple nodes.</li>
+  <li>Amazon Redshift is integrated with other AWS services such as Amazon S3, Amazon EC2, and Amazon EMR.</li>
+  <li>Amazon Redshift is easy to set up, operate, and scale, allowing users to quickly analyze large amounts of data.</li>
+  <li>Amazon Redshift supports a variety of data warehouse features including sort keys, compression, snapshots, and backups.</li>
+</ol>
+
+<h2 id="what-are-the-most-important-key-facts-about-spark">What are the most important key facts about Spark?</h2>
+
+<ol>
+  <li>Apache Spark is a powerful open-source unified analytics engine for large-scale data processing.</li>
+  <li>It is fast and supports both in-memory and disk-based processing, making it suitable for a variety of workloads.</li>
+  <li>Spark runs on top of a cluster manager such as Apache Hadoop YARN, Apache Mesos, or a standalone cluster manager.</li>
+  <li>It provides an interactive, fault-tolerant, and extensible platform for large-scale data processing.</li>
+  <li>Spark supports a wide range of programming languages, including Java, Scala, Python, R, and SQL.</li>
+  <li>It has a rich set of libraries and tools for machine learning, graph processing, and stream processing.</li>
+  <li>It has a unified architecture designed to enable users to easily develop and deploy applications.</li>
+  <li>Spark’s performance is highly optimized, allowing it to process large-scale datasets in a fraction of the time of traditional systems.</li>
+</ol>
+
+<h2 id="what-is-an-rdd">What is an RDD?</h2>
+
+<p>RDD stands for Resilient Distributed Dataset. It is the primary data abstraction in Apache Spark and is a fundamental data structure of the system. RDDs represent a collection of items distributed across many compute nodes that can be operated on in parallel. RDDs are immutable and fault-tolerant, meaning that once created, the data within them cannot be changed, and even if a node or partition fails, the system can recover and continue processing.</p>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Seb Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+  
+  <div class="container-fluid justify-content-center">
+  
+  </div>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

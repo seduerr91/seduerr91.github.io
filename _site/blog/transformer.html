@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Transformer review">
+  <meta property="og:description" content="Summary of the Illustrated Transformer by J. Alammar.">
+  <meta property="og:image" content="https://i.imgur.com/r0yP47Um.png">
+
+  <title>Seb Duerr</title>
+  <meta name="description" content="Summary of the Illustrated Transformer by J. Alammar.">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+    <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-1x fa-bars text-themed"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/datenschutz.html"></a>
+  
+        <a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+  
+        <a class="nav-item nav-link " href="/projects/">Projects</a>
+  
+        <a class="nav-item nav-link active" href="/blog/">Blog</a>
+  
+        <a class="nav-item nav-link " href="/about/">About</a>
+  
+        
+  
+        <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+      </div>
+    </div>
+  
+  </nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>The Transformer review</b></h1>
+
+<p class="post-metadata text-muted">
+  04 August 2020 -  
+  <b>9 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#coding">
+      <span class="tag badge badge-pill text-primary border border-primary">Coding</span>
+    </a>
+    </p>
+
+<p>The article <a href="http://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a> by J. Alammar is a must read on deep learning in the field of natural language processing (NLP). Also, this was recommended in one of the expert interview that I <a href="https://seduerr91.github.io/blog/experts">conducted</a>.</p>
+
+<h3 id="review-of-attention">Review of Attention</h3>
+
+<ul>
+  <li>Attention is a concept that helped improve the performance of neural machine translation applications. An <a href="https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/">attention model</a> differs from a classic sequence-to-sequence model in two main ways:
+    <ul>
+      <li>First, the encoder passes a lot more data to the decoder. Instead of passing the last hidden state of the encoding stage, the encoder passes all the hidden states to the decoder.</li>
+      <li>Second, an attention decoder does an extra step before producing its output. In order to focus on the parts of the input that are relevant to this decoding time step.</li>
+    </ul>
+  </li>
+  <li>The transformer is a model that uses attention to boost the speed with which these models can be trained.</li>
+</ul>
+
+<h4 id="a-high-level-look">A High-Level Look</h4>
+
+<ul>
+  <li>The transformer consists of an <strong>encoding component</strong>, a <strong>decoding component</strong>, and connections between them.</li>
+  <li>The encoding component os a stack of encoders, the decoding component is a stack of decoders of the same number.</li>
+  <li>The <strong>encoders</strong> are all identical in structure (but do not share weights). Each consists of a ‘Feed Forward Neural Network’ (ffn) and a ‘Self-Attention’ (sa) layer.</li>
+  <li>The encoder’s <strong>input</strong> first flows through a self-attention layer - which helps the encoder to look at other words in the input sentence as it encodes a specific word.</li>
+  <li>The encoder’s <strong>outputs</strong> of the ‘Self-Attention’ layer are feed to the ‘Feed Forward Neural Network’. The exact same ffn is independently applied to each position.</li>
+  <li>The <strong>decoder</strong> has also the ffn and the sa layer but in between there is an ‘Encoder-Decoder Attention’ layer. This layer helps the decoder focus on relevant parts of the input sentence.</li>
+</ul>
+
+<h4 id="bringing-tensors-into-the-picture">Bringing Tensors into the Picture</h4>
+
+<ul>
+  <li>The various vectors/tensors flow between these components to turn the input of a trained model into an output. This begins with turning each input word into a vector using an embedding algorithm.</li>
+  <li>The embedding happens only in the first (bottom-most) encoder. The abstraction that is common to all encoders is that they receive a list of vectors each of the size 512. The size of the list is a hyperparameter, i.e. the length of the longest sentence in the training dataset.
+    <ul>
+      <li>in the bottom encoder that is the word embeddings.</li>
+      <li>in other encoders it is the output of the previous encoder.</li>
+    </ul>
+  </li>
+  <li>After embedding the words in the input sequence, each of them flows through each of the two layers of the encoder. Each word in each position flows through its own path in the encoder. There are dependencies between these paths in the sa layer. The ffn layer does not have these dependencies which is why they various paths can be executed in parallel.</li>
+</ul>
+
+<p><img src="http://jalammar.github.io/images/t/encoder_with_tensors_2.png" alt="encoder" /></p>
+
+<h4 id="self-attention-at-a-high-level">Self-Attention at a High Level</h4>
+
+<p><img src="http://jalammar.github.io/images/t/transformer_self-attention_visualization.png" alt="attention" /></p>
+
+<ul>
+  <li>”The animal didn’t cross the street because it was too tired”. What does ‘it’ in the sentence refer to? The street or the animal?</li>
+  <li>When the model is processing the word “it”, self-attention allows it to associate “it” with “animal”. As the model processes each word (each position in the input sequence), self attention allows it to look at other positions in the input sequence for clues that can help lead to a better encoding for this word.</li>
+</ul>
+
+<h4 id="self-attention-in-detail">Self-Attention in Detail</h4>
+
+<ul>
+  <li>The <strong>first</strong> step in calculating self-attention is to create three vectors from each of the encoder’s input vectors (embedding of each word). So for each word:
+    <ul>
+      <li>we create a Query vector,</li>
+      <li>a Key vector, and</li>
+      <li>a Value vector.</li>
+    </ul>
+  </li>
+  <li>These vectors are created by multiplying the embedding by three matrices that we trained during the training process.</li>
+  <li>The <strong>second</strong> step is to calculate a score. We need to score each word of the input sentence against a word. The score determines how much focus to place on other parts of the input sentence as we encode a word at a certain position.
+    <ul>
+      <li>The score is calculated by taking the dot product of the query vector with the key vector of the respective word we’re scoring.</li>
+      <li>So if we’re processing the self-attention for the word in position 1, the first score would be the dot product of q1 and k1. The second score would be the dot product of q1 and k2.</li>
+    </ul>
+  </li>
+  <li>The <strong>third</strong> step is to divide the scores by 8. This leads to having more stable gradients.</li>
+  <li>The <strong>fourth</strong> step is to pass the result through a softmax operation. Softmax normalizes the scores so they’re all positive and add up to 1. This softmax score determines how much each word will be expressed at this position.</li>
+  <li>The <strong>fifth</strong> step is  to multiply each value vector by the softmax score (in preparation to sum them up). The intuition is to keep intact the values of the word(s) we want to focus on, and drown-out irrelevant.</li>
+  <li>The <strong>sixth</strong> step is to sum the weighted value vectors. This produces the output of the self-attention layer at this position.</li>
+  <li>The result will be sent along to the ffn network.</li>
+</ul>
+
+<p><img src="http://jalammar.github.io/images/t/self-attention-output.png" alt="self attention" /></p>
+
+<h4 id="matrix-calculation-of-self-attention">Matrix Calculation of Self-attention</h4>
+
+<ul>
+  <li>The first step is to calculate the Query, Key, and Value matrices. We do that by packing our embeddings into a matrix X, and multiplying it by the weight matrices we’ve trained (WQ, WK, WV).</li>
+  <li>Every row in the X matrix corresponds to a word in the input sentence. We again see the difference in size of the embedding vector (512, or 4 boxes in the figure), and the q/k/v vectors (64, or 3 boxes in the figure):</li>
+</ul>
+
+<p><img src="http://jalammar.github.io/images/t/self-attention-matrix-calculation.png" alt="multi" /></p>
+
+<ul>
+  <li>Finally, since we’re dealing with matrices, we can condense steps two through six in one formula to calculate the outputs of the self-attention layer.</li>
+</ul>
+
+<p><img src="http://jalammar.github.io/images/t/self-attention-matrix-calculation-2.png" alt="2-6" /></p>
+
+<h4 id="the-beast-with-many-heads">The Beast with Many Heads</h4>
+
+<ul>
+  <li>Multi-headed attention improves sa layer in two ways:
+    <ul>
+      <li>It expands the model’s ability to focus on different positions. We would want to know which word “it” refers to.</li>
+      <li>It gives the attention layer multiple “representation subspaces”. With multi-headed attention we have not only one, but multiple sets of Query/Key/Value weight matrices . Each of these sets is randomly initialized. Then, after training, each set is used to project the input embeddings (or vectors from lower encoders/decoders) into a different representation subspace.</li>
+    </ul>
+  </li>
+  <li>If we do the same self-attention calculation we outlined above, just eight different times with different weight matrices, we end up with eight different Z matrices. Yet, the feed-forward layer is not expecting eight matrices – it’s expecting a single matrix (a vector for each word).Therefore, we concat the matrices then multiple them by an additional weights matrix WO.</li>
+</ul>
+
+<p><img src="http://jalammar.github.io/images/t/transformer_multi-headed_self-attention-recap.png" alt="self attention" /></p>
+
+<h4 id="representing-the-order-of-the-sequence-using-positional-encoding">Representing The Order of The Sequence Using Positional Encoding</h4>
+
+<ul>
+  <li>One thing that’s missing from the model as we have described it so far is a way to account for the order of the words in the input sequence. To address this, the transformer adds a vector to each input embedding. These vectors follow a specific pattern that the model learns, which helps it determine the position of each word, or the distance between different words in the sequence. The intuition here is that adding these values to the embeddings provides meaningful distances between the embedding vectors once they’re projected into Q/K/V vectors and during dot-product attention.</li>
+</ul>
+
+<p><img src="http://jalammar.github.io/images/t/transformer_positional_encoding_vectors.png" alt="order" /></p>
+
+<h4 id="the-residuals">The Residuals</h4>
+
+<ul>
+  <li>One detail in the architecture of the encoder that we need to mention before moving on, is that each sub-layer (self-attention, ffnn) in each encoder has a residual connection around it, and is followed by a layer-normalization step.</li>
+</ul>
+
+<p><img src="http://jalammar.github.io/images/t/transformer_resideual_layer_norm.png" alt="normalize" /></p>
+
+<h4 id="the-decoder-side">The Decoder Side</h4>
+
+<p>The encoder start by processing the input sequence. The output of the top encoder is then transformed into a set of attention vectors K and V. These are to be used by each decoder in its “encoder-decoder attention” layer which helps the decoder focus on appropriate places in the input sequence.</p>
+
+<p><img src="http://jalammar.github.io/images/t/transformer_decoding_1.gif" alt="de1" /></p>
+
+<p>The following steps repeat the process until a special symbol is reached indicating the transformer decoder has completed its output. The output of each step is fed to the bottom decoder in the next time step, and the decoders bubble up their decoding results just like the encoders did. And just like we did with the encoder inputs, we embed and add positional encoding to those decoder inputs to indicate the position of each word.</p>
+
+<p><img src="http://jalammar.github.io/images/t/transformer_decoding_2.gif" alt="de2-5" /></p>
+
+<p>In the decoder, the self-attention layer is only allowed to attend to earlier positions in the output sequence. This is done by masking future positions (setting them to -inf) before the softmax step in the self-attention calculation.</p>
+
+<p>The “Encoder-Decoder Attention” layer works just like multiheaded self-attention, except it creates its Queries matrix from the layer below it, and takes the Keys and Values matrix from the output of the encoder stack.</p>
+
+<h4 id="the-final-linear-and-softmax-layer">The Final Linear and Softmax Layer</h4>
+
+<p>The decoder stack outputs a vector of floats. How do we turn that into a word? That’s the job of the final Linear layer which is followed by a Softmax Layer.</p>
+
+<p>The <strong>Linear layer</strong> is a simple fully connected neural network that projects the vector produced by the stack of decoders, into a much, much larger vector called a logits vector.</p>
+
+<p>Let’s assume that our model knows 10,000 unique English words (our model’s “output vocabulary”) that it’s learned from its training dataset. This would make the logits vector 10,000 cells wide – each cell corresponding to the score of a unique word. That is how we interpret the output of the model followed by the Linear layer.</p>
+
+<p>The softmax layer then turns those scores into probabilities (all positive, all add up to 1.0). The cell with the highest probability is chosen, and the word associated with it is produced as the output for this time step.</p>
+
+
+
+<div class="pt-5">
+  
+</div>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Seb Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+  
+  <div class="container-fluid justify-content-center">
+  
+  </div>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

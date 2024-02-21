@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NLP Recent Paper Review">
+  <meta property="og:description" content="Summary of Review by HuggingFace on recent NLP papers.">
+  <meta property="og:image" content="https://i.imgur.com/r0yP47Um.png">
+
+  <title>Seb Duerr</title>
+  <meta name="description" content="Summary of Review by HuggingFace on recent NLP papers.">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+    <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-1x fa-bars text-themed"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/datenschutz.html"></a>
+  
+        <a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+  
+        <a class="nav-item nav-link " href="/projects/">Projects</a>
+  
+        <a class="nav-item nav-link active" href="/blog/">Blog</a>
+  
+        <a class="nav-item nav-link " href="/about/">About</a>
+  
+        
+  
+        <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+      </div>
+    </div>
+  
+  </nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>NLP Recent Paper Review</b></h1>
+
+<p class="post-metadata text-muted">
+  07 August 2020 -  
+  <b>3 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#coding">
+      <span class="tag badge badge-pill text-primary border border-primary">Coding</span>
+    </a>
+    </p>
+
+<p>In his presentation from April 2020, Thomas Wolf, presents recent works in the field of Artificial Intelligence.</p>
+
+<p>Current research directions in the field of NLP are:</p>
+
+<ul>
+  <li>model size and computational efficiency</li>
+  <li>out-of-domain generalization</li>
+  <li>fine tuning and sample efficiency</li>
+  <li>common sense and inductive bias</li>
+</ul>
+
+<h3 id="model-size">Model size</h3>
+
+<p>Regarding model size the most recent developments were usually based on <strong>increasingly big models</strong> such as T5 by Google, MegatronLM by Nvidia, or BART / XLM-R by Facebook Research. These models usually have over 1 billion parameters.</p>
+
+<p>This is a problem because of the narrowing research competition and the environmental cost that come with the training of these models.</p>
+
+<p>However, works on <strong>smaller models</strong> because the big ones are usually overparametrized are a research stream. Thomas Wolf presents three techniques, i.e. distillation, pruning, and quantization to address the reduction of model size.</p>
+<ul>
+  <li><strong>Distillation</strong> deals with taking a teacher model (like BERT) and using a student model (e.g., TinyBERT) to reduce inference cost, while capitalizing on the inductive biases learned by large models.</li>
+  <li><strong>Pruning</strong> can be done for heads, weights, and layers.</li>
+  <li><strong>Quantization</strong> refers to the change of the data type (i.e., FP32 to INT8).</li>
+</ul>
+
+<p>Additionally, researchers trace how increasing amounts of data improve result quality in NLP challenges. This can be done for pre-training (e.g. the XLNet vs. BERT debates) or in fine-tuning (scores on the Winograd Schema Challenge or MaskedWiki.)</p>
+
+<p>Generally, the power law of natural language modelling (NLM) confers that <em>compute, dataset size and parameters</em> need to be scaled up in tandem. RoBERTa-large with 2.2T tokens compared to BERT-large with only 137B tokens had a significantly better result in zero-shot evaluation on birth-year comparisons.</p>
+
+<h3 id="in-domain-vs-out-of-domain-generalization">In-domain vs. Out-of-domain Generalization</h3>
+
+<p>Out-of-domain generalizations relates to the ability of a trained Neural Network to also solve NLP tasks outside the training domain. Let us assume that a neural net was only trained on wikipedia articles then it would write texts or solve masked tasks only with wikipedia-like answers. In a forum like platform like Reddit the neural network would be easily spotted.</p>
+
+<h3 id="the-limits-of-nlu-and-the-rise-of-nlg">The limits of NLU and the rise of NLG</h3>
+
+<p>The NL Decathlon is a test consisting of different tasks like translation, question answering and summarization. It is used to evaluate different models and test their quality of natural language generation (NLG).</p>
+
+<h3 id="a-fundamental-flaw-the-lack-of-robustness">A fundamental flaw: the lack of robustness</h3>
+
+<p>Still, neural nets in NLP easily fall into local minima meaning that they are confused if certain parts of a text are changed. Solutions to this could be better <em>regularizaton</em>, <em>ensembles and multi-tasking</em> but will result in high cost of training.</p>
+
+<h3 id="the-inductive-bias-question">The inductive bias question</h3>
+
+<p>Models can be brittle and spurious. Brittle refers to failing when text is modified, even when meaning is preserved. While spurious models memorize artifacts and biases instead of truly learning.</p>
+
+<h3 id="common-sense">Common Sense</h3>
+
+<p>The limits of distributional hypothesis proposes that certain types of information are difficult to learn from raw text. E.g., humans do not state the obvious (sheep are white, but everybody talks about black sheep), so structural knowledge (a table that says that sheep are white), multimodal learning (show a lot of sheep to the computer from pictures) or humans in the loop may be the remedy. Just like humans are also learning from multimodal contexts (after all we have multiple senses).</p>
+
+<h3 id="the-continual-learning-question">The continual-learning question</h3>
+
+<p>What does the neural network need to know, what could it forget? Current transfer learning only performs adaptions once but we need models that continuously retain and accumulate knowledge across many tasks. So no distinction between pretraining and adaption should be made.</p>
+
+
+
+<div class="pt-5">
+  
+</div>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Seb Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+  
+  <div class="container-fluid justify-content-center">
+  
+  </div>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
