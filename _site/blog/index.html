@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog">
+  <meta property="og:description" content=":blue_heart: Joy in my life.">
+  <meta property="og:image" content="https://i.imgur.com/r0yP47Um.png">
+
+  <title>Seb Duerr</title>
+  <meta name="description" content=":blue_heart: Joy in my life.">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+    <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-1x fa-bars text-themed"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+<a class="nav-item nav-link " href="/datenschutz.html"></a>
+  
+        <a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+  
+        <a class="nav-item nav-link " href="/projects/">Projects</a>
+  
+        <a class="nav-item nav-link active" href="/blog/">Blog</a>
+  
+        <a class="nav-item nav-link " href="/about/">About</a>
+  
+        
+  
+        <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+      </div>
+    </div>
+  
+  </nav>
+    <!-- Simple-Jekyll-Search https://github.com/christian-fei/Simple-Jekyll-Search -->
+
+<div class="input-group mt-5 px-3">
+  <input id="search-input" type="text" class="form-control search-box" placeholder="Search posts..">
+  <div class="input-group-append">
+    <span class="input-group-text border border-primary bg-primary text-white">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+  <button class="btn btn-outline-primary ml-1" onclick="location.href = '/blog/tags';">
+    <i class="fas fa-tags"></i>
+  </button>
+</div>
+<ul class="px-3" id="results-container"></ul>
+
+<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+<script>
+  var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
+        noResultsText: '<li class="list-group-item list-group-item-action disabled">No results found</li>',
+        json: '/search.json'
+      })
+</script>
+<div class="card-group mt-2">
+
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/data-vs-eng" class="post card bg-danger">
+    <div class="card-body text-white">
+      <h3 class="card-title">Differences between Software Engineers and Data Scientists</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-danger">Coding</span>
+        
+      </p>
+      <p class="card-text">In regard to object-oriented aspects</p>
+    </div>
+    <div class="card-footer text-white">
+      20 February 2024
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/alaska" class="post card bg-primary">
+    <div class="card-body text-white">
+      <h3 class="card-title">Alaska Plan</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-primary">Travel</span>
+        
+      </p>
+      <p class="card-text">This is a template plan for our trip to Alaska.</p>
+    </div>
+    <div class="card-footer text-white">
+      08 February 2024
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/grateful" class="post card bg-danger">
+    <div class="card-body text-white">
+      <h3 class="card-title">Giving Thanks - The People Who Shaped My Journey</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-danger">Language</span>
+        
+        <span class="badge badge-light text-danger">Communication</span>
+        
+        <span class="badge badge-light text-danger">Persuasion</span>
+        
+        <span class="badge badge-light text-danger">Writing Techniques</span>
+        
+      </p>
+      <p class="card-text">On the occasion of Thanksgiving 2023, this blog post delves into the power of gratitude. Reflecting on personal growth and the pivotal individuals who have guided, inspired, and shaped my path, it serves as a heartfelt homage to those who have made a lasting impact on his life.</p>
+    </div>
+    <div class="card-footer text-white">
+      23 November 2023
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/memory-castles" class="post card bg-success">
+    <div class="card-body text-white">
+      <h3 class="card-title">Unlocking the Secrets of the Memory Palace</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-success">Memory</span>
+        
+        <span class="badge badge-light text-success">Knowledge Canon</span>
+        
+        <span class="badge badge-light text-success">Learning</span>
+        
+        <span class="badge badge-light text-success">Lifelong</span>
+        
+      </p>
+      <p class="card-text">Moonwalking with Einstein by Joshua Foer explores the powerful mnemonic device known as the method of loci or the memory palace technique.</p>
+    </div>
+    <div class="card-footer text-white">
+      22 November 2023
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/books" class="post card bg-primary">
+    <div class="card-body text-white">
+      <h3 class="card-title">The Transformative Power of Reading - A NLP Engineer's Perspective</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-primary">reading</span>
+        
+        <span class="badge badge-light text-primary">cognitive development</span>
+        
+        <span class="badge badge-light text-primary">stress reduction</span>
+        
+        <span class="badge badge-light text-primary">empathy</span>
+        
+        <span class="badge badge-light text-primary">book recommendations</span>
+        
+      </p>
+      <p class="card-text">Discover the profound impact of reading on knowledge acquisition, cognitive development, empathy, and stress relief from the perspective of an NLP engineer. Explore a curated reading list and learn why reading is essential for personal growth.</p>
+    </div>
+    <div class="card-footer text-white">
+      19 November 2023
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/activities" class="post card bg-light">
+    <div class="card-body text-themed">
+      <h3 class="card-title">Cultivating Connections - Social Activities for Friends and Spouses</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-dark">Lifestyle</span>
+        
+        <span class="badge badge-dark">Relationships</span>
+        
+        <span class="badge badge-dark">Cooking</span>
+        
+        <span class="badge badge-dark">Technology</span>
+        
+        <span class="badge badge-dark">Photography</span>
+        
+        <span class="badge badge-dark">Arts</span>
+        
+      </p>
+      <p class="card-text">An exploration of diverse and enriching activities designed to strengthen bonds with friends and loved ones, with a personal touch.</p>
+    </div>
+    <div class="card-footer text-themed">
+      18 November 2023
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/professional-coder" class="post card bg-info">
+    <div class="card-body text-white">
+      <h3 class="card-title">Mastering the Code - A Coder’s Strategic Roadmap to Professional Expertise by Q1/2024</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-info">Coding Mastery</span>
+        
+        <span class="badge badge-light text-info">Software Development</span>
+        
+        <span class="badge badge-light text-info">Professional Development</span>
+        
+        <span class="badge badge-light text-info">Tech Skills</span>
+        
+        <span class="badge badge-light text-info">Programming Languages</span>
+        
+        <span class="badge badge-light text-info">Code Challenges</span>
+        
+        <span class="badge badge-light text-info">Software Engineering Philosophy</span>
+        
+        <span class="badge badge-light text-info">Coding Education</span>
+        
+        <span class="badge badge-light text-info">Career Roadmap</span>
+        
+        <span class="badge badge-light text-info">Tech Community</span>
+        
+      </p>
+      <p class="card-text">Elevate your coding skills with our strategic Q1/2024 roadmap, featuring hands-on practice, learning resources, and sharing expertise through teaching and community engagement.</p>
+    </div>
+    <div class="card-footer text-white">
+      16 November 2023
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/where-2-live" class="post card bg-warning">
+    <div class="card-body text-white">
+      <h3 class="card-title">The Ultimate City Living Guide</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-warning">Relocation</span>
+        
+        <span class="badge badge-light text-warning">City Life</span>
+        
+        <span class="badge badge-light text-warning">Lifestyle</span>
+        
+      </p>
+      <p class="card-text">Discover the perfect city to call home based on climate, culture, safety, and more with our in-depth city living analysis.</p>
+    </div>
+    <div class="card-footer text-white">
+      15 November 2023
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/job-dimensions" class="post card bg-danger">
+    <div class="card-body text-white">
+      <h3 class="card-title">Navigating the Tech Landscape - Finding Your Ideal Job in AI and NLP</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-danger">Career</span>
+        
+        <span class="badge badge-light text-danger">Job Search</span>
+        
+        <span class="badge badge-light text-danger">Artificial Intelligence</span>
+        
+        <span class="badge badge-light text-danger">NLP</span>
+        
+        <span class="badge badge-light text-danger">Technology</span>
+        
+      </p>
+      <p class="card-text">An analytical approach to choosing the right company for your tech career.</p>
+    </div>
+    <div class="card-footer text-white">
+      15 November 2023
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/goals-2035" class="post card bg-success">
+    <div class="card-body text-white">
+      <h3 class="card-title">Setting Personal and Professional Life Goals for 2035</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-success">Life Goals</span>
+        
+        <span class="badge badge-light text-success">Personal Development</span>
+        
+        <span class="badge badge-light text-success">NLP</span>
+        
+        <span class="badge badge-light text-success">Career Growth</span>
+        
+        <span class="badge badge-light text-success">Health and Fitness</span>
+        
+        <span class="badge badge-light text-success">Real Estate Investment</span>
+        
+      </p>
+      <p class="card-text"></p>
+<p>Envisioning our future can often feel like an exercise in navigating through a fog of uncertainty. However, it’s possible to craft a strategy for the<small><i>  read more...</i></small></p>
+    </div>
+    <div class="card-footer text-white">
+      15 November 2023
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/perfect-schedule" class="post card bg-secondary">
+    <div class="card-body text-white">
+      <h3 class="card-title">Mastering the Art of Balance - A Guide to the Perfect Weekly Schedule</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-secondary">Productivity,</span>
+        
+        <span class="badge badge-light text-secondary">Health</span>
+        
+        <span class="badge badge-light text-secondary">and</span>
+        
+        <span class="badge badge-light text-secondary">Wellness,</span>
+        
+        <span class="badge badge-light text-secondary">Work-Life</span>
+        
+        <span class="badge badge-light text-secondary">Balance,</span>
+        
+        <span class="badge badge-light text-secondary">Time</span>
+        
+        <span class="badge badge-light text-secondary">Management,</span>
+        
+        <span class="badge badge-light text-secondary">Healthy</span>
+        
+        <span class="badge badge-light text-secondary">Eating,</span>
+        
+        <span class="badge badge-light text-secondary">Fitness</span>
+        
+        <span class="badge badge-light text-secondary">Routine,</span>
+        
+        <span class="badge badge-light text-secondary">Socializing</span>
+        
+      </p>
+      <p class="card-text">Dive into the art of crafting a balanced weekly schedule that promotes productivity, health, and well-being. Learn how to blend work, fitness, nutrition, and social activities into a harmonious lifestyle that not only fulfills your duties but also nourishes your soul and brings joy to your everyday life.</p>
+    </div>
+    <div class="card-footer text-white">
+      14 November 2023
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/itineraries-2024" class="post card bg-primary">
+    <div class="card-body text-white">
+      <h3 class="card-title">Trip Itineraries for 2024</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-primary">Travel</span>
+        
+      </p>
+      <p class="card-text">Discover Seb Duerr's 2024 trip itineraries crafted with GPT-4 assistance, blending nature, culture, and city experiences across global destinations.</p>
+    </div>
+    <div class="card-footer text-white">
+      12 November 2023
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/mexico-nov-2023" class="post card bg-light">
+    <div class="card-body text-themed">
+      <h3 class="card-title">Oaxacan Wonders and Mexico City Marvels</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-dark">travel</span>
+        
+      </p>
+      <p class="card-text">A Nomadic Adventure Like No Other</p>
+    </div>
+    <div class="card-footer text-themed">
+      06 November 2023
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/7-countries" class="post card bg-info">
+    <div class="card-body text-white">
+      <h3 class="card-title">My Global Journey - Living in Seven Different Countries</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-info">Travel</span>
+        
+      </p>
+      <p class="card-text">Another life goal ticked.</p>
+    </div>
+    <div class="card-footer text-white">
+      20 August 2022
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/countries_visited" class="post card bg-warning">
+    <div class="card-body text-white">
+      <h3 class="card-title">A Glimpse of Every Country I've Journeyed To</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-warning">travel</span>
+        
+      </p>
+      <p class="card-text">An exciting visual journey through 75 countries.</p>
+    </div>
+    <div class="card-footer text-white">
+      19 August 2022
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/using-deepset-for-biz" class="post card bg-danger">
+    <div class="card-body text-white">
+      <h3 class="card-title">Dense Passage Retrieval of 10-k Reports with Haystack</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-danger">Instructions</span>
+        
+      </p>
+      <p class="card-text">Gaining valuable insights by questioning a 10-k report</p>
+    </div>
+    <div class="card-footer text-white">
+      14 April 2022
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/finetuning" class="post card bg-success">
+    <div class="card-body text-white">
+      <h3 class="card-title">Finetuning a DNN for Extroversion</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-success">Coding</span>
+        
+      </p>
+      <p class="card-text">This micro-service allows to find paraphrases for a given text based on T5.</p>
+    </div>
+    <div class="card-footer text-white">
+      30 August 2021
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/extroversion-implementation" class="post card bg-secondary">
+    <div class="card-body text-white">
+      <h3 class="card-title">Technical Implementation in SpaCy.</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-secondary">Persuaide</span>
+        
+        <span class="badge badge-light text-secondary">engineering</span>
+        
+      </p>
+      <p class="card-text">Technical Implementation in SpaCy.</p>
+    </div>
+    <div class="card-footer text-white">
+      25 August 2021
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/extroversion-implementation-strategy" class="post card bg-primary">
+    <div class="card-body text-white">
+      <h3 class="card-title">Implementation Strategy extroverted writing.</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-primary">Persuaide</span>
+        
+        <span class="badge badge-light text-primary">engineering</span>
+        
+      </p>
+      <p class="card-text">Implementation Strategy.</p>
+    </div>
+    <div class="card-footer text-white">
+      20 August 2021
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/extroversion-theory" class="post card bg-light">
+    <div class="card-body text-themed">
+      <h3 class="card-title">The theory of extroverted writing.</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-dark">Persuaide</span>
+        
+        <span class="badge badge-dark">engineering</span>
+        
+      </p>
+      <p class="card-text">The theory of extroverted writing.</p>
+    </div>
+    <div class="card-footer text-themed">
+      15 August 2021
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/large-mail-data" class="post card bg-info">
+    <div class="card-body text-white">
+      <h3 class="card-title">Using a lot of mails.</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-info">Persuaide</span>
+        
+        <span class="badge badge-light text-info">engineering</span>
+        
+      </p>
+      <p class="card-text">Using a lot of mails.</p>
+    </div>
+    <div class="card-footer text-white">
+      10 August 2021
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/dataset-search" class="post card bg-warning">
+    <div class="card-body text-white">
+      <h3 class="card-title">Finding a base datasets</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-warning">Persuaide</span>
+        
+        <span class="badge badge-light text-warning">engineering</span>
+        
+      </p>
+      <p class="card-text">Finding a dataset for your purpose.</p>
+    </div>
+    <div class="card-footer text-white">
+      05 August 2021
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/finding-data" class="post card bg-danger">
+    <div class="card-body text-white">
+      <h3 class="card-title">Data-Centric Modeling</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-danger">Persuaide</span>
+        
+        <span class="badge badge-light text-danger">engineering</span>
+        
+      </p>
+      <p class="card-text">Finding a dataset for your purpose.</p>
+    </div>
+    <div class="card-footer text-white">
+      04 August 2021
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/persuasiveness" class="post card bg-success">
+    <div class="card-body text-white">
+      <h3 class="card-title">What makes a message persuasive?</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-success">Research</span>
+        
+      </p>
+      <p class="card-text">An attempt to define persuasiveness in a natural text context.</p>
+    </div>
+    <div class="card-footer text-white">
+      20 March 2021
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/synthetic_data" class="post card bg-primary">
+    <div class="card-body text-white">
+      <h3 class="card-title">4 Steps to Create Synthetic Datasets with T5, PAWS and Your Text Corpus</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-primary">Coding</span>
+        
+      </p>
+      <p class="card-text">Extending T5's capabilities with paraphrasing for synthetic dataset creation.</p>
+    </div>
+    <div class="card-footer text-white">
+      16 November 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/pawraphrase" class="post card bg-light">
+    <div class="card-body text-themed">
+      <h3 class="card-title">Invoking more Creativity with Pawraphrases based on T5</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-dark">Coding</span>
+        
+      </p>
+      <p class="card-text">This micro-service allows to find paraphrases for a given text based on T5.</p>
+    </div>
+    <div class="card-footer text-themed">
+      10 November 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/ilmapi-instructions" class="post card bg-warning">
+    <div class="card-body text-white">
+      <h3 class="card-title">How to Use the Generative Text Infilling Model</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-warning">Coding</span>
+        
+      </p>
+      <p class="card-text">This micro-service allows infilling multiple words into a context. This article explains how to use it.</p>
+    </div>
+    <div class="card-footer text-white">
+      02 October 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/ilm-fastapi" class="post card bg-danger">
+    <div class="card-body text-white">
+      <h3 class="card-title">Hosting your text infilling (based on GPT-2) through FastAPI on GCP</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-danger">Coding</span>
+        
+      </p>
+      <p class="card-text">This micro-service allows infilling multiple words into a context through AI. Researchers from Stanford addressed this. I made their work available through an API.</p>
+    </div>
+    <div class="card-footer text-white">
+      01 October 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/streamlit-nlp" class="post card bg-success">
+    <div class="card-body text-white">
+      <h3 class="card-title">Running GPT2 Inference through a Streamlit Interface on GCP</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-success">Coding</span>
+        
+      </p>
+      <p class="card-text">These are non-working instructions for running a Deep Neural Network on a Streamlit server.</p>
+    </div>
+    <div class="card-footer text-white">
+      03 September 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/nlp-review" class="post card bg-secondary">
+    <div class="card-body text-white">
+      <h3 class="card-title">NLP Recent Paper Review</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-secondary">Coding</span>
+        
+      </p>
+      <p class="card-text">Summary of Review by HuggingFace on recent NLP papers.</p>
+    </div>
+    <div class="card-footer text-white">
+      07 August 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/transformer" class="post card bg-primary">
+    <div class="card-body text-white">
+      <h3 class="card-title">The Transformer review</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-primary">Coding</span>
+        
+      </p>
+      <p class="card-text">Summary of the Illustrated Transformer by J. Alammar.</p>
+    </div>
+    <div class="card-footer text-white">
+      04 August 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/dnn" class="post card bg-light">
+    <div class="card-body text-themed">
+      <h3 class="card-title">An Introduction to Deep Neural Networks</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-dark">Coding</span>
+        
+      </p>
+      <p class="card-text">A brief illustrative Introduction on how DNNs work.</p>
+    </div>
+    <div class="card-footer text-themed">
+      10 July 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/brilliant-green" class="post card bg-info">
+    <div class="card-body text-white">
+      <h3 class="card-title">Brilliant Green</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-info">Research</span>
+        
+      </p>
+      <p class="card-text">My Summary of the Book Brilliant Green</p>
+    </div>
+    <div class="card-footer text-white">
+      28 June 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/object-tracker" class="post card bg-warning">
+    <div class="card-body text-white">
+      <h3 class="card-title">Tracking Object Movements with Machine Learning (Open CV)</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-warning">Coding</span>
+        
+      </p>
+      <p class="card-text">Plants respond to happy emotions. This article illustrates how to use Machine Learning to show this repeatedly.</p>
+    </div>
+    <div class="card-footer text-white">
+      12 June 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/traveling" class="post card bg-danger">
+    <div class="card-body text-white">
+      <h3 class="card-title">The Transformative Impact of Traveling</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-danger">Motivation</span>
+        
+      </p>
+      <p class="card-text">Read how to travel to 60 countries in 5 years.</p>
+    </div>
+    <div class="card-footer text-white">
+      05 June 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/coding" class="post card bg-success">
+    <div class="card-body text-white">
+      <h3 class="card-title">How Crafting Code Can Change Your Life</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-success">Coding</span>
+        
+      </p>
+      <p class="card-text">Outlining a path to become a Machine Learning Scholar at MIT.</p>
+    </div>
+    <div class="card-footer text-white">
+      22 May 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/roadmap" class="post card bg-secondary">
+    <div class="card-body text-white">
+      <h3 class="card-title">It is Your Time - Following Your Roadmap</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-secondary">Motivation</span>
+        
+      </p>
+      <p class="card-text">How to derive a one-year roadmap from your strategy.</p>
+    </div>
+    <div class="card-footer text-white">
+      15 May 2020
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/strategy" class="post card bg-primary">
+    <div class="card-body text-white">
+      <h3 class="card-title">2025 - Preparing a Strategy</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-primary">Motivation</span>
+        
+      </p>
+      <p class="card-text">How to find your calling to carve out a strategy for a one year study leave.</p>
+    </div>
+    <div class="card-footer text-white">
+      08 May 2020
+    </div>
+  </a>
+</div>
+  
+  
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Seb Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+  
+  <div class="container-fluid justify-content-center">
+  
+  </div>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

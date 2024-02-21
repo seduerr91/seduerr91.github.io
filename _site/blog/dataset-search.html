@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Finding a base datasets">
+  <meta property="og:description" content="Finding a dataset for your purpose.">
+  <meta property="og:image" content="https://i.imgur.com/r0yP47Um.png">
+
+  <title>Seb Duerr</title>
+  <meta name="description" content="Finding a dataset for your purpose.">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+    <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-1x fa-bars text-themed"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/datenschutz.html"></a>
+  
+        <a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+  
+        <a class="nav-item nav-link " href="/projects/">Projects</a>
+  
+        <a class="nav-item nav-link active" href="/blog/">Blog</a>
+  
+        <a class="nav-item nav-link " href="/about/">About</a>
+  
+        
+  
+        <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+      </div>
+    </div>
+  
+  </nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1><b>Finding a base datasets</b></h1>
+
+<p class="post-metadata text-muted">
+  05 August 2021 -  
+  <b>4 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#persuaide">
+      <span class="tag badge badge-pill text-primary border border-primary">Persuaide</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#engineering">
+      <span class="tag badge badge-pill text-primary border border-primary">engineering</span>
+    </a>
+    </p>
+
+<h2 id="-dataset-search">🔎 Dataset Search</h2>
+
+<p>In order to teach new downstream tasks to deep neural network models like T5, we need to find datasets that are in line with the input and output the model is used for. 
+T5 is a text-to-text model which means that it has seen a lot of inputs, and a lot  of outputs, and infers the differences between them. 
+A sample data point from the exemplary Google’s PAWS dataset looks as follows, where the label determines whether Sentence 1 and 2 are paraphrasing each other:</p>
+
+<p><img src="https://postimg.cc/mcgRM6DB" alt="Screenshot-2021-09-12-at-21-59-00.png" /></p>
+
+<p>Some additional datasets that are suitable to teach new downstream tasks / functionality to T5 are:
+Google’s DiscoFuse which is a dataset that fuses two sentences into one. It consists of more than 60 million pairs.
+Google’s Wikisplit which focuses on the splitting of sentences and inverses the idea of DiscoFuse. 
+This presentation at datalift #3 exemplifies how above datasets can be used for fine-tuning Google’s T5 on PAWS (including the corresponding code).</p>
+
+<h2 id="-sources-for-task-related-datasets">👨🏼‍💻 Sources for Task-related Datasets</h2>
+
+<p>Oftentimes, datasets are already available, and as you will learn in the course of this manuscript, the compilation of a custom dataset is tedious at first. Hence, a few best practices to search if there is not already a dataset for the purpose of your task are:
+Google for related problems. I find results from particularly Medium.com oftentimes very helpful since there is usually some comprehensible instructions and the corresponding code provided.
+A more academic search the scanning of Google Scholar for related scientific articles. Here, you have to digest the academic narrative, and it frankly may involve a solid amount of reengineering (and reverting to old Python dependencies) to be able to run the code (authors also tend to not export the versions of their dependencies.
+Furthermore, searching Github Repositories allows you to combine the works of different companies such as Facebook AI Research or other outfits. 
+Lastly, Kaggle.com holds many NLP datasets, too.
+The Google dataset searchbase has not been to useful for me in the past.
+Once, you have checked all these sources without success, you may want to consider to compile your own dataset. This also involves some considerations.</p>
+
+<p>💁🏼‍♂️ Considerations in the Absence of Appropriate Datasets</p>
+
+<p>If searching the databases presented before did not score any results, then the need may arise to compile an own dataset for a particular task that has to be solved. In this case, consider the following aspects of any raw dataset that can be used as a base dataset from which we will compile the actual dataset. These are:</p>
+
+<ul>
+  <li>The type needs to be fitting: Texts come in the form of mail, chat, wikipedia articles, forum contribution, or debate or speech transcripts which may be more or less appropriate to your custom use case. Consider for instance, that wikipedia articles are usually written in third person and very objectively, whereas the exchange of humans in mail or chat increasingly involve first and second person (singular).</li>
+  <li>Large scale data is important: Training epochs can be set high but specifically in texts a deep neural net should have seen a variety of different sentence structures to be able to generalize to a maximum number of textual scenarios, Hence, my minimum of training samples is 50 thousands of sentence pairs in a 80:20:20 data split.
+Length of individual data point: Another consideration is the length of a given text, as, for instance, T5 is limited to a token length of 512. Yet, more contemporary architectures such as Pegasus or Longformer are able to process up to 1 million tokens. This equates to the length of an ordinary book.</li>
+  <li>Cleanliness of dataset (‘garbage in, garbage out’): Last but not least it is crucial to feed the deep neural network with clean data in the process of fine-tuning. Certainly  some errors may help to allow the deep neural network to generalize also to erroneous writing. However, it shall not learn certain bad styles which is why I recommend to use APIs such as GingerIT to augment the data and avoid traditional pitfalls like wrong inflections of verbs or an incorrect number of a nouns ;).</li>
+</ul>
+
+<p>In the course of this case study, we will work with mail data to be able to change the character of a text from introvert to extrovert an the reverse. Therefore, we will need a dataset composed oof mails as a base.</p>
+
+
+
+
+<div class="pt-5">
+  
+</div>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Seb Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+  
+  <div class="container-fluid justify-content-center">
+  
+  </div>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

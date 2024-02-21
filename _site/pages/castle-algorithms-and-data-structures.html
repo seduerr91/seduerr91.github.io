@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Algorithms and Data Structures">
+  <meta property="og:description" content="Vienna">
+  <meta property="og:image" content="https://i.imgur.com/r0yP47Um.png">
+
+  <title>Seb Duerr</title>
+  <meta name="description" content="Vienna">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+    <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-1x fa-bars text-themed"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/datenschutz.html"></a>
+  
+        <a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+  
+        <a class="nav-item nav-link " href="/projects/">Projects</a>
+  
+        <a class="nav-item nav-link " href="/blog/">Blog</a>
+  
+        <a class="nav-item nav-link " href="/about/">About</a>
+  
+        
+  
+        <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+      </div>
+    </div>
+  
+  </nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <p>A Walk through beautiful Vienna</p>
+
+<h2 id="district-1-systems-design-senacor-office">District 1: Systems Design (Senacor Office)</h2>
+
+<ul>
+  <li>Design Steps:</li>
+  <li><code class="language-plaintext highlighter-rouge">Senacor Office</code>: Scope the problem: build what interviewer wants: what, who, where, when</li>
+  <li><code class="language-plaintext highlighter-rouge">Japanese Embassy</code>: Make reasonable assumptions</li>
+  <li><code class="language-plaintext highlighter-rouge">Votivkirche</code>: Draw major components</li>
+  <li><code class="language-plaintext highlighter-rouge">Fancy Spar</code>: Identify key issues (bottlenecks)</li>
+  <li><code class="language-plaintext highlighter-rouge">U5 Site</code>: Redesign key issues</li>
+  <li><code class="language-plaintext highlighter-rouge">Town Hall</code>: Concepts: Horizontal scaling: adding additional resources</li>
+  <li><code class="language-plaintext highlighter-rouge">Burgtheater</code>: Vertical scaling: propping up existing resources, easier</li>
+  <li><code class="language-plaintext highlighter-rouge">Parliament Cupola</code>: Load Balancing: distribute server load so it doesn’t crash by cloning</li>
+  <li><code class="language-plaintext highlighter-rouge">Law Palace</code>: Denormalization: adding redundant info to speed up reads (because joints are slow)</li>
+  <li><code class="language-plaintext highlighter-rouge">VOGA Club</code>: NoSQL: does not support joints</li>
+  <li><code class="language-plaintext highlighter-rouge">Parliament</code>: Sharding: splitting data across multiple machines</li>
+  <li><code class="language-plaintext highlighter-rouge">Volksgarten</code>: vertical: by function, e.g. one table for profiles, one for messages</li>
+  <li><code class="language-plaintext highlighter-rouge">Hofburg</code>: key-based: some part of data, m mod N (N: number of servers)</li>
+  <li><code class="language-plaintext highlighter-rouge">Kanzleramt</code>: directory-based: maintain a look-up table</li>
+  <li><code class="language-plaintext highlighter-rouge">Hofburg</code>: Caching: provide simple key-value pairing (query &amp; result) between application, and data store</li>
+  <li><code class="language-plaintext highlighter-rouge">Hofreiterschule</code>: Async processing: for slow operations (like top forum posts, loading DNN)</li>
+  <li><code class="language-plaintext highlighter-rouge">Raiba @ Graben</code>: Network metrics:</li>
+  <li><code class="language-plaintext highlighter-rouge">Full Square</code>: bandwidth: max amount of data in t</li>
+  <li><code class="language-plaintext highlighter-rouge">Real Square</code>: latency: time from start to end</li>
+  <li><code class="language-plaintext highlighter-rouge">Time to Raiba</code>: throughput: actually amount of data in t</li>
+  <li><code class="language-plaintext highlighter-rouge">Meinl</code>: Map/reduce: map takes data &amp; returns key: value, reduce takes key:value and reduces it e.g., key: sum(values)</li>
+  <li><code class="language-plaintext highlighter-rouge">Brunnen</code>: Considerations: Failure: plan for test cases</li>
+  <li><code class="language-plaintext highlighter-rouge">Green Habsburghouse</code>: Availability: % system is operational</li>
+  <li><code class="language-plaintext highlighter-rouge">Do &amp; Co</code>: Reliability: % that systems is operational</li>
+  <li><code class="language-plaintext highlighter-rouge">Stephansdom</code>: Read-heavy: consider caching</li>
+  <li><code class="language-plaintext highlighter-rouge">Tower queue of Dom</code>: Write-heavy: consider queuing writes</li>
+  <li><code class="language-plaintext highlighter-rouge">Security Peeps at Dom</code>: Security: plan for test cases</li>
+</ul>
+
+<h2 id="district-2-object-oriented-design-salztor-bridge">District 2: Object-Oriented Design (Salztor-Bridge)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Salztorbruecke</code>: Approach: Handle ambiguity: who is going to use system &amp; how, when, what, where, why</li>
+  <li><code class="language-plaintext highlighter-rouge">RLB</code>: Define core objects: mostly nouns</li>
+  <li><code class="language-plaintext highlighter-rouge">eforce</code>: Analyze relationships: 1-to-1, 1-to-many, many-to-many</li>
+  <li><code class="language-plaintext highlighter-rouge">IBM</code>: Identify actions: mostly verbs of object</li>
+  <li><code class="language-plaintext highlighter-rouge">Uniqa</code>: Design Patterns: Singleton: ensures that a class has only one instance (e.g. restaurant)</li>
+  <li><code class="language-plaintext highlighter-rouge">Sternwarte</code>: Factory: offers interface for creating instance of a class with subclass deciding which class to instantiate (e.g. pipeline)</li>
+</ul>
+
+<h2 id="district-2-api-calls-rdg">District 2: API Calls (RDG)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">coffee</code>: Get: retrieve resource</li>
+  <li><code class="language-plaintext highlighter-rouge">my office</code>: Post: create new resource</li>
+  <li><code class="language-plaintext highlighter-rouge">Susanne</code>: Put: edit / update</li>
+  <li><code class="language-plaintext highlighter-rouge">Dietmar</code>: Delete: remove resource</li>
+  <li><code class="language-plaintext highlighter-rouge">Harald &amp; Seb</code>: Object orientation: Difference of state &amp; function</li>
+  <li><code class="language-plaintext highlighter-rouge">Marcus Presich</code>: Everything is an object in Python</li>
+</ul>
+
+<h2 id="district-3-sorting--searching-algorithms-stadtpark">District 3: Sorting &amp; Searching Algorithms (Stadtpark)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Enter</code>: Bubble Sort: swap element “previous” and “current” if current &lt; previous, continue</li>
+  <li><code class="language-plaintext highlighter-rouge">Go to Statue</code>: Selection Sort: find smallest element, and swap with first element</li>
+  <li><code class="language-plaintext highlighter-rouge">Leave to U4</code>: Merge Sort: divide arrays in half, sort halves, merge back</li>
+  <li><code class="language-plaintext highlighter-rouge">German Music Hall</code>: Quick Sort: pick “random” element, divide array so that smaller numbers left “random”, and great numbers right</li>
+  <li><code class="language-plaintext highlighter-rouge">Trump Hotel</code>: Radix Sort: for ints, group digits of numbers</li>
+  <li><code class="language-plaintext highlighter-rouge">Ice-Skating Rink</code>: BST: in sorted array, compare x to mid, left if lower, right if higher</li>
+</ul>
+
+<h2 id="district-3-stacks-and-queues-landstrasse-">District 3: Stacks and Queues (Landstrasse )</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">S7</code>: Stack: dishes - : LIFO - pop (get first item), push (add item to top)</li>
+  <li><code class="language-plaintext highlighter-rouge">Billa</code>: Queue: queue - : FIFO - add (add last item), remove (delete first item)</li>
+</ul>
+
+<h2 id="district-4-linkedlist-stack-and-queue-belvedere">District 4: LinkedList, Stack and Queue (Belvedere)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Belevedere</code>: LinkedList: represents sequence of nodes (singly or doubly linked)</li>
+  <li><code class="language-plaintext highlighter-rouge">Russian Monument</code>: class Node: val, next;</li>
+  <li><code class="language-plaintext highlighter-rouge">French Embassy</code>: class Node runner technique: Have two runners, one much faster</li>
+</ul>
+
+<h2 id="district-5-math--logic-pauls-home">District 5: Math &amp; Logic (Paul’s home)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Paul's old flat</code>: Prime numbers: iterate from 2 to sqrt(n)</li>
+  <li><code class="language-plaintext highlighter-rouge">Pilgramgasse</code>: Probability of A&amp;B: P(A and B) = P(B given A) * P(A) (Buenos Aires Airport)</li>
+  <li><code class="language-plaintext highlighter-rouge">Unemployment Center</code>: Probability of A or B: P(A) + P(B) - : P (A and B)</li>
+  <li><code class="language-plaintext highlighter-rouge">Naschmarkt Foods</code>: Independence: one happening tells you nothing about the other</li>
+  <li><code class="language-plaintext highlighter-rouge">Naschmarkt Restaurants</code>: Mutual exclusivity: if one happens, the other cannot happen</li>
+</ul>
+
+<h2 id="district-6-recursion-chili--tofu">District 6: Recursion (Chili &amp; Tofu)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Chili &amp; Tofu</code>: Recursion: solutions are build off smaller solutions</li>
+  <li><code class="language-plaintext highlighter-rouge">Karo flat up</code>: Bottom-up: solve problems for simple case</li>
+  <li><code class="language-plaintext highlighter-rouge">Karo flat down</code>: Top-down: divide problem for case N into subproblems</li>
+  <li><code class="language-plaintext highlighter-rouge">Gumpendorfer Stop</code>: Half-half: divide data in half, binary search</li>
+  <li><code class="language-plaintext highlighter-rouge">AIDS Hilfe</code>: Dynamic programming: cache repeated calls from recursive algos</li>
+</ul>
+
+<h2 id="district-7-trees-heaps-and-graphs-ring">District 7: Trees, Heaps and Graphs (Ring)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Ring</code>: Tree - data structure composed of nodes</li>
+  <li><code class="language-plaintext highlighter-rouge">Volkstheater</code>: Every tree has a root node</li>
+  <li><code class="language-plaintext highlighter-rouge">Stiftsgasse</code>: With zero or more child nodes</li>
+  <li><code class="language-plaintext highlighter-rouge">Siebenstern</code>: Tree cannot contain cycles</li>
+  <li><code class="language-plaintext highlighter-rouge">Neubaugasse</code>: A binary tree’s nodes have each up to two children, ternary trees have three</li>
+  <li><code class="language-plaintext highlighter-rouge">Zieglergase</code>: A node is a leaf if it has no children</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Kaiserstrasse</code>: Binary search tree: has all left descendants &lt;= n &lt; all right descendants</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Felzl</code>: Balanched vs. unbalanced: red-black vs AVL trees.</li>
+  <li><code class="language-plaintext highlighter-rouge">Billa</code>: Complete binary tree: every level (except perhaps last) is fully filled</li>
+  <li><code class="language-plaintext highlighter-rouge">Denn's</code>: Full binary tree: no nodes have only one child (0 or 2)</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Prosi</code>: Perfect binary tree: full &amp; complete</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Burggasse</code> : Traversal: in-order : left &gt; current node &gt; right branch
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">-&gt; Heiligenstadt</code> pre-order: current node before children</li>
+      <li><code class="language-plaintext highlighter-rouge">-&gt; Schoenbrunn</code> post-order: root node is last visited</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Polizei</code> : Min-Heap: complete binary tree &amp; each node is smaller than its children -&gt; root is minimum</li>
+  <li><code class="language-plaintext highlighter-rouge">55/3</code> : Graphs: Collection of nodes with edges</li>
+  <li><code class="language-plaintext highlighter-rouge">Bell</code> : Directed or undirected</li>
+  <li><code class="language-plaintext highlighter-rouge">Entrance</code> : Acyclic graph has no circle</li>
+  <li><code class="language-plaintext highlighter-rouge">Door (to trashes)</code> : Adjacency list: every vertex (node) stores its adjacent vertices</li>
+  <li><code class="language-plaintext highlighter-rouge">Trash</code> : Adjacency matrix: NxN bool matrix</li>
+  <li><code class="language-plaintext highlighter-rouge">Steps</code> : Graph search: DFS: start at root, and explore each node completely &gt; visit every node</li>
+  <li><code class="language-plaintext highlighter-rouge">Postal boxes</code> : BFS: start at root, and explore each neighbor completely &gt; find shortest path</li>
+  <li><code class="language-plaintext highlighter-rouge">Bell 2</code> : Bidirectional search: using to BFS to find the shortest path</li>
+</ul>
+
+<h2 id="district-8-testing-fethi">District 8: Testing (Fethi)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Fethi</code>: Interviewer looks for:</li>
+  <li><code class="language-plaintext highlighter-rouge">Felzl</code>: Test cases: Normal, extreme, null/illegal, strange</li>
+  <li><code class="language-plaintext highlighter-rouge">Hummel Cafe</code>: Big picture: Amazon’s priority is not to charge twice</li>
+  <li><code class="language-plaintext highlighter-rouge">Hammerling-Park</code>: Piece integration: Google sheets integration with mail</li>
+  <li><code class="language-plaintext highlighter-rouge">Volkskundemuseum</code>: Organization: Break into categories</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Altes AKH</code>: Practicality: Create a testing plan</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Tunnel</code>: Real world object - : Paperclip:</li>
+  <li>Who will use it? Teacher</li>
+  <li>What are the use cases? exams of students</li>
+  <li>What are the usage bands? temperature, 30 pages</li>
+  <li>Stress / failure condition? 60 + pages</li>
+  <li>
+    <p>How to perform testing? Can’t sit 5 years</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Polizei Fuhrmann</code>: Software - : Parental Control:</li>
+  <li>Who will use it? Children, parents</li>
+  <li>What are the use cases? blocking porn, gambling</li>
+  <li>What are the usage bands? Block more</li>
+  <li>Stress / failure condition? Child has access</li>
+  <li>
+    <p>How to perform testing? Black or Whitebox, break into components</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Theater Josefstadt</code>: Troubleshooting:
+    <ul>
+      <li>Understand scenario: how long, which version, consistently, error report</li>
+      <li>Problem breakdown: break into testable steps</li>
+      <li>Create specific tests: think of walking a customer through</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="district-10-arrays--strings-train-station">District 10: Arrays &amp; Strings (Train Station)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Bahnhof</code>: Hash tables: key mod 13</li>
+  <li><code class="language-plaintext highlighter-rouge">Erste Bank</code>: Array list: size is defined upon creation</li>
+  <li><code class="language-plaintext highlighter-rouge">Tennis Arsenal</code>: Stringbuilder: creates resizable array of small strings</li>
+</ul>
+
+<h2 id="district-13-o-notation-grigs-flat">District 13: O-Notation (Grig’s flat)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Elevator</code>: Runtime efforts: logN: binary search</li>
+  <li><code class="language-plaintext highlighter-rouge">Door</code>: NlogN</li>
+  <li><code class="language-plaintext highlighter-rouge">Living room</code>: N</li>
+  <li><code class="language-plaintext highlighter-rouge">Kitchen</code>: N^2</li>
+  <li><code class="language-plaintext highlighter-rouge">Toilet</code>: 2^N, recursion if f(n-1) + f(n-2)</li>
+  <li><code class="language-plaintext highlighter-rouge">Children</code>: O(branches ^ depth)</li>
+  <li><code class="language-plaintext highlighter-rouge">Hallway</code>Cost: big O (upper limit)</li>
+  <li><code class="language-plaintext highlighter-rouge">Grigs room</code>: big Omega (lower limit)</li>
+  <li><code class="language-plaintext highlighter-rouge">Bathroom</code>: big Theta (bands)</li>
+  <li><code class="language-plaintext highlighter-rouge">Police in 13th</code>: Rules: Drop constant: O(2N) &gt; O(N)</li>
+  <li><code class="language-plaintext highlighter-rouge">Billa</code>: Drop non-dominant terms: O(N^2 + N) &gt; O(N^2)</li>
+  <li><code class="language-plaintext highlighter-rouge">Spar</code>: Multipart algos: Add runtimes: for a in a, for b in b &gt; O(A+B) &gt; O(N)</li>
+  <li><code class="language-plaintext highlighter-rouge">Kebab</code>: Multiply runtimes: for a (for b in b) in a &gt; O(A * B) &gt; O(N^2)</li>
+</ul>
+
+<h2 id="district-14-pull-requests-haralds-home">District 14: Pull Requests (Haralds Home)</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Entrance</code>: Fork project</li>
+  <li><code class="language-plaintext highlighter-rouge">Kitchen</code>: Clone locally</li>
+  <li><code class="language-plaintext highlighter-rouge">Eating</code>: Create a branch</li>
+  <li><code class="language-plaintext highlighter-rouge">Couch</code>: Make changes</li>
+  <li><code class="language-plaintext highlighter-rouge">Grass</code>: Push back to repo</li>
+  <li><code class="language-plaintext highlighter-rouge">Office</code>: Click ‘compare &amp; pull request’</li>
+</ul>
+
+<h2 id="district-19-threads--locks">District 19: Threads &amp; Locks</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">U4 Heiligenstadt</code>: Threads: in a process share same memory space</li>
+  <li><code class="language-plaintext highlighter-rouge">Bakery</code>: Sync: restrict access to shared resources</li>
+  <li><code class="language-plaintext highlighter-rouge">Billa</code>: Locks: sync access to data by associating resources with a lock</li>
+  <li><code class="language-plaintext highlighter-rouge">RBI</code>: Deadlock: one threat waits for object lock to be released while others do the same</li>
+  <li><code class="language-plaintext highlighter-rouge">RSG Main</code>: conditions: mutual exclusion: there is limited access to one resource</li>
+  <li><code class="language-plaintext highlighter-rouge">Posch New</code>: hold &amp; wait: processing holding resources can request more</li>
+  <li><code class="language-plaintext highlighter-rouge">Posch Old</code>: no preemption: one process cannot function without the other</li>
+  <li><code class="language-plaintext highlighter-rouge">Mensa</code>: circular wait: two ore more processes form a circular chain</li>
+</ul>
+
+<h2 id="additional-concepts">Additional Concepts</h2>
+
+<ul>
+  <li>Difference between RDD and DataFrame
+    <ul>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>RDD (resilient distributed data set): each record is an independent entity/object</td>
+              <td>row-wise</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>Data frame (DF): perform transformations on columns</td>
+              <td>column-wise</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+  </li>
+  <li>Spark:
+    <ul>
+      <li>Analytics factory: gains capacity by scaling horizontally</li>
+      <li>Instructed by a master, executors perform the work</li>
+      <li>Cluster manager plans the capacity when receiving the driver programme</li>
+      <li>Lazy evaluation: Spark only works when it needs to report results .show()</li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Seb Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+  
+  <div class="container-fluid justify-content-center">
+  
+  </div>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>

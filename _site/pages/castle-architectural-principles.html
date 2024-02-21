@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Architectural Design">
+  <meta property="og:description" content="Pickleball in Snoq Ridge">
+  <meta property="og:image" content="https://i.imgur.com/r0yP47Um.png">
+
+  <title>Seb Duerr</title>
+  <meta name="description" content="Pickleball in Snoq Ridge">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+    <a class="navbar-brand" href="/"><h5><b>Seb Duerr</b></h5></a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-1x fa-bars text-themed"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/datenschutz.html"></a>
+  
+        <a class="nav-item nav-link " href="/pages/public">Portfolio</a>
+  
+        <a class="nav-item nav-link " href="/projects/">Projects</a>
+  
+        <a class="nav-item nav-link " href="/blog/">Blog</a>
+  
+        <a class="nav-item nav-link " href="/about/">About</a>
+  
+        
+  
+        <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+      </div>
+    </div>
+  
+  </nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h2 id="architectural-design---walk-to-tennis-courts-on-snoqualmie-ridge">Architectural Design - Walk to Tennis Courts on Snoqualmie Ridge</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Hole in Trees</code>: repository layer: storage types =&gt; database</li>
+  <li><code class="language-plaintext highlighter-rouge">Forest Path</code>: service layer: repo interface =&gt; domain types</li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Traffic Lights</code>: api layer: service interface =&gt; api types =&gt; web</p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">Thai Eatery</code>: Main: deps defined in interface, instantiated by main, passed as fields</li>
+  <li><code class="language-plaintext highlighter-rouge">Swimming Pool</code>: API: serialization, authN, logging/tracing</li>
+  <li><code class="language-plaintext highlighter-rouge">Baby School</code>: Domain: ubiquitous clean language, authZ, never reach out.</li>
+  <li><code class="language-plaintext highlighter-rouge">Tennis Courts in Snoq. Park</code>: Persistence: domain types != persistence types.</li>
+</ul>
+
+<h3 id="layer-model">Layer Model</h3>
+
+<p>This software is organized into 3 distinct layers: API Layer, Domain/Service Layer, and Persistence Layer.
+This is not a one-size fits all model and adjustments might need to be made for various edge cases,
+but in general this is a good starting point which will make it harder to build the wrong abstractions.</p>
+
+<p>This model does not specify any kind of physical organization, like a folder hierarchy.
+It is not expected that there is a <code class="language-plaintext highlighter-rouge">api</code>, <code class="language-plaintext highlighter-rouge">domain</code>, and <code class="language-plaintext highlighter-rouge">storage</code> package that contain all types for each layer.
+Rather, this design defines <em>logical</em> layers; i.e., layer model is about establishing boundaries by separating distinct concepts.</p>
+
+<h4 id="3-layer-model-visual-overview">3-Layer Model Visual Overview</h4>
+
+<pre><code class="language-mermaid">graph LR;
+    subgraph API Layer
+        AT ==&gt; WEB((Web))
+        SI(Service Interface):::iface
+        A[API] == emits ==&gt; AT[/API Types/]
+    end
+    subgraph Domain Layer
+        S[Service] 
+        DT[/Domain Types/]
+        RI(Repository Interface):::iface
+    end
+    subgraph Storage Layer
+        R[Repository] == emits ==&gt; ST[/Storage Types/]
+        ST --&gt; DB
+        DB[(DB)]
+    end
+    RI -- uses --o DT
+    SI -- uses --o DT
+    S -- depends on --&gt; RI
+    A -- depends on --&gt; SI
+    R -. implements .-&gt; RI
+    S -. implements .-&gt; SI
+    classDef iface stroke-dasharray: 5 5
+</code></pre>
+
+<p>Notes:</p>
+<ul>
+  <li>Each layer depends on an Interface that it defines itself.</li>
+  <li>The Repository Interface is implemented in the Storage Layer</li>
+  <li>The Service Interface is implemented in the Domain Layer</li>
+  <li>Since each Interface uses Domain Types (i.e. “Ubiquitous Language”) in their functions, each implementation also must use Domain Types. This keeps the Domain model pure.</li>
+  <li>The Storage layer emits Storage Types to its DB</li>
+  <li>The API Layer emits API Types to the Web</li>
+</ul>
+
+<h4 id="a-note-about-folderspackages">A note about folders/packages</h4>
+
+<p>In Go, a package corresponds to a folder. However, developers often create a project by first creating a
+folder structure that loosely outlines some design philosophy like DDD or BDD, etc…; Ending up with folders (packages)
+with names like <code class="language-plaintext highlighter-rouge">models</code>, <code class="language-plaintext highlighter-rouge">controllers</code>, <code class="language-plaintext highlighter-rouge">views</code> , <code class="language-plaintext highlighter-rouge">domain</code>; This is discouraged in Go. Instead, we organize packages into 
+shared responsibility: ie – what do all these types/functions <em>DO</em>; and then we name the package after that functionality.</p>
+
+<p>From <a href="https://rakyll.org/style-packages/">JBD’s Package Style Guide</a>:</p>
+
+<blockquote>
+  <p>A common practise from other languages is to organize types together in a package called models or types. In Go, we organize code by their functional responsibilities.</p>
+
+  <div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">package</span> <span class="n">models</span> <span class="c">// DON'T DO IT!!!</span>
+
+<span class="c">// User represents a user in the system.</span>
+<span class="k">type</span> <span class="n">User</span> <span class="k">struct</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+</code></pre></div>  </div>
+
+  <p>Rather than creating a models package and declare all entity types there, a User type should live in a service-layer package.</p>
+
+  <div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">package</span> <span class="n">mngtservice</span>
+
+<span class="c">// User represents a user in the system.</span>
+<span class="k">type</span> <span class="n">User</span> <span class="k">struct</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+
+<span class="k">func</span> <span class="n">UsersByQuery</span><span class="p">(</span><span class="n">ctx</span> <span class="n">context</span><span class="o">.</span><span class="n">Context</span><span class="p">,</span> <span class="n">q</span> <span class="o">*</span><span class="n">Query</span><span class="p">)</span> <span class="p">([]</span><span class="o">*</span><span class="n">User</span><span class="p">,</span> <span class="o">*</span><span class="n">Iterator</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span>
+
+<span class="k">func</span> <span class="n">UserIDByEmail</span><span class="p">(</span><span class="n">ctx</span> <span class="n">context</span><span class="o">.</span><span class="n">Context</span><span class="p">,</span> <span class="n">email</span> <span class="kt">string</span><span class="p">)</span> <span class="p">(</span><span class="kt">int64</span><span class="p">,</span> <span class="kt">error</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<h3 id="entrypoint-layer--main">Entrypoint Layer / (main)</h3>
+
+<p>package <code class="language-plaintext highlighter-rouge">main</code> is the entry point for the program in Go. This is where your application configuration
+startup, and dependency injection happens. You may choose to factor out command-line parsing and dependency wiring into
+one or more other packages – we can collectively call these packages the “Entrypoint Layer”</p>
+
+<p>Go does not have DI like Java does, in the sense that another package can implicitly wire their dependencies up to some 
+global registry like Spring Boot. Instead, Go tends to be more explicit: Dependencies are parameters to function, or fields within a struct.</p>
+
+<p>In short, Dependency Injection in Go:</p>
+<ul>
+  <li>Your layers ask for dependencies by defining and interface for the thing they want.</li>
+  <li>Entrypoint instantiates an implementation from a different package</li>
+  <li>Entrypoint passes the concrete implementation to the layer as a parameter/struct field.</li>
+</ul>
+
+<h3 id="api-layer">API Layer</h3>
+
+<p>The API layer is your surface to consumers of your application. This is HTTP, REST, GRPC, GraphQL, etc…
+In this layer you generally do the following.</p>
+
+<ul>
+  <li>Serialize data types from Domain to API types (defined in Open API Schema)</li>
+  <li>Perform Authentication (AuthN - Who are they?)</li>
+  <li>Tracing and request logging</li>
+  <li>Define <code class="language-plaintext highlighter-rouge">Service</code> interface using Business types implemented by the Domain/Service layer</li>
+</ul>
+
+<p>Domain types should never be served directly to API Consumers. By using API Types (often generated from Open API Specs)
+you can evolve your API and create new ones without requiring (often breaking) changes to your Domain model.</p>
+
+<pre><code class="language-mermaid">graph LR;
+    subgraph API Layer
+        AT ==&gt; WEB((Web))
+        SI(Service Interface):::iface
+        A[API] == emits ==&gt; AT[/API Types/]
+    end
+    subgraph Domain Layer
+        S[Service] 
+        DT[/Domain Types/]
+    end
+    A -- depends on --&gt; SI
+    S -. implements .-&gt; SI
+    SI -- uses --o DT
+    classDef iface stroke-dasharray: 5 5
+</code></pre>
+
+<h3 id="domain--service-layer">Domain / Service Layer</h3>
+
+<p>The domain layer is where your application logic goes; ie the “real” application is written here.
+The services defined here implement the <code class="language-plaintext highlighter-rouge">Service</code> interfaces in the API.</p>
+
+<p>You should strive to use clean structs defined in the package, and avoid persistence primitives here.
+Types defined here can be thought of the “Ubiquitous Language” found in Domain Driven Design.</p>
+
+<blockquote>
+  <p>Do not reach out to API or Persistence layers: <strong>they should reach in</strong></p>
+</blockquote>
+
+<p>Authorization (AuthZ - What can they do) is commonly part of the business logic, 
+so checking authorization here or filtering results by their access is often appropriate here.</p>
+
+<p>Don’t call directly to your Persistence layer methods, instead you define an interface (typically named <code class="language-plaintext highlighter-rouge">&lt;Something&gt;Repository&gt;</code>).
+This interface defines operations you expect your persistence layer to make on the given Domain types. Your peristence
+layer creates a type that implements this interface.</p>
+
+<pre><code class="language-mermaid">graph LR;
+    subgraph API Layer
+        SI(Service Interface):::iface
+    end
+    subgraph Domain Layer
+        S[Service] 
+        DT[/Domain Types/]
+        RI(Repository Interface):::iface
+    end
+    subgraph Storage Layer
+        R[Repository]
+    end
+    RI -- uses --o DT
+    SI -- uses --o DT
+    S -- depends on --&gt; RI
+    R -. implements .-&gt; RI
+    S -. implements .-&gt; SI
+    classDef iface stroke-dasharray: 5 5
+</code></pre>
+
+<h3 id="data--sql--persistence-layer">Data / SQL / Persistence layer</h3>
+
+<p>This layer implements the <code class="language-plaintext highlighter-rouge">Repository</code> interfaces defined in the Domain / Service Layer. This translates
+the domain types into their appropriate persistence types and performs operations on the storage.</p>
+
+<p>This layer may have its own types for serialization to storage; it should not store the Domain types directly.
+By separating Domain and Persistence types, you can evolve your persistence independently of your business logic.</p>
+
+<pre><code class="language-mermaid">graph LR;
+    subgraph Domain Layer
+        DT[/Domain Types/]
+        RI(Repository Interface):::iface
+    end
+    subgraph Storage Layer
+        R[Repository] == emits ==&gt; ST[/Storage Types/]
+        ST --&gt; DB
+        DB[(DB)]
+    end
+    RI -- uses --o DT
+    R -. implements .-&gt; RI
+    classDef iface stroke-dasharray: 5 5
+</code></pre>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Seb Duerr</strong>
+  </small>
+  <br> <a href="https://seduerr91.github.io/datenschutz">Disclaimer</a>
+  
+  <div class="container-fluid justify-content-center">
+  
+  </div>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
