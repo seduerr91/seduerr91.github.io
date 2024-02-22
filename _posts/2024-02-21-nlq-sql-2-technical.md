@@ -1,7 +1,7 @@
 ---
 tags: [Coding]
-title: Differences between Software Engineers and Data Scientists
-description: In regard to object-oriented aspects
+title: Step 2 - Technical Implementation Details
+description: An exhaustive explanation of the service
 style: fill
 color: secondary
 ---
