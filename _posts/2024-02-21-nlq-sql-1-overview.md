@@ -1,7 +1,7 @@
 ---
 tags: [Coding]
 title: Leveraging Large Language Models for Intuitive SQL Queries
-description: In regard to object-oriented aspects
+description: An Overview Article
 style: fill
 color: secondary
 ---
