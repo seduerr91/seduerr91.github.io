@@ -175,79 +175,192 @@ LATS can be used for one time tasks that require reflec/xion such as building so
 [Notebook](https://github.com/tomasonjo/blogs/blob/master/llm/ollama_semantic_layer.ipynb?ref=blog.langchain.dev) based on existing LangChain implementation of a JSON-based agent using the Mixtral 8x7b LLM. I used the Mixtral 8x7b as a movie agent to interact with Neo4j, a native graph database, through a semantic layer.
 Quite a high-level article. However, the idea is that you can work ollama with json-outputs but you need to account for small-talk bits that do not require json output by just routing those parts to a separate tool of the agent. 
 
+TODO Serve Ollama local and interact with it: ollama run llava, ollama run codellama:70b, ollama run llama2-uncensored:7b, ollama run sqlcoder:15b, ollama run llama2:13b.
+
 ### [OpenGPTs](https://blog.langchain.dev/opengpts/)
 
+OpenGPTs runs on MessageGraph, a particular type of Graph we introduced in LangGraph. This graph is special in that each node takes in a list of messages and returns messages to append to the list of messages.
+
+Architectures: 
+
+- Assistants: These can be equipped with arbitrary amount of tools and use an LLM to decide when to use them. Only work with best-of-class models, because weak models consistently fail. 
+- RAG: These are equipped with a single retriever, and they ALWAYS use it.
+- ChatBot: These are just parameterized by a custom system message.
+
+Persistence: Dealt with through CheckPoint objects. This checkpoint object will then save the current state of the graph after calling each node.
+
+Configuration: mark fields as configurable and then pass in configuration options during run time.
+
+New Tool: Robocorp’s Action Server. Robocorp’s action server is an easy way to define - and run - arbitrary Python functions as tools.
 
 
 ### [Connery: OpenSource Plugin Infrastructure for OpenGPTs and LLM Apps](https://blog.langchain.dev/meet-connery-an-open-source-plugin-infrastructure-for-opengpts-and-llm-apps/)
 
+Great article about making AI production-safe! They offer their own system that seems like a no-code tool to integrate certain features. I think this provides inspo on how to make our tools even better. However, we'd like to stick to code.
+
+#### Essential integration and personalization features:
+
+- **User authentication, authorization**, and a user interface to manage connections and personalization.
+- **Connection management**: Users need a secure way to authorize AI-powered apps to access their services, such as Gmail, using OAuth. For services not supporting OAuth, like AWS, secure storage of access keys is essential through Secrets Management.
+- **Personalization**: The user can configure and personalize integrations. For example, specify a custom signature for all the emails. Or personalize metadata for actions so LLMs better understand the personal use case. They can also provide personal information such as name and email so LLMs can use it as additional context when calling actions.
+
+#### AI safety and control
+
+Risks like misinterpreted commands can be mitigated with:
+
+- Metadata allows LLMs to better understand available actions and consequently reduce the error rate in selecting and executing them. It includes an action description with a clear purpose, an input schema describing the available parameters and validation rules, and the action outcome.
+- Human-in-the-loop capability to empower the user with the final say in executing actions for critical workflows. This should also allow for editing suggested input parameters before running an action - for example, reviewing an email before sending.
+- Audit logs for consistency, compliance, and transparency.
+
+#### Infrastructure for integrations
+
+- Authorization for integrations with third-party services using OAuth, API Keys, etc.
+- Support different integration types and patterns like CRUD operations, async operations, event-driven operations, etc.
+- Support integration code and its runtime
+
+
 ### [Multi-Agent Workflows](https://blog.langchain.dev/langgraph-multi-agent-workflows/)
 
+Benefits: 
+- Grouping tools/responsibilities can give better results. An agent is more likely to succeed on a focused task than if it has to select from dozens of tools.
+- Separate prompts can give better results. Each prompt can have its own instructions and few-shot examples. Each agent could even be powered by a separate fine-tuned LLM!
+
+Types:
+- Multi Agent Collaboration: different agents (e.g. researcher and chart generator) collaborate on a shared scratchpad of messages (router). This means that all the work either of them do is visible to the other. This has the benefit that other agents can see all the individual steps done.
+- Agent Supervisor: multiple agents are connected, but compared to above they do NOT share a shared scratchpad. Rather, they have their own independent scratchpads, and then their final responses are appended to a global scratchpad.
+- Hierarchical Agent Teams: the agents in the nodes are actually other langgraph objects themselves. This provides even more flexibility than using LangChain AgentExecutor as the agent runtime
+
+Example of using [CrewAI with LangChain](https://youtu.be/OzYdPqzlcPo) and LangGraph to automate the process of automatically checking emails and creating drafts. CrewAI orchestrates autonomous AI agents, enabling them to collaborate and execute complex tasks efficiently.
 
 ### [CrewAI Unleashed](https://blog.langchain.dev/crewai-unleashed-future-of-ai-agent-teams/)
 
+Concepts:
+
+- Agents: These are like your dedicated team members, each with their role, background story, goal and memory
+- Tools: The equipment our agents use to perform their tasks efficiently, you can use any existing ones from LangChain or quickly write your own
+- Tasks: Small and focused mission a given Agent should accomplish
+- Process: This is the workflow or strategy the crew follows to complete tasks.
+- Crew: Where Agents, Tasks and a Process meet, this is the container layer where the work happens
+
+TODO Play with CrewAI Examples
 
 ### [Adding Long Term Memory to OpenGPTs](https://blog.langchain.dev/adding-long-term-memory-to-opengpts/)
 
+- LLMs are stateless. 
+- Currently, people either use conversational memory (a list until you reach the token limit of your model) or semantic memory (which is using the RAG approach.)
+- New idea: Reflective approach
 
-## Deepmind Google
+Solution: 
 
-### [Gemma](https://opensource.googleblog.com/2024/02/building-open-models-responsibly-gemini-era.html)
+- Recency: fetch memories based on recent messages (combination of conversation memory and just upweighting messages based on time stamp after fetching). Can help if information is spread out over multiple messages, by reflecting over multiple message a synthesis can be generated.
+- Relevancy: fetch relevant messages (semantic memory). The second issue is partially addressed by the recency weighting. However, likely not fully solved.
+- Reflection: they don't just fetch raw messages, but rather they use an LLM to reflect on the messages and then fetch those reflections. The third issue isn't really addressed, this is still a pretty general form of memory (but that's fine, that's what it was aiming to do).
 
-### [Gemini Era](https://blog.google/technology/ai/google-gemini-update-sundar-pichai-2024?utm_source=gdm&utm_medium=referral&utm_campaign=gemini24)
+Long term memory is a very underexplored topic. Part of that is probably because it is either (1) very general, and trends towards AGI, or (2) so application specific, and tough to talk about generically.
+In this case, it becomes important to think critically about:
 
+What is the state that is tracked?
+How is the state updated?
+How is the state used?
 
-## OpenAI Blog
+### [Prompt Guide AI](https://www.promptingguide.ai/research/rag#rag-research-insights)
 
+Interesting site with lots of knowledge and related info on AI
 
-### [New Embedding Models](https://openai.com/blog/new-embedding-models-and-api-updates)
+### [Microsoft’s LASER](https://www.theverge.com/2024/1/31/24057362/microsoft-llm-accuracy-laser-research-ai)
 
+Original [article](https://arxiv.org/abs/2312.13558)
 
-### [ChatGPTTeam](https://openai.com/blog/introducing-chatgpt-team)
-
-
-### [OpenAI Approaching World Wide Elections](https://openai.com/blog/how-openai-is-approaching-2024-worldwide-elections)
-
-[https://www.promptingguide.ai/research/rag#rag-research-insights](https://www.promptingguide.ai/research/rag#rag-research-insights)
-
-[https://www.theverge.com/2024/1/31/24057362/microsoft-llm-accuracy-laser-research-ai](https://www.theverge.com/2024/1/31/24057362/microsoft-llm-accuracy-laser-research-ai)
-
-[https://arxiv.org/abs/2312.13558](https://arxiv.org/abs/2312.13558)
-
+- With LASER, researchers can “intervene” and replace one weight matrix with an approximate smaller one. 
+- Weights are the contextual connections models make. The heavier the weight, the more the model relies on it. So, does replacing something with more correlations and contexts make the model less accurate? Based on their test results, the answer, surprisingly, is no.  
 
 ## Company AI Architecture Articles
-
-
-### [BCG X](https://blog.langchain.dev/bcg-x-releases-agentkit-a-full-stack-starter-kit-for-building-constrained-agents/)
-
 
 ### [Rakuten](https://blog.langchain.dev/rakuten-group-builds-with-langchain-and-langsmith-to-deliver-premium-products-for-its-business-clients-and-employees/)
 
 Offering three different agenda: AI Analyst (market intelligence research assistant), AI Agent (self-serve customer support), AI Librarian (answer client questions No word on actual impact it has. Like adoption rate and improvements.
-
 
 ### [Dataherald](https://blog.langchain.dev/dataherald/)
 
 Build a Text-to-SQL engine based on agents. They offer a free API and work with golden SQL queries. 
 They have two bots: one for ingestion by querying target SQL databases, and one for query generation, like my tool.
 
-
 ## ChristopherGS
-
 
 ### [Production RAG with PG Vector and OSS Model](https://christophergs.com/blog/production-rag-with-postgres-vector-store-open-source-models)
 
+What’s an Index?
+A data structure designed to enable querying by an LLM. In LlamaIndex terms, this data structure is composed of Document objects.
+
+What’s a Vector Store Index?
+The Vector Store Index is the predominant index type encountered when working with Large Language Models (LLMs). Within LlamaIndex, the VectorStoreIndex data type processes your Documents by dividing them into Nodes and generating vector embeddings for the text within each node, preparing them for querying by an LLM.
 
 ### [DeepEval](https://christophergs.com/blog/ai-engineering-evaluation-with-deepeval-and-open-source-models)
 
+#### Problems of LLMs:
+
+- Suffer from hallucinations
+- Struggle to keep up-to-date with the latest information
+- Respond with irrelevant information
+- Respond with correct but suboptimal information (like, the second biggest reason for something instead of the biggest)
+- Totally lie to you
+- Return toxic or dangerous content you wouldn’t want to share with your users
+- Surface secret content you don’t want to unveil (often via chatbot prompt jailbreaking)
+
+In a typical AI application, the areas of evaluation fall into two main areas:
+
+Response Evaluation: Does the response match the retrieved context? Does it also match the query? Does it match the reference answer or guidelines?
+Retrieval Evaluation: Are the retrieved sources relevant to the query?
+
+##### Steps to Create an Evaluation Process
+
+- Create an evaluation dataset
+- Identify relevant metrics for evaluation
+- Develop a Scorer to calculate metric scores, bearing in mind that outputs from large language models (LLMs) are probabilistic. Therefore, your Scorer’s implementation should acknowledge this aspect and avoid penalizing outputs that, while different from anticipated responses, are still correct.
+- Apply each metric to your evaluation dataset
+- Improve your evaluation dataset over time
+- Setting up an evaluation framework in this way enables you to:
+  - Run several nested for loops to find the optimal combination of hyperparameters such as chunk size, context window length, top k retrieval etc.
+  - Determine your optimal LLM - especially important when evaluating open-source LLMs
+  - Determine your optimal embedding model
+  - Iterate over different prompt templates that would yield the highest metric scores for your evaluation dataset (although note that prompts won’t perform the same across different models, so always group prompts and models together)
+
+##### DeepEval for Evaluation
+
+Use DeepEval for a few reasons: It is open-source, it works with your existing Python pytest suite of tests, it offers a wide variety of evaluation metrics, the source code is readable, it works with open-source models
+
+Also it offers metrics: General Evaluation (G-Eval - define any metric with freetext), Summarization, Faithfulness, Answer Relevancy, Contextual Relevancy, Contextual Precision, Contextual Recall, Ragas, Hallucination, Toxicity, Bias
+
+Example testing for hallucination: Instantiate the HallucinationMetric, giving it a score threshold which the test must pass. Under the hood, this particular metric downloads the vectara hallucination model from HuggingFace.
+
+No one wants to pay to run their test suite. Open-source evaluation is a really powerful tool, and I expect to see a lot more adoption of it in the coming months. I
 
 ### [Technical User Intro to LLM](https://christophergs.com/blog/intro-to-large-language-models-llms)
 
+#### What is a Large Language Model?
 
-### [Running Open Source LLMs In Python - A Practical Guide](https://christophergs.com/blog/running-open-source-llms-in-python)
+At its core, a Large Language Model (LLM) comprises two essential components:
+
+- Parameter File: This file houses the parameters. Each parameter is represented as a 2-byte float16 number. For instance, the llama-2-70b model has a 140GB parameter file due to its 70 billion parameters. More on how this file is generated shortly.
+- Runtime File: This is a programming script, often compact enough to be written in around 500 lines of C code (though it could be written in any language). It defines the neural network architecture that utilizes the parameters to function.
+
+llama-2-70b utilized around 10TB of web-crawled text and required significant computational resources:
+  - Compute Power: Utilized about 6,000 GPUs over 12 days.
+  - Cost: Approximated at $2M.
+
+This training stage effectively compresses the internet text into a ‘lossy’ zip file format, where the 10TB of data is reduced to a 140GB parameter file, achieving a compression ratio of about 100X. Unlike lossless compression (like a typical zip file), this process is lossy, meaning some original information is not retained.
 
 
-### [AI Engineering with Open-Source Models - Ultimate Tutorial](https://christophergs.com/blog/ai-engineering-ultimate-tutorial)
+#### Neural Network Operation
 
+At its heart, a Neural Network in an Large Language Model aims to predict the next word in a given sequence of words. The parameters are intricately woven throughout the network, underpinning its predictive capabilities. There’s a strong mathematical relationship between prediction and compression, explaining why training an LLM can be likened to compressing the internet.
 
-### [Retrieval Augmented Generation (RAG) with Llama Index and Open-Source Models](https://christophergs.com/blog/ai-engineering-retrieval-augmented-generation-rag-llama-index)
+- Stage One: Pretraining | This stage creates what we call the base model, essentially a sophisticated document generator.
+- Stage Two: Fine Tuning | Fine tuning, or ‘alignment,’ transforms the base model into an assistant. This involves training on high-quality, manually generated Q&A sets, typically comprising around 100,000 conversations.
+
+Comparison of LLMs: Models are ranked using an [Elo rating system](https://en.wikipedia.org/wiki/Elo_rating_system), akin to chess ratings. This score is derived from how models perform in comparison to each other on specific tasks.
+
+#### The Future of Large Language Models and Generative AI
+
+Scaling Laws: The effectiveness of LLMs in next-word prediction tasks depends on two variables: Number of Parameters (N),  Training Text Volume (D)
+Current trends suggest limitless scaling potential in these dimensions. This means that LLMs will continue to improve as companies spend more time and money training increasingly large models. This means that we are nowhere near close to “topping out” in terms of LLM quality.
