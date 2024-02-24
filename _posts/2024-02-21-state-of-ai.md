@@ -6,9 +6,7 @@ style: fill
 color: secondary
 ---
 
-An overview of everything In found relevant in the space of AI as of February 2024.
-
-## LangChain Blog
+An overview of everything I regard as interesting in the space of AI as of February 2024.
 
 ### [Planning & Execute Agents](https://blog.langchain.dev/planning-agents/)
 
@@ -274,8 +272,6 @@ Original [article](https://arxiv.org/abs/2312.13558)
 - With LASER, researchers can “intervene” and replace one weight matrix with an approximate smaller one. 
 - Weights are the contextual connections models make. The heavier the weight, the more the model relies on it. So, does replacing something with more correlations and contexts make the model less accurate? Based on their test results, the answer, surprisingly, is no.  
 
-## Company AI Architecture Articles
-
 ### [Rakuten](https://blog.langchain.dev/rakuten-group-builds-with-langchain-and-langsmith-to-deliver-premium-products-for-its-business-clients-and-employees/)
 
 Offering three different agenda: AI Analyst (market intelligence research assistant), AI Agent (self-serve customer support), AI Librarian (answer client questions No word on actual impact it has. Like adoption rate and improvements.
@@ -285,7 +281,26 @@ Offering three different agenda: AI Analyst (market intelligence research assist
 Build a Text-to-SQL engine based on agents. They offer a free API and work with golden SQL queries. 
 They have two bots: one for ingestion by querying target SQL databases, and one for query generation, like my tool.
 
-## ChristopherGS
+### [Microsoft AI Risk Package](https://github.com/Azure/PyRIT)
+
+The Python Risk Identification Tool for generative AI (PyRIT) is an open access automation framework to empower security professionals and ML engineers to red team foundation models and their applications. How to [Guide](https://github.com/Azure/PyRIT/blob/main/doc/how_to_guide.ipynb)
+
+#### Threads
+
+- harm categories: fabrication/ungrounded content (e.g., hallucination), misuse (e.g., bias), and prohibited content (e.g., harassment)
+- identify security harms such as misuse (e.g., malware generation, jailbreaking), and privacy harms (e.g., identity theft)
+
+#### Seb's Thoughts
+
+- It's essentially a prompt creation tool to test different prompts.
+
+### [Conversational Speech AI](https://www.retellai.com)
+
+Seb's opinion: Extremely fast and impressive. I tried the therapist and it gave me some generic but authentic answers. I liked the quick speed of responses.
+
+### [Superfast TPMs](https://wow.groq.com/)
+
+- Waiting for an API key.
 
 ### [Production RAG with PG Vector and OSS Model](https://christophergs.com/blog/production-rag-with-postgres-vector-store-open-source-models)
 
@@ -364,3 +379,8 @@ Comparison of LLMs: Models are ranked using an [Elo rating system](https://en.wi
 
 Scaling Laws: The effectiveness of LLMs in next-word prediction tasks depends on two variables: Number of Parameters (N),  Training Text Volume (D)
 Current trends suggest limitless scaling potential in these dimensions. This means that LLMs will continue to improve as companies spend more time and money training increasingly large models. This means that we are nowhere near close to “topping out” in terms of LLM quality.
+
+
+#### [GEMMA-Parameter Efficient FineTuning (PEFT)](https://huggingface.co/blog/gemma-peft)
+
+- The Gemma family of models also happens to be well suited for prototyping and experimentation using the free GPU resource via Colab. In this post we will briefly review how you can do Parameter Efficient FineTuning (PEFT) for Gemma models, using the Hugging Face Transformers and PEFT libraries on GPUs and Cloud TPUs for anyone who wants to fine-tune Gemma models on their own dataset.
