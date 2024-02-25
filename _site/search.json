@@ -1,7 +1,39 @@
 [
   
     {
-      "title"    : "Insights from Text-to-SQL Conversion Research",
+      "title"    : "My Formula for Peak Performance - A Day in My Life",
+      "category" : "",
+      "tags"     : "Lifestyle",
+      "url"      : "/blog/the-perfect-day",
+      "date"     : "2024-02-24 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Marketing as an LLM State",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/marketing-as-an-llm-state",
+      "date"     : "2024-02-24 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "How can LLMs be integrated into Machine Learning?",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/llm-vs-ml",
+      "date"     : "2024-02-24 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Getting started with CUDA",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/getting-started-with-cuda-notes",
+      "date"     : "2024-02-22 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "State of AI",
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/state-of-ai",
@@ -9,7 +41,7 @@
     } ,
   
     {
-      "title"    : "Insights from Text-to-SQL Conversion Research",
+      "title"    : "Step 4 - Related Research",
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/nlq-sql-4-related_research",
@@ -17,7 +49,7 @@
     } ,
   
     {
-      "title"    : "Where to go from here",
+      "title"    : "Step 3 - Where to go from here",
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/nlq-sql-3-where-to-go",
@@ -25,7 +57,7 @@
     } ,
   
     {
-      "title"    : "Differences between Software Engineers and Data Scientists",
+      "title"    : "Step 2 - Technical Implementation Details",
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/nlq-sql-2-technical",
@@ -33,7 +65,7 @@
     } ,
   
     {
-      "title"    : "Leveraging Large Language Models for Intuitive SQL Queries",
+      "title"    : "Step 1 - Leveraging Large Language Models for Intuitive SQL Queries",
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/nlq-sql-1-overview",
