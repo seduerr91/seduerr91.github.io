@@ -1,7 +1,7 @@
 ---
 tags: [Coding]
 title: Getting started with CUDA
-description: My summar of a video by Jeremy Howard, FastAPI
+description: My summary of a video by Jeremy Howard, FastAPI
 style: fill
 color: secondary
 ---

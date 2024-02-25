@@ -1,7 +1,7 @@
 ---
 tags: [Coding]
-title: Getting started with CUDA
-description: My summar of a video by Jeremy Howard, FastAPI
+title: Marketing as an LLM State
+description: Thoughts about Building Cordial AI
 style: fill
 color: secondary
 ---
