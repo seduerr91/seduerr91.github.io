@@ -8,6 +8,8 @@ color: secondary
 
 I used to think the ultimate day was filled with lounging and leisure, but I've discovered something extraordinary: a day dedicated to routine, movement, and focus brings me far greater satisfaction. Let me share my perfect day formula – it might just inspire your own.
 
+## The Morning
+
 6:25 AM: Rise, Shine, and Espresso.
 I wake with purpose, sharing a freshly brewed espresso with my amazing wife. It's a simple ritual, but it sets the tone for connection and shared energy.
 
@@ -26,8 +28,12 @@ Nothing beats the pure focus of swimming. I choose one of the pools in our build
 12:40 PM: Replenish and Get Back to It
 I refuel with leftovers from my Blue Apron meal prep, then dive back into work. An hour after swimming, I blend up a strawberry mango smoothie with protein powder for muscle recovery.
 
+## Ideating Algorithms in the Afternoon
+
 4:30 PM: Pickleball Intensity
 After a productive block, I head to the Belltown Pickleball courts for hard-hitting, fast-paced matches. It's an incredible outlet for energy and competitive spirit.
+
+## Evening Session
 
 6:00 PM: Evenings of Balance
 I might work a little more, stay plugged into AI trends, do some Blue Apron cooking, or simply relax with my wife or friends in the jacuzzi. Variety keeps it fresh.
