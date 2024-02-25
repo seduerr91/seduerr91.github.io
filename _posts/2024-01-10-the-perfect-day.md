@@ -55,3 +55,34 @@ The Takeaway
 This perfect day isn't about indulgence. It's about intentional choices: movement, nourishment, connection, and challenge. It's a balance that allows me to be my best self, every day.
 
 A Note to the Reader: What parts of your day fill your cup? Could small shifts lead to a more satisfying daily flow? Experiment and see what works for you!
+
+## Combining Nutrition with Sports
+
+The right food is required to feel energized and excited to work out. Therefore, I did research and came up with the folowing overview of aspects.
+
+### Nutrition
+
+| Time | Nutrition |
+|---|---|
+| 6:25 AM | Espresso |
+| 8:00 AM | Smoked salmon, avocado, egg on gluten-free toast, Calcium & Magnesium |
+| 11:30 AM  | Red Bull, creatine |
+| 12:40 PM | Leftovers (Blue Apron), Strawberry mango smoothie with protein powder |
+| 9:30 PM | Chamomile tea, water|
+
+### Sports
+
+| Time | Sport/Activity |
+|---|---|
+| 7:00 AM | High-intensity Peloton cycling OR strength training  |
+| 7:20 AM | Pickleball drills (on Peloton cycling days) |
+| 12:00 PM | Swimming (1 mile) |
+| 4:30 PM | Pickleball (competitive matches) |
+
+### Work Slots
+
+| Time | Sport/Activity |
+|---|---|
+| 8:00 AM - 12:00 PM | Morning Focus |
+| 1:00 PM - 4:30 PM | Afternoon Sprint |
+| 7:30 PM - 9:00 PM | Evening Session |
