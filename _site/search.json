@@ -1,19 +1,11 @@
 [
   
     {
-      "title"    : "My Formula for Peak Performance - A Day in My Life",
-      "category" : "",
-      "tags"     : "Lifestyle",
-      "url"      : "/blog/the-perfect-day",
-      "date"     : "2024-02-24 00:00:00 -0800"
-    } ,
-  
-    {
-      "title"    : "Marketing as an LLM State",
+      "title"    : "FastAPI in Production",
       "category" : "",
       "tags"     : "Coding",
-      "url"      : "/blog/marketing-as-an-llm-state",
-      "date"     : "2024-02-24 00:00:00 -0800"
+      "url"      : "/blog/fastapi",
+      "date"     : "2024-03-03 00:00:00 -0800"
     } ,
   
     {
@@ -25,14 +17,6 @@
     } ,
   
     {
-      "title"    : "Getting started with CUDA",
-      "category" : "",
-      "tags"     : "Coding",
-      "url"      : "/blog/getting-started-with-cuda-notes",
-      "date"     : "2024-02-22 00:00:00 -0800"
-    } ,
-  
-    {
       "title"    : "State of AI",
       "category" : "",
       "tags"     : "Coding",
@@ -41,11 +25,19 @@
     } ,
   
     {
+      "title"    : "Paving the Future of Data Analysis with Large Language Models",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/nl-sql",
+      "date"     : "2024-02-11 00:00:00 -0800"
+    } ,
+  
+    {
       "title"    : "Step 4 - Related Research",
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/nlq-sql-4-related_research",
-      "date"     : "2024-02-21 00:00:00 -0800"
+      "date"     : "2024-02-09 00:00:00 -0800"
     } ,
   
     {
@@ -53,7 +45,7 @@
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/nlq-sql-3-where-to-go",
-      "date"     : "2024-02-21 00:00:00 -0800"
+      "date"     : "2024-02-07 00:00:00 -0800"
     } ,
   
     {
@@ -61,7 +53,7 @@
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/nlq-sql-2-technical",
-      "date"     : "2024-02-21 00:00:00 -0800"
+      "date"     : "2024-02-05 00:00:00 -0800"
     } ,
   
     {
@@ -69,7 +61,7 @@
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/nlq-sql-1-overview",
-      "date"     : "2024-02-21 00:00:00 -0800"
+      "date"     : "2024-02-03 00:00:00 -0800"
     } ,
   
     {
@@ -77,7 +69,23 @@
       "category" : "",
       "tags"     : "Coding",
       "url"      : "/blog/data-vs-eng",
-      "date"     : "2024-02-20 00:00:00 -0800"
+      "date"     : "2024-01-20 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Marketing as an LLM State",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/marketing-as-an-llm-state",
+      "date"     : "2024-01-12 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "My Formula for Peak Performance - A Day in My Life",
+      "category" : "",
+      "tags"     : "Lifestyle",
+      "url"      : "/blog/the-perfect-day",
+      "date"     : "2024-01-10 00:00:00 -0800"
     } ,
   
     {
@@ -85,7 +93,23 @@
       "category" : "",
       "tags"     : "Travel",
       "url"      : "/blog/alaska",
-      "date"     : "2024-02-08 00:00:00 -0800"
+      "date"     : "2024-01-08 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "Getting started with CUDA",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/getting-started-with-cuda-notes",
+      "date"     : "2024-01-01 00:00:00 -0800"
+    } ,
+  
+    {
+      "title"    : "My plan for NYC in March 2024",
+      "category" : "",
+      "tags"     : "Life",
+      "url"      : "/blog/my-nyc-plans",
+      "date"     : "2023-11-24 00:00:00 -0800"
     } ,
   
     {
