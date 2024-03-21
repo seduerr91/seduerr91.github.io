@@ -1,6 +1,22 @@
 [
   
     {
+      "title"    : "NYC vs Seattle",
+      "category" : "",
+      "tags"     : "Travel",
+      "url"      : "/blog/nyc-vs-seattle",
+      "date"     : "2024-03-14 00:00:00 -0700"
+    } ,
+  
+    {
+      "title"    : "Shifts in LLM Usage",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/generation-to-agentic",
+      "date"     : "2024-03-05 00:00:00 -0800"
+    } ,
+  
+    {
       "title"    : "FastAPI in Production",
       "category" : "",
       "tags"     : "Coding",

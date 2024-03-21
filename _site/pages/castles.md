@@ -1,4 +1,6 @@
-# Overview of all Castles
+# Memory Palaces
+
+Please find my memory palaces - knowledge that is near and dear to my heart on the pages below.
 
 ## Engineering Knowledge
 
@@ -14,12 +16,14 @@ Everything I want to know in engineering.
 | [Cloud Infrastructure](/pages/castle-cloud-infrastructure)                    | City of Bamberg               |
 | [Architectural Principles](pages/castle-architectural-principles)             | Pickle Snoq Ridge             |
 | [Regex](/pages/castle-golang)                                              | Summer Nights Fest, Eichelsee |
+| [Software Philosophy](/pages/castle-software-philosophy)                      | City of Seattle            |
+| [Data Intensive Applications](/pages/castle-data-applications)                | City of New York           |
 | [Clean Code](/pages/castle-clean-code)                                     | Frankfurter Str. 1, Wuerzburg |
-| [Software Philosophy](/pages/castle-software-philosophy)                      | City of Seattle               |
 
-Don't get an MBA for knowledge, that is all here.
 
 ## Business Knowledge
+
+Don't get an MBA for knowledge, that is all here.
 
 | Business Knowledge                                                | Places in Europe |
 | ----------------------------------------------------------------- | ---------------- |
@@ -29,9 +33,10 @@ Don't get an MBA for knowledge, that is all here.
 | [Never Split the Difference](/pages/castle-difference)         | Bucharesti       |
 | [Think Again](/pages/castle-think-again)                       | Bratislava       |
 
-Humans are so complex, let us understand them better.
 
 ## Humanities & Psychology
+
+Humans are so complex, let us understand them better.
 
 | Humanities Knowledge                                     | Places Outside Europe |
 | -------------------------------------------------------- | --------------------- |
