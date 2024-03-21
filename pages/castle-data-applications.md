@@ -1,0 +1,62 @@
+---
+title: Designing Data Intensive Applications
+tags: [Mental Castle]
+style: fill
+color: secondary
+description: The Big Apple
+---
+
+- `JFK Airport`: Transfer learning: take a great model & retrain end layers to fit it to own needs
+- `Port Authority`: Overfitting: if model only recognizes only one set of data, force-fitting
+- `9th Avenue`: Overfitting: if model only recognizes only one set of data, force-fitting
+- `Moulin Rouge`
+- `7th Avenue`:
+- `Moxi Times Square`: Tensor: matrix n * m, use torch.set_default_dtype(torch.flat64)
+- `Times Square`: Learning rate: how quickly params are updated
+- `H&M`: :
+- `Counter Burger`: :
+- `R Lounge`: :
+- `Sheraton NYC`: :
+- `Carnegie Hall`: :
+- `Central Park Center Drive`: :
+- `MET`: :
+- `Castle`: :
+- `Great Lawns`: :
+- `Guggenheimer`: :
+- `86th Street/Bocado`: :
+- `59th Street/French Restaurant`: :
+- `East River Embassies`: :
+- `German Consulate`: :
+- `United Nations`: :
+- `Archetype 3rd/666`: :
+- `Chrysler Building`: :
+- `Grand Central`: :
+- `One Vanderbuilt`: :
+- `Waldorf Astoria/49th/Park Avenue`: :
+- `Rockefeller Center`: :
+- `Top of the Rock`: :
+- `Ice Skating Rink`: :
+- `St Patricks Cath`:
+- `Trump Tower`:
+- `Apple Store 5th`:
+- `Empire State Building`:
+- `Flat Iron Building`:
+- `China Town Canal Street`:
+- `Manhattan Bridge`
+- `Brooklyn Bridge`
+- `Wall Street`
+- `NYSE`
+- `Staten Island Ferry`
+- `The Battery Park`
+- `Statue of Liberty`
+- `Trinity Church`
+- `Cortland Street`
+- `WTC Tower Memorial`
+- `Cycle with Animals`
+- `Chelsea Market`
+- `Little Island`
+- `Pier 57`
+- `High Line Park`
+- `Mohaniy Station`
+- `Madison Square Garden`
+- `Penn Station`

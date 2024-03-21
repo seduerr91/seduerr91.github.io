@@ -39,8 +39,10 @@ nav_exclude:                                            # The following paths ar
   - pages/castle-architectural-principles.md
   - pages/castle-personal-mba.md
   - pages/castle-business.md
-  - pages/castles.md
+  - pages/castle-data-applications.md
   - pages/schedule.md
+  - pages/datenschutz.md
+  # - pages/castles.md
 
 ### Author Info ###
 author:
