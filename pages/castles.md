@@ -13,13 +13,7 @@ Everything I want to know in engineering.
 | [Software Philosophy](/pages/castle-software-philosophy)                      | City of Seattle            |
 | [Machine Learning](/pages/castle-machine-learning)                            | Schottenfeldgasse 55, Vienna  |
 | [Deep Learning](/pages/castle-deep-learning)                         | Brueckenstr, Eichelsee        |
-| [Data Intensive Applications](/pages/castle-data-applications)                | City of New York           |
 | [Golang Syntax](/pages/castle-golang)                                         | Commute Bellevue              |
-| [Cloud Infrastructure](/pages/castle-cloud-infrastructure)                    | City of Bamberg               |
-| [Architectural Principles](pages/castle-architectural-principles)             | Pickle Snoq Ridge             |
-| [Regex](/pages/castle-golang)                                              | Summer Nights Fest, Eichelsee |
-| [Clean Code](/pages/castle-clean-code)                                     | Frankfurter Str. 1, Wuerzburg |
-
 
 ## Business Knowledge
 
