@@ -1,6 +1,22 @@
 [
   
     {
+      "title"    : "Getting better at Pickleball",
+      "category" : "",
+      "tags"     : "Pickleball",
+      "url"      : "/blog/pickleball",
+      "date"     : "2024-03-24 00:00:00 -0700"
+    } ,
+  
+    {
+      "title"    : "Level Up Engineering",
+      "category" : "",
+      "tags"     : "AI, Engineering",
+      "url"      : "/blog/engineering",
+      "date"     : "2024-03-21 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "NYC vs Seattle",
       "category" : "",
       "tags"     : "Travel",

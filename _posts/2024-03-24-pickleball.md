@@ -1,14 +1,18 @@
 ---
-title: Pickleball
+title: Getting better at Pickleball
 tags: [Pickleball]
 style: fill
 color: secondary
 description: Memorizing Pickle Tips
 ---
 
-## Pickleball
+## Tips to get better at Pickleball
 
-### No. 1 Skill: Hit the kitchen from everywhere (drop shot, reset, dinks)[https://www.youtube.com/watch?v=LExK3HvgODU]
+### No. 1 Skill: Hit the kitchen from everywhere (drop shot, reset, dinks)
+
+[Video](https://www.youtube.com/watch?v=LExK3HvgODU)
+
+Aspects to mind: 
 
 - `Trajectory`: Have a nice arch. The further back the higher, the closer the lower the ball.
 - `Footwork`: 
@@ -21,7 +25,9 @@ description: Memorizing Pickle Tips
   - Power comes from shoulder.
   - Spin: Use the slice for a while.
 
-### (10 Things I wish I knew earlier)[https://www.youtube.com/watch?v=5bnLUkNb7PA]
+### 10 Things, I wish I knew earlier
+
+[Video](https://www.youtube.com/watch?v=5bnLUkNb7PA)
 
 - Using the ATP: Use around the post shot when you get a very angular dink.
 - Dink to the backhand: People are stronger on the forehand, therefore always dink to their backhand (most people are right hand) which might cause pop-ups. 
@@ -33,7 +39,9 @@ description: Memorizing Pickle Tips
 - The best time to poach: When one is long and you are short, poach.
 - Mental hack to win more: expect speedups at the kitchen every time. Check his hand, keep your paddle up. 
 
-### WIN MORE GAMES: https://www.youtube.com/watch?v=Jgr4Yo9JrO4
+### WIN MORE GAMES
+
+[Video](https://www.youtube.com/watch?v=Jgr4Yo9JrO4)
 
 - `Having a strong ready position`:. Always keep the paddle up and ready and have a wide base on the legs. (Be low like a ferrari).
 - `Drop`: Move forward on a good drop, if it's okay stay in transition zone, if it is bad - stay back.
