@@ -1,4 +1,4 @@
-# Memory Palaces
+# Memories
 
 Please find my memory palaces - knowledge that is near and dear to my heart on the pages below.
 
