@@ -6,8 +6,6 @@ color: secondary
 description: Walking through Medieval Wuerzburg
 ---
 
-
-
 ## Chapter 1, Systems Design
 
 - `Flat` - Object: collection of data & associated behavior
@@ -37,8 +35,8 @@ description: Walking through Medieval Wuerzburg
 - `Ramp` - Variables: is a reference to an object, like a yellow sticky note
 - `Street` - Type hints: are type annotations, not enforced; use mypy to check for types; example: def odd(n: int = 2) -> bool: return n%2 != 0
 - `Sporthalle` - Classes: defined e.g. as ‘class Point:‘ followed by the class contents indented; use CapWording
-- `Kirche` - Adding attributes: can be done with dot notation (p1 = Point(), p1.x = 5)
 - `Buga` - Adding behavior: define methods like functions but required by methods: with ‘self’ (n times)
+- `Kirche` - Adding attributes: can be done with dot notation (p1 = Point(), p1.x = 5)
 - `Landwirtschaftsamt` - Default values: set standard values for arguments in functions
 - `Norma` - Initialization method __init__(self, x:float, y:float): now, the Point class can never go without an x or y value.
 - `Enter DH` -  Docstrings: use docstrings to annotate code, pip doctest can locate and confirm code examples
@@ -61,7 +59,6 @@ description: Walking through Medieval Wuerzburg
 ## Chapter 3, When Objects Are Alike
 
 - `Gate 1` - Basic inheritance: every class inherits from object
-- `Upper steep` - Superclass (parent class): class being inherited from
 - `Lower steep` - Subclass: is derived from parents class or extends it by adding functionality
 
 ```python
@@ -74,6 +71,7 @@ class Contact(object): 			# syntax: class(superclass)
 ```
 
 - `Summer Cinema` - Class Variable: all_contacts is shared by all instances of the class, there is only one list!
+- `Upper steep` - Superclass (parent class): class being inherited from
 
 ```python
 class Supplier(Contact): 			# inheritance, having also name & email available for use
@@ -88,7 +86,7 @@ class Supplier(Contact): 			# inheritance, having also name & email available fo
 		super.__init__(name, mail) 	# binds instance to parent class, inits itself
 self.phone = phone 		# sets phone attrib
 ```
-- 2. `Gate` - Multiple inheritance: subclass inherits from 2+ parent classes
+- `Gate 2` - Multiple inheritance: subclass inherits from 2+ parent classes
   - `Restaurant` - 
     - In Python with mixins: mixin class definitions are meant to be inherited to provide extra functionality.
     - Require two classes: (1) requ of the mixin, (2) aspect the mixin provides
@@ -98,18 +96,12 @@ class Emailable(Protocol): email: str		 		# hint: Emailable
 class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
 # "if MailSender is emailable (i.e. has an email: str) field, then send_email"
 ```
-
-- `Upper Parking` - Emailable hint is a protocol: "contract for features of a class" telling mypy that every subclass of Emailable objects must support email attribute
-  - 	Multiple inheritance is done well, if resulting class has no unique features and is a combination of mixins > contact initializer will add a new contact + mails can be send by mixin
-```python
-class EmailableContact(Contact, MailSender): pass  	# this is multiple inheritance 
-```
 - `Franken Museum` - Multiple inheritance can create diamond problems, that are being resolved by the MRO (method resolution order)
-- `3. Gate with water` - **kwargs: collects all additional keywords into a dict
-- 1. `Gate` - Polymorphism: 
+- `Gate 3` - **kwargs: collects all additional keywords into a dict
+- `Tunnel` - Polymorphism: 
   - different behaviors happen based on subclass being used, w/o knowing what the subclass is
   - example: WavFile or MP3File can be subclasses of AudioFile that each implement play() in a different way; the play() function encapsulates (hides info details) the decompression algos of the AudioFiles
-- `Front garden` - Duck typing: allows to use any object that provides the required behavior w/o forcing subclassing
+- `Bishop Garden` - Duck typing: allows to use any object that provides the required behavior w/o forcing subclassing
 
 ## Chapter 4, Expecting the Unexpected
 
