@@ -106,8 +106,7 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
 ## Chapter 4, Expecting the Unexpected
 
 - `Sushi place` - Exceptions: are objects inherited from BaseException
-- `Doener` - Error Categories:
-- `Parking` - Something went wrong: e.g., SyntaxError or NameError
+- `Doener` - Something went wrong: e.g., SyntaxError or NameError
 - `Traffic lights` - Python Runtime: e.g., RuntimeError (update version of a dependency)
 - `Old Main Bridge` - Design problem: e.g., ZeroDivisionError (compute avg of an empty list)
 - `Weinschoppen` - interface Errors: e.g., OSError (a file isn't where it is supposed to be)
@@ -120,12 +119,8 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
 
 ## Chapter 5, When to Use Object-Oriented Programming
 
-- `Sternla` - Object-orientation: 
-  - if you have data & behavior <> data structures if only data, functions if only behavior
-  - if you have interaction between objects: you can use inheritance
+- `Sternla` - Object-orientation: if you have data & behavior <> data structures if only data, functions if only behavior, allows for inheritance
 - `Fielmann` - Decorator @property: making methods that look like attributes
-  - Glasses: Use cases: attrib validation, lazy processing, access control or caching content
-  - Lenses: When: methods for actions, attributes in __init__(), properties for setting/getting
 - `Dom` - Manager objects: rely on composite design (knitting objects together) and act like office managers
 - `Hugendubel` - Eager vs. lazy: 
   - eager: unzip everything, search, zip everything
@@ -133,46 +128,40 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
 
 ## Chapter 6, Abstract Base Classes and Operator Overloading
 
-- `McDonalds` - Metaclass/abstract base class: 
-  - creating class definitions with placeholders (clearer than raising NotImplementedError)
-  - can't be used themselves (implemented with ellipses …)
-- `Cafe Schoenborn` - Jobs of classes (done by metaclass "type"): 
-  - act as container for methods and attribute definitions
-  - create and manage instances through special methods
+- `McDonalds` - Metaclass/abstract base class: creating class definitions with placeholders ... (clearer than raising NotImplementedError)
+- `Cafe Schoenborn` - metaclass "type": act as container for methods and attribute definitions
 - `Frauenkirche` - Collections.abc defines abcs for built-ins collections, e.g. container (in), iterable (for), length (len); change them by changing those
 - `City Lib` - Operator Overloading: (+, -, /, *) are implemented by special methods; overload them e.g. / in pathlib module
 
 ## Chapter 7, Python Data Structures
 
-- `Kaufhof` - Empty objects: it's not possible to set any attributes on empty objects
+- `Kaufhof` - Empty objects: its not possible to set any attributes on empty objects
 - <> Empty classes: class MyObject: pass; m = MyObject(); m.x = 5 will work
 - `H&M` - Tuples: a = 45, => (45,)
-  - Control: store a specific value, like coordinates or rgb colors
-  - Down: immutable, hence having a hash value, can be unpacked, and sliced
-  - Sport: created by separating values w/ comma & inside of other objects w/ brackets
-  - Boxers: Python will always print them w/ brackets in canonical representation
-  - Leave: disadvantage: can be confusing w/o any key / description
-- `Marco Polo` - Named Tuples: 'tuples with attitude', class Stock(NamedTuple): symbol:str; current: float
+  - store a specific value, like coordinates or rgb colors
+  - immutable, hence having a hash value, can be unpacked, and sliced
+  - created by separating values w/ comma & inside of other objects w/ brackets
+  - Python will always print them w/ brackets in canonical representation
+  - disadvantage: can be confusing w/o any key / description
+- `Marco Polo` - Named Tuples: 'tuples with attitude', 
+  - example: class Stock(NamedTuple): symbol:str; current: float
   - values can be passed in positional or as keywords
   - attributed can be accessed by name
   - immutability only refers to attribute of tuple contained elements can be mutable
-- `Esprit` - Dataclasses: sample: @dataclass class StockDefaults: name: str; current: float = 0.0
+- `Esprit` - Dataclasses: 
+  - sample: @dataclass class StockDefaults: name: str; current: float = 0.0
   - can be stateful with mutable objects, include equality comparison
   - @dataclass(order = True): allows to compare
   - @dataclass(order = True, frozen = True): is like NamedTuple
 - `Mueller` - Dictionaries: demo_dict.get("Joy") is fast w/ hash; demo_dict.get("Joy", "not found") for KeyErrors
   - keys(), values() and items() return iterator over these (items as a tuple with (k, v))
   - hash collision can lead to slowdowns
-- `Pizza Hut` - When to use which?
-  - @dataclass
-  - If data is immutable: NamedTuple
-  - Dicts are best when complete set of keys isn't known
 - `Eiscafe` - Defaultdict: Whenever a key is accessed that isn't already in the dict, a default is created
   - Useful for creating containers of data
 - `DeuBa` - Counter: beefed-up dict where keys are counted & values are the quantities
   - collections.Counter[sample_list].most_common(1) 	# returns the top 1 most common value 
 - `Sportladen` - Lists: in Py should be used, if we want to store one type of instances only
-    - type hinting with list[int] 
+    - type hinting with list[int]
     - sort() sorts case-sensitive, i.e. Z is before a
     - mix of unsortable elems will return TypeError
     - immutable sequence of unicode chars
@@ -183,9 +172,9 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
     - purpose: identify things that are in set or not
     - method: union: (if in either, duplicates are added once), intersection & (if in both), summetric_difference ^ (in one or the other but not both)
 - `Metzger` - Queues: implements FIFO, order of implementation
-    - collections.deque w/ popleft() & append() 	# most efficient if not concurrent
-    - queue w/ get () & put() 				# most efficient if concurrent
-    - as a Python "list" w/ pop() & append() 		# else
+    - collections.deque w/ popleft() & append() # most efficient if not concurrent
+    - queue w/ get () & put() # most efficient if concurrent
+    - as a Python "list" w/ pop() & append() # else
   
 ## Chapter 8, The Intersection of Object-Oriented and Functional Programming
 
@@ -205,23 +194,22 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
     - Licht: optional params: by specifying default values; these are evaluated exactly once when func is first created; hence set default values to 'None' or reset lists with 'sam = [] if sam is None else sam
     - `Sitz` - *args: def get_webpages(*links): * accepts any number of arguments and puts them all in a tuple named links
     - `Lehne` - **kwargs: accepts arbitrary keyword arguments; it's possible to pass any keyword, be careful!
-    - `Ich` - unpacking arguments show_args(**more args): useful for mapping user input
-- `Residenzplatz` - Callable Objects:
-    - `parking` - def a_function(): top-level objects and are passed around to execute once a condition is met
-    - `Ampel` - callbacks: used for reactions (e.g., when a user clicks)
-    - `statue` - monkey patching: myobj.do_something = do_another_thing will patch all instances of myobj and create chaos; only use in automated testing to await expensive API-calls
+    - `Viewer` - unpacking arguments show_args(**more args): useful for mapping user input
+- `Residence square` - def a_function(): top-level objects and are passed around to execute once a condition is met
+    - `traffic lights` - callbacks: used for reactions (e.g., when a user clicks)
+    - `fountain` - monkey patching: myobj.do_something = do_another_thing will patch all instances of myobj and create chaos; only use in automated testing to await expensive API-calls
     - `balcony` - Adding __call__() method: makes objects callable, and allows them to be stateful (funcs cannot!)
-- `Weinkeller` - File I/O: 
+- `Wine cellar` - File I/O: 
     - `entrance` - open(): opens OS files, & returns a Python file object, names can be relative or absolute
     - `statue` - Pathlib works with '/'
     - `basement` - Pass a mode when opening: 'w': write, 'a': append, 'r': read, 'b': binary
-    - `Faesser` - read(): returns entire contend, readlines() returns list of all lines
+    - `barrels` - read(): returns entire contend, readlines() returns list of all lines
     - `table` - explicitly use '\n' character, coz only print() has newlines in python
     - `candles` - always close() filebuffers with a contextmanager
-- `Garten` - Context manager with:
-    - `oben` - using with statement ensures a context (api-call, file buffer, threading) is closed even if an error happens making finally: close() unnecessary, even returns partial results
+- `garden` - Context manager with:
+    - `upper` - using with statement ensures a context (api-call, file buffer, threading) is closed even if an error happens making finally: close() unnecessary, even returns partial results
     - with source_path.open() as source_file 	# binds context to variable
-    - `unten` - ALWAYS WRAP FILES INTO WITH STATEMENTS
+    - `lower` - ALWAYS WRAP FILES INTO WITH STATEMENTS
 - `B. Neumann` - Yield: produces the first result of a sequence of results
 
 ## Chapter 9, Strings, Serialization, and File Paths
