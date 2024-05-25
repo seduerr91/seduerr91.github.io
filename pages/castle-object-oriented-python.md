@@ -344,18 +344,8 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
 - `Shell` - Threads: sequence of byte-code that may be interrupted and resumed; problem: shares data, concurrency is illusion
 - `Lidl` - GIL (global interpreter lock): constraints scheduling, managers memory, garbage collection & calls
 - `Moxy` - Multiprocessing: spins up new OS processes (w/ interpreters), pools implement interprocess communication, problems: sharing data between processes create overhead as communication requires serialization
-- `Marriot` - Futures (promise): object that wraps a function call, that func is run in background [asyncio.create_task()]
-- `McFit` - AsyncIO: combines futures with even loop coroutines
-- `Europe Star` - Coroutine: interleaves, function that is waiting for an event & can provide events to other coroutines [async def]
-- `Kaufland` - Interleaving: multitasking, an application can be processing data while also be waiting for the next request
-- `Burger King` - Event loop: switches control among coroutines waiting for events [await] & [asyncio.gather()]
-- `Flasher` - Non-preemptive: coroutines explicitly hand control to each other at specific points, removing need for locking 
-- `B8` - Async keyword: documentation notifying python that the coroutine contains await calls
-- `Decathlon` - Synchronous execution: coroutine execs code until await => returns control to event loop => event loop executes any other task ​​=> whenever a child task completes, event loop sends result to coroutine => coroutine continues until await/return
-
-```python
-async def sleepers():			#  coroutine, async def + await make sleepers interleaved
-	tasks = [asyncio.create_task(await asyncio.sleep(3) for i in range(4)]
-	await asyncio.gather(*tasks)		# returns control to event loop
-asyncio.run(sleepers())			# start event loop, executing sleepers coroutine
-```
+- `Marriot` - AsyncIO: combines futures with event loop and coroutines
+- `Europe Star` - Async keyword: documentation notifying python that the coroutine contains await calls
+- `McFit` - Futures (promise): func will be run in background
+- `Kaufland` - Coroutine: Manager that waits for an event & can provide events to other coroutines [async def]
+- `Burger King` - Event loop: Executor that switches control among coroutines waiting for events [await] & [asyncio.gather()]
