@@ -160,7 +160,7 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
   - Useful for creating containers of data
 - `DeuBa` - Counter: beefed-up dict where keys are counted & values are the quantities
   - collections.Counter[sample_list].most_common(1) 	# returns the top 1 most common value 
-  - `DM`- Strings:
+- `DM`- Strings:
     - encode chars to create bytes, decode bytes to recover chars
     - format strings with f-strings f"hello {name[0]}" # can contain vars or even code
     - escape braces by using them twice will format to one
@@ -341,16 +341,17 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
 ## Chapter 14, Concurrency
 
 - `Berliner Ring` - Concurrency: making a computer do multiple things at once.
-- `McFit` - Threads: sequence of byte-code that may be interrupted and resumed; problem: shares data, concurrency is illusion
-- `Europastern` - GIL (global interpreter lock): constraints scheduling, managers memory, garbage collection & calls
-- `Kaufland` - Multiprocessing: spins up new OS processes (w/ interpreters), pools implement interprocess communication, problems: sharing data between processes create overhead as communication requires serialization
-- `Burger King` - Futures (promise): object that wraps a function call, that func is run in background [asyncio.create_task()]
-- `Uniklinik` - Asyncio: combines futures with even loop coroutines
-- `Mediamarkt` - Coroutine: interleaves, function that is waiting for an event & can provide events to other coroutines [async def]
-- `Hornbach` - Interleaving: multitasking, an application can be processing data while also be waiting for the next request
-- `Ikea` - Event loop: switches control among coroutines waiting for events [await] & [asyncio.gather()]
-- `Estenfeld` - Non-preemptive: coroutines explicitly hand control to each other at specific points, removing need for locking 
-- `Kürnach` - Sleeper async code sample:
+- `Shell` - Threads: sequence of byte-code that may be interrupted and resumed; problem: shares data, concurrency is illusion
+- `Lidl` - GIL (global interpreter lock): constraints scheduling, managers memory, garbage collection & calls
+- `Moxy` - Multiprocessing: spins up new OS processes (w/ interpreters), pools implement interprocess communication, problems: sharing data between processes create overhead as communication requires serialization
+- `Marriot` - Futures (promise): object that wraps a function call, that func is run in background [asyncio.create_task()]
+- `McFit` - AsyncIO: combines futures with even loop coroutines
+- `Europe Star` - Coroutine: interleaves, function that is waiting for an event & can provide events to other coroutines [async def]
+- `Kaufland` - Interleaving: multitasking, an application can be processing data while also be waiting for the next request
+- `Burger King` - Event loop: switches control among coroutines waiting for events [await] & [asyncio.gather()]
+- `Flasher` - Non-preemptive: coroutines explicitly hand control to each other at specific points, removing need for locking 
+- `B8` - Async keyword: documentation notifying python that the coroutine contains await calls
+- `Decathlon` - Synchronous execution: coroutine execs code until await => returns control to event loop => event loop executes any other task ​​=> whenever a child task completes, event loop sends result to coroutine => coroutine continues until await/return
 
 ```python
 async def sleepers():			#  coroutine, async def + await make sleepers interleaved
@@ -358,7 +359,3 @@ async def sleepers():			#  coroutine, async def + await make sleepers interleave
 	await asyncio.gather(*tasks)		# returns control to event loop
 asyncio.run(sleepers())			# start event loop, executing sleepers coroutine
 ```
-
-- `Unterpleichfeld` - Async keyword: documentation notifying python that the coroutine contains await calls
-- `Bergtheim` - Synchronous execution: coroutine execs code until await => returns control to event loop => event loop executes any other task ​​=> whenever a child task completes, event loop sends result to coroutine => coroutine continues until await/return
-
