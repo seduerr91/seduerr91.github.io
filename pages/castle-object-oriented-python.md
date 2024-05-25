@@ -156,18 +156,19 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
 - `Mueller` - Dictionaries: demo_dict.get("Joy") is fast w/ hash; demo_dict.get("Joy", "not found") for KeyErrors
   - keys(), values() and items() return iterator over these (items as a tuple with (k, v))
   - hash collision can lead to slowdowns
-- `Eiscafe` - Defaultdict: Whenever a key is accessed that isn't already in the dict, a default is created
+- `Echter Gallery` - Defaultdict: Whenever a key is accessed that isn't already in the dict, a default is created
   - Useful for creating containers of data
 - `DeuBa` - Counter: beefed-up dict where keys are counted & values are the quantities
   - collections.Counter[sample_list].most_common(1) 	# returns the top 1 most common value 
-- `Sportladen` - Lists: in Py should be used, if we want to store one type of instances only
+  - `DM`- Strings:
+    - encode chars to create bytes, decode bytes to recover chars
+    - format strings with f-strings f"hello {name[0]}" # can contain vars or even code
+    - escape braces by using them twice will format to one
+- `Sportarena` - Lists: in Py should be used, if we want to store one type of instances only
     - type hinting with list[int]
     - sort() sorts case-sensitive, i.e. Z is before a
     - mix of unsortable elems will return TypeError
     - immutable sequence of unicode chars
-    - encode chars to create bytes, decode bytes to recover chars
-    - format strings with f-strings f"hello {name[0]}" # can contain vars or even code
-    - escape braces by using them twice will format to one
 - `JuliusSpital` - Sets: represent unordered group of unique items, incredibly efficient for uniqueness
     - purpose: identify things that are in set or not
     - method: union: (if in either, duplicates are added once), intersection & (if in both), summetric_difference ^ (in one or the other but not both)
@@ -175,14 +176,17 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
     - collections.deque w/ popleft() & append() # most efficient if not concurrent
     - queue w/ get () & put() # most efficient if concurrent
     - as a Python "list" w/ pop() & append() # else
-  
-## Chapter 8, The Intersection of Object-Oriented and Functional Programming
-
 - `Zeitzeichen` - Built-ins: Python avoids the narrow viewpoint of 'it must always be object.method()'
     - len(myobj) is more readable than myobj.__length__()
     - reversed(): takes any sequence and returns a copy in reverse order
     - enumerate(): returns a tuple with an index, and a value of an object
     - eval(), exec() & compile() are dangerous as they execute string code
+  
+## Chapter 8, The Intersection of Object-Oriented and Functional Programming
+
+- `BuergerSpital` - Method Overloading: multiple methods with the same name that accept different sets of params (Java poop!)
+    - overloading params: allow alternative types using Union[...] as hints
+    - overloading the method: use patterns of params 
 - `Theater` - Parameters: 
     - `Stage` - positional only: all arguments need to be provided in order; no keyword enforced with "/": def pos(a,b,/,c) # a & b are required as first two + naming (a='4') is permitted
     - `Vorhang` - positional or keywords: e.g., all args in order, mandatory args in order without defaults
@@ -192,9 +196,6 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
     - `Sitz` - *args: def get_webpages(*links): * accepts any number of arguments and puts them all in a tuple named links
     - `Lehne` - **kwargs: accepts arbitrary keyword arguments; it's possible to pass any keyword, be careful!
     - `Viewer` - unpacking arguments show_args(**more args): useful for mapping user input
-- `BuergerSpital` - Method Overloading: multiple methods with the same name that accept different sets of params (Java poop!)
-    - overloading params: allow alternative types using Union[...] as hints
-    - overloading the method: use patterns of params 
 - `Residence Square` - Passing funcs as attributes: top-level objects and are passed around to execute once a condition is met
     - `Traffic Lights` - callbacks: used for reactions (e.g., when a user clicks)
     - `Parking` - Adding __call__() method: makes objects callable, and allows them to be stateful (funcs cannot!)
