@@ -183,33 +183,33 @@ class MailSender(Emailable): def send_email(self, message) 	# this is the mixin
     - reversed(): takes any sequence and returns a copy in reverse order
     - enumerate(): returns a tuple with an index, and a value of an object
     - eval(), exec() & compile() are dangerous as they execute string code
-- `BuergerSpital` - Method Overloading: multiple methods with the same name that accept different sets of params (Java poop!)
-    - overloading params: allow alternative types using Union[...] as hints
-    - overloading the method: use patterns of params 
 - `Theater` - Parameters: 
     - `Stage` - positional only: all arguments need to be provided in order; no keyword enforced with "/": def pos(a,b,/,c) # a & b are required as first two + naming (a='4') is permitted
     - `Vorhang` - positional or keywords: e.g., all args in order, mandatory args in order without defaults
     - `Decke` - keywords only: keyword only argos are place after *, e.g. 
     - 	def kw(a,b,*,c, d) # c & d need to be called with a kw; e.g, kw(4, 5, c=3, d=6)
-    - Licht: optional params: by specifying default values; these are evaluated exactly once when func is first created; hence set default values to 'None' or reset lists with 'sam = [] if sam is None else sam
+    - `Licht`: optional params: by specifying default values; these are evaluated exactly once when func is first created; hence set default values to 'None' or reset lists with 'sam = [] if sam is None else sam
     - `Sitz` - *args: def get_webpages(*links): * accepts any number of arguments and puts them all in a tuple named links
     - `Lehne` - **kwargs: accepts arbitrary keyword arguments; it's possible to pass any keyword, be careful!
     - `Viewer` - unpacking arguments show_args(**more args): useful for mapping user input
-- `Residence square` - def a_function(): top-level objects and are passed around to execute once a condition is met
-    - `traffic lights` - callbacks: used for reactions (e.g., when a user clicks)
-    - `fountain` - monkey patching: myobj.do_something = do_another_thing will patch all instances of myobj and create chaos; only use in automated testing to await expensive API-calls
-    - `balcony` - Adding __call__() method: makes objects callable, and allows them to be stateful (funcs cannot!)
+- `BuergerSpital` - Method Overloading: multiple methods with the same name that accept different sets of params (Java poop!)
+    - overloading params: allow alternative types using Union[...] as hints
+    - overloading the method: use patterns of params 
+- `Residence Square` - Passing funcs as attributes: top-level objects and are passed around to execute once a condition is met
+    - `Traffic Lights` - callbacks: used for reactions (e.g., when a user clicks)
+    - `Parking` - Adding __call__() method: makes objects callable, and allows them to be stateful (funcs cannot!)
+    - `Fountain` - monkey patching: myobj.do_something = do_another_thing will patch all instances of myobj and create chaos; only use in automated testing to await expensive API-calls
 - `Wine cellar` - File I/O: 
-    - `entrance` - open(): opens OS files, & returns a Python file object, names can be relative or absolute
-    - `statue` - Pathlib works with '/'
-    - `basement` - Pass a mode when opening: 'w': write, 'a': append, 'r': read, 'b': binary
-    - `barrels` - read(): returns entire contend, readlines() returns list of all lines
-    - `table` - explicitly use '\n' character, coz only print() has newlines in python
-    - `candles` - always close() filebuffers with a contextmanager
-- `garden` - Context manager with:
-    - `upper` - using with statement ensures a context (api-call, file buffer, threading) is closed even if an error happens making finally: close() unnecessary, even returns partial results
+    - `Entrance` - open(): opens OS files, & returns a Python file object, names can be relative or absolute
+    - `Statue` - Pathlib works with '/'
+    - `Basement` - Pass a mode when opening: 'w': write, 'a': append, 'r': read, 'b': binary
+    - `Barrels` - read(): returns entire contend, readlines() returns list of all lines
+    - `Table` - explicitly use '\n' character, coz only print() has newlines in python
+    - `Candles` - always close() filebuffers with a contextmanager
+- `Residence Garden` - Context manager with:
+    - `Upper` - using with statement ensures a context (api-call, file buffer, threading) is closed even if an error happens making finally: close() unnecessary, even returns partial results
     - with source_path.open() as source_file 	# binds context to variable
-    - `lower` - ALWAYS WRAP FILES INTO WITH STATEMENTS
+    - `Lower` - ALWAYS WRAP FILES INTO WITH STATEMENTS
 - `B. Neumann` - Yield: produces the first result of a sequence of results
 
 ## Chapter 9, Strings, Serialization, and File Paths
