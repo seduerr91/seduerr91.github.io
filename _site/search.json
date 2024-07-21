@@ -1,6 +1,46 @@
 [
   
     {
+      "title"    : "Definition of Done",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/definition-of-done",
+      "date"     : "2024-07-01 00:00:00 -0700"
+    } ,
+  
+    {
+      "title"    : "Sasha and Simba at 8 weeks",
+      "category" : "",
+      "tags"     : "Leisure",
+      "url"      : "/blog/sasha-simba-babies",
+      "date"     : "2024-06-15 00:00:00 -0700"
+    } ,
+  
+    {
+      "title"    : "Living in America as a German for Two Years",
+      "category" : "",
+      "tags"     : "Leisure",
+      "url"      : "/blog/2-years-in-america",
+      "date"     : "2024-06-02 00:00:00 -0700"
+    } ,
+  
+    {
+      "title"    : "Moving back to the EU",
+      "category" : "",
+      "tags"     : "Travel",
+      "url"      : "/blog/vienna-2030",
+      "date"     : "2024-05-06 00:00:00 -0700"
+    } ,
+  
+    {
+      "title"    : "State of AI May 2024",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/state-of-ai-2",
+      "date"     : "2024-05-06 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "The Best Poker Books for Every Level - From Beginners to Advanced Players",
       "category" : "",
       "tags"     : "Leisure",
