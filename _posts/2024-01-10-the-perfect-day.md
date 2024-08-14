@@ -50,7 +50,7 @@ I might work a little more, stay plugged into AI trends, do some Blue Apron cook
 
 No more alcohol for me – I'm 60 days in after reading 'This Naked Mind'. Chamomile tea and plenty of water help me prepare for deep, restorative sleep.
 
-The Takeaway
+## The Takeaway
 
 This perfect day isn't about indulgence. It's about intentional choices: movement, nourishment, connection, and challenge. It's a balance that allows me to be my best self, every day.
 
