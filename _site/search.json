@@ -1,6 +1,46 @@
 [
   
     {
+      "title"    : "System Design in a Hurry",
+      "category" : "",
+      "tags"     : "Life",
+      "url"      : "/blog/system-design",
+      "date"     : "2024-08-18 00:00:00 -0700"
+    } ,
+  
+    {
+      "title"    : "High Performance Python Summary",
+      "category" : "",
+      "tags"     : "Life",
+      "url"      : "/blog/high-performance-python",
+      "date"     : "2024-08-13 00:00:00 -0700"
+    } ,
+  
+    {
+      "title"    : "What should I do with rest of my life?",
+      "category" : "",
+      "tags"     : "Life",
+      "url"      : "/blog/what-should-I-do-with-the-rest-of-my-life",
+      "date"     : "2024-08-11 00:00:00 -0700"
+    } ,
+  
+    {
+      "title"    : "Getting better in Systems Design",
+      "category" : "",
+      "tags"     : "Coding",
+      "url"      : "/blog/systems-design",
+      "date"     : "2024-08-06 00:00:00 -0700"
+    } ,
+  
+    {
+      "title"    : "My Takeaways from &#39;Robust Python&#39;",
+      "category" : "",
+      "tags"     : "Coding, Python, Best Practices",
+      "url"      : "/blog/robust-python",
+      "date"     : "2024-08-05 00:00:00 -0700"
+    } ,
+  
+    {
       "title"    : "Definition of Done",
       "category" : "",
       "tags"     : "Coding",
