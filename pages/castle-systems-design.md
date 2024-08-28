@@ -8,73 +8,73 @@ description: From HelloInterview and MIT Class on Algorithms
 ---
 
 ## Dynamic Programming SRTBOT
-- `` - Subproblem: for sequence try prefixes s[:i], suffixes s[i:] or substrings [i:j]; for non-negative int k, try [0:k]; add subproblems and constraints to remember "state"
-- `` - Relate subproblem solutions recursively: identify question about subproblem that if you knew the answer it would reduce to a smaller problem; locally brute-force all answers; think of 'correct guessing' answer, then loop
-- `` - topological order on subproblem: DAG b needs a
-- `` - base case of relation
-- `` - original problem: solve via subproblem(s)
-- `` - time analysis: sum(recursive work) + sum(non-recursive work) + worked to solve original
+- `Sliding Doors` - Subproblem: for sequence try prefixes s[:i], suffixes s[i:] or substrings [i:j]; for non-negative int k, try [0:k]; add subproblems and constraints to remember "state"
+- `Basket` - Relate subproblem solutions recursively: identify question about subproblem that if you knew the answer it would reduce to a smaller problem; locally brute-force all answers; think of 'correct guessing' answer, then loop
+- `Wipes` - topological order on subproblem: DAG b needs a
+- `Flowers` - base case of relation
+- `Desk` - original problem: solve via subproblem(s)
+- `Elevator` - time analysis: sum(recursive work) + sum(non-recursive work) + worked to solve original
 
 ## Design System Delivery
 
-- `` - Functional Req: Users should be able to ... post tweets/follow users/see feed
-- `` - Non-Functional Req: The system should ... avail > consistency, scale to 100M DAU, render < 200ms
-- `` - Core Entities: Nouns of requirements
-- `` - API: Restful endpoints POST /v1/tweet -> 200 body: {"text": str}
-- `` - Data Flow: as a simple list
-- `` - High-level Design: sketch of systems
-- `` - Deep Dives: adaptions or conversations
+- `Toilet` - Functional Req: Users should be able to ... post tweets/follow users/see feed
+- `Coffee Shop` - Non-Functional Req: The system should ... avail > consistency, scale to 100M DAU, render < 200ms
+- `Donuts` - Core Entities: Nouns of requirements
+- `Cheese cake` - API: Restful endpoints POST /v1/tweet -> 200 body: {"text": str}
+- `Bread` - Data Flow: as a simple list
+- `Berries` - High-level Design: sketch of systems
+- `Avocados` - Deep Dives: adaptions or conversations
 
 ## Core Concepts
 
-- `` - Scaling: 
+- `Bananas` - Scaling: 
   - work distribution: in sync via load balancer w/ round robin/least connections/utilization-based; async via job queues
   - data distribution: keep data in memory (caching) or in database shared across all nodes
-- `` - Consistency: how much users can tolerate stale data
+- `Salmon` - Consistency: how much users can tolerate stale data
   - strongly consistent: after data write, all subsequent reads reflect that write (e.g. with financial data, blockchain)
   - eventually consistent: period of time where data is stale (e.g. most systems)
-- `` - Locking: ensuring that only one client can access a shared resource at a time (inventory counter, draw bridge)
+- `Fish Desk` - Locking: ensuring that only one client can access a shared resource at a time (inventory counter, draw bridge)
   - granularity: lock as little as needed (user for an update, not entire user table)
   - duration: as little as needed
   - bypassing: avoid locking via "optimistic concurrency" - do work w/o locking & retry if it did not work being under the assumption that mostly we won't have contention (multiple updating same resource)
-- `` - Indexing: basic approach is a hash (writing takes time, search is in O(1)) or keep as a sorted list O(logn)
+- `Meat Desk` - Indexing: basic approach is a hash (writing takes time, search is in O(1)) or keep as a sorted list O(logn)
   - most relational databases support indexing by column or group of columns
   - specialized: geospatial indexes or vector databases or full-text indices via inverted index
   - postgres & elastic with CDC: change data capture where elastic cluster listens to changes from PG DB
-- `` - Protocols: 
+- `Steaks` - Protocols: 
   - internal: HTTP or RPC for internal comms
   - external: REST (stateless scaling behind load balancer), server sent events (client reqs, server sends multiple responses), websockets (real time communication or a message broker like Kafka)
-- `` - Security: 
+- `Sauces` - Security: 
   - do not send unencrypted data (SSL, HTTPS) & protect data
   - Load Balancer handles authorization & authentication
-- `` - Monitoring: 
+- `Frozen Fruits` - Monitoring: 
   - Infrastructure: CPU, memory, load -> Datadog
   - Service-level: request latency, error rate
   - Application-level: Google Analytics or Mixpanel
 
 ## Key Technologies
 
-- `` - relational DB: often used for records and transactions
+- `Eggs` - relational DB: often used for records and transactions
   - joins: combining data on columns
   - indexes: storing data e.g. sorted by name or more indexes for fast look-up with hash
   - transactions: grouping multiple operations (new user + new post) -> fail or suceed together
-- `` - No-SQL DB: stores for key value, documents, column_families or graph databases
+- `Milk` - No-SQL DB: stores for key value, documents, column_families or graph databases
   - use for evolving data models
   - scaling via consistent hashing or sharding
-- `` - Blob Storage: large unstructured data like videos or images
+- `Beer` - Blob Storage: large unstructured data like videos or images
   - security & durability, encrypted during data storing & transfer are built in
   - uploading & downloading via presigned-urls
   - chunking & calculating fingerprint while maintaining metadata in sql db for large files
-- `` - Elastic: uses inverted indices, i.e. mapping from word to documents that contain them
+- `Wine` - Elastic: uses inverted indices, i.e. mapping from word to documents that contain them
   - leveraging tokenization, stemming and fuzzy logic
 
-- `` - API Gateway: responsible for routing incoming traffic, auth, rate limiting and logging
-- `` - Load Balancer: balancing load like Kubernetes, AWS Elastic LB
-- `` - Queue: Serves as a buffer for bursty traffic or just distribution of work (burst: Uber, distribution: Youtube video preperation); SQS and Kafka
+- `Cheddar` - API Gateway: responsible for routing incoming traffic, auth, rate limiting and logging
+- `Hot Bar` - Load Balancer: balancing load like Kubernetes, AWS Elastic LB
+- `Salad Bar` - Queue: Serves as a buffer for bursty traffic or just distribution of work (burst: Uber, distribution: Youtube video preperation); SQS and Kafka
   - resource sends message and forgets, pool of workers work on messages -> will break <500 ms latency requirement
   - message ordering mostly FIFO, retries can improve processing, dead letter queues collect unprocessable data
   - backpressure: when queue is full you return error / waiting screen to user
-- `` - Streams/Event Sourcing: changes in application state are stored as a sequence of events (Kafka, Kinesis)
+- `Burritos` - Streams/Event Sourcing: changes in application state are stored as a sequence of events (Kafka, Kinesis)
   - Unlike queues, streams keep data for configurable amount of time
   - Use for: 
     - real time procssing of large data (like user analytics) w/ Apache Flink or Spark Streaming
@@ -85,7 +85,7 @@ description: From HelloInterview and MIT Class on Algorithms
     - multiple consumer groups: read from some stream but do different things (update dashboard vs. store event)
     - replication: can be used across multiple servers to protect against failing
     - windowing: batch events together based on time or count
-- `` - Distributed Lock: locking a resource for a short time (e.g. like a ticket reservation)
+- `Self-Checkout` - Distributed Lock: locking a resource for a short time (e.g. like a ticket reservation)
   - tradtional dbs: not designed for timed locking (e.g. 10 mins) <-> key value store in Redis.
   - use cases: checkout systems, uber driver alloc, auction bidding
   - facts: 
@@ -93,7 +93,7 @@ description: From HelloInterview and MIT Class on Algorithms
     - lock expiry: ensures locks don't get stuck
     - lock granularity: single or group of resources
     - deadlock: mulitple resources lock each other
-- `` - Distributed cache: server cluster that stores data in memory helping w/ scaling and latency
+- `Lunch Corner` - Distributed cache: server cluster that stores data in memory helping w/ scaling and latency
   - use cases: 
     - save aggregation metrics: save results of calculation rather than recomputing them
     - reduce number of db queries: user sessions are often cached
@@ -105,7 +105,7 @@ description: From HelloInterview and MIT Class on Algorithms
       - write through: to both cache and db -> slower but safe
       - write around: only to db: increases fetch time
       - write back: to cache and async db -> faster write but data risk
-- `` - CDN: cache using distributed servers to deliver static context globally & dynamic context that's popular
+- `Amazon Dropoff` - CDN: cache using distributed servers to deliver static context globally & dynamic context that's popular
   - can be used to cache API responses
   - eviction policy: also set a TTL (time to live)
 
@@ -193,3 +193,23 @@ description: From HelloInterview and MIT Class on Algorithms
   - complex queries not feasible
   - data modeling constraints
   - vendor lock-in
+
+## Robust Python
+
+- `` - type checkers like mypy: check coverage with `mypy --html-report ./mypy_report ./my_project`
+- `` - enums: define a set of named values `from enum import Enum; class Color(Enum): RED; GREEN; BLUE
+- `` - classes: for invariants - properties taht must remain unchanged throughout the lifecycle of an instance (e.g., connection to S3)
+- `` - protocols: provide a way to define a set of methods and properties that a class must implement
+- `` - pydantic: integrated data validation 
+- `` - test coverage: test the coverage
+- `` - pydeps: get a dependency graph
+
+## High Performance Python
+
+- `` - timeit, cProfile, line_profiler, memory_profiler, memit
+- `` - generators, numpy, pandas, numexpr
+- `` - compiling to C: cython, Numba, PyPy
+- `` - async: do different things at the same time
+- `` - multiprocessing: doings same thing in parallel
+- `` - bloom filters: tests whether an element is part of a set, with a possibility of false positives but no false negatives
+- `` - tries & dawg: storing many strings very efficiently
