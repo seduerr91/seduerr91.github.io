@@ -122,93 +122,74 @@ description: From HelloInterview and MIT Class on Algorithms
 ## Deep Dives
 
 ### Redis 
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
+- `` - Definition: data structure store w/ very readable commands
+- `` - Config: single-node "main", replicated "main -> secondary", cluster "client -> main 1/2/3 -> secondary 1/2/3"
+- `` - Performance: handles O(100k) writes per second, reads in microsecs
+- `` - Use Case:
+  - as cache: key & vals map to Redis, use a TTL to keep size manageable; hot-key issue
+  - distributed locks: use atomic increment (incr.) + TTL; increment if you acquire lock; else retry later
+  - leaderboards: Redis sorted sets can be queried in log time, e.g. for keyword search in tweets
+  - rate limiting: e.g. fixed-window limiting where number of requests shall not exceed N in time W
+  - proximity search: geodadd & georadius runs in O(N + log(M))
+  - event sourcing: Redis streams are append only and can be used as a queue
+- `` - shortcomings: hot key issue: too much load on one popular item
+- `` - remedy: 
+  - add in-memory cache in clients to reduce load on Redis
+  - store same data in mutliple keys & randomize reqs
+  - add read replica instances
 
 ### Kafka
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
+- `` - elements:
+  - producer: puts events (soccer goals, substitutions etc) in queue
+  - consumer: server that reads events off queue
+  - distribution strategy: required to structure messages sent & received & use consumer groups to scale
+  - topics: make consumers only listen to updates on soccer vs. basketball
+- `` - architecture: 
+  - cluster has multiple brokers: responsible for storing data & serving clients
+  - each borker has n partitions: ordered, immutable sequence of messages (like a logfile)
+  - every event is appended to logfile which is immutable, efficient and scalable
+  - offset is used to keep track of messages (events) in a partition
+- `` - model: consumers read from Kafka topics either as the arrive (push) or by polling in intervals (pull)
+- `` - use cases:
+  - async processing: Youtube video processing, orderly reservation processing (Ticketmaster), decouple prod from condumrt
+  - streaming: continued immediate processing (ad click generator), messages need to be processed by multiple consumers
+- `` - facts: 
+  - only store less than 1MB per event
+  - horizontal scaling w/ more brokers & right amount of partitions
+  - scale topics (soccer is busy so many partitions while few for chess)
+- `` - hot partitions handling: 
+  - random partitioning w/o key: guarantees even distribution
+  - random salting: adda a timestamp to partition key
+  - compound key: use combo of id, region, etc.
+  - back pressure: slow down service if load too high -> UBER, Ticketmaster waiting rooms
 
 ### Dynamo DB
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
-- `` - :
+- `` - data model:
+  - tables: top-level structure w/ mandatory primary keys
+  - items: row in a RDBMS
+  - attributes:key-value pair within item
+- `` - keys:
+  - primary key and optional sort key for partitioning on range queries (chatID as pk, and timestamp as sort key)
+  - primary keys & partition keys use consistent hashing function
+  - sort keys: use B-trees, a self-balancing tree
+  - GSI: global secondary key to query different cols when you need more efficiency
+- `` - data access:
+  - scan: reads every item & reponds paginated -> expensive
+  - query: retrieves based on pk or secondary key using GraphQL
+  - under hood: secondary indexes are implemented as separate tables
+- `` - CAP:
+  - eventual consistency: highest avail and lowest latency but reads can be stale
+  - strong consistency: all reads reflect most recent write but have higher latency
+- `` - security: encrypted at rest, IAM allows finegrained roles, VPC provides access limit
+- `` - pricing: 
+  - on-demand for unpredictable load
+  - provisioned for constant load billed hourly
+- `` - extension:
+  - DAX is in-memory db
+  - Streams as a built-in support for change data capture (CDC)
+  - Consistency w/ ElasticSearch (building full text search on top)
+- `` - limits:
+  - cost: expensive if many reads/writes
+  - complex queries not feasible
+  - data modeling constraints
+  - vendor lock-in
