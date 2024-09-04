@@ -1,56 +1,59 @@
-
----
-title: Systems Design and Algorithms
-tags: [Mental Castle]
-style: fill
-color: secondary
-description: From HelloInterview and MIT Class on Algorithms
----
-
 ## Dynamic Programming SRTBOT
-- `Sliding Doors` - Subproblem: for sequence try prefixes s[:i], suffixes s[i:] or substrings [i:j]; for non-negative int k, try [0:k]; add subproblems and constraints to remember "state"
-- `Basket` - Relate subproblem solutions recursively: identify question about subproblem that if you knew the answer it would reduce to a smaller problem; locally brute-force all answers; think of 'correct guessing' answer, then loop
-- `Wipes` - topological order on subproblem: DAG b needs a
-- `Flowers` - base case of relation
-- `Desk` - original problem: solve via subproblem(s)
-- `Elevator` - time analysis: sum(recursive work) + sum(non-recursive work) + worked to solve original
+
+- Subproblem: for sequence try prefixes s[:i], suffixes s[i:] or substrings [i:j]; for non-negative int k, try [0:k]; add subproblems and constraints to remember "state"
+- Relate subproblem solutions recursively: identify question about subproblem that if you knew the answer it would reduce to a smaller problem; locally brute-force all answers; think of 'correct guessing' answer, then loop
+- Topological order on subproblem: DAG b needs a
+- Base case of relation
+- Original problem: solve via subproblem(s)
+- Time analysis: sum(recursive work) + sum(non-recursive work) + worked to solve original
 
 ## Design System Delivery
 
-- `Toilet` - Functional Req: Users should be able to ... post tweets/follow users/see feed
-- `Coffee Shop` - Non-Functional Req: The system should ... avail > consistency, scale to 100M DAU, render < 200ms
-- `Donuts` - Core Entities: Nouns of requirements
-- `Cheese cake` - API: Restful endpoints POST /v1/tweet -> 200 body: {"text": str}
-- `Bread` - Data Flow: as a simple list
-- `Berries` - High-level Design: sketch of systems
-- `Avocados` - Deep Dives: adaptions or conversations
+- Functional Req: Users should be able to ... post tweets/follow users/see feed
+- Non-Functional Req: The system should ... avail > consistency, scale to 100M DAU, render < 200ms
+- Core Entities: Nouns of requirements
+- API: Restful endpoints POST /v1/tweet -> 200 body: {"text": str}
+- Data Flow: as a simple list
+- High-level Design: sketch of systems
+- Deep Dives: adaptions or conversations
 
 ## Core Concepts
 
-- `Bananas` - Scaling: 
-  - work distribution: in sync via load balancer w/ round robin/least connections/utilization-based; async via job queues
-  - data distribution: keep data in memory (caching) or in database shared across all nodes
-- `Salmon` - Consistency: how much users can tolerate stale data
-  - strongly consistent: after data write, all subsequent reads reflect that write (e.g. with financial data, blockchain)
-  - eventually consistent: period of time where data is stale (e.g. most systems)
-- `Fish Desk` - Locking: ensuring that only one client can access a shared resource at a time (inventory counter, draw bridge)
-  - granularity: lock as little as needed (user for an update, not entire user table)
-  - duration: as little as needed
-  - bypassing: avoid locking via "optimistic concurrency" - do work w/o locking & retry if it did not work being under the assumption that mostly we won't have contention (multiple updating same resource)
-- `Meat Desk` - Indexing: basic approach is a hash (writing takes time, search is in O(1)) or keep as a sorted list O(logn)
-  - most relational databases support indexing by column or group of columns
-  - specialized: geospatial indexes or vector databases or full-text indices via inverted index
-  - postgres & elastic with CDC: change data capture where elastic cluster listens to changes from PG DB
-- `Steaks` - Protocols: 
-  - internal: HTTP or RPC for internal comms
-  - external: REST (stateless scaling behind load balancer), server sent events (client reqs, server sends multiple responses), websockets (real time communication or a message broker like Kafka)
-- `Sauces` - Security: 
+- `Guard` - Security: 
   - do not send unencrypted data (SSL, HTTPS) & protect data
   - Load Balancer handles authorization & authentication
-- `Frozen Fruits` - Monitoring: 
+- `Side Desk` - Monitoring: 
   - Infrastructure: CPU, memory, load -> Datadog
   - Service-level: request latency, error rate
   - Application-level: Google Analytics or Mixpanel
+- `Finger Printer` - Indexing: basic approach is a hash (writing takes time, search is in O(1)) or keep as a sorted list O(logn)
+  - most relational databases support indexing by column or group of columns
+  - specialized: geospatial indexes or vector databases or full-text indices via inverted index
+  - postgres & elastic with CDC: change data capture where elastic cluster listens to changes from PG DB
+- `Toilets` - Locking: ensuring that only one client can access a shared resource at a time (inventory counter, draw bridge)
+  - granularity: lock as little as needed (user for an update, not entire user table)
+  - duration: as little as needed
+  - bypassing: avoid locking via "optimistic concurrency" - do work w/o locking & retry if it did not work being under the assumption that mostly we won't have contention (multiple updating same resource)
+- `Donut Box` - Protocols: 
+  - internal: HTTP or RPC for internal comms
+  - external: REST (stateless scaling behind load balancer), server sent events (client reqs, server sends multiple responses), websockets (real time communication or a message broker like Kafka)
+- `Coffee` - Consistency: how much users can tolerate stale data
+  - strongly consistent: after data write, all subsequent reads reflect that write (e.g. with financial data, blockchain)
+  - eventually consistent: period of time where data is stale (e.g. most systems)
+- `Cheese Cake Slices` - Scaling: 
+  - work distribution: in sync via load balancer w/ round robin/least connections/utilization-based; async via job queues
+  - data distribution: keep data in memory (caching) or in database shared across all nodes
+
+## Patterns
+
+- `Bread` - Simple DB-backed CRUD w/ caching: client -> API gateway -> LB -> service -> Cache -> DB
+- `Berries` - Async worker job pool: lots of processing w/ accepted delay, use queue (SQS or Kafka) and EC2 / lambdas for workers
+- `Avocado` - Two stage architecture: for complex algos use augmented retrieval (vector-db and ranking service)
+- `Salmon` - Event-driven arch: componetns are producers/routers/brokers and consumers (Kafka, AWS Eventbridge)
+  - failure handling: process durable log of events if something goes wrong
+  - e.g. order in ecommerce: order event -> order processing/inventory update/notification/book keeping
+- `Steak` - Durable job processing: periodically checkpoint data in case of crashes
+- `Frozen Fries` - Proximity-based services: use specific extensions like PostGIS, usually divide area into manageable regions and indexing entities w/in those
 
 ## Key Technologies
 
@@ -109,15 +112,26 @@ description: From HelloInterview and MIT Class on Algorithms
   - can be used to cache API responses
   - eviction policy: also set a TTL (time to live)
 
-## Patterns
-- `` - Simple DB-backed CRUD w/ caching: client -> API gateway -> LB -> service -> Cache -> DB
-- `` - Async worker job pool: lots of processing w/ accepted delay, use queue (SQS or Kafka) and EC2 / lambdas for workers
-- `` - Two stage architecture: for complex algos use augmented retrieval (vector-db and ranking service)
-- `` - Event-driven arch: componetns are producers/routers/brokers and consumers (Kafka, AWS Eventbridge)
-  - failure handling: process durable log of events if something goes wrong
-  - e.g. order in ecommerce: order event -> order processing/inventory update/notification/book keeping
-- `` - Durable job processing: periodically checkpoint data in case of crashes
-- `` - Proximity-based services: use specific extensions like PostGIS, usually divide area into manageable regions and indexing entities w/in those
+## Robust Python
+
+- `Homeless` - type checkers like mypy: check coverage with `mypy --html-report ./mypy_report ./my_project`
+- `Traffic Lights` - enums: define a set of named values `from enum import Enum; class Color(Enum): RED; GREEN; BLUE
+- `Barrys` - classes: for invariants - properties taht must remain unchanged throughout the lifecycle of an instance (e.g., connection to S3)
+- `Asian Door` - protocols: provide a way to define a set of methods and properties that a class must implement
+- `Guard` - pydantic: integrated data validation 
+- `Food` - test coverage: test the coverage
+- `Checkout` - pydeps: get a dependency graph
+- `French Bakery` - Poetry & Precommit
+
+## High Performance Python
+
+- `Steep` - timeit, cProfile, line_profiler, memory_profiler, memit
+- `Seattle Times` - generators, numpy, pandas, numexpr
+- `Race Cars` - compiling to C: cython, Numba, PyPy
+- `Movable Doors` - async: do different things at the same time
+- `Garage` - multiprocessing: doings same thing in parallel
+- `Flowers` - bloom filters: tests whether an element is part of a set, with a possibility of false positives but no false negatives
+- `Onni Bell` - tries & dawg: storing many strings very efficiently
 
 ## Deep Dives
 
@@ -193,23 +207,3 @@ description: From HelloInterview and MIT Class on Algorithms
   - complex queries not feasible
   - data modeling constraints
   - vendor lock-in
-
-## Robust Python
-
-- `` - type checkers like mypy: check coverage with `mypy --html-report ./mypy_report ./my_project`
-- `` - enums: define a set of named values `from enum import Enum; class Color(Enum): RED; GREEN; BLUE
-- `` - classes: for invariants - properties taht must remain unchanged throughout the lifecycle of an instance (e.g., connection to S3)
-- `` - protocols: provide a way to define a set of methods and properties that a class must implement
-- `` - pydantic: integrated data validation 
-- `` - test coverage: test the coverage
-- `` - pydeps: get a dependency graph
-
-## High Performance Python
-
-- `` - timeit, cProfile, line_profiler, memory_profiler, memit
-- `` - generators, numpy, pandas, numexpr
-- `` - compiling to C: cython, Numba, PyPy
-- `` - async: do different things at the same time
-- `` - multiprocessing: doings same thing in parallel
-- `` - bloom filters: tests whether an element is part of a set, with a possibility of false positives but no false negatives
-- `` - tries & dawg: storing many strings very efficiently
