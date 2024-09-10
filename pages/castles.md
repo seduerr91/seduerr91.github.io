@@ -1,6 +1,8 @@
-# Memories
+# Knowledge
 
-Please find my memory palaces - knowledge that is near and dear to my heart on the pages below.
+Please find my study material as mental palaces according to the book "Moonwalking with Einstein" below. 
+This is knowledge that is near and dear to my heart on the linked pages. 
+I associate central knowledge points of the books and items listed with places I have lived. 
 
 ## Engineering Knowledge
 
