@@ -3,7 +3,7 @@ title: Getting better in Systems Design
 tags: [Coding]
 style: fill
 color: secondary
-description: Designing Systems better
+description: Designing Systems
 ---
 
 
