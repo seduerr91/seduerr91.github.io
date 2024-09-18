@@ -11,19 +11,19 @@ Everything I want to know in engineering.
 | Engineering Knowledge                                                         | Places                        |
 | ----------------------------------------------------------------------------- | ----------------------------- |
 | [Object Oriented Development in Python](/pages/castle-object-oriented-python) | City of Wuerzburg             |
-| [Algorithms and Data Structures](/pages/castle-algorithms-and-data-structures)| City of Vienna                |
-| [Software Philosophy](/pages/castle-software-philosophy)                      | City of Seattle               |
+| [Algorithms and Data Structures](/pages/castle-algorithms-and-data-structures)       | City of Vienna                |
+| [Software Philosophy](/pages/castle-software-philosophy)                      | City of Seattle            |
 | [Machine Learning](/pages/castle-machine-learning)                            | Schottenfeldgasse 55, Vienna  |
-| [Deep Learning](/pages/castle-deep-learning)                                  | Brueckenstr, Eichelsee        |
+| [Deep Learning](/pages/castle-deep-learning)                         | Brueckenstr, Eichelsee        |
 | [Golang Syntax](/pages/castle-golang)                                         | Commute Bellevue              |
-| [Systems Design](/pages/castle-systems-design)                                | WholeFoods SLU                |
+| [Systems design](/pages/castle-systems-design)                                         | WholeFoods SLU        |
 
 ## Business Knowledge
 
 Don't get an MBA for knowledge, that is all here.
 
-| Business Knowledge                                             | Places in Europe |
-| -------------------------------------------------------------- | ---------------- |
+| Business Knowledge                                                | Places in Europe |
+| ----------------------------------------------------------------- | ---------------- |
 | [Personal MBA](/pages/castle-personal-mba)                     | Budapest         |
 | [Leadership & Motivation](/pages/castle-leadership-motivation) | London           |
 | [Investment Banking](/pages/castle-investment-banking)         | Paris            |
