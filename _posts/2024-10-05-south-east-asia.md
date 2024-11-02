@@ -1,5 +1,5 @@
 ---
-title: Discover Southeast Asia: A Detailed 14-Day Itinerary through Indonesia, Laos, and Singapore
+title: Discover Southeast Asia - A Detailed 14-Day Itinerary through Indonesia, Laos, and Singapore
 tags: [Travel, Southeast Asia, Backpacking, Itinerary, Adventure]
 style: fill
 color: secondary
