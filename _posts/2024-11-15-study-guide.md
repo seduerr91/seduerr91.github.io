@@ -59,7 +59,7 @@ def minRemoveToMakeValid(s: str) -> str:
 **Problem Statement:**
 Given an integer array `nums` and an integer `k`, return the `k`th largest element in the array.
 
-**Sample Input:**
+***Sample Input:**
 ```python
 nums = [3,2,1,5,6,4]
 k = 2
@@ -76,8 +76,9 @@ def findKthLargest(nums: list[int], k: int) -> int:
 
 **Explanation:**
 - **Heap Usage:** The `heapq.nlargest` function efficiently finds the k largest elements in `nums`. The last element in this collection is the k-th largest.
-- **Time Complexity:** Maintains a min-heap of the largest k elements scanned so far. This is efficient for the selection of k-th largest elements.
-
+- **Min-Heap:** A min-heap is a binary heap where the parent node is always less than or equal to its child nodes. This property ensures that the smallest element is always at the root of the heap.
+- **How Min-Heap is Used:** In the `heapq.nlargest` function, a min-heap of size `k` is maintained. As elements from `nums` are processed, they are added to the heap. If the heap exceeds size `k`, the smallest element (the root of the heap) is removed. This way, the heap always contains the `k` largest elements seen so far.
+- **Time Complexity:** The `heapq.nlargest` function maintains a min-heap of the largest `k` elements scanned so far. This is efficient for the selection of k-th largest elements, with a time complexity of O(n log k), where `n` is the number of elements in `nums`.
 ---
 
 ### 3. Basic Calculator II
@@ -419,6 +420,93 @@ def copyRandomList(head):
 - **Interleave Nodes:** Create new nodes inserted immediately after each original node. This insertion helps set up random pointers in the copied nodes without additional space.
 - **Assign Random Links:** Utilize the current node's random link and its next pointer to set the copied node’s random link.
 - **Decouple Lists:** Re-link the original list while extracting the copied list using a dummy node for clean separation.
+
+Let's break down the problem and solution using simple language.
+
+#### Problem Summary:
+
+You have a special kind of list called a linked list. This list is made up of nodes. Each node has:
+
+1. A value (like a number or a letter).
+2. A pointer to the next node in the list (which tells you who comes next).
+3. A "random pointer," which can point to any other node or can be empty (null).
+
+The goal is to create a complete copy (or "clone") of this list. Importantly, the connections made by the "next" pointers and the "random" pointers need to be exactly the same in the new list as in the original.
+
+#### Solution Explanation:
+
+We'll do this in three main steps. Think of a step-by-step journey to clone the list.
+
+##### Step 1: Make Duplicate Nodes
+
+We first create a new node for each existing node in the list. We place these new nodes right after each original node, creating a "sandwich" pattern. So, for an original node A followed by B like:
+
+`A -> B -> C`
+
+The list will temporarily look like this:
+
+`A -> A' -> B -> B' -> C -> C'`
+
+(A' is a copy of A, B' is a copy of B, etc.)
+
+##### Step 2: Copy Random Pointers
+
+In this step, we make sure the random pointers in the copy list (A', B', C', etc.) point to the right places:
+
+- We look at each original node's random pointer and set the copied node's random pointer to point to the copied version of whatever the original node's random pointer points to.
+
+##### Step 3: Detach the New List from the Old
+
+Now that the "next" and "random" pointers in the copied nodes are correctly set up, we separate the copied nodes from the originals to create a standalone list.
+
+We'll use a dummy node (a helper starting point) to help collect all copied nodes into a new list, while restoring the original list to its initial state.
+
+In the end, you get a completely independent and accurate copy of the original linked list.
+
+#### Code Breakdown:
+
+```python
+class Node:
+    def __init__(self, val, next=None, random=None):
+        self.val = val            # Store value of the node
+        self.next = next          # Store reference to the next node
+        self.random = random      # Store reference to the random node
+
+def copyRandomList(head):
+    if not head:                  # If the list is empty, return None
+        return None
+
+    # Step 1
+    current = head
+    while current:
+        # Create a new node (copy of current node)
+        new_node = Node(current.val, current.next)
+        current.next = new_node  # Insert new node just after the current
+        current = new_node.next  # Move to the next original node
+
+    # Step 2
+    current = head
+    while current:
+        if current.random:
+            # Update the random pointer for the copy node
+            current.next.random = current.random.next
+        current = current.next.next  # Skip to the next original node
+
+    # Step 3
+    dummy = Node(0)  # A new starting node for the copied list
+    current, copy_current = head, dummy
+    while current:
+        next_origin = current.next.next  # Where the next original node is
+        # Fix the next link of the copied nodes
+        copy_current.next = current.next
+        copy_current = copy_current.next  # Move to the next node in copy
+        current.next = next_origin        # Restore the original link
+        current = next_origin             # Move to the next original node
+
+    return dummy.next  # Return the head of the copied list
+```
+
+This code carefully handles creating the copied list while ensuring all connections mirror those in the original list, using smart re-linking and handling of nodes.
 
 ---
 
