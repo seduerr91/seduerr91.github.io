@@ -6,14 +6,6 @@ color: secondary
 description: A few problems from Leetcode
 ---
 
----
-title: Citadel Leetcode Study Guide
-tags: [Coding, Citadel]
-style: fill
-color: secondary
-description: A few problems from Leetcode
----
-
 ### 2085. Count Common Words With One Occurrence (Easy)
 
 #### Problem Statement
