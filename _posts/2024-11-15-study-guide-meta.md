@@ -6,423 +6,347 @@ color: secondary
 description: A few problems from Leetcode
 ---
 
-### 1249. Minimum Remove to Make Valid Parentheses (Medium)
+### Problem 408: Valid Word Abbreviation (Easy)
 
-#### Problem Statement
-Given a string `s` of `(`, `)`, and lowercase English characters, return *the minimum number of parenthesis deletions required such that the remaining string contains only valid parentheses*. Valid parentheses require every opening parenthesis `(` to be matched with a closing parenthesis `)`.
+**Problem Statement:**
 
-#### Sample Input and Output
-- Input: `s = "lee(t(c)o)de)"` 
-- Output: `"lee(t(c)o)de"`
+Given a non-empty string `word` and a string `abbr`, please return whether the string matches with the given abbreviation.
 
-- Input: `s = "a)b(c)d"`
-- Output: `"ab(c)d"`
+The abbreviation follows these rules:
+- The number in the abbreviation is the number of characters to skip over in the word.
+- Numbers cannot have leading zeros.
 
-#### Solution Explanation
+**Example:**
+
+Input: `word = "internationalization", abbr = "i12iz4n"`
+Output: `True`
+
+Input: `word = "apple", abbr = "a2e"`
+Output: `False`
+
+**Solution:**
+
+```python
+def validWordAbbreviation(word: str, abbr: str) -> bool:
+    word_index = abbr_index = 0
+    while word_index < len(word) and abbr_index < len(abbr):
+        if abbr[abbr_index].isdigit():
+            if abbr[abbr_index] == '0':
+                return False
+            number_start = abbr_index
+            while abbr_index < len(abbr) and abbr[abbr_index].isdigit():
+                abbr_index += 1
+            number = int(abbr[number_start:abbr_index])
+            word_index += number
+        else:
+            if word[word_index] != abbr[abbr_index]:
+                return False
+            word_index += 1
+            abbr_index += 1
+    return word_index == len(word) and abbr_index == len(abbr)
+
+# O-Notation: O(n + m)
+# n = length of word, m = length of abbr
+# - We go through each character of both the word and abbr once
+# - Use two pointers to keep track of positions in the word and abbr
+
+```
+
+**Explanation:**
+To solve the problem, iteratively compare characters from `word` and `abbr`. If a number is found in `abbr`, move forward in the `word` by that many characters. If characters are found, confirm they match. Leading zeros and mismatches result in returning `False`. Both pointers reaching the end indicates a valid abbreviation.
+
+---
+
+### Problem 1249: Minimum Remove to Make Valid Parentheses (Medium)
+
+**Problem Statement:**
+
+Given a string `s` of `('(', ')' and lowercase English characters, remove the minimum number of invalid parentheses in order to make the input string valid. Return any valid string.
+
+A string is considered valid if it includes pairs of opening and closing parentheses in the correct order.
+
+**Example:**
+
+Input: `s = "lee(t(c)o)de)"`
+Output: `"lee(t(c)o)de"`
+
+Input: `s = "a)b(c)d"`
+Output: `"ab(c)d"`
+
+**Solution:**
+
 ```python
 def minRemoveToMakeValid(s: str) -> str:
-    # Stack to keep track of the indices of unmatched '('
+    indices_to_remove = set()
     stack = []
-    # Set to record the indices of misplaced ')'
-    to_remove = set()
     
-    # First pass to find unmatched ')' and collect unmatched '('
     for i, char in enumerate(s):
         if char == '(':
             stack.append(i)
         elif char == ')':
             if stack:
-                stack.pop()  # Match one '(' from the stack
+                stack.pop()
             else:
-                to_remove.add(i)  # No matching '(' found, mark for removal
+                indices_to_remove.add(i)
     
-    # Add remaining unmatched '(' to the set of indices to remove
-    to_remove = to_remove.union(set(stack))
-    
-    # Build the result string without the indices in `to_remove`
+    indices_to_remove.update(stack)
     result = []
+    
     for i, char in enumerate(s):
-        if i not in to_remove:
+        if i not in indices_to_remove:
             result.append(char)
     
     return ''.join(result)
 
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the length of the string. We traverse the string twice.
-# - Space Complexity: O(n), space is used to store indices in the stack and set.
+# O-Notation: O(n)
+# n = length of string s
+# - Iterate through string twice, once to find indices to remove and once to construct the result
+
 ```
 
-- The algorithm utilizes a stack to record indices of unmatched `(`.
-- A set is used to store indices of unmatched `)` and leftover `(` from the stack.
-- The constructed result string skips indices present in the `to_remove` set.
+**Explanation:**
+Use a stack to track unmatched parentheses. Push opening brackets onto the stack. For a closing bracket, either pop from the stack if it has a matching opening, or add its index to a removal set. By the end, all unpaired parentheses are removed, yielding a valid sequence.
 
-### 408. Valid Word Abbreviation (Easy)
+---
 
-#### Problem Statement
-Given a string `word` and an abbreviation `abbr`, return whether the abbreviation matches the word. The abbreviation should consist of words and numeric characters, where a number denotes how many characters to skip in matching the original word.
+### Problem 314: Binary Tree Vertical Order Traversal (Medium)
 
-#### Sample Input and Output
-- Input: `word = "internationalization", abbr = "i12iz4n"`
-- Output: `True`
+**Problem Statement:**
 
-- Input: `word = "apple", abbr = "a2e"`
-- Output: `False`
+Given the `root` of a binary tree, return its vertical order traversal as a list of lists of integers.
 
-#### Solution Explanation
-```python
-def validWordAbbreviation(word: str, abbr: str) -> bool:
-    i = 0  # Pointer for word
-    j = 0  # Pointer for abbr
-    
-    while i < len(word) and j < len(abbr):
-        if abbr[j].isdigit():
-            if abbr[j] == '0':  # Leading zeros are invalid
-                return False
-            
-            # Get the number from the abbreviation
-            num = 0
-            while j < len(abbr) and abbr[j].isdigit():
-                num = num * 10 + int(abbr[j])
-                j += 1
-            i += num
-        else:
-            if word[i] != abbr[j]:
-                return False
-            i += 1
-            j += 1
-    
-    # Both pointers should reach the end for a valid abbreviation
-    return i == len(word) and j == len(abbr)
+**Example:**
 
-# Complexity Analysis
-# - Time Complexity: O(n + m), where n is length of word and m is length of abbr.
-# - Space Complexity: O(1), no additional space needed besides input variables.
+```plaintext
+Input: 
+       3
+      / \
+     9  20
+       /  \
+      15   7
+Output: [[9],[3,15],[20],[7]]
 ```
 
-- Traverse both the `word` and `abbr` with two pointers.
-- Convert numbers in `abbr` to skip characters in `word`.
-- Compare non-digit characters directly.
+**Solution:**
 
-### 680. Valid Palindrome II (Easy)
-
-#### Problem Statement
-Given a non-empty string `s`, determine if you can make it a palindrome by removing at most one character.
-
-#### Sample Input and Output
-- Input: `s = "abca"`
-- Output: `True`
-
-- Input: `s = "racecar"`
-- Output: `True`
-
-#### Solution Explanation
 ```python
-def validPalindrome(s: str) -> bool:
-    def is_palindrome_range(i, j):
-        return all(s[k] == s[j-k+i] for k in range(i, (i+j)//2 + 1))
-
-    left, right = 0, len(s) - 1
-    while left < right:
-        if s[left] != s[right]:
-            # Check by removing one character
-            return is_palindrome_range(left+1, right) or is_palindrome_range(left, right-1)
-        left, right = left + 1, right - 1
-    return True
-
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the length of string s.
-# - Space Complexity: O(1), constant space used for pointers and helper function.
-```
-
-- Use two pointers to check if the string is a palindrome.
-- On mismatch, check potential palindrome by skipping one character either from the left or the right.
-- Only one recursive call is checked for removal, ensuring O(n) complexity.
-
-In simple terms, the problems involve checking valid conditions either as parentheses, abbreviation, or palindrome and use efficient linear scans and pointers to ensure we make minimal computations and decisions effectively through conditions and helper functions.
-
-### 314. Binary Tree Vertical Order Traversal (Medium)
-
-#### Problem Statement
-Given the root of a binary tree, return its nodes' values in **vertical order traversal**. If two nodes are in the same row and column, the order should be from left to right.
-
-#### Sample Input and Output
-- Input: `root = [3,9,20,null,null,15,7]`
-- Output: `[[9],[3,15],[20],[7]]`
-
-#### Solution Explanation
-```python
-from collections import defaultdict, deque
+from collections import deque, defaultdict
 
 def verticalOrder(root):
     if not root:
         return []
-
+    
     column_table = defaultdict(list)
     queue = deque([(root, 0)])
     
     while queue:
         node, column = queue.popleft()
         
-        if node:
+        if node is not None:
             column_table[column].append(node.val)
             queue.append((node.left, column - 1))
             queue.append((node.right, column + 1))
+    
+    sorted_columns = sorted(column_table.keys())
+    return [column_table[x] for x in sorted_columns]
 
-    # Extract columns in order sorted by column index
-    return [column_table[x] for x in sorted(column_table)]
+# O-Notation: O(n log n)
+# n = total number of nodes
+# - BFS traversal takes O(n), but sorting the columns results in O(n log n)
 
-# Complexity Analysis
-# - Time Complexity: O(N), where N is the number of nodes in the tree. Breadth-first search visits every node once.
-# - Space Complexity: O(N), additional space for the column table and queue.
 ```
 
-- The tree is traversed using a breadth-first search (BFS).
-- Nodes are grouped in columns using a queue, maintaining an order on horizontal distance.
+**Explanation:**
+The task can be tackled by using a breadth-first search (BFS) where each node is traversed with an associated column index. Left children decrement this index, while right children increment it. The use of a `defaultdict` aids in assembling node values by column prior to sorting them for output.
 
-### 227. Basic Calculator II (Medium)
+---
 
-#### Problem Statement
-Implement a basic calculator to evaluate a simple expression string. The expression will contain non-negative integers, `+`, `-`, `*`, `/` operators and empty spaces.
+### Problem 227: Basic Calculator II (Medium)
 
-#### Sample Input and Output
-- Input: `"3+2*2"`
-- Output: `7`
+**Problem Statement:**
 
-- Input: `" 3/2 "`
-- Output: `1`
+Implement a basic calculator to evaluate a simple expression string. The expression string contains non-negative integers, `+`, `-`, `*`, and `/` operators, plus empty spaces. The integer division should truncate towards zero.
 
-#### Solution Explanation
+**Example:**
+
+Input: `s = "3+2*2"`
+Output: `7`
+
+Input: `s = " 3/2 "`
+Output: `1`
+
+**Solution:**
+
 ```python
 def calculate(s: str) -> int:
-    stack, num, sign = [], 0, '+'
+    if not s:
+        return 0
     
-    for i, char in enumerate(s):
-        if char.isdigit():
-            num = num * 10 + int(char)
-        if char in "+-*/" or i == len(s) - 1:
-            if sign == '+':
-                stack.append(num)
-            elif sign == '-':
-                stack.append(-num)
-            elif sign == '*':
-                stack.append(stack.pop() * num)
-            elif sign == '/':
-                stack.append(int(stack.pop() / num))
-            
-            sign = char
-            num = 0
+    stack = []
+    current_number = 0
+    operation = '+'
+    
+    for i, ch in enumerate(s):
+        if ch.isdigit():
+            current_number = current_number * 10 + int(ch)
+        if ch in "+-*/" or i == len(s) - 1:
+            if operation == '+':
+                stack.append(current_number)
+            elif operation == '-':
+                stack.append(-current_number)
+            elif operation == '*':
+                stack[-1] *= current_number
+            elif operation == '/':
+                stack[-1] = int(stack[-1] / current_number)
+            operation = ch
+            current_number = 0
     
     return sum(stack)
 
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the length of the string. Scan through the string with nested operations bounded by length.
-# - Space Complexity: O(n), for the stack that stores numbers.
+# O-Notation: O(n)
+# n = length of the string s
+# - Loop through the string only once. Stack operations are O(1).
+
 ```
 
-- Use a stack to interact with precedence of operations.
-- Evaluate the expression by processing each character, applying operations on precedence, and resolving at the end.
+**Explanation:**
+Traverse through the string to evaluate operators and numbers sequentially, appending results to a stack. For `*` and `/`, directly update the top stack element. "+" and "-" operations simply push onto the stack. Lastly, sum the stack for the total expression result.
 
-### 339. Nested List Weight Sum (Medium)
+---
 
-#### Problem Statement
-You have a nested list of integers, each integer or list can have its own weight, which is its depth in the structure. Return the sum of all integers in the list weighted by their depth.
+### Problem 1091: Shortest Path in Binary Matrix (Medium)
 
-#### Sample Input and Output
-- Input: `[[1,1],2,[1,1]]`
-- Output: `10`
+**Problem Statement:**
 
-- Input: `[1,[4,[6]]]`
-- Output: `27`
+Given an `n x n` binary grid, return the length of the shortest clear path in the binary matrix. If there is no clear path, return `-1`.
 
-#### Solution Explanation
+A clear path is constructed starting from `(0, 0)` to `(n-1, n-1)` by cells with `0`. Moving is possible in 8 directions: up, down, left, right, and all four diagonal directions.
+
+**Example:**
+
+Input: `grid = [[0,1],[1,0]]`
+Output: `2`
+
+**Solution:**
+
 ```python
-class NestedInteger:
-    def isInteger(self) -> bool:
-        pass
+from collections import deque
 
-    def getInteger(self) -> int:
-        pass
+def shortestPathBinaryMatrix(grid) -> int:
+    n = len(grid)
+    if grid[0][0] != 0 or grid[n-1][n-1] != 0:
+        return -1
+    
+    directions = [(1,0), (-1,0), (0,1), (0,-1), (1,1), (1,-1), (-1,1), (-1,-1)]
+    queue = deque([(0, 0, 1)])  # (row, col, path_length)
+    grid[0][0] = 1  # mark as visited
 
-    def getList(self) -> list['NestedInteger']:
-        pass
+    while queue:
+        x, y, length = queue.popleft()
+        if x == n-1 and y == n-1:
+            return length
+        for dx, dy in directions:
+            new_x, new_y = x + dx, y + dy
+            if 0 <= new_x < n and 0 <= new_y < n and grid[new_x][new_y] == 0:
+                queue.append((new_x, new_y, length + 1))
+                grid[new_x][new_y] = 1  # mark as visited
+    return -1
 
-def depthSum(nestedList: list[NestedInteger], depth=1) -> int:
-    total = 0
-    for nested in nestedList:
-        if nested.isInteger():
-            total += nested.getInteger() * depth
-        else:
-            total += depthSum(nested.getList(), depth + 1)
-    return total
+# O-Notation: O(n^2)
+# n = size of the grid
+# - In the worst-case, visit every cell once.
 
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the total number of NestedInteger elements.
-# - Space Complexity: O(d), recursion stack space where d is the maximum depth.
 ```
 
-- Perform a depth-first search (DFS) on the nested list.
-- Calculate the sum while incorporating the depth at each element.
+**Explanation:**
+The problem is addressed via a breadth-first search (BFS) that initiates from the grid's top-left cell. Each cell's viable moves include orthogonal and diagonal directions, marking traveled cells to prevent revisitation. The objective is to reach the bottom-right cell with the minimal number of steps. If unreachable, return -1.
 
-### 215. Kth Largest Element in an Array (Medium)
+### Problem 215: Kth Largest Element in an Array (Medium)
 
-#### Problem Statement
-Find the kth largest element in an unsorted array. Note that it is the kth largest element in sorted order, not the kth distinct element.
+**Problem Statement:**
 
-#### Sample Input and Output
-- Input: `nums = [3,2,1,5,6,4], k = 2`
-- Output: `5`
+Find the `k`th largest element in an unsorted array. Note that it is the `k`th largest element in sorted order, not the `k`th distinct element.
 
-#### Solution Explanation (Heap)
+**Example:**
+
+Input: `nums = [3,2,1,5,6,4], k = 2`
+Output: `5`
+
+**Solution - Using Min-Heap:**
+
 ```python
 import heapq
 
-def findKthLargest(nums: list[int], k: int) -> int:
-    # Use a min-heap of size k
-    min_heap = []
-    for num in nums:
-        heapq.heappush(min_heap, num)
-        if len(min_heap) > k:
-            heapq.heappop(min_heap)
-    return min_heap[0]
+def findKthLargest(nums: list, k: int) -> int:
+    return heapq.nlargest(k, nums)[-1]
 
-# Complexity Analysis
-# - Time Complexity: O(n log k), heap operations for n elements to maintain a size k.
-# - Space Complexity: O(k), heap size to store the k largest elements.
+# O-Notation: O(n log k)
+# n = number of elements in the nums array
+# - Uses a min-heap of size k to store the k largest elements, ensuring efficient insertion.
 ```
 
-- Maintain a min-heap of size k to store the largest elements.
-- Efficiently replaces smallest element once k elements are processed.
+**Explanation:**
+The `nlargest` function efficiently maintains the largest `k` elements in a min-heap, allowing us to directly retrieve the `k`th largest element.
 
-#### Solution Explanation (Quickselect)
+**Solution - Quickselect:**
+
 ```python
 import random
 
-def partition(nums, left, right, pivot_index):
-    pivot_value = nums[pivot_index]
-    nums[pivot_index], nums[right] = nums[right], nums[pivot_index]
-    store_index = left
+def findKthLargest(nums: list, k: int) -> int:
+    def partition(left, right, pivot_index):
+        pivot = nums[pivot_index]
+        # Move pivot to end
+        nums[pivot_index], nums[right] = nums[right], nums[pivot_index]
+        store_index = left
+        for i in range(left, right):
+            if nums[i] > pivot:  # Note we're doing greater than (>) for kth largest
+                nums[store_index], nums[i] = nums[i], nums[store_index]
+                store_index += 1
+        # Move pivot to its final place
+        nums[right], nums[store_index] = nums[store_index], nums[right]
+        return store_index
 
-    for i in range(left, right):
-        if nums[i] > pivot_value:
-            nums[store_index], nums[i] = nums[i], nums[store_index]
-            store_index += 1
-
-    nums[right], nums[store_index] = nums[store_index], nums[right]
-    return store_index
-
-def quickselect(nums, left, right, k):
-    if left == right:
-        return nums[left]
-
-    pivot_index = random.randint(left, right)
-    pivot_index = partition(nums, left, right, pivot_index)
-
-    if k == pivot_index:
-        return nums[k]
-    elif k < pivot_index:
-        return quickselect(nums, left, pivot_index - 1, k)
-    else:
-        return quickselect(nums, pivot_index + 1, right, k)
-
-def findKthLargest(nums, k):
-    return quickselect(nums, 0, len(nums) - 1, len(nums) - k)
-
-# Complexity Analysis
-# - Average Time Complexity: O(n), where n is the number of elements.
-# - Worst-case Time Complexity: O(n^2), rare, using random pivot reduces this risk.
-# - Space Complexity: O(1), in-place operations.
-```
-
-- Quickselect method efficiently partitions the array.
-- Random pivot selection reduces risk of worst-case times.
-
-### 1650. Lowest Common Ancestor of a Binary Tree III (Medium)
-
-#### Problem Statement
-Given two nodes of a binary tree, find their lowest common ancestor (LCA). Nodes contain a pointer to their parent.
-
-#### Sample Input and Output
-- Input: `A = 3, B = 5` in tree `[1, 2, 3, 4, 5]`
-- Output: `2`
-
-#### Solution Explanation
-```python
-class Node:
-    def __init__(self, val: int, left: 'Node' = None, right: 'Node' = None, parent: 'Node' = None):
-        self.val = val
-        self.left = left
-        self.right = right
-        self.parent = parent
-
-def lowestCommonAncestor(p: Node, q: Node) -> Node:
-    a, b = p, q
-    while a != b:
-        a = a.parent if a else q 
-        b = b.parent if b else p 
-    return a
-
-# Complexity Analysis
-# - Time Complexity: O(h), where h is the height of the tree or depth of the nodes.
-# - Space Complexity: O(1), constant space used for node references.
-```
-
-- Follow parents upwards, if node reaches end, swap to other node’s path.
-- Ensures convergence at common ancestor by cycling longer.
-
-In simple terms, each solution revolves around understanding the underlying data structures and effectively navigating them with algorithms tailored to extract the desired elements or properties, like using a heap for largest elements or stacks for expression evaluation.
-
-### 528. Random Pick with Weight (Medium)
-
-#### Problem Statement
-Given an array `w`, where `w[i]` describes the weight of index `i`, implement an algorithm to randomly pick an index in proportion to its weight.
-
-#### Sample Input and Output
-- Input: `w = [1, 3]`
-- Output: Randomly returns `0` with probability `0.25` and `1` with probability `0.75`.
-
-#### Solution Explanation
-```python
-import random
-
-class Solution:
-    def __init__(self, w: list[int]):
-        self.prefix_sums = []
-        prefix_sum = 0
-        for weight in w:
-            prefix_sum += weight
-            self.prefix_sums.append(prefix_sum)
-        self.total_sum = prefix_sum
+    def quickselect(left, right, k_smallest):
+        if left == right:
+            return nums[left]
         
-    def pickIndex(self) -> int:
-        target = self.total_sum * random.random()
-        low, high = 0, len(self.prefix_sums)
-        while low < high:
-            mid = (low + high) // 2
-            if target < self.prefix_sums[mid]:
-                high = mid
-            else:
-                low = mid + 1
-        return low
+        pivot_index = random.randint(left, right)
+        pivot_index = partition(left, right, pivot_index)
+        
+        if k_smallest == pivot_index:
+            return nums[k_smallest]
+        elif k_smallest < pivot_index:
+            return quickselect(left, pivot_index - 1, k_smallest)
+        else:
+            return quickselect(pivot_index + 1, right, k_smallest)
+    
+    return quickselect(0, len(nums) - 1, k - 1)
 
-# Complexity Analysis
-# - Initialization Time Complexity: O(n), where n is the length of weights array.
-# - Pick Time Complexity: O(log n), binary search for index.
-# - Space Complexity: O(n), for storing prefix sums.
+# O-Notation: O(n) on average, O(n^2) worst-case
+# - Quickselect is similar to quicksort, with average linear time complexity, but can degrade to quadratic.
+
 ```
 
-- A prefix sum array is created to accumulate weights.
-- Use binary search to choose an index based on a uniformly random target.
+**Explanation:**
+The Quickselect algorithm provides an efficient way to find the `k`th largest or smallest element by partitioning the input around a pivot, reducing the subarray size to search.
 
-### 236. Lowest Common Ancestor of a Binary Tree (Medium)
+---
 
-#### Problem Statement
-Given the root of a binary tree and two nodes `p` and `q`, find their lowest common ancestor (LCA).
+### Problem 236: Lowest Common Ancestor of a Binary Tree (Medium)
 
-#### Sample Input and Output
-- Input: Root of binary tree `[3,5,1,6,2,0,8,null,null,7,4]`, `p = 5`, `q = 1`
-- Output: `3`
+**Problem Statement:**
 
-#### Solution Explanation
+Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+
+**Example:**
+
+Input: A rooted binary tree and nodes `p = 5`, `q = 1`
+
+Output: `3` (The LCA of nodes 5 and 1 is 3)
+
+**Solution using DFS:**
+
 ```python
 class TreeNode:
     def __init__(self, x):
@@ -431,412 +355,503 @@ class TreeNode:
         self.right = None
 
 def lowestCommonAncestor(root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-    if root is None or root == p or root == q:
+    if not root or root == p or root == q:
         return root
+        
     left = lowestCommonAncestor(root.left, p, q)
     right = lowestCommonAncestor(root.right, p, q)
+    
     if left and right:
         return root
     return left if left else right
 
-# Complexity Analysis
-# - Time Complexity: O(n), since each node is visited once.
-# - Space Complexity: O(n), where n is the height of tree for recursive call stack.
+# O-Notation: O(n)
+# n = number of nodes in the tree
+# - In the worst-case scenario, traverse the entire tree once.
 ```
 
-- Perform a depth-first search (DFS).
-- Return the node if current or one of the children returns valid.
+**Explanation:**
+Using depth-first search (DFS), traverse the tree. If nodes `p` and `q` are found on both sides of a node, then it's their LCA. This recursive approach efficiently drills down the tree, leveraging backtracking to deduce the LCA.
 
-### 1091. Shortest Path in Binary Matrix (Medium)
+---
 
-#### Problem Statement
-Given an `n x n` binary matrix `grid`, return the length of the shortest clear path from the top-left corner to the bottom-right corner.
+### Problem 339: Nested List Weight Sum (Medium)
 
-#### Sample Input and Output
-- Input: `[[0,1],[1,0]]`
-- Output: `2`
+**Problem Statement:**
 
-#### Solution Explanation
+Given a nested list of integers, return the sum of all integers weighted by their depth.
+
+A list is a combination of integers and other lists. For example, the list `[1,[4,[6]]]` means one integer `1`, plus one list containing one integer `4`, plus one additional list containing one integer `6` nested deeper.
+
+**Example:**
+
+Input: `[[1,1],2,[1,1]]`
+Output: `10` (four 1's at depth 2, one 2 at depth 1)
+
+**Solution:**
+
 ```python
-from collections import deque
+class NestedInteger:
+    def __init__(self, value=None):
+        self.integer = value
+        self.list = []
 
-def shortestPathBinaryMatrix(grid: list[list[int]]) -> int:
-    if grid[0][0] != 0 or grid[-1][-1] != 0:
-        return -1
+    def isInteger(self) -> bool:
+        return self.integer is not None
 
-    n = len(grid)
-    directions = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]
-    queue = deque([(0, 0, 1)]) # (row, col, distance)
+    def add(self, elem: 'NestedInteger'):
+        self.list.append(elem)
 
-    while queue:
-        row, col, dist = queue.popleft()
-        if row == n - 1 and col == n - 1:
-            return dist
-        for dr, dc in directions:
-            nr, nc = row + dr, col + dc
-            if 0 <= nr < n and 0 <= nc < n and grid[nr][nc] == 0:
-                grid[nr][nc] = 1  # Mark as visited
-                queue.append((nr, nc, dist + 1))
+    def setInteger(self, value: int):
+        self.integer = value
+
+    def getInteger(self) -> int:
+        return self.integer
+
+    def getList(self) -> list:
+        return self.list
+
+def depthSum(nestedList: list) -> int:
+    def dfs(nested_list, depth):
+        total = 0
+        for nested in nested_list:
+            if nested.isInteger():
+                total += nested.getInteger() * depth
+            else:
+                total += dfs(nested.getList(), depth + 1)
+        return total
     
-    return -1
+    return dfs(nestedList, 1)
 
-# Complexity Analysis
-# - Time Complexity: O(n^2), iterating over entire matrix.
-# - Space Complexity: O(n^2), space for queue storage.
+# O-Notation: O(n)
+# n = total number of integers in the nested list
+# - Each integer is processed once.
 ```
 
-- Utilize breadth-first search (BFS) due to shortest path requirement.
-- Traverse 8 directions, handling boundaries and visited check.
+**Explanation:**
+The depth-first search (DFS) approach recursively evaluates each element, updating the sum by adding the integer multiplied by its depth. The structure is traversed level by level, preserving the depth relationship necessary for weighting.
 
-### 1570. Dot Product of Two Sparse Vectors (Medium)
+---
 
-#### Problem Statement
-Implement a sparse vector class with a method to compute the dot product of two sparse vectors.
+### Problem 1650: Lowest Common Ancestor of a Binary Tree III (Medium)
 
-#### Sample Input and Output
-- Input: `nums1 = [1,0,0,2,3], nums2 = [0,3,0,4,0]`
-- Output: `8`
+**Problem Statement:**
 
-#### Solution Explanation
+You are given nodes `p` and `q` in a binary tree. Each node has a parent pointer. Return the lowest common ancestor (LCA) of these nodes.
+
+**Example:**
+
+Input: A tree with root node and two nodes `p` and `q`.
+Output: A node being the LCA of `p` and `q`.
+
+**Solution using path comparison:**
+
 ```python
-class SparseVector:
-    def __init__(self, nums: list[int]):
-        self.mapping = {i: num for i, num in enumerate(nums) if num != 0}
+class Node:
+    def __init__(self, val, left=None, right=None, parent=None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.parent = parent
 
-    def dotProduct(self, vec: 'SparseVector') -> int:
-        result = 0
-        # Iterate over non-zero elements in this vector
-        for i, v in self.mapping.items():
-            if i in vec.mapping:
-                result += v * vec.mapping[i]
-        return result
+def lowestCommonAncestor(p: 'Node', q: 'Node') -> 'Node':
+    ancestors_p = set()
+    
+    # Add all ancestors of p
+    while p:
+        ancestors_p.add(p)
+        p = p.parent
+    
+    # Find only the first common ancestor of q
+    while q not in ancestors_p:
+        q = q.parent
+    
+    return q
 
-# Complexity Analysis
-# - Time Complexity: O(n), effectively iterate over non-zero elements.
-# - Space Complexity: O(L), where L is the number of non-zero elements.
+# O-Notation: O(h)
+# h = height of the tree
+# - While loops traverse the height to track back to root.
+
 ```
 
-- Store indices of non-zero elements to reduce unnecessary calculations.
-- Only matching the non-zero indices between vectors is necessary.
+**Explanation:**
+Construct sets of ancestor paths for both nodes, comparing them to find the first common ancestor. This method capitalizes on the parent property of each node to backtrack efficiently.
 
-### 71. Simplify Path (Medium)
+---
 
-#### Problem Statement
-Given the path string of a Unix-style file system `path`, simplify it. 
+### Problem 50: Pow(x, n) (Medium)
 
-#### Sample Input and Output
-- Input: `"/home//foo/"`
-- Output: `"/home/foo"`
+**Problem Statement:**
 
-#### Solution Explanation
-```python
-def simplifyPath(path: str) -> str:
-    stack = []
-    components = path.split('/')
-    
-    for component in components:
-        if component == '' or component == '.':
-            continue
-        if component == '..':
-            if stack:
-                stack.pop()
-        else:
-            stack.append(component)
-    
-    return '/' + '/'.join(stack)
+Implement `pow(x, n)`, which calculates `x` raised to the power `n` (i.e., `x^n`).
 
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the length of path.
-# - Space Complexity: O(n), for the stack storing valid path components.
-```
+**Example:**
 
-- Use a stack to manage directory components.
-- Skip redundant markers and manage up-navigation using `..`.
+Input: `x = 2.00000, n = 10`
+Output: `1024.00000`
 
-In simple terms, these problems require effectively handling data structures by managing scope, employing strategies like DFS/BFS for traversal, reducing operations on zero-values, or using stacks to simplify path operations. The solutions typically involve leveraging existing standard libraries or basic data structures in Python to maintain performance and readability.
+Input: `x = 2.10000, n = 3`
+Output: `9.26100`
 
-### 162. Find Peak Element (Medium)
+**Solution:**
 
-#### Problem Statement
-A peak element in an array is one that is greater than its neighbors. Given an input array `nums`, find a peak element and return its index. The array may contain multiple peaks, and you can return the index of any of them. Assume `nums[-1] = nums[n] = -∞`.
-
-#### Sample Input and Output
-- Input: `nums = [1,2,3,1]`
-- Output: `2`
-
-- Input: `nums = [1,2,1,3,5,6,4]`
-- Output: `1` or `5`
-
-#### Solution Explanation
-```python
-def findPeakElement(nums: list[int]) -> int:
-    left, right = 0, len(nums) - 1
-    
-    while left < right:
-        mid = (left + right) // 2
-        if nums[mid] > nums[mid + 1]:
-            # We are in a descending sequence
-            right = mid
-        else:
-            # We are in an ascending sequence
-            left = mid + 1
-    
-    return left
-
-# Complexity Analysis
-# - Time Complexity: O(log n), binary search for peak.
-# - Space Complexity: O(1), constant extra space.
-```
-
-- The problem is solved using a binary search to efficiently find a peak.
-- By comparing mid and mid+1 elements, decide to explore the descending or ascending side.
-
-### 88. Merge Sorted Array (Easy)
-
-#### Problem Statement
-Given two sorted integer arrays `nums1` and `nums2`, merge `nums2` into `nums1` as one sorted array. Assume `nums1` has sufficient space to hold additional elements.
-
-#### Sample Input and Output
-- Input: `nums1 = [1,2,3,0,0,0]`, `m = 3`, `nums2 = [2,5,6]`, `n = 3`
-- Output: `[1,2,2,3,5,6]`
-
-#### Solution Explanation
-```python
-def merge(nums1: list[int], m: int, nums2: list[int], n: int) -> None:
-    last = m + n - 1  # last position of merged array
-    while m > 0 and n > 0:
-        if nums1[m - 1] > nums2[n - 1]:
-            nums1[last] = nums1[m - 1]
-            m -= 1
-        else:
-            nums1[last] = nums2[n - 1]
-            n -= 1
-        last -= 1
-
-    # Fill nums1 with leftover nums2 elements
-    while n > 0:
-        nums1[last] = nums2[n - 1]
-        n, last = n - 1, last - 1
-
-# Complexity Analysis
-# - Time Complexity: O(m + n), traversing both arrays.
-# - Space Complexity: O(1), in-place merging.
-```
-
-- Start merging from the end to accommodate space in-place.
-- Compare elements of both arrays iteratively and place accordingly.
-
-### 50. Pow(x, n) (Medium)
-
-#### Problem Statement
-Implement `pow(x, n)`, which computes `x` raised to the power `n` (i.e., `x^n`).
-
-#### Sample Input and Output
-- Input: `x = 2.0, n = 10`
-- Output: `1024.0`
-
-- Input: `x = 2.1, n = 3`
-- Output: `9.261`
-
-#### Solution Explanation
 ```python
 def myPow(x: float, n: int) -> float:
-    if n == 0:
-        return 1
-    if n < 0:
-        x = 1 / x
-        n = -n
-    result = 1
-    while n:
-        if n % 2:
-            result *= x
-        x *= x
-        n //= 2
-    return result
-
-# Complexity Analysis
-# - Time Complexity: O(log n), exponentiation by squaring.
-# - Space Complexity: O(1), constant space.
-```
-
-- Use exponentiation by squaring to repeatedly square the base.
-- For odd exponents, multiply the result by `x` once before reducing `n`.
-
-### 199. Binary Tree Right Side View (Medium)
-
-#### Problem Statement
-Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
-
-#### Sample Input and Output
-- Input: `[1,2,3,null,5,null,4]`
-- Output: `[1,3,4]`
-
-#### Solution Explanation
-```python
-from collections import deque
-
-def rightSideView(root: 'TreeNode') -> list[int]:
-    if not root:
-        return []
-    view = []
-    queue = deque([root])
-    while queue:
-        level_size = len(queue)
-        for i in range(level_size):
-            node = queue.popleft()
-            if i == level_size - 1:
-                view.append(node.val)
-            if node.left:
-                queue.append(node.left)
-            if node.right:
-                queue.append(node.right)
-    return view
-
-# Complexity Analysis
-# - Time Complexity: O(n), where n is number of nodes in tree.
-# - Space Complexity: O(d), where d is maximum width (i.e., leaves) of the tree.
-```
-
-- Perform level-order traversal using a queue.
-- For each level, capture the last node, which is the visible node from the right view.
-
-### 938. Range Sum of BST (Easy)
-
-#### Problem Statement
-Given the root of a Binary Search Tree and two integers `low` and `high`, return the sum of values of all nodes with value in the range `[low, high]`.
-
-#### Sample Input and Output
-- Input: `root = [10,5,15,3,7,null,18], low = 7, high = 15`
-- Output: `32`
-
-#### Solution Explanation
-```python
-def rangeSumBST(root: 'TreeNode', low: int, high: int) -> int:
-    if not root:
-        return 0
-    if root.val < low:
-        return rangeSumBST(root.right, low, high)
-    if root.val > high:
-        return rangeSumBST(root.left, low, high)
-    return root.val + rangeSumBST(root.left, low, high) + rangeSumBST(root.right, low, high)
-
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the number of nodes in the BST.
-# - Space Complexity: O(h), where h is the height of the tree.
-```
-
-- Use DFS to explore nodes within the desired range.
-- Utilize the BST property to skip unnecessary nodes.
-
-In general, these problems leverage properties of data structures (binary search tree properties, binary heap) and efficient algorithms (binary search, recursion with memoization where necessary) to achieve optimal solutions.
-
-### 56. Merge Intervals (Medium)
-
-#### Problem Statement
-Given a collection of intervals, merge all overlapping intervals.
-
-#### Sample Input and Output
-- Input: `[[1,3],[2,6],[8,10],[15,18]]`
-- Output: `[[1,6],[8,10],[15,18]]`
-
-#### Solution Explanation
-```python
-def merge(intervals: list[list[int]]) -> list[list[int]]:
-    intervals.sort(key=lambda x: x[0])
-    merged = []
-    
-    for interval in intervals:
-        # If the list of merged intervals is empty or if the current
-        # interval does not overlap with the previous, append it.
-        if not merged or merged[-1][1] < interval[0]:
-            merged.append(interval)
+    def helper(base, exponent):
+        if exponent == 0:
+            return 1
+        half = helper(base, exponent // 2)
+        if exponent % 2 == 0:
+            return half * half
         else:
-            # Otherwise, there is overlap, so merge the current and previous intervals.
-            merged[-1][1] = max(merged[-1][1], interval[1])
+            return half * half * base
     
-    return merged
+    result = helper(x, abs(n))
+    return result if n >= 0 else 1 / result
 
-# Complexity Analysis
-# - Time Complexity: O(n log n), due to sorting.
-# - Space Complexity: O(n), additional space for merged intervals.
+# O-Notation: O(log n)
+# - Uses exponentiation by squaring, effectively reducing complexity by halving each iteration.
+
 ```
 
-- Sort the intervals based on start times.
-- Traverse them to merge overlapping intervals into the merged list.
+**Explanation:**
+The exponentiation by squaring method involves recursively computing the power using the relation \(x^{n} = (x^{n/2})^{2}\) to halve the work per iteration, resulting in an impressively efficient \(O(\log n)\) implementation. For negative exponents, reciprocate the final result.
 
-### 560. Subarray Sum Equals K (Medium)
+### Problem 560: Subarray Sum Equals K (Medium)
 
-#### Problem Statement
-Given an integer array `nums` and an integer `k`, return the total number of continuous subarrays whose sum equals to `k`.
+**Problem Statement:**
 
-#### Sample Input and Output
-- Input: `nums = [1,1,1], k = 2`
-- Output: `2`
+Given an array of integers `nums` and an integer `k`, you need to find the total number of continuous subarrays whose sum equals to `k`.
 
-#### Solution Explanation
+**Example:**
+
+Input: `nums = [1,1,1], k = 2`
+Output: `2`
+
+**Solution:**
+
 ```python
-def subarraySum(nums: list[int], k: int) -> int:
+def subarraySum(nums: list, k: int) -> int:
     count = 0
-    sum_dict = {0: 1}
     current_sum = 0
+    prefix_sums = {0: 1}
 
     for num in nums:
         current_sum += num
-        if current_sum - k in sum_dict:
-            count += sum_dict[current_sum - k]
-        
-        sum_dict[current_sum] = sum_dict.get(current_sum, 0) + 1
+        if current_sum - k in prefix_sums:
+            count += prefix_sums[current_sum - k]
+        if current_sum in prefix_sums:
+            prefix_sums[current_sum] += 1
+        else:
+            prefix_sums[current_sum] = 1
 
     return count
 
-# Complexity Analysis
-# - Time Complexity: O(n), single pass through array.
-# - Space Complexity: O(n), to store prefix sums in a dictionary.
+# O-Notation: O(n)
+# n = length of the nums array
+# - Iterate through nums once with constant-time hash map operations.
 ```
 
-- Utilize a hashmap to store cumulative sums and their occurrences.
-- Efficiently determine subarrays with sum `k` using the prefix sum approach.
+**Explanation:**
+The algorithm uses a hash map to store cumulative sums, which allows it to count subarrays adding up to `k` efficiently by leveraging the prefix sum technique. As the loop iterates, it continually checks if the difference between the current prefix sum and `k` has been seen before, incrementing the subarray count accordingly.
 
-### 1. Two Sum (Easy)
+---
 
-#### Problem Statement
-Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.
+### Problem 1570: Dot Product of Two Sparse Vectors (Medium)
 
-#### Sample Input and Output
-- Input: `nums = [2,7,11,15], target = 9`
-- Output: `[0,1]`
+**Problem Statement:**
 
-#### Solution Explanation
+Implement a class SparseVector that handles the dot product of two sparse vectors.
+
+**Example:**
+
+```plaintext
+Input: nums1 = [1,0,0,2,3], nums2 = [0,3,0,4,0]
+Output: 8 (1*0 + 2*4)
+```
+
+**Solution:**
+
 ```python
-def twoSum(nums: list[int], target: int) -> list[int]:
-    num_to_index = {}
-    
-    for i, num in enumerate(nums):
-        complement = target - num
-        if complement in num_to_index:
-            return [num_to_index[complement], i]
-        num_to_index[num] = i
-    
-    return []
+class SparseVector:
+    def __init__(self, nums):
+        self.nums = {i: num for i, num in enumerate(nums) if num != 0}
 
-# Complexity Analysis
-# - Time Complexity: O(n), single pass to find complement.
-# - Space Complexity: O(n), space for hash map to store indices.
+    def dotProduct(self, vec: 'SparseVector') -> int:
+        result = 0
+        if len(self.nums) < len(vec.nums):  # Iterate over the smaller
+            for idx in self.nums:
+                if idx in vec.nums:
+                    result += self.nums[idx] * vec.nums[idx]
+        else:
+            for idx in vec.nums:
+                if idx in self.nums:
+                    result += self.nums[idx] * vec.nums[idx]
+        return result
+
+# O-Notation: O(min(n, m))
+# n, m are the number of non-zero elements in the vectors
+# - Only iterate over non-zero elements for efficiency.
 ```
 
-- Use a hashmap to store numbers and their indices as you iterate the array.
-- Check if the complement of the current number exists in the hashmap.
+**Explanation:**
+Sparse vectors are efficiently represented using dictionaries that store only non-zero indices. The solution iterates through the non-zero entries of the smaller vector, computing the dot product by combining common non-zero indices.
 
-### 543. Diameter of Binary Tree (Easy)
+---
 
-#### Problem Statement
-Given a binary tree, return the length of the diameter of the tree. The diameter is the length of the longest path between any two nodes in a tree.
+### Problem 138: Copy List with Random Pointer (Medium)
 
-#### Sample Input and Output
-- Input: `[1,2,3,4,5]`
-- Output: `3`
+**Problem Statement:**
 
-#### Solution Explanation
+A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null. Return a deep copy of the list.
+
+**Example:**
+
+Input: A complex linked list with additional random pointers.
+Output: A deep-copied list resembling the original list.
+
+**Solution - Using Hash Map:**
+
+```python
+class Node:
+    def __init__(self, x, next=None, random=None):
+        self.val = int(x)
+        self.next = next
+        self.random = random
+
+def copyRandomList(head: 'Node') -> 'Node':
+    if not head:
+        return None
+        
+    old_to_new = {}
+
+    current = head
+    while current:
+        old_to_new[current] = Node(current.val)
+        current = current.next
+        
+    current = head
+    while current:
+        if current.next:
+            old_to_new[current].next = old_to_new[current.next]
+        if current.random:
+            old_to_new[current].random = old_to_new[current.random]
+        current = current.next
+    
+    return old_to_new[head]
+
+# O-Notation: O(n)
+# - Utilize O(n) additional space for the hash map of nodes.
+
+```
+
+**Explanation:**
+By leveraging a hash map to map original nodes to their copies, the algorithm constructs copies of each node first, forming next and random links in a second pass.
+
+---
+
+### Problem 680: Valid Palindrome II (Medium)
+
+**Problem Statement:**
+
+Given a string `s`, return `true` if `s` can be a palindrome after deleting at most one character from it.
+
+**Example:**
+
+Input: `s = "abca"`
+Output: `True` (remove 'c', 'b')
+
+**Solution:**
+
+```python
+def validPalindrome(s: str) -> bool:
+    def is_palindrome_range(i, j):
+        return all(s[k] == s[j-k+i] for k in range(i, j))
+    
+    i, j = 0, len(s) - 1
+    while i < j:
+        if s[i] != s[j]:
+            return is_palindrome_range(i + 1, j) or is_palindrome_range(i, j - 1)
+        i, j = i + 1, j - 1
+    return True
+
+# O-Notation: O(n)
+# n = length of the string s
+# - Examine the string with at most two full passes (one forward, one range check).
+
+```
+
+**Explanation:**
+The two-pointer technique compares matching ends until a discrepancy prompts a check for palindromes from either removing the current left or right character, ensuring a single permissible change.
+
+---
+
+### Problem 528: Random Pick with Weight (Easy)
+
+**Problem Statement:**
+
+Implement the `Solution` class: `Solution(int[] w)` and `int pickIndex()` that picks an index in proportion to its weight in `w`.
+
+**Example:**
+
+Input: `w = [1,3,4]`
+Output: probabilistic (most likely index 2 because weight is highest)
+
+**Solution:**
+
+```python
+import random
+
+class Solution:
+    def __init__(self, w: list):
+        self.prefix_sums = []
+        current_sum = 0
+        for weight in w:
+            current_sum += weight
+            self.prefix_sums.append(current_sum)
+        self.total_sum = current_sum
+
+    def pickIndex(self) -> int:
+        target = self.total_sum * random.random()
+        low, high = 0, len(self.prefix_sums) - 1
+        
+        while low < high:
+            mid = (low + high) // 2
+            if target > self.prefix_sums[mid]:
+                low = mid + 1
+            else:
+                high = mid
+        
+        return low
+
+# O-Notation: O(n) for init, O(log n) for pickIndex
+# - The initialization precomputes prefix sums, allowing O(log n) binary search.
+```
+
+**Explanation:**
+Constructing a cumulative (prefix) sum array transforms the problem into selecting random numbers across a range, with binary search supporting efficient index resolution, balanced by probability.
+
+---
+
+### Problem 71: Simplify Path (Medium)
+
+**Problem Statement:**
+
+Given a string path, which is an absolute path starting with a slash '/' for a file in a Unix-style file system, convert it to the simplified canonical path.
+
+**Example:**
+
+Input: `path = "/home//foo/"`
+Output: `"/home/foo"`
+
+**Solution:**
+
+```python
+def simplifyPath(path: str) -> str:
+    stack = []
+    parts = path.split('/')
+    
+    for part in parts:
+        if part == '' or part == '.':
+            continue
+        elif part == '..':
+            if stack:
+                stack.pop()
+        else:
+            stack.append(part)
+    
+    return '/' + '/'.join(stack)
+
+# O-Notation: O(n)
+# n = length of the path string, processing each part once
+```
+
+**Explanation:**
+Splitting the path by `"/"` simplifies processing each component for special cases: `.` (current directory), `..` (parent directory), and ignoring extra slashes. A stack efficiently manages directory state through pushes and pops representing navigation.
+
+---
+
+### Problem 791: Custom Sort String (Medium)
+
+**Problem Statement:**
+
+You are given two strings `order` and `str`. All characters of `order` are unique and were sorted in some custom order previously. Permute the characters of `str` so that they match the order given in `order`. Return any permutation of `str` that respects this custom order.
+
+**Example:**
+
+Input: `order = "cba", str = "abcd"`
+Output: `"cbad"`
+
+**Solution:**
+
+```python
+def customSortString(order: str, s: str) -> str:
+    order_index = {char: i for i, char in enumerate(order)}
+    return ''.join(sorted(s, key=lambda x: order_index.get(x, len(order))))
+
+# O-Notation: O(n log n)
+# n = length of string s
+# - The sorted function dominates with O(n log n) complexity, as we sort `s` based on custom keys.
+```
+
+**Explanation:**
+Create a mapping of characters to their indices from `order`. Utilize Python's sorting with a custom key that assigns a position to each character from `s` for determining their order.
+
+---
+
+### Problem 56: Merge Intervals (Medium)
+
+**Problem Statement:**
+
+Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
+
+**Example:**
+
+Input: `intervals = [[1,3],[2,6],[8,10],[15,18]]`
+Output: `[[1,6],[8,10],[15,18]]`
+
+**Solution:**
+
+```python
+def merge(intervals: list) -> list:
+    if not intervals:
+        return []
+    
+    intervals.sort(key=lambda x: x[0])
+    merged = [intervals[0]]
+
+    for current in intervals[1:]:
+        last = merged[-1]
+        if current[0] <= last[1]:  # Overlapping
+            last[1] = max(last[1], current[1])
+        else:
+            merged.append(current)
+    
+    return merged
+
+# O-Notation: O(n log n)
+# n = number of intervals
+# - Sorting dominates with O(n log n) complexity, followed by a single pass through the sorted list.
+```
+
+**Explanation:**
+First, sort intervals by their starting value to linearize the merge process. Iteratively compare and merge overlapped intervals while forming the result list of merged intervals.
+
+---
+
+### Problem 543: Diameter of Binary Tree (Medium)
+
+**Problem Statement:**
+
+Given the `root` of a binary tree, return the length of the diameter of the tree. The diameter is the length of the longest path between any two nodes in a tree, which may or may not pass through the root.
+
+**Example:**
+
+Input: Binary Tree `[1,2,3,4,5]`
+Output: `3` (The diameter path is [4,2,1,3] or [5,2,1,3])
+
+**Solution:**
+
 ```python
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -846,222 +861,389 @@ class TreeNode:
 
 def diameterOfBinaryTree(root: TreeNode) -> int:
     diameter = 0
-    
-    def depth(node: TreeNode) -> int:
+
+    def depth(node):
         nonlocal diameter
         if not node:
             return 0
         left_depth = depth(node.left)
         right_depth = depth(node.right)
-        # Update the diameter
         diameter = max(diameter, left_depth + right_depth)
-        return max(left_depth, right_depth) + 1
-    
+        return 1 + max(left_depth, right_depth)
+
     depth(root)
     return diameter
 
-# Complexity Analysis
-# - Time Complexity: O(n), traverse each node.
-# - Space Complexity: O(h), where h is the height of the tree (recursion stack).
+# O-Notation: O(n)
+# n = number of nodes in the tree
+# - Single DFS traversal of the tree computes depths and calculates the diameter.
 ```
 
-- Use DFS to find depths of subtrees.
-- The longest path passes through the root by combining the depths of the left and right subtrees.
+**Explanation:**
+The depth-first search (DFS) traverses each branch computing the longest path (diameter) by accumulating left and right depths for each node. The nonlocal `diameter` stores the maximum sum of depths encountered during traversal.
 
-### 138. Copy List with Random Pointer (Medium)
+---
 
-#### Problem Statement
-A linked list is given such that each node contains an additional random pointer which could point to any node in the list or null. Return a deep copy of the list.
+### Problem 670: Maximum Swap (Easy)
 
-#### Sample Input and Output
-- Input: `head = [[7,null],[13,0],[11,4],[10,2],[1,0]]`
-- Output: Deep copied list with the same random pointer configuration.
+**Problem Statement:**
 
-#### Solution Explanation
+Given a non-negative integer, you could swap two digits at most once to get the maximum valued number. Return the maximum valued number you can get.
+
+**Example:**
+
+Input: `num = 2736`
+Output: `7236`
+
+**Solution:**
+
 ```python
-class Node:
-    def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):
-        self.val = x
-        self.next = next
-        self.random = random
+def maximumSwap(num: int) -> int:
+    num = list(str(num))
+    last = {int(x): i for i, x in enumerate(num)}
+    
+    for i, x in enumerate(num):
+        for d in range(9, int(x), -1):
+            if d in last and last[d] > i:
+                num[i], num[last[d]] = num[last[d]], num[i]
+                return int(''.join(num))
+    return int(''.join(num))
 
-def copyRandomList(head: 'Node') -> 'Node':
-    if not head:
-        return None
-
-    # Creating a mapping from old nodes to new nodes
-    old_to_new = {}
-
-    # First pass to copy all the nodes
-    current = head
-    while current:
-        copy = Node(current.val)
-        old_to_new[current] = copy
-        current = current.next
-
-    # Second pass to assign next and random pointers
-    current = head
-    while current:
-        if current.next:
-            old_to_new[current].next = old_to_new[current.next]
-        if current.random:
-            old_to_new[current].random = old_to_new[current.random]
-        current = current.next
-
-    return old_to_new[head]
-
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the number of nodes.
-# - Space Complexity: O(n), for the hashmap of nodes.
+# O-Notation: O(n)
+# n = number of digits in num
+# - Pass through the number with a scan to construct the last occurrence index map.
 ```
 
-- Create deep copy nodes in the first pass, storing them in a map to link them correctly in a second pass.
-- Handle `next` and `random` pointers based on mappings.
+**Explanation:**
+The solution creates a map to track the last positions of each digit, iteratively attempting swaps starting with the leftmost digit for the largest possible outcome. Efficiently determines what swap would yield the highest number by pre-analyzing digits' order.
 
-In each solution, the problem is approached by taking advantage of a suitable data structure or algorithm design (e.g., hashmaps for unique access to indices or nodes, recursion for tree structures) to achieve the desired outcomes effectively and efficient computation.
+---
 
-### 973. K Closest Points to Origin (Medium)
+### Problem 921: Minimum Add to Make Parentheses Valid (Medium)
 
-#### Problem Statement
-Given an array of points where `points[i] = [xi, yi]` represents a point on the XY plane, return the `k` closest points to the origin (0, 0).
+**Problem Statement:**
 
-#### Sample Input and Output
-- Input: `points = [[1,3],[-2,2]], k = 1`
-- Output: `[[-2,2]]`
+Determine the minimum number of parenthesis addtions to make a given string valid (all open braces have a corresponding close and vice versa).
 
-#### Solution Explanation (Using a Heap)
+**Example:**
+
+Input: `"())"`
+Output: `1`
+
+**Solution:**
+
+```python
+def minAddToMakeValid(S: str) -> int:
+    balance = 0
+    unmatched_close = 0
+
+    for char in S:
+        if char == '(':
+            balance += 1
+        else:
+            balance -= 1
+            if balance < 0:
+                unmatched_close += 1
+                balance = 0
+    
+    return balance + unmatched_close
+
+# O-Notation: O(n)
+# n = length of the string S
+# - Single pass solution counting unmatched parentheses
+```
+
+**Explanation:**
+Track open/close balance as you iterate through `S`. Every unmatched closing parenthesis encountered is counted for needed additions. Remaining balance post-iteration indicates any unmatched opening braces requiring closure.
+
+---
+
+### Problem 987: Vertical Order Traversal of a Binary Tree (Medium)
+
+**Problem Statement:**
+
+Given the `root` of a binary tree, return its vertical order traversal. From top to bottom and within each vertical column (top to bottom, left to right if same level).
+
+**Example:**
+
+Input:
+```plaintext
+    3
+   / \
+  9  20
+    /  \
+   15   7
+```
+Output: `[[9], [3, 15], [20], [7]]`
+
+**Solution:**
+
+```python
+from collections import defaultdict, deque
+
+def verticalTraversal(root: TreeNode) -> list:
+    column_map = defaultdict(list)
+    
+    queue = deque([(root, 0, 0)])  # root, column, row
+    while queue:
+        node, column, row = queue.popleft()
+        
+        if node is not None:
+            column_map[column].append((row, node.val))
+            queue.append((node.left, column - 1, row + 1))
+            queue.append((node.right, column + 1, row + 1))
+    
+    result = []
+    for col in sorted(column_map.keys()):
+        column_nodes = sorted(column_map[col], key=lambda x: (x[0], x[1]))
+        result.append([val for row, val in column_nodes])
+    
+    return result
+
+# O-Notation: O(n log n)
+# n = number of nodes in the tree
+# - Sorting the nodes by columns and rows, each column storing nodes in sorted order.
+```
+
+**Explanation:**
+Utilizing breadth-first traversal (BFS) along with columns to map node positions, track nodes by their respective grid positions. The resultant data is sorted and grouped by columns with second-order sorting on rows and values for lexicographic order within the vertical slice.
+
+Each solution employs intuitive approaches and appropriate algorithms aimed at simplifying complex operations with a focus on leveraging data structures effectively, thereby optimizing performance.
+
+---
+
+### Problem 1: Two Sum (Hard misunderstood as Easy)
+
+**Problem Statement:**
+
+Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`. Assume each input would have exactly one solution.
+
+**Example:**
+
+Input: `nums = [2,7,11,15], target = 9`
+Output: `[0,1]`
+
+**Solution:**
+
+```python
+def twoSum(nums: list, target: int) -> list:
+    num_to_index = {}
+    for i, num in enumerate(nums):
+        if target - num in num_to_index:
+            return [num_to_index[target - num], i]
+        num_to_index[num] = i
+    return []
+
+# O-Notation: O(n)
+# n = length of the nums array
+# - Each element is visited once, employing hash map for constant-time checks.
+```
+
+**Explanation:**
+This solution employs a hash map for efficient lookup of each number's complement. It tracks indices and only performs one pass through the list, storing elements indexed positionally as you explore, relying on complement matches for outcomes.
+
+---
+
+### Problem 88: Merge Sorted Array (Easy)
+
+**Problem Statement:**
+
+You are given two sorted integer arrays `nums1` and `nums2`, merge `nums2` into `nums1` as one sorted array. The number of elements initialized in `nums1` and `nums2` are `m` and `n`, respectively.
+
+**Example:**
+
+Input: `nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3`
+Output: `nums1 = [1,2,2,3,5,6]`
+
+**Solution:**
+
+```python
+def merge(nums1: list, m: int, nums2: list, n: int) -> None:
+    last = m + n - 1
+    m -= 1
+    n -= 1
+
+    while m >= 0 and n >= 0:
+        if nums1[m] > nums2[n]:
+            nums1[last] = nums1[m]
+            m -= 1
+        else:
+            nums1[last] = nums2[n]
+            n -= 1
+        last -= 1
+    
+    while n >= 0:
+        nums1[last] = nums2[n]
+        n -= 1
+        last -= 1
+
+# O-Notation: O(m + n)
+# - Process each array element only once, from back to front, maintaining sorted order step-by-step.
+```
+
+**Explanation:**
+Reverse-fill `nums1` from the back where there's room to place the elements of `nums2` alongside the existing elements. This process ensures merging in-place without requiring additional storage, leveraging sorted order properties.
+
+---
+
+### Problem 125: Valid Palindrome (Easy)
+
+**Problem Statement:**
+
+Given a string `s`, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+
+**Example:**
+
+Input: `s = "A man, a plan, a canal: Panama"`
+Output: `True`
+
+**Solution:**
+
+```python
+def isPalindrome(s: str) -> bool:
+    cleaned = [char.lower() for char in s if char.isalnum()]
+    return cleaned == cleaned[::-1]
+
+# O-Notation: O(n)
+# n = length of cleaned string
+# - Split into clean and reversed comparison, linear work driven by string length.
+```
+
+**Explanation:**
+The solution filters the input string to include only alphanumerics, then compares it with its reverse to determine if it reads the same forward and backward, ensuring case-insensitive and format-neutral checks.
+
+---
+
+### Problem 398: Random Pick Index (Easy)
+
+**Problem Statement:**
+
+Given an integer array `nums` with possible duplicates, randomly output the index of a given target number. You can assume that the numbers in the array are non-negative and that at least one index will satisfy the request.
+
+**Example:**
+
+```plaintext
+Input: nums = [1,2,3,3,3], target = 3
+Output: Randomly one of [2,3,4] due to probabilities
+```
+
+**Solution:**
+
+```python
+import random
+
+class Solution:
+    def __init__(self, nums: list):
+        self.nums = nums
+
+    def pick(self, target: int) -> int:
+        indices = [i for i, num in enumerate(self.nums) if num == target]
+        return random.choice(indices)
+
+# O-Notation: O(n) for each pick call
+# n = number of elements in nums
+# - Needs to enumerate and collect indices in worst-case.
+```
+
+**Explanation:**
+Using a list comprehension, it first collects all indices for the target. Each call to `pick` randomly selects one index from this list, producing uniformly random outcomes as required.
+
+---
+
+### Problem 973: K Closest Points to Origin (Medium)
+
+**Problem Statement:**
+
+Given an array of points `points` and an integer `K`, return the `K` closest points to the origin `(0, 0)`.
+
+**Example:**
+
+Input: `points = [[1,3],[-2,2]], K = 1`
+Output: `[[-2,2]]`
+
+**Solution using Heap:**
+
 ```python
 import heapq
 
-def kClosest(points: list[list[int]], k: int) -> list[list[int]]:
-    # Create a min-heap based on the negative of distance
-    # (since we want the smallest distances)
-    heap = []
-    for (x, y) in points:
-        dist = -(x * x + y * y)  # negative for max heap simulation
-        if len(heap) < k:
-            heapq.heappush(heap, (dist, (x, y)))
-        else:
-            heapq.heappushpop(heap, (dist, (x, y)))
-    
-    return [point for (_, point) in heap]
+def kClosest(points: list, K: int) -> list:
+    return heapq.nsmallest(K, points, key=lambda point: point[0]**2 + point[1]**2)
 
-# Complexity Analysis
-# - Time Complexity: O(n log k) for pushing elements into the heap.
-# - Space Complexity: O(k), space used for the heap.
+# O-Notation: O(n log K)
+# - Heap solution offering better performance with intrinsic heap operations on k-sized data.
 ```
 
-- Utilize a max-heap to keep only the k smallest distance points.
-- Push and pop elements while traversing to ensure O(n log k) time.
+**Explanation:**
+Leverage `heapq.nsmallest` with a distance-squared lambda key to efficiently retrieve the K smallest (closest) points. The heap regulates the collection size, ensuring optimal memory utilization even with possible large input data sizes.
 
-### 31. Next Permutation (Medium)
+---
 
-#### Problem Statement
-Implement the function to rearrange numbers into the lexicographically next greater permutation of numbers. If such an arrangement is not possible, rearrange it to the lowest possible order (i.e., sorted in ascending order).
+### Problem 23: Merge k Sorted Lists (Medium)
 
-#### Sample Input and Output
-- Input: `nums = [1,2,3]`
-- Output: `[1,3,2]`
+**Problem Statement:**
 
-#### Solution Explanation
+Merge `k` sorted linked lists into one sorted linked list and return it.
+
+**Example:**
+
+Input: `lists = [[1,4,5],[1,3,4],[2,6]]`
+Output: Merged list `[1,1,2,3,4,4,5,6]`
+
+**Solution using Heap:**
+
 ```python
-def nextPermutation(nums: list[int]) -> None:
-    if len(nums) <= 1:
-        return
-    
-    # Step 1: Identify first decreasing element from the end
-    i = len(nums) - 2
-    while i >= 0 and nums[i] >= nums[i + 1]:
-        i -= 1
-    
-    # Step 2: If found, swap with next larger element
-    if i >= 0:
-        j = len(nums) - 1
-        while nums[j] <= nums[i]:
-            j -= 1
-        nums[i], nums[j] = nums[j], nums[i]
-    
-    # Step 3: Reverse sequence from element following i to end
-    nums[i + 1:] = reversed(nums[i + 1:])
+from heapq import heappush, heappop, heapify
 
-# Complexity Analysis
-# - Time Complexity: O(n), linear scan and reverse operations.
-# - Space Complexity: O(1), in-place swap and reverse.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def mergeKLists(lists: list) -> ListNode:
+    min_heap = []
+    for index, node in enumerate(lists):
+        if node:
+            heappush(min_heap, (node.val, index, node))
+    
+    dummy = ListNode(None)
+    current = dummy
+    
+    while min_heap:
+        val, idx, node = heappop(min_heap)
+        current.next = ListNode(val)
+        current = current.next
+        if node.next:
+            heappush(min_heap, (node.next.val, idx, node.next))
+    
+    return dummy.next
+
+# O-Notation: O(N log k)
+# N = total number of nodes, k = number of linked lists
+# - Manage heap for k list entries, pushing and popping elements.
 ```
 
-- Find the breakpoint where order descends, swap with immediate larger, and reverse remainder.
+**Explanation:**
+The solution uses a min-heap (priority queue) to always merge the smallest element from the heap's top. Each list's current smallest entry is maintained in this maxed-out heap, ensuring logarithmic effort per insertion.
 
-### 125. Valid Palindrome (Easy)
+---
 
-#### Problem Statement
-Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+### Problem 146: LRU Cache (Hard)
 
-#### Sample Input and Output
-- Input: `"A man, a plan, a canal: Panama"`
-- Output: `True`
+**Problem Statement:**
 
-#### Solution Explanation
-```python
-def isPalindrome(s: str) -> bool:
-    l, r = 0, len(s) - 1
-    while l < r:
-        while l < r and not s[l].isalnum():
-            l += 1
-        while l < r and not s[r].isalnum():
-            r -= 1
-        if s[l].lower() != s[r].lower():
-            return False
-        l, r = l + 1, r - 1
-    return True
+Design and implement a data structure for Least Recently Used (LRU) cache. It should support `get` and `put` operations in O(1) time complexity.
 
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the length of the string.
-# - Space Complexity: O(1), no extra space used aside from input.
-```
+**Example:**
 
-- Two pointers verify character by character ignoring non-alphanumerics.
-- Handle upper and lower case using `lower()` comparison.
+- `LRUCache cache = new LRUCache(2)`
+- `cache.put(1, 1)`
+- `cache.put(2, 2)`
+- `cache.get(1)` returns `1`
+- `cache.put(3, 3)` evicts key `2`
+- `cache.get(2)` returns `-1`
 
-### 1762. Buildings With an Ocean View (Medium)
+**Solution using OrderedDict:**
 
-#### Problem Statement
-Given a list of integers representing building heights in a straight line, some buildings have an ocean view if all buildings to their right are shorter in height. Return indices of buildings with an ocean view.
-
-#### Sample Input and Output
-- Input: `heights = [4,2,3,1]`
-- Output: `[0,2,3]`
-
-#### Solution Explanation
-```python
-def findBuildings(heights: list[int]) -> list[int]:
-    n = len(heights)
-    result = []
-    max_height = 0
-    
-    for i in range(n - 1, -1, -1):
-        if heights[i] > max_height:
-            result.append(i)
-            max_height = heights[i]
-    
-    return result[::-1]
-
-# Complexity Analysis
-# - Time Complexity: O(n), a single pass through buildings.
-# - Space Complexity: O(1), no extra space apart from the result.
-```
-
-- Traverse from right to left, maintaining a max height found.
-- Collect indices in list for those exceeding max heights observed.
-
-### 146. LRU Cache (Medium)
-
-#### Problem Statement
-Design a data structure that represents a Least Recently Used (LRU) cache with capacity for accessing keys. Implement `get` and `put`.
-
-#### Sample Input and Output
-- No specific examples; involve creating functionality claims.
-
-#### Solution Explanation
 ```python
 from collections import OrderedDict
 
@@ -1069,7 +1251,7 @@ class LRUCache:
     def __init__(self, capacity: int):
         self.cache = OrderedDict()
         self.capacity = capacity
-    
+
     def get(self, key: int) -> int:
         if key not in self.cache:
             return -1
@@ -1083,229 +1265,314 @@ class LRUCache:
         if len(self.cache) > self.capacity:
             self.cache.popitem(last=False)
 
-# Complexity Analysis
-# - Time Complexity: O(1) for both get and put due to OrderedDict features.
-# - Space Complexity: O(capacity), space utilized for store dictionary items.
+# O-Notation: O(1)
+# - Both put and get operations run in constant time supported by OrderedDict's optimizations.
 ```
 
-- Manage state using an OrderedDict to represent LRU operations efficiently.
-- Keep cache within capacity by utilizing pop from the OrderedDict’s front.
+**Explanation:**
+This utilizes Python's `OrderedDict` which retains insertion order while allowing quick reordering with `move_to_end`. It's perfectly suited for implementing the LRU invariant given its easy access and maintainability, effectively dual-managing keys and ordering revocations.
 
-With each solution, effective data handling methods like heap, dictionary and linked list adapt techniques for efficient computation, leveraging data structural properties to streamline operations like permutation searching or cache management.
+---
 
-### 283. Move Zeroes (Easy)
+### Problem 153: Find Minimum in Rotated Sorted Array (Medium)
 
-#### Problem Statement
-Given an integer array `nums`, move all the zeros to the end while maintaining the relative order of the non-zero elements.
+**Problem Statement:**
 
-#### Sample Input and Output
-- Input: `nums = [0,1,0,3,12]`
-- Output: `[1,3,12,0,0]`
+Given a rotated sorted array `nums` (in ascending order), find the minimum element. Assume no duplicate exists in the array.
 
-#### Solution Explanation
+**Example:**
+
+Input: `nums = [3, 4, 5, 1, 2]`
+Output: `1`
+
+**Solution:**
+
 ```python
-def moveZeroes(nums: list[int]) -> None:
-    last_non_zero = 0  # the index of the last non-zero found
+def findMin(nums: list) -> int:
+    left, right = 0, len(nums) - 1
     
-    # Traverse the list, moving non-zero values to the front as you go
-    for i in range(len(nums)):
-        if nums[i] != 0:
-            nums[last_non_zero], nums[i] = nums[i], nums[last_non_zero]
-            last_non_zero += 1
-
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the length of the array.
-# - Space Complexity: O(1), in-place operation.
-```
-
-- Traverse the array maintaining the last non-zero index.
-- Swap elements to bring non-zero values forward.
-
-### 921. Minimum Add to Make Parentheses Valid (Medium)
-
-#### Problem Statement
-Given a string consisting of `(` and `)`, determine the minimum number of parentheses that need to be added to make the string valid.
-
-#### Sample Input and Output
-- Input: `"())"`
-- Output: `1`
-
-#### Solution Explanation
-```python
-def minAddToMakeValid(s: str) -> int:
-    left_balance = 0
-    right_balance = 0
-
-    for char in s:
-        if char == '(':
-            right_balance += 1
-        elif char == ')':
-            if right_balance > 0:
-                right_balance -= 1
-            else:
-                left_balance += 1
-
-    return left_balance + right_balance
-
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the length of the string.
-# - Space Complexity: O(1), constant space usage.
-```
-
-- Utilize two counters to balance `(` and `)`.
-- Track unmatched parentheses to calculate the number needed.
-
-### 986. Interval List Intersections (Medium)
-
-#### Problem Statement
-Given two lists of closed intervals, `firstList` and `secondList`, find their intersections.
-
-#### Sample Input and Output
-- Input: `firstList = [[0,2],[5,10],[13,23],[24,25]], secondList = [[1,5],[8,12],[15,24],[25,26]]`
-- Output: `[[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]`
-
-#### Solution Explanation
-```python
-def intervalIntersection(firstList: list[list[int]], secondList: list[list[int]]) -> list[list[int]]:
-    intersections = []
-    i, j = 0, 0
-
-    while i < len(firstList) and j < len(secondList):
-        start_max = max(firstList[i][0], secondList[j][0])
-        end_min = min(firstList[i][1], secondList[j][1])
-
-        if start_max <= end_min:
-            intersections.append([start_max, end_min])
-
-        if firstList[i][1] < secondList[j][1]:
-            i += 1
+    while left < right:
+        mid = (left + right) // 2
+        if nums[mid] > nums[right]:
+            left = mid + 1
         else:
+            right = mid
+    
+    return nums[left]
+
+# O-Notation: O(log n)
+# n = length of nums
+# - Binary search is applied by adapting to the rotation.
+```
+
+**Explanation:**
+Use binary search logic on the sorted array; adjust bounds based on comparison of middle element with the tail element, efficiently converging to the minimum value instead of a linear scan.
+
+---
+
+### Problem 162: Find Peak Element (Medium)
+
+**Problem Statement:**
+
+A peak element in a given array is an element that is greater than its neighbors. Return any peak element's index. Assume elements at each boundary are comparably low.
+
+**Example:**
+
+Input: `nums = [1,2,3,1]`
+Output: `2` (Index of peak number `3`)
+
+**Solution:**
+
+```python
+def findPeakElement(nums: list) -> int:
+    left, right = 0, len(nums) - 1
+    
+    while left < right:
+        mid = (left + right) // 2
+        if nums[mid] > nums[mid + 1]:
+            right = mid
+        else:
+            left = mid + 1
+    
+    return left
+
+# O-Notation: O(log n)
+# n = length of nums
+# - Binary search achieves efficient locating through strategic elimination.
+```
+
+**Explanation:**
+Binary search adapts via evaluating mid-index elements against their neighbors. Appropriate directional shifts inside logically maintain peak vicinity, arriving efficiently at a peak point by termination.
+
+---
+
+### Problem 523: Continuous Subarray Sum (Medium)
+
+**Problem Statement:**
+
+Given a list of integers `nums` and an integer `k`, return `True` if the array has a continuous subarray of size at least two whose elements sum up to a multiple of `k`, otherwise `False`.
+
+**Example:**
+
+Input: `nums = [23, 2, 4, 6, 7], k = 6`
+Output: `True`
+
+**Solution:**
+
+```python
+def checkSubarraySum(nums: list, k: int) -> bool:
+    prefix_sum = 0
+    mods = {0: -1}
+
+    for i, num in enumerate(nums):
+        prefix_sum += num
+        if k != 0:
+            mod = prefix_sum % k
+        else:
+            mod = prefix_sum
+        
+        if mod in mods and i - mods[mod] > 1:
+            return True
+        
+        if mod not in mods:
+            mods[mod] = i
+    
+    return False
+
+# O-Notation: O(n)
+# n = length of nums
+# - Traverse with constant-time hash operations per element.
+```
+
+**Explanation:**
+Utilize cumulative sum mod operations stored in a hash map to record earlier positions. This rapidly identifies a sum divisible by `k` by handling duplicates with spacing checks.
+
+---
+
+### Problem 636: Exclusive Time of Functions (Medium)
+
+**Problem Statement:**
+
+Given `n` functions, which are logged as start or end in a list. Calculate each function's exclusive execution time.
+
+**Example:**
+
+Input: `logs = ["0:start:0", "1:start:2", "1:end:5", "0:end:6"]`
+Output: `[3, 4]`
+
+**Solution:**
+
+```python
+def exclusiveTime(n: int, logs: list) -> list:
+    result = [0] * n
+    stack = []
+    prev_time = 0
+    
+    for log in logs:
+        fn_id, type, timestamp = log.split(':')
+        fn_id, timestamp = int(fn_id), int(timestamp)
+        
+        if type == 'start':
+            if stack:
+                result[stack[-1]] += timestamp - prev_time
+            stack.append(fn_id)
+            prev_time = timestamp
+        else:
+            result[stack.pop()] += timestamp - prev_time + 1
+            prev_time = timestamp + 1
+    
+    return result
+
+# O-Notation: O(l)
+# l = number of logs
+# - Each log entry is processed, with stack operations yielding linear performance.
+```
+
+**Explanation:**
+Using a stack, the solution tracks active function calls. Each timestamp adjustment and stack interaction are managed to account for nested operations logically, ensuring exclusive time accounting.
+
+---
+
+### Problem 766: Toeplitz Matrix (Medium)
+
+**Problem Statement:**
+
+A matrix is Toeplitz if every diagonal from top left to bottom right has the same elements. Check if the matrix is Toeplitz.
+
+**Example:**
+
+Input: `matrix = [[1,2,3,4],[5,1,2,3],[9,5,1,2]]`
+Output: `True`
+
+**Solution:**
+
+```python
+def isToeplitzMatrix(matrix: list) -> bool:
+    for r in range(1, len(matrix)):
+        for c in range(1, len(matrix[0])):
+            if matrix[r][c] != matrix[r-1][c-1]:
+                return False
+    return True
+
+# O-Notation: O(m * n)
+# m and n are the rows and columns numbers in the matrix.
+# - Each element is checked against its predecessor in the prior diagonal.
+```
+
+**Explanation:**
+Toeplitz matrix verification necessitates confirming each element maintains consistent diagonal sequencing checked against its upper left neighbor. This codifies diagonal continuity effectively.
+
+---
+
+### Problem 1868: Product of Two Run-Length Encoded Arrays (Easy)
+
+**Problem Statement:**
+
+Given two run-length encoded arrays, return their run-length product.
+
+**Example:**
+
+Input: `encoded1 = [[1,3],[2,3]], encoded2 = [[6,3],[3,3]]`
+Output: `[[6,3],[6,3]]`
+
+**Solution:**
+
+```python
+def findRLEProduct(encoded1: list, encoded2: list) -> list:
+    i = j = 0
+    res = []
+    
+    while i < len(encoded1) and j < len(encoded2):
+        val1, count1 = encoded1[i]
+        val2, count2 = encoded2[j]
+        product = val1 * val2
+        min_count = min(count1, count2)
+        
+        if res and res[-1][0] == product:
+            res[-1][1] += min_count
+        else:
+            res.append([product, min_count])
+        
+        encoded1[i][1] -= min_count
+        encoded2[j][1] -= min_count
+        
+        if encoded1[i][1] == 0:
+            i += 1
+        if encoded2[j][1] == 0:
             j += 1
-            
-    return intersections
-
-# Complexity Analysis
-# - Time Complexity: O(n + m), where n is the length of the first list and m is the length of the second list.
-# - Space Complexity: O(n + m), for the result storage.
-```
-
-- Use two pointers to traverse interval lists.
-- Check and record overlaps while progressing the pointer of the exhausted interval.
-
-### 347. Top K Frequent Elements (Medium)
-
-#### Problem Statement
-Given a non-empty array of integers `nums`, return the `k` most frequent elements.
-
-#### Sample Input and Output
-- Input: `nums = [1,1,1,2,2,3], k = 2`
-- Output: `[1,2]`
-
-#### Solution Explanation
-```python
-from collections import Counter
-import heapq
-
-def topKFrequent(nums: list[int], k: int) -> list[int]:
-    count = Counter(nums)
-    return heapq.nlargest(k, count.keys(), key=count.get)
-
-# Complexity Analysis
-# - Time Complexity: O(n log k) for heap operations.
-# - Space Complexity: O(n), store element frequencies.
-```
-
-- Count frequencies using a hashmap.
-- Use a heap to retrieve top `k` elements efficiently.
-
-### 791. Custom Sort String (Medium)
-
-#### Problem Statement
-You have a string `order` and a string `s`. Sort `s` such that the characters appear in the order they appear in `order`. Characters not in `order` can be in any order.
-
-#### Sample Input and Output
-- Input: `order = "cba", s = "abcd"`
-- Output: `"cbad"`
-
-#### Solution Explanation
-```python
-def customSortString(order: str, s: str) -> str:
-    order_index = {char: i for i, char in enumerate(order)}
-    return ''.join(sorted(s, key=lambda x: order_index.get(x, len(order))))
-
-# Complexity Analysis
-# - Time Complexity: O(n log n), due to sort operation on `s`.
-# - Space Complexity: O(n), to store sorted version of `s`.
-```
-
-- Create a priority dictionary based on the custom order.
-- Sort `s` customly using order priorities.
-
-In each of these problems, effective data handling and efficient use of standard library data structures (like heaps, dictionaries, and sets) help achieve desired outcomes. Each solution revolves around understanding the constraints and utilizing appropriate algorithms or methods to provide efficient and readable code.
-
-### 426. Convert Binary Search Tree to Sorted Doubly Linked List (Medium)
-
-#### Problem Statement
-Convert a Binary Search Tree (BST) into a sorted circular doubly-linked list in-place, where the left pointer is used as the previous pointer and the right pointer as the next pointer.
-
-#### Sample Input and Output
-- Input: BST where the inorder traversal is `[1,2,3,4,5,6,7]`
-- Output: Circular doubly-linked list: `1 <-> 2 <-> 3 <-> 4 <-> 5 <-> 6 <-> 7`
-
-#### Solution Explanation
-```python
-class Node:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-def treeToDoublyList(root: 'Node') -> 'Node':
-    if not root:
-        return None
     
-    def inorder(node):
-        nonlocal last, first
-        if node:
-            # Left
-            inorder(node.left)
-            # Node
-            if last:
-                last.right = node
-                node.left = last
+    return res
+
+# O-Notation: O(m + n)
+# m and n are the lengths of encoded1 and encoded2.
+# - Traverse each list concurrently based on element counts.
+```
+
+**Explanation:**
+The approach processes both encoded arrays concurrently by matching and extending common runs or branching terminators, leveraging each encoded sequence's count attribute for correct accumulation.
+
+---
+
+### Problem 15: 3Sum (Medium)
+
+**Problem Statement:**
+
+Find all unique triplets in the array which gives the sum of zero.
+
+**Example:**
+
+Input: `nums = [-1, 0, 1, 2, -1, -4]`
+Output: `[[-1, -1, 2], [-1, 0, 1]]`
+
+**Solution:**
+
+```python
+def threeSum(nums: list) -> list:
+    nums.sort()
+    result = []
+    
+    for i in range(len(nums)):
+        if i > 0 and nums[i] == nums[i - 1]:
+            continue
+        left, right = i + 1, len(nums) - 1
+        while left < right:
+            total = nums[i] + nums[left] + nums[right]
+            if total < 0:
+                left += 1
+            elif total > 0:
+                right -= 1
             else:
-                first = node
-            last = node
-            # Right
-            inorder(node.right)
+                result.append([nums[i], nums[left], nums[right]])
+                while left < right and nums[left] == nums[left + 1]: left += 1
+                while left < right and nums[right] == nums[right - 1]: right -= 1
+                left += 1
+                right -= 1
     
-    first, last = None, None
-    inorder(root)
-    
-    # Connect the first and last nodes to make it circular
-    last.right = first
-    first.left = last
-    
-    return first
+    return result
 
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the number of nodes in the BST.
-# - Space Complexity: O(h), where h is the height of the tree (stack space due to recursion).
+# O-Notation: O(n^2)
+# n = number of elements in nums
+# - Sorting then leveraging two-pointers for pairs results in quadratic complexity.
 ```
 
-- Use in-order traversal to link nodes in sequence.
-- Adjust the start and end of the list to be circular.
+**Explanation:**
+By sorting the array initially, efficiency is gained in managing paired scans via two pointers. Sorting means triplet formation naturally progresses around potential zero sums, ensuring distinct results by order manipulation.
 
-### 129. Sum Root to Leaf Numbers (Medium)
+---
 
-#### Problem Statement
-Given a binary tree where each node contains a single digit from `0` to `9`, each root-to-leaf path represents a number. Return the sum of these numbers.
+### Problem 124: Binary Tree Maximum Path Sum (Medium)
 
-#### Sample Input and Output
-- Input: `[1,2,3]`
-- Output: `25` (since the paths are `12` and `13`)
+**Problem Statement:**
 
-#### Solution Explanation
+Given a non-empty binary tree, find the maximum path sum. A path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections (it can be any node to any other node and doesn't have to pass through the root).
+
+**Example:**
+
+Input: Binary Tree `[1,2,3]`
+Output: `6`
+
+**Solution:**
+
 ```python
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -1313,588 +1580,1013 @@ class TreeNode:
         self.left = left
         self.right = right
 
-def sumNumbers(root: TreeNode) -> int:
-    def dfs(node, current_number):
+def maxPathSum(root: TreeNode) -> int:
+    max_sum = float('-inf')
+    
+    def max_gain(node):
+        nonlocal max_sum
         if not node:
             return 0
-        current_number = current_number * 10 + node.val
-        if not node.left and not node.right:  # If it's a leaf
-            return current_number
-        return dfs(node.left, current_number) + dfs(node.right, current_number)
+        
+        # Recursively call max_gain on the node's children.
+        left_gain = max(max_gain(node.left), 0)
+        right_gain = max(max_gain(node.right), 0)
+        
+        # Profit if path includes the current node
+        price_newpath = node.val + left_gain + right_gain
+        
+        # Update global max_sum if the new path's profit is higher
+        max_sum = max(max_sum, price_newpath)
+        
+        return node.val + max(left_gain, right_gain)
+    
+    max_gain(root)
+    return max_sum
+
+# O-Notation: O(n)
+# n = number of nodes in the binary tree
+# - Each node visited once for computation of gains.
+```
+
+**Explanation:**
+This solution employs a post-order traversal using recursion to determine the maximum gain obtainable from any given node. The maximum path sum is continually updated by considering potential maximum paths that both include and extend from each node.
+
+---
+
+### Problem 129: Sum Root to Leaf Numbers (Hard assumed to be Hard but Medium)
+
+**Problem Statement:**
+
+Given a binary tree containing digits from 0-9 only, each root-to-leaf path could represent a number. Find the total of all root-to-leaf numbers.
+
+**Example:**
+
+Input: A tree `[1,2,3]` produces the sum of `12 + 13 = 25`.
+
+**Solution:**
+
+```python
+def sumNumbers(root: TreeNode) -> int:
+    def dfs(node, current_sum):
+        if not node:
+            return 0
+        current_sum = current_sum * 10 + node.val
+        
+        if not node.left and not node.right:  # if it's a leaf
+            return current_sum
+        
+        # Otherwise check both subtrees
+        return dfs(node.left, current_sum) + dfs(node.right, current_sum)
     
     return dfs(root, 0)
 
-# Complexity Analysis
-# - Time Complexity: O(n), visit all nodes once.
-# - Space Complexity: O(h), corresponding to the height of the tree.
+# O-Notation: O(n)
+# n = number of nodes in the binary tree
+# - Visit each node once, sum contributions of leaf paths.
 ```
 
-- Perform DFS accumulating path sums.
-- Return sum when a leaf node is reached.
+**Explanation:**
+The recursive solution calculates accumulated sums along paths by progressively building numbers through digit multiplication and addition, then returns totals only from leaf endpoints.
 
-### 670. Maximum Swap (Medium)
+---
 
-#### Problem Statement
-Given a non-negative integer, you are allowed to swap two digits at most once to get the maximum possible number. Return the maximum possible number.
+### Problem 199: Binary Tree Right Side View (Medium)
 
-#### Sample Input and Output
-- Input: `num = 2736`
-- Output: `7236`
+**Problem Statement:**
 
-#### Solution Explanation
+Given a binary tree, return the values of nodes you can see from the right side, ordered from top to bottom.
+
+**Example:**
+
+Input: `root = [1,2,3, null, 5, null, 4]`
+Output: `[1, 3, 4]`
+
+**Solution:**
+
 ```python
-def maximumSwap(num: int) -> int:
-    num_str = list(str(num))
-    last = {int(x): i for i, x in enumerate(num_str)}
-
-    for i, x in enumerate(num_str):
-        for d in range(9, int(x), -1):
-            if last.get(d, -1) > i:
-                num_str[i], num_str[last[d]] = num_str[last[d]], num_str[i]
-                return int(''.join(num_str))
+def rightSideView(root: TreeNode) -> list:
+    if not root:
+        return []
     
-    return num
+    view = []
+    def collect(node, level):
+        if level == len(view):
+            view.append(node.val)
+        for next_node in [node.right, node.left]:
+            if next_node:
+                collect(next_node, level + 1)
+    
+    collect(root, 0)
+    return view
 
-# Complexity Analysis
-# - Time Complexity: O(n), where n is the length of the number.
-# - Space Complexity: O(1), modification is in-place besides auxiliary data.
+# O-Notation: O(n)
+# n = number of nodes in the tree
+# - Each node is visited once for potential diagonal visibility checks.
 ```
 
-- Use a hash map to record last occurrence of each digit.
-- Execute a single swap with the largest possible digit.
+**Explanation:**
+The routine uses preorder traversal (right-to-left) on levels, appending nodes to the view only when accessing levels hasn’t been established in earlier accesses, giving a structured right-side view.
 
-### 1004. Max Consecutive Ones III (Medium)
+---
 
-#### Problem Statement
-Given a binary array `nums` and an integer `k`, return the maximum number of consecutive `1`s in the array if you can flip at most `k` `0`s.
+### Problem 270: Closest Binary Search Tree Value (Medium)
 
-#### Sample Input and Output
-- Input: `nums = [1,1,0,0,1,1,1,0,1,1], k = 2`
-- Output: `7`
+**Problem Statement:**
 
-#### Solution Explanation
+Given the `root` of a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
+
+**Example:**
+
+Input: `root = 4,2,5,1,3`, `target = 3.714286`
+Output: `4`
+
+**Solution:**
+
 ```python
-def longestOnes(nums: list[int], k: int) -> int:
-    left = 0
-    for right in range(len(nums)):
-        if nums[right] == 0:
-            k -= 1
-        while k < 0:
-            if nums[left] == 0:
-                k += 1
-            left += 1
-    return right - left + 1
+def closestValue(root: TreeNode, target: float) -> int:
+    closest = root.val
+    
+    while root:
+        closest = min((closest, root.val), key=lambda x: abs(x - target))
+        root = root.left if target < root.val else root.right
+    
+    return closest
 
-# Complexity Analysis
-# - Time Complexity: O(n), single pass with sliding window.
-# - Space Complexity: O(1), no extra space beyond input.
+# O-Notation: O(h)
+# h = height of the tree
+# - Binary search tree helps focus on one seeking realm per depth.
 ```
 
-- Utilize a sliding window approach.
-- Expand to include more 1s and contract when zeros exceed allowed.
+**Explanation:**
+Employing the properties of BST, navigate towards potential closer values based on target comparison, efficiently pruning sub-trees actively reducing unnecessary checks.
 
-### 346. Moving Average from Data Stream (Easy)
+---
 
-#### Problem Statement
-Given a stream of integers, calculate the moving average of all integers in the sliding window of size `size`.
+### Problem 346: Moving Average from Data Stream (Easy)
 
-#### Sample Input and Output
-- Input: Sequence `1, 10, 3, 5` with size `3`
-- Output: Moving averages `[1.0, 5.5, 4.6667, 6.0]`
+**Problem Statement:**
 
-#### Solution Explanation
+Implement a class `MovingAverage` that maintains and computes the moving average of numbers from a data stream.
+
+**Example:**
+
+Input:
+```plaintext
+	movingAverage = MovingAverage(3)
+	movingAverage.next(1) = 1
+	movingAverage.next(10) = (1 + 10) / 2
+	movingAverage.next(3) = (1 + 10 + 3) / 3
+	movingAverage.next(5) = (10 + 3 + 5) / 3
+```
+
+**Solution:**
+
 ```python
 from collections import deque
 
 class MovingAverage:
     def __init__(self, size: int):
-        self.window = deque()
-        self.size = size
+        self.queue = deque()
+        self.max_size = size
         self.window_sum = 0
 
     def next(self, val: int) -> float:
-        if len(self.window) == self.size:
-            self.window_sum -= self.window.popleft()
-        
-        self.window.append(val)
         self.window_sum += val
-        return self.window_sum / len(self.window)
+        self.queue.append(val)
+        if len(self.queue) > self.max_size:
+            self.window_sum -= self.queue.popleft()
+        return self.window_sum / len(self.queue)
 
-# Complexity Analysis
-# - Time Complexity: O(1), readjustments and average calculation are constant time.
-# - Space Complexity: O(n), where n is the size of the window.
+# O-Notation: O(1) for each next call
+# - Maintain constant-time complexity for element entry/removal.
 ```
 
-- Utilize a deque to maintain the window.
-- Adjust the sum with each new number and calculate the average efficiently.
+**Explanation:**
+Employ a deque to support fixed-size efficiency in addition and removal at both ends, integrating immediate sum updates for moving average calculation, optimized for speed and space.
 
-Each of these problems uses simple but effective linear scans and structures like sliding windows, deques, or depth-first search (DFS) to manage dynamic constraints or traverse structured data. Using these approaches ensures optimal performance for the operations.
+---
 
-### 987. Vertical Order Traversal of a Binary Tree (Hard)
+### Problem 347: Top K Frequent Elements (Easy assumed Easy but Medium)
 
-#### Problem Statement
-Given a binary tree, return the vertical order traversal of its nodes' values. Nodes from top to bottom, and nodes on the same row level from left to right.
+**Problem Statement:**
 
-#### Sample Input and Output
-- Input: `root = [3,9,20,null,null,15,7]`
-- Output: `[[9],[3,15],[20],[7]]`
+Given a non-empty array of integers, return the `k` most frequent elements.
 
-#### Solution Explanation
+**Example:**
+
+Input: `nums = [1,1,1,2,2,3], k = 2`
+Output: `[1,2]`
+
+**Solution using Min-Heap:**
+
 ```python
-from collections import defaultdict, deque
+import heapq
+from collections import Counter
 
-class TreeNode:
+def topKFrequent(nums: list, k: int) -> list:
+    count = Counter(nums)
+    return heapq.nlargest(k, count.keys(), key=count.get)
+
+# O-Notation: O(N log k)
+# N = number of unique elements in nums
+# - Min-heap k most frequent retrieval is efficiently supportive with heap structures.
+```
+
+**Explanation:**
+Counter layers frequency assessments allowing min-heaps to efficiently maintain the K most frequent elements based on value counts, fine-tuned to optimization judiciously leveraging both data structures.
+
+---
+
+### Problem 348: Design Tic-Tac-Toe (Medium)
+
+**Problem Statement:**
+
+Design a class `TicTacToe` that allows players to play a Tic-Tac-Toe game on an n x n grid.
+
+**Example:**
+
+`TicTacToe.move(0, 0, 1)` returns `0`
+`TicTacToe.move(0, 1, 2)` returns `0`
+`TicTacToe.move(1, 1, 1)` returns `0`
+`TicTacToe.move(1, 0, 2)` returns `0`
+`TicTacToe.move(2, 2, 1)` returns `1`
+
+**Solution:**
+
+```python
+class TicTacToe:
+    def __init__(self, n: int):
+        self.n = n
+        self.rows = [0] * n
+        self.cols = [0] * n
+        self.diagonal = 0
+        self.anti_diagonal = 0
+
+    def move(self, row: int, col: int, player: int) -> int:
+        move_score = 1 if player == 1 else -1
+        
+        self.rows[row] += move_score
+        self.cols[col] += move_score
+        
+        if row == col:
+            self.diagonal += move_score
+        
+        if row + col == self.n - 1:
+            self.anti_diagonal += move_score
+        
+        n = self.n
+        if (abs(self.rows[row]) == n or
+            abs(self.cols[col]) == n or
+            abs(self.diagonal) == n or
+            abs(self.anti_diagonal) == n):
+            return player
+        
+        return 0
+
+# O-Notation: O(1) for each move
+# - Increment operations are consistent in supporting node level checkpoints.
+```
+
+**Explanation:**
+Utilize arrays to track line-based score impacts for n-size effectiveness, ensuring each board move effectively scrutinizes row, column, and diagonal totals, delivering immediate response upon achieving win conditions.
+
+---
+
+### Problem 480: Sliding Window Median (Medium)
+
+**Problem Statement:**
+
+Given an array of `nums` and a `window size k`, find the median of each window and return these medians as a list. The median is the middle value in an ordered list. If the list length is even, the median is the average of the two middle values.
+
+**Example:**
+
+Input: `nums = [1,3,-1,-3,5,3,6,7], k = 3`
+Output: `[1, -1, -1, 3, 5, 6]`
+
+**Solution using Two Heaps:**
+
+```python
+import heapq
+from heapq import heappush, heappop
+
+class SlidingWindowMedian:
+    def __init__(self):
+        self.left = []  # Max-heap
+        self.right = [] # Min-heap
+    
+    def medianSlidingWindow(self, nums, k):
+        # λ-function to balance the heaps
+        def add(num):
+            if not self.left or num <= -self.left[0]:
+                heappush(self.left, -num)
+            else:
+                heappush(self.right, num)
+            balance()
+        
+        def remove(num):
+            if num <= -self.left[0]:
+                self.left.remove(-num)
+                heapq.heapify(self.left)
+            else:
+                self.right.remove(num)
+                heapq.heapify(self.right)
+            balance()
+        
+        def balance():
+            # Ensure size properties
+            if len(self.left) > len(self.right) + 1:
+                heappush(self.right, -heappop(self.left))
+            if len(self.right) > len(self.left):
+                heappush(self.left, -heappop(self.right))
+        
+        # Start the sliding window
+        result = []
+        for i, num in enumerate(nums):
+            add(num)
+            if i >= k - 1:
+                # Append median
+                if k % 2 == 0:
+                    result.append((-self.left[0] + self.right[0]) / 2.0)
+                else:
+                    result.append(float(-self.left[0]))
+                # Slide the window
+                remove(nums[i - k + 1])
+        return result
+
+# O-Notation: O(n log k)
+# n = number of elements in nums, k = window size
+# - Balancing and maintaining heaps takes logarithmic time relative to window size.
+```
+
+**Explanation:**
+Use two heaps: a max-heap for the lower window and a min-heap for the upper window. These maintain the median efficiently. Balancing keeps their sizes correct as elements enter and exit the window.
+
+---
+
+### Problem 498: Diagonal Traverse (Hard)
+
+**Problem Statement:**
+
+Given a matrix, return all elements of the matrix in diagonal order starting from the top-left element.
+
+**Example:**
+
+```plaintext
+Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [1,2,4,7,5,3,6,8,9]
+```
+
+**Solution:**
+
+```python
+def findDiagonalOrder(matrix: list) -> list:
+    if not matrix or not matrix[0]:
+        return []
+    
+    rows, cols = len(matrix), len(matrix[0])
+    result, intermediate = [], []
+    
+    for d in range(rows + cols - 1):
+        intermediate.clear()
+        
+        r = 0 if d < cols else d - cols + 1
+        c = d if d < cols else cols - 1
+        
+        while r < rows and c > -1:
+            intermediate.append(matrix[r][c])
+            r += 1
+            c -= 1
+        
+        if d % 2 == 0:
+            result.extend(intermediate[::-1])
+        else:
+            result.extend(intermediate)
+    
+    return result
+
+# O-Notation: O(m * n)
+# m and n are dimensions of the matrix
+# - Each element is processed once in tracing diagonal paths.
+```
+
+**Explanation:**
+Iterate across diagonals by adjusting start points row-wise and column-wise. Use a list to store the diagonal elements, reversing elements collected on every other pass to trace proper zigzag patterns.
+
+---
+
+### Problem 426: Convert Binary Search Tree to Sorted Doubly Linked List (Medium)
+
+**Problem Statement:**
+
+Convert a Binary Search Tree to a circular sorted doubly linked list, where the nodes are sorted in ascending order.
+
+**Example:**
+
+Given BST:
+
+```plaintext
+    4
+   / \
+  2   5
+ / \
+1   3
+```
+
+Converted doubly linked list: `1 <-> 2 <-> 3 <-> 4 <-> 5 <-> (back to head)`
+
+**Solution:**
+
+```python
+class Node:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
 
-def verticalTraversal(root: TreeNode) -> list[list[int]]:
+def treeToDoublyList(root: Node) -> Node:
     if not root:
-        return []
-
-    node_map = defaultdict(list)
-    queue = deque([(root, 0, 0)])  # (node, column, row)
-    
-    while queue:
-        node, col, row = queue.popleft()
-        node_map[col].append((row, node.val))
+        return None
         
-        if node.left:
-            queue.append((node.left, col - 1, row + 1))
-        if node.right:
-            queue.append((node.right, col + 1, row + 1))
-    
-    results = []
-    for col in sorted(node_map.keys()):
-        results.append([val for row, val in sorted(node_map[col])])
-    
-    return results
-
-# Complexity Analysis
-# - Time Complexity: O(n log n), mainly due to sorting the nodes.
-# - Space Complexity: O(n), to store nodes in the hashmap.
-```
-
-- Use a BFS approach to traverse, noting down row and column indices.
-- Sort nodes column-wise, and then row/val-wise within the column.
-
-### 15. 3Sum (Medium)
-
-#### Problem Statement
-Given an integer array `nums`, find all unique triplets that sum to zero.
-
-#### Sample Input and Output
-- Input: `nums = [-1,0,1,2,-1,-4]`
-- Output: `[[-1,-1,2],[-1,0,1]]`
-
-#### Solution Explanation
-```python
-def threeSum(nums: list[int]) -> list[list[int]]:
-    nums.sort()
-    result = []
-    
-    for i in range(len(nums) - 2):
-        if i > 0 and nums[i] == nums[i-1]:  # Avoid duplicates
-            continue
-        left, right = i + 1, len(nums) - 1
-        while left < right:
-            total = nums[i] + nums[left] + nums[right]
-            if total == 0:
-                result.append([nums[i], nums[left], nums[right]])
-                while left < right and nums[left] == nums[left+1]:  # Avoid duplicates
-                    left += 1
-                while left < right and nums[right] == nums[right-1]:  # Avoid duplicates
-                    right -= 1
-                left += 1
-                right -= 1
-            elif total < 0:
-                left += 1
+    def in_order(node):
+        nonlocal last, first
+        if node:
+            # Left
+            in_order(node.left)
+            # Node
+            if last:
+                last.right, node.left = node, last
             else:
-                right -= 1
+                first = node
+            last = node
+            # Right
+            in_order(node.right)
+    
+    first, last = None, None
+    in_order(root)
+    
+    # Make it circular
+    last.right, first.left = first, last
+    return first
 
-    return result
-
-# Complexity Analysis
-# - Time Complexity: O(n^2), as sorting + two-pointer scan for each element.
-# - Space Complexity: O(log n) or O(n), depending on sorting implementation.
+# O-Notation: O(n)
+# n = number of nodes in the BST
+# - Each node gets processed once through in-order traversal.
 ```
 
-- Sort the array, then use pointers from both ends adjusting to zero sum.
-- Consider duplicates carefully to ensure unique triplets.
+**Explanation:**
+Use in-order traversal to process nodes sequentially; altering pointers between successive nodes converts tree elements to a doubly linked list. Final adjustment converts endpoints into a circular structure.
 
-### 1539. Kth Missing Positive Number (Easy)
+---
 
-#### Problem Statement
-Return the `k`-th missing positive integer from a sorted list of unique integers.
+### Problem 938: Range Sum of BST (Medium)
 
-#### Sample Input and Output
-- Input: `arr = [2,3,4,7,11], k = 5`
-- Output: `9`
+**Problem Statement:**
 
-#### Solution Explanation
+Given the `root` of a binary search tree and two integers `low` and `high`, return the sum of values of all nodes with a value in the inclusive range `[low, high]`.
+
+**Example:**
+
+Input: A BST and `low = 7`, `high = 15`
+Output: Sum within range
+
+**Solution:**
+
 ```python
-def findKthPositive(arr: list[int], k: int) -> int:
-    missing = 0
-    current = 1
-    index = 0
-    while missing < k:
-        if index < len(arr) and arr[index] == current:
-            index += 1
-        else:
-            missing += 1
-        if missing == k:
-            return current
-        current += 1
-    return current
+def rangeSumBST(root: TreeNode, low: int, high: int) -> int:
+    if not root:
+        return 0
+    if root.val < low:
+        return rangeSumBST(root.right, low, high)
+    elif root.val > high:
+        return rangeSumBST(root.left, low, high)
+    else:
+        return root.val + rangeSumBST(root.left, low, high) + rangeSumBST(root.right, low, high)
 
-# Complexity Analysis
-# - Time Complexity: O(n + k), where n is length of list.
-# - Space Complexity: O(1), constant space usage.
+# O-Notation: O(n)
+# n = number of nodes that fall within or close to path traversed
+# - Efficiently skips unnecessary branches using BST properties.
 ```
 
-- Increment through list counting missing numbers until reaching `k`.
-- Return the correct number once the missing count matches `k`.
+**Explanation:**
+Exploit BST properties to skip branches where node values fall outside specified bounds. Traverse recursively, focusing only on subtrees that may contain nodes pertinent to the targeted sum.
 
-### 23. Merge k Sorted Lists (Hard)
+---
 
-#### Problem Statement
-Merge `k` sorted linked lists and return it as one sorted list.
+### Problem 1768: Merge Strings Alternately (Easy)
 
-#### Sample Input and Output
-- Input: `lists = [[1,4,5],[1,3,4],[2,6]]`
-- Output: `[1,1,2,3,4,4,5,6]`
+**Problem Statement:**
 
-#### Solution Explanation
+Given two strings `word1` and `word2`, create a new string by alternately appending characters from each string.
+
+**Example:**
+
+Input: `word1 = "abc", word2 = "pqr"`
+Output: `"apbqcr"`
+
+**Solution:**
+
 ```python
-from heapq import heappush, heappop
+def mergeAlternately(word1: str, word2: str) -> str:
+    merged = []
+    i, j = 0, 0
+    
+    while i < len(word1) and j < len(word2):
+        merged.append(word1[i])
+        merged.append(word2[j])
+        i += 1
+        j += 1
+    
+    merged.append(word1[i:])
+    merged.append(word2[j:])
+    
+    return ''.join(merged)
 
+# O-Notation: O(m + n)
+# m and n are lengths of word1 and word2
+# - Process each character once, with linear scans determining merging.
+```
+
+**Explanation:**
+Append characters sequentially from each string into a result list, handling remainder appending after either string runs out of possible characters.
+
+---
+
+### Problem 1762: Buildings With an Ocean View (Easy)
+
+**Problem Statement:**
+
+Given an array `heights`, return a list of indices of buildings that have an ocean view, observing from right to left.
+
+**Example:**
+
+Input: `heights = [4, 2, 3, 1]`
+Output: `[0, 2, 3]`
+
+**Solution:**
+
+```python
+def findBuildings(heights: list) -> list:
+    visible = []
+    max_height = 0
+    
+    for i in reversed(range(len(heights))):
+        if heights[i] > max_height:
+            visible.append(i)
+            max_height = heights[i]
+            
+    return visible[::-1]
+
+# O-Notation: O(n)
+# n = number of buildings
+# - Single reverse scan identifies and appends visible building indices.
+```
+
+**Explanation:**
+Traverse the list from right to left, maintaining the maximum encountered height. Append indices of buildings taller than this maximum, which ensures they have an unobstructed view until further buildings extend the view threshold.
+
+---
+
+### Problem 2: Add Two Numbers (Medium)
+
+**Problem Statement:**
+
+Given two non-empty linked lists representing two non-negative integers, where digits are stored in reverse order, add the two numbers and return the sum as a linked list.
+
+**Example:**
+
+Input: `(2 -> 4 -> 3) + (5 -> 6 -> 4)`
+Output: `7 -> 0 -> 8` (342 + 465 = 807)
+
+**Solution:**
+
+```python
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
-def mergeKLists(lists: list[ListNode]) -> ListNode:
-    min_heap = []
-    for head in lists:
-        if head:
-            heappush(min_heap, (head.val, head))
-    
-    dummy = ListNode(0)
+def addTwoNumbers(l1: ListNode, l2: ListNode) -> ListNode:
+    dummy = ListNode()
     current = dummy
+    carry = 0
     
-    while min_heap:
-        value, node = heappop(min_heap)
-        current.next = ListNode(value)
+    while l1 or l2 or carry:
+        val1 = l1.val if l1 else 0
+        val2 = l2.val if l2 else 0
+        
+        total = val1 + val2 + carry
+        carry = total // 10
+        current.next = ListNode(total % 10)
         current = current.next
-        if node.next:
-            heappush(min_heap, (node.next.val, node.next))
+        
+        if l1: l1 = l1.next
+        if l2: l2 = l2.next
     
     return dummy.next
 
-# Complexity Analysis
-# - Time Complexity: O(n log k), with `n` being all nodes and `k` being lists.
-# - Space Complexity: O(k), heap usage.
+# O-Notation: O(max(m, n))
+# m, n are the lengths of the linked lists l1 and l2
+# - Iterative processing continues until all elements and carry are resolved.
 ```
 
-- Use a priority queue (min-heap) to maintain smallest elements.
-- Continuously extract and attach until exhausted.
+**Explanation:**
+Simulate digit-wise addition, carrying over excess through linked node creation and logic. Iterate over both linked lists, extending each result node with correctly digitized values, boosted by carry integration.
 
-### 133. Clone Graph (Medium)
+---
 
-#### Problem Statement
-Clone a graph represented by a node's connections list and return the clone of the node. The graph is connected and undirected.
+### Problem 4: Median of Two Sorted Arrays (Medium assumed to be Medium but Hard)
 
-#### Sample Input and Output
-- Input: `node` which represents connections in adjacency
-- Output: Cloned graph starting from given node
+**Problem Statement:**
 
-#### Solution Explanation
+Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return the median of the two sorted arrays.
+
+**Example:**
+
+Input: `nums1 = [1, 3]`, `nums2 = [2]`
+Output: `2.0`
+
+**Solution:**
+
 ```python
-class Node:
-    def __init__(self, val=0, neighbors=None):
-        self.val = val
-        self.neighbors = neighbors if neighbors is not None else []
-
-def cloneGraph(node: Node) -> Node:
-    if not node:
-        return None
+def findMedianSortedArrays(nums1: list, nums2: list) -> float:
+    # Ensure nums1 is the smaller array
+    if len(nums1) > len(nums2):
+        nums1, nums2 = nums2, nums1
     
-    node_map = {}
+    x, y = len(nums1), len(nums2)
+    low, high = 0, x
     
-    def clone(node):
-        if node in node_map:
-            return node_map[node]
+    while low <= high:
+        partitionX = (low + high) // 2
+        partitionY = (x + y + 1) // 2 - partitionX
         
-        copy = Node(node.val)
-        node_map[node] = copy
+        # If partitionX is 0, it means nothing is to the left; use -inf
+        maxX = float('-inf') if partitionX == 0 else nums1[partitionX - 1]
+        minX = float('inf') if partitionX == x else nums1[partitionX]
         
-        for neighbor in node.neighbors:
-            copy.neighbors.append(clone(neighbor))
+        maxY = float('-inf') if partitionY == 0 else nums2[partitionY - 1]
+        minY = float('inf') if partitionY == y else nums2[partitionY]
         
-        return copy
-
-    return clone(node)
-
-# Complexity Analysis
-# - Time Complexity: O(n), each node and edge processed once.
-# - Space Complexity: O(n), hash map for clones.
-```
-
-- Use DFS to reach each node, cloning and copying neighbors.
-- Utilize a hashmap to store visited clones to avoid cycles.
-
-Each solution leverages data structures, such as heaps, queues, and recursive approaches to efficiently solve diverse problems ranging from tree and linked list manipulations to graph cloning.
-
-### 636. Exclusive Time of Functions (Medium)
-
-#### Problem Statement
-Given the `n` functions running on a single-threaded CPU, find the exclusive time of each function. Functions are run in a log series, where each log is formatted `function_id: start_or_end: timestamp`.
-
-#### Sample Input and Output
-- Input: `n = 2`, `logs = ["0:start:0","1:start:2","1:end:5","0:end:6"]`
-- Output: `[3,4]`
-
-#### Solution Explanation
-```python
-def exclusiveTime(n: int, logs: list[str]) -> list[int]:
-    result = [0] * n
-    stack = []
-    prev_time = 0
-
-    for log in logs:
-        fn_id, typ, time = log.split(':')
-        fn_id, time = int(fn_id), int(time)
-        
-        if stack:
-            result[stack[-1]] += time - prev_time
-        
-        if typ == 'start':
-            stack.append(fn_id)
-            prev_time = time
+        if maxX <= minY and maxY <= minX:
+            if (x + y) % 2 == 0:
+                return (max(maxX, maxY) + min(minX, minY)) / 2
+            else:
+                return max(maxX, maxY)
+        elif maxX > minY:
+            high = partitionX - 1
         else:
-            result[stack.pop()] += 1
-            prev_time = time + 1
+            low = partitionX + 1
 
-    return result
-
-# Complexity Analysis
-# - Time Complexity: O(m), where m is the number of logs.
-# - Space Complexity: O(n), related to the number of functions with ongoing execution tracks.
+# O-Notation: O(log(min(m, n)))
+# m, n = lengths of nums1 and nums2
+# - Binary search on the smaller array reduces complexity logarithmically.
 ```
 
-- Use a stack to manage ongoing function calls.
-- Accumulate timestamps and handle transitions between start and end for exclusive computation.
+**Explanation:**
+Binary search on the smaller array partitions the combined array. By adjusting partitions based on the median condition, ensure all elements on the left are less than or equal to those on the right, allowing calculation of the median directly.
 
-### 498. Diagonal Traverse (Medium)
+---
 
-#### Problem Statement
-Given a `m x n` matrix, return all elements of the matrix in a diagonal order.
+### Problem 17: Letter Combinations of a Phone Number (Hard but not as complex)
 
-#### Sample Input and Output
-- Input: `matrix = [[1,2,3],[4,5,6],[7,8,9]]`
-- Output: `[1,2,4,7,5,3,6,8,9]`
+**Problem Statement:**
 
-#### Solution Explanation
+Given a string containing digits 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
+
+**Example:**
+
+Input: `digits = "23"`
+Output: `["ad","ae","af","bd","be","bf","cd","ce","cf"]`
+
+**Solution:**
+
 ```python
-def findDiagonalOrder(matrix: list[list[int]]) -> list[int]:
-    if not matrix or not matrix[0]:
-        return []
-    
-    m, n = len(matrix), len(matrix[0])
-    result = []
-    diagonals = {}
-
-    for i in range(m):
-        for j in range(n):
-            if i + j not in diagonals:
-                diagonals[i + j] = []
-            diagonals[i + j].append(matrix[i][j])
-    
-    for key in range(m + n - 1):
-        if key % 2 == 0:
-            result.extend(reversed(diagonals[key]))
-        else:
-            result.extend(diagonals[key])
-    
-    return result
-
-# Complexity Analysis
-# - Time Complexity: O(m * n), where m is row and n is column count.
-# - Space Complexity: O(m * n), space for diagonal groups.
-```
-
-- Use a dictionary to categorize elements by their diagonal sum.
-- Collect and interleave organized elements based on order requirements.
-
-### 766. Toeplitz Matrix (Easy)
-
-#### Problem Statement
-A matrix is Toeplitz if every diagonal from top-left to bottom-right contains the same element. Determine whether the given matrix is Toeplitz.
-
-#### Sample Input and Output
-- Input: `matrix = [[1,2,3,4],[5,1,2,3],[9,5,1,2]]`
-- Output: `True`
-
-#### Solution Explanation
-```python
-def isToeplitzMatrix(matrix: list[list[int]]) -> bool:
-    m, n = len(matrix), len(matrix[0])
-    for r in range(m - 1):
-        for c in range(n - 1):
-            if matrix[r][c] != matrix[r + 1][c + 1]:
-                return False
-    return True
-
-# Complexity Analysis
-# - Time Complexity: O(m * n), iterate through all elements.
-# - Space Complexity: O(1), no extra space beyond input manipulation.
-```
-
-- Verify equality in each diagonal in one traversal.
-- Ensure each element only compares to its diagonal successor.
-
-### 163. Missing Ranges (Easy)
-
-#### Problem Statement
-Find the missing ranges given a sorted integer array where the range of elements is in the inclusive range `[lower, upper]`.
-
-#### Sample Input and Output
-- Input: `nums = [0,1,3,50,75]`, `lower = 0`, `upper = 99`
-- Output: `["2", "4->49", "51->74", "76->99"]`
-
-#### Solution Explanation
-```python
-def findMissingRanges(nums: list[int], lower: int, upper: int) -> list[str]:
-    def format_range(start, end):
-        return str(start) if start == end else f"{start}->{end}"
-
-    result = []
-
-    # Start with a previous value outside of the given range
-    prev = lower - 1
-
-    # Traverse all numbers including the upper limit as a final pass
-    for num in nums + [upper + 1]:
-        if num - prev >= 2:
-            result.append(format_range(prev + 1, num - 1))
-        prev = num
-
-    return result
-
-# Complexity Analysis
-# - Time Complexity: O(n), iterate over list and end boundary.
-# - Space Complexity: O(1), excluding result storage.
-```
-
-- Use a previous pointer starting just below the lower bond.
-- Append ranges between previous and current elements, iterating through the array with a stop beyond the upper limit.
-
-Each problem illustrates effective traversal and data handling within constraints. Techniques vary from utilizing stacks for state management, diagonal grouping for ordered traversal, and simple checks and formats for continuous evaluations.
-
-### 200. Number of Islands (Medium)
-
-#### Problem Statement
-Given a 2D grid map of `'1's` (land) and `'0's` (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.
-
-#### Sample Input and Output
-- Input: 
-  ```
-  grid = [
-    ["1","1","0","0","0"],
-    ["1","1","0","0","0"],
-    ["0","0","1","0","0"],
-    ["0","0","0","1","1"]
-  ]
-  ```
-- Output: `3`
-
-#### Solution Explanation
-```python
-def numIslands(grid: list[list[str]]) -> int:
-    if not grid:
-        return 0
-
-    def dfs(r, c):
-        if r < 0 or c < 0 or r >= len(grid) or c >= len(grid[0]) or grid[r][c] == '0':
-            return
-        grid[r][c] = '0'  # Mark the land as visited by sinking the island
-        dfs(r + 1, c)
-        dfs(r - 1, c)
-        dfs(r, c + 1)
-        dfs(r, c - 1)
-
-    num_islands = 0
-
-    for r in range(len(grid)):
-        for c in range(len(grid[0])):
-            if grid[r][c] == '1':
-                dfs(r, c)
-                num_islands += 1
-
-    return num_islands
-
-# Complexity Analysis
-# - Time Complexity: O(m * n), where m is the number of rows and n is the number of columns.
-# - Space Complexity: O(m * n), recursion stack space in the worst case where grid is filled with `1`.
-```
-
-- Use DFS to explore each discovered island, marking parts as visited.
-- Count islands as you progressively explore new unvisited land.
-
-### 17. Letter Combinations of a Phone Number (Medium)
-
-#### Problem Statement
-Given a string containing digits from `2-9`, return all possible letter combinations that the number could represent. Follow standard mapping of digits to letters found on telephone buttons.
-
-#### Sample Input and Output
-- Input: `digits = "23"`
-- Output: `["ad","ae","af","bd","be","bf","cd","ce","cf"]`
-
-#### Solution Explanation
-```python
-def letterCombinations(digits: str) -> list[str]:
+def letterCombinations(digits: str) -> list:
     if not digits:
         return []
-
+    
     phone_map = {
-        "2": "abc", "3": "def", "4": "ghi", 
-        "5": "jkl", "6": "mno", "7": "pqrs", 
-        "8": "tuv", "9": "wxyz"
+        "2": "abc", "3": "def", "4": "ghi", "5": "jkl",
+        "6": "mno", "7": "pqrs", "8": "tuv", "9": "wxyz"
     }
-
+    result = []
+    
     def backtrack(index, path):
         if index == len(digits):
-            combinations.append("".join(path))
+            result.append("".join(path))
             return
+        
         possible_letters = phone_map[digits[index]]
         for letter in possible_letters:
             path.append(letter)
             backtrack(index + 1, path)
             path.pop()
-
-    combinations = []
+    
     backtrack(0, [])
-    return combinations
+    return result
 
-# Complexity Analysis
-# - Time Complexity: O(4^n), where n is the length of the digits string.
-# - Space Complexity: O(n), where n is the depth of recursion (path length).
+# O-Notation: O(3^n)
+# n = length of the input digits
+# - Each digit contributes to a combination branching factor.
 ```
 
-- Perform backtracking exploration using digit-character mapping.
-- Build combinations by appending mapped letters recursively.
+**Explanation:**
+A backtracking approach explores paths with each digit expanding into corresponding letter possibilities. Recursively append letters via depth-controlled buildup, adding complete paths once input is fully processed.
 
-### 708. Insert into a Sorted Circular Linked List (Medium)
+---
 
-#### Problem Statement
-Given a node from a sorted circular linked list, insert a value into the list such that it remains a sorted circular list.
+### Problem 19: Remove Nth Node From End of List (Medium)
 
-#### Sample Input and Output
-- Input: Sorted circular linked list `3 -> 4 -> 5 -> 1 -> 2 -> (back to 3)`, insert `0`
-- Output: Sorted circular linked list with inserted node: `3 -> 4 -> 5 -> 0 -> 1 -> 2 -> (back to 3)`
+**Problem Statement:**
 
-#### Solution Explanation
+Given the head of a linked list, remove the `nth` node from the end of the list and return its head.
+
+**Example:**
+
+Input: `head = [1,2,3,4,5]`, `n = 2`
+Output: `[1,2,3,5]`
+
+**Solution:**
+
+```python
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def removeNthFromEnd(head: ListNode, n: int) -> ListNode:
+    dummy = ListNode(0, head)
+    fast = slow = dummy
+    
+    # Move fast ahead by n+1 steps
+    for _ in range(n + 1):
+        fast = fast.next
+    
+    # Move fast to the end, maintaining the gap
+    while fast:
+        fast = fast.next
+        slow = slow.next
+    
+    # Skip the desired node
+    slow.next = slow.next.next
+    
+    return dummy.next
+
+# O-Notation: O(L)
+# L = length of linked list
+# - Two pass technique wrapped in a single pass effectively.
+```
+
+**Explanation:**
+Utilize a dummy node and two pointers to maintain offsets, locating correct removal by dual-linear pass structure. This ensures accurate nth node from the end identification before pointer bypass operation.
+
+---
+
+### Problem 121: Best Time to Buy and Sell Stock (Medium but actually Easy)
+
+**Problem Statement:**
+
+Given an integer array `prices`, where `prices[i]` is the price of a given stock on the i-th day, calculate the max profit from completing one transaction. If no profit is possible, return 0.
+
+**Example:**
+
+Input: `prices = [7,1,5,3,6,4]`
+Output: `5`
+
+**Solution:**
+
+```python
+def maxProfit(prices: list) -> int:
+    min_price = float('inf')
+    max_profit = 0
+    
+    for price in prices:
+        if price < min_price:
+            min_price = price
+        elif price - min_price > max_profit:
+            max_profit = price - min_price
+    
+    return max_profit
+
+# O-Notation: O(n)
+# n = number of price entries
+# - Single traversal for continuous update of min and profit calculations.
+```
+
+**Explanation:**
+Track lowest prices so far with iterative scanning to determine feasible sale and purchase moments. Incrementally adjust max potential profit based on minute differences observed, ensuring captured results.
+
+---
+
+### Problem 249: Group Shifted Strings (Easy)
+
+**Problem Statement:**
+
+Group strings that belong to the same shifting sequence, where shifting a letter means moving from 'a' to 'b', 'b' to 'c', ..., and 'z' to 'a'.
+
+**Example:**
+
+Input: `strings = ["abc","bcd","acef","xyz","az","ba","a","z"]`
+Output: `[["abc","bcd","xyz"],["acef"],["az","ba"],["a","z"]]`
+
+**Solution:**
+
+```python
+from collections import defaultdict
+
+def groupStrings(strings: list) -> list:
+    def shift_key(s):
+        return tuple(((ord(char) - ord(s[0])) % 26) for char in s)
+    
+    groups = defaultdict(list)
+    
+    for string in strings:
+        groups[shift_key(string)].append(string)
+    
+    return list(groups.values())
+
+# O-Notation: O(n * k)
+# n = number of strings, k = average length of Strings
+# - Constructs a unique key for each string, grouping them by shifts.
+```
+
+**Explanation:**
+Key strings by constructing tuples representing character shifts from a base position. Use tuple keys to aggregate strings within the same shifting frame, thus aligning them into groups of shifted sequence equivalence.
+
+---
+
+### Problem 253: Meeting Rooms II (Medium)
+
+**Problem Statement:**
+
+Given an array of meeting time intervals, implement an algorithm to determine the minimum number of conference rooms required.
+
+**Example:**
+
+Input: `intervals = [[0, 30],[5, 10],[15, 20]]`
+Output: `2`
+
+**Solution using Heap:**
+
+```python
+import heapq
+
+def minMeetingRooms(intervals: list) -> int:
+    if not intervals:
+        return 0
+    
+    intervals.sort(key=lambda x: x[0])
+    
+    heap = []
+    heapq.heappush(heap, intervals[0][1])
+    
+    for i in range(1, len(intervals)):
+        if intervals[i][0] >= heap[0]:
+            heapq.heappop(heap)
+        
+        heapq.heappush(heap, intervals[i][1])
+    
+    return len(heap)
+
+# O-Notation: O(n log n)
+# n = number of intervals
+# - Sorting with concurrent heap adjustments for resource efficient assignments.
+```
+
+**Explanation:**
+Sort intervals by start time, using a min-heap to track end time of meetings. As meetings complete, free up corresponding rooms, maintaining a count of active meetings overlapping or newly started.
+
+---
+
+### Problem 283: Move Zeroes (Medium but actually Easy)
+
+**Problem Statement:**
+
+Given an array `nums`, write a function to move all `0`s to the end while maintaining relative order of non-zero elements.
+
+**Example:**
+
+Input: `nums = [0,1,0,3,12]`
+Output: `[1,3,12,0,0]`
+
+**Solution:**
+
+```python
+def moveZeroes(nums: list) -> None:
+    last_non_zero_found_at = 0
+    
+    for i in range(len(nums)):
+        if nums[i] != 0:
+            nums[last_non_zero_found_at], nums[i] = nums[i], nums[last_non_zero_found_at]
+            last_non_zero_found_at += 1
+
+# O-Notation: O(n)
+# n = number of elements in nums
+# - Linear traversal efficiently positions non-zero elements upfront.
+```
+
+**Explanation:**
+Utilize two pointers, anchoring non-zero transfers as one iterator processes the entire list. This efficiently rearranges in-place, retaining ordered sequencing as zeroes transition backward.
+
+---
+
+### Problem 378: Kth Smallest Element in a Sorted Matrix (Medium but actually Hard)
+
+**Problem Statement:**
+
+Given a `n x n` matrix sorted in ascending order both row-wise and column-wise, return the k-th smallest element.
+
+**Example:**
+
+Input: `matrix = [[1,5,9],[10,11,13],[12,13,15]], k = 8`
+Output: `13`
+
+**Solution using Min-Heap:**
+
+```python
+import heapq
+
+def kthSmallest(matrix: list, k: int) -> int:
+    n = len(matrix)
+    min_heap = [(matrix[i][0], i, 0) for i in range(n)]
+    heapq.heapify(min_heap)
+    
+    for _ in range(k - 1):
+        value, row, col = heapq.heappop(min_heap)
+        if col + 1 < n:
+            heapq.heappush(min_heap, (matrix[row][col + 1], row, col + 1))
+    
+    return heapq.heappop(min_heap)[0]
+
+# O-Notation: O(k log n)
+# Where `k` is k-th element browsing, and `n` is the number of rows.
+```
+
+**Explanation:**
+Leveraging the property of the sorted matrix, initialize a min-heap with the first element of each row. Extract and replenish the heap until the desired k-th element arises, effectively traversed via min-heap properties.
+
+---
+
+### Problem 381: Insert Delete GetRandom O(1) - Duplicates allowed (Medium)
+
+**Problem Statement:**
+
+Implement a data structure that supports inserting, removing, and getting random elements in average O(1) time. It should support duplicates.
+
+**Solution:**
+
+```python
+import random
+from collections import defaultdict
+
+class RandomizedCollection:
+    def __init__(self):
+        self.nums = []
+        self.indices = defaultdict(set)
+
+    def insert(self, val: int) -> bool:
+        self.indices[val].add(len(self.nums))
+        self.nums.append(val)
+        return len(self.indices[val]) == 1
+    
+    def remove(self, val: int) -> bool:
+        if not self.indices[val]:
+            return False
+        remove_idx = self.indices[val].pop()
+        last_val = self.nums[-1]
+        self.nums[remove_idx] = last_val
+        if self.indices[last_val]:
+            self.indices[last_val].add(remove_idx)
+            self.indices[last_val].remove(len(self.nums) - 1)
+        self.nums.pop()
+        return True
+    
+    def getRandom(self) -> int:
+        return random.choice(self.nums)
+
+# O-Notation:
+# - Insert: Average O(1) due to list append and hash map key insertion.
+# - Remove: Average O(1) because of index swapping tactic.
+# - Get Random: O(1) due to random choice operation.
+```
+
+**Explanation:**
+The `RandomizedCollection` effectively manages duplicates using a set for indices to quickly access element positions. Insertions are straightforward, while removals involve clever swaps with the last element, thereby maintaining O(1) time complexity.
+
+---
+
+### Problem 708: Insert into a Sorted Circular Linked List (Hard)
+
+**Problem Statement:**
+
+Given a node from a sorted circular linked list, insert a new integer into the list such that it remains sorted.
+
+**Example:**
+
+Input: A linked list and a value to insert.
+
+**Solution:**
+
 ```python
 class Node:
     def __init__(self, val, next=None):
@@ -1902,39 +2594,315 @@ class Node:
         self.next = next
 
 def insert(head: Node, insertVal: int) -> Node:
+    new_node = Node(insertVal)
+
     if not head:
-        new_node = Node(insertVal)
         new_node.next = new_node
         return new_node
-
-    prev, curr = head, head.next
-    to_insert = False
-
+    
+    cur = head
     while True:
-        if prev.val <= insertVal <= curr.val:
-            to_insert = True
-        elif prev.val > curr.val:
-            if insertVal >= prev.val or insertVal <= curr.val:
-                to_insert = True
-        
-        if to_insert:
-            prev.next = Node(insertVal, curr)
-            return head
-        
-        prev, curr = curr, curr.next
-
-        if prev == head:
+        if (cur.val <= insertVal <= cur.next.val) or \
+           (cur.val > cur.next.val and (insertVal < cur.next.val or insertVal > cur.val)) or \
+           cur.next == head:
+            new_node.next = cur.next
+            cur.next = new_node
             break
+        cur = cur.next
 
-    prev.next = Node(insertVal, curr)
     return head
 
-# Complexity Analysis
-# - Time Complexity: O(n), n is the number of nodes in the linked list.
-# - Space Complexity: O(1), no additional space used aside from new node.
+# O-Notation: O(n)
+# n = number of nodes in the list
+# - Traversing the list once ensures the correct insertion.
 ```
 
-- Traverse the list to identify a correct insert position by checking boundaries.
-- Handle edge cases for insert outside current max/min values and into head region. 
+**Explanation:**
+The insertion checks various cases: standard insertion between two values, or at the start/end of negligibly wrapped sequences. Special care is given when providing insertion at list boundary or entirely new list scenarios.
 
-Each solution illustrates efficient traversal or algorithmic adaptation in various data forms, focusing on problem-specific constraints and leveraging basic operations for desired outcomes.
+---
+
+### Problem 934: Shortest Bridge (Medium)
+
+**Problem Statement:**
+
+Given a 2D grid of 0's and 1's where two islands (1's) are separated by water (0's), return the shortest distance to connect the two islands.
+
+**Example:**
+
+Input: `[[0,1],[1,0]]`
+Output: `1`
+
+**Solution using BFS:**
+
+```python
+from collections import deque
+
+def shortestBridge(A: list) -> int:
+    def get_island():
+        for r in range(len(A)):
+            for c in range(len(A[0])):
+                if A[r][c]:
+                    return r, c
+        return None
+
+    def dfs(r, c):
+        if 0 <= r < len(A) and 0 <= c < len(A[0]) and A[r][c] == 1:
+            A[r][c] = -1
+            queue.append((r, c))
+            dfs(r + 1, c)
+            dfs(r - 1, c)
+            dfs(r, c + 1)
+            dfs(r, c - 1)
+
+    def bfs():
+        while queue:
+            r, c, dist = queue.popleft()
+            for dr, dc in ((1, 0), (0, 1), (-1, 0), (0, -1)):
+                nr, nc = r + dr, c + dc
+                if 0 <= nr < len(A) and 0 <= nc < len(A[0]):
+                    if A[nr][nc] == 1:
+                        return dist
+                    elif A[nr][nc] == 0:
+                        A[nr][nc] = -1
+                        queue.append((nr, nc, dist + 1))
+        return -1
+
+    start = get_island()
+    queue = deque()
+    dfs(start[0], start[1])
+    return bfs()
+
+# O-Notation: O(n^2)
+# n = dimension size in the grid
+# - DFS and BFS are both potentially performing complete grid traversals.
+```
+
+**Explanation:**
+Firstly, identify one island using DFS to mark its members. Subsequently, leverage BFS to calculate minimal steps from this island's edge towards another, navigating across labeled water paths efficiently.
+
+---
+
+### Problem 1004: Max Consecutive Ones III (Medium)
+
+**Problem Statement:**
+
+Given a binary array `A` and a `K`, return the maximum number of consecutive 1's that can be formed if you can flip at most `K` 0's.
+
+**Example:**
+
+Input: `A = [1,1,0,0,1,1,1,0], K = 2`
+Output: `6`
+
+**Solution using Sliding Window:**
+
+```python
+def longestOnes(A: list, K: int) -> int:
+    left = 0
+    
+    for right in range(len(A)):
+        if A[right] == 0:
+            K -= 1
+        
+        if K < 0:
+            if A[left] == 0:
+                K += 1
+            left += 1
+    
+    return right - left + 1
+
+# O-Notation: O(n)
+# n = number of elements in A
+# - Single pass with a shifting window boundary operates over the array.
+```
+
+**Explanation:**
+Expand right window edge continually incorporating 1's and permitted 0 flips until constraints demand a leftward slide. Calculate maximum window emerging during traversal allowing for optimal consecution.
+
+---
+
+### Problem 1011: Capacity To Ship Packages Within D Days (Medium)
+
+**Problem Statement:**
+
+Given weights array for packages and a number of days `D`, find the package-ship capacity to ensure all packages can be shipped within `D` days following constant capacities daily shipment constraint.
+
+**Example:**
+
+Input: `weights = [1,2,3,4,5,6,7,8,9,10], D = 5`
+Output: `15`
+
+**Solution:**
+
+```python
+def canShip(weights, D, capacity):
+    days = 1
+    total = 0
+    for weight in weights:
+        total += weight
+        if total > capacity:
+            days += 1
+            total = weight
+    return days <= D
+
+def shipWithinDays(weights: list, D: int) -> int:
+    left, right = max(weights), sum(weights)
+    
+    while left < right:
+        mid = (left + right) // 2
+        if canShip(weights, D, mid):
+            right = mid
+        else:
+            left = mid + 1
+    
+    return left
+
+# O-Notation: O(n log sum(weights))
+# n = number of weights
+# - Binary search over capacity, checking feasibility per step.
+```
+
+**Explanation:**
+Using binary search, iteratively evaluate midpoints to judge if given capacities suffice the defined day boundary utilizing a summed daily weight bound. This ensures minimal necessary shipment capacity outcome.
+
+---
+
+### Problem 1331: Rank Transform of an Array (Medium)
+
+**Problem Statement:**
+
+Transform an integer array into its rank-featured equivalent by translating each unique element into its position when sorted, starting at 1.
+
+**Example:**
+
+Input: `arr = [40, 10, 20, 30]`
+Output: `[4, 1, 2, 3]`
+
+**Solution:**
+
+```python
+def arrayRankTransform(arr: list) -> list:
+    rank = {}
+    for i, num in enumerate(sorted(set(arr))):
+        rank[num] = i + 1
+    return [rank[num] for num in arr]
+
+# O-Notation: O(n log n)
+# n = number of elements in arr
+# - Sorting dominates proceedings, with hashmap lookups being direct and quick.
+```
+
+**Explanation:**
+Transform initial array into a sorted, unique variant to compute ranks which are then mapped back onto original elements generating rank-transformed results swiftly.
+
+---
+
+### Problem 1539: Kth Missing Positive Number (Easy)
+
+**Problem Statement:**
+
+Given a sorted integer array `arr` and an integer `k`, return the k-th missing positive integer.
+
+**Example:**
+
+Input: `arr = [2,3,4,7,11], k = 5`
+Output: `9`
+
+**Solution:**
+
+```python
+def findKthPositive(arr: list, k: int) -> int:
+    missing = []
+    current = 1
+    i = 0
+    while len(missing) < k:
+        if i < len(arr) and arr[i] == current:
+            i += 1
+        else:
+            missing.append(current)
+        current += 1
+    return missing[-1]
+
+# O-Notation: O(n + k)
+# n = length of arr
+# - Continues till the k-th number is found even while skipping through arr.
+```
+
+**Explanation:**
+Track sequential checks against the array and accumulate missing entries until the desired K-th one is finalizing the result accordantly.
+
+---
+
+### Problem 1644: Lowest Common Ancestor of a Binary Tree II (Easy)
+
+**Problem Statement:**
+
+Find the lowest common ancestor of two given nodes in a binary tree with the stipulation nodes may not both exist in the tree.
+
+**Example:**
+
+Input: A binary tree and nodes `p` and `q`
+Output: Lowest Common Ancestor or Error if either doesn't exist
+
+**Solution:**
+
+```python
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+def lowestCommonAncestor(root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+    def findLCA(node):
+        if not node:
+            return None
+        if node == p or node == q:
+            return node
+        
+        left = findLCA(node.left)
+        right = findLCA(node.right)
+        
+        if left and right:
+            return node
+        return left if left else right
+    
+    lca = findLCA(root)
+    
+    def exists(node, target):
+        if not node:
+            return False
+        if node == target:
+            return True
+        return exists(node.left, target) or exists(node.right, target)
+    
+    if (exists(root, p) and exists(root, q)):
+        return lca
+    return None
+
+# O-Notation: O(n)
+# n = number of nodes in the binary tree
+# - Traverses tree twice - once for LCA computation and the second time for node verification.
+```
+
+**Explanation:**
+This solution enhances standard LCA determination with additional validation to ensure existence of both nodes, safeguarding accurate result delivery even amidst absent node contexts.
+
+---
+
+### Problem 1757: Recyclable and Low Fat Products (Medium)
+
+**Problem Statement:**
+
+Write a SQL query to find products that are both `recyclable` and `low fat`. The `Products` table has columns `product_id`, `low_fats` and `recyclable`. 
+
+**SQL Solution:**
+
+```sql
+SELECT product_id
+FROM Products
+WHERE low_fats = 'Y' AND recyclable = 'Y';
+```
+
+**Explanation:**
+This SQL query efficiently filters rows based on dual conditions against specified columns in the `Products` table, returning those fully meeting criteria. The relational framework ensures optimal result extraction aligned with structured columnar queries.
