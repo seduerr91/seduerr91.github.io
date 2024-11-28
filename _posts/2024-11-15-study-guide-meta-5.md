@@ -361,20 +361,20 @@ Output: `6`
 **Solution using Sliding Window:**
 
 ```python
-def longestOnes(A: list, K: int) -> int:
-    left = 0
-    
-    for right in range(len(A)):
-        if A[right] == 0:
-            K -= 1
+class Solution:
+    def longestOnes(self, nums: List[int], k: int) -> int:
+        l = 0
+        max_length = 0
+        for r in range(len(nums)):
+            if nums[r] == 0:
+                k -= 1
+            while k < 0:
+                if nums[l] == 0:
+                    k += 1
+                l += 1
+            max_length = max(max_length, r - l + 1)
+        return max_length
         
-        if K < 0:
-            if A[left] == 0:
-                K += 1
-            left += 1
-    
-    return right - left + 1
-
 # O-Notation: O(n)
 # n = number of elements in A
 # - Single pass with a shifting window boundary operates over the array.
