@@ -6,150 +6,150 @@ color: secondary
 description: Ideas behind solving Leetcode problems
 ---
 
-1.   Basic Calculator II (Med): Use a stack to evaluate the expression. Traverse the string, parsing numbers and operators. On encountering an operator (+, -, *, /), decide whether to push or operate with the top of the stack based on operator precedence.
+**227. Basic Calculator II (Med):** Use a stack to evaluate the expression. Traverse the string, parsing numbers and operators. Perform operations based on precedence, pushing to the stack when necessary.
 
-2.    Minimum Remove to Make Valid Parentheses (Med): Traverse the string to determine invalid parentheses using a stack to track indices. Traverse again to construct a valid string by skipping invalid indices.
+**1249. Minimum Remove to Make Valid Parentheses (Med):** Use a stack to track unmatched parentheses indices. Traverse the string twice: first to find invalid ones, then reconstruct a valid string without them.
 
-3.   Binary Tree Vertical Order Traversal (Med): Use BFS traversal and a dictionary to track column indices. Assign and group node values by their position, maintaining order with the vertical index.
+**314. Binary Tree Vertical Order Traversal (Med):** Use BFS and a dictionary to store nodes based on their vertical (column) index. Traverse row by row, collecting nodes in vertical order.
 
-4.   Valid Word Abbreviation (Easy): Use two pointers to traverse both the word and abbreviation. Handle numeric abbreviation by converting to number and skipping characters in the word while checking character matches.
+**408. Valid Word Abbreviation (Easy):** Use two pointers to traverse the word and abbreviation. For numeric parts in the abbreviation, increment the word pointer accordingly and compare letters.
 
-5.   Kth Largest Element in an Array (Med): Use a min-heap of size k to keep track of the k largest elements. Alternatively, use the quickselect algorithm to achieve faster average performance.
+**215. Kth Largest Element in an Array (Med):** Use a min-heap for efficient kth element retrieval or quickselect partitioning method to achieve optimal average-case time performance.
 
-6.    Shortest Path in Binary Matrix (Med): Use BFS to find the shortest path. Start from the top-left corner and explore all possible moves in 8 directions, marking cells as visited to avoid cycles.
+**1091. Shortest Path in Binary Matrix (Med):** Apply BFS from the start point, checking all eight possible directions. Use a queue to manage cells and ensure shortest path tracking.
 
-7.   Nested List Weight Sum (Med): Use DFS to recursively calculate the sum. For each nested list, add the value multiplied by its depth, iteratively for all elements inside.
+**339. Nested List Weight Sum (Med):** Use DFS to compute the weighted sum of values. Traverse lists, multiplying each value by its depth and summing up the results recursively.
 
-8.   Lowest Common Ancestor of a Binary Tree (Med): Use recursion to traverse the tree. Return the node when either of the targets or their ancestors are found; LCA is where both targets diverge.
+**236. Lowest Common Ancestor of a Binary Tree (Med):** Use recursion to navigate tree nodes, returning when either target or null is found. Use return path to determine the LCA node.
 
-9.   Valid Palindrome II (Easy): Use two pointers to check for palindrome. On mismatch, skip one of the mismatched characters and verify if the resulting substring is a palindrome.
+**680. Valid Palindrome II (Easy):** Use two pointers to traverse towards the center, allowing one character removal on mismatch. Check resultant substring for palindrome properties.
 
-10.   Lowest Common Ancestor of a Binary Tree III (Med): Traverse from each node to the root, storing visited ancestors. Find the first common node from the ancestors of the two given nodes.
+**1650. Lowest Common Ancestor of a Binary Tree III (Med):** Trace ancestors of both nodes using parent pointers, recording visited nodes. The first common node traced from both paths is the LCA.
 
-11.  Copy List with Random Pointer (Med): Create a deep copy using a hashmap to track original-to-copy node mapping. First pass to clone nodes, second pass to assign random pointers.
+**138. Copy List with Random Pointer (Med):** Use a hashmap to map original nodes to their copies. First, clone nodes and then assign random pointers while traversing the list again.
 
-12.  Subarray Sum Equals K (Med): Use a hashmap to store the cumulative sum and its frequency. Traverse and check if cumulative sum minus k exists in the hashmap to determine subarray count.
+**560. Subarray Sum Equals K (Med):** Use a hashmap to track cumulative sums and their frequency. For each element, check if current sum minus k exists in the hashmap to identify valid subarrays.
 
-13.   Dot Product of Two Sparse Vectors (Med): Store non-zero indices and values for each vector, then iterate through common indices to calculate the dot product, optimizing space and time complexity.
+**1570. Dot Product of Two Sparse Vectors (Med):** Store non-zero elements with their indices. Compute dot product by iterating only over common indices, reducing unnecessary calculations.
 
-14. Pow(x, n) (Med): Use fast exponentiation (exponentiation by squaring) to reduce the time complexity. Recursively halve the exponent and multiply results for both even and odd powers.
+**50. Pow(x, n) (Med):** Implement fast exponentiation through recursive squaring. Optimize computation for both positive and negative powers, ensuring logarithmic time complexity.
 
-15. Simplify Path (Med): Use a stack to process each part of the Unix-style path string. Push valid directories, and pop the stack for ".." to simulate navigating to the parent directory.
+**71. Simplify Path (Med):** Use a stack to simplify Unix path strings by processing directory names, "." and "..". Construct the canonical path by concatenating stack contents.
 
-16.  Random Pick with Weight (Med): Use a prefix sum array and binary search. Generate a random number and find its position in the prefix sums to determine which index to pick.
+**528. Random Pick with Weight (Med):** Compute prefix sums and use binary search to find the index corresponding to a random weighted pick, balancing probabilities among indices.
 
-17. Merge Sorted Array (Easy): Use three pointers starting from the end of both arrays and the perimeter of the destination. Iteratively add larger elements to the back of the result array.
+**88. Merge Sorted Array (Easy):** Apply three-pointer technique from the end of both arrays and the destination. Efficiently place larger elements into the resultant merged array.
 
-18.  Custom Sort String (Med): Use a hash map to start with an empty result, storing custom order priorities. Sort the input string based on this custom order and append remaining items without priority. 
+**791. Custom Sort String (Med):** Use a custom order dictated by a hashmap to sort the given string. Append characters not present in the custom order list at the end.
 
-19. Merge k Sorted Lists (Hard): Use a min-heap to merge lists efficiently. Push the head of each list into the heap, extract the smallest, and push the next node from the same list into the heap.
+**23. Merge k Sorted Lists (Hard):** Employ a min-heap or priority queue to merge lists efficiently by always extracting the smallest node and inserting the next node from its list.
 
-20.  Valid Palindrome (Easy): Use two pointers to filter and compare alphanumeric characters while ignoring case. Traverse towards the center to verify palindrome conditions.
+**125. Valid Palindrome (Easy):** Utilize two pointers to filter and compare alphanumeric characters, converting everything to a common case to ensure uniform comparison.
 
-21.  Diameter of Binary Tree (Easy): Use a recursive depth-first search (DFS) to calculate the height of each subtree. Track the maximum path length through both children for the diameter.
+**543. Diameter of Binary Tree (Easy):** Use DFS to calculate subtree heights and update the maximum diameter found during exploration based on left and right child path sums.
 
-22.  Maximum Swap (Med): Traverse the number to identify the first decrease and swap with the largest possible digit after it. Use a map to track the last seen index of each digit.
+**670. Maximum Swap (Med):** Identify the first decreasing pair of digits and swap the smaller digit with the largest possible digit after it to maximize the number.
 
-23.  LRU Cache (Med): Implement using an ordered dictionary/doubly linked list and a hash map to maintain order and access elements in constant time while adhering to capacity constraints.
+**146. LRU Cache (Med):** Implement using a doubly linked list and hashmap to store cache entries, maintaining access order and enabling constant time eviction and retrieval.
 
-24.  Binary Tree Right Side View (Med): Use BFS or DFS level-wise traversal. Capture the last node at each level, representing the visible nodes in a right side view.
+**199. Binary Tree Right Side View (Med):** Use BFS or DFS to examine each tree level. Record the last node in each level, reflecting the rightmost node view from each perspective.
 
-25.  Convert Binary Search Tree to Sorted Doubly Linked List (Med): Perform an in-order traversal, linking nodes as you go, to maintain BST order in a doubly linked list format. 
+**426. Convert Binary Search Tree to Sorted Doubly Linked List (Med):** Perform an in-order traversal, linking nodes in order to form a circular doubly linked list respecting BST properties.
 
-26.  Minimum Add to Make Parentheses Valid (Med): Use a counter to track unmatched open parentheses. Increment on '(' and decrement on ')'. Count balance misses which signal added parentheses needed for validity.
+**921. Minimum Add to Make Parentheses Valid (Med):** Track unmatched parentheses using two counters for open and close balances. Adjust these balances to calculate the minimal additions needed.
 
-27.  K Closest Points to Origin (Med): Use a max-heap to maintain the k smallest distances as you iterate through the points. Alternatively, apply quickselect to partition and find the kth closest point.
+**973. K Closest Points to Origin (Med):** Use a max-heap to maintain the k smallest distances or apply quickselect to partition around the kth distance, enhancing efficiency.
 
-28. Two Sum (Easy): Use a hashmap to store the complement of each element required to reach the target sum. Check while traversing if the current element is the complement of a previous element.
+**1. Two Sum (Easy):** Use a hashmap to track complementary numbers. During each iteration, check hashmap for the required complement and return indices if found.
 
-29. Merge Intervals (Med): Sort intervals by start time. Then, iterate through each interval, merge overlapping intervals as you go, forming a new list of non-overlapping intervals.
+**56. Merge Intervals (Med):** Sort list by intervals' start values. Sequentially merge overlapping intervals into new combined intervals to simplify and condense the list.
 
-30.  Sum Root to Leaf Numbers (Med): Use DFS to traverse each path from root to leaf. Accumulate values along the path, adding the resulting sum when a leaf node is reached.
+**129. Sum Root to Leaf Numbers (Med):** Use DFS to collect root-to-leaf path sums. Accumulate values recursively, multiplying current values by 10 as you traverse deeper.
 
-31.  Find Peak Element (Med): Implement binary search for logarithmic efficiency. In each step, check the middle element and adjust the search range towards the higher neighbor to find a peak.
+**162. Find Peak Element (Med):** Use binary search to identify a peak by examining neighboring elements, directing the search to the higher neighboring side for maxima.
 
-32.  Closest Binary Search Tree Value (Easy): Use BST properties to narrow down potential closest values as you traverse from root to leaf, adjusting the closest value according to the difference.
+**270. Closest Binary Search Tree Value (Easy):** Traverse the tree using its ordered properties to adjust the closest tracked value based on absolute value differences.
 
-33.  Random Pick Index (Med): Use reservoir sampling to randomly select an index from possible occurrences. Given the same number, maintain a buffer to ensure each index has an equal pick chance.
+**398. Random Pick Index (Med):** Apply reservoir sampling for random index selection, ensuring equal probability for each index when values repeat in the list.
 
-34.  Exclusive Time of Functions (Med): Use a stack to keep track of function calls. As each function starts or ends, calculate the exclusive time using timestamps, and update the result list.
+**636. Exclusive Time of Functions (Med):** Use a stack to handle start and end logs, computing exclusive function execution times based on correct level processing.
 
-35.  Vertical Order Traversal of a Binary Tree (Hard): Use DFS with coordinates, creating a map sorted by x-axis, then by depth, and finally node value. Traverse the map to generate the order list.
+**987. Vertical Order Traversal of a Binary Tree (Hard):** Execute DFS to record nodes by column and depth. Compile and order results by depth and value per vertical strip.
 
-36.  Best Time to Buy and Sell Stock (Easy): Track the minimum price seen so far and calculate possible profits at each day. Update the maximum profit accordingly during the single-pass loop.
+**121. Best Time to Buy and Sell Stock (Easy):** Track the lowest price seen and compute the maximum profit at each subsequent price, updating the best profit incrementally.
 
-37.  Moving Average from Data Stream (Easy): Utilize a queue to maintain a window of the last n elements. On adding new elements, compute the average using the cumulative sum kept in sync with the queue.
+**346. Moving Average from Data Stream (Easy):** Employ a fixed-size queue to maintain the moving average, updating as new numbers are added and old numbers removed.
 
-38.  Top K Frequent Elements (Med): Count element frequencies using a hash map, then utilize a min-heap to retain only the k highest frequencies, providing efficient extraction of top k elements.
+**347. Top K Frequent Elements (Med):** Utilize a hashmap for frequency counts, and a min-heap to extract the k most frequent elements efficiently.
 
-39.  Toeplitz Matrix (Easy): Check all diagonals starting from each element in the first row and column. Verify that elements in each diagonal are the same, ensuring matrix unity across diagonals.
+**766. Toeplitz Matrix (Easy):** Traverse the matrix diagonally from each element of the first row and column, ensuring uniformity of elements across each diagonal strip.
 
-40.   Buildings With an Ocean View (Med): Traverse the list from right to left, keeping track of the tallest building so far. If a building is taller than all to its right, it has an ocean view.
+**1762. Buildings With an Ocean View (Med):** Traverse the array from right to left, tracking the tallest building so far. Buildings taller than this become eligible for an ocean view.
 
-41. 3Sum (Med): First, sort the array. Use a nested loop with two pointers to find unique triplets that sum to zero. Skip duplicates by adjusting pointers strategically to avoid repeated calculations.
+**15. 3Sum (Med):** Sort the input array and apply a combination of two pointers with an outer loop to locate unique triplets, incrementing and decrementing pointers to avoid duplicates.
 
-42. Valid Number (Hard): Implement a state machine or regex to handle different parts of a valid number (integer, decimal, scientific notation), addressing edge cases like signs and exponents.
+**65. Valid Number (Hard):** Implement state machine or regex solutions to parse numeric validity. Handle edge cases surrounding decimals, exponents, and signs strictly.
 
-43.  Clone Graph (Med): Use BFS or DFS with a hash map to copy each node and its neighbors. Ensure that each original node maps to its clone to manage graph structure and avoid cycles.
+**133. Clone Graph (Med):** Use BFS or DFS with a hashmap mapping originals to clones, ensuring nodes and edges from the original graph are mirrored accurately.
 
-44.  Design Tic-Tac-Toe (Med): Maintain row, column, and diagonal counters for each player to track their progression on the board. Check these counters on each move to determine if there's a winner.
+**348. Design Tic-Tac-Toe (Med):** Keep counters for rows, columns, and diagonals per player. On each move, update counters and check for victory conditions in constant time.
 
-45.  Kth Smallest Element in a Sorted Matrix (Med): Use a min-heap to efficiently access sorted elements, or apply binary search on element range by counting possible placements up to mid value.
+**378. Kth Smallest Element in a Sorted Matrix (Med):** Use a min-heap to extract elements efficiently or apply binary search on the values, counting placement fittings at each midpoint.
 
-46.  Sliding Window Median (Hard): Use two heaps to manage a sliding window (min and max heap). Balance contents to dynamically track the median as the window progresses through the array.
+**480. Sliding Window Median (Hard):** Balance two heaps (min and max) to track the median across a sliding window, adjusting balances as elements enter and leave the window efficiently.
 
-47.  Accounts Merge (Med): Use union-find or DFS for graph-based account merging. Connect accounts by their email, then group and merge connected components using the shared email addresses.
+**721. Accounts Merge (Med):** Use union-find data structure or DFS to find connected email components across accounts, merging them based on common ownership for optimal grouping.
 
-48.  Range Sum of BST (Easy): Use DFS or BFS to traverse the tree. Sum node values only when they fall within the given range, leveraging BST properties to skip unnecessary branches.
+**938. Range Sum of BST (Easy):** Use DFS or BFS to sum node values that lie within the specified range, pruning branches using the ordered properties of the BST for efficiency.
 
-49.   Kth Missing Positive Number (Easy): Iterate through the sorted array, counting gaps between expected numbers and actual numbers present, addressing missing counts to locate the kth missing number.
+**1539. Kth Missing Positive Number (Easy):** Track missing positive numbers as you iterate, adjusting for differences between expected and actual numbers, until finding the kth missing.
 
-50.   Product of Two Run-Length Encoded Arrays (Med): Implement two-pointer traversal along with the RLE structure, calculating contributions to the product once lengths align or exhaust values.
+**1868. Product of Two Run-Length Encoded Arrays (Med):** Use two pointers to iterate over both encoded arrays, adjusting counts to compute products once lengths synchronize.
 
-51. Longest Common Prefix (Easy): Sort strings, then compare characters of the first and last strings in the sorted list until they mismatch. The prefix is the substring up to this mismatch point.
+**14. Longest Common Prefix (Easy):** Sort strings and compare the first and last strings character by character, determining the longest matching prefix.
 
-52. Remove Nth Node From End of List (Med): Use two pointers with a gap of n nodes to locate the nth node from the end. Skip this node by adjusting pointers to preserve list continuity.
+**19. Remove Nth Node From End of List (Med):** Use a two-pointer technique with a delay to locate the nth node from the end, connecting the previous node to the next of the target.
 
-53. Minimum Window Substring (Hard): Use a sliding window with two pointers, expanding to include required characters and contracting to maintain minimal length while satisfying all constraints.
+**76. Minimum Window Substring (Hard):** Implement a sliding window and hashmaps to handle character inclusion and exclusion for maintaining and minimizing required window length.
 
-54.  Binary Tree Maximum Path Sum (Hard): Use DFS to track the maximum path crossing each node. Update global max path sum while computing max one-arm paths to ensure all possibilities are considered.
+**124. Binary Tree Maximum Path Sum (Hard):** Use DFS to calculate potential maximum paths at each node, updating the global max path sum while recursing over child subtrees.
 
-55.  Number of Islands (Med): Use DFS or BFS to explore each discovered island fully, marking visited nodes. Count instances where new islands are detected during traversal.
+**200. Number of Islands (Med):** Use DFS or BFS iterative traversal, marking visited components to count distinct enclosed land areas (islands) in a binary grid matrix.
 
-56.  Lowest Common Ancestor of a Binary Search Tree (Med): Utilize BST properties. Traverse starting from the root, searching in left or right child based on value comparison to locate the LCA.
+**235. Lowest Common Ancestor of a Binary Search Tree (Med):** Utilize BST properties to traverse from root, narrowing down nodes based on value comparison to find the correct ancestor.
 
-57.  Group Shifted Strings (Med): Compare distance patterns between characters in each string. Use these patterns as keys to group similar shifting sequences in a dictionary for comparison.
+**249. Group Shifted Strings (Med):** Compute transformation patterns for each string and use these as keys to group strings that undergo similar character shifts.
 
-58.  Meeting Rooms II (Med): Use a min-heap to track ongoing meetings' end times. As intervals are processed by their start time, allocate or release rooms based on available heap slots.
+**253. Meeting Rooms II (Med):** Use a min-heap to track end times of ongoing meetings, allocating rooms by pushing new meetings start times in sorted order and releasing as they conclude.
 
-59.  Insert Delete GetRandom O(1) - Duplicates allowed (Hard): Merge a hash map and a list to support fast insertion, deletion, and random access. Update map entries and list indices as needed.
+**381. Insert Delete GetRandom O(1) - Duplicates allowed (Hard):** Use a combination of list and map data structures to achieve O(1) complexity for insert, delete, and getRandom operations with duplicates.
 
-60.  Diagonal Traverse (Med): Use two nested loops to collect matrix elements by their sum of indices, then alternate sorting directions while constructing the output from these diagonal groups.
+**498. Diagonal Traverse (Med):** Traverse matrix diagonally by calculating diagonal indices (sum of coordinates). Adjust traversal direction alternately to correctly configure resulting ordering.
 
-61.  Continuous Subarray Sum (Med): Use prefix sum and a hashmap to detect if a subarray summing to a multiple of k exists. Track cumulative sums' modulo k and check for repeated values.
+**523. Continuous Subarray Sum (Med):** Maintain a prefix sum and its modulo with k in a hashmap to detect valid subarrays, spotting repeated modulo values that signify valid cycles.
 
-62.  Boundary of Binary Tree (Med): Traverse the tree to collect left boundary, leaves, and right boundary using three distinct DFS traversals. Combine these edge paths to define the entire boundary.
+**545. Boundary of Binary Tree (Med):** Traverse for left boundary, right boundary, and leaves separately using DFS, collecting nodes in order to form the full boundary path collection.
 
-63.  Add Bold Tag in String (Med): Use a boolean array to mark bold intervals. Merge these intervals into tags while constructing the string with embedded bold boundaries wherever required.
+**616. Add Bold Tag in String (Med):** Track bold intervals in a boolean array while sorting and merging overlapping regions, appending corresponding tags within indicated indices.
 
-64.  Sliding Puzzle (Hard): Use BFS to simulate tile swapping. Apply a heuristic to prioritize optimal paths and precompute adjacent moves based on the current empty tile position.
+**773. Sliding Puzzle (Hard):** Apply BFS to model the sliding puzzle steps, using position states and adjacency to determine valid moves and shortest resolution path.
 
-65.  Robot Room Cleaner (Hard): Use DFS and a recursive backtracking algorithm to clean accessible areas. Utilize sensor feedback to navigate and return the robot ensuring all cells are cleaned.
+**489. Robot Room Cleaner (Hard):** Use DFS/backtracking and a recursive approach to explore and clean the space within bounds, handling direction changes and previously visited tiles.
 
-66.  All Nodes Distance K in Binary Tree (Med): Use BFS from the target node, expanding outward to the kth layer. Track visited nodes to prevent revisiting and count unique distance layers.
+**863. All Nodes Distance K in Binary Tree (Med):** Use BFS to explore nodes, starting from the target node, ensuring each distance level is correct through tracking visited nodes.
 
-67.  Shortest Bridge (Med): Use BFS to find and mark one island, then expand layer by layer until the second island is reached, giving the minimum bridge length.
+**934. Shortest Bridge (Med):** Perform DFS to identify and mark all components of the first island, then use BFS to expand outwards to discover and bridge the second island.
 
-68.  Minimum Cost For Tickets (Med): Use dynamic programming to track minimum travel costs on each day. Consider optimizing for daily, weekly, or monthly passes based on travel patterns.
+**983. Minimum Cost For Tickets (Med):** Use dynamic programming to minimize travel costs, evaluating the cost effectiveness of different ticket types (daily, weekly, monthly).
 
-69.  Interval List Intersections (Med): Use two pointers to iterate through both interval lists, checking for overlaps and advancing pointers based on interval end times to determine intersections.
+**986. Interval List Intersections (Med):** Use dual pointers to traverse both interval lists, identifying and recording overlaps by reviewing current end and start values.
 
-70.   Max Consecutive Ones III (Med): Use a sliding window to translate indices, counting flips when a zero is encountered. Adjust window size based on allowed flip limit to reach maximum consecutive ones. 
+**1004. Max Consecutive Ones III (Med):** Manage a window with two pointers, expanding when encountering zeros but adjusting for allowed flips, maximizing consecutive ones outcome.
 
-71.   Capacity To Ship Packages Within D Days (Med): Use binary search to determine the minimal valid shipping capacity. Check feasibility by simulating daily ship operations using the current capacity.
+**1011. Capacity To Ship Packages Within D Days (Med):** Binary search for the minimum capacity, iteratively verifying potential solutions using a simulated weighted load process.
 
-72.   Lowest Common Ancestor of a Binary Tree II (Med): Extend LCA logic to handle situations where nodes might not exist. Traverse the tree, counting occurrences to validate both nodes' presence before deciding.
+**1644. Lowest Common Ancestor of a Binary Tree II (Med):** Validate node existence before determination by traversing and counting hits, ensuring correct contextual ancestor analysis.
 
-73.   Recyclable and Low Fat Products (Easy): Filter a data stream according to labels depicting recyclable and low-fat conditions. Apply checks iteratively to qualify entries for the final list.
+**1757. Recyclable and Low Fat Products (Easy):** Filter and qualify data entries based on product attributes, enforcing conditions for inclusion by iterating over the dataset.
 
-74.   Create a DataFrame from List (Easy): Convert a list of data into a structured DataFrame object, typically using Python libraries like pandas to achieve formatted tabular representation and manipulation.
+**2877. Create a DataFrame from List (Easy):** Convert input lists to structured tabular data using a library like pandas to encapsulate and manipulate data through DataFrame objects effectively.
