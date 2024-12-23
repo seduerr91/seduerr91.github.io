@@ -8,45 +8,37 @@ description: My Trip to Asia from Jan 19 - Feb 1
 
 ## Overview
 
-| Airline              | Location Departure              | Location Arrival                  | Date Departure     | Time Departure | Date Arrival       | Time Arrival | Flight Duration  | Days \ Hours in Location |
-|----------------------|----------------------------------|------------------------------------|--------------------|----------------|--------------------|--------------|------------------|--------------------------|
-| Singapore Airlines   | Seattle (SEA)                  | Singapore (SIN)                   | Sun, 19 Jan 2025   | 08:40          | Mon, 20 Jan 2025   | 17:40        | 17h              | 26 hours                 |
-| IndiGo               | Singapore (T2)                 | Delhi (T3)                        | Tue, 21 Jan 2025   | 19:40          | Tue, 21 Jan 2025   | 23:20        | 5h 40m           | 19 hours                 |
-| IndiGo               | Delhi (T2)                     | Surat                              | Wed, 22 Jan 2025   | 19:00          | Wed, 22 Jan 2025   | 20:55        | 1h 55m           | 3 days 22 hours          |
-| IndiGo               | Surat                           | Bengaluru (T1)                    | Sat, 25 Jan 2025   | 19:05          | Sat, 25 Jan 2025   | 20:55        | 1h 50m           | 4 hours                  |
-| IndiGo               | Bengaluru (T2)                 | Bali                               | Sun, 26 Jan 2025   | 01:10          | Sun, 26 Jan 2025   | 10:15        | 9h 5m            | 3 days 20 hours          |
-| Lion Air             | I Gusti Ngurah Rai (Bali, DPS) | Yogyakarta International Airport   | Wed, 29 Jan 2025   | 07:00          | Wed, 29 Jan 2025   | 07:50        | 1h 50m           | 2 days 2 hours           |
-| Scoot                | Yogyakarta International Airport | Changi Airport (SIN)             | Fri, 31 Jan 2025   | 09:45          | Fri, 31 Jan 2025   | 13:00        | 2h 15m           | 20 hours           |
-| Singapore Airlines   | Singapore (SIN)                | Seattle (SEA)                     | Sat, 01 Feb 2025   | 09:00          | Sat, 01 Feb 2025   | 07:10        | 15h 10m          | -                        |
-
 ![o](https://plus.unsplash.com/premium_photo-1712254285399-f5f181730830?q=80&w=3750&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+| Location Departure              | Location Arrival                  | Date Departure     | Time Departure | Date Arrival       | Time Arrival | Flight Duration  | Days \ Hours in Location |
+|----------------------------------|------------------------------------|--------------------|----------------|--------------------|--------------|------------------|--------------------------|
+| Seattle (SEA)                   | Singapore (SIN)                   | Sun, 19 Jan 2025   | 08:40          | Mon, 20 Jan 2025   | 17:40        | 17h              | 26 hours                 |
+| Singapore (T2)                  | Delhi (T3)                        | Tue, 21 Jan 2025   | 19:40          | Tue, 21 Jan 2025   | 23:20        | 5h 40m           | 19 hours                 |
+| Delhi (T2)                      | Surat                              | Wed, 22 Jan 2025   | 19:00          | Wed, 22 Jan 2025   | 20:55        | 1h 55m           | 3 days 22 hours          |
+| Surat                            | Bengaluru (T1)                    | Sat, 25 Jan 2025   | 19:05          | Sat, 25 Jan 2025   | 20:55        | 1h 50m           | 4 hours                  |
+| Bengaluru (T2)                  | Bali                               | Sun, 26 Jan 2025   | 01:10          | Sun, 26 Jan 2025   | 10:15        | 9h 5m            | 3 days 20 hours          |
+| I Gusti Ngurah Rai (Bali, DPS)  | Yogyakarta International Airport   | Wed, 29 Jan 2025   | 07:00          | Wed, 29 Jan 2025   | 07:50        | 1h 50m           | 2 days 2 hours           |
+| Yogyakarta International Airport | Changi Airport (SIN)             | Fri, 31 Jan 2025   | 09:45          | Fri, 31 Jan 2025   | 13:00        | 2h 15m           | 20 hours                 |
+| Singapore (SIN)                 | Seattle (SEA)                     | Sat, 01 Feb 2025   | 09:00          | Sat, 01 Feb 2025   | 07:10        | 15h 10m          | -                        |
 
 ## **Singapore (20 Jan 2025, 26 hours)**  
 
 ![s](https://images.unsplash.com/photo-1707412929796-a19da07bc843?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
-Singapore Changi Airport itself is an attraction with world-class amenities. Once checked into your layover hotel or freshened up, spend your brief time in the tropical city exploring its highlights close to the airport:
-
-#### **Morning (Arrive at 5:40 PM, 20 Jan)**  
-Unwind after your flight or get an energizing start:
+#### **Evening (Arrive at 5:40 PM, 20 Jan)**
 
 - **Changi Jewel**: Right at Changi Airport, visit the Jewel, a glittering glass-domed indoor garden with the **HSBC Rain Vortex** (world’s tallest indoor waterfall).  
-  - ![Jewel Changi HSBC Rain Vortex](https://upload.wikimedia.org/wikipedia/commons/0/0f/Jewel_Changi_Airport_top_view.jpg)
-
----
 
 #### **Next Day (21 Jan)**  
 
-Start your day early to make the most of your short Singapore visit:  
+Start your day early to make the most of your short Singapore visit:
+
 - **Gardens by the Bay**: About 15-20 mins from Changi, these iconic gardens display futuristic Supertrees and a stunning cloud forest. (***Tip:*** Book online to avoid queues!)  
   - *Recommendation*: Enjoy breakfast at **Satay by the Bay**, a hawker center near the gardens.
-
 - **Marina Bay Sands Observation Deck**: Marvel at Singapore’s skyline from this stunning vantage point.  
   - ![Marina Bay Sands](https://upload.wikimedia.org/wikipedia/commons/5/52/Marina_Bay_Sands_in_the_evening_-_20101120.jpg)  
 
 Back to Changi by 4 PM for your **IndiGo flight to Delhi.**
-
----
 
 ## India
 
@@ -421,17 +413,12 @@ With a flight departing at **9:45 AM**, there's little time to explore. Use your
 
 For your second layover in Singapore, since you've already explored popular landmarks like **Gardens by the Bay** and **Marina Bay Sands Observation Deck** earlier (assuming you've covered them during your first stop), you can dive deeper into lesser-explored areas, enjoy a different cultural side of Singapore, or even partake in a unique activity. With **26 hours**, you have plenty of time to explore while ensuring you get rest for your long flight back to Seattle.
 
-Here’s an **optimized plan** based on variety, cultural immersion, and proximity to the airport:
-
----
-
 ### **Morning: Start Your Day Early**
 
 Leave the airport right after your arrival (~1:00 PM if your flight is on time), check into a transit hotel or store your luggage at Jewel Changi to travel light. Kick off your day with these activities:
 
----
-
 #### Option 1: **Hawker Centre Exploration & Little India/Arab Street** (Cultural Immersion)
+
 1. **Maxwell Food Centre or Lau Pa Sat (Lunch)**  
    - Head to a famous hawker center to enjoy authentic Singaporean street food. Since you’ve got time between flights, why not finally try **Hainanese chicken rice**, **Laksa**, or **Char Kway Teow (stir-fried noodles)**?  
    - **Lau Pa Sat** also excels in satay stalls and offers a lively downtown vibe.  
@@ -445,8 +432,6 @@ Leave the airport right after your arrival (~1:00 PM if your flight is on time),
 
    **Travel Time**: ~10-15 mins from Maxwell.  
    **Duration**: ~1.5 hr.
-
----
 
 #### Option 2: **Pulau Ubin or East Coast Park** (Peaceful Nature Escape)
 If you’re feeling adventurous and want a completely different side of Singapore:
@@ -476,8 +461,6 @@ If you’re feeling adventurous and want a completely different side of Singapor
    - If you missed **Gardens by the Bay** or **Supertrees** on your first visit, you can now explore them beautifully lit at night. The **Garden Rhapsody Light & Sound Show** (7:45 PM and 8:45 PM) is spectacular.  
    - For a luxurious post-dinner view, head to the **Marina Bay Sands SkyPark Observation Deck** or simply enjoy the illuminated skyline near the **Merlion** statue.  
 
----
-
 ### **Evening: Dinner Recommendations**  
 Here are some dining options for a memorable final Singaporean meal:  
 
@@ -485,12 +468,7 @@ Here are some dining options for a memorable final Singaporean meal:
 2. **Newton Food Centre** *(Closer Alternative to Late Dining)*: This bustling hawker spot is ideal for supper and serves a mix of local dishes, including **Hokkien mee**, fried oysters, and lime-soaked stingray.  
 3. **Violet Oon Satay Bar & Grill** *(Upscale Option)*: A perfect spot to try elevated Peranakan (Straits Chinese) cuisine paired with great ambiance.  
 
-Dining here preps you to return to Jewel or your nearby accommodation for relaxation.  
-
----
-
 ### **Midnight or Morning (1 Feb): Relax at Jewel Changi**
-If you didn’t visit **Jewel Changi** thoroughly during your first layover, now is the time to fully immerse yourself.  
 
 **Things to Do at Jewel:**  
 - Take a leisurely walk to see the **Rain Vortex** at night.  
@@ -498,8 +476,6 @@ If you didn’t visit **Jewel Changi** thoroughly during your first layover, now
 - Grab breakfast at **A&W** or **Birds of Paradise Gelato Boutique** before heading to your flight.  
 
 Be at the airport check-in desk by **6:00 AM**, leaving enough time for international departures.
-
----
 
 ### **Suggested Timeline:**
 
