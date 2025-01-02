@@ -38,7 +38,7 @@ Next, let's install some essential applications that will enhance your productiv
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && \
 brew install python@3.11 python@3.10 python@3.12 python@3.13 && \
-brew install --cask spotify docker visual-studio-code slack amphetamine warp google-chrome whatsapp zoom postman 1password 
+brew install --cask spotify docker visual-studio-code slack amphetamine warp google-chrome whatsapp zoom postman 1password granted
 ```
 
 - **Spotify**: For music and podcasts to keep you motivated.
