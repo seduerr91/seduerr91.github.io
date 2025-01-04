@@ -216,10 +216,16 @@ If you're looking to avoid these issues, consider exploring smaller cities or su
 
 ---
 
-## Final Thoughts
+## Prompt for O1
 
-While every city has its unique challenges, it's important to research and perhaps visit places to get a personal sense of the environment. Many cities also have thriving communities working to improve these issues.
+```yaml
+I enjoy the ease of getting around by car with minimal traffic and value safe, clean public transportation. I love sunny weather and activities like pickleball, running, and trail running. Access to a major airport, bodies of water, affordable housing, and parks are important to me.
 
----
+I prefer to avoid areas with high levels of violence, drug abuse, heavy car traffic, housing shortages, frequent rain, or extreme heat that limits outdoor activities.
 
-*Disclaimer: The information provided is based on general trends and may not reflect the most current data. Conditions can change, and experiences may vary within different neighborhoods of each city.*
+Considering that I work remotely and can live anywhere in the United States, what are some great places that align with my preferences?
+
+Please rate every dimension as low, mid, or high and compile all suggestions into a table. Also, please turn this into a blog article.
+
+Afterwards, take a look at the worst offenders.
+```
