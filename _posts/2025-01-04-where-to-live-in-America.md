@@ -305,13 +305,12 @@ To help you visualize how each city aligns with your preferences, here's a compa
 | **Sunshine**               | High        | High       | Mid                | High      | High               | Mid         | High          | High     | High          | High                 |
 | **Outdoor Activities**     | High        | High       | High               | High      | High               | High        | High          | High     | High          | High                 |
 | **Major Airport Access**   | Mid         | High       | High               | Mid       | High               | Mid         | Low           | Low      | High          | Mid                  |
-| **Proximity to Water**     | Mid         | Mid        | Mid                | Mid       | Low                | High        | Mid           | Mid      | High          | Low                  |
+| **Proximity to Water**     | Mid         | Mid        | Mid                | Mid       | Mid                | High        | Mid           | Mid      | High          | Low                  |
 | **Abundant Parks**         | High        | High       | High               | High      | High               | High        | High          | High     | High          | High                 |
 | **Levels of Homelessness** | Mid         | Mid        | Low                | Low       | Mid                | Mid         | Mid           | Low      | High          | Low                  |
 | **Minimal Traffic**        | High        | Low        | High               | High      | High               | Mid         | Mid           | Mid      | Low           | High                 |
 | **Affordable Housing**     | Low         | Low        | High               | Mid       | Mid                | Mid         | Low           | Low      | Low           | Mid                  |
 | **Coffee Culture**         | High        | High       | Mid                | High      | Mid                | High        | High          | Mid      | High          | Mid                  |
-| **Wife's Activities Fit**  | High        | High       | High               | High      | High               | High        | High          | High     | High          | High                 |
 
 ---
 
