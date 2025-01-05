@@ -5,36 +5,66 @@ permalink: /about/
 weight: 3
 ---
 
+## Overview
+
 Hello, I'm Sebastian, a fervent Natural Language Processing (NLP) engineer and an accomplished manager. Beyond my technological acumen, I'm a global explorer, having spent two vibrant years as a digital nomad across 25 diverse nations. Four languages - English, Spanish, French, and German - are effortlessly part of my conversational repertoire, demonstrating my proficiency in thriving amidst diverse cultures. 
 
+<div style="text-align: center;">
+    <img src="https://i.imgur.com/m4jlWgEm.jpg" alt="Imgur" style="width: 300px;">
+</div>
+
+
 Despite my professional accomplishments, I believe in maintaining a balanced life. Thus, I devote time to yoga, swimming, hiking, cooking, reading, Pickleball and running. These activities keep me grounded and connect me to nature. 
+
+## Academic and Professional Vita
 
 My journey began at Germany's distinguished [University of Bamberg](https://www.uni-bamberg.de/presse/pm/artikel/che-masterbefragung-2020/), where I studied Information Systems and bagged both a B.Sc and an M.Sc, graduating with honors. This experience ignited my interest in digital innovation that led to my fruitful two-year stint as a research assistant, collaborating with renowned professors to contribute to the latest research.
 
 Working as the Chief Product Owner for consumer products at Raiffeisen Digital, Austria's leading bank, I had the opportunity to refine my leadership skills. Guiding various teams through complex projects, from [granting of loans](https://www.raiffeisen.at/ooe/de/privatkunden/kredit-leasing/konsumkredit.html), [opening of accounts](https://www.raiffeisen.at/ooe/de/privatkunden/konto/girokonto.html), to [qualifying for a credit card](https://www.raiffeisen.at/ooe/de/privatkunden/karte/kreditkarte.html) taught me to maneuver challenging professional scenarios. However, my thirst for knowledge was far from satisfied. 
 
-In pursuit of further mastery in NLP, I took a sabbatical - a bold departure from the comfort of a well-settled managerial role. This led me back to academia, from being a visiting student at the esteemed [MIT's Center for Collective Intelligence](https://www.youtube.com/watch?v=myXANO-Mvo4) to my hands-on experience as an NLP Engineer at Narrativa. The journey was enriched by completing certification courses in [Machine Learning](https://www.datacamp.com/statement-of-accomplishment/track/fcc43394ed8ce4a8b20daf705e4c3e976c6e028e), [Deep Learning in NLP](https://www.coursera.org/account/accomplishments/certificate/2N9ZQ8BVSG8H), and [Entrepreneurship at Y Combinator's Startup School](https://www.startupschool.org/users/shWfuCCKk/certificate).
+In pursuit of further mastery in NLP, I took a sabbatical - a bold departure from the comfort of a well-settled managerial role. This led me back to academia, from being a visiting student at the esteemed [MIT's Center for Collective Intelligence](https://www.youtube.com/watch?v=myXANO-Mvo4) to my hands-on experience as an NLP Engineer at Narrativa. The journey was enriched by completing certification courses in [Machine Learning](https://www.datacamp.com/statement-of-accomplishment/track/fcc43394ed8ce4a8b20daf705e4c3e976c6e028e), [Deep Learning in NLP](https://www.coursera.org/account/accomplishments/certificate/2N9ZQ8BVSG8H), and [Entrepreneurship](https://www.startupschool.org/users/shWfuCCKk/certificate) at Y Combinator's Startup School.
 
 Now, with over five years of valuable NLP experience, I have become a respected figure in the industry. I take pride in my contributions, particularly in developing and training deep neural networks for NLP tasks.
 
 Presently, I am an integral part of the team at Cordial. Here, I have the opportunity to seamlessly bridge the gap between management and engineering using my unique blend of business acumen and technical expertise. My philosophy of coupling practical knowledge with groundbreaking innovation aims to revolutionize natural language processing. My unique multilingual and multicultural approach empowers me to propel forward in the NLP field, setting new standards in the realm of global technological leadership.
 
-Above is the story for applying for government grants or scholarships. However, I like to also give my personal story. I grew up in a village of 300 people and at the time - they are all gone by now, we had more cows than inhabitants. The village I grew up in is 30 minutes from Wuerzburg in Bavaria and barely anyone went to university or pursued higher education.
+## My Personal Story: From Bavarian Cows to Seattle Skyscrapers
 
-I grew up there really safe and happy, always only exposed to German and in a conservative way, joining the local soccer club, helping at the Catholic church service, playing at the local theatre, and living the customs of our little area. Once, you reach the fourth grade of elementary school in Germany, it is time for you to decide which school direction you want to pursue, and as everybody from my family, I was expected to make it into Realschule, the *middle tier* of German's school system. However, when they went to my teacher at the time, he insisted that I can try the high tier ("Gymnasium"). He said that I might not be the best but he firmly believes I can make it. Thank you so much for believing in me. After that, I went to Gymnasium Marktbreit and it was fancy to be bad in school, never pay attention or do homework or bully and being bullied. I didn't like school a lot and my grades weren't good at all. I guess I tried to fit in. However, there was this guy who switched school to the town of Wuerzburg - Deutschhaus Gymnasium - and he said it was so much better: I could study Spanish and do advanced classes in Sport, if I made the switch. 
+I grew up in a village of 300 people—though now it's nearly cow deserted— back then, we had more cows than people. Udderly unbelievable, right? The village was just 30 minutes from Würzburg in Bavaria, and hardly anyone went to university or pursued higher education.
 
-Fortunately, I did. Our class at Deutschhaus was renowned as being the kindest and most ambitious class, my girlfriend at that high school taught me how to study and that well organized notes make great results. I got curious about life, and with the advanced sport classes, I learnt how important it is to exercise to support being productive and having fun. Finally, we all did our A levels and I got a 2.2 (B) which was good and confirmed what my elementary teacher sought out. Following then the roots of my village, I applied to become an apprentice at a bank - Raiffeisen - and landed the role. Everybody from my family was proud: my mom and dad, my sister, but there was my girlfriend and she said: "I am happy for you but you should really go to university." All I answered was: "What is university?". I truly didn't know, I didn't know what makes a student, I just had finished the a-levels and I thought I will never have to learn anything by heart ever again, but then this... Gosh, thank you Karoline for pushing me this way.
-
-I went to university of Bamberg, and I studied and worked in a yoghurt factory on the side (for 5 years and 8 months total) to finance what I was doing. At some point, things with Karo faded but my flat mate Tizian was applying for Erasmus - an exchange program. I had no idea, but decided to try, too. Going to Budapest in Hungary and moving in with French and English speakers allowed me to express myself and have conversations beyond superficials in English, and a bit in French. Gosh was I grateful. I met people from all over the world, and studied more and gained so much ambition. I even finished my Bachelor studies in 5.5 out 7 semesters.
-
-Right after, I applied for an internship in Hong Kong and I gained international work experience, and learnt to travel. I visited 10 different countries (Hong Kong, Macao, Phillipines, Taiwan, Vietnam, Thailand, Cambodia, Malaysia, China and Japan) in 6 months. I returned home, did my Masters with distinction (1.2, A+), joined the United Nations in New York City, and started a Ph.D. with Tim Weitzel one of the best professors in the world in Information Systems. However, the academic world, all the theoretical suggesting, and the confinement to small towns in southern Germany, made me quit and move to Vienna instead. I loved being back to an international city, and made a career in Finance. However, the daily haggling for resources tired me and I started coding full time on the side. 
-
-It wasn't long until I made it into MIT as a grad researcher at Peter Gloor's lab at Sloan School of Management, and found myself researching movement of plants and later persuasiveness in messages. Such a fun time, which lead to a few scholarships to pursue my own startup dreams on persuasive message generation. However, we were remote due to Covid and couldn't really manage to pull into one direction. However, I met Joy - my now wife - we travelled for 11 months, and finally got into the US. 
-
-This is all so non-linear and never what I expected. I cannot believe it has happened to me. I want to come back and reiterate on this but this is a brief summary of my life story as I sometimes share it with random people. Thank you world for being an awesome place. Many regards from Seattle, Washington - 5000 miles from where I grew up. 
-
-![Imgur](https://i.imgur.com/m4jlWgEm.jpg)
-
-<div class="row">
-{% include about/timeline.html %}
+<div style="text-align: center;">
+    <img src="https://i.imgur.com/m4jlWgEm.jpg" alt="Imgur" style="width: 300px;">
 </div>
+
+
+Life there was safe and happy. I was immersed in German language and conservative culture—joining the local soccer club, helping at Catholic church services, performing at the local theater, and embracing the customs of our little area.
+
+In Germany, once you reach the fourth grade of elementary school, it's time to decide which educational path to pursue. Like everyone in my family, I was expected to attend Realschule, the *middle tier* of Germany's school system. However, my teacher insisted that I should aim for the highest tier—the Gymnasium. He said I might not be the best, but he firmly believed I could make it. Thank you so much for believing in me—even if I didn't quite believe in myself.
+
+So off I went to Gymnasium Marktbreit, where being bad at school was all the rage. Not paying attention, skipping homework, bullying, and being bullied—it was like "Cool Kids 101." I didn't like school much, and my grades weren't good at all. I guess I was just trying to fit in.
+
+Then, a classmate switched to a school in Würzburg—the Deutschhaus Gymnasium—and told me it was so much better. "You can study Spanish and take advanced classes in sports if you make the switch," he said. Sounded like a win to me.
+
+Fortunately, I made the switch. Our class at Deutschhaus was renowned for being the kindest and most ambitious. My girlfriend at the time taught me how to study and showed me that well-organized notes lead to great results. I became curious about life, and with the advanced sports classes, I learned how important it is to exercise to boost productivity, stay balanced and have fun.
+
+Finally, we all took our A-levels (Abitur), and I earned a 2.2 (B), which was good and confirmed what my elementary teacher had predicted. Following the traditions of my village, I applied to become an apprentice at a bank — Raiffeisen — and landed the role. Everyone in my family was proud: my mom and dad, my sister. But my girlfriend said, "I'm happy for you, but you should really go to university."
+
+All I could say was, "What's a university?" I mean, I thought I'd graduated from school forever and could finally stop memorizing stuff! But then this... So, thank you, Karoline, for pushing me into the deep end of academia.
+
+I went to the University of Bamberg, and to support myself, I worked at a yogurt factory on the side—for a total of 5 years and 8 months. Yes, I became quite the connoisseur of fermented milk products! At some point, things with Karo faded, but my flatmate Tizian was applying for Erasmus—an exchange program. I had no idea what that was, but decided to try too. What's the worst that could happen? (Spoiler alert: It was amazing.)
+
+Moving to Budapest, Hungary, and living with French and English speakers allowed me to express myself and have conversations beyond superficial topics in English—and a bit in French. Gosh, was I grateful. I met people from all over the world, studied more, and gained so much ambition. I even finished my bachelor's studies in 5.5 out of 7 semesters.
+
+Right after, I applied for an internship in Hong Kong, where I gained international work experience and learned to travel. I visited ten different countries (Hong Kong, Macau, the Philippines, Taiwan, Vietnam, Thailand, Cambodia, Malaysia, China, and Japan) in six months—it was like speed dating but with passports! I returned home, completed my master's degree with distinction (1.2, A+), joined the United Nations in New York City, and started a Ph.D. with Tim Weitzel, one of the best professors in the world in Information Systems.
+
+However, the academic world—with all its theoretical discussions and my confinement to small towns in southern Germany—made me quit and move to Vienna instead. I loved being back in an international city and made a career in finance. However, the daily haggling for resources tired me out, so I started coding full-time on the side. As one does.
+
+It wasn't long before I made it into MIT as a graduate researcher at Peter Gloor's lab at the Sloan School of Management. I found myself researching the movement of plants (yes, plants do move!) and later the persuasiveness of messages. It was a fun time, leading to a few scholarships to chase my own startup dreams in persuasive message generation. But working remotely due to COVID-19 made us feel like we were all pulling in different directions—or maybe just pushing our Wi-Fi to the limits.
+
+But during that time, I met Joy—my now wife. We traveled for 11 months and finally made it into the U.S. Here, we happily got married, I took a remote job for a kind and fun Californian tech startup, and adopted to kittens. 
+
+It's all so non-linear—like a drunken snail trying to do calculus—and never what I expected. I can't believe it has happened to me. I'd like to come back and elaborate on this, but this is a brief summary of my life story as I sometimes share it with random people. Thank you, world, for being an awesome place.
+
+Many regards from Seattle, Washington—about 5,000 miles (or 8,047 kilometers for my metric friends) from where I grew up,
+
+Seb
