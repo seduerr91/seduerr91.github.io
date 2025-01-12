@@ -533,22 +533,19 @@ With this plan, you’ll enjoy a different cultural layer or natural escape in S
 
 Here is a detailed markdown table with all the essential bookings and pre-arrangements you’ll need for a seamless trip:
 
-| **Task**                                    | **Details**                                                 | **Deadline**        |
-|---------------------------------------------|-------------------------------------------------------------|---------------------|
-| **Book Hotels in Singapore**                | Book Changi Airport Transit Hotel (YOTEL or Crowne Plaza) for layovers on **20 Jan** and **31 Jan**. | Immediately         |
-| **Book Hotels in Delhi**                    | Book a hotel near Delhi Airport or central area (e.g., Aerocity or Connaught Place). | ASAP before trip     |
-| **Book Hotels in Surat**                    | Book hotel close to wedding venue (**Taj Gateway Surat** or **Lords Plaza Surat**). | ASAP after wedding details are confirmed |
-| **Book Hotels in Bali**                     | Book accommodations in **Seminyak** or **Ubud** (e.g., Alila Seminyak or Komaneka Ubud). | 1-2 Months Before Trip |
-| **Book Hotels in Yogyakarta**               | Book a hotel near Borobudur (Day 1) and central Yogyakarta (Day 2). Options: **Plataran Borobudur** or **Phoenix Hotel Yogyakarta**. | 1-2 Months Before Trip |
-| **Singapore: Jewel Rain Vortex Entry**      | Pre-book access to Jewel Changi activities (e.g., Canopy Park attractions). | Before departure     |
-| **Singapore: Gardens by the Bay Tickets**   | Pre-book **Gardens by the Bay** and **Supertree Observatory** tickets to save time. | 2-3 weeks in advance |
-| **Delhi: Hire Driver**                      | Arrange for **private car with driver** for sightseeing (half-day, 22 Jan). Use services like Savaari or Grab. | 1 Week in Advance    |
-| **Delhi: Pre-book Entry Tickets**           | Online entry tickets for **Humayun's Tomb** and **Lotus Temple** (via official sites). | 1 Week in Advance    |
-| **Bali: Hire Driver/Guide**                 | Book **private driver with guide** for Bali sightseeing (use services like Klook or GetYourGuide). Areas: Uluwatu, Ubud, etc. | 1 Month in Advance   |
-| **Bali: Temple Tickets**                    | Optionally pre-book entry for **Uluwatu Temple** and **Tegalalang Rice Terraces** on official platforms. | 1-2 weeks in advance |
-| **Yogyakarta: Borobudur Guide**             | Hire a **licensed guide** for **Borobudur/Mendut/Pawon temples**. Book online or ask at hotel. | Before Arrival       |
-| **Yogyakarta: Ramayana Ballet Tickets**     | Pre-book tickets for **Ramayana Ballet Performance** (Purawisata or Prambanan stage). | 2-3 Weeks in Advance |
-| **Bali-Yogyakarta Flight**                  | Confirm **Lion Air flight DPS → YIA (Bali to Yogyakarta)** is booked and reconfirm 24 hours prior. | Already booked—monitor timing adjustments |
-| **Scoot Flight: Yogyakarta → Singapore**    | Reconfirm and add any baggage requirements prior to departure. | 3 Days Before Flight |
-| **Visa for Indonesia**                      | Check VISA requirements for Indonesia (Visa on Arrival possible). Apply online or prepare cash. | Before travel        |
-| **Insurance**                               | Take out **comprehensive travel insurance** covering Asia (medical/emergency/repatriation). | 1 Month Before Trip  |
+|x| **Task**                                    | **Details**                                                 | **Deadline**        |
+|-|---------------------------------------------|-------------------------------------------------------------|---------------------|
+| | **Insurance**                               | Take out **comprehensive travel insurance** covering Asia (medical/emergency/repatriation). | 1 Month Before Trip  |
+|-| **Singapore: Jewel Rain Vortex Entry**      | Pre-book access to Jewel Changi activities (e.g., Canopy Park attractions). | Before departure     |
+|x| **Singapore: Gardens by the Bay Tickets**   | Pre-book **Gardens by the Bay** and **Supertree Observatory** tickets to save time. | 2-3 weeks in advance |
+|o| **Delhi: Hire Driver**                      | Arrange for **private car with driver** for sightseeing (half-day, 22 Jan). Use services like Savaari or Grab. | 1 Week in Advance    |
+| | **Delhi: Pre-book Entry Tickets**           | Online entry tickets for **Humayun's Tomb** and **Lotus Temple** (via official sites). | 1 Week in Advance    |
+| | **Bali: Hire Driver/Guide**                 | Book **private driver with guide** for Bali sightseeing (use services like Klook or GetYourGuide). Areas: Uluwatu, Ubud, etc. | 1 Month in Advance   |
+| | **Bali: Temple Tickets**                    | Optionally pre-book entry for **Uluwatu Temple** and **Tegalalang Rice Terraces** on official platforms. | 1-2 weeks in advance |
+| | **Yogyakarta: Borobudur Guide**             | Hire a **licensed guide** for **Borobudur/Mendut/Pawon temples**. Book online or ask at hotel. | Before Arrival       |
+| | **Yogyakarta: Ramayana Ballet Tickets**     | Pre-book tickets for **Ramayana Ballet Performance** (Purawisata or Prambanan stage). | 2-3 Weeks in Advance |
+| | **Book Hotels in Surat**                    | Book hotel close to wedding venue (**Taj Gateway Surat** or **Lords Plaza Surat**). | ASAP after wedding details are confirmed |
+|x| **Book Hotels in Singapore**                | Book Changi Airport Transit Hotel (YOTEL or Crowne Plaza) for layovers on **20 Jan** and **31 Jan**. | Immediately         |
+|x| **Book Hotels in Delhi**                    | Book a hotel near Delhi Airport or central area (e.g., Aerocity or Connaught Place). | ASAP before trip     |
+|x| **Book Hotels in Bali**                     | Book accommodations in **Seminyak** or **Ubud** (e.g., Alila Seminyak or Komaneka Ubud). | 1-2 Months Before Trip |
+|x| **Book Hotels in Yogyakarta**               | Book a hotel near Borobudur (Day 1) and central Yogyakarta (Day 2). Options: **Plataran Borobudur** or **Phoenix Hotel Yogyakarta**. | 1-2 Months Before Trip |
