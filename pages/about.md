@@ -32,11 +32,6 @@ Presently, I am an integral part of the team at Cordial. Here, I have the opport
 
 I grew up in a village of 300 people—though now it's nearly cow deserted— back then, we had more cows than people. Udderly unbelievable, right? The village was just 30 minutes from Würzburg in Bavaria, and hardly anyone went to university or pursued higher education.
 
-<div style="text-align: center;">
-    <img src="https://i.imgur.com/m4jlWgEm.jpg" alt="Imgur" style="width: 300px;">
-</div>
-
-
 Life there was safe and happy. I was immersed in German language and conservative culture—joining the local soccer club, helping at Catholic church services, performing at the local theater, and embracing the customs of our little area.
 
 In Germany, once you reach the fourth grade of elementary school, it's time to decide which educational path to pursue. Like everyone in my family, I was expected to attend Realschule, the *middle tier* of Germany's school system. However, my teacher insisted that I should aim for the highest tier—the Gymnasium. He said I might not be the best, but he firmly believed I could make it. Thank you so much for believing in me—even if I didn't quite believe in myself.
