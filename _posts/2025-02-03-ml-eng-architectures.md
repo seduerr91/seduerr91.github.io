@@ -1275,9 +1275,9 @@ print(f"Classification AUC: {auc:.4f}")
 mse = np.mean((time_preds_all - time_labels_all)**2)
 print(f"Watch Time MSE: {mse:.2f}")
 ```
-────────────────────────────────────────────────────────────────────────────────────
+---
 Explanation
-────────────────────────────────────────────────────────────────────────────────────
+---
 
 1) Data:  
    • We simulate user/context/item features and two tasks: (a) watch or not, (b) total watch time.  
