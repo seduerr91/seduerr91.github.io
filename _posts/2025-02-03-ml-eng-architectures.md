@@ -6,7 +6,46 @@ color: secondary
 description: Wide and Deep, Two Tower, and more.
 ---
 
-# Wide And Deep Architecture
+## Summary
+
+- Two-Tower architecture is suitable for semantic search and question answering tasks.
+- DCNv2 is a powerful architecture for CTR and conversion rate prediction tasks.
+- Multitask architecture is suitable for joint modeling of multiple related tasks.
+- Wide and Deep architecture is well-suited for recommendation systems and personalized ranking tasks.
+
+## Architectures
+
+Here are some specific use cases within big tech companies for feeds, rental listings, or restaurants (Yelp), and the architectures that might be suitable for each:
+
+## Two-Tower Architecture:
+- *Use cases:*
+    - Semantic search for rental listings (e.g., Airbnb, Zillow)
+    - Question answering for restaurant queries (e.g., "What restaurants near me serve vegan food?")
+    - Product search for e-commerce feeds (e.g., Amazon)
+- *Why:* Two-Tower architecture is well-suited for semantic search and question answering tasks, where the goal is to match user queries with relevant items (e.g., rental listings, restaurants, products).
+
+## DCNv2 (Deep & Cross Network version 2):
+- *Use cases:*
+    - Click-through rate (CTR) prediction for feed ads (e.g., Facebook, Instagram)
+    - Conversion rate prediction for rental listings (e.g., booking probability)
+    - Rating prediction for restaurants (e.g., Yelp)
+- *Why:* DCNv2 is a powerful architecture for CTR and conversion rate prediction tasks, where the goal is to model complex interactions between user features and item features.
+
+## Multitask Architecture:
+- *Use cases:*
+    - Joint modeling of user behavior and item attributes for feed ranking (e.g., Twitter, TikTok)
+    - Simultaneous prediction of CTR, conversion rate, and rating for rental listings or restaurants
+    - Multi-objective optimization for feed ads, balancing CTR, conversion rate, and revenue
+- *Why:* Multitask architecture is suitable for scenarios where multiple related tasks need to be learned simultaneously, sharing representations and improving overall performance.
+
+## Wide and Deep Architecture:
+- *Use cases:*
+    - Recommendation systems for feeds (e.g., YouTube, Netflix)
+    - Personalized ranking for rental listings or restaurants
+    - Predicting user engagement (e.g., likes, comments, shares) for feed items
+- *Why:* Wide and Deep architecture is well-suited for recommendation systems and personalized ranking tasks, where the goal is to model both low- and high-order interactions between user features and item features.
+
+## Wide And Deep Architecture
 
 Below is a self-contained Jupyter notebook example that demonstrates how to implement the Wide and Deep architecture in PyTorch. It includes:
 
