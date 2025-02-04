@@ -453,7 +453,7 @@ You can copy-paste this into a Jupyter notebook cell and run it step by step.
 --------------------------------------------------------------------------------
 # Two-Tower Retrieval Model with PyTorch
 --------------------------------------------------------------------------------
-
+```python
 --------------------------------------------------------------------------------
 ## CELL 1: Imports
 --------------------------------------------------------------------------------
@@ -470,7 +470,8 @@ import matplotlib.pyplot as plt
 ## For reproducibility
 torch.manual_seed(42)
 np.random.seed(42)
-
+```
+```python
 --------------------------------------------------------------------------------
 ## CELL 2: Synthetic Data Generation
 --------------------------------------------------------------------------------
@@ -549,7 +550,8 @@ df = pd.DataFrame({
 
 print(df.head())
 print("\nData shape:", df.shape)
-
+```
+```python
 --------------------------------------------------------------------------------
 ## CELL 3: Train-Test Split & Dataset Class
 --------------------------------------------------------------------------------
@@ -590,7 +592,8 @@ test_dataset = TwoTowerDataset(test_df)
 batch_size = 64
 train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
-
+```
+```python
 --------------------------------------------------------------------------------
 ## CELL 4: Two-Tower Model Definition
 --------------------------------------------------------------------------------
@@ -680,7 +683,8 @@ class TwoTowerModel(nn.Module):
         # Sigmoid to get probability
         probs = self.sigmoid(scores)
         return probs  # (batch_size)
-
+```
+```python
 --------------------------------------------------------------------------------
 ## CELL 5: Initialize Model, Loss, Optimizer
 --------------------------------------------------------------------------------
@@ -707,7 +711,8 @@ optimizer = optim.Adam(model.parameters(), lr=1e-3)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 print("Using device:", device)
-
+```
+```python
 --------------------------------------------------------------------------------
 ## CELL 6: Training Loop
 --------------------------------------------------------------------------------
@@ -745,7 +750,8 @@ plt.xlabel("Epoch")
 plt.ylabel("Loss")
 plt.legend()
 plt.show()
-
+```
+```python
 --------------------------------------------------------------------------------
 ## CELL 7: Evaluation on Test Set
 --------------------------------------------------------------------------------
@@ -774,7 +780,7 @@ test_labels = np.concatenate(test_labels, axis=0)
 pred_labels = (test_preds >= 0.5).astype(int)
 accuracy = (pred_labels == test_labels).mean()
 print(f"Test Accuracy: {accuracy * 100:.2f}%")
-
+```
 --------------------------------------------------------------------------------
 ## Explanation of Key Components
 --------------------------------------------------------------------------------
@@ -812,7 +818,7 @@ Below is a self-contained Jupyter notebook example that demonstrates how to impl
 • Combines cross-network output with a standard feed-forward “deep” network, then projects into multi-task heads.  
 
 You can copy-paste and run it in a Jupyter notebook cell. Enjoy experimenting!
-
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 1: Imports
 ────────────────────────────────────────────────────────────────────────────────────
@@ -829,7 +835,8 @@ import matplotlib.pyplot as plt
 ## For reproducibility
 torch.manual_seed(42)
 np.random.seed(42)
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 2: Synthetic Data Generation
 ────────────────────────────────────────────────────────────────────────────────────
@@ -888,7 +895,8 @@ df = pd.DataFrame({
 
 print(df.head())
 print("Data shape:", df.shape)
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 3: Train-Test Split & PyTorch Dataset
 ────────────────────────────────────────────────────────────────────────────────────
@@ -932,7 +940,8 @@ train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
 print(f"Training samples: {len(train_dataset)}, Testing samples: {len(test_dataset)}")
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 4: Define a Simple Embedding Layer for Categorical Features
 ────────────────────────────────────────────────────────────────────────────────────
@@ -975,6 +984,8 @@ class FeatureEmbedding(nn.Module):
         x = torch.cat([ue, te, de, ie], dim=-1)
         return x
 
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 5: Implement CrossNetworkV2 (Stacked Cross Layers) with Low-Rank
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1041,7 +1052,8 @@ class CrossNetworkV2(nn.Module):
             
             x = cross_term + b_l + x_l     # shape: (batch_size, d)
         return x
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 6: Combine DCN v2 with a Deep MLP and Multi-Task Heads
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1130,7 +1142,8 @@ class DCNv2Model(nn.Module):
         watch_time = self.time_head(deep_out)     # (batch_size, 1) regression output
         
         return watch_prob, watch_time
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 7: Training DCN v2 (Multi-Task)
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1218,7 +1231,8 @@ plt.xlabel("Epoch")
 plt.ylabel("Loss")
 plt.legend()
 plt.show()
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 8: Evaluation
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1260,7 +1274,7 @@ print(f"Classification AUC: {auc:.4f}")
 ## Compute MSE for watch_time
 mse = np.mean((time_preds_all - time_labels_all)**2)
 print(f"Watch Time MSE: {mse:.2f}")
-
+```
 ────────────────────────────────────────────────────────────────────────────────────
 Explanation
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1301,8 +1315,7 @@ Below is a self-contained PyTorch example demonstrating a multi-task learning ar
 • Demonstrate a ranking phase that blends p(like) and p(comment) into a single “score.”  
 • Illustrate how to map probabilities to a Gaussian distribution (via an inverse CDF, also known as the probit function) for more stable blending across different content types (photo vs. video).  
 
-You can copy-paste this into a Jupyter Notebook text cell and run it.
-
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 1: Imports
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1321,7 +1334,8 @@ from scipy.special import erfinv  # For inverse error function, used in probit
 ## For reproducibility
 torch.manual_seed(42)
 np.random.seed(42)
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 2: Synthetic Data Generation
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1401,7 +1415,8 @@ df = pd.DataFrame({
 
 print(df.head())
 print("Data shape:", df.shape)
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 3: Dataset and DataLoaders
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1442,7 +1457,8 @@ train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False)
 
 print(f"Training samples: {len(train_dataset)}, Testing samples: {len(test_dataset)}")
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 4: Define an Embedding Module for Inputs
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1480,7 +1496,8 @@ class FeatureEmbedder(nn.Module):
         
         x = torch.cat([ue, ie, te, ce], dim=-1)  # shape: (batch_size, 4*embed_dim)
         return x
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 5: Define Multi-Task Model
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1529,7 +1546,8 @@ class MultiTaskModel(nn.Module):
         p_like = self.sigmoid(like_logit)         # => p(like)
         p_comment = self.sigmoid(comment_logit)   # => p(comment)
         return p_like, p_comment
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 6: Training Loop
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1597,7 +1615,8 @@ plt.xlabel("Epoch")
 plt.ylabel("Loss")
 plt.legend()
 plt.show()
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 7: Evaluation + “Blending” for Ranking
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1670,7 +1689,8 @@ print(score_df.head(10))
 
 ## You might then group by item_type and examine distributions, or
 ## sort by rank_score_probit to get top items for a user.
-
+```
+```python
 ────────────────────────────────────────────────────────────────────────────────────
 CELL 8: “Lessons Learned” Example Explanation
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1707,5 +1727,5 @@ In practice, you can:
 • Use percentile-based scaling or other transformations to unify distributions.  
 • Use additional tasks (e.g., share, save, etc.) in a multi-task architecture.  
 • Evaluate performance with user-level metrics or business KPIs.
-
+```
 Happy experimenting with multi-task learning and blended ranking!
