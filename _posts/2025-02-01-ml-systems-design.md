@@ -10,31 +10,12 @@ description: 9 Steps formula
 
 Deploying deep learning models in production can be challenging, and it is beyond training models with good performance. Several distinct components need to be designed and developed in order to deploy a production level deep learning system.
 
-<p align="center">
-<img src="../imgs/components.png" title="" width="90%" height="80%">
-</p>
-
-
 Approaching an ML system design problem follows a similar logical flow to the generic software system design. (
 For more insight on general system design interview you can e.g. check out [Grokking the System Design Interview
 ](https://www.educative.io/courses/grokking-the-system-design-interview)
 and [System design primer](https://github.com/donnemartin/system-design-primer).). However, there are certain components in the design of an ML based system that needs to be addressed and need special attention, as you will see below in ML System Design Flow.
 
 ### ML System Design Interview 
-
-- In an ML system design interview you are exposed to open ended questions with no single correct answer.
-- The goal of ML system design interview is evaluate your your ability to zoom out and design a production-level ML system that can be deployed as a service within a company's ML infrastructure.
-
-# 1. The 9-Step ML System Design Formula ([Template](./mlsd-template.md)) 
-
-In order to design a solid ML system for real world applications, it is important to follow a design flow.
-I recommend using the following **9-Step ML System Design Formula**to design SW system solutions for ML-relevant business problems both at work and during interviews:
-
-<!-- <p align="center">
-<img src="https://user-images.githubusercontent.com/5262877/219497742-f70eca2a-4338-4362-8a6a-ec83057a3230.png" title="" width="40%" height="40%">
-</p> -->
-
-<center>
 
 | | |
 | --- | ---|
@@ -48,10 +29,6 @@ I recommend using the following **9-Step ML System Design Formula**to design SW 
 | Step 8 |[Online Testing and Deployment](#8-online-testing-and-model-deployment)  |
 | Step 9 |[Scaling, Monitoring, and Updates](#9-scaling-monitoring-and-updates) |
 | | |
-
-</center>
-
-Note: Remember when using this design flow during an interview to be flexible. According to the needs of the interview or the interests of the interviewer, you may skip some of these components or spend more time for a deep dive in one or two components.  
 
 ## 1. Problem Formulation
 
@@ -329,162 +306,3 @@ Note: Remember when using this design flow during an interview to be flexible. A
   - Auto update models 
   - Active learning 
   - Human in the loop ML  
-
-### Other topics:
-
-- Extensions: 
-  - Iterations over the base design to add a new functional feature 
-- Bias in training data
-  - Bias introduced by human labeling 
-- Freshness, Diversity
-- Privacy and security 
-
-
-# 2. ML System Design Sample Questions 
-Below are the most common ML system design questions for ML engineering interviews: 
-
-### Recommendation Systems
-- **[Video/Movie recommendation](./mlsd-video-recom.md)**(Netflix, Youtube)
-- **[Friends / follower recommendation](./mlsd-pymk.md)**(Facebook, Twitter, LinkedIn)
-- **[Event recommendation system](./mlsd-event-recom.md)** (Eventbrite)
-- **[Game recommendation](./mlsd-game-recom.md)**
-- **Replacement product recommendation** (Instacart)
-- **Rental recommendation** (Airbnb)
-- **Place recommendation** 
-  
-### Search systems (retrieval, ranking)
-  - **Document search**
-    - **[Text query search](./mlsd-search.md)** (full text, semantic), 
-    - **[Image/Video search](./mlsd-image-search.md)**, 
-    - **[Multimodal search](./mlsd-mm-video-search.md)** (MM Query)
-    <!-- - Semantic Search system  -->
-### Ranking systems 
-- **[Newsfeed system](./mlsd-newsfeed.md)** (ranking)  
-- **Ads serving system** (retrieval, ranking)
-  - **[Ads click prediction](./mlsd-ads-ranking.md)** (ranking)
-
-### NLP 
-- **Named entity linking system (NLP tagging, reasoning)**
-- **Autocompletion / typeahead suggestion system**
-- **Sentiment analysis system**
-- **Language identification system**
-- **Chatbot system**
-- **[Question answering system]()**
-
-### CV
-  - **Image blurring system**
-  - **OCR/Text recognition system** 
-  
-### AV 
-- **Self-driving car**
-  - Perception, Prediction, and Planning
-  - [Pedestrian jaywalking detection](./mlsd-av.md)
-- **Ride matching system**
-
-## Other
-- **Proximity service / Yelp**
-- **Food delivery time  approximation**
-- **Harmful content / Spam detection system**
-  - [Multimodal harmful content detection](./mlsd-harmful-content.md)  
-  - Fraud detection system
-- **Healthcare diagnosis system**
-
-
-
-# 3. ML System Design Topics 
-
-I observed there are certain sets of topics that are frequently brought up or can be used as part of the logic of the system. Here are some of the important ones:
-
-### Recommendation Systems
-
-- Candidate generation 
-  - Collaborative Filtering (CF)
-    - User based, item based
-    - Matrix factorization
-    - Two-tower approach
-  - Content based filtering
-- Ranking 
-- Learning to rank (LTR)
-  - point-wise (simplest), pairwise, list-wise 
-
-### Search and Ranking (Ads, newsfeed, etc)
-
-- Search systems 
-  - Query search (keyword search, [semantic search](https://txt.cohere.ai/what-is-semantic-search/?utm_source=linkedin&utm_medium=paidsocial&utm_campaign=contentpromotion_bloglookalikes)) 
-  - Visual search 
-  - Video search 
-  - Two stage model 
-    - document selection
-    - document ranking 
-- Ranking 
-  - Newsfeed ranking system
-  - Ads ranking system 
-  <!-- - Ranking by relevance -->
-  - Ranking as classification 
-  - Multi-stage ranking + blender + filter
-  <!-- - Information Retrieval -->
-
-
-### NLP
-
-- Feature engineering 
-  - Preprocessing (tokenization)
-- Text Embeddings
-  - Word2Vec, GloVe, Elmo, BERT
-- NLP Tasks:
-  - Text classification
-    - Sentiment analysis
-    - Topic modeling
-  - Sequence tagging  
-    - Named entity recognition
-    - Part of speech tagging
-      - POS HMM
-      - Viterbi algorithm, beam search
-  - Text generation 
-    - Language modeling
-      - N-grams vs deep learning models (trade-offs)
-      <!-- - Out of vocabulary problem -->
-      - Decoding
-
-  - Sequence 2 Sequence models
-    - Machine Translation
-      - Seq2seq models, NMT, Transformers
-  - Question Answering 
-  - [Adv] Dialog and chatbots
-      - [CMU lecture on chatbots](http://tts.speech.cs.cmu.edu/courses/11492/slides/chatbots_shrimai.pdf)
-      - [CMU lecture on spoken dialogue systems](http://tts.speech.cs.cmu.edu/courses/11492/slides/sds_components.pdf)
-  
-- Speech Recognition Systems
-    - Feature extraction, MFCCs
-    - Acoustic modeling
-      - HMMs for AM
-      - CTC algorithm (advanced)
-
-### Computer Vision
-
-- Image classification
-  - VGG, ResNET
-- [Object detection](https://viso.ai/deep-learning/object-detection/) 
-  - Two stage models (R-CNN, Fast R-CNN, Faster R-CNN)
-  - One stage models  (YOLO, SSD)
-  - [Vision Transformer (ViT)](https://viso.ai/deep-learning/vision-transformer-vit/)
-  - NMS algorithm 
-- Object Tracking
-<!-- - Popular architectures (AlexNet, VGG, ResNET, R-CNN, YOLO) -->
- 
-### Graph problems
-- People you may know 
-<!-- ### Personalization -->
-
-
-# 4. ML at big tech companies  
-
-Once you learn about the basics, I highly recommend checking out different companies blogs on ML systems. You can refer to some of those resources in the [ML at Companies](ml-comapnies.md) section.
-
-# More resources 
-
-- For more insight on different components above you can check out the following resources):
-  - [Full Stack Deep Learning course](https://fall2019.fullstackdeeplearning.com/)
-  - [Production Level Deep Learning](https://github.com/alirezadir/Production-Level-Deep-Learning)
-  - [Machine Learning Systems Design](https://github.com/chiphuyen/machine-learning-systems-design)
-  - [Stanford course on ML system design](https://online.stanford.edu/courses/cs329s-machine-learning-systems-design)
