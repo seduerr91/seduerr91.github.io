@@ -12,47 +12,75 @@ description: Wide and Deep, Two Tower, and more.
 - DCNv2 is a powerful architecture for CTR and conversion rate prediction tasks.
 - Multitask architecture is suitable for joint modeling of multiple related tasks.
 - Wide and Deep architecture is well-suited for recommendation systems and personalized ranking tasks.
+- XGBoost is a gradient boosting framework known for its efficiency, speed, and performance on tabular data.
 
 ## Architectures
 
-Here are some specific use cases within big tech companies for feeds, rental listings, or restaurants (Yelp), and the architectures that might be suitable for each:
-
+--------------------------------------------------------------------------------
 ## Two-Tower Architecture:
-- *Use cases:*
-    - Semantic search for rental listings (e.g., Airbnb, Zillow)
-    - Question answering for restaurant queries (e.g., "What restaurants near me serve vegan food?")
-    - Product search for e-commerce feeds (e.g., Amazon)
-- *Why:* Two-Tower architecture is well-suited for semantic search and question answering tasks, where the goal is to match user queries with relevant items (e.g., rental listings, restaurants, products).
+--------------------------------------------------------------------------------
+- Use cases:
+  - Semantic search for rental listings (e.g., Airbnb, Zillow)  
+  - Question answering for restaurant queries (e.g., "What restaurants near me serve vegan food?")  
+  - Product search for e-commerce feeds (e.g., Amazon)  
+- Why:  
+  Two-Tower architecture is well-suited for semantic search and question answering tasks, where the goal is to match user queries with relevant items (e.g., rental listings, restaurants, products).
 
+--------------------------------------------------------------------------------
 ## DCNv2 (Deep & Cross Network version 2):
-- *Use cases:*
-    - Click-through rate (CTR) prediction for feed ads (e.g., Facebook, Instagram)
-    - Conversion rate prediction for rental listings (e.g., booking probability)
-    - Rating prediction for restaurants (e.g., Yelp)
-- *Why:* DCNv2 is a powerful architecture for CTR and conversion rate prediction tasks, where the goal is to model complex interactions between user features and item features.
+--------------------------------------------------------------------------------
+- Use cases:
+  - Click-through rate (CTR) prediction for feed ads (e.g., Facebook, Instagram)  
+  - Conversion rate prediction for rental listings (e.g., booking probability)  
+  - Rating prediction for restaurants (e.g., Yelp)  
+- Why:  
+  DCNv2 is a powerful architecture for CTR and conversion rate prediction tasks, where the goal is to model complex interactions between user features and item features.
 
+--------------------------------------------------------------------------------
 ## Multitask Architecture:
-- *Use cases:*
-    - Joint modeling of user behavior and item attributes for feed ranking (e.g., Twitter, TikTok)
-    - Simultaneous prediction of CTR, conversion rate, and rating for rental listings or restaurants
-    - Multi-objective optimization for feed ads, balancing CTR, conversion rate, and revenue
-- *Why:* Multitask architecture is suitable for scenarios where multiple related tasks need to be learned simultaneously, sharing representations and improving overall performance.
+--------------------------------------------------------------------------------
+- Use cases:
+  - Joint modeling of user behavior and item attributes for feed ranking (e.g., Twitter, TikTok)  
+  - Simultaneous prediction of CTR, conversion rate, and rating for rental listings or restaurants  
+  - Multi-objective optimization for feed ads, balancing CTR, conversion rate, and revenue  
+- Why:  
+  Multitask architecture is suitable for scenarios where multiple related tasks need to be learned simultaneously, sharing representations and improving overall performance.
 
+--------------------------------------------------------------------------------
 ## Wide and Deep Architecture:
-- *Use cases:*
-    - Recommendation systems for feeds (e.g., YouTube, Netflix)
-    - Personalized ranking for rental listings or restaurants
-    - Predicting user engagement (e.g., likes, comments, shares) for feed items
-- *Why:* Wide and Deep architecture is well-suited for recommendation systems and personalized ranking tasks, where the goal is to model both low- and high-order interactions between user features and item features.
+--------------------------------------------------------------------------------
+- Use cases:
+  - Recommendation systems for feeds (e.g., YouTube, Netflix)  
+  - Personalized ranking for rental listings or restaurants  
+  - Predicting user engagement (e.g., likes, comments, shares) for feed items  
+- Why:  
+  Wide and Deep architecture is well-suited for recommendation systems and personalized ranking tasks, where the goal is to model both low- and high-order interactions between user features and item features.
+
+--------------------------------------------------------------------------------
+## XGBoost (Extreme Gradient Boosting):
+--------------------------------------------------------------------------------
+- Use cases:
+  - Ranking and classification tasks on tabular data (e.g., predicting booking probability, ranking search queries)  
+  - Quick iterative experiments on tabular features for data science competitions (e.g., Kaggle)  
+  - Feature-rich, structured data scenarios involving many engineered features (e.g., user demographics, device info, text-based aggregations)  
+- Why:  
+  XGBoost is a gradient boosting framework that builds additive models in a forward stage-wise fashion. It does so by fitting new models (decision trees) to provide a more accurate estimate of the response variable. XGBoost is optimized for both computational speed and model performance, incorporating features like tree pruning, regularization, and weighted quantile sketch for accurate splitting on continuous data. It often excels in scenarios with relatively structured, tabular data and can handle large feature sets efficiently.  
+  ■ Core Idea: Instead of training a single, complex decision tree, XGBoost trains many relatively small trees in succession. Each new tree focuses on reducing errors made by the already-trained ensemble. Gradients (or second-order approximations) guide how the next tree is grown.  
+  ■ Advantages:  
+  - Highly efficient implementation, especially on large tabular datasets.  
+  - Handles missing data well and can incorporate custom objective functions.  
+  - Strong performance on many machine learning benchmarks.  
+  ■ In production, XGBoost is often a go-to library for fast prototyping and for tasks where neural network approaches may not offer a clear advantage. It can integrate well with tree-based feature interpretations and engineering pipelines.
+
 
 ## Wide And Deep Architecture
 
 Below is a self-contained Jupyter notebook example that demonstrates how to implement the Wide and Deep architecture in PyTorch. It includes:
 
-• A synthetic dataset creation step (mimicking a scenario similar to recommending apps to users).  
-• A “wide” component: linear layer(s) acting on (one-hot/continuous) features.  
-• A “deep” component: embedding layers for categorical features and subsequent fully connected layers.  
-• A combined output from both components, followed by training and evaluation.  
+- A synthetic dataset creation step (mimicking a scenario similar to recommending apps to users).  
+- A “wide” component: linear layer(s) acting on (one-hot/continuous) features.  
+- A “deep” component: embedding layers for categorical features and subsequent fully connected layers.  
+- A combined output from both components, followed by training and evaluation.  
 
 You can copy-paste this into a Jupyter notebook cell and run it step by step.
 
@@ -480,12 +508,12 @@ This completes a concise illustration of Wide & Deep architecture with PyTorch. 
 
 Below is a self-contained Jupyter notebook example that demonstrates how to implement a Two-Tower Retrieval Model (sometimes referred to as a “dual-encoder”) in PyTorch. It includes:
 
-• A synthetic dataset creation step (mimicking a scenario similar to YouTube’s “Watch Next” recommendation).  
-• A “User (Query) Tower,” which encodes user and context features into an embedding.  
-• An “Item Tower,” which encodes item features (e.g., video metadata) into an embedding.  
-• A dot-product scoring function between user and item embeddings, to predict whether the user would watch the video (positive) or not (negative).  
-• A training loop that optimizes this retrieval objective.  
-• A simple evaluation.  
+- A synthetic dataset creation step (mimicking a scenario similar to YouTube’s “Watch Next” recommendation).  
+- A “User (Query) Tower,” which encodes user and context features into an embedding.  
+- An “Item Tower,” which encodes item features (e.g., video metadata) into an embedding.  
+- A dot-product scoring function between user and item embeddings, to predict whether the user would watch the video (positive) or not (negative).  
+- A training loop that optimizes this retrieval objective.  
+- A simple evaluation.  
 
 You can copy-paste this into a Jupyter notebook cell and run it step by step.
 
@@ -825,24 +853,24 @@ print(f"Test Accuracy: {accuracy * 100:.2f}%")
 --------------------------------------------------------------------------------
 
 1) Data Generation:  
-   • Synthetic “Watch Next” dataset with user_id, time_of_day, device_type, item_id, and a binary label.  
-   • We create positive samples (label=1) for (user, item) pairs that “match” a simple alignment rule.  
-   • Create negative samples (label=0) for everything else.  
+   - Synthetic “Watch Next” dataset with user_id, time_of_day, device_type, item_id, and a binary label.  
+   - We create positive samples (label=1) for (user, item) pairs that “match” a simple alignment rule.  
+   - Create negative samples (label=0) for everything else.  
 
 2) Two Towers:  
-   • User Tower (a.k.a. Query Tower) encodes (user_id, time_of_day, device_type) → user embedding.  
-   • Item Tower encodes item_id → item embedding.  
+   - User Tower (a.k.a. Query Tower) encodes (user_id, time_of_day, device_type) → user embedding.  
+   - Item Tower encodes item_id → item embedding.  
 
 3) Scoring:  
-   • Dot product of user embedding and item embedding.  
-   • Sigmoid to turn that score into a probability (did the user watch next?).  
+   - Dot product of user embedding and item embedding.  
+   - Sigmoid to turn that score into a probability (did the user watch next?).  
 
 4) Loss & Training:  
-   • Binary cross-entropy (BCELoss) for classification: distinguish positive from negative samples.  
-   • In practice, you might do other negative sampling strategies or sample many negatives for each positive.  
+   - Binary cross-entropy (BCELoss) for classification: distinguish positive from negative samples.  
+   - In practice, you might do other negative sampling strategies or sample many negatives for each positive.  
 
 5) Inference/Evaluation:  
-   • Accuracy is computed as the fraction of correct predictions on the test set.  
+   - Accuracy is computed as the fraction of correct predictions on the test set.  
 
 This architecture is common when building large-scale retrieval systems—once trained, you can compute embeddings for users (queries) and items, then use a similarity search (e.g., approximate nearest neighbor) to retrieve top items for a user.
 
@@ -850,11 +878,11 @@ This architecture is common when building large-scale retrieval systems—once t
 
 Below is a self-contained Jupyter notebook example that demonstrates how to implement DCN v2 (Deep & Cross Network v2) in PyTorch with a toy multi-task setup reminiscent of YouTube’s “Watch Next” ranking. The example:
 
-• Creates a synthetic dataset with user/context/item features.  
-• Has two tasks: (1) Binary classification (whether user watched), and (2) Regression (e.g., watch time).  
-• Uses two cross-layers in a stacked fashion (which often works well in practice).  
-• Employs a low-rank cross-layer decomposition (rank = input_size/4 as suggested).  
-• Combines cross-network output with a standard feed-forward “deep” network, then projects into multi-task heads.  
+- Creates a synthetic dataset with user/context/item features.  
+- Has two tasks: (1) Binary classification (whether user watched), and (2) Regression (e.g., watch time).  
+- Uses two cross-layers in a stacked fashion (which often works well in practice).  
+- Employs a low-rank cross-layer decomposition (rank = input_size/4 as suggested).  
+- Combines cross-network output with a standard feed-forward “deep” network, then projects into multi-task heads.  
 
 You can copy-paste and run it in a Jupyter notebook cell. Enjoy experimenting!
 ```python
@@ -1319,28 +1347,28 @@ Explanation
 ---
 
 1) Data:  
-   • We simulate user/context/item features and two tasks: (a) watch or not, (b) total watch time.  
+   - We simulate user/context/item features and two tasks: (a) watch or not, (b) total watch time.  
 
 2) Feature Embedding:  
-   • We embed each categorical feature (user, time_of_day, device_type, item) and concatenate into a dense input vector.  
+   - We embed each categorical feature (user, time_of_day, device_type, item) and concatenate into a dense input vector.  
 
 3) DCN v2 Cross Layers:  
-   • We define two cross-layers in a stacked manner.  
-   • Each cross layer performs x_{l+1} = x_0 * (x_l^T * U_l * V_l) + b_l + x_l.  
-   • Low-rank factorization: W_l = U_l × V_l reduces parameter size and can help training stability.  
+   - We define two cross-layers in a stacked manner.  
+   - Each cross layer performs x_{l+1} = x_0 * (x_l^T * U_l * V_l) + b_l + x_l.  
+   - Low-rank factorization: W_l = U_l × V_l reduces parameter size and can help training stability.  
 
 4) Deep Network:  
-   • The cross output is concatenated with the original input (stacked-based approach from DCN v2).  
-   • This goes through a feed-forward MLP.  
+   - The cross output is concatenated with the original input (stacked-based approach from DCN v2).  
+   - This goes through a feed-forward MLP.  
 
 5) Multi-Task Heads:  
-   • We have one head for binary classification (watch or not) and another for regression (watch time).  
+   - We have one head for binary classification (watch or not) and another for regression (watch time).  
 
 6) Loss:  
-   • We combine BCE (classification) and MSE (regression). In real systems, weight them suitably or use other strategies (e.g., uncertainty weighting).  
+   - We combine BCE (classification) and MSE (regression). In real systems, weight them suitably or use other strategies (e.g., uncertainty weighting).  
 
 7) Metrics:  
-   • We measure classification AUC and watch-time MSE on the test set.  
+   - We measure classification AUC and watch-time MSE on the test set.  
 
 In production, DCN v2 has shown improvements in AUCLoss (1 – AUC), with even a 0.1% improvement being significant in large-scale recommendation systems. The cross layers automatically learn intricate feature interactions, often outperforming straightforward deep (MLP) models or manually engineered cross features.  
 
@@ -1348,11 +1376,11 @@ In production, DCN v2 has shown improvements in AUCLoss (1 – AUC), with even a
 
 Below is a self-contained PyTorch example demonstrating a multi-task learning architecture with two classification outputs: p(like) and p(comment). We then show how one might “blend” or combine these two probabilities for ranking, inspired by the approach Instagram has used—mapping probabilities to a well-behaved distribution (like a Gaussian) before combining them. We will:
 
-• Create a synthetic dataset for user–item interactions with two boolean labels: like_label and comment_label.  
-• Build a multi-task model that outputs p(like) and p(comment).  
-• Train with separate binary cross-entropy losses for each task.  
-• Demonstrate a ranking phase that blends p(like) and p(comment) into a single “score.”  
-• Illustrate how to map probabilities to a Gaussian distribution (via an inverse CDF, also known as the probit function) for more stable blending across different content types (photo vs. video).  
+- Create a synthetic dataset for user–item interactions with two boolean labels: like_label and comment_label.  
+- Build a multi-task model that outputs p(like) and p(comment).  
+- Train with separate binary cross-entropy losses for each task.  
+- Demonstrate a ranking phase that blends p(like) and p(comment) into a single “score.”  
+- Illustrate how to map probabilities to a Gaussian distribution (via an inverse CDF, also known as the probit function) for more stable blending across different content types (photo vs. video).  
 
 ```python
 ────────────────────────────────────────────────────────────────────────────────────
@@ -1762,9 +1790,9 @@ In the code above, we showed how to:
 
 In practice, you can:
 
-• Tune α, β, or more advanced weighting strategies.  
-• Use percentile-based scaling or other transformations to unify distributions.  
-• Use additional tasks (e.g., share, save, etc.) in a multi-task architecture.  
-• Evaluate performance with user-level metrics or business KPIs.
+- Tune α, β, or more advanced weighting strategies.  
+- Use percentile-based scaling or other transformations to unify distributions.  
+- Use additional tasks (e.g., share, save, etc.) in a multi-task architecture.  
+- Evaluate performance with user-level metrics or business KPIs.
 ```
 Happy experimenting with multi-task learning and blended ranking!
