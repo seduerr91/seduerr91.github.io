@@ -4227,3 +4227,12 @@ print(containsNearbyDuplicate(nums, k))  # Output: True
 **Explanation**:
 1. Use a dictionary to store the index of each element as you traverse the array.
 2. If the same number is encountered again and the difference in indices is ≤ `k`, return `True`.
+
+
+Had: 1
+
+Problem 1650: Lowest Common Ancestor of a Binary Tree III (Medium)
+Problem 791: Custom Sort String (Medium)
+Problem 138: Copy List with Random Pointer (Medium)
+Problem 339: Nested List Weight Sum (Medium)
+Problem 56: Merge Intervals (Medium) (variation)
