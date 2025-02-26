@@ -3,7 +3,7 @@ title: ML Software Design Knowledge
 tags: [Coding]
 style: fill
 color: secondary
-description: 
+description: Metrics, and lots of explanations.
 ---
 
 ## Metrics
