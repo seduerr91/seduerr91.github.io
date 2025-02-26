@@ -395,3 +395,599 @@ Think of different shapes of neural networks to solve tasks.
 -----
 
 That’s it! Now you know lots about machine learning metrics, data pipelines, loss functions, and more. Keep practicing and have fun learning!
+
+## Matrix factorization is a powerful technique used in recommendation systems for tasks like candidate generation, such as in YouTube video recommendations. Let's go step-by-step to understand what matrix factorization does, its math, and how we can implement it in code using PyTorch.
+
+---
+
+### ⚙️ **What is Matrix Factorization?**
+
+Matrix Factorization is a method of breaking a large matrix into smaller matrices to understand relationships between users and items (like videos). Imagine YouTube has millions of users and videos. Each user interacts with some videos (e.g., watches or likes them). Matrix Factorization helps predict what a user may like next by learning patterns between users and videos.
+
+Think of it like filling in a puzzle — if you know which videos a user has interacted with, you can guess which other videos they'd like based on other users' behavior.
+
+---
+
+### 🎨 **Simplified Idea for a 15-Year-Old**
+1. Imagine you have a large sheet where each row is a user, and each column is a video.
+   - If someone watches a video, you write a "1" in that spot, else it's blank (or a "0").
+2. The table is mostly empty because most users don’t watch all videos.
+3. Matrix Factorization splits this giant table into smaller patterns (like LEGO pieces) to guess where the blanks should go.
+
+The goal is to learn "hidden properties" of videos and users. For example:
+- **Users** might have preferences ("likes horror movies" or "likes action").
+- **Videos** have traits ("is horror-themed" or "is action-packed").
+
+Matrix Factorization matches these "preferences" to "traits" to recommend the best videos.
+
+---
+
+### 🧮 **The Math Behind It**
+
+We start with a **ratings matrix**, \( R \), which is a big table where:
+- \( R[i, j] \) is a score showing how much **user \( i \)** likes **video \( j \)**.
+  - For YouTube, this score could depend on watch time, likes, etc.
+  - If no data exists, we leave it blank (or zero).
+
+Matrix Factorization assumes:
+\[
+R \approx U \cdot V^T
+\]
+Here:
+- \( U \) is a matrix storing user preferences (size: \#Users x K).
+- \( V \) is a matrix storing video traits (size: \#Videos x K).
+- \( K \) is the number of "hidden factors" — e.g., genres or themes we are trying to uncover.
+
+Our goal: Find \( U \) and \( V \) such that the product of these matrices reconstructs \( R \) as closely as possible.
+
+---
+
+### 🧠 **Mathematical Loss Function**
+To train the model, we minimize the difference between known entries in \( R \) and their predictions from \( U \cdot V^T \):
+\[
+\text{Loss} = \sum_{(i, j) \in \text{observed}} \left( R[i, j] - (U[i] \cdot V[j]^T) \right)^2 + \lambda \left( ||U||^2 + ||V||^2 \right)
+\]
+- \( R[i, j] \) is the actual score for how much user \( i \) likes video \( j \).
+- \( U[i] \cdot V[j]^T \) is our predicted score.
+- \( ||U||^2 + ||V||^2 \) is regularization to prevent overfitting.
+
+---
+
+### 🐍 **PyTorch Implementation**
+
+Here's an example to demonstrate simple matrix factorization using PyTorch:
+
+```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+
+# Step 1: Simulate a Tiny Ratings Matrix
+ratings_matrix = torch.tensor([
+    [5.0, 3.0, 0.0, 1.0],  # User 1
+    [4.0, 0.0, 0.0, 1.0],  # User 2
+    [1.0, 1.0, 0.0, 5.0],  # User 3
+    [0.0, 0.0, 5.0, 4.0],  # User 4
+    [0.0, 3.0, 4.0, 5.0]   # User 5
+])  # (5 users x 4 videos)
+
+# Known positions in the matrix (non-zero elements)
+mask = (ratings_matrix > 0)  # True for observed elements
+
+# Step 2: Define Model Parameters
+num_users, num_videos = ratings_matrix.shape
+num_features = 3  # Number of "hidden factors" (genres/preferences)
+U = torch.randn((num_users, num_features), requires_grad=True)  # User preferences
+V = torch.randn((num_videos, num_features), requires_grad=True)  # Video traits
+
+# Step 3: Training the Matrix Factorization
+learning_rate = 0.01
+optimizer = optim.SGD([U, V], lr=learning_rate)
+loss_fn = nn.MSELoss()
+
+num_epochs = 5000
+
+for epoch in range(num_epochs):
+    # Predict Ratings
+    predicted_ratings = torch.matmul(U, V.T)  # Matrix multiplication (U * V^T)
+
+    # Compute Loss Only for Observed Entries
+    loss = loss_fn(predicted_ratings[mask], ratings_matrix[mask])
+    
+    # Add Regularization (optional)
+    loss += 0.1 * (torch.norm(U) + torch.norm(V))
+
+    # Backpropagation
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+
+    # Print Loss every 500 iterations
+    if epoch % 500 == 0:
+        print(f"Epoch {epoch}: Loss = {loss.item()}")
+
+# Step 4: Examine Results
+print("\nOriginal Ratings Matrix:")
+print(ratings_matrix)
+
+print("\nPredicted Ratings Matrix:")
+print(predicted_ratings.detach())
+```
+
+---
+
+### 💡 **Explaining Code in Simple Terms**
+1. **Ratings Matrix**: This is the table of (user, video) interactions.
+2. **Two Matrices U and V**: These represent the hidden factors (preferences and traits).
+3. **Predictions**: We predict how much a user likes a video by multiplying \( U \) and \( V^T \).
+4. **Training Loop**: We adjust \( U \) and \( V \) repeatedly with gradient descent to minimize the prediction error.
+
+---
+
+### 🚀 **How Candidate Generation Works for YouTube**
+In a real-world situation:
+1. Use Matrix Factorization to recommend candidates (videos) for users based on their history.
+2. Combine results with other methods (deep learning models, trending filters, etc.).
+3. Post-process candidates by applying ranking models to personalize further.
+
+---
+
+### 📚 **Conclusion**
+Matrix factorization is like teaching a computer to guess the interests of users based on patterns in a big table of data. By understanding hidden factors of what users like and what videos offer, recommendations become smarter — and that's the magic behind systems like YouTube's recommendations!
+
+
+Let's dive into how we can process historical search queries to generate recommendations using **text embeddings** in PyTorch. I'll break this into simple explanations, reasons for using a method like Word2Vec or BERT, and show how to implement it in PyTorch.
+
+---
+
+### 🌟 Step 1: Why Use Text Embeddings?
+
+- When users make search queries, they're providing invaluable information about their preferences. A search query like "thriller movies" or "funny cat videos" gives us an idea of what they'd like to watch.
+- Computers can't directly understand words as we do, so we need to convert text into **numerical representations** (something computers understand).
+- **Text embeddings** represent words (like "cat" or "movie") or sentences as vectors in a high-dimensional space. Words with similar meanings (e.g., "dog" and "puppy") will end up near each other in this space.
+- These embeddings are used to **learn patterns and relationships** between queries, videos, or even other users with similar behaviors.
+
+---
+
+### 🌎 Types of Text Embeddings
+
+1. **Word2Vec/GloVe**: These map words to vectors by finding patterns in large amounts of text (e.g., "man" and "woman" have similar relations to "king" and "queen"). They're lightweight and great for simpler tasks.
+
+   - Example: "cat" → [1.2, -0.3, 0.8, ...]
+
+2. **BERT (Transformer-based Models)**: These use much more complex models to understand the context of words within a sentence. For example, the word "bank" will mean "riverbank" in "I went to the bank of the river" and "financial institution" in "I deposited money at the bank." This is great for cases where meaning depends on context, but it's heavier to run.
+
+   - Example: "I ate an apple" → [3.1, -0.2, 1.5, ...]
+
+---
+
+### 🚀 Step 2: What Should I Use? (Simple vs. Powerful)
+
+1. If historical queries are **single words** or short/simple queries, use **Word2Vec/GloVe** embeddings.
+   - Pretrained GloVe embeddings are faster and lighter to use.
+
+2. If you need to understand the **context** of a query or the queries are complex/full sentences, use **BERT** or other transformer-based models.
+   - Transformers like BERT may better capture the complex semantics of rich sentences but are computationally expensive.
+
+---
+
+### 🚧 Step 3: Implementation in PyTorch
+
+We'll first implement text embeddings with pretrained **GloVe** (lightweight) and then with **BERT** (context-aware).
+
+---
+
+#### 🛠 Option 1: Using Pre-trained GloVe Embeddings in PyTorch
+
+##### Why GloVe?
+- GloVe embeddings are already trained on large datasets (like Wikipedia).
+- Each word gets a representation (vector), and these embeddings are fast to compute.
+
+Here’s how you can use it:
+
+```python
+import torch
+import numpy as np
+
+# Step 1: Load Pre-trained GloVe embeddings
+# Download 'glove.6B.100d.txt' from GloVe (100-dimensional embeddings)
+# File contains word and its vector representation
+glove_path = "glove.6B.100d.txt"  # Path to the GloVe file
+embedding_dim = 100  # Dimensionality of embeddings
+word_to_vector = {}
+
+with open(glove_path, 'r', encoding='utf-8') as f:
+    for line in f:
+        values = line.split()
+        word = values[0]
+        vector = np.array(values[1:], dtype='float32')
+        word_to_vector[word] = vector
+
+# Step 2: Tokenize a Query and Convert to Embedding
+def get_embedding(sentence, word_to_vector):
+    words = sentence.lower().split()  # Simple tokenization
+    embeddings = [word_to_vector[word] for word in words if word in word_to_vector]
+    
+    if len(embeddings) > 0:
+        return np.mean(embeddings, axis=0)  # Average the embeddings for all words in the sentence
+    else:
+        return np.zeros(embedding_dim)  # If no match, return empty vector
+
+query = "funny cat videos"
+query_embedding = get_embedding(query, word_to_vector)
+
+# Step 3: Convert to Tensor for PyTorch
+query_embedding_tensor = torch.tensor(query_embedding)
+print(query_embedding_tensor)
+```
+
+In this example:
+- We leverage GloVe to get word embeddings.
+- For a query like "funny cat videos," we first find embeddings for each word, then average them to represent the entire query.
+
+---
+
+#### 🛠 Option 2: Using BERT for Embedding Historical Queries
+
+##### Why BERT?
+- BERT is context-aware and works well with sentence-level queries.
+- It captures the meaning of words better, accounting for surrounding text.
+
+Using `transformers` library by Hugging Face for BERT embeddings:
+
+```python
+from transformers import BertTokenizer, BertModel
+import torch
+
+# Step 1: Load Pretrained BERT Model and Tokenizer
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+model = BertModel.from_pretrained('bert-base-uncased')
+
+# Step 2: Tokenize the Query
+query = "funny cat videos"  # Example query
+tokens = tokenizer(query, return_tensors="pt", padding=True, truncation=True)
+
+# Step 3: Pass Tokens through BERT Model
+with torch.no_grad():  # No need to train
+    output = model(**tokens)
+
+# Step 4: Extract Sentence Embedding
+# Use the [CLS] token's embedding as the full-query representation
+query_embedding = output.last_hidden_state[:, 0, :]  # Shape: [Batch_size, Hidden_dim]
+print(query_embedding.shape)  # E.g., (1, 768) for 'bert-base-uncased'
+```
+
+In this example:
+- `"funny cat videos"` becomes a contextual vector of size 768.
+- BERT comprehends that "cat videos" relates to animals, while "funny" adds personality.
+
+---
+
+### Why Would You Use GloVe vs. BERT?
+
+| **GloVe**                              | **BERT**                                 |
+|----------------------------------------|------------------------------------------|
+| Lightweight and fast                   | Computationally expensive (slower)       |
+| Works well for simple problems         | Handles sentences with complex context   |
+| Pretrained embeddings are static       | Dynamically generates embeddings for context |
+| Doesn’t differentiate word context     | Differentiates meanings in different contexts |
+
+---
+
+### 🚀 Step 4: How This Fits into YouTube Search Queries and Recommendations
+
+1. **Convert Users' Queries**: Convert historical search queries into embeddings.
+   - If using GloVe, average embeddings of all the words in the query.
+   - If using BERT, directly generate the context-aware embedding for the whole query.
+
+2. **Match Queries to Video Metadata**: YouTube videos have titles, tags, and descriptions that can also be converted into embeddings (GloVe/BERT).
+   - Compute similarity between query and video embeddings (e.g., cosine similarity).
+   - Recommend videos that are most similar to the query.
+
+3. **Use in Candidate Generation**: Combine the embeddings from historical queries with other features (video-watch history, collaborative filtering, etc.) for generating final recommendations.
+
+---
+
+### Final Takeaway
+
+- Use **GloVe embeddings** when you need a simple, fast solution and your text data is relatively small or straightforward.
+- Use **BERT embeddings** when your queries or video data have significant context, or the meanings of words depend on the situation.
+
+By converting text to embeddings, you unlock the power of **semantic understanding** — making recommendations smarter, more relevant, and user-friendly.
+
+Using a **Bayesian Logistic Regression** model to account for changes in user behavior is motivated by the need for flexibility, uncertainty modeling, and adaptability in dynamic environments, such as predicting user behavior in recommendation systems. Let me break this down in simple terms:
+
+---
+
+### 🧠 **What is Bayesian Logistic Regression?**
+
+- **Logistic Regression** is a machine learning model that predicts probabilities for a binary outcome (e.g., "Will a user click on a video or not?").
+  - It estimates probabilities using a sigmoid function and learns weights for features.
+  
+- **Bayesian Logistic Regression** puts a **probability distribution** over the weights of the model instead of fixed values.
+  - This means instead of saying, *"The weight \(w = 1.3\),"* we say, *"There's an \(80\%\) probability that \(w\) is in a certain range"*.
+  - By doing this, we can model **uncertainty** in the predictions and account for the variability in the data.
+
+Using a **Bayesian framework** allows us to create predictions that adapt to changes over time and provide more calibrated uncertainties about the output probabilities.
+
+---
+
+### 🌟 **Why Does User Behavior Change?**
+When you're trying to model user behavior (e.g., watch, click, like), it's natural that user preferences are not fixed forever. For example:
+1. **Dynamic Interests**: A user might move from watching gaming videos to cooking tutorials over a few weeks.
+2. **Seasonality**: Interests might fluctuate due to seasons (e.g., holiday shopping, summer vacation).
+3. **Trending Content**: Users are influenced by trends (e.g., viral videos or memes).
+4. **Sparsity/Noise**: Sometimes, the data has a lot of missing or uncertain trends, and we don't always have enough information about newer users or interests.
+
+Traditional logistic regression assumes user behavior stays **static**, which makes it less responsive to shifts in preferences. By contrast, **Bayesian Logistic Regression** can better handle this variability by explicitly modeling the uncertainty and dynamically updating as we observe more data.
+
+---
+
+### 🚀 **How Bayesian Logistic Regression Handles Change**
+
+Here’s what makes a Bayesian approach well-suited for modeling user behavior:
+
+#### 1. **Uncertainty Modeling**
+- A Bayesian model doesn’t produce fixed coefficients (weights); instead, it provides a **posterior distribution** over the weights. This accounts for the idea that we are uncertain about the exact weights of features influencing user behavior.
+- For example:
+  - For a user who usually watches cooking videos, the weight for "cooking" might have high confidence.
+  - For a new category that suddenly becomes relevant (e.g., sports), the model will assign broader uncertainty to those weights and adjust as more data is observed.
+
+#### 2. **Adaptability to New Data Over Time**
+- In a Bayesian framework, when new user data comes in, we can **update our beliefs** (posterior distribution) instead of retraining the model from scratch.
+- Example: If we notice that a user with a strong interest in "action movies" starts watching "romance movies," the model can reassess the weights dynamically using new evidence.
+
+#### 3. **Regularization and Avoiding Overfitting**
+- Logistic regression often requires **regularization** to prevent overfitting (assigning extreme weights to low-confidence features). Bayesian regression naturally applies this through the **prior** distribution:
+  - If we don’t know much about the user, the prior assumes "neutral" behavior.
+  - Over time, the data shifts the model from the prior belief to more confident estimates.
+
+#### 4. **Handling Sparsity and Small Data**
+- Sparse data is a frequent issue in recommendation systems, especially for new users (“cold start”) or categories (“long-tail” items). Bayesian updates allow the model to make **initial guesses** using prior knowledge and refine predictions as new data emerges.
+
+#### 5. **Exploration vs Exploitation**
+- Bayesian models explicitly calculate uncertainty in their predictions, which can guide decisions for minimizing **risk**.
+- Example: If two videos are equally likely to interest a user statistically, we can choose the one with less uncertainty for a more confident recommendation.
+
+---
+
+### 📚 Simplifying the Bayesian Process for User Behavior
+
+1. **Priors**: Define our prior knowledge before observing user data.
+   - Example: If most users tend to watch cooking or gaming tutorials, assign prior weights favoring those categories.
+
+2. **Likelihood**: Observe data about the user's behavior (e.g., clicks, watch time, searches).
+   - Example: Record that a user has clicked on "sports" videos 3 times and "action" videos twice.
+
+3. **Posterior Update**: Combine the prior and the new evidence to update our **"beliefs"** about what the user will do next.
+   - Example: Shift the weight from generic content toward sports videos as we see more clicks on those.
+
+---
+
+### 🔧 **Example: Bayesian Logistic Regression for User Modeling**
+
+Here’s a simplified PyTorch-like implementation to capture the core ideas of Bayesian Logistic Regression:
+
+```python
+import torch
+import pyro
+import pyro.distributions as dist
+from pyro.infer import SVI, Trace_ELBO
+from pyro.optim import Adam
+
+# Example Features: [Likes Action, Likes Comedy, Likes Drama]
+# Example Labels: [1 = Watch Video, 0 = Skip Video]
+
+# Step 1: Define the Bayesian Model
+def bayesian_logistic_regression(features, labels=None):
+    weights = pyro.sample("weights", dist.Normal(0., 1.).expand([features.shape[1]]).to_event(1))  # Prior
+    bias = pyro.sample("bias", dist.Normal(0., 1.))  # Prior for bias
+
+    logits = (features @ weights) + bias
+    probs = torch.sigmoid(logits)
+
+    if labels is not None:
+        with pyro.plate("data", len(features)):  # Plate for batch processing
+            pyro.sample("obs", dist.Bernoulli(probs), obs=labels)  # Likelihood
+    return probs
+
+# Step 2: Prepare Example Features and Labels (Simulated)
+features = torch.tensor([
+    [1, 0, 0],  # User likes Action
+    [0, 1, 0],  # User likes Comedy
+], dtype=torch.float32)
+labels = torch.tensor([1, 0], dtype=torch.float32)
+
+# Step 3: Define Guide (Variational Distribution for Weights)
+def guide(features, labels=None):
+    weight_mean = pyro.param("weight_mean", torch.zeros(features.shape[1]))
+    weight_std = pyro.param("weight_std", torch.ones(features.shape[1]), constraint=dist.constraints.positive)
+    bias_mean = pyro.param("bias_mean", torch.tensor(0.))
+    bias_std = pyro.param("bias_std", torch.tensor(1.), constraint=dist.constraints.positive)
+
+    pyro.sample("weights", dist.Normal(weight_mean, weight_std).to_event(1))
+    pyro.sample("bias", dist.Normal(bias_mean, bias_std))
+
+# Step 4: Optimization and Training
+optimizer = Adam({"lr": 0.01})
+svi = SVI(bayesian_logistic_regression, guide, optimizer, loss=Trace_ELBO())
+
+for epoch in range(1000):  # Training loop
+    loss = svi.step(features, labels)
+    if epoch % 100 == 0:
+        print(f"Epoch {epoch}, Loss: {loss}")
+
+# Step 5: Examine Results
+for name, value in pyro.get_param_store().items():
+    print(f"{name}: {value}")
+```
+
+---
+
+### 🛠 Key Benefits of Using Bayesian Logistic Regression:
+1. Handles **shifting user preferences** dynamically by updating distributions.
+2. Provides **uncertainty estimates**, which are critical for robust recommendations.
+3. Adapts quickly to new trends or new users with little data.
+4. Offers principled regularization through priors, avoiding overconfidence in sparse settings.
+
+---
+
+Using Bayesian Logistic Regression allows us to build a more flexible, adaptive, and interpretable approach to modeling user behavior, particularly in environments where preferences evolve (like recommendation systems).
+
+
+Evaluating a machine learning model's performance is essential to ensure it's making accurate predictions. For a binary classification task, such as predicting whether a user will engage with content (e.g., click/watch a video or not), **offline metrics** like **Normalized Cross Entropy**, **AUC (Area Under the Curve)**, and **LogLoss** are widely used to measure how well a model performs.
+
+Here’s what these metrics are and how you calculate them in practice, including specific scenarios involving probabilistic predictions.
+
+---
+
+### 🌱 **Key Offline Metrics:**
+
+#### 1. **LogLoss (Logarithmic Loss)**
+
+- **LogLoss** measures the uncertainty of predictions. A smaller LogLoss indicates better predictions because the predicted probabilities align closely with the actual outcomes.
+- It penalizes incorrect predictions more when the model is confident about the wrong answer (i.e., when the probability is very close to 0 or 1 but the prediction is incorrect).
+
+**Formula:**
+
+\[
+\text{LogLoss} = -\frac{1}{N} \sum_{i=1}^{N} \Big( y_i \cdot \log(p_i) + (1 - y_i) \cdot \log(1 - p_i) \Big)
+\]
+
+Where:
+- \( N \): Total number of samples
+- \( y_i \): True label for the \(i\)-th sample (\(1\) or \(0\))
+- \( p_i \): Predicted probability for \(y_i=1\)
+
+**Implementation in PyTorch:**
+
+```python
+import torch
+import torch.nn.functional as F
+
+def log_loss(y_true, y_pred):
+    # y_true: Ground truth labels (e.g., torch.tensor([1, 0, 1], dtype=torch.float32))
+    # y_pred: Predicted probabilities (e.g., torch.tensor([0.85, 0.1, 0.65]))
+    epsilon = 1e-15  # To avoid log(0)
+    y_pred = torch.clamp(y_pred, epsilon, 1 - epsilon)  # Clip values to prevent log(0)
+    loss = - (y_true * torch.log(y_pred) + (1 - y_true) * torch.log(1 - y_pred))
+    return torch.mean(loss)  # Average Log Loss
+```
+
+---
+
+#### 2. **AUC (Area Under the Curve)**
+
+- **AUC** (specifically AUC-ROC, Area Under the Receiver Operating Characteristic Curve) evaluates the model's ability to distinguish between positive (\(y_i=1\)) and negative (\(y_i=0\)) classes.
+  - It assesses whether the model assigns higher probabilities to positive samples compared to negative samples.
+- Perfect AUC = **1**, Random guessing AUC = **0.5**.
+
+**Steps to Compute AUC:**
+1. Sort predictions and true labels by the predicted probabilities.
+2. Compute **True Positive Rate (TPR)** and **False Positive Rate (FPR)** at different classification thresholds.
+3. Plot the ROC curve using TPR vs FPR and use numerical integration (e.g., trapezoidal rule) to calculate the area under the ROC curve.
+
+**Implementation in Python:**
+You can use the `scikit-learn` library to calculate AUC efficiently.
+
+```python
+from sklearn.metrics import roc_auc_score
+
+def calculate_auc(y_true, y_pred):
+    # y_true: Ground truth labels (e.g., [1, 0, 1])
+    # y_pred: Predicted probabilities (e.g., [0.85, 0.1, 0.65])
+    return roc_auc_score(y_true, y_pred)
+```
+
+Under the hood, this function computes the TPR and FPR across all thresholds and integrates the ROC curve.
+
+---
+
+#### 3. **Normalized Cross Entropy (NCE)**
+
+- Also called **log-loss normalization**, it compares your model's performance against a simplistic baseline (e.g., guessing based on the mean of the labels).
+- NCE quantifies how much better your model is compared to guessing probabilities naively.
+
+**Formula:**
+\[
+NCE = 1 - \frac{\text{LogLoss (Model)}}{\text{LogLoss (Baseline)}}
+\]
+
+Where:
+- **Model LogLoss**: Log loss of your machine learning model.
+- **Baseline LogLoss**: Log loss when predicting the constant probability \( p = \frac{\text{Positive Samples (y=1)}}{\text{Total Samples}} \).
+
+Steps:
+1. Calculate **baseline probability**, \( p = \frac{\sum_{i=1}^N y_i}{N} \).
+2. Compute the LogLoss using this constant probability for all predictions.
+3. Measure how much improvement your model makes compared to guessing \(p\) for every sample.
+
+**Implementation in Python:**
+
+```python
+def normalized_cross_entropy(y_true, y_pred):
+    # Calculate model LogLoss
+    model_logloss = log_loss(y_true, y_pred)
+    
+    # Calculate Baseline LogLoss
+    baseline_prob = torch.mean(y_true)  # P(y=1) in the data
+    baseline_pred = torch.full_like(y_true, baseline_prob)  # Everyone gets the same prediction
+    baseline_logloss = log_loss(y_true, baseline_pred)
+    
+    # Calculate Normalized Cross Entropy
+    return 1 - (model_logloss / baseline_logloss)
+```
+
+---
+
+### 🌟 **How These Metrics Work in Practice**
+
+- **LogLoss**: Focuses on the accuracy of predicted probabilities. This is important because in modern recommendation systems, even small differences in predicted probabilities can impact ranking performance.
+- **AUC**: Often used when the distribution of positive and negative classes is imbalanced (e.g., only a small percentage of users click on videos). It measures how well the model separates the classes.
+- **NCE**: Helps interpret relative model performance compared to a baseline, making it clear how much better your model performs than a simple constant-probability estimator.
+
+---
+
+### 📚 **Example Scenario**
+
+#### Suppose:
+- You predict whether a user clicks on a video (\(y=1\)) or not (\(y=0\)).
+- Your model outputs predicted probabilities, e.g., \(y_{\text{pred}} = [0.9, 0.4, 0.2, 0.7]\).
+- True labels (\(y_{\text{true}}\)): \( [1, 0, 0, 1]\).
+
+#### Steps to Compute Offline Metrics:
+1. **LogLoss**:
+   Use the formula above:
+   \[
+   \text{Loss} = -\frac{1}{4} \sum_{i=1}^4 y_i \log(p_i) + (1 - y_i) \log(1 - p_i).
+   \]
+
+2. **AUC** (via `roc_auc_score`):
+   - Determine the rankings of predictions.
+   - Compare how well the model places true positives with higher probabilities than true negatives.
+
+3. **NCE**:
+   Compute and compare the LogLoss of your predictions to a constant baseline predictor.
+
+---
+
+### 🛠 **Practical Considerations**
+1. **Highly Imbalanced Data**:
+   - If most cases are negative (e.g., 99% of predictions are \(y=0\)), metrics like AUC and LogLoss are preferred because they account for imbalance and probabilistic thresholds.
+
+2. **Uncertainty in Probabilities**:
+   - LogLoss penalizes overconfident, incorrect predictions harshly, which is why it’s commonly used when optimizing probabilistic models.
+
+3. **Relating to Prediction Tasks**:
+   - If you're ranking content (like videos), LogLoss may be more interpretable since it's directly tied to probability calibration.
+   - AUC is critical when you care primarily about ranking (positive examples above negative examples).
+
+---
+
+### 🎯 **Conclusion**
+By using **LogLoss**, **AUC**, and **NCE**, you can comprehensively evaluate your model:
+- **LogLoss**: Measures how well-calibrated your probabilistic predictions are.
+- **AUC**: Evaluates how well you separate "positive" from "negative" outcomes.
+- **NCE**: Normalizes your model's performance against a simple baseline, providing a meaningful benchmark.
+
+These metrics allow you to evaluate and refine recommendation systems used in dynamic user-centric environments like YouTube or e-commerce platforms.
