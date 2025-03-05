@@ -1,9 +1,9 @@
 ---
-title: Own Machine Learning System Design Cases
+title: Where to live next?
 tags: [Coding]
 style: fill
 color: secondary
-description: Walkthroughs of machine learning system design cases.
+description: Austin, Washington, D.C., or Phoenix? A guide for outdoor enthusiasts and coffee lovers.
 ---
 
 **Choosing Between Austin, TX; Washington, D.C.; and Phoenix, AZ: A Guide for Outdoor Enthusiasts and Coffee Lovers**
