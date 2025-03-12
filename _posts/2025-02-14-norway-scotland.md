@@ -11,8 +11,8 @@ description: A travel itinerary for Norway and Scotland with Arnold.
 | Day                     | Location                        | Activity(s)                     | Restaurant Suggestion                                | Lodging Option                              |
 |-------------------------|---------------------------------|---------------------------------|-----------------------------------------------------|---------------------------------------------|
 | Friday, June 27, 2025   | Stavanger                       | Explore Gamle Stavanger, Sola Beach | Fisketorget for seafood                               | Skansen Hotel or Hotel Victoria             |
-| Saturday, June 28, 2025 | Stavanger area                  | Pulpit Rock Hike                | Egget                                                 | Stavanger Bed & Breakfast or Clarion Hotel  |
-| Sunday, June 29, 2025   | Stavanger area                  | Lysefjord Cruise (Alternatives below)    | Back in town: Renaa Matbaren                           | Radisson Blu Atlantic Hotel                 |
+| Saturday, June 28, 2025 | Stavanger area                  | Preikestolen Pulpit Rock Hike   | Egget                                                 | Stavanger Bed & Breakfast or Clarion Hotel  |
+| Sunday, June 29, 2025   | Stavanger area                  | Kjeragbolten (options below)    | Back in town: Renaa Matbaren                           | Radisson Blu Atlantic Hotel                 |
 | Monday, June 30, 2025   | Drive Stavanger → Odda          | Scenic stops (e.g., Latefossen) | Smeltehuset Restaurant in Odda                         | Hardanger Hotel or budget hostels nearby   |
 | Tuesday, July 1, 2025   | Odda                            | Trolltunga Hike                 | Odda town: Iris Scene Cafe                             | Airbnb or Hotel Trolltunga                  |
 | Wednesday, July 2, 2025 | Bergen → Edinburgh              | Old Town Stroll, Work day       | Timberyard (small plates in Edinburgh)                 | Castle Rock Hostel or Hotel Indigo         |
@@ -44,18 +44,19 @@ Suggested Plan
 Suggested Plan  
 - Early start (7–8 AM) for Preikestolen. Drive/ferry to trailhead (~1 hour total).  
 - Hike Preikestolen (4–5 hours round trip). Bring snacks/drinks, and enjoy incredible views over Lysefjord.  
-- Return to Stavanger in the afternoon; start working (US hours).  
 - Evening relaxation or stroll the harbor.
 
-#### DAY 3: Sunday, June 29, 2025  
-- Location: Stavanger area  
-- Activity: Lysefjord Sightseeing Cruise (relaxed alternative)  
-- Status: Off  
+#### DAY 3: Sunday, June 29, 2025
+- Location: Stavanger Area
+- Activity: Hike to Kjeragbolten
+- Status: Off (Full day adventure)
 
-Suggested Plan  
-- In the morning, take a Lysefjord sightseeing cruise from Stavanger to explore the fjords by boat, getting views of Pulpit Rock from the water.  
-- Return to Stavanger by early afternoon to start working (US hours).  
-- Option for an evening walk or dinner in town.
+Suggested Plan
+- Rise early for the scenic drive (approximately 2.5 hours) from Stavanger to the Kjerag trailhead at Øygardstøl, enjoying stunning fjord views en route.
+- Embark on a challenging but rewarding hike to Kjeragbolten, approximately 10 km round-trip (5–6 hours hiking time). Be prepared with hiking boots, sufficient water, snacks, and suitable clothing layers.
+- Reach Kjeragbolten, the famous boulder wedged between two cliffs, and capture memorable photos of this iconic spot overlooking breathtaking Lysefjord.
+- Begin your descent early enough to return comfortably to Stavanger in the evening.
+- Enjoy a cozy dinner in Stavanger town at Renaa Matbaren or a restaurant of your choice.
 
 #### DAY 4: Monday, June 30, 2025  
 - Location: Drive Stavanger → Odda (Hardanger region)  
