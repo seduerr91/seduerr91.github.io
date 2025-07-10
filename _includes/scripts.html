@@ -11,8 +11,19 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <!-- wow.js CDN & Activation -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+{% if site.wow_animation == 'enabled' %}
+<script src="/assets/js/wow.min.js"></script>
 <script> new WOW().init(); </script>
+{% endif %}
+
+<!-- particles.js CDN -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!-- particles.js Initialization -->
+<script src="/assets/js/particles-init.js"></script>
+
+<!-- Theme Toggle -->
+<script src="/assets/js/theme.js"></script>
 
 <!-- Initialize all tooltips -->
 <script>
