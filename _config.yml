@@ -73,11 +73,7 @@ author:
 permalink: /blog/:title
 
 
-### Collections ###
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name
+
 
 ### Disqus ###
 disqus: duerr                          # Your website Shortname on disqus
@@ -85,11 +81,7 @@ disqus: duerr                          # Your website Shortname on disqus
 
 ### Defaults for collections ###
 defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "page"
+
   - scope:
       path: ""
       type: "posts"
@@ -97,6 +89,8 @@ defaults:
       comments: true                                   # Set to true to enable disqus comments
 
 ### Exclude from processing ###
+include:
+  - assets
 exclude:
   - README.md
   - CONTRIBUTING.md
