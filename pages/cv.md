@@ -6,7 +6,7 @@ permalink: /cv/
 
 <div class="cv-container">
   <div class="text-center mb-4">
-    <a href="/assets/_Duerr-CV.pdf" class="btn btn-primary" download>Download as PDF</a>
+    <a href="/assets/duerr_cv.pdf" class="btn btn-primary" download>Download as PDF</a>
   </div>
 
   <div class="cv-header">
