@@ -3,10 +3,49 @@ title: A Glimpse of Every Country I've Journeyed To
 tags: [travel]
 style: fill
 color: secondary
-description: An exciting visual journey through 75 countries. 
+description: An exciting visual journey through 82 countries. 
 ---
 
-Countless footsteps across seven continents, numerous sunset views, and countless memories. Through my travels, I've collected a story in each nation and a picture from every single one of them. Every country I've wandered through offered a unique narrative, a chance to walk in an unfamiliar space, and the opportunity to uncover hidden treasures. The world is a book; every country, a chapter. Never let your curiosity cease - there's always a new chapter waiting to be read. The years indicate the first time, I have visted the country. While some stays were short, others lasted years. Some countries, I visited once, some more than ten times.
+Countless footsteps across six continents, numerous sunset views, and countless memories. Through my travels, I've collected a story in each nation and a picture from every single one of them. Every country I've wandered through offered a unique narrative, a chance to walk in an unfamiliar space, and the opportunity to uncover hidden treasures. The world is a book; every country, a chapter. Never let your curiosity cease - there's always a new chapter waiting to be read. The years indicate the first time, I have visted the country. While some stays were short, others lasted years. Some countries, I visited once, some more than ten times.
+
+## 2025
+
+### 82. Scotland
+
+A land of legends, lochs, and stunning highlands, Scotland offers a dramatic landscape and a rich history. From the vibrant streets of Edinburgh to the mysterious Loch Ness, it's a country that captures the imagination. [Scotland Wikipedia](https://en.wikipedia.org/wiki/Scotland)
+![image](../assets/countries/Scotland.jpg)
+
+### 81. Norway
+
+Home to majestic fjords, the magical Northern Lights, and a deep-rooted Viking history, Norway is a paradise for nature lovers. Its dramatic landscapes and serene beauty are truly unforgettable. [Norway Wikipedia](https://en.wikipedia.org/wiki/Norway)
+![image](../assets/countries/Norway.jpg)
+
+### 80. Indonesia
+
+A sprawling archipelago of stunning volcanoes, pristine beaches, and diverse cultures. From the spiritual heart of Bali to the jungles of Borneo, Indonesia is a treasure trove of adventure. [Indonesia Wikipedia](https://en.wikipedia.org/wiki/Indonesia)
+![image](../assets/countries/Indonesia.jpg)
+
+### 79. India
+
+A vibrant tapestry of cultures, colors, and landscapes. From the iconic Taj Mahal to the bustling streets of Mumbai and the serene backwaters of Kerala, India is an assault on the senses in the best way possible. [India Wikipedia](https://en.wikipedia.org/wiki/India)
+![image](../assets/countries/India.jpg)
+
+### 78. Singapore
+
+A futuristic city-state where gleaming skyscrapers coexist with lush green spaces. This global hub is a melting pot of cultures, offering a world-class culinary scene and stunning attractions like Gardens by the Bay. [Singapore Wikipedia](https://en.wikipedia.org/wiki/Singapore)
+![image](../assets/countries/Singapore.jpg)
+
+## 2024
+
+### 77. Nicaragua
+
+The land of lakes and volcanoes, Nicaragua boasts stunning colonial architecture, pristine beaches, and a rich culture. It's an off-the-beaten-path gem with a wild and untamed beauty. [Nicaragua Wikipedia](https://en.wikipedia.org/wiki/Nicaragua)
+![image](../assets/countries/Nicaragua.jpg)
+
+### 76. Costa Rica
+
+A paradise for eco-tourists, Costa Rica is a country teeming with biodiversity, from lush rainforests to stunning coastlines. The 'Pura Vida' lifestyle is evident in its friendly locals and laid-back atmosphere. [Costa Rica Wikipedia](https://en.wikipedia.org/wiki/Costa_Rica)
+![image](../assets/countries/Costa_Rica.jpg)
 
 ## 2022
 
