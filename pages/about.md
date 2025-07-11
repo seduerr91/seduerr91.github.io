@@ -56,7 +56,7 @@ However, the academic world—with all its theoretical discussions and my confin
 
 It wasn't long before I made it into MIT as a graduate researcher at Peter Gloor's lab at the Sloan School of Management. I found myself researching the movement of plants (yes, plants do move!) and later the persuasiveness of messages. It was a fun time, leading to a few scholarships to chase my own startup dreams in persuasive message generation. But working remotely due to COVID-19 made us feel like we were all pulling in different directions—or maybe just pushing our Wi-Fi to the limits.
 
-But during that time, I met Joy—my now wife. We traveled for 11 months and finally made it into the U.S. Here, we happily got married, I took a remote job for a kind and fun Californian tech startup, and adopted to kittens. 
+But during that time, I met Joy—my now wife. We traveled for 11 months and finally made it into the U.S. Here, we happily got married, I took a remote job for a kind and fun Californian tech startup, and adopted two kittens. 
 
 It's all so non-linear—like a drunken snail trying to do calculus—and never what I expected. I can't believe it has happened to me. I'd like to come back and elaborate on this, but this is a brief summary of my life story as I sometimes share it with random people. Thank you, world, for being an awesome place.
 
