@@ -26,8 +26,10 @@ description: An easily navigable directory containing pertinent documents, links
 
 ### Conference Engagements
 
-- Attended NeurIPS Conference in Vancouver,BC, 2024.
+- Attended SciPy Conference in Tacoma, WA, 2025.
+- Attended NeurIPS Conference in Vancouver, BC, 2024.
 - Attended PyTorch Conference in San Francisco, 2024.
+- Attended PyData Conference in Redmond, WA, 2023.
 - Enriching Discourses as a Speaker at #Datalift prequel and presentation, remote, 2022 and 2021.
 - Addressed global audience at the #Persuasion Tech Conference, remote, 2021.
 - Guided academic discussions as the Mini Track Chair at American Conference on Information Systems in Boston, MA, 2017.
