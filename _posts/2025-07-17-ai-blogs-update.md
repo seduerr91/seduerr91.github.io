@@ -1,0 +1,23 @@
+---
+title: AI Daily
+tags: [AI, Blogs]
+style: fill
+color: secondary
+description: Daily update on AI blogs of 07-17
+---
+
+The blog posts highlight several key trends and announcements in the AI ecosystem:
+
+- Enhanced AI application development: LangSmith and LangGraph Platform are now available on AWS Marketplace, enabling streamlined procurement, robust deployment, and improved data control for AI apps, especially benefiting engineering teams focused on prompt engineering, observability, and complex agent-based workflows.
+- Advancements in AI-powered research tools: Both industry giants (e.g., OpenAI, Anthropic, Google, Perplexity) and the open-source community are releasing tools to facilitate deeper, more flexible research, leveraging techniques such as multi-agent systems, context isolation, and customizable workflows.
+- Improved research capabilities for users: Google’s deployment of Gemini 2.5 Pro in AI Mode enhances search and research functions, giving subscribers access to more advanced analysis and insights.
+- AI for sustainability and real-world impact: Meta’s open-source collaboration uses advanced optimization frameworks to accelerate the development and adoption of sustainable materials (e.g., greener concrete), demonstrating AI’s growing role in addressing large-scale industrial and environmental challenges.
+
+Overall, the major trends are the democratization of advanced AI platforms, increased flexibility and depth in research tools, seamless integration into enterprise workflows, and meaningful real-world applications addressing sustainability and industry needs.
+
+| Title | Source | Summary |
+|---|---|---|
+| [LangSmith and LangGraph Platform are now available in AWS Marketplace](https://blog.langchain.com/aws-marketplace-july-2025-announce/) | LangChain | LangSmith and LangGraph Platform are now available in AWS Marketplace, offering features like prompt engineering, evaluations, and observability for AI app performance. LangGraph Platform provides infrastructure to deploy and manage long-running agents with features like 1-click GitHub integration and visual workflows. Procuring these platforms via AWS Marketplace streamlines the procurement process and allows self-hosted deployments within AWS VPCs. This ensures data privacy and compliance with internal governance standards. LangChain, the provider of these platforms, offers open-source frameworks that are widely used by engineering teams across various companies. |
+| [Open Deep Research](https://blog.langchain.com/open-deep-research/) | LangChain | This blog post discusses the emergence of deep research tools from companies like OpenAI, Anthropic, Perplexity, and Google, providing comprehensive reports using various sources. The post introduces an open deep research tool built on LangGraph for flexible research strategies based on user requests. The tool follows a three-step process: scoping, research, and report writing. The key design principle of flexibility allows for different research strategies. Lessons learned include using multi-agent systems for easily parallelized tasks and context isolation for better quality. The multi-agent supervisor enables tuning the system to required research depth. These advancements aim to enhance research efficiency and adaptability to different research tasks. |
+| [More advanced AI capabilities are coming to Search](https://blog.google/products/search/deep-search-business-calling-google-search/) | Google AI | The blog post announces that Google AI Pro and AI Ultra subscribers can now use Gemini 2.5 Pro in AI Mode in Search for deeper research capabilities. |
+| [Using AI to make lower-carbon, faster-curing concrete](https://engineering.fb.com/2025/07/16/data-center-engineering/ai-make-lower-carbon-faster-curing-concrete/) | Meta AI | Meta has developed an open-source AI tool, utilizing Bayesian optimization with BoTorch and Ax frameworks, in collaboration with Amrize and the University of Illinois Urbana-Champaign, to design stronger, more sustainable concrete mixes. The tool was successfully deployed at a data center construction site, aiming to increase adoption of sustainable concrete mixes in the industry. By leveraging AI, the project accelerates the discovery and integration of sustainable materials for large-scale use. The AI model predicts compressive strength curves for different mixtures, optimizing short- and long-term strength properties as well as sustainability. This innovative approach aims to optimize the trade-off between strength and sustainability in concrete formulations, addressing challenges like slower curing speeds and supply chain complications. |
