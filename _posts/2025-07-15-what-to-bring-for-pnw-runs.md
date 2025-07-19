@@ -14,6 +14,7 @@ Running in the Pacific Northwest is an experience like no other, with its stunni
 
 *   **Running Vest:** A good running vest is crucial for carrying all your gear comfortably without it bouncing around.
 *   **Water Bottle:** Hydration is key, even on cool, misty days. A collapsible bottle can save space as you drink.
+*   **Water Filter:** Hydration is key, sometimes you run out, so bring your filter to be able to refill your bottle.
 *   **Gel/Snacks:** Keep your energy levels up, especially on longer runs. A quick-access gel can be a lifesaver.
 *   **iPhone & AirPods:** For music, podcasts, or navigation. Always make sure your phone is fully charged before you head out.
 *   **Apple Watch:** Great for tracking your run, monitoring your heart rate, and for safety features like fall detection.
@@ -23,6 +24,10 @@ Running in the Pacific Northwest is an experience like no other, with its stunni
 *   **Tape for Foot (Prep):** Prevent blisters before they start. Applying tape to hot spots is a pro-move for long distances.
 *   **Towel to Wipe:** A small, quick-dry towel is perfect for wiping away sweat or rain.
 *   **Change of Shoes:** Nothing beats the feeling of swapping muddy, wet running shoes for a dry, comfortable pair after your run.
+
+### Snack & Gel
+
+*   **Gel/Snacks:** Keep your energy levels up, especially on longer runs. A quick-access gel can be a lifesaver.
 
 ### Leave No Trace
 
