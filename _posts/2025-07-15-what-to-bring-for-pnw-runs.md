@@ -100,3 +100,7 @@ A strenuous climb that rewards with 360-degree views of the Cascades, including 
 - **Best Season:** July - October
 
 Not to be confused with its Oregon counterpart, the Mount Defiance in the I-90 corridor is a tough but rewarding hike. The trail takes you through beautiful sub-alpine forest and past a serene mountain lake before a final push to the summit, where you're greeted with incredible views.
+
+## Friends' Favorite Seven
+
+While I have my own "Snoq Seven," my hiking buddies have their own preferred collections of challenging trails. **Evan** gravitates toward the more technical and demanding routes, with his favorites including Defiance, Granite, Mailbox, Simon, Mt Washington, Humpback, and Cedar Butte - a mix that showcases his appetite for both elevation gain and rugged terrain. Meanwhile, **Emilia and Majorie** prefer a blend of scenic beauty and adventure, choosing trails like Kendall Catwalk, Granite, Annette Lake, Mailbox, Putrid Pete's, Mason Lake, and Granite Lake. Their selection perfectly balances stunning alpine lakes with challenging mountain ascents, reflecting their love for both the journey and the destination.
