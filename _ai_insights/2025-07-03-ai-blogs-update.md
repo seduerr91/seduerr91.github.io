@@ -1,8 +1,9 @@
 ---
+layout: post
 title: AI Daily
 tags: [AI, Blogs]
 style: fill
-color: secondary
+color: primary
 description: Daily update on AI blogs of 07-03
 ---
 
