@@ -103,4 +103,14 @@ Not to be confused with its Oregon counterpart, the Mount Defiance in the I-90 c
 
 ## Friends' Favorite Seven
 
-While I have my own "Snoq Seven," my hiking buddies have their own preferred collections of challenging trails. **Evan** gravitates toward the more technical and demanding routes, with his favorites including Defiance, Granite, Mailbox, Simon, Mt Washington, Humpback, and Cedar Butte - a mix that showcases his appetite for both elevation gain and rugged terrain. Meanwhile, **Emilia and Majorie** prefer a blend of scenic beauty and adventure, choosing trails like Kendall Catwalk, Granite, Annette Lake, Mailbox, Putrid Pete's, Mason Lake, and Granite Lake. Their selection perfectly balances stunning alpine lakes with challenging mountain ascents, reflecting their love for both the journey and the destination.
+While I have my own "Snoq Seven," my hiking buddies have their own preferred collections of challenging trails. **Evan** gravitates toward the more technical and demanding routes, with his favorites including Defiance, Granite, Mailbox, Navaho Peak, Kendall Catwalk, Humpback, and Cedar Butte to Olallie Lake - a mix that showcases his appetite for both elevation gain and rugged terrain. 
+
+**Cam**'s choices, like Denny Creek to Melakwa Lake and Mason Lake to Olallie, show a love for routes that connect beautiful water features, while still tackling significant climbs like Tiger Mountain and Cathedral Rock. He also loves Navaho Peak, Rattlensake Rdige, and McClellum Butte. 
+
+**Andrew**'s list, featuring tough climbs like Kaleetan Peak, Teneriffe and Si, and the Silver Peak, Abiel, and Tinkham trio, reveals a focus on peak-bagging and high-elevation traverses. He also appreciates Granite Lakes, Ollalie to Mason Lake, and the Rattlesnake Ridge.
+
+**Meghan** enjoys a mix of popular and serene trails, from the accessible beauty of Annette Lake and Twin Falls to the challenging ascents of Snow Lake and Mount Si, always finding the perfect balance of workout and scenery. Tiger, Miller, and Ollalie Lake are also on her list.
+
+Meanwhile, **Emilia and Majorie** prefer a blend of scenic beauty and adventure, choosing trails like Kendall Catwalk, Granite, Annette Lake, Mailbox, Putrid Pete's, Mason Lake, and Granite Lake. Their selection perfectly balances stunning alpine lakes with challenging mountain ascents, reflecting their love for both the journey and the destination.
+
+
