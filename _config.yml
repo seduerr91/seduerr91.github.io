@@ -89,7 +89,14 @@ defaults:
       path: ""
       type: "posts"
     values:
+      layout: post
       comments: true                                   # Set to true to enable disqus comments
+  - scope:
+      path: ""
+      type: "ai_insights"
+    values:
+      layout: post
+      comments: true
 
 ### Exclude from processing ###
 include:
