@@ -113,4 +113,4 @@ While I have my own "Snoq Seven," my hiking buddies have their own preferred col
 
 Meanwhile, **Emilia and Majorie** prefer a blend of scenic beauty and adventure, choosing trails like Kendall Catwalk, Granite, Annette Lake, Mailbox, Putrid Pete's, Mason Lake, and Granite Lake. Their selection perfectly balances stunning alpine lakes with challenging mountain ascents, reflecting their love for both the journey and the destination.
 
-
+**Travis** loves: Mt. Catherine, Mt. Si, Bandera Mountain, Mt. Snoqualmie, Kendall's catwalk, Mailbox, and Tiger.
