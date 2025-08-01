@@ -1,0 +1,228 @@
+--- 
+title: DeepEval Evaluation Metrics: A Comprehensive Study Guide
+description: A complete guide to the evaluation metrics available in DeepEval.
+tags: ['DeepEval', 'LLM Evaluation', 'Metrics']
+style: 'fill'
+color: 'secondary'
+--- 
+
+## Introduction to DeepEval Metrics
+
+DeepEval provides a powerful and extensible suite of metrics for evaluating Large Language Models (LLMs) and LLM-powered applications. These metrics are essential for ensuring the quality, safety, and performance of systems in both development and production. This guide consolidates the key information about each metric to serve as a quick reference for interview preparation.
+
+Metrics in DeepEval can be broadly categorized into:
+- **RAG Metrics:** For evaluating Retrieval-Augmented Generation pipelines.
+- **Conversational Metrics:** For assessing the quality of multi-turn dialogues.
+- **Safety & Security Metrics:** For identifying risks like bias, toxicity, and data leakage.
+- **Agentic Metrics:** For evaluating the performance of LLM agents and their use of tools.
+- **Custom & Specialized Metrics:** For creating bespoke evaluation criteria tailored to specific use cases.
+
+Most metrics are **LLM-as-a-judge**, meaning they use a powerful model (e.g., GPT-4) to score outputs. They typically return a score between 0.0 and 1.0, with a default passing `threshold` of 0.5.
+
+---
+
+## RAG Metrics
+
+These metrics evaluate the core components of a RAG pipeline: the retriever and the generator.
+
+### Faithfulness
+- **Purpose:** Measures if the generated `actual_output` is factually consistent with the `retrieval_context`.
+- **Use Case:** Preventing hallucinations in RAG systems.
+- **Key Arguments:** `input`, `actual_output`, `retrieval_context`.
+- **Calculation:** `Faithfulness = (Number of Truthful Claims) / (Total Number of Claims)`.
+  - An LLM first extracts all claims from the `actual_output`.
+  - Then, it verifies each claim against the `retrieval_context`.
+- **Example:**
+  - `actual_output`: "We offer a 30-day full refund at no extra cost."
+  - `retrieval_context`: ["All customers are eligible for a 30 day full refund at no extra cost."]
+  - **Result:** The claim is truthful, leading to a high faithfulness score.
+
+### Answer Relevancy
+- **Purpose:** Assesses how relevant the `actual_output` is to the `input`.
+- **Use Case:** Ensuring the LLM's response directly addresses the user's query.
+- **Key Arguments:** `input`, `actual_output`.
+- **Calculation:** `Answer Relevancy = (Number of Relevant Statements) / (Total Number of Statements)`.
+  - An LLM first extracts all statements from the `actual_output`.
+  - Then, it classifies each statement's relevance to the `input`.
+- **Example:**
+  - `input`: "What if these shoes don't fit?"
+  - `actual_output`: "We offer a 30-day full refund at no extra cost."
+  - **Result:** The output directly answers the input, resulting in a high relevancy score.
+
+### Contextual Precision
+- **Purpose:** Evaluates the quality of the `retrieval_context` by measuring if relevant nodes are ranked higher than irrelevant ones.
+- **Use Case:** Optimizing the re-ranking logic of a retriever.
+- **Key Arguments:** `input`, `expected_output`, `retrieval_context`.
+- **Calculation:** A weighted cumulative precision score that gives more weight to relevant nodes appearing earlier in the `retrieval_context`.
+- **Example:**
+  - `retrieval_context`: ["Relevant Node 1", "Irrelevant Node", "Relevant Node 2"]
+  - **Result:** A higher score is given if "Relevant Node 1" is ranked first, as it penalizes irrelevant nodes that appear before relevant ones.
+
+### Contextual Recall
+- **Purpose:** Measures how well the `retrieval_context` contains all the necessary information to generate the `expected_output`.
+- **Use Case:** Ensuring the retriever fetches comprehensive information.
+- **Key Arguments:** `input`, `expected_output`, `retrieval_context`.
+- **Calculation:** `Contextual Recall = (Number of Attributable Statements) / (Total Number of Statements)`.
+  - An LLM extracts statements from the `expected_output`.
+  - It then verifies if each statement can be attributed to the `retrieval_context`.
+- **Example:**
+  - `expected_output`: "You are eligible for a 30 day full refund at no extra cost."
+  - `retrieval_context`: ["All customers are eligible for a 30 day full refund..."]
+  - **Result:** The statement in the `expected_output` is fully supported by the context, yielding a high recall score.
+
+### Contextual Relevancy
+- **Purpose:** Determines how relevant the `retrieval_context` is to the `input`.
+- **Use Case:** Evaluating the retriever's ability to find relevant information.
+- **Key Arguments:** `input`, `retrieval_context`.
+- **Calculation:** `Contextual Relevancy = (Number of Relevant Statements) / (Total Number of Statements)`.
+  - An LLM extracts statements from the `retrieval_context`.
+  - It then classifies each statement's relevance to the `input`.
+- **Example:**
+  - `input`: "What if these shoes don't fit?"
+  - `retrieval_context`: ["All customers are eligible for a 30 day full refund at no extra cost."]
+  - **Result:** The context is highly relevant to the input, leading to a high score.
+
+### RAGAS Metric
+- **Purpose:** A composite metric that bundles four core RAGAS metrics (`Answer Relevancy`, `Faithfulness`, `Contextual Precision`, `Contextual Recall`) into a single evaluation.
+- **Use Case:** Holistic evaluation of a RAG pipeline.
+
+---
+
+## Conversational Metrics
+
+These metrics are designed to evaluate chatbots and other multi-turn systems.
+
+### Role Adherence
+- **Purpose:** Checks if the chatbot consistently adheres to its assigned `chatbot_role` throughout a conversation.
+- **Use Case:** Evaluating role-playing or persona-based chatbots.
+- **Key Arguments:** `turns`, `chatbot_role`.
+
+### Conversation Completeness
+- **Purpose:** Assesses whether the chatbot successfully fulfills the user's intentions during a conversation.
+- **Use Case:** Measuring goal completion in task-oriented bots.
+- **Key Arguments:** `turns`.
+
+### Conversation Relevancy
+- **Purpose:** Evaluates if the chatbot's responses remain relevant and on-topic across multiple turns.
+- **Use Case:** Preventing conversational drift.
+- **Key Arguments:** `turns`.
+
+### Knowledge Retention
+- **Purpose:** Measures if the chatbot can retain and recall facts from earlier in the conversation.
+- **Use Case:** Testing memory in conversational agents.
+- **Key Arguments:** `turns`.
+
+---
+
+## Safety & Security Metrics
+
+These metrics identify and penalize undesirable or harmful LLM behaviors.
+
+### Bias
+- **Purpose:** Detects gender, racial, political, and other forms of bias in the `actual_output`.
+- **Use Case:** Ensuring fairness and ethical AI.
+- **Key Arguments:** `input`, `actual_output`.
+- **Calculation:** `Bias Score = (Number of Biased Opinions) / (Total Number of Opinions)`.
+  - An LLM first extracts all opinions from the `actual_output`.
+  - It then classifies each opinion as biased or not based on a rubric (gender, political, racial, etc.).
+- **Example:**
+  - `actual_output`: "The businessman closed the deal while his female assistant took notes."
+  - **Result:** This statement contains gender bias. The metric identifies the biased opinion, resulting in a higher bias score (note: for bias, a lower score is better).
+
+### Toxicity
+- **Purpose:** Measures the level of toxic language (e.g., insults, threats) in the `actual_output`.
+- **Use Case:** Content moderation and safety filtering.
+- **Key Arguments:** `input`, `actual_output`.
+- **Calculation:** `Toxicity Score = (Number of Toxic Opinions) / (Total Number of Opinions)`.
+  - An LLM first extracts all opinions from the `actual_output`.
+  - It then classifies each opinion as toxic based on a rubric (personal attacks, mockery, etc.).
+- **Example:**
+  - `actual_output`: "You're clueless and have no idea what you're talking about."
+  - **Result:** This is a personal attack and is flagged as toxic, resulting in a higher toxicity score (a lower score is better).
+
+### Hallucination
+- **Purpose:** Detects factual inaccuracies in the `actual_output` when compared to a provided `context`.
+- **Use Case:** Verifying factual correctness.
+- **Key Arguments:** `actual_output`, `context`.
+
+### PII Leakage
+- **Purpose:** Checks if the `actual_output` contains Personally Identifiable Information (PII).
+- **Use Case:** Data privacy and compliance (GDPR, HIPAA).
+- **Key Arguments:** `actual_output`.
+
+### Misuse
+- **Purpose:** Determines if a domain-specific chatbot is being used for out-of-domain tasks.
+- **Use Case:** Preventing misuse of specialized bots (e.g., a medical bot giving financial advice).
+- **Key Arguments:** `input`, `actual_output`.
+
+### Non-Advice
+- **Purpose:** Ensures the LLM refrains from giving professional advice in sensitive domains (e.g., medical, legal).
+- **Use Case:** Reducing legal and safety risks.
+- **Key Arguments:** `input`, `actual_output`.
+
+### Role Violation
+- **Purpose:** A single-turn check to see if the LLM breaks its assigned `role`.
+- **Use Case:** Enforcing persona consistency in a single response.
+- **Key Arguments:** `actual_output`, `role`.
+
+---
+
+## Agentic Metrics
+
+These metrics are focused on evaluating LLM agents, particularly their ability to complete tasks and use tools.
+
+### Task Completion
+- **Purpose:** Evaluates how effectively an LLM agent accomplishes a given `task` by analyzing its execution trace.
+- **Use Case:** Measuring the overall success of an agent.
+- **Key Arguments:** Requires `@observe` tracing.
+
+### Tool Correctness
+- **Purpose:** A non-LLM metric that verifies if the agent used the `expected_tools` correctly.
+- **Use Case:** Debugging and validating an agent's tool-calling abilities.
+- **Key Arguments:** `tools_called`, `expected_tools`.
+
+---
+
+## Custom & Specialized Metrics
+
+DeepEval offers powerful tools for creating custom evaluations.
+
+### G-Eval (LLM-Eval)
+- **Purpose:** A highly flexible, custom metric where you define the evaluation `criteria`.
+- **Use Case:** Evaluating subjective or use-case-specific qualities that are not covered by standard metrics.
+- **Key Arguments:** `input`, `actual_output`, `criteria`.
+
+### Summarization
+- **Purpose:** A composite metric that evaluates a summary based on `Alignment` (fact-checking against the original text) and `Coverage` (inclusion of key information).
+- **Use Case:** Assessing the quality of text summarization.
+- **Key Arguments:** `input` (original text), `actual_output` (summary).
+- **Calculation:** `Summarization Score = min(Alignment Score, Coverage Score)`.
+  - `Alignment Score`: Measures if the summary contains hallucinations or contradicts the original text.
+  - `Coverage Score`: Measures if the summary includes all necessary information from the original text, based on answers to assessment questions.
+- **Example:**
+  - `input`: A long article about climate change.
+  - `actual_output`: A one-paragraph summary of the article.
+  - `assessment_questions`: ["Does the article mention rising sea levels?", "Is human activity cited as a major cause?"]
+  - **Result:** The score is the minimum of the alignment (factual consistency) and coverage (completeness) scores.
+
+### JSON Correctness
+- **Purpose:** A non-LLM metric that validates if the `actual_output` conforms to a specified Pydantic JSON schema.
+- **Use Case:** Ensuring reliable structured data output.
+- **Key Arguments:** `actual_output`, `schema`.
+
+### Custom Metric (`BaseMetric`)
+- **Purpose:** Provides a base class to implement any custom evaluation logic, whether LLM-based or not.
+- **Use Case:** Ultimate flexibility for unique evaluation needs.
+
+---
+
+## Multimodal Metrics
+
+DeepEval also supports metrics for evaluating multimodal models that process both text and images.
+
+- **Image Coherence:** Assesses if the generated image aligns with the text prompt.
+- **Image Helpfulness:** Evaluates if the image is helpful in the context of the prompt.
+- **Image Editing:** Checks if the model correctly performs image editing instructions.
+- **Text-to-Image Relevancy:** A suite of metrics (`Answer Relevancy`, `Faithfulness`, etc.) adapted for text-to-image generation.
+
+This guide provides a high-level overview of the powerful evaluation tools within DeepEval. For detailed implementation, always refer to the official documentation.

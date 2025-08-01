@@ -7,7 +7,7 @@ weight: 3
 
 ## Overview
 
-Hello, I'm Sebastian, a fervent Natural Language Processing (NLP) engineer and an accomplished manager. Beyond my technological acumen, I'm a global explorer, having spent two vibrant years as a digital nomad across 25 diverse nations. Four languages - English, Spanish, French, and German - are effortlessly part of my conversational repertoire, demonstrating my proficiency in thriving amidst diverse cultures. 
+Hello, I'm Sebastian, a fervent AI engineer and an accomplished manager. Beyond my technological acumen, I'm a global explorer, having spent two vibrant years as a digital nomad across 25 diverse nations. Four languages - English, Spanish, French, and German - are effortlessly part of my conversational repertoire, demonstrating my proficiency in thriving amidst diverse cultures. 
 
 <div style="text-align: center;">
     <img src="https://i.imgur.com/m4jlWgEm.jpg" alt="Imgur" style="width: 300px;">
@@ -15,6 +15,10 @@ Hello, I'm Sebastian, a fervent Natural Language Processing (NLP) engineer and a
 
 
 Despite my professional accomplishments, I believe in maintaining a balanced life. Thus, I devote time to yoga, swimming, hiking, cooking, reading, Pickleball and running. These activities keep me grounded and connect me to nature. 
+
+## Employer Introduction
+
+My name is Seb, and I'm a Lead AI Engineer from Germany with a Master's in Information Systems. After starting a Ph.D., I transitioned into consulting as a Chief Product Officer at a major Austrian bank. Later, I pursued NLP research with MIT, co-founded and exited a successful startup, and moved to the US to work as an AI/NLP engineer. Along the way, I've taught 20+ academic courses, and published 7 scientific articles honing my ability to communicate complex concepts—a key strength in bridging technical solutions with client or user needs. 
 
 ## Academic and Professional Vita
 
