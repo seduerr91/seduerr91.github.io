@@ -1,9 +1,9 @@
 ---
 title: Synthesizer Study Guide
+tags: [DeepEval, LLM Evaluation, Synthesizer]
+style: fill
+color: secondary
 description: A complete guide to synthesizer concepts and vulnerabilities.
-tags: ['DeepEval', 'LLM Evaluation', 'Synthesizer']
-style: 'fill'
-color: 'secondary'
 --- 
 
 # Synthesizer Study Guide
