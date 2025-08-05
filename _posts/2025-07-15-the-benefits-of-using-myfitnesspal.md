@@ -57,5 +57,3 @@ MyFitnessPal is more than just a calorie counter—it serves as a comprehensive 
 Whether you want to lose weight, build healthier eating habits, or simply gain more control over your nutrition, MyFitnessPal offers a suite of benefits to support your journey. By embracing food awareness, portion control, goal tracking, and community support, you set yourself up for sustained health and well-being.
 
 Ready to take the next step toward mindful eating and real results? MyFitnessPal can guide and motivate you every meal, every day.
-
-Sources
