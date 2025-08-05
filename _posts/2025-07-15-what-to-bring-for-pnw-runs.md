@@ -114,3 +114,15 @@ While I have my own "Snoq Seven," my hiking buddies have their own preferred col
 Meanwhile, **Emilia and Majorie** prefer a blend of scenic beauty and adventure, choosing trails like Kendall Catwalk, Granite, Annette Lake, Mailbox, Putrid Pete's, Mason Lake, and Granite Lake. Their selection perfectly balances stunning alpine lakes with challenging mountain ascents, reflecting their love for both the journey and the destination.
 
 **Travis** loves: Mt. Catherine, Mt. Si, Bandera Mountain, Mt. Snoqualmie, Kendall's catwalk, Mailbox, and Tiger.
+
+Hence, my next hikes:
+
+| Hike             | I-90 Exit #                    | Drive from Issaquah (Exit 18)    | Length (miles, roundtrip) | Elevation Gain (feet) |
+|------------------|-------------------------------|----------------------------------|--------------------------|-----------------------|
+| Putrid Pete's    | Exit 45 (Forest Road 9030/Ira Spring Trailhead) | ~45min | 6.0                      | 2,700                 |
+| Kaleetan Peak    | Exit 47 (Denny Creek)      | ~40min                          | 12.0                     | 4,500                 |
+| Annette Lake     | Exit 47 (Denny Creek/Asahel Curtis) | ~40min           | 7.5                      | 1,800                 |
+| Snow Lake        | Exit 52 (Alpental/Snoqualmie Pass)   | ~50min-1hr                     | 7.2                      | 1,800                 |
+| Mt. Snoqualmie   | Exit 52 or 53 (Alpental/Hyak)      | ~50min-1hr                      | 7.0                      | 2,200                 |
+| Mt. Catherine    | Exit 54 (Hyak)             | ~1hr                            | 6.5                      | 2,800                 |
+| Miller Peak      | Exit 85 (Teanaway Rd/Cle Elum) | ~1hr 40min                      | 5.8                      | 3,000                 |
