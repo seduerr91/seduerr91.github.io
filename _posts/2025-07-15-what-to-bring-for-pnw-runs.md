@@ -17,7 +17,7 @@ Running in the Pacific Northwest is an experience like no other, with its stunni
 *   **Water Filter:** Hydration is key, sometimes you run out, so bring your filter to be able to refill your bottle.
 *   **Gel/Snacks:** Keep your energy levels up, especially on longer runs. A quick-access gel can be a lifesaver.
 *   **iPhone & AirPods:** For music, podcasts, or navigation. Always make sure your phone is fully charged before you head out.
-*   **Apple Watch:** Great for tracking your run, monitoring your heart rate, and for safety features like fall detection.
+*   **Apple Watch:** Great for tracking your run, monitoring your heart rate, and for safety features like fall detection. Make it track your heart rate.
 
 ### Comfort & Safety
 
@@ -28,6 +28,7 @@ Running in the Pacific Northwest is an experience like no other, with its stunni
 ### Snack & Gel
 
 *   **Gel/Snacks:** Keep your energy levels up, especially on longer runs. A quick-access gel can be a lifesaver.
+*   **Spike your drinks with skratch (lime lemon)**
 
 ### Leave No Trace
 
@@ -126,3 +127,4 @@ Hence, my next hikes:
 | Mt. Snoqualmie   | Exit 52 or 53 (Alpental/Hyak)      | ~50min-1hr                      | 7.0                      | 2,200                 |
 | Mt. Catherine    | Exit 54 (Hyak)             | ~1hr                            | 6.5                      | 2,800                 |
 | Miller Peak      | Exit 85 (Teanaway Rd/Cle Elum) | ~1hr 40min                      | 5.8                      | 3,000                 |
+
