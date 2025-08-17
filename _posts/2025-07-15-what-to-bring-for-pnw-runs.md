@@ -128,3 +128,16 @@ Hence, my next hikes:
 | Mt. Catherine    | Exit 54 (Hyak)             | ~1hr                            | 6.5                      | 2,800                 |
 | Miller Peak      | Exit 85 (Teanaway Rd/Cle Elum) | ~1hr 40min                      | 5.8                      | 3,000                 |
 
+For my 30 mile run I consumed the following items:
+
+- 3x Energy Waffle Honey Stinger
+- 1x Energy Gel
+- Skratch 3x bottles (1 spoon each)
+- Water 6x + aid station (2x bottles, 1x coffee)
+- 2x Ketone Shots
+- 1x Meat stick
+- 3x Panini Sandwiches 
+
+Also, I learned to keep the heart rate below 140 if possible, track the run with my Strava on the apple watch and use the Strava on my phone for navigation if following a route / and also tracking. 
+Spiking drinks with skratch (lime lemon) is a great way to get a quick energy boost and stay hydrated.
+Ketones help with the pain.
