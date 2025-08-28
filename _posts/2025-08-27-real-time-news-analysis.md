@@ -6,6 +6,8 @@ color: secondary
 description: A high-speed news analysis pipeline using Cerebras and GPT-OSS for real-time investment insights.
 ---
 
+![Real-Time News Analysis in Action](images/cerebras_realtime_analysis.gif)
+
 In the microsecond economy of modern finance, the difference between profit and loss isn't measured in minutes or even seconds—it's measured in **milliseconds**. Investment professionals operating in today's hyperconnected markets face an unprecedented challenge: processing vast streams of market-moving information fast enough to act on fleeting opportunities. This technical deep-dive explores how to architect and deploy a production-grade news analysis pipeline that leverages Cerebras's wafer-scale inference capabilities and OpenAI's GPT-OSS models to deliver actionable insights at the speed of modern markets.
 
 ## The Microsecond Economy: Why Speed Defines Modern Finance
@@ -45,51 +47,83 @@ GPT-OSS 120B's architecture utilizes **128 experts across 36 layers**, with only
 The model's training incorporates techniques from OpenAI's most advanced internal models, including **o3 and other frontier systems**. For financial applications, this translates to sophisticated understanding of:[8]
 
 ```python
-class FinancialAnalysisPrompt:
-    """Structured prompts for financial news analysis"""
-    
-    @staticmethod
-    def create_sentiment_analysis_prompt(news_content: str, company: str) -> str:
-        return f"""
-        Analyze the following financial news article for {company} and provide a structured analysis:
+# backend/src/prompts.py
 
-        Article: {news_content}
+SYSTEM_PROMPT = """
+You are a world-class financial analyst working for institutional investors.
+You must analyze the following news article and extract structured, investor-focused insights.
 
-        Please provide your analysis in the following JSON format:
-        {{
-            "sentiment": {{"score": float between -1 and 1, "confidence": float between 0 and 1}},
-            "key_topics": [list of main themes],
-            "financial_impact": {{"direction": "positive/negative/neutral", "magnitude": "low/medium/high", "timeframe": "short/medium/long-term"}},
-            "affected_entities": [list of companies/sectors mentioned],
-            "risk_factors": [list of identified risks],
-            "opportunities": [list of identified opportunities],
-            "market_implications": string describing broader market impact,
-            "confidence_score": float between 0 and 1
-        }}
+Your output should identify sentiment, impacted companies/sectors, likely direction and magnitude of financial impact, key performance indicators, risks, opportunities, time horizon relevance, and a concise summary.
 
-        Focus on quantifiable impacts, regulatory implications, and competitive positioning.
-        Consider both direct and indirect effects on the company's financial performance.
-        """
+Be precise, fact-based, and avoid speculation that is not grounded in the article text.
+"""
 
-    @staticmethod
-    def create_event_classification_prompt(news_content: str) -> str:
-        return f"""
-        Classify the following financial news event and extract key information:
+def get_user_prompt(content: str) -> str:
+    """Formats the user prompt with the news article content."""
+    return f"""
+    Analyze the following news article for investors:
 
-        News: {news_content}
+    Article:
+    {content}
 
-        Classify this event and provide structured output:
-        {{
-            "event_type": "earnings/merger/regulatory/product_launch/management_change/other",
-            "urgency": "immediate/short_term/long_term",
-            "market_relevance": "high/medium/low",
-            "affected_sectors": [list of industry sectors],
-            "geographic_impact": [list of regions/countries],
-            "tradeable_instruments": [list of stocks/bonds/commodities affected],
-            "time_sensitivity": int in hours until impact diminishes,
-            "summary": "concise 2-sentence summary"
-        }}
-        """
+    Please return your analysis strictly in the JSON schema format provided.
+    """
+
+# backend/src/schemas.py
+
+from typing import List, Dict, Literal
+from pydantic import BaseModel, Field
+
+class NewsAnalysis(BaseModel):
+    """
+    Defines the structure for the LLM's investor-focused analysis output.
+    """
+    sentiment: Literal['Bullish', 'Bearish', 'Neutral'] = Field(
+        ...,
+        description="Overall sentiment for an investor: Bullish, Bearish, or Neutral."
+    )
+    confidence: float = Field(
+        ...,
+        description="Confidence score in the analysis, from 0.0 to 1.0.",
+        ge=0.0, 
+        le=1.0
+    )
+    affected_entities: List[str] = Field(
+        ...,
+        description="List of companies, stock tickers, indexes, or sectors mentioned."
+    )
+    impact_direction: Dict[str, Literal['Positive', 'Negative', 'Neutral']] = Field(
+        ...,
+        description="Dictionary mapping each entity to its expected impact direction."
+    )
+    magnitude: Dict[str, Literal['Low', 'Medium', 'High']] = Field(
+        ...,
+        description="Dictionary mapping each entity to the magnitude of the expected impact."
+    )
+    key_indicators: List[str] = Field(
+        ...,
+        description="List of key performance indicators or financial metrics mentioned (e.g., EPS, revenue growth, stock price movements)."
+    )
+    risks: List[str] = Field(
+        ...,
+        description="List of potential risks or concerns identified in the article (e.g., 'valuation risk', 'regulatory pressure')."
+    )
+    opportunities: List[str] = Field(
+        ...,
+        description="List of potential opportunities identified (e.g., 'AI growth', 'new product launch')."
+    )
+    time_horizon: Literal['Short-term', 'Medium-term', 'Long-term'] = Field(
+        ...,
+        description="The relevant time horizon for the article's impact."
+    )
+    sector_context: Dict[str, Literal['Bullish', 'Bearish', 'Neutral']] = Field(
+        ...,
+        description="Dictionary mapping mentioned sectors to their overall sentiment."
+    )
+    summary_explanation: str = Field(
+        ...,
+        description="A concise, fact-based summary for an investor, explaining the key takeaways."
+    )
 ```
 
 ### Chain-of-Thought Reasoning for Market Analysis
@@ -97,48 +131,73 @@ class FinancialAnalysisPrompt:
 GPT-OSS models demonstrate **smooth test-time scaling** with configurable reasoning effort (low, medium, high). For financial analysis, this enables sophisticated multi-step reasoning:[10]
 
 ```python
-class FinancialReasoningEngine:
-    def __init__(self, cerebras_client):
-        self.client = cerebras_client
-        self.reasoning_modes = {
-            "rapid": {"temperature": 0.1, "reasoning_effort": "low"},
-            "balanced": {"temperature": 0.05, "reasoning_effort": "medium"},
-            "deep": {"temperature": 0.01, "reasoning_effort": "high"}
-        }
-    
-    async def analyze_with_reasoning(self, news_content: str, mode: str = "balanced") -> Dict:
-        config = self.reasoning_modes[mode]
-        
-        prompt = f"""
-        Perform a step-by-step analysis of this financial news:
+# backend/src/llm.py
 
-        {news_content}
+import asyncio
+import json
+import time
+from openai import AsyncOpenAI
+from loguru import logger
 
-        Please think through this systematically:
+from . import config, prompts, schemas
 
-        Step 1: Identify the core financial event and its immediate implications
-        Step 2: Analyze the competitive landscape and market positioning effects
-        Step 3: Evaluate regulatory and compliance considerations
-        Step 4: Assess short-term and long-term financial impacts
-        Step 5: Consider broader market and economic implications
-        Step 6: Synthesize findings into actionable insights
+# Initialize the async OpenAI client
+client = AsyncOpenAI(
+    api_key=config.CEREBRAS_API_KEY,
+    base_url=config.CEREBRAS_API_BASE,
+)
 
-        Provide detailed reasoning for each step, then summarize your conclusions.
-        """
-        
-        response = await self.client.generate(
-            prompt=prompt,
-            reasoning_effort=config["reasoning_effort"],
-            temperature=config["temperature"],
-            max_tokens=2000
+async def get_llm_analysis(content: str) -> schemas.NewsAnalysis:
+    """Analyzes text using the Cerebras model with native structured output."""
+    try:
+        news_schema = schemas.NewsAnalysis.model_json_schema()
+
+        start_time = time.time()
+        completion = await client.chat.completions.create(
+            model=config.MODEL_NAME,
+            messages=[
+                {"role": "system", "content": prompts.SYSTEM_PROMPT},
+                {"role": "user", "content": prompts.get_user_prompt(content)},
+            ],
+            response_format={
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "news_analysis",
+                    "schema": news_schema
+                }
+            },
+            max_tokens=2048,
+            temperature=config.TEMPERATURE,
         )
-        
-        return {
-            "analysis": response.content,
-            "reasoning_mode": mode,
-            "confidence": self.calculate_confidence(response),
-            "processing_time": response.processing_time
-        }
+        end_time = time.time()
+
+        api_call_time = end_time - start_time
+        response_content = completion.choices[0].message.content
+        parsed_json = json.loads(response_content)
+        analysis_obj = schemas.NewsAnalysis.model_validate(parsed_json)
+
+        if completion.usage and completion.usage.completion_tokens and api_call_time > 0:
+            tokens_per_second = completion.usage.completion_tokens / api_call_time
+            analysis_obj.tokens_per_second = round(tokens_per_second, 2)
+
+        return analysis_obj
+
+    except Exception as e:
+        logger.error(f"Error calling Cerebras API or parsing response: {e}")
+        # Return a default analysis object that matches the new schema
+        return schemas.NewsAnalysis(
+            sentiment="Neutral",
+            confidence=0.0,
+            affected_entities=[],
+            impact_direction={},
+            magnitude={},
+            key_indicators=[],
+            risks=["Analysis failed due to API or parsing error."],
+            opportunities=[],
+            time_horizon="Short-term",
+            sector_context={},
+            summary_explanation=f"Could not perform analysis due to an error: {e}"
+        )
 ```
 
 ## Infrastructure Optimization: Cerebras as the Inference Engine
@@ -154,48 +213,47 @@ Cerebras's **Wafer Scale Engine** eliminates the memory bandwidth bottlenecks th
 The architectural advantages are particularly pronounced for real-time applications:
 
 ```python
-class CerebrasOptimizedClient:
-    """Optimized client for Cerebras inference with performance monitoring"""
+# backend/main.py
+
+async def news_worker(worker_id: int):
+    logger.info(f"Worker {worker_id} started.")
+    while app_state.is_running:
+        try:
+            article: schemas.NewsArticle = await app_state.article_queue.get()
+            if not app_state.is_running: 
+                app_state.article_queue.task_done()
+                break
+
+            start_time = time.time()
+            logger.info(f"Worker {worker_id} processing: {article.title}")
+            analysis = await llm.get_llm_analysis(article.summary)
+            processing_time = time.time() - start_time
+
+            log_panel = Panel(Text(json.dumps(analysis.model_dump(), indent=4)),
+                                title=f"{Fore.CYAN}Analyzed: {article.title}{Style.RESET_ALL}",
+                                border_style="green")
+            console.print(log_panel)
+            logger.success(f"Worker {worker_id} finished processing: {article.title} in {processing_time:.2f}s")
+
+            response = schemas.WebSocketResponse(
+                task_id=f"task_{uuid.uuid4()}",
+                title=article.title,
+                link=article.link,
+                summary=article.summary,
+                published=article.published,
+                analysis=analysis,
+                processing_time=processing_time,
+                tokens_per_second=analysis.tokens_per_second
+            )
+            app_state.processed_articles.append(response.model_dump())
+            await manager.broadcast(response.model_dump_json())
+            app_state.article_queue.task_done()
+
+        except Exception as e:
+            logger.error(f"Error in news worker: {e}")
+            await asyncio.sleep(30)
     
-    def __init__(self, api_key: str, base_url: str):
-        self.api_key = api_key
-        self.base_url = base_url
-        self.performance_metrics = {
-            "total_requests": 0,
-            "total_tokens": 0,
-            "avg_latency": 0,
-            "tokens_per_second": 0
-        }
-        
-    async def generate_with_metrics(self, prompt: str, **kwargs) -> Dict:
-        start_time = time.time()
-        
-        response = await self.generate(prompt, **kwargs)
-        
-        end_time = time.time()
-        latency = end_time - start_time
-        
-        # Update performance metrics
-        self.performance_metrics["total_requests"] += 1
-        self.performance_metrics["total_tokens"] += response.get("token_count", 0)
-        
-        # Calculate moving averages
-        self.performance_metrics["avg_latency"] = (
-            (self.performance_metrics["avg_latency"] * 
-             (self.performance_metrics["total_requests"] - 1) + latency) /
-            self.performance_metrics["total_requests"]
-        )
-        
-        self.performance_metrics["tokens_per_second"] = (
-            self.performance_metrics["total_tokens"] / 
-            (self.performance_metrics["avg_latency"] * self.performance_metrics["total_requests"])
-        )
-        
-        return {
-            **response,
-            "latency": latency,
-            "tokens_per_second": response.get("token_count", 0) / latency
-        }
+    logger.info(f"Worker {worker_id} has stopped.")
 ```
 
 ### Performance Benchmarks and Comparisons
@@ -264,151 +322,45 @@ print(f"GPU cost per million tokens: ${gpu_config.cost_per_million_tokens()}")
 Building on the foundation of Google News RSS feeds, the system implements advanced feed processing with intelligent filtering, deduplication, and entity resolution:[13]
 
 ```python
-class AdvancedRSSProcessor:
-    """Enhanced RSS processing with intelligent filtering and caching"""
-    
-    def __init__(self, redis_client, entity_resolver):
-        self.redis = redis_client
-        self.entity_resolver = entity_resolver
-        self.feed_configs = self.load_feed_configurations()
-        
-    def load_feed_configurations(self) -> Dict:
-        """Load optimized RSS feed URLs for different market sectors"""
-        return {
-            "technology": [
-                "https://news.google.com/rss/search?q=tech+stocks+when:1h&hl=en&gl=US",
-                "https://news.google.com/rss/search?q=earnings+technology+when:1h&hl=en&gl=US"
-            ],
-            "finance": [
-                "https://news.google.com/rss/search?q=banking+finance+when:1h&hl=en&gl=US",
-                "https://news.google.com/rss/search?q=fed+interest+rates+when:1h&hl=en&gl=US"
-            ],
-            "energy": [
-                "https://news.google.com/rss/search?q=oil+gas+energy+when:1h&hl=en&gl=US"
-            ]
-        }
-    
-    async def process_feeds_concurrent(self) -> List[NewsItem]:
-        """Process multiple RSS feeds concurrently with intelligent merging"""
-        all_tasks = []
-        
-        for sector, feeds in self.feed_configs.items():
-            for feed_url in feeds:
-                task = asyncio.create_task(
-                    self.process_single_feed(feed_url, sector)
-                )
-                all_tasks.append(task)
-        
-        results = await asyncio.gather(*all_tasks, return_exceptions=True)
-        
-        # Merge and deduplicate results
-        all_items = []
-        for result in results:
-            if isinstance(result, list):
-                all_items.extend(result)
-        
-        return await self.deduplicate_and_enrich(all_items)
-    
-    async def deduplicate_and_enrich(self, items: List[NewsItem]) -> List[NewsItem]:
-        """Advanced deduplication using content similarity and entity matching"""
-        unique_items = {}
-        
-        for item in items:
-            # Create content hash for exact duplicate detection
-            content_hash = hashlib.sha256(
-                (item.title + item.content).encode()
-            ).hexdigest()
-            
-            if content_hash not in unique_items:
-                # Extract and resolve entities
-                item.entities = await self.entity_resolver.extract_entities(
-                    item.title + " " + item.content
-                )
-                unique_items[content_hash] = item
-            else:
-                # Merge entity information from duplicate sources
-                existing_item = unique_items[content_hash]
-                existing_item.entities = list(set(
-                    existing_item.entities + item.entities
-                ))
-        
-        return list(unique_items.values())
+# backend/src/news_fetcher.py
+
+import feedparser
+from loguru import logger
+from urllib.parse import quote_plus
+
+from . import config
+
+def fetch_google_news(topic: str) -> list:
+    """Fetches news from the Google News RSS feed for a specific topic."""
+    logger.info(f"Fetching news for topic: {topic}")
+    query = f'{topic} when:1h'
+    encoded_query = quote_plus(query)
+    rss_url = f"https://news.google.com/rss/search?q={encoded_query}&hl={config.NEWS_LANG}&gl={config.NEWS_COUNTRY}&ceid={config.NEWS_COUNTRY}_{config.NEWS_LANG}"
+    feed = feedparser.parse(rss_url)
+    if feed.bozo:
+        logger.warning(f"Error parsing RSS feed: {feed.bozo_exception}")
+        return []
+    return feed.entries
+
+# backend/main.py
+
+async def article_producer(topic: str):
+    """Fetches news and puts articles into the queue."""
+    while app_state.is_running:
+        logger.info(f"Fetching news for topic: '{topic}'")
+        articles = news_fetcher.fetch_google_news(topic)
+        if articles:
+            for article in articles:
+                # Avoid putting duplicate articles in the queue
+                if article.link not in [a.link for a in app_state.processed_articles]:
+                    await app_state.article_queue.put(article)
+        await asyncio.sleep(60) # Fetch news every 60 seconds
 ```
 
 ### Multi-Source Data Fusion
 
 The system integrates multiple data sources beyond RSS feeds to provide comprehensive market coverage:
 
-```python
-class MultiSourceDataFusion:
-    """Integrate multiple data sources for comprehensive market analysis"""
-    
-    def __init__(self):
-        self.sources = {
-            "rss_feeds": RSSProcessor(),
-            "sec_filings": SECFilingsProcessor(),
-            "social_media": SocialMediaProcessor(),
-            "earnings_calls": EarningsCallProcessor(),
-            "regulatory_notices": RegulatoryProcessor()
-        }
-        
-    async def fetch_comprehensive_data(self, 
-                                     entities: List[str], 
-                                     timeframe: str = "1h") -> Dict:
-        """Fetch data from all sources for specified entities"""
-        
-        tasks = {}
-        for source_name, processor in self.sources.items():
-            tasks[source_name] = asyncio.create_task(
-                processor.fetch_entity_data(entities, timeframe)
-            )
-        
-        results = await asyncio.gather(*tasks.values(), return_exceptions=True)
-        
-        # Combine results with source attribution
-        combined_data = {}
-        for source_name, result in zip(tasks.keys(), results):
-            if isinstance(result, Exception):
-                logger.error(f"Error fetching from {source_name}: {result}")
-                combined_data[source_name] = []
-            else:
-                combined_data[source_name] = result
-        
-        return await self.correlate_cross_source_data(combined_data)
-    
-    async def correlate_cross_source_data(self, data: Dict) -> Dict:
-        """Identify correlations and conflicts across data sources"""
-        correlations = {}
-        
-        # Extract common themes across sources
-        all_topics = []
-        for source_data in data.values():
-            for item in source_data:
-                if hasattr(item, 'topics'):
-                    all_topics.extend(item.topics)
-        
-        # Identify trending topics
-        topic_counts = Counter(all_topics)
-        trending_topics = dict(topic_counts.most_common(10))
-        
-        # Detect sentiment convergence/divergence
-        sentiment_by_source = {}
-        for source_name, items in data.items():
-            sentiments = [item.sentiment for item in items if hasattr(item, 'sentiment')]
-            if sentiments:
-                sentiment_by_source[source_name] = {
-                    "average": sum(sentiments) / len(sentiments),
-                    "variance": np.var(sentiments),
-                    "count": len(sentiments)
-                }
-        
-        return {
-            "data": data,
-            "trending_topics": trending_topics,
-            "sentiment_convergence": sentiment_by_source,
-            "cross_source_conflicts": await self.detect_conflicts(data)
-        }
-```
 
 ## Real-World Performance Metrics and Benchmarks
 
@@ -416,77 +368,6 @@ class MultiSourceDataFusion:
 
 Production deployment demonstrates consistent sub-second processing times across different news processing scenarios:
 
-```python
-class PerformanceMonitor:
-    """Real-time performance monitoring and alerting"""
-    
-    def __init__(self):
-        self.metrics = {
-            "processing_latency": [],
-            "throughput": [],
-            "error_rate": [],
-            "memory_usage": [],
-            "cpu_utilization": []
-        }
-        
-    async def measure_processing_pipeline(self, news_item: NewsItem) -> Dict:
-        """Comprehensive performance measurement"""
-        start_time = time.time()
-        memory_start = psutil.Process().memory_info().rss
-        
-        try:
-            # Process through the full pipeline
-            enriched_item = await self.enrich_news_item(news_item)
-            analysis = await self.analyze_with_gpt_oss(enriched_item)
-            structured_output = await self.structure_analysis(analysis)
-            
-            end_time = time.time()
-            memory_end = psutil.Process().memory_info().rss
-            
-            metrics = {
-                "total_latency": end_time - start_time,
-                "memory_delta": memory_end - memory_start,
-                "tokens_processed": len(news_item.content.split()),
-                "success": True,
-                "timestamp": datetime.now()
-            }
-            
-            self.update_metrics(metrics)
-            return metrics
-            
-        except Exception as e:
-            error_metrics = {
-                "total_latency": time.time() - start_time,
-                "error": str(e),
-                "success": False,
-                "timestamp": datetime.now()
-            }
-            self.update_metrics(error_metrics)
-            raise e
-    
-    def get_performance_summary(self, window_minutes: int = 60) -> Dict:
-        """Generate performance summary for the specified time window"""
-        cutoff_time = datetime.now() - timedelta(minutes=window_minutes)
-        
-        recent_metrics = [
-            m for m in self.metrics["processing_latency"] 
-            if m["timestamp"] > cutoff_time
-        ]
-        
-        if not recent_metrics:
-            return {"error": "No metrics available for the specified window"}
-        
-        latencies = [m["total_latency"] for m in recent_metrics if m["success"]]
-        
-        return {
-            "average_latency": sum(latencies) / len(latencies) if latencies else 0,
-            "p95_latency": np.percentile(latencies, 95) if latencies else 0,
-            "p99_latency": np.percentile(latencies, 99) if latencies else 0,
-            "success_rate": sum(1 for m in recent_metrics if m["success"]) / len(recent_metrics),
-            "throughput": len(recent_metrics) / window_minutes,
-            "total_requests": len(recent_metrics)
-        }
-```
 
 ### Throughput Analysis
 
@@ -501,54 +382,6 @@ Based on production deployment metrics, the system achieves:
 
 Validation against manual financial analyst assessments shows:
 
-```python
-class AccuracyValidator:
-    """Validate analysis accuracy against expert human analysis"""
-    
-    def __init__(self, ground_truth_db):
-        self.ground_truth = ground_truth_db
-        
-    async def validate_sentiment_accuracy(self, 
-                                        predictions: List[Dict], 
-                                        period_days: int = 30) -> Dict:
-        """Compare AI predictions against human expert analysis"""
-        
-        validation_results = {
-            "sentiment_correlation": 0.0,
-            "directional_accuracy": 0.0,
-            "magnitude_accuracy": 0.0,
-            "sample_size": 0
-        }
-        
-        expert_sentiments = []
-        ai_sentiments = []
-        directional_matches = 0
-        
-        for prediction in predictions:
-            expert_analysis = await self.ground_truth.get_expert_analysis(
-                prediction["article_id"]
-            )
-            
-            if expert_analysis:
-                expert_sentiments.append(expert_analysis["sentiment"])
-                ai_sentiments.append(prediction["sentiment"]["score"])
-                
-                # Check directional accuracy
-                expert_direction = 1 if expert_analysis["sentiment"] > 0 else -1
-                ai_direction = 1 if prediction["sentiment"]["score"] > 0 else -1
-                
-                if expert_direction == ai_direction:
-                    directional_matches += 1
-        
-        if expert_sentiments:
-            validation_results.update({
-                "sentiment_correlation": np.corrcoef(expert_sentiments, ai_sentiments)[0,1],
-                "directional_accuracy": directional_matches / len(expert_sentiments),
-                "sample_size": len(expert_sentiments)
-            })
-        
-        return validation_results
-```
 
 ## Production Deployment and Operational Excellence
 
@@ -556,176 +389,54 @@ class AccuracyValidator:
 
 The system deploys using Kubernetes with specialized configurations for financial workloads:
 
-```yaml
-# deployment.yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: news-analysis-engine
-  namespace: trading-systems
-spec:
-  replicas: 6
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 2
-      maxUnavailable: 1
-  selector:
-    matchLabels:
-      app: news-analysis-engine
-  template:
-    metadata:
-      labels:
-        app: news-analysis-engine
-    spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-          - labelSelector:
-              matchExpressions:
-              - key: app
-                operator: In
-                values:
-                - news-analysis-engine
-            topologyKey: kubernetes.io/hostname
-      containers:
-      - name: news-processor
-        image: trading-systems/news-analysis:latest
-        resources:
-          requests:
-            memory: "2Gi"
-            cpu: "1000m"
-          limits:
-            memory: "4Gi"
-            cpu: "2000m"
-        env:
-        - name: CEREBRAS_API_KEY
-          valueFrom:
-            secretKeyRef:
-              name: cerebras-credentials
-              key: api-key
-        - name: REDIS_URL
-          value: "redis://redis-cluster:6379"
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 8000
-          initialDelaySeconds: 30
-          periodSeconds: 10
-        readinessProbe:
-          httpGet:
-            path: /ready
-            port: 8000
-          initialDelaySeconds: 5
-          periodSeconds: 5
-```
 
 ### Monitoring and Observability
 
 Comprehensive monitoring ensures production reliability:
 
 ```python
-import prometheus_client
-from prometheus_client import Counter, Histogram, Gauge
-import structlog
+# backend/main.py
 
-# Prometheus metrics
-PROCESSING_COUNTER = Counter('news_articles_processed_total', 'Total processed articles')
-LATENCY_HISTOGRAM = Histogram('processing_latency_seconds', 'Processing latency')
-ERROR_COUNTER = Counter('processing_errors_total', 'Total processing errors', ['error_type'])
-QUEUE_SIZE_GAUGE = Gauge('processing_queue_size', 'Current queue size')
+@app.post("/start")
+async def start_processing(topic: str = Query("Technology", description="News topic to track"), power_mode: bool = Query(False, description="Enable Power Mode for parallel agents")):
+    if not app_state.is_running:
+        app_state.is_running = True
+        app_state.processed_articles = []
+        while not app_state.article_queue.empty():
+            app_state.article_queue.get_nowait()
 
-class MonitoringService:
-    def __init__(self):
-        self.logger = structlog.get_logger()
-        
-    async def log_processing_event(self, 
-                                 event_type: str, 
-                                 metadata: Dict,
-                                 latency: float = None):
-        """Structured logging with metrics collection"""
-        
-        # Update Prometheus metrics
-        PROCESSING_COUNTER.inc()
-        
-        if latency:
-            LATENCY_HISTOGRAM.observe(latency)
-        
-        # Structured logging
-        self.logger.info(
-            "processing_event",
-            event_type=event_type,
-            latency=latency,
-            **metadata
-        )
-        
-    async def handle_error(self, error: Exception, context: Dict):
-        """Error handling with categorization and alerting"""
-        error_type = type(error).__name__
-        ERROR_COUNTER.labels(error_type=error_type).inc()
-        
-        self.logger.error(
-            "processing_error",
-            error_type=error_type,
-            error_message=str(error),
-            **context
-        )
-        
-        # Trigger alerts for critical errors
-        if error_type in ['CerebrasAPIError', 'RedisConnectionError']:
-            await self.send_alert(error_type, str(error), context)
+        num_agents = 5 if power_mode else 1
+        app_state.background_tasks = []
+
+        # Start one producer
+        producer_task = asyncio.create_task(article_producer(topic))
+        app_state.background_tasks.append(producer_task)
+
+        # Start consumers
+        for i in range(num_agents):
+            task = asyncio.create_task(news_worker(i + 1))
+            app_state.background_tasks.append(task)
+        await manager.broadcast(json.dumps({"status": "running"}))
+        return {"status": "News feed started"}
+    return {"status": "News feed is already running"}
+
+@app.post("/pause")
+async def pause_news_feed():
+    if app_state.is_running and app_state.background_tasks:
+        app_state.is_running = False
+        for task in app_state.background_tasks:
+            task.cancel()
+        app_state.background_tasks = []
+        logger.info("News processing paused.")
+        await manager.broadcast(json.dumps({"status": "paused"}))
+        return {"status": "paused"}
+    return {"status": "not running"}
 ```
 
 ### Security and Compliance
 
 Financial applications require robust security measures:
 
-```python
-class SecurityManager:
-    """Handle authentication, authorization, and data protection"""
-    
-    def __init__(self):
-        self.encryption_key = self.load_encryption_key()
-        self.audit_logger = AuditLogger()
-        
-    async def authenticate_request(self, request) -> bool:
-        """JWT-based authentication with rate limiting"""
-        try:
-            token = request.headers.get("Authorization", "").replace("Bearer ", "")
-            payload = jwt.decode(token, self.jwt_secret, algorithms=["HS256"])
-            
-            # Check rate limits
-            await self.check_rate_limit(payload["user_id"])
-            
-            # Log access
-            await self.audit_logger.log_access(
-                user_id=payload["user_id"],
-                endpoint=request.url.path,
-                timestamp=datetime.now()
-            )
-            
-            return True
-            
-        except jwt.InvalidTokenError:
-            return False
-    
-    async def encrypt_sensitive_data(self, data: Dict) -> str:
-        """Encrypt sensitive data before storage"""
-        fernet = Fernet(self.encryption_key)
-        json_data = json.dumps(data)
-        encrypted_data = fernet.encrypt(json_data.encode())
-        return base64.b64encode(encrypted_data).decode()
-    
-    async def audit_data_access(self, user_id: str, data_type: str, record_ids: List[str]):
-        """Comprehensive audit logging for regulatory compliance"""
-        await self.audit_logger.log_data_access(
-            user_id=user_id,
-            data_type=data_type,
-            record_ids=record_ids,
-            timestamp=datetime.now(),
-            ip_address=self.get_client_ip()
-        )
-```
 
 ## Future-Proofing and Evolution
 
@@ -733,31 +444,6 @@ class SecurityManager:
 
 The architecture accommodates future technological advances:
 
-```python
-class TechnologyIntegrationLayer:
-    """Abstraction layer for emerging technologies"""
-    
-    def __init__(self):
-        self.inference_providers = {
-            "cerebras": CerebrasProvider(),
-            "quantum": QuantumProvider(),  # Future quantum computing integration
-            "neuromorphic": NeuromorphicProvider()  # Future neuromorphic chips
-        }
-        
-    async def route_inference_request(self, 
-                                    request: InferenceRequest) -> InferenceResponse:
-        """Intelligent routing based on request characteristics"""
-        
-        # Route based on latency requirements, model size, and availability
-        if request.max_latency < 100:  # milliseconds
-            provider = self.inference_providers["cerebras"]
-        elif request.requires_quantum_advantage:
-            provider = self.inference_providers["quantum"]
-        else:
-            provider = self.inference_providers["cerebras"]  # Default
-            
-        return await provider.process_request(request)
-```
 
 ### Scalability Roadmap
 
@@ -785,42 +471,42 @@ The technical implementation demonstrates that modern AI infrastructure can meet
 
 The future of financial decision-making belongs to organizations that can process, analyze, and act on information faster than their competitors. This technical architecture provides the foundation for that competitive advantage, today and as markets continue to evolve.
 
-[1](https://www.luxalgo.com/blog/latency-standards-in-trading-systems/)
-[2](https://www.cerebras.ai/blog/cerebras-inference-3x-faster)
-[3](https://laresalgotech.com/latency-in-trading-why-every-millisecond-matters/)
-[4](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4605587)
-[5](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5181105)
-[6](https://pmc.ncbi.nlm.nih.gov/articles/PMC9751914/)
-[7](https://www.nucamp.co/blog/coding-bootcamp-backend-with-python-2025-python-in-the-backend-in-2025-leveraging-asyncio-and-fastapi-for-highperformance-systems)
-[8](https://openai.com/index/introducing-gpt-oss/)
-[9](https://huggingface.co/openai/gpt-oss-120b)
-[10](https://cdn.openai.com/pdf/419b6906-9da6-406c-a19d-1bb078ac7637/oai_gpt-oss_model_card.pdf)
-[11](https://www.cerebras.ai/press-release/cerebras-triples-its-industry-leading-inference-performance-setting-new-all-time-record)
-[12](https://www.cerebras.ai/press-release/cerebras-inference-llama-405b)
-[13](https://www.newscatcherapi.com/blog/google-news-rss-search-parameters-the-missing-documentaiton)
-[14](https://www.investing.com)
-[15](https://console.groq.com/docs/model/openai/gpt-oss-120b)
-[16](https://www.reuters.com/business/finance/)
-[17](https://finance.yahoo.com)
-[18](https://www.forbes.com/sites/karlfreund/2024/11/18/cerebras-now-the-fastest-llm-inference-processor--its-not-even-close/)
-[19](https://semaphore.io/blog/gpt-oss)
-[20](https://www.cnbc.com)
-[21](https://www.stock-spy.com/investor/rss-feeds/google-news-rss-track-stocks.php)
-[22](https://bytewax.io/blog/rag-app-case-study-haystack-bytewax-fastapi)
-[23](https://www.reddit.com/r/rss/comments/pbe2cd/rss_feeds_of_google_news_publications/)
-[24](https://dev.to/devasservice/fastapi-best-practices-a-condensed-guide-with-examples-3pa5?context=digest)
-[25](https://arxiv.org/html/2412.09859v1)
-[26](https://arxiv.org/html/2502.14897v1)
-[27](https://blog.investmentpal.com/rss-feeds-finance-sites)
-[28](https://testdriven.io/blog/fastapi-postgres-websockets/)
-[29](https://stackoverflow.com/questions/2682228/rss-for-google-finance-news)
-[30](https://www.reddit.com/r/Python/comments/y4xuxb/fastapi_stable_enough_for_production_grade/)
-[31](https://www.luxalgo.com/blog/high-frequency-trading-vs-retail-algorithmic-trading/)
-[32](https://www.ddn.com/blog/data-architecture-hft-competitive-edge/)
-[33](https://nhsjs.com/2025/sentiment-analysis-usage-within-stock-price-predictions/)
-[34](https://www.utradealgos.com/blog/how-to-optimise-execution-algorithms-for-low-latency-trading)
-[35](https://tradewiththepros.com/high-frequency-trading-tools/)
-[36](https://www.bso.co/all-insights/achieving-ultra-low-latency-in-trading-infrastructure)
-[37](https://risingwave.com/blog/unveiling-the-power-of-real-time-data-in-high-frequency-trading/)
-[38](https://research.aimultiple.com/sentiment-analysis-stock-market/)
-[39](https://stackoverflow.com/questions/17256040/how-fast-is-state-of-the-art-hft-trading-systems-today)
+- [1] - https://www.luxalgo.com/blog/latency-standards-in-trading-systems/
+- [2] - https://www.cerebras.ai/blog/cerebras-inference-3x-faster
+- [3] - https://laresalgotech.com/latency-in-trading-why-every-millisecond-matters/
+- [4] - https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4605587
+- [5] - https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5181105
+- [6] - https://pmc.ncbi.nlm.nih.gov/articles/PMC9751914/
+- [7] - https://www.nucamp.co/blogcoding-bootcamp-backend-with-python-2025-python-in-the-backend-in-2025-leveraging-asyncio-and-fastapi-for-highperformance-systems)
+- [8] - https://openai.com/index/introducing-gpt-oss/
+- [9] - https://huggingface.co/openai/gpt-oss-120b
+- [10] - https://cdn.openai.com/pdf/419b6906-9da6-406c-a19d-1bb078ac7637/oai_gpt-oss_model_card.pdf
+- [11] - https://www.cerebras.ai/press-releasecerebras-triples-its-industry-leading-inference-performance-setting-new-all-time-record)
+- [12] - https://www.cerebras.ai/press-release/cerebras-inference-llama-405b
+- [13] - https://www.newscatcherapi.com/blog/google-news-rss-search-parameters-the-missing-documentaiton
+- [14] - https://www.investing.com
+- [15] - https://console.groq.com/docs/model/openai/gpt-oss-120b
+- [16] - https://www.reuters.com/business/finance/
+- [17] - https://finance.yahoo.com
+- [18] - https://www.forbes.com/sites/karlfreund/2024/11/18/cerebras-now-the-fastest-llm-inference-processor--its-not-even-close/
+- [19] - https://semaphore.io/blog/gpt-oss
+- [20] - https://www.cnbc.com
+- [21] - https://www.stock-spy.com/investor/rss-feeds/google-news-rss-track-stocks.php
+- [22] - https://bytewax.io/blog/rag-app-case-study-haystack-bytewax-fastapi
+- [23] - https://www.reddit.com/r/rss/comments/pbe2cd/rss_feeds_of_google_news_publications/
+- [24] - https://dev.to/devasservice/fastapi-best-practices-a-condensed-guide-with-examples-3pa5?context=digest
+- [25] - https://arxiv.org/html/2412.09859v1
+- [26] - https://arxiv.org/html/2502.14897v1
+- [27] - https://blog.investmentpal.com/rss-feeds-finance-sites
+- [28] - https://testdriven.io/blog/fastapi-postgres-websockets/
+- [29] - https://stackoverflow.com/questions/2682228/rss-for-google-finance-news
+- [30] - https://www.reddit.com/r/Python/comments/y4xuxb/fastapi_stable_enough_for_production_grade/
+- [31] - https://www.luxalgo.com/blog/high-frequency-trading-vs-retail-algorithmic-trading/
+- [32] - https://www.ddn.com/blog/data-architecture-hft-competitive-edge/
+- [33] - https://nhsjs.com/2025/sentiment-analysis-usage-within-stock-price-predictions/
+- [34] - https://www.utradealgos.com/blog/how-to-optimise-execution-algorithms-for-low-latency-trading
+- [35] - https://tradewiththepros.com/high-frequency-trading-tools/
+- [36] - https://www.bso.co/all-insights/achieving-ultra-low-latency-in-trading-infrastructure
+- [37] - https://risingwave.com/blog/unveiling-the-power-of-real-time-data-in-high-frequency-trading/
+- [38] - https://research.aimultiple.com/sentiment-analysis-stock-market/
+- [39] - https://stackoverflow.com/questions/17256040/how-fast-is-state-of-the-art-hft-trading-systems-today
