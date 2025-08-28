@@ -220,7 +220,7 @@ After the basics, optimization never stops. Pre-warm connections and cache embed
 Research continues to show that media sentiment and timely interpretation affect prices and volumes [4][5][6]. The constraint has always been latency: excellent models don’t help if signals arrive after the market moves. Combining GPT-OSS’s reasoning with Cerebras’s inference speeds gives you a rare combination—quality and speed—so that news becomes a tradable signal while it still matters.
 
 
-Walkthrough video: https://www.youtube.com/watch?v=4Jx_DJMgUTI  
+Please watch the walkthrough video [here](https://www.youtube.com/watch?v=4Jx_DJMgUTI).
 
 ---
 
