@@ -28,9 +28,10 @@ For backpacking Section J of the Pacific Crest Trail (PCT), which involves rugge
 
 #### Food Details
 
-- **Meals**: Dehydrated meals (e.g., Backpacker's Pantry, Mountain House, Alpine Aire), oatmeal packets, and tortillas with veggies (like a bell pepper).
-- **Snacks**: A variety of salty and sweet snacks is key. Think trail mix, energy bars, salami, and beef jerky (like Chomps).
-- **Condiments**: Packets of mustard, mayonnaise, and peanut butter can make simple meals more palatable.
+- **Meals**: Dehydrated meals (e.g., Backpacker's Pantry, Mountain House), oatmeal packets, and tortillas with veggies (like a bell pepper).
+- **Snacks**: A variety of salty and sweet snacks is key. Think trail mix, energy bars, and salty snacks like salami or beef jerky.
+- **Drinks**: Instant coffee packets.
+- **Condiments**: Sauce packets like mustard, mayonnaise, and peanut butter can make simple meals more palatable.
 
 #### Section J - 4 days
 
