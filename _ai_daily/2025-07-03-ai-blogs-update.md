@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Daily
+title: Daily AI Blog Update - Context Engineering for LLM Agents and Google's Latest AI Developments
 tags: [AI, Blogs]
 style: fill
 color: primary

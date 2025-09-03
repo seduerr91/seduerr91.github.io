@@ -1,5 +1,5 @@
 ---
-title: AI Daily
+title: Applied AI Breakthroughs - Microsoft Research, Meta's Privacy Infrastructure, and Google's New Tools
 tags: [AI, Blogs]
 style: fill
 color: primary

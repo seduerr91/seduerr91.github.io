@@ -1,5 +1,5 @@
 ---
-title: AI Daily
+title: NVIDIA's Llama Nemotron Super v1.5 for More Accurate AI Agents
 tags: [AI, Blogs]
 style: fill
 color: primary

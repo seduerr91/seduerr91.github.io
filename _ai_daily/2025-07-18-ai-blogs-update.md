@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Daily
+title: NVIDIA's Agentic AI - Hackathon Winners and Safety Measures
 tags: [AI, Blogs]
 style: fill
 color: primary

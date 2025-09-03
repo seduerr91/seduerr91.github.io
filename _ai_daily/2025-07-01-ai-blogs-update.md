@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Daily
+title: Breakthroughs in Multi-Agent Architectures and Tooling
 tags: [AI, Blogs]
 style: fill
 color: primary

@@ -1,5 +1,5 @@
 ---
-title: AI Daily
+title: Deep Agents and Google Earth AI - Advancing AI Capabilities
 tags: [AI, Blogs]
 style: fill
 color: primary

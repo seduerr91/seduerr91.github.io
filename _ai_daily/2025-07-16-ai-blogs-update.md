@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Daily
+title: Microsoft's CollabLLM - Training LLMs for User Collaboration
 tags: [AI, Blogs]
 style: fill
 color: primary

@@ -13,6 +13,11 @@ Hello, I'm Sebastian, a fervent AI engineer and an accomplished manager. Beyond 
     <img src="https://i.imgur.com/m4jlWgEm.jpg" alt="Imgur" style="width: 300px;">
 </div>
 
+<div class="my-4" style="text-align: center;">
+{% include elements/button.html link="/cv/" text="CV" style="primary" %}
+{% include elements/button.html link="/public/" text="Portfolio" style="primary" %}
+</div>
+
 
 Despite my professional accomplishments, I believe in maintaining a balanced life. Thus, I devote time to yoga, swimming, hiking, cooking, reading, Pickleball and running. These activities keep me grounded and connect me to nature. 
 

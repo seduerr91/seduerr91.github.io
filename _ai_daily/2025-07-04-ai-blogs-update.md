@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Daily
+title: NVIDIA's AI Blueprint for Building Self-Improving Data Flywheels - Update on AI Blogs of 07-04
 tags: [AI, Blogs]
 style: fill
 color: primary

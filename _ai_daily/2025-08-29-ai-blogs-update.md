@@ -1,9 +1,9 @@
 ---
-title: Unlocking AI: New Tools for Developers and Evaluation!
+title: Unlocking AI - New Tools for Developers and Evaluation!
 tags: [AI, Blogs, Cookbooks]
 style: fill
 color: primary
-description: "A summary of new posts from openai/openai-cookbook on 08-29"
+description: A summary of new posts from openai openai-cookbook on 08-29
 ---
 Across the blog posts, several key trends and announcements emerge:
 

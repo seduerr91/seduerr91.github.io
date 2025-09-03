@@ -1,5 +1,5 @@
 ---
-title: AI Daily
+title: Dynamic Knowledge for AI Agents and the Importance of Testing
 tags: [AI, Blogs]
 style: fill
 color: primary

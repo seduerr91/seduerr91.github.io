@@ -1,5 +1,5 @@
 ---
-title: Revolutionizing Audio AI: OpenAI's New Evals API
+title: Revolutionizing Audio AI - OpenAI's New Evals API
 tags: [AI, Blogs, Cookbooks]
 style: fill
 color: primary

@@ -1,5 +1,5 @@
 ---
-title: AI Daily
+title: AI Advancements - Align Evals, Multi-Agent Systems, and Real-World Applications
 tags: [AI, Blogs]
 style: fill
 color: primary

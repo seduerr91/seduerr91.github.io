@@ -1,5 +1,5 @@
 ---
-title: Boost CI/CD with AI: Elevate Code Quality Today!
+title: Boost CI/CD with AI - Elevate Code Quality Today!
 tags: [AI, Blogs, Cookbooks]
 style: fill
 color: primary
