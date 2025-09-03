@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Daily
+title: NVIDIA's NeMo Toolkit and Google's Veo for Cultural Heritage - Update on AI Blogs of 07-02
 tags: [AI, Blogs]
 style: fill
 color: primary

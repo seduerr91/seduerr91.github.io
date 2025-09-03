@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Daily
+title: AI Ecosystem Update - LangSmith on AWS, Open Deep Research, and Meta's Sustainable Concrete
 tags: [AI, Blogs]
 style: fill
 color: primary

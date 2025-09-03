@@ -1,5 +1,5 @@
 ---
-title: AI Daily
+title: The Rise of Agent Infrastructure for Complex AI Applications
 tags: [AI, Blogs]
 style: fill
 color: primary

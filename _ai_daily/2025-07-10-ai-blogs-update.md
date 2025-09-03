@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Daily
+title: Building AI Agents and Enhancing Search with Conversational Follow-ups
 tags: [AI, Blogs]
 style: fill
 color: primary

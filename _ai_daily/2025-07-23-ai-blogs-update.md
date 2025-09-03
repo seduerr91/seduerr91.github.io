@@ -1,5 +1,5 @@
 ---
-title: AI Daily
+title: Accessible LLM Training with NVIDIA NeMo and Meta's Hardware Reliability
 tags: [AI, Blogs]
 style: fill
 color: primary

@@ -1,5 +1,5 @@
 ---
-title: AI Daily
+title: Meta's ExecuTorch - Accelerating On-Device Machine Learning
 tags: [AI, Blogs]
 style: fill
 color: primary

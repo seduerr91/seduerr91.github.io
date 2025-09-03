@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Daily
+title: AI and Cybersecurity - RAG Techniques, Security Updates, and NotebookLM
 tags: [AI, Blogs]
 style: fill
 color: primary

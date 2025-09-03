@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Daily
+title: Lush and Google Cloud AI - Reinventing Retail Checkout
 tags: [AI, Blogs]
 style: fill
 color: primary

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AI Daily
+title: AI Trends - Long-Range Context, Agentic Workflows, and Mental Health Applications Trends
 tags: [AI, Blogs]
 style: fill
 color: primary

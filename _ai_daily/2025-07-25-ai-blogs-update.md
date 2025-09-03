@@ -1,5 +1,5 @@
 ---
-title: AI Daily
+title: AI in Action - Transforming Medical Education, Search, and Retail
 tags: [AI, Blogs]
 style: fill
 color: primary

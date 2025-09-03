@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Seb Duerr
 description         : >-
-                      :blue_heart: Joy in my life.
+                      🌲 PNW life with Joy 💙: Kittens 🐈‍⬛🐈, Running Trail 🏔️, Pickleball 🏓, and AI 🧠.
 baseurl             : ""                               
 repository          : seduerr91/seduerr91              
 remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -13,6 +13,8 @@ plugins:
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/cv.md
+  - pages/public.md
   - pages/tags.html
   - pages/404.html
   - pages/index.md
@@ -81,7 +83,7 @@ disqus: duerr                          # Your website Shortname on disqus
 
 ### Defaults for collections ###
 collections:
-  ai_insights:
+  ai_daily:
     output: true
 defaults:
 
@@ -93,7 +95,7 @@ defaults:
       comments: true                                   # Set to true to enable disqus comments
   - scope:
       path: ""
-      type: "ai_insights"
+      type: "ai_daily"
     values:
       layout: post
       comments: true
