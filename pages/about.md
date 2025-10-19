@@ -10,7 +10,7 @@ weight: 3
 Hello, I'm Sebastian, a fervent AI engineer and an accomplished manager. Beyond my technological acumen, I'm a global explorer, having spent two vibrant years as a digital nomad across 25 diverse nations. Four languages - English, Spanish, French, and German - are effortlessly part of my conversational repertoire, demonstrating my proficiency in thriving amidst diverse cultures. 
 
 <div style="text-align: center;">
-    <img src="https://i.imgur.com/m4jlWgEm.jpg" alt="Imgur" style="width: 300px;">
+    <img src="../assets/grey.png" alt="Imgur" style="width: 300px;">
 </div>
 
 <div class="my-4" style="text-align: center;">
