@@ -27,15 +27,17 @@ description: An easily navigable directory containing pertinent documents, links
 
 ### Conference Engagements
 
+- [Speaker](https://youtu.be/smUeNnB6Xbs?si=voeVmzzW8tbzYjOG) at PyData Conference in Bellevue, WA, 2025.
 - Attended SciPy Conference in Tacoma, WA, 2025.
 - Attended NeurIPS Conference in Vancouver, BC, 2024.
 - Attended PyTorch Conference in San Francisco, 2024.
 - Attended PyData Conference in Redmond, WA, 2023.
-- Enriching Discourses as a Speaker at #Datalift prequel and presentation, remote, 2022 and 2021.
-- Addressed global audience at the #Persuasion Tech Conference, remote, 2021.
-- Guided academic discussions as the Mini Track Chair at American Conference on Information Systems in Boston, MA, 2017.
-- Shared profound insights as a speaker at WI Conference in St. Gallen, Switzerland, 2017 and American Conference on Information Systems in San Diego, CA, 2016.
-- Achieved global perspective as an attendee at the International Conference of Information Systems, Dublin, Ireland, 2016, and as a delegate at the United Nations Conference, New York City, NY, 2015.
+- [Speaker](https://www.youtube.com/watch?v=myXANO-Mvo4&t=1s&pp=ygUYc2ViYXN0aWFuIGR1ZXJyIGRhdGFsaWZ0) at #Datalift prequel and presentation, remote, 2022 and 2021.
+- Mini Track Chair at American Conference on Information Systems in Boston, MA, 2017.
+- Speaker at WI Conference in St. Gallen, Switzerland, 2017.
+- Speaker at American Conference on Information Systems in San Diego, CA, 2016.
+- Attended International Conference of Information Systems, Dublin, Ireland, 2016.
+- Delegate at the Model United Nations Conference, New York City, NY, 2015.
 
 ### HuggingFace Models
 
