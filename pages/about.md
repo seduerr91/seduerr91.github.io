@@ -10,7 +10,7 @@ weight: 3
 I'm an AI engineer who gets genuinely excited about language models and the wonderful things they can do. Originally from a tiny Bavarian village (more cows than people, seriously), I've somehow ended up in Seattle after a winding path through academia, banking, startups, and way too many airports.
 
 <div style="text-align: center;">
-    <img src="../assets/seb.png" alt="Imgur" style="width: 300px;">
+    <img src="../assets/seb-caricature.jpeg" alt="Imgur">
 </div>
 
 <div class="my-4" style="text-align: center;">
