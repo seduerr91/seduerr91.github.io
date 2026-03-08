@@ -128,7 +128,7 @@ This pride creates standards. When you believe your country is the best, you hol
 
 ## The Honest Assessment
 
-Is America perfect? Probably not. The healthcare system is a benefitting mostly the employed. Economic inequality is present. Certain social problems seem intractable.
+Is America perfect? No place is. Economic inequality is present. Certain social problems seem intractable.
 
 But perfection isn't the standard. The question is whether, on balance, this is a good place to live, work, and build a life. For me, the answer is clearly yes.
 
