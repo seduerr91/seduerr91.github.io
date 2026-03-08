@@ -1,12 +1,10 @@
----
+
 title: "AI View Seb: Thoughts on the Future of Artificial Intelligence and What It Means for Us"
 tags: [AI, Future, Philosophy, Personal]
 style: fill
 color: info
 description: A personal reflection on where AI is heading in the short, mid, and long term—and how I plan to navigate this rapidly changing landscape.
----
 
-# AI View Seb: Thoughts on the Future of Artificial Intelligence and What It Means for Us
 
 ![AI and the Future](https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop)
 
@@ -16,7 +14,7 @@ We are living through one of the most significant technological shifts in human 
 
 As someone who works at the intersection of AI and product engineering, I spend a lot of time thinking about where this is all heading. Not just the technical trajectory, but the human implications. What does it mean for how we live, how we work, and how we relate to one another? Here are my thoughts, organized across three time horizons, followed by some personal principles I'm trying to live by as I navigate this era.
 
----
+
 
 ## Short Term: Product Engineering Meets AI Integration
 
@@ -34,7 +32,7 @@ This is perhaps the most underappreciated aspect of the current AI wave: it allo
 
 The implication is clear: the most valuable professionals in the short term will be those who combine deep domain expertise with the ability to leverage AI tools effectively. The "full-stack" concept is expanding beyond engineering to encompass entire problem domains.
 
----
+
 
 ## Mid Term: The Rationalization of Human Behavior
 
@@ -58,7 +56,7 @@ Here's the uncomfortable truth: the benefits of AI-driven automation will not be
 
 This isn't a reason to slow down AI development—the technology will advance regardless. But it is a reason to think carefully about how we structure our institutions, our safety nets, and our educational systems to ensure that the gains from AI benefit more than just the few.
 
----
+
 
 ## Long Term: Robotics and the Question of Human Purpose
 
@@ -82,7 +80,7 @@ I'd be remiss not to mention the existential risks. As AI systems become more ca
 
 The long-term future could be extraordinarily good or extraordinarily bad, depending on how we navigate the next few decades. The decisions we make now about AI safety, governance, and alignment will shape the trajectory of civilization.
 
----
+
 
 ## For Me: Personal Principles for the AI Era
 
@@ -120,7 +118,7 @@ At the same time, I believe in execution. Ideas are cheap; implementation is eve
 
 And perhaps most importantly: **don't assume things are hard**. Many challenges that seem insurmountable are actually tractable once you start working on them. The biggest barrier is often the assumption of difficulty, not the difficulty itself.
 
----
+
 
 ## Looking Ahead
 
@@ -130,6 +128,3 @@ My approach is to stay engaged, stay adaptable, and stay grounded in the things 
 
 The AI era is just beginning. Let's make it a good one.
 
----
-
-*What are your thoughts on where AI is heading? I'd love to hear your perspective—reach out on [Twitter](https://twitter.com/duerrseb) or [LinkedIn](https://linkedin.com/in/sebastianduerr).*
