@@ -24,7 +24,7 @@ The first few days after a layoff are strange. There's relief mixed with anxiety
 
 I gave myself permission to feel whatever I was feeling. Anger at the circumstances. Sadness at leaving colleagues who had become friends. Worry about what came next. These emotions needed space, and I let them have it.
 
-But I also made a decision: I would not let this summer be defined by job searching and anxiety. I had been given an unexpected gift time and I was going to use it intentionally. The job market would still be there in the fall. This summer was mine.
+But I also made a decision: I would not let this summer be defined by job searching and anxiety. I had been given an unexpected gift _time_ and I was going to use it intentionally. The job market would still be there in the fall. This summer was mine.
 
 ---
 
@@ -32,15 +32,15 @@ But I also made a decision: I would not let this summer be defined by job search
 
 The first order of business was my health. Years of desk work, stress eating, and inconsistent exercise had taken their toll. I was carrying weight I didn't need, both physically and mentally.
 
-I shed 21 pounds in 80 days, feeling lighter and more energized than I had in years. This wasn't a crash diet or an extreme regimen—it was a return to basics. I ran every day, sometimes twice. I cooked real food instead of ordering delivery. I slept eight hours instead of six. I cut alcohol entirely.
+I shed 21 pounds in 80 days, feeling lighter and more energized than I had in years. This wasn't a crash diet or an extreme regimen—it was a return to basics. I ran every day, sometimes twice. I cooked real food instead of ordering delivery. I slept eight hours instead of six. 
 
 The transformation was remarkable. Not just the number on the scale, but how I felt. My mind was clearer. My energy was higher. My mood was more stable. I had forgotten what it felt like to be truly healthy, and rediscovering it was revelatory.
 
 ### The Running Habit
 
-Running became my anchor. Every morning, I laced up my shoes and hit the trails near my home. Some days it was a quick 5K to clear my head. Other days it was a long, slow effort through the mountains. The consistency mattered more than the distance.
+Running became my anchor. Every day, I laced up my shoes and hit the trails near my home. Some days it was a quick 5K to clear my head. Other days it was a long, slow effort through the mountains. The consistency mattered more than the distance.
 
-Running gave me structure when I had none. It gave me accomplishment when I felt adrift. It gave me time alone with my thoughts, which I desperately needed. By the end of the summer, I was in the best shape of my life—and I had the mental clarity to match.
+Running gave me structure. It gave me accomplishment when I felt adrift. It gave me time alone with my thoughts. By the end of the summer, I was in the best shape of my life—and I had the mental clarity to match.
 
 ---
 
@@ -58,7 +58,7 @@ I emerged from that trip changed. Not in some dramatic, movie-montage way, but i
 
 ### Lake Crescent: Soul-Cleansing Swims
 
-I stood at the edge of Lake Crescent, the water a brilliant, impossible blue, before taking a soul-cleansing swim. The lake is one of the clearest in the country, fed by snowmelt and rain, cold enough to take your breath away.
+I stood at the edge of Lake Crescent, the water a brilliant, impossible blue, before taking a soul-cleansing swim. The lake is one of the clearest in the country, fed by snowmelt and rain, cold enough to take your breath away. After placing third in my first 30 mile / 50k trail race. So liberating. 
 
 Swimming in that water was a baptism of sorts. The cold shocked my system, forced me fully into the present moment. There was no room for worry about the future or regret about the past—only the immediate sensation of being alive.
 
