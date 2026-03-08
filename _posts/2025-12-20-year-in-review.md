@@ -67,4 +67,4 @@ The philosophy remains: **Work hard, play hard.** I plan to fill the year with t
 *   Running the Enchantments :snow_capped_mountain:
 *   Joining a race or two :dash:
 
-To 2026 - I plan to continue to grow and learn, both professionally and personally. I plan to continue to travel and explore the world, both domestically and internationally. I plan to continue to run and enjoy the outdoors, both hiking and trail running. I plan to continue to learn and grow, both professionally and personally. I plan to continue to be a good friend and family member, both locally and internationally. 
+To 2026 - I plan to continue to grow and learn, both professionally and personally. I plan to continue to run and enjoy the outdoors, both hiking and trail running. I plan to continue to be a good friend and family member.
