@@ -17,7 +17,7 @@
   <meta property="og:description" content="{{ description }}">
   <meta property="og:image" content="{{ image }}">
 
-  <title>Seb Duerr</title>
+  <title>{% if page.title %}{{ title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ description }}">
   <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
 

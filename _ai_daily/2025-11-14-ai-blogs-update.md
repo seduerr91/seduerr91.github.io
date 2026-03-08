@@ -1,5 +1,5 @@
 ---
-title: GPT-5.1: Revolutionizing Coding and Development
+title: GPT-5.1 - Revolutionizing Coding and Development
 tags: [AI, Blogs, Cookbooks]
 style: fill
 color: primary

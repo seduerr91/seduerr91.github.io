@@ -1,7 +1,76 @@
 <div id="particles-js"></div>
-<div class="row justify-content-center align-items-center p-4 landing-content">
-  <div class="col-lg-8 col-md-10 text-center mt-4">
-    <h1 class="text-themed wow animated slideInUp" data-wow-delay=".1s">{{ site.author.name }}</h1>
-    <p class="text-themed wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
+
+<section class="hero-shell row justify-content-center landing-content px-3 px-md-4">
+  <div class="col-lg-10 col-xl-9 text-center hero-panel wow animated fadeIn" data-wow-delay=".1s">
+    <p class="hero-kicker mb-2">AI Engineer • Builder • Writer • Mountain Runner</p>
+    <h1 class="hero-title mb-3">{{ site.author.name }}</h1>
+    <p class="hero-subtitle mb-4">{{ site.description }}</p>
+
+    <div class="hero-actions mb-4">
+      {% include elements/button.html link="/blog/" text="Read Blog" style="primary" %}
+      {% include elements/button.html link="/ai-daily/" text="AI Daily" style="outline-light" %}
+      {% include elements/button.html link="/about/" text="About" style="outline-light" %}
+      {% include elements/button.html link="/public/" text="Portfolio" style="outline-light" %}
+    </div>
+
+    {% assign latest_blog = site.posts.first %}
+    {% assign latest_ai_daily = site.ai_daily | sort: 'date' | reverse | first %}
+    <div class="hero-signals row no-gutters justify-content-center">
+      <div class="col-md-5 hero-signal">
+        <div class="hero-signal-label">Latest Blog</div>
+        {% if latest_blog %}
+          <a class="hero-signal-link" href="{{ latest_blog.url | relative_url }}">{{ latest_blog.title }}</a>
+          <div class="hero-signal-meta">{{ latest_blog.date | date: "%b %-d, %Y" }}</div>
+        {% else %}
+          <div class="hero-signal-meta">No blog posts yet.</div>
+        {% endif %}
+      </div>
+      <div class="col-md-5 hero-signal">
+        <div class="hero-signal-label">Latest AI Daily</div>
+        {% if latest_ai_daily %}
+          <a class="hero-signal-link" href="{{ latest_ai_daily.url | relative_url }}">{{ latest_ai_daily.title }}</a>
+          <div class="hero-signal-meta">{{ latest_ai_daily.date | date: "%b %-d, %Y" }}</div>
+        {% else %}
+          <div class="hero-signal-meta">No AI Daily entries yet.</div>
+        {% endif %}
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<section class="home-sections row mt-4 mb-5 px-2 px-md-0">
+  <div class="col-lg-6 mb-4">
+    <div class="home-section-card h-100">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="home-section-title mb-0">Recent Blog Posts</h2>
+        <a class="home-section-more" href="{{ '/blog/' | relative_url }}">All posts</a>
+      </div>
+      <ul class="home-section-list">
+        {% for post in site.posts limit:4 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-lg-6 mb-4">
+    <div class="home-section-card h-100">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="home-section-title mb-0">Recent AI Daily</h2>
+        <a class="home-section-more" href="{{ '/ai-daily/' | relative_url }}">All updates</a>
+      </div>
+      <ul class="home-section-list">
+        {% assign ai_daily_posts = site.ai_daily | sort: 'date' | reverse %}
+        {% for post in ai_daily_posts limit:4 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,15 +1,15 @@
 <!-- Simple-Jekyll-Search https://github.com/christian-fei/Simple-Jekyll-Search -->
 
 <div class="input-group mt-5 px-3">
-  <input id="search-input" type="text" class="form-control search-box" placeholder="Search posts..">
+  <input id="search-input" type="text" class="form-control search-box" placeholder="Search AI Daily updates..">
   <div class="input-group-append">
     <span class="input-group-text border border-primary bg-primary text-white">
       <i class="fas fa-search"></i>
     </span>
   </div>
-  <button class="btn btn-outline-primary ml-1" onclick="location.href = '{{ '/blog/tags' | relative_url }}';">
+  <a class="btn btn-outline-primary ml-1" href="{{ '/blog/tags' | relative_url }}">
     <i class="fas fa-tags"></i>
-  </button>
+  </a>
 </div>
 <ul class="px-3" id="results-container"></ul>
 
@@ -20,6 +20,6 @@
         resultsContainer: document.getElementById('results-container'),
         searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
         noResultsText: '<li class="list-group-item list-group-item-action disabled">No results found</li>',
-        json: '{{ '/search.json' | relative_url }}'
+        json: "{{ '/search-ai-daily/' | relative_url }}"
       })
 </script>
