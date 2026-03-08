@@ -3,153 +3,346 @@ Also, try to find a relevant image from unsplash to use in the article to make i
 
 Here are the contents: 
 
-# Comprehensive Analysis of Sebastian Duerr: Personality, Values, and Car Recommendation
+Latency Metrics That Actually Tell the Truth
+When you’re running an API or AI inference service, latency is the user‑visible part of performance. If the system feels slow, nothing else matters.
+Most teams start by tracking “average response time.” It’s easy to compute and it looks good on a dashboard. It’s also dangerously misleading.
+This article is a practical guide to latency metrics that actually reflect user experience: p50, p95, p99, p99.9, and the shape of your latency distribution. It explains why you can’t average percentiles, why pre‑averaging destroys your tails, and how to avoid common measurement traps like coordinated omission. It also links out to the best videos and articles if you want to go deeper.
 
-Based on my detailed analysis of your website and background, I've developed a thorough understanding of your personality, values, and lifestyle to provide meaningful insights and recommendations.
+1. Latency as a distribution, not a number
+Every request has its own latency. Over time, you don’t get “the latency” of your service, you get a distribution of latencies.
+For example, imagine you have 100 delivery times:
+Most deliveries take 2 minutes.
+A few rare deliveries take 30 minutes because the driver got lost.
+You can summarize this distribution in many ways:
+Minimum (fastest delivery)
+Maximum (slowest delivery)
+Average (mean) delivery time
+Median (p50) and other percentiles (p90, p95, p99…)
+The average can look great even when a meaningful fraction of users has a terrible experience. A p99 graph, on the other hand, will show you the ugly truth.[1][2]
+Quick mental model for percentiles
+Take all your latencies in a time window, sort them from fastest to slowest, and then:
+p50 (median): the value in the middle. 50% faster, 50% slower.
+p95: 95% of requests are faster than this; 5% are slower.
+p99: 99% of requests are faster than this; 1% are slower.[3][4]
+For web and API workloads, p95/p99 represent what “typical worst‑case” and “rare, but real” user experiences look like. A detailed primer from Aerospike walks through how to compute and interpret p90/p95/p99 with concrete examples.[2][3]
+Akita’s “p90 vs p99: Why Not Both?” post is a nice short read that explains why different teams look at different percentiles, and why p95/p99/p99.9 often matter more than p90 for debugging real slowness.[5]
+OneUptime’s guide to p50 vs p95 vs p99 has a great list of what makes p99 hard to improve—things like cold starts, GC pauses, cache misses, and lock contention.[1]
 
-## **MBTI Assessment: ENTP (The Innovator)**
+2. Why averages lie about latency
+The problem with averages is simple: they smear out both the good and the bad. A small fraction of very slow requests can be completely obscured by a large number of fast ones.[2][1]
+From Aerospike’s p99 article:
+A service might have an average latency of 50 ms.
+But the p99 spikes to ~1 s under load.
+That means 1% of requests are 20× slower than the average; users will definitely feel that spike at least once in a session.[3]
+Igor’s “latency: a primer” shows this nicely: plotting average latency looks smooth, but plotting p99 immediately exposes spikes toward 1 s that many users actually hit at some point in their session.[2]
+Last9’s “Latency is the new downtime” drives home the same point: in distributed systems with fan‑out and retries, the user’s experience is determined by the slowest link in the chain, not by the average of all links.[6]
+Key takeaway: Averages are fine for capacity planning and coarse checks. For user experience, error budgets, and SLOs, you care about percentiles and the overall shape of the distribution.
 
-Your personality profile strongly aligns with the **ENTP (Extraverted, Intuitive, Thinking, Perceiving)** type[1]. This conclusion is supported by multiple facets of your character and career trajectory:
+3. The “aggregation problem”: why you can’t average percentiles
+Here’s the principle in plain English, using that delivery‑time story:
+Imagine you have 100 delivery times. Most are 2 minutes, but a few are 30 minutes (pizza got lost).
+Mean first, then percentile (the old broken way):
+You group deliveries into 10‑minute windows and average each window. Those few 30‑minute outliers get blended into their window’s average — maybe it becomes 5 minutes instead of 30. Now when you ask “what’s the p99?”, the worst window looks like 5 minutes. You think everything’s fine.
+Percentile on raw data (the correct way):
+You look at all 100 individual deliveries and ask “what’s the p99?” The answer is 30 minutes — because that’s what 1% of your customers actually experienced.
+The principle: Pre‑averaging destroys the tails of your distribution. The more you average before computing percentiles, the more you hide the worst‑case experience.
+Gil Tene is the person most associated with this topic. Multiple talks and blog posts summarize his position bluntly:
+“You can’t average percentiles. Period.”[7][8]
+Why not?
+A percentile is a property of a population of samples.
+To compute the p99 over a whole day, you need all the individual latencies (or at least a lossless histogram of them).
+If you only have per‑minute p99s, and you average those across an hour, there’s no meaningful interpretation of that number—it is not the true hourly p99.
+Similarly, p99 of per‑minute averages is not the same as “p99 of per‑request latencies,” because pre‑averaging erased the outliers before you ever looked.
+Brave New Geek’s “Everything You Know About Latency is Wrong” is the best long‑form explanation of this. It walks through:[7]
+How monitoring systems often store pre‑aggregated metrics.
+Why this makes their “p95/p99 over a day” views mathematically wrong.
+Why you need histograms or raw event data to answer “what did my users actually see?”
+SolarWinds’ “Why Percentiles Don’t Work the Way You Think” applies this directly to time‑series databases: zooming and downsampling often involves averaging or resampling percentiles, which breaks their meaning. The article explicitly warns:[9]
+“Averaging percentiles doesn’t work… an average of a percentile is meaningless.”[9]
+Dan Luu’s “Some latency measurement pitfalls” demonstrates the same issue in distributed systems: if you have shard‑local p99s and try to fudge a cluster‑wide p99 by aggregating them, you get values that can be wildly misaligned with actual end‑to‑end behavior.[10]
+TL;DR:
+You cannot:
+Average p99s across time windows and call it a p99.
+Average p99s across hosts/shards and call it a cluster p99.
+Take the p99 of per‑window averages and call it a p99 of user experience.
+If you want correct percentiles at larger scopes, you must keep either:
+The raw samples, or
+A proper histogram data structure (e.g., HDR Histogram) that can be merged across windows and hosts.
 
-**Extraverted Thinking & Innovation**: Your transition from a 300-person Bavarian village to becoming a global AI engineer demonstrates classic ENTP adaptability and openness to new experiences[1]. Your extensive travel to 25 countries as a digital nomad and fluency in four languages showcases the ENTP's natural curiosity and desire to explore diverse perspectives[1].
+4. Coordinated omission: when your tools lie to you
+Even if you compute percentiles the right way, you can still end up with nice‑looking numbers that are completely wrong because of coordinated omission.
+Coordinated omission happens when your load generator or monitoring tool stops sending requests when the system is slow, then resumes once it recovers. The result:
+You only measure fast requests (service time).
+You “omit” the long periods where nothing was being served because of backpressure or queuing.[11][12]
+High Scalability’s “Your Load Generator is Probably Lying to You” has a great explanation and graphs where latency distributions look perfect simply because the tool skipped measuring the worst parts.[11]
+Red Hat’s performance team has a thorough write‑up of coordinated omission, why it arises, and how to design load tests that avoid it or compensate for it.[12]
+ScyllaDB’s “On Coordinated Omission” gives a nice, non‑network analogy (coffee runs delayed by a closed road) and emphasizes that coordinated omission effectively converts a response‑time measurement into a service‑time measurement, hiding the actual delay seen by callers.[13]
+Gil Tene’s talks (especially the “How NOT to Measure Latency” series) walk through this with animated graphs and examples; he argues that many classic benchmark tools suffer from this unless explicitly designed otherwise.[14][15]
+Hyperfoil’s blog on “Compensation for coordinated omission” shows how to compute “compensated” latencies that estimate what you would have seen if you had kept firing requests on schedule, which is much closer to the real user experience under load.[16]
+Key takeaway:
+If your load generator or metrics pipeline backs off when the system is slow, your percentiles are lying. Design tests and instrumentation that keep sending requests at the intended rate, or compensate explicitly.
 
-**Intuitive Pattern Recognition**: Your ability to identify and capitalize on emerging trends in AI/NLP, coupled with your successful pivot from academia to entrepreneurship, reflects the ENTP's strong pattern recognition and future-oriented thinking[2]. Your research in persuasive messaging and plant movement analysis shows the typical ENTP approach of exploring unconventional connections between seemingly unrelated fields[1].
+5. Practical metrics to track (beyond averages)
+Putting this together, here is a practical latency metric set for APIs and AI inference services.
+Core latency metrics
+Track, per endpoint/model:
+p50, p90/p95, p99, and sometimes p99.9 latency
+Use raw latencies or histograms, not pre‑averaged windows.[5][1][3]
+Time to first byte / time to first token (TTFB/TTFT)
+For LLMs or streaming APIs, TTFT is often more important to UX than total latency.[17][18]
+Latency by component
+If possible, break down into:
+network / load balancer
+application
+database / cache
+model inference (for AI services)[19][20]
+Request volume alongside percentiles
+P99 with only 20 requests is not actionable; always plot volume next to percentiles.[1][5]
+Reliability metrics
+Error rate and timeout rate
+SLOs framed as:
+“99% of requests under 300 ms over 30 days”
+“99.9% of inference requests finish under 2 s”[21][22]
+Burn rate for SLO violations (how fast you’re burning the error budget).
+OneUptime’s guide to latency percentiles and SLOs gives concrete examples of using p50/p95/p99 metrics and defining SLOs around them.[21][1]
+Capacity and saturation
+Queue depth / in‑flight requests
+CPU/GPU utilization, memory usage
+Tokens/sec or requests/sec for LLMs and APIs[20][17]
+When you plot these next to p99, you can see classic patterns: p99 spikes when utilization crosses a threshold or queue length grows.[6][3]
+Recording the right raw data
+To avoid the “p99 of averages” trap, you want either:
+Raw latency samples (per request), logged to a store like Postgres or a logging system, and/or
+Latency histograms (e.g., HDR Histogram) per time window, which you export to your metrics backend.
+HDR Histogram is a well‑studied data structure for recording high‑dynamic‑range latency distributions at controlled precision, with efficient merges across threads, processes, and hosts. Many modern tools and libraries implement it out of the box.[23][24]
+OneUptime’s latency‑metrics guide makes the recommendation explicit:
+“Store latency as a histogram, not a counter of rolled‑up percentiles.”[1]
+This allows you to compute correct percentiles after the fact at whatever scope and time window you need.
 
-**Thinking-Based Decision Making**: Your methodical approach to career transitions—from banking apprentice to university, then MIT research, startup founding, and finally to the US tech scene—demonstrates the logical, strategic thinking characteristic of ENTPs[3]. Your technical expertise spanning multiple programming languages and AI frameworks shows the ENTP's natural affinity for complex systems thinking[1].
+6. Books, talks, and blogs worth reading
+Here’s a curated list of “best of” resources you can link from your blog or internal docs.
+Core conceptual primers
+“Latency: a primer” – Igor Ostrovsky
+Simple, visual introduction to average vs p99 vs max, with real graphs.[2]
+“Latency is the new downtime” – Last9
+Explains why latency is as critical as availability, with percentiles front and center.[6]
+Akita Software – “p90 vs p99: Why Not Both?”
+Clear primer on latency metrics and why multiple percentiles are useful.[5]
+Aerospike – “What Is P99 Latency?”
+Deep explanation of p99, its compounding in distributed systems, and how to reduce it.[3]
+Why averages and percentile aggregation are broken
+“Everything You Know About Latency Is Wrong” – Brave New Geek
+Summarizes Gil Tene’s ideas, explains why you can’t average percentiles, and why histograms matter.[7]
+“Why Percentiles Don’t Work the Way You Think” – SolarWinds
+Shows how naive TSDB rollups and zooming can make percentile graphs lie if they’re built on aggregated stats instead of distributions.[9]
+“Some latency measurement pitfalls” – Dan Luu
+Real‑world examples of misleading latency metrics, especially when aggregating across shards or services.[10]
+“How much information is retained in an average of percentiles?” – Kirkpatrick
+A more mathematical take on why average‑of‑percentiles throws away most of the information you care about.[8]
+Coordinated omission and correct measurement
+Gil Tene – “How NOT to Measure Latency” (talks)
+Multiple conference recordings (QCon, USI, Strange Loop) that cover:
+Why averages are useless for latency.
+Why percentiles matter.
+How coordinated omission corrupts your data.[15][14]
+“Your Load Generator is Probably Lying to You – Take the Red Pill” – High Scalability
+Great blog explaining coordinated omission with graphs and examples.[11]
+“Coordinated Omission” – Red Hat Perf Team
+Deep dive into what coordinated omission is and how to avoid it in benchmark design.[12]
+“On Coordinated Omission” – ScyllaDB
+Clear definition, intuitive analogy, and references to Gil’s P99 Conf material.[13]
+Hyperfoil – “Compensation for coordinated omission”
+Shows how to compute “compensated” latencies that approximate what you’d see with an open‑loop load generator.[16]
+Data structure and implementation
+HDR Histogram site and blog posts
+Official docs and explanations of a histogram structure built for latency measurement.[24][23]
+Language bindings (e.g., Rust’s hdrhistogram crate, Go’s hdrhistogram-go) if you want to wire it into your services.[25][26]
 
-**Perceiving Flexibility**: Your non-linear career path, described as "like a drunken snail trying to do calculus," epitomizes the ENTP's preference for keeping options open rather than following rigid plans[1][4]. Your ability to thrive in diverse environments from Austrian banking to MIT research labs demonstrates classic ENTP adaptability[5].
+7. Pulling it together in your own dashboards
+Armed with these concepts, your dashboards should:
+Plot percentiles, not just averages.
+Show p50, p95, p99 together so you see both “normal” and “tail” behavior.[5][1]
+Compute percentiles on raw samples or histograms.
+Avoid pre‑averaging (e.g., mean per 10‑second window) before percentiles. Don’t average percentiles across hosts or windows.[8][7][9]
+Avoid coordinated omission in tests.
+Use open‑loop or compensated load generation; don’t let your tools stop sending traffic when the system is slow.[12][16][11]
+Show volume and saturation next to latency.
+Latency metrics only make sense in the context of load and capacity.[3][6]
+Align metrics with SLOs.
+Define SLOs on ratios like “99% of requests under 300 ms” and make sure your graphs make burn rates visible.[22][21]
+If you apply the pizza‑delivery story to every metric choice—“does this reflect what 1% of our users actually saw, or does it hide it?”—you’ll end up with latency dashboards that tell the truth instead of telling a comforting story.
+Sources [1] P50 vs P95 vs P99 Latency Explained: What Each Percentile Tells You https://oneuptime.com/blog/post/2025-09-15-p50-vs-p95-vs-p99-latency-percentiles/view [2] latency: a primer https://igor.io/latency/ [3] What Is P99 Latency? Understanding the 99th ... - Aerospike https://aerospike.com/blog/what-is-p99-latency/ [4] What is P99 latency? [closed] - Stack Overflow https://stackoverflow.com/questions/12808934/what-is-p99-latency [5] p90 vs p99: Why Not Both? - Akita Software https://www.akitasoftware.com/blog-posts/p90-vs-p99-why-not-both [6] Latency is the new downtime | Last9 https://last9.io/blog/latency-primer/ [7] Everything You Know About Latency Is Wrong - Brave New Geek https://bravenewgeek.com/everything-you-know-about-latency-is-wrong/ [8] How much information is retained in an average of percentiles? https://kirkpatricktech.org/2021/09/02/averages-of-percentiles/ [9] Why Percentiles Don't Work the Way You Think - SolarWinds Blog https://www.solarwinds.com/blog/why-percentiles-dont-work-the-way-you-think [10] Some latency measurement pitfalls - Dan Luu https://danluu.com/latency-pitfalls/ [11] Your Load Generator is Probably Lying to You - Take the Red Pill ... https://highscalability.com/your-load-generator-is-probably-lying-to-you-take-the-red-pi/ [12] Coordinated Omission - Red Hat App Services Performance Team https://redhatperf.github.io/post/coordinated-omission/ [13] On Coordinated Omission - ScyllaDB https://www.scylladb.com/2021/04/22/on-coordinated-omission/ [14] How NOT to measure latency - Gil Tene at USI - YouTube https://www.youtube.com/watch?v=6Rs0p3mPNr0 [15] "How NOT to Measure Latency" by Gil Tene - YouTube https://www.youtube.com/watch?v=lJ8ydIuPFeU [16] Compensation for coordinated omission - Hyperfoil https://hyperfoil.io/blog/news/2020-12-9-compensation/ [17] Defining LLM Performance Metrics (Latency, Throughput) https://apxml.com/courses/mlops-for-large-models-llmops/chapter-5-llm-monitoring-observability-maintenance/llm-performance-metrics [18] Metrics That Matter for LLM Inference - Compute with Hivenet https://compute.hivenet.com/post/llm-inference-metrics-ttft-tps [19] How to Monitor Fraud Detection Model Inference Latency in Real ... https://oneuptime.com/blog/post/2026-02-06-monitor-fraud-detection-inference-latency-opentelemetry/view [20] Serving Machine Learning Models at Scale: A Guide to Inference ... https://sealos.io/blog/serving-machine-learning-models-at-scale-a-guide-to-inference-optimization [21] How to Build Latency Percentile SLOs - OneUptime https://oneuptime.com/blog/post/2026-01-30-latency-percentile-slos/view [22] Monitoring ML systems in production. Which metrics should you track? https://www.evidentlyai.com/blog/ml-monitoring-metrics [23] HdrHistogram by giltene https://hdrhistogram.github.io/HdrHistogram/ [24] HdrHistogram: A better latency capture method http://psy-lob-saw.blogspot.com/2015/02/hdrhistogram-better-latency-capture.html [25] hdrhistogram - Rust - Docs.rs https://docs.rs/hdrhistogram/ [26] A pure Go implementation of Gil Tene's HDR Histogram. - GitHub https://github.com/HdrHistogram/hdrhistogram-go [27] 4 Tips to Improve P99 Latency - Control Plane https://controlplane.com/blog/post/4-tips-to-improve-p99-latency [28] P50 vs P95 vs P99 Latency: What These Percentiles Actually Mean ... https://www.reddit.com/r/sre/comments/1nhlltm/p50_vs_p95_vs_p99_latency_what_these_percentiles/ [29] Understanding p50 p75 p90 p95 and p99 latency metrics - LinkedIn https://www.linkedin.com/pulse/understanding-p50-p75-p90-p95-p99-latency-metrics-rizwan-ahmed-osoqc [30] Effective Tips to Improve P99 Latency - PingCAP https://www.pingcap.com/article/effective-tips-to-improve-p99-latency/ [31] Coordinated Omission - Google Groups https://groups.google.com/g/mechanical-sympathy/c/icNZJejUHfE/m/BfDekfBEs_sJ Below is a draft blog article you could publish internally (or externally) that explains latency metrics, why percentiles matter, why “p99 of averages” is wrong, and points readers to the best resources on the topic.
+You can drop in your own product examples and code snippets where it makes sense.
 
-## **Core Values Analysis**
+Latency Metrics That Actually Tell the Truth
+When you’re running an API or AI inference service, latency is the user‑visible part of performance. If the system feels slow, nothing else matters.
+Most teams start by tracking “average response time.” It’s easy to compute and it looks good on a dashboard. It’s also dangerously misleading.
+This article is a practical guide to latency metrics that actually reflect user experience: p50, p95, p99, p99.9, and the shape of your latency distribution. It explains why you can’t average percentiles, why pre‑averaging destroys your tails, and how to avoid common measurement traps like coordinated omission. It also links out to the best videos and articles if you want to go deeper.
 
-Your values system reflects a sophisticated blend of German engineering culture and modern tech entrepreneurship:
+1. Latency as a distribution, not a number
+Every request has its own latency. Over time, you don’t get “the latency” of your service, you get a distribution of latencies.
+For example, imagine you have 100 delivery times:
+Most deliveries take 2 minutes.
+A few rare deliveries take 30 minutes because the driver got lost.
+You can summarize this distribution in many ways:
+Minimum (fastest delivery)
+Maximum (slowest delivery)
+Average (mean) delivery time
+Median (p50) and other percentiles (p90, p95, p99…)
+The average can look great even when a meaningful fraction of users has a terrible experience. A p99 graph, on the other hand, will show you the ugly truth.[1][2]
+Quick mental model for percentiles
+Take all your latencies in a time window, sort them from fastest to slowest, and then:
+p50 (median): the value in the middle. 50% faster, 50% slower.
+p95: 95% of requests are faster than this; 5% are slower.
+p99: 99% of requests are faster than this; 1% are slower.[3][4]
+For web and API workloads, p95/p99 represent what “typical worst‑case” and “rare, but real” user experiences look like. A detailed primer from Aerospike walks through how to compute and interpret p90/p95/p99 with concrete examples.[2][3]
+Akita’s “p90 vs p99: Why Not Both?” post is a nice short read that explains why different teams look at different percentiles, and why p95/p99/p99.9 often matter more than p90 for debugging real slowness.[5]
+OneUptime’s guide to p50 vs p95 vs p99 has a great list of what makes p99 hard to improve—things like cold starts, GC pauses, cache misses, and lock contention.[1]
 
-**Intellectual Curiosity & Continuous Learning**: Your extensive academic publications, ongoing technical blog posts, and participation in conferences like NeurIPS and PyTorch demonstrate a deep commitment to lifelong learning[1][6]. This aligns with ENTP values of intellectual growth and knowledge acquisition[2].
+2. Why averages lie about latency
+The problem with averages is simple: they smear out both the good and the bad. A small fraction of very slow requests can be completely obscured by a large number of fast ones.[2][1]
+From Aerospike’s p99 article:
+A service might have an average latency of 50 ms.
+But the p99 spikes to ~1 s under load.
+That means 1% of requests are 20× slower than the average; users will definitely feel that spike at least once in a session.[3]
+Igor’s “latency: a primer” shows this nicely: plotting average latency looks smooth, but plotting p99 immediately exposes spikes toward 1 s that many users actually hit at some point in their session.[2]
+Last9’s “Latency is the new downtime” drives home the same point: in distributed systems with fan‑out and retries, the user’s experience is determined by the slowest link in the chain, not by the average of all links.[6]
+Key takeaway: Averages are fine for capacity planning and coarse checks. For user experience, error budgets, and SLOs, you care about percentiles and the overall shape of the distribution.
 
-**Excellence Through Structure**: Despite your flexible ENTP nature, your German cultural background instills a strong appreciation for *Ordnung* (order) and systematic approaches[7][8]. This unique combination makes you value both innovation and execution quality—evident in your meticulous documentation and technical contributions to HuggingFace[1].
+3. The “aggregation problem”: why you can’t average percentiles
+Here’s the principle in plain English, using that delivery‑time story:
+Imagine you have 100 delivery times. Most are 2 minutes, but a few are 30 minutes (pizza got lost).
+Mean first, then percentile (the old broken way):
+You group deliveries into 10‑minute windows and average each window. Those few 30‑minute outliers get blended into their window’s average — maybe it becomes 5 minutes instead of 30. Now when you ask “what’s the p99?”, the worst window looks like 5 minutes. You think everything’s fine.
+Percentile on raw data (the correct way):
+You look at all 100 individual deliveries and ask “what’s the p99?” The answer is 30 minutes — because that’s what 1% of your customers actually experienced.
+The principle: Pre‑averaging destroys the tails of your distribution. The more you average before computing percentiles, the more you hide the worst‑case experience.
+Gil Tene is the person most associated with this topic. Multiple talks and blog posts summarize his position bluntly:
+“You can’t average percentiles. Period.”[7][8]
+Why not?
+A percentile is a property of a population of samples.
+To compute the p99 over a whole day, you need all the individual latencies (or at least a lossless histogram of them).
+If you only have per‑minute p99s, and you average those across an hour, there’s no meaningful interpretation of that number—it is not the true hourly p99.
+Similarly, p99 of per‑minute averages is not the same as “p99 of per‑request latencies,” because pre‑averaging erased the outliers before you ever looked.
+Brave New Geek’s “Everything You Know About Latency is Wrong” is the best long‑form explanation of this. It walks through:[7]
+How monitoring systems often store pre‑aggregated metrics.
+Why this makes their “p95/p99 over a day” views mathematically wrong.
+Why you need histograms or raw event data to answer “what did my users actually see?”
+SolarWinds’ “Why Percentiles Don’t Work the Way You Think” applies this directly to time‑series databases: zooming and downsampling often involves averaging or resampling percentiles, which breaks their meaning. The article explicitly warns:[9]
+“Averaging percentiles doesn’t work… an average of a percentile is meaningless.”[9]
+Dan Luu’s “Some latency measurement pitfalls” demonstrates the same issue in distributed systems: if you have shard‑local p99s and try to fudge a cluster‑wide p99 by aggregating them, you get values that can be wildly misaligned with actual end‑to‑end behavior.[10]
+TL;DR:
+You cannot:
+Average p99s across time windows and call it a p99.
+Average p99s across hosts/shards and call it a cluster p99.
+Take the p99 of per‑window averages and call it a p99 of user experience.
+If you want correct percentiles at larger scopes, you must keep either:
+The raw samples, or
+A proper histogram data structure (e.g., HDR Histogram) that can be merged across windows and hosts.
 
-**Authentic Relationships & Community**: Your emphasis on family (mentioning Joy and your cats), gratitude toward mentors, and detailed personal storytelling reveals a strong value for genuine human connections[1]. Your transition from village life to global tech leadership while maintaining personal authenticity reflects mature ENTP development[9].
+4. Coordinated omission: when your tools lie to you
+Even if you compute percentiles the right way, you can still end up with nice‑looking numbers that are completely wrong because of coordinated omission.
+Coordinated omission happens when your load generator or monitoring tool stops sending requests when the system is slow, then resumes once it recovers. The result:
+You only measure fast requests (service time).
+You “omit” the long periods where nothing was being served because of backpressure or queuing.[11][12]
+High Scalability’s “Your Load Generator is Probably Lying to You” has a great explanation and graphs where latency distributions look perfect simply because the tool skipped measuring the worst parts.[11]
+Red Hat’s performance team has a thorough write‑up of coordinated omission, why it arises, and how to design load tests that avoid it or compensate for it.[12]
+ScyllaDB’s “On Coordinated Omission” gives a nice, non‑network analogy (coffee runs delayed by a closed road) and emphasizes that coordinated omission effectively converts a response‑time measurement into a service‑time measurement, hiding the actual delay seen by callers.[13]
+Gil Tene’s talks (especially the “How NOT to Measure Latency” series) walk through this with animated graphs and examples; he argues that many classic benchmark tools suffer from this unless explicitly designed otherwise.[14][15]
+Hyperfoil’s blog on “Compensation for coordinated omission” shows how to compute “compensated” latencies that estimate what you would have seen if you had kept firing requests on schedule, which is much closer to the real user experience under load.[16]
+Key takeaway:
+If your load generator or metrics pipeline backs off when the system is slow, your percentiles are lying. Design tests and instrumentation that keep sending requests at the intended rate, or compensate explicitly.
 
-**Sustainable Innovation**: Your work at Cordial developing AI-powered solutions, combined with your outdoor lifestyle and environmental consciousness, suggests strong values around responsible technology development[1][10].
+5. Practical metrics to track (beyond averages)
+Putting this together, here is a practical latency metric set for APIs and AI inference services.
+Core latency metrics
+Track, per endpoint/model:
+p50, p90/p95, p99, and sometimes p99.9 latency
+Use raw latencies or histograms, not pre‑averaged windows.[5][1][3]
+Time to first byte / time to first token (TTFB/TTFT)
+For LLMs or streaming APIs, TTFT is often more important to UX than total latency.[17][18]
+Latency by component
+If possible, break down into:
+network / load balancer
+application
+database / cache
+model inference (for AI services)[19][20]
+Request volume alongside percentiles
+P99 with only 20 requests is not actionable; always plot volume next to percentiles.[1][5]
+Reliability metrics
+Error rate and timeout rate
+SLOs framed as:
+“99% of requests under 300 ms over 30 days”
+“99.9% of inference requests finish under 2 s”[21][22]
+Burn rate for SLO violations (how fast you’re burning the error budget).
+OneUptime’s guide to latency percentiles and SLOs gives concrete examples of using p50/p95/p99 metrics and defining SLOs around them.[21][1]
+Capacity and saturation
+Queue depth / in‑flight requests
+CPU/GPU utilization, memory usage
+Tokens/sec or requests/sec for LLMs and APIs[20][17]
+When you plot these next to p99, you can see classic patterns: p99 spikes when utilization crosses a threshold or queue length grows.[6][3]
+Recording the right raw data
+To avoid the “p99 of averages” trap, you want either:
+Raw latency samples (per request), logged to a store like Postgres or a logging system, and/or
+Latency histograms (e.g., HDR Histogram) per time window, which you export to your metrics backend.
+HDR Histogram is a well‑studied data structure for recording high‑dynamic‑range latency distributions at controlled precision, with efficient merges across threads, processes, and hosts. Many modern tools and libraries implement it out of the box.[23][24]
+OneUptime’s latency‑metrics guide makes the recommendation explicit:
+“Store latency as a histogram, not a counter of rolled‑up percentiles.”[1]
+This allows you to compute correct percentiles after the fact at whatever scope and time window you need.
 
-## **Life Principles Framework**
+6. Books, talks, and blogs worth reading
+Here’s a curated list of “best of” resources you can link from your blog or internal docs.
+Core conceptual primers
+“Latency: a primer” – Igor Ostrovsky
+Simple, visual introduction to average vs p99 vs max, with real graphs.[2]
+“Latency is the new downtime” – Last9
+Explains why latency is as critical as availability, with percentiles front and center.[6]
+Akita Software – “p90 vs p99: Why Not Both?”
+Clear primer on latency metrics and why multiple percentiles are useful.[5]
+Aerospike – “What Is P99 Latency?”
+Deep explanation of p99, its compounding in distributed systems, and how to reduce it.[3]
+Why averages and percentile aggregation are broken
+“Everything You Know About Latency Is Wrong” – Brave New Geek
+Summarizes Gil Tene’s ideas, explains why you can’t average percentiles, and why histograms matter.[7]
+“Why Percentiles Don’t Work the Way You Think” – SolarWinds
+Shows how naive TSDB rollups and zooming can make percentile graphs lie if they’re built on aggregated stats instead of distributions.[9]
+“Some latency measurement pitfalls” – Dan Luu
+Real‑world examples of misleading latency metrics, especially when aggregating across shards or services.[10]
+“How much information is retained in an average of percentiles?” – Kirkpatrick
+A more mathematical take on why average‑of‑percentiles throws away most of the information you care about.[8]
+Coordinated omission and correct measurement
+Gil Tene – “How NOT to Measure Latency” (talks)
+Multiple conference recordings (QCon, USI, Strange Loop) that cover:
+Why averages are useless for latency.
+Why percentiles matter.
+How coordinated omission corrupts your data.[15][14]
+“Your Load Generator is Probably Lying to You – Take the Red Pill” – High Scalability
+Great blog explaining coordinated omission with graphs and examples.[11]
+“Coordinated Omission” – Red Hat Perf Team
+Deep dive into what coordinated omission is and how to avoid it in benchmark design.[12]
+“On Coordinated Omission” – ScyllaDB
+Clear definition, intuitive analogy, and references to Gil’s P99 Conf material.[13]
+Hyperfoil – “Compensation for coordinated omission”
+Shows how to compute “compensated” latencies that approximate what you’d see with an open‑loop load generator.[16]
+Data structure and implementation
+HDR Histogram site and blog posts
+Official docs and explanations of a histogram structure built for latency measurement.[24][23]
+Language bindings (e.g., Rust’s hdrhistogram crate, Go’s hdrhistogram-go) if you want to wire it into your services.[25][26]
 
-Based on your background and personality type, here are the principles that would best guide your decision-making:
+7. Pulling it together in your own dashboards
+Armed with these concepts, your dashboards should:
+Plot percentiles, not just averages.
+Show p50, p95, p99 together so you see both “normal” and “tail” behavior.[5][1]
+Compute percentiles on raw samples or histograms.
+Avoid pre‑averaging (e.g., mean per 10‑second window) before percentiles. Don’t average percentiles across hosts or windows.[8][7][9]
+Avoid coordinated omission in tests.
+Use open‑loop or compensated load generation; don’t let your tools stop sending traffic when the system is slow.[12][16][11]
+Show volume and saturation next to latency.
+Latency metrics only make sense in the context of load and capacity.[3][6]
+Align metrics with SLOs.
+Define SLOs on ratios like “99% of requests under 300 ms” and make sure your graphs make burn rates visible.[22][21]
+If you apply the pizza‑delivery story to every metric choice—“does this reflect what 1% of our users actually saw, or does it hide it?”—you’ll end up with latency dashboards that tell the truth instead of telling a comforting story.
+If you’d like, a next step could be to adapt this article into a concrete “Latency Playbook” for your team: include your Influx measurement names, Postgres schema, and 2–3 example query snippets (Flux/SQL) that compute p95/p99 the right way.
+Sources [1] P50 vs P95 vs P99 Latency Explained: What Each Percentile Tells You https://oneuptime.com/blog/post/2025-09-15-p50-vs-p95-vs-p99-latency-percentiles/view [2] latency: a primer https://igor.io/latency/ [3] What Is P99 Latency? Understanding the 99th ... - Aerospike https://aerospike.com/blog/what-is-p99-latency/ [4] What is P99 latency? [closed] - Stack Overflow https://stackoverflow.com/questions/12808934/what-is-p99-latency [5] p90 vs p99: Why Not Both? - Akita Software https://www.akitasoftware.com/blog-posts/p90-vs-p99-why-not-both [6] Latency is the new downtime | Last9 https://last9.io/blog/latency-primer/ [7] Everything You Know About Latency Is Wrong - Brave New Geek https://bravenewgeek.com/everything-you-know-about-latency-is-wrong/ [8] How much information is retained in an average of percentiles? https://kirkpatricktech.org/2021/09/02/averages-of-percentiles/ [9] Why Percentiles Don't Work the Way You Think - SolarWinds Blog https://www.solarwinds.com/blog/why-percentiles-dont-work-the-way-you-think [10] Some latency measurement pitfalls - Dan Luu https://danluu.com/latency-pitfalls/ [11] Your Load Generator is Probably Lying to You - Take the Red Pill ... https://highscalability.com/your-load-generator-is-probably-lying-to-you-take-the-red-pi/ [12] Coordinated Omission - Red Hat App Services Performance Team https://redhatperf.github.io/post/coordinated-omission/ [13] On Coordinated Omission - ScyllaDB https://www.scylladb.com/2021/04/22/on-coordinated-omission/ [14] How NOT to measure latency - Gil Tene at USI - YouTube https://www.youtube.com/watch?v=6Rs0p3mPNr0 [15] "How NOT to Measure Latency" by Gil Tene - YouTube https://www.youtube.com/watch?v=lJ8ydIuPFeU [16] Compensation for coordinated omission - Hyperfoil https://hyperfoil.io/blog/news/2020-12-9-compensation/ [17] Defining LLM Performance Metrics (Latency, Throughput) https://apxml.com/courses/mlops-for-large-models-llmops/chapter-5-llm-monitoring-observability-maintenance/llm-performance-metrics [18] Metrics That Matter for LLM Inference - Compute with Hivenet https://compute.hivenet.com/post/llm-inference-metrics-ttft-tps [19] How to Monitor Fraud Detection Model Inference Latency in Real ... https://oneuptime.com/blog/post/2026-02-06-monitor-fraud-detection-inference-latency-opentelemetry/view [20] Serving Machine Learning Models at Scale: A Guide to Inference ... https://sealos.io/blog/serving-machine-learning-models-at-scale-a-guide-to-inference-optimization [21] How to Build Latency Percentile SLOs - OneUptime https://oneuptime.com/blog/post/2026-01-30-latency-percentile-slos/view [22] Monitoring ML systems in production. Which metrics should you track? https://www.evidentlyai.com/blog/ml-monitoring-metrics [23] HdrHistogram by giltene https://hdrhistogram.github.io/HdrHistogram/ [24] HdrHistogram: A better latency capture method http://psy-lob-saw.blogspot.com/2015/02/hdrhistogram-better-latency-capture.html [25] hdrhistogram - Rust - Docs.rs https://docs.rs/hdrhistogram/ [26] A pure Go implementation of Gil Tene's HDR Histogram. - GitHub https://github.com/HdrHistogram/hdrhistogram-go [27] 4 Tips to Improve P99 Latency - Control Plane https://controlplane.com/blog/post/4-tips-to-improve-p99-latency [28] P50 vs P95 vs P99 Latency: What These Percentiles Actually Mean ... https://www.reddit.com/r/sre/comments/1nhlltm/p50_vs_p95_vs_p99_latency_what_these_percentiles/ [29] Understanding p50 p75 p90 p95 and p99 latency metrics - LinkedIn https://www.linkedin.com/pulse/understanding-p50-p75-p90-p95-p99-latency-metrics-rizwan-ahmed-osoqc [30] Effective Tips to Improve P99 Latency - PingCAP https://www.pingcap.com/article/effective-tips-to-improve-p99-latency/ [31] Coordinated Omission - Google Groups https://groups.google.com/g/mechanical-sympathy/c/icNZJejUHfE/m/BfDekfBEs_sJ
 
-### **1. "Progress Through Exploration"**
-Embrace the ENTP tendency to explore multiple domains simultaneously. Your success came from connecting disparate fields—finance, AI, research, and entrepreneurship. Continue seeking novel intersections between technology and human behavior[6][5].
 
-### **2. "Quality in Every Detail"** 
-Honor your German engineering heritage by maintaining high standards in technical execution while pursuing innovative ideas. Your 36 HuggingFace models and academic publications demonstrate this principle in action[1][8].
-
-### **3. "Authentic Growth Over External Validation"**
-Your journey from village expectations to MIT research shows the power of following internal compass rather than conventional paths. Continue making decisions based on intrinsic motivation and personal growth rather than external status[10][11].
-
-### **4. "Systematic Curiosity"**
-Combine your ENTP curiosity with German systematic thinking. Your success in converting research into practical applications (like at Cordial) shows the power of structured exploration[1][9].
-
-### **5. "Relationships as Foundation"**
-Maintain strong personal connections while pursuing professional excellence. Your gratitude toward mentors and emphasis on family relationships reflect this principle[1][6].
-
-## **Car Recommendation: Tesla Model Y Long Range**
-
-Based on your personality, values, and lifestyle, the **Tesla Model Y Long Range** is the ideal vehicle choice:
-
-**Innovation Alignment**: As an AI engineer, you'll appreciate Tesla's cutting-edge software approach to automotive design, including over-the-air updates and advanced driver assistance[12]. The vehicle represents the same type of technological innovation you pursue professionally[13].
-
-**Outdoor Adventure Compatibility**: The Model Y's 331-mile range and spacious cargo capacity (854 liters) perfectly accommodate your hiking, pickleball, and outdoor exploration lifestyle in the Pacific Northwest[12]. The all-wheel drive capability handles Washington's varied terrain from city streets to mountain trails[14].
-
-**Sustainable Values**: The electric drivetrain aligns with your environmental consciousness and forward-thinking mindset[15][16]. Tesla's focus on sustainable energy matches your values around responsible innovation[12].
-
-**Tech Professional Appeal**: Features like Camp Mode for outdoor adventures, advanced route planning, and integration with sustainable energy systems appeal to your technical background[12]. The vehicle's data-driven approach to optimization mirrors your AI engineering mindset[1].
-
-**German Engineering Appreciation**: Despite being American-designed, Tesla's focus on precision engineering, build quality improvements, and systematic approach to manufacturing would resonate with your German work ethic values[8][17].
-
-**Practical Considerations**: The Model Y offers excellent total cost of ownership for someone in your income bracket, with minimal maintenance requirements and potential tax advantages[12]. The extensive Supercharger network supports both daily commuting in Seattle and weekend adventures throughout the region[12].
-
-This recommendation balances your ENTP desire for cutting-edge innovation with your German values of quality and reliability, while perfectly supporting your active Pacific Northwest lifestyle and environmental consciousness.
-
-Sources
-[1] Sebastian Duerr - Curriculum Vitae https://www.sebastianduerr.com/cv/
-[2] INTJ vs. ENTP: Masterminds Meet Challengers https://boo.world/intj-personality/intj-vs-entp
-[3] INTJ and ENTP Relationship https://www.crystalknows.com/personality-type/relationship/intj-entp
-[4] ENTP and INTJ Compatibility: Relationships, Friendships ... https://blog.traitlab.com/entp/intj
-[5] INTJ vs ENTP https://personalitynft.com/personality/comparison/intj-vs-entp/
-[6] 7 Principles Every Entrepreneur Should Follow for Long ... https://aicontentfy.com/en/blog/principles-every-entrepreneur-should-follow-for-long-term-success
-[7] Understanding Work Culture in Germany for 2025 https://www.edstellar.com/blog/germany-work-culture
-[8] The German Work Ethic: Origins, Influence, and Global ... https://www.euruni.edu/blog/the-german-work-ethic-origins-influence-and-global-relevance/
-[9] Principles for Lasting Success: Lessons from 30 Years as a ... https://evolvingsol.com/principles-for-lasting-success-lessons-from-30-years-as-a-tech-entrepreneur/
-[10] The Power of Principles in Business and Life https://takisathanassiou.com/the-power-of-principles-in-business-and-life/
-[11] My Entrepreneurial & Life Principles: Keys to Flourishing in ... https://www.linkedin.com/pulse/my-entrepreneurial-life-principles-keys-flourishing-victor-bergonzoli
-[12] Best Electric Cars for Camping 2025 | EV Salary Sacrifice UK https://www.electriccarscheme.com/blog/best-electric-cars-camping-2025-salary-sacrifice
-[13] Top 7 Best Off Road Electric Vehicles for 2025 https://solanaev.com/best-off-road-electric-vehicles/
-[14] The best electric vehicles for adventure seekers http://www.moveelectric.com/en-xl/gallery/best-electric-vehicles-adventure-seekers
-[15] The Most Environmentally Friendly Cars in 2024 - FINN https://www.finn.com/en-DE/blog/best-of/most-environmentally-friendly-cars
-[16] Automotive Sustainability Innovations of the 21st Century https://www.unsustainablemagazine.com/automotive-innovations-21st-century/
-[17] Work Culture in Germany: Key Characteristics https://www.tech-careers.de/work-culture-in-germany/
-[18] Sebastian Dürr - Public Portfolio and Projects https://www.sebastianduerr.com/public/
-[19] CHE Masterbefragung 2020 - Universität Bamberg Pressemitteilung https://www.uni-bamberg.de/presse/pm/artikel/che-masterbefragung-2020/
-[20] Raiffeisen OÖ Consumer Loan Services https://www.raiffeisen.at/ooe/de/privatkunden/kredit-leasing/konsumkredit.html
-[21] Raiffeisen Bank Austria: Private Customer Girokonto (Checking Account) https://www.raiffeisen.at/ooe/de/privatkunden/konto/girokonto.html
-[22] Raiffeisen Bank Austria: Credit Card Information and Application https://www.raiffeisen.at/ooe/de/privatkunden/karte/kreditkarte.html
-[23] MIT’s Center for Collective Intelligence - Introduction by Seb, Lead AI Engineer https://www.youtube.com/watch?v=myXANO-Mvo4
-[24] Machine Learning Certification Track on DataCamp https://www.datacamp.com/statement-of-accomplishment/track/fcc43394ed8ce4a8b20daf705e4c3e976c6e028e
-[25] Deep Learning in NLP Certificate from Coursera https://www.coursera.org/account/accomplishments/certificate/2N9ZQ8BVSG8H
-[26] Entrepreneurship Certificate from Y Combinator’s Startup School https://www.startupschool.org/users/shWfuCCKk/certificate
-[27] Sebastian Dürr - Curriculum Vitae https://www.sebastianduerr.com/assets/duerr_cv.pdf
-[28] ArXiv:2104.12454 - Research Paper PDF https://arxiv.org/pdf/2104.12454.pdf
-[29] Self-Supervised Learning with Swin Transformers for Image Classification https://arxiv.org/abs/2104.12454
-[30] BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding https://arxiv.org/abs/2012.12978
-[31] ScholarSpace at University of Hawaii - Academic Repository https://scholarspace.manoa.hawaii.edu/items/eb0597d6-e165-4088-8d78-9417b9e91ce8
-[32] Navigating Digital Innovation: The Complementary Roles in Digital Transformation https://www.semanticscholar.org/paper/Navigating-Digital-Innovation-The-Complementary-of-D%C3%BCrr-Wagner/950046ef8199275ec97b10222786d9cb7dece7d1
-[33] A Temptation to Stalk: The Impact of Curiosity on User Acceptance of Social Networking Sites https://aisel.aisnet.org/amcis2016/Adoption/Presentations/16/
-[34] A Literature Review on Enterprise Social Media Collaboration in Virtual Teams https://dl.acm.org/doi/10.1145/2890602.2890611
-[35] Transforming 10-K Reports into Insights with DPR and Extractive QA: 5-Step Guide https://medium.com/@duerr.sebastian/gain-valuable-corporate-insights-from-a-10-k-report-in-5-easy-steps-with-dense-passage-retrieval-8e0cac743c7d
-[36] Creating Synthetic Datasets Effortlessly Using T5, PAWS, and Your Text Corpus https://medium.com/@duerr.sebastian/4-steps-to-create-synthetic-datasets-with-t5-paws-and-your-text-corpus-fc48bd9fc901
-[37] Hosting Text-Generating and Infilling Microservices with FastAPI on GCP https://medium.com/analytics-vidhya/hosting-your-text-generating-infilling-micro-service-with-fastapi-on-gcp-ecf92f9d3c0f
-[38] Defining Persuasive Messages: Merging Perceptions and Communication https://medium.com/@duerr.sebastian/what-makes-a-message-persuasive-4c04322df929
-[39] Personal Blog by Sebastian Dürr - Insights, Guides, and Research Articles https://www.sebastianduerr.com/public/duerr.se/blog
-[40] Sebastian Duerr's Contributions on HuggingFace: 36 Open-Source NLP Models https://huggingface.co/seduerr
-[41] Sebastian MBTI Personality Type: ISTP https://www.getpersonality.com/zh/characters/2c41a466e5f2770e/sebastian-mbti-personality
-[42] A framework for understanding the traits of AI https://www.linkedin.com/pulse/personality-patterns-framework-understanding-traits-ai-emily-campbell-3klac
-[43] The relationship between entrepreneurial personality ... https://www.nature.com/articles/s41598-024-71794-5
-[44] Sebastian Michaelis MBTI Personality Type: ESTJ https://www.getpersonality.com/characters/2c42af62e3f0750e/sebastian-michaelis-mbti-personality
-[45] Personality of AI https://arxiv.org/html/2312.02998v1
-[46] Founder Personality and Start-up Subsidies https://www.ep.mgt.tum.de/fileadmin/w00cgd/eoi/_my_direct_uploads/Founder_personality_and_subsidies_Chapman_Hottenrott.pdf
-[47] Sebastian Enneagram & MBTI Personality Type - Level Life Up https://levellifeup.com/sebastian-enneagram-mbti-personality/
-[48] What Skills to Look for When Hiring an AI Engineer | https://www.franklinfitch.com/us/resources/blog/what-skills-to-look-for-when-hiring-an-ai-engineer/
-[49] Personality Traits of Entrepreneurs: A Review of Recent ... https://www.hbs.edu/ris/download.aspx?name=KKX-Personality-Review_RIS.pdf
-[50] Myers–Briggs Type Indicator: What’s Your Personality Type? https://www.youtube.com/watch?v=QPtrDt_VybY
-[51] I Created 50 Different AI Personalities - Here's What Made ... https://www.reddit.com/r/PromptEngineering/comments/1l6bbmc/i_created_50_different_ai_personalities_heres/
-[52] Founder Personality and Scaling Decisions in ... https://papers.ssrn.com/sol3/Delivery.cfm/b78fe51e-7efd-4545-b08d-6d0d87682221-MECA.pdf?abstractid=5155624
-[53] Sebastian MBTI Personality type: : ESTP https://www.getpersonality.com/it/characters/2c41a26de0f1740e/sebastian-mbti-personality
-[54] The Best Machine Learning Engineers Have These 9 Traits ... https://www.forbes.com/sites/quora/2016/05/04/the-best-machine-learning-engineers-share-these-9-traits-in-common/
-[55] Regional differences of people with an entrepreneurial ... https://rur.oekom.de/index.php/rur/article/view/411
-[56] Sebastian Perdek's Personality Unveiled: MBTI, Enneagram and More | Boo https://boo.world/database/profile/1286410/sebastian-perdek-personality-type
-[57] Skills required for Applied AI Engineer and how to assess ... https://www.adaface.com/blog/skills-required-for-applied-ai-engineer/
-[58] A large-scale field study of technology startups https://www.pnas.org/doi/abs/10.1073/pnas.2215829120?trk=public_post_comment-text
-[59] Sebastian Deisler: Profile, Biography, Personality Type | Boo https://boo.world/database/profile/603846/sebastian-deisler-personality-type
-[60] We Asked AI: What Personality Characteristics Should I look ... https://audiobaymastering.com/we-asked-ai-what-personality-characteristics-should-i-look-for-in-a-mastering-engineer-surprisingly-we-liked-its-response/
-[61] Official Green NCAP website - How green is your car? https://www.greenncap.com
-[62] The Most Environmentally Friendly Cars Of 2025 https://carfromjapan.com/article/environmentally-friendly-cars/
-[63] Sustainability in the automotive industry https://www.pwc.de/en/sustainability/sustainability-in-the-automotive-industry.html
-[64] "Top 5 Eco-Friendly Cars of 2025 – The Future of Green ... https://www.youtube.com/watch?v=vmNIb3sGyhU
-[65] Sustainable Vehicle Technology is the Future! https://greatermanchester.ac.uk/blogs/sustainable-vehicle-technology-is-the-future
-[66] The Best Electric Cars for Cyclists and Adventurers on ... https://downtown-mag.com/en/the-best-electric-cars-review/
-[67] 2025 Green Car Awards Winners Honored https://greencarjournal.com/dont-miss/2025-green-car-awards-winners/
-[68] New Green Car Technologies of the Future https://ecobnb.com/blog/2022/04/green-cars-technologies-future/
-[69] Best Electric Cars for Adventure Lovers 2025 | https://outdoorsmagic.com/article/best-electric-cars-for-adventure-lovers/
-[70] Green Car Reports' Best Car to Buy 2025 https://www.greencarreports.com/bestcartobuy
-[71] A Guide to Green Car Buying https://www.greencitytimes.com/a-guide-to-green-car-buying/
-[72] Have We Found the Best Electric Vehicle for Overlanding? https://expeditionportal.com/have-we-found-the-best-electric-vehicles-for-overlanding/
-[73] Ultimate Luxury Cars for 2025 Art of Engineering in Motion https://douradocars.com/ultimate-luxury-cars-for-2025-supercars/
-[74] Sustainable Practices in the Automotive Sector. Greening ... https://www.allstarsit.com/blog/sustainable-practices-in-the-automotive-sector-greening-the-roads
-[75] Can an EV support an outdoorsy lifestyle/road-tripping https://www.reddit.com/r/electricvehicles/comments/s2gdn6/can_an_ev_support_an_outdoorsy/
-[76] The Values and Principles 10 Top Business People Live by https://successness.com/2015/03/the-values-and-principles-10-top-business-people-live-by/
-[77] Germany's Work Culture: Ethics, Balance & Productivity ... https://www.ue-germany.com/blog/what-you-need-to-know-about-the-workplace-culture-in-germany
-[78] ENTP vs INTJ - Type Comparison https://www.youtube.com/watch?v=VgQ6oJSkzRM
-[79] German Business Culture https://www.expatrio.com/about-germany/german-business-culture
-[80] INTJ vs ENTP? : r/entp https://www.reddit.com/r/entp/comments/86azzq/intj_vs_entp/
-[81] Life Principle https://www.principles.com/principles/ac12f175-fda1-4e0d-8213-383d36775dfd/
-[82] German workplace culture https://www.alumniportal-deutschland.org/en/digital-learning/career-development/german-workplace-culture/
-[83] Why are ENTP and INTJ so easily confused? https://www.personalitycafe.com/threads/why-are-entp-and-intj-so-easily-confused.43902/
-[84] Peter Thiel's Principles: Capture the Hidden Knowledge ... https://www.playforthoughts.com/blog/peter-thiels-principles
