@@ -2,7 +2,7 @@
 title: Machine Learning
 tags: [Mental Castle]
 style: fill
-color: secondary
+color: success
 description: Schottenfeldgasse 55-3
 ---
 

@@ -2,7 +2,7 @@
 title: Latency Metrics That Actually Tell the Truth
 tags: [Performance, Monitoring, Engineering, APIs]
 style: fill
-color: secondary
+color: success
 description: A practical guide to latency metrics that reflect real user experience - p50, p95, p99, and why averages lie.
 ---
 

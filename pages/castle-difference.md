@@ -2,7 +2,7 @@
 title: Never Split the Difference
 tags: [Mental Castle]
 style: fill
-color: secondary
+color: success
 description: Bucuresti
 ---
 

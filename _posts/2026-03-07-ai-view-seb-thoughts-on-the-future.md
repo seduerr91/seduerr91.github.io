@@ -1,19 +1,19 @@
-
-title: "AI View Seb: Thoughts on the Future of Artificial Intelligence and What It Means for Us"
+---
+title: Thoughts on the Future of Artificial Intelligence and What It Means for Us
 tags: [AI, Future, Philosophy, Personal]
 style: fill
-color: info
+color: success
 description: A personal reflection on where AI is heading in the short, mid, and long term—and how I plan to navigate this rapidly changing landscape.
+---
 
-
-![AI and the Future](https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop)
-
-*Photo by [Cash Macanaya](https://unsplash.com/@cashmacanaya) on [Unsplash](https://unsplash.com)*
 
 We are living through one of the most significant technological shifts in human history. Artificial intelligence is no longer a distant promise confined to science fiction novels or academic research papers—it is here, embedded in our daily workflows, reshaping industries, and fundamentally altering how we think about work, creativity, and human potential.
 
 As someone who works at the intersection of AI and product engineering, I spend a lot of time thinking about where this is all heading. Not just the technical trajectory, but the human implications. What does it mean for how we live, how we work, and how we relate to one another? Here are my thoughts, organized across three time horizons, followed by some personal principles I'm trying to live by as I navigate this era.
 
+![AI and the Future](https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop)
+
+*Photo by [Cash Macanaya](https://unsplash.com/@cashmacanaya) on [Unsplash](https://unsplash.com)*
 
 
 ## Short Term: Product Engineering Meets AI Integration

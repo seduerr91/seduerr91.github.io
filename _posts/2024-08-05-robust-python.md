@@ -2,7 +2,7 @@
 title: My Takeaways from 'Robust Python'
 tags: [Coding, Python, Best Practices]
 style: fill
-color: secondary
+color: success
 description: Elevating your Python code to new levels of robustness and reliability.
 ---
 

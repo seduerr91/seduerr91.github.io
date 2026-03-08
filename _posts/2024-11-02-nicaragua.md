@@ -2,7 +2,7 @@
 title: San Juan Del Sur, Nicaragua
 tags: [Travel, Central America, Itinerary, Adventure]
 style: fill
-color: secondary
+color: success
 description: A 2 week trip to Central America, of which, we will spend the majority in Nicaragua.
 
 ---

@@ -3,7 +3,7 @@ tags: [Coding]
 title: Shifts in LLM Usage
 description: Reflections on my State of AI review.
 style: fill
-color: secondary
+color: success
 ---
 
 # Main Shift in AI in early 2024

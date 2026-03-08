@@ -2,7 +2,7 @@
 title: Real-Time News Analysis for Investment Professionals with Cerebras and GPT-OSS
 tags: [AI, Finance, Real-Time, Cerebras, GPT]
 style: fill
-color: secondary
+color: success
 description: A high-speed news analysis pipeline using Cerebras and GPT-OSS for real-time investment insights.
 ---
 

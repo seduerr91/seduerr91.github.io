@@ -2,7 +2,7 @@
 title: Technical Implementation in SpaCy.
 tags: [Persuaide, engineering]
 style: fill
-color: secondary
+color: success
 description: Technical Implementation in SpaCy.
 ---
 

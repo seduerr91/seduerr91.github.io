@@ -2,7 +2,7 @@
 title: Designing Data Intensive Applications
 tags: [Mental Castle]
 style: fill
-color: secondary
+color: success
 description: The Big Apple
 ---
 

@@ -2,7 +2,7 @@
 title: AI Engineering Architecture and User Feedback
 tags: [AI, Engineering, Architecture, Feedback]
 style: fill
-color: secondary
+color: success
 description: Building AI systems with monitoring and feedback
 ---
 

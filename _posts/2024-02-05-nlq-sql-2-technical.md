@@ -3,7 +3,7 @@ tags: [Coding]
 title: Step 2 - Technical Implementation Details
 description: An exhaustive explanation of the service
 style: fill
-color: secondary
+color: success
 ---
 
 ## Article 2 - Technical 

@@ -2,7 +2,7 @@
 title: AI Evaluations
 tags: [Coding, AI]
 style: fill
-color: secondary
+color: success
 description: Comprehensive guide to AI evaluation methods
 ---
 

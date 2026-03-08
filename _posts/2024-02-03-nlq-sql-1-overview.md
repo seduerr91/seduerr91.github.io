@@ -3,7 +3,7 @@ tags: [Coding]
 title: Step 1 - Leveraging Large Language Models for Intuitive SQL Queries
 description: An Overview Article
 style: fill
-color: secondary
+color: success
 ---
 
 

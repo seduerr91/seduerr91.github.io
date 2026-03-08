@@ -2,7 +2,7 @@
 title: The Best Summer After a Layoff
 tags: [Life, Reflection, Summer, Career]
 style: fill
-color: secondary
+color: success
 description: A reflection on making the most of an unexpected summer off after being laid off.
 ---
 

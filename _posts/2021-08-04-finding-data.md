@@ -2,7 +2,7 @@
 title: Data-Centric Modeling 
 tags: [Persuaide, engineering]
 style: fill
-color: secondary
+color: success
 description: Finding a dataset for your purpose.
 ---
 

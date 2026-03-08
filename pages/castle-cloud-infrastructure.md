@@ -2,7 +2,7 @@
 title: Cloud Infrastructure
 tags: [Mental Castle]
 style: fill
-color: secondary
+color: success
 description: A walk through Bamberg
 ---
 

@@ -3,7 +3,7 @@ tags: [Lifestyle]
 title: My Formula for Peak Performance - A Day in My Life
 description: A description of my life at Onni in 2024
 style: fill
-color: secondary
+color: success
 ---
 
 I used to think the ultimate day was filled with lounging and leisure, but I've discovered something extraordinary: a day dedicated to routine, movement, and focus brings me far greater satisfaction. Let me share my perfect day formula – it might just inspire your own.

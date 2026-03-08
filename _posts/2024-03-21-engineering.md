@@ -3,7 +3,7 @@ tags: [AI, Engineering]
 title: Level Up Engineering
 description: Next Steps in 2024
 style: fill
-color: secondary
+color: success
 ---
 
 # Objective

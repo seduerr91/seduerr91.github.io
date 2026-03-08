@@ -2,7 +2,7 @@
 title: Backpacking Gear for PCT Section J
 tags: [Backpacking, PCT, Gear, Hiking]
 style: fill
-color: secondary
+color: success
 description: A comprehensive guide to the gear and supplies needed for backpacking Section J of the Pacific Crest Trail.
 ---
 

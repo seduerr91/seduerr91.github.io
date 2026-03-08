@@ -2,7 +2,7 @@
 title: AI Evaluations Pipeline
 tags: [Coding, AI]
 style: fill
-color: secondary
+color: success
 description: Techniques to evaluate AI systems effectively
 ---
 

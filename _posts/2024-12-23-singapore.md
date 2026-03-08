@@ -2,7 +2,7 @@
 title: Exploring Asia in 2025
 tags: [Travel]
 style: fill
-color: secondary
+color: success
 description: My Trip to Asia from Jan 19 - Feb 1
 ---
 

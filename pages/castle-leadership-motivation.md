@@ -2,7 +2,7 @@
 title: Leadership & Motivation
 tags: [Mental Castle]
 style: fill
-color: secondary
+color: success
 description: London
 ---
 

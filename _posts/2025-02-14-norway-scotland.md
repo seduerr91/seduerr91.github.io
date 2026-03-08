@@ -2,7 +2,7 @@
 title: Norway and Scotland with Arnold
 tags: [Coding, Travel]
 style: fill
-color: secondary
+color: success
 description: A travel itinerary for Norway and Scotland with Arnold.
 ---
 
