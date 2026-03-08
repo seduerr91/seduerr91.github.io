@@ -2,7 +2,7 @@
 title: Foods That Satisfy Appetite vs. Those with 'Empty Calories'
 tags: [food, health]
 style: fill
-color: secondary
+color: success
 description: Foods that make you feel full with few calories
 ---
 

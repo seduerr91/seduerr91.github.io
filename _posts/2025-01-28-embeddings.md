@@ -2,7 +2,7 @@
 title: Embeddings in ML Design
 tags: [Coding]
 style: fill
-color: secondary
+color: success
 description: A deep dive into embeddings, from one-hot encoding to two-tower architectures, and how they power recommendation systems at major tech companies.
 ---
 

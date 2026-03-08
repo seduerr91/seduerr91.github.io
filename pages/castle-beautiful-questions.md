@@ -2,7 +2,7 @@
 title: Beautiful Questions
 tags: [Mental Castle]
 style: fill
-color: secondary
+color: success
 description: A Walk Through Hong Kong
 ---
 

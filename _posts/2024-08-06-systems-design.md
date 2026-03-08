@@ -2,7 +2,7 @@
 title: Getting better in Systems Design
 tags: [Coding]
 style: fill
-color: secondary
+color: success
 description: Designing Systems
 ---
 

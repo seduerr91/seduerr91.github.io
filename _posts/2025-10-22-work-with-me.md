@@ -2,7 +2,7 @@
 title: How to Work With Me
 tags: [Personality, Collaboration, Work]
 style: fill
-color: secondary
+color: success
 description: A personal user manual for effective collaboration, outlining communication preferences, work styles, and personal insights.
 ---
 

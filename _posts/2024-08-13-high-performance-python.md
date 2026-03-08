@@ -2,7 +2,7 @@
 title: High Performance Python Summary
 tags: [Life]
 style: fill
-color: secondary
+color: success
 description: A summary of all 14 chapters of the book High Performance Python.
 ---
 

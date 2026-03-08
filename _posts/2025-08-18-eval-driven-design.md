@@ -2,7 +2,7 @@
 title: Eval Driven Design
 tags: [Evaluation, AI]
 style: fill
-color: secondary
+color: success
 description: An Article on Eval Driven Design not written by AI
 ---
 

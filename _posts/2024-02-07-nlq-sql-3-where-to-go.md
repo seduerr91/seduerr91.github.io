@@ -3,7 +3,7 @@ tags: [Coding]
 title: Step 3 - Where to go from here
 description: Where to go from here
 style: fill
-color: secondary
+color: success
 ---
 
 In this section, we critically review what we did and provide a lot of avenues for further development and integrations. We also try to highlight shortcomings and how to address them.

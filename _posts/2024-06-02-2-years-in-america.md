@@ -2,7 +2,7 @@
 title: Living in America as a German for Two Years
 tags: [Leisure]
 style: fill
-color: secondary
+color: success
 description: My personal perceptions living in WA state and Seattle
 ---
 

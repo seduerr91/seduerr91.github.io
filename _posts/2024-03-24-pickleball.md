@@ -2,7 +2,7 @@
 title: Getting better at Pickleball
 tags: [Pickleball]
 style: fill
-color: secondary
+color: success
 description: Memorizing Pickle Tips
 ---
 

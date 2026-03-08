@@ -2,7 +2,7 @@
 title: Essential Gear for Your Next Run in the Pacific Northwest
 tags: [running, pnw, gear, health]
 style: fill
-color: secondary
+color: success
 description: A checklist of essential items to bring on your runs in the beautiful but unpredictable Pacific Northwest.
 ---
 

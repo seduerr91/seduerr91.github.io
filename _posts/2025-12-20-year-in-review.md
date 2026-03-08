@@ -2,7 +2,7 @@
 title: 2025 - A Year of Transition and Focus
 tags: [Personal, Review]
 style: fill
-color: secondary
+color: success
 description: Reflecting on a year of professional pivots, physical resilience, and strategic relocation.
 ---
 

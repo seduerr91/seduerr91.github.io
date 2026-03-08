@@ -2,7 +2,7 @@
 title: Using a lot of mails.
 tags: [Persuaide, engineering]
 style: fill
-color: secondary
+color: success
 description: Using a lot of mails.
 ---
 

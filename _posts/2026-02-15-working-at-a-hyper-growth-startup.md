@@ -2,7 +2,7 @@
 title: Working at a Hyper Growth Startup
 tags: [Work, Startups, Productivity]
 style: fill
-color: secondary
+color: success
 description: Reflections on intense weeks, staying sane, and protecting time while working in hyper-growth.
 ---
 

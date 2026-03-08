@@ -2,7 +2,7 @@
 title: What should I do with rest of my life?
 tags: [Life]
 style: fill
-color: secondary
+color: success
 description: A perspective by me. 
 ---
 

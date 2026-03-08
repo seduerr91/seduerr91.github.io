@@ -2,7 +2,7 @@
 title: DeepEval Evaluation Metrics - A Comprehensive Study Guide
 tags: [DeepEval, LLM Evaluation, Metrics]
 style: fill
-color: secondary
+color: success
 description: A complete guide to the evaluation metrics available in DeepEval.
 --- 
 

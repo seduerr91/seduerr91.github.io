@@ -2,7 +2,7 @@
 title: A bachelor trip to Victoria
 tags: [Travel]
 style: fill
-color: secondary
+color: success
 description: A bachelor trip to Victoria
 ---
 

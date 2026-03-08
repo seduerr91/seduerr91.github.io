@@ -3,7 +3,7 @@ tags: [Life]
 title: My plan for NYC in March 2024
 description: A city of hustle and bustle
 style: fill
-color: secondary
+color: success
 ---
 
 ## Seb's NYC Adventure: A Packed Itinerary of Iconic Sights and Hidden Gems

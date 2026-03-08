@@ -2,7 +2,7 @@
 title: Sasha and Simba at 8 weeks
 tags: [Leisure]
 style: fill
-color: secondary
+color: success
 description: We adopted Sasha and Simba on June 3, 2024.
 ---
 

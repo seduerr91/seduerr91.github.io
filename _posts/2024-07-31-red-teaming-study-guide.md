@@ -2,7 +2,7 @@
 title: Red Teaming Study Guide
 tags: [DeepEval, LLM Evaluation, Red Team]
 style: fill
-color: secondary
+color: success
 description: A complete guide to red teaming concepts and vulnerabilities.
 --- 
 

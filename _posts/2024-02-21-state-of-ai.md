@@ -3,7 +3,7 @@ tags: [Coding]
 title: State of AI
 description: The State of AI as of Feburary 2024
 style: fill
-color: secondary
+color: success
 ---
 
 An overview of everything I regard as interesting in the space of AI as of February 2024.

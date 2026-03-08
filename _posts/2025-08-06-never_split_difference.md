@@ -2,7 +2,7 @@
 title: Never Split the Difference
 tags: [Running, Blogs]
 style: fill
-color: secondary
+color: success
 description: Persuasion Techniques from "Never Split the Difference" for Text-Based Scenarios
 ---
 

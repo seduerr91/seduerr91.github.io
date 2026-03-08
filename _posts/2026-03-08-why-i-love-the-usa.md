@@ -1,21 +1,19 @@
-
-title: "Why I Love the USA: A European's Perspective on What Makes America Special"
+---
+title: Why I Love the USA - A European's Perspective
 tags: [USA, Culture, Personal, Life]
 style: fill
-color: primary
+color: success
 description: As someone who moved from Europe to the United States, here's my honest take on what makes this country genuinely remarkable.
+---
 
-
-# Why I Love the USA: A European's Perspective on What Makes America Special
-
-![American Landscape](https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=2070&auto=format&fit=crop)
-
-*Photo by [Joshua Earle](https://unsplash.com/@joshuaearle) on [Unsplash](https://unsplash.com)*
 
 Moving to a new country is always an exercise in comparison. You can't help but measure your new home against where you came from, noticing differences both large and small. Having spent significant time in both Europe and the United States, I've developed a deep appreciation for what makes America unique—and why, despite its imperfections, I genuinely love living here.
 
 This isn't a political statement or a blind endorsement of everything American. It's a personal reflection on the qualities that have made the United States feel like home to me, and why I believe this country continues to attract ambitious, creative, and driven people from around the world.
 
+![American Landscape](https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=2070&auto=format&fit=crop)
+
+*Photo by [Joshua Earle](https://unsplash.com/@joshuaearle) on [Unsplash](https://unsplash.com)*
 
 
 ## Diversity: The Great American Experiment

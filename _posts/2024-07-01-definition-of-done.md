@@ -2,7 +2,7 @@
 title: Definition of Done
 tags: [Coding]
 style: fill
-color: secondary
+color: success
 description: My take on when to call something done.
 ---
 

@@ -2,7 +2,7 @@
 name: The Personal MBA
 tags: [Mental Castle]
 style: fill
-color: secondary
+color: success
 description: Budapest
 ---
 
