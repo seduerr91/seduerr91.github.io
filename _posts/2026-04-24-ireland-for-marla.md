@@ -54,7 +54,7 @@ If you have access to a car (or a taxi), **Johnny Fox's** in the Dublin Mountain
 
 ---
 
-## Days 4–5: The South — Killarney, Ring of Kerry, and Dingle
+## Days 4–5: The South — Killarney, Ring of Kerry, Dingle, and the Cliffs of Moher
 
 Rent a car and head south. This is where Ireland gets truly spectacular.
 
@@ -82,6 +82,12 @@ I absolutely recommend the Dingle Peninsula. In some ways, I prefer it to the Ri
 
 The Slea Head Drive loops around the western end of the Dingle Peninsula. It's shorter than the Ring of Kerry but equally dramatic, with views of the Blaskets and ancient stone forts along the way. Do it at sunset if you can.
 
+### The Cliffs of Moher
+
+Make time for the **Cliffs of Moher**. They're in County Clare, rising up to 214 meters (700 feet) above the Atlantic. The scale is hard to convey — you stand at the edge and the ocean just drops away beneath you, stretching to the horizon. On a clear day you can see the Aran Islands and the mountains of Connemara. On a stormy day, the wind will literally push you backward. Both experiences are unforgettable.
+
+Go early or late to avoid the tour bus crowds. The visitor center is well done, but the real experience is walking the cliff path in either direction and finding a spot where it's just you and the drop.
+
 ---
 
 ## Day 6: Cork and Limerick
@@ -98,13 +104,7 @@ Limerick was surprisingly nice. I wasn't expecting much, and it exceeded my expe
 
 ---
 
-## Day 7: The Cliffs of Moher and the East Coast
-
-### The Cliffs of Moher
-
-On your way back toward Dublin, make time for the **Cliffs of Moher**. They're on the west coast in County Clare, rising up to 214 meters (700 feet) above the Atlantic. The scale is hard to convey — you stand at the edge and the ocean just drops away beneath you, stretching to the horizon. On a clear day you can see the Aran Islands and the mountains of Connemara. On a stormy day, the wind will literally push you backward. Both experiences are unforgettable.
-
-Go early or late to avoid the tour bus crowds. The visitor center is well done, but the real experience is walking the cliff path in either direction and finding a spot where it's just you and the drop.
+## Day 7: The East Coast — Powerscourt and Wicklow
 
 ### Powerscourt Gardens
 
@@ -143,10 +143,10 @@ Glendalough itself — the monastic settlement in the valley — is worth a visi
 | 1 | Dublin | Trinity College, downtown, Temple Bar |
 | 2 | Dublin | Guinness Storehouse, DART to Howth, Octopussy's Kitchen |
 | 3 | Dublin | DART to Dún Laoghaire, Johnny Fox's Pub |
-| 4 | Killarney | Killarney National Park, Ring of Kerry |
-| 5 | Dingle | Slea Head Drive, horseback riding on the beach, Dunmore Head |
+| 4 | Killarney / Kerry | Killarney National Park, Ring of Kerry |
+| 5 | Dingle / Cliffs of Moher | Slea Head Drive, horseback riding on the beach, Dunmore Head, Cliffs of Moher |
 | 6 | Cork / Limerick | English Market, UCC, King John's Castle |
-| 7 | Cliffs of Moher / Wicklow | Cliffs of Moher, Powerscourt Gardens, Wicklow Mountains, Glendalough |
+| 7 | Wicklow | Powerscourt Gardens, Wicklow Mountains, Glendalough |
 
 ---
 
