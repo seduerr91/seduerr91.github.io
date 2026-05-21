@@ -1,0 +1,173 @@
+---
+layout: page
+title: Goals
+permalink: /goals/
+weight: 2
+description: A small year dashboard for running and driving pace.
+---
+
+<div class="goals-page">
+  <div class="goals-hero">
+    <p class="goals-kicker">Yearly Dashboard</p>
+    <h1 class="goals-title">Keep score without opening a spreadsheet</h1>
+    <p class="goals-lead">
+      Track running progress toward a big goal and driving against a yearly cap.
+      The page uses today's date automatically and stores your numbers in this browser.
+    </p>
+
+    <div class="goals-toolbar">
+      <div class="goals-toolbar-copy">
+        <span class="goals-toolbar-label">Today</span>
+        <strong id="goals-today">Loading...</strong>
+      </div>
+      <div class="goals-toolbar-copy">
+        <span class="goals-toolbar-label">Year Progress</span>
+        <strong id="goals-year-progress">Loading...</strong>
+      </div>
+      <button id="goals-reset" class="btn btn-outline-secondary btn-sm" type="button">
+        Reset values
+      </button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6 mb-4">
+      <section class="goals-card" id="running-goal-card">
+        <div class="goals-card-header">
+          <div>
+            <p class="goals-card-kicker">Running</p>
+            <h2>Chase a big mileage year</h2>
+          </div>
+          <span class="goals-status-pill" id="run-status-pill">Loading...</span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-5">
+            <label for="run-current">Run so far</label>
+            <input id="run-current" class="form-control" type="number" min="0" step="0.1" value="0">
+          </div>
+          <div class="form-group col-sm-4">
+            <label for="run-target">Target</label>
+            <input id="run-target" class="form-control" type="number" min="1" step="0.1" value="1000">
+          </div>
+          <div class="form-group col-sm-3">
+            <label for="run-unit">Unit</label>
+            <select id="run-unit" class="form-control">
+              <option value="mi">Miles</option>
+              <option value="km">Kilometers</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="goals-progress">
+          <div class="goals-progress-copy">
+            <span id="run-progress-copy">Loading...</span>
+            <strong id="run-progress-main">Loading...</strong>
+          </div>
+          <div class="goals-progress-track">
+            <div class="goals-progress-bar goals-progress-benchmark" id="run-benchmark-bar"></div>
+            <div class="goals-progress-bar goals-progress-actual" id="run-actual-bar"></div>
+          </div>
+          <div class="goals-progress-legend">
+            <span>Dark = your progress</span>
+            <span>Light = even pace by today</span>
+          </div>
+        </div>
+
+        <div class="goals-metrics">
+          <div class="goals-metric">
+            <span class="goals-metric-label">Should be at today</span>
+            <strong id="run-benchmark">Loading...</strong>
+          </div>
+          <div class="goals-metric">
+            <span class="goals-metric-label">Ahead / behind pace</span>
+            <strong id="run-gap">Loading...</strong>
+          </div>
+          <div class="goals-metric">
+            <span class="goals-metric-label">Needed per week</span>
+            <strong id="run-weekly-needed">Loading...</strong>
+          </div>
+          <div class="goals-metric">
+            <span class="goals-metric-label">Projected year-end</span>
+            <strong id="run-projected">Loading...</strong>
+          </div>
+          <div class="goals-metric">
+            <span class="goals-metric-label">Goal date at current pace</span>
+            <strong id="run-goal-date">Loading...</strong>
+          </div>
+          <div class="goals-metric">
+            <span class="goals-metric-label">Days left this year</span>
+            <strong id="run-days-left">Loading...</strong>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="col-lg-6 mb-4">
+      <section class="goals-card" id="driving-goal-card">
+        <div class="goals-card-header">
+          <div>
+            <p class="goals-card-kicker">Driving</p>
+            <h2>Stay under your yearly cap</h2>
+          </div>
+          <span class="goals-status-pill" id="drive-status-pill">Loading...</span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label for="drive-current">Driven so far</label>
+            <input id="drive-current" class="form-control" type="number" min="0" step="1" value="0">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="drive-target">Yearly cap</label>
+            <input id="drive-target" class="form-control" type="number" min="1" step="1" value="10000">
+          </div>
+        </div>
+
+        <div class="goals-progress">
+          <div class="goals-progress-copy">
+            <span id="drive-progress-copy">Loading...</span>
+            <strong id="drive-progress-main">Loading...</strong>
+          </div>
+          <div class="goals-progress-track">
+            <div class="goals-progress-bar goals-progress-benchmark" id="drive-benchmark-bar"></div>
+            <div class="goals-progress-bar goals-progress-actual goals-progress-warning" id="drive-actual-bar"></div>
+          </div>
+          <div class="goals-progress-legend">
+            <span>Dark = miles used</span>
+            <span>Light = smooth pace by today</span>
+          </div>
+        </div>
+
+        <div class="goals-metrics">
+          <div class="goals-metric">
+            <span class="goals-metric-label">Should have driven by today</span>
+            <strong id="drive-benchmark">Loading...</strong>
+          </div>
+          <div class="goals-metric">
+            <span class="goals-metric-label">Above / below pace</span>
+            <strong id="drive-gap">Loading...</strong>
+          </div>
+          <div class="goals-metric">
+            <span class="goals-metric-label">Miles left this year</span>
+            <strong id="drive-remaining">Loading...</strong>
+          </div>
+          <div class="goals-metric">
+            <span class="goals-metric-label">Max per week to stay under</span>
+            <strong id="drive-weekly-allowance">Loading...</strong>
+          </div>
+          <div class="goals-metric">
+            <span class="goals-metric-label">Max per day to stay under</span>
+            <strong id="drive-daily-allowance">Loading...</strong>
+          </div>
+          <div class="goals-metric">
+            <span class="goals-metric-label">Projected year-end</span>
+            <strong id="drive-projected">Loading...</strong>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/goals.js' | relative_url }}"></script>
