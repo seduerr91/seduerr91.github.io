@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Blog Article"
+  short_description: "Create a Jekyll blog post for this repo"
+  default_prompt: "Use $create-blog-article to add or update a blog article in this repo."
