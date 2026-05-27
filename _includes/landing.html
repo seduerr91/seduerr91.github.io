@@ -1,22 +1,21 @@
 <div id="particles-js"></div>
 <div class="row justify-content-center align-items-center p-4 landing-content">
   <div class="col-lg-8 col-md-10 text-center mt-4">
-    <div class="landing-live-card wow animated slideInUp" data-wow-delay=".1s">
-      <div class="landing-live-chip">
-        <span class="landing-live-label">Seattle</span>
-        <span id="clock-seattle" class="landing-live-value text-themed">Loading...</span>
+    <h1 class="landing-title text-themed wow animated slideInUp" data-wow-delay=".1s">{{ site.author.name }}</h1>
+    <p class="landing-tagline text-themed wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
+    <div class="landing-live-info text-themed wow animated slideInUp" data-wow-delay=".2s">
+      <div class="landing-live-line">
+        <span class="landing-live-prefix">Seattle</span>
+        <span id="clock-seattle" class="landing-live-value">Loading...</span>
       </div>
-      <div class="landing-live-chip">
-        <span class="landing-live-label">Frankfurt</span>
-        <span id="clock-frankfurt" class="landing-live-value text-themed">Loading...</span>
+      <div class="landing-live-line">
+        <span class="landing-live-prefix">Frankfurt</span>
+        <span id="clock-frankfurt" class="landing-live-value">Loading...</span>
       </div>
-      <div class="landing-live-chip landing-live-chip-wide">
-        <span class="landing-live-label">Issaquah Weather</span>
-        <span id="weather-issaquah" class="landing-live-value text-themed">Loading weather...</span>
+      <div class="landing-live-line">
+        <span class="landing-live-prefix">Issaquah Weather</span>
+        <span id="weather-issaquah" class="landing-live-value">Loading weather...</span>
       </div>
     </div>
-
-    <h1 class="landing-title text-themed wow animated slideInUp" data-wow-delay=".15s">{{ site.author.name }}</h1>
-    <p class="landing-tagline text-themed wow animated slideInUp" data-wow-delay=".2s">{{ site.description }}</p>
   </div>
 </div>

@@ -1,0 +1,170 @@
+---
+layout: page
+title: Mileage Tracker
+permalink: /tools/mileage/
+nav_parent: tools
+weight: 1
+description: Track yearly running volume and driving against a 10,000-mile cap.
+---
+
+<div class="tools-page tools-mileage-page">
+  <section class="tools-hero">
+    <p class="tools-kicker">Year to date</p>
+    <h1 class="tools-title">Mileage without the spreadsheet</h1>
+    <p class="tools-lead">
+      A quiet dashboard for two recurring questions: how is the running year going,
+      and how much driving room is left if 10,000 miles is the ceiling?
+    </p>
+
+    <div class="tools-toolbar">
+      <div class="tools-toolbar-copy">
+        <span class="tools-toolbar-label">Today</span>
+        <strong id="tools-mileage-today">Loading...</strong>
+      </div>
+      <div class="tools-toolbar-copy">
+        <span class="tools-toolbar-label">Year Progress</span>
+        <strong id="tools-mileage-year-progress">Loading...</strong>
+      </div>
+      <button id="tools-mileage-reset" class="btn btn-outline-secondary btn-sm" type="button">
+        Reset values
+      </button>
+    </div>
+  </section>
+
+  <div class="tools-grid">
+    <section class="tools-card">
+      <div class="d-flex justify-content-between align-items-start mb-3">
+        <div>
+          <p class="tools-kicker">Running</p>
+          <h2>Chase the mileage year</h2>
+        </div>
+        <span class="tools-status-pill" id="run-status-pill">Loading...</span>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-sm-5">
+          <label for="run-current">Run so far</label>
+          <input id="run-current" class="form-control" type="number" min="0" step="0.1" value="0">
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="run-target">Target</label>
+          <input id="run-target" class="form-control" type="number" min="1" step="0.1" value="1000">
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="run-unit">Unit</label>
+          <select id="run-unit" class="form-control">
+            <option value="mi">Miles</option>
+            <option value="km">Kilometers</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="tools-progress">
+        <div class="tools-progress-copy">
+          <span id="run-progress-copy">Loading...</span>
+          <strong class="tools-progress-main" id="run-progress-main">Loading...</strong>
+        </div>
+        <div class="tools-progress-track">
+          <div class="tools-progress-bar tools-progress-benchmark" id="run-benchmark-bar"></div>
+          <div class="tools-progress-bar tools-progress-actual" id="run-actual-bar"></div>
+        </div>
+        <div class="tools-progress-legend">
+          <span>Dark = your progress</span>
+          <span>Light = even pace by today</span>
+        </div>
+      </div>
+
+      <div class="tools-metrics">
+        <div class="tools-metric">
+          <span class="tools-metric-label">Should be at today</span>
+          <strong id="run-benchmark">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Ahead / behind pace</span>
+          <strong id="run-gap">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Needed per week</span>
+          <strong id="run-weekly-needed">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Projected year-end</span>
+          <strong id="run-projected">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Goal date at current pace</span>
+          <strong id="run-goal-date">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Days left this year</span>
+          <strong id="run-days-left">Loading...</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools-card">
+      <div class="d-flex justify-content-between align-items-start mb-3">
+        <div>
+          <p class="tools-kicker">Driving</p>
+          <h2>Stay under the cap</h2>
+        </div>
+        <span class="tools-status-pill" id="drive-status-pill">Loading...</span>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-sm-6">
+          <label for="drive-current">Driven so far</label>
+          <input id="drive-current" class="form-control" type="number" min="0" step="1" value="0">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="drive-target">Yearly cap</label>
+          <input id="drive-target" class="form-control" type="number" min="1" step="1" value="10000">
+        </div>
+      </div>
+
+      <div class="tools-progress">
+        <div class="tools-progress-copy">
+          <span id="drive-progress-copy">Loading...</span>
+          <strong class="tools-progress-main" id="drive-progress-main">Loading...</strong>
+        </div>
+        <div class="tools-progress-track">
+          <div class="tools-progress-bar tools-progress-benchmark" id="drive-benchmark-bar"></div>
+          <div class="tools-progress-bar tools-progress-actual tools-progress-warning" id="drive-actual-bar"></div>
+        </div>
+        <div class="tools-progress-legend">
+          <span>Dark = miles used</span>
+          <span>Light = smooth pace by today</span>
+        </div>
+      </div>
+
+      <div class="tools-metrics">
+        <div class="tools-metric">
+          <span class="tools-metric-label">Should have driven by today</span>
+          <strong id="drive-benchmark">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Above / below pace</span>
+          <strong id="drive-gap">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Miles left this year</span>
+          <strong id="drive-remaining">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Max per week to stay under</span>
+          <strong id="drive-weekly-allowance">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Max per day to stay under</span>
+          <strong id="drive-daily-allowance">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Projected year-end</span>
+          <strong id="drive-projected">Loading...</strong>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/tools.js' | relative_url }}"></script>

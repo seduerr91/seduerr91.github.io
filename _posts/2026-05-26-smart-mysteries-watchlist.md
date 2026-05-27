@@ -1,12 +1,10 @@
 ---
-title: Smart Mysteries, British Crime, and Workplace Chaos: What I Want to Watch Next
+title: "Smart Mysteries, British Crime, and Workplace Chaos: What I Want to Watch Next"
 tags: [TV, Movies, Crime, Recommendations, Personal]
 style: fill
 color: success
-description: A personal watchlist built around the kinds of shows I keep coming back to: smart mysteries, British-flavored crime, and sharp workplace drama.
+description: "A personal watchlist built around the kinds of shows I keep coming back to: smart mysteries, British-flavored crime, and sharp workplace drama."
 ---
-
-# Smart Mysteries, British Crime, and Workplace Chaos: What I Want to Watch Next
 
 Over the last months, I've realized I keep drifting toward a very specific TV niche: clever, dialogue-heavy series with a mystery backbone and enough emotional depth that I actually care who did it and why.
 

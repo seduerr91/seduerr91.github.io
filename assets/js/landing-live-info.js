@@ -10,13 +10,9 @@
   function formatTime(timeZone) {
     return new Intl.DateTimeFormat("en-US", {
       timeZone: timeZone,
-      weekday: "short",
-      month: "short",
-      day: "numeric",
-      hour: "numeric",
+      hour: "2-digit",
       minute: "2-digit",
-      second: "2-digit",
-      hour12: true,
+      hour12: false,
     }).format(new Date());
   }
 

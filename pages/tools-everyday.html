@@ -1,0 +1,133 @@
+---
+layout: page
+title: Everyday Conversions
+permalink: /tools/everyday/
+nav_parent: tools
+weight: 3
+description: Temperature, distance, height, and weight conversions that are handy in the U.S.
+---
+
+<div class="tools-page tools-everyday-page">
+  <section class="tools-hero">
+    <p class="tools-kicker">The translation layer</p>
+    <h1 class="tools-title">Everyday metric and U.S. conversions</h1>
+    <p class="tools-lead">
+      Weather, road signs, body weight, and room dimensions still bounce between systems,
+      so this page keeps the common ones in one place.
+    </p>
+  </section>
+
+  <div class="tools-grid">
+    <section class="tools-card">
+      <p class="tools-kicker">Temperature</p>
+      <h2>Fahrenheit and Celsius</h2>
+      <div class="form-row">
+        <div class="form-group col-sm-6">
+          <label for="temp-input">Temperature</label>
+          <input id="temp-input" class="form-control" type="number" step="0.1" value="68">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="temp-unit">Unit</label>
+          <select id="temp-unit" class="form-control">
+            <option value="f">Fahrenheit</option>
+            <option value="c">Celsius</option>
+          </select>
+        </div>
+      </div>
+      <div class="tools-inline-output" id="temp-output">Loading...</div>
+    </section>
+
+    <section class="tools-card">
+      <p class="tools-kicker">Distance</p>
+      <h2>Miles and kilometers</h2>
+      <div class="form-row">
+        <div class="form-group col-sm-6">
+          <label for="distance-input">Distance</label>
+          <input id="distance-input" class="form-control" type="number" step="0.1" value="10">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="distance-unit">Unit</label>
+          <select id="distance-unit" class="form-control">
+            <option value="mi">Miles</option>
+            <option value="km">Kilometers</option>
+          </select>
+        </div>
+      </div>
+      <div class="tools-inline-output" id="distance-output">Loading...</div>
+    </section>
+
+    <section class="tools-card">
+      <p class="tools-kicker">Height</p>
+      <h2>Feet, inches, and centimeters</h2>
+      <div class="form-row">
+        <div class="form-group col-sm-4">
+          <label for="height-feet">Feet</label>
+          <input id="height-feet" class="form-control" type="number" min="0" step="1" value="6">
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="height-inches">Inches</label>
+          <input id="height-inches" class="form-control" type="number" min="0" max="11" step="1" value="0">
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="height-cm">Centimeters</label>
+          <input id="height-cm" class="form-control" type="number" min="0" step="0.1" value="182.9">
+        </div>
+      </div>
+      <p class="tools-note mb-0">Edit either side and the other updates automatically.</p>
+    </section>
+
+    <section class="tools-card">
+      <p class="tools-kicker">Weight</p>
+      <h2>Pounds and kilograms</h2>
+      <div class="form-row">
+        <div class="form-group col-sm-6">
+          <label for="weight-lb">Pounds</label>
+          <input id="weight-lb" class="form-control" type="number" min="0" step="0.1" value="170">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="weight-kg">Kilograms</label>
+          <input id="weight-kg" class="form-control" type="number" min="0" step="0.1" value="77.1">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="tools-grid mt-4">
+    <section class="tools-table-card">
+      <p class="tools-kicker">Reference</p>
+      <h2>Temperature table</h2>
+      <div class="tools-table-wrap">
+        <table class="table tools-table" id="temperature-table">
+          <thead>
+            <tr>
+              <th>F</th>
+              <th>C</th>
+              <th>Quick read</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="tools-table-card">
+      <p class="tools-kicker">Reference</p>
+      <h2>Distance table</h2>
+      <div class="tools-table-wrap">
+        <table class="table tools-table" id="distance-table">
+          <thead>
+            <tr>
+              <th>Miles</th>
+              <th>Kilometers</th>
+              <th>Feet</th>
+              <th>Meters</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/tools.js' | relative_url }}"></script>
