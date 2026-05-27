@@ -1,5 +1,5 @@
 ---
-title: Chasing Clouds Above the Evergreen: My PNW Drone Journey
+title: "Chasing Clouds Above the Evergreen: My PNW Drone Journey"
 tags: [Drone, PNW, Washington, Aviation, Personal]
 style: fill
 color: success

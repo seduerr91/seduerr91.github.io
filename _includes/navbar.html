@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-themed">
+<nav class="navbar navbar-expand-lg navbar-themed {% if page.url == '/' %}navbar-home{% endif %}">
 
     <a class="navbar-brand" href="{{ site.baseurl }}/"><h5><b>{{ site.title }}</b></h5></a>
   
@@ -6,7 +6,7 @@
       <i class="fas fa-1x fa-bars text-themed"></i>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse {% if page.url == '/' %}navbar-collapse-home{% endif %}" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
   
         {%- assign html_pages = site.html_pages | sort: 'weight' -%}
@@ -37,24 +37,67 @@
   
         {%- endfor -%}
   
-        {% for html_page in filtered_pages %}  
-  
-          {%- if page.url contains html_page.url -%}
+        {% for html_page in filtered_pages %}
+          {%- if html_page.nav_parent -%}
+            {%- continue -%}
+          {%- endif -%}
+
+          {%- assign nav_key = html_page.nav_id | default: html_page.title | downcase -%}
+          {%- assign has_children = false -%}
+          {%- assign child_active = false -%}
+
+          {%- capture dropdown_links -%}{%- endcapture -%}
+          {%- for child_page in filtered_pages -%}
+            {%- assign child_parent = child_page.nav_parent | downcase -%}
+            {%- if child_parent == nav_key -%}
+              {%- assign has_children = true -%}
+
+              {%- if page.url == child_page.url -%}
+                {%- assign child_active = true -%}
+                {%- assign child_active_status = "active" -%}
+              {%- else -%}
+                {%- assign child_active_status = "" -%}
+              {%- endif -%}
+
+              {%- if child_page.external_url -%}
+                {%- assign child_url = child_page.external_url -%}
+              {%- else -%}
+                {%- assign child_url = child_page.url | relative_url -%}
+              {%- endif -%}
+
+              {%- capture dropdown_links -%}
+                {{ dropdown_links }}
+                <a class="dropdown-item {{ child_active_status }}" href="{{ child_url }}" {%- if child_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>{{ child_page.title }}</a>
+              {%- endcapture -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- if page.url == html_page.url or child_active -%}
             {%- assign active_status = "active" -%}
           {%- else -%}
             {%- assign active_status = "" -%}
           {%- endif -%}
-  
+
           {%- if html_page.external_url -%}
             {%- assign url = html_page.external_url -%}
           {%- else -%}
             {%- assign url = html_page.url | relative_url -%}
           {%- endif -%}
-  
-          <a class="nav-item nav-link {{ active_status }}" href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>{{ html_page.title }}</a>
-  
+
+          {%- if has_children -%}
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle {{ active_status }}" href="{{ url }}" id="navbar-dropdown-{{ nav_key | slugify }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>{{ html_page.title }}</a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="navbar-dropdown-{{ nav_key | slugify }}">
+                <a class="dropdown-item" href="{{ url }}">Overview</a>
+                <div class="dropdown-divider"></div>
+                {{ dropdown_links }}
+              </div>
+            </div>
+          {%- else -%}
+            <a class="nav-item nav-link {{ active_status }}" href="{{ url }}" {%- if html_page.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>{{ html_page.title }}</a>
+          {%- endif -%}
         {% endfor %}
-  
+
         <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
       </div>
     </div>

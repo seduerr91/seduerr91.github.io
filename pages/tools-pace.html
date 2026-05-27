@@ -1,0 +1,95 @@
+---
+layout: page
+title: Pace Tables
+permalink: /tools/pace/
+nav_parent: tools
+weight: 2
+description: Min per mile and min per kilometer references plus common race pace tables.
+---
+
+<div class="tools-page tools-pace-page">
+  <section class="tools-hero">
+    <p class="tools-kicker">Running math</p>
+    <h1 class="tools-title">Pace tables that answer the usual questions quickly</h1>
+    <p class="tools-lead">
+      Convert pace between imperial and metric, then scan a race table for 5K, 10K,
+      half marathon, and marathon finish times.
+    </p>
+  </section>
+
+  <div class="tools-grid">
+    <section class="tools-card">
+      <p class="tools-kicker">Converter</p>
+      <h2>Pace converter</h2>
+      <p class="tools-helper">Enter a pace in either unit and the page fills in the rest.</p>
+
+      <div class="form-row">
+        <div class="form-group col-sm-4">
+          <label for="pace-minutes">Minutes</label>
+          <input id="pace-minutes" class="form-control" type="number" min="0" step="1" value="8">
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="pace-seconds">Seconds</label>
+          <input id="pace-seconds" class="form-control" type="number" min="0" max="59" step="1" value="0">
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="pace-unit">Unit</label>
+          <select id="pace-unit" class="form-control">
+            <option value="mi">Per mile</option>
+            <option value="km">Per kilometer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="tools-metrics">
+        <div class="tools-metric">
+          <span class="tools-metric-label">Equivalent pace</span>
+          <strong id="pace-converted">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Speed</span>
+          <strong id="pace-speed">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">5K finish</span>
+          <strong id="pace-5k">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">10K finish</span>
+          <strong id="pace-10k">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Half marathon</span>
+          <strong id="pace-half">Loading...</strong>
+        </div>
+        <div class="tools-metric">
+          <span class="tools-metric-label">Marathon</span>
+          <strong id="pace-marathon">Loading...</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools-table-card">
+      <p class="tools-kicker">Reference</p>
+      <h2>Common pace table</h2>
+      <p class="tools-helper">A practical range from easy long-run pace to quick race pace.</p>
+      <div class="tools-table-wrap">
+        <table class="table tools-table" id="pace-table">
+          <thead>
+            <tr>
+              <th>Pace / mi</th>
+              <th>Pace / km</th>
+              <th>5K</th>
+              <th>10K</th>
+              <th>Half</th>
+              <th>Marathon</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script src="{{ '/assets/js/tools.js' | relative_url }}"></script>
