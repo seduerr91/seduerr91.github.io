@@ -103,6 +103,21 @@ body { font-family: "Poppins", sans-serif; }
 .post.card { border-radius: 15px; text-decoration: none !important; padding: 15px; height: 100%; }
 .post.card .card-footer { font-size: 14px; margin: 0 -15px -15px -15px; padding: 15px 35px; }
 
+.post.card.blog-card { border: 0; background-color: var(--blog-card-color); box-shadow: 0 10px 24px rgba(20, 31, 48, 0.12); transition: transform 180ms ease, box-shadow 180ms ease; }
+.post.card.blog-card:hover { color: rgba(255, 255, 255, 0.9); transform: translateY(-3px); box-shadow: 0 16px 32px rgba(20, 31, 48, 0.2); }
+.post.card.blog-card .blog-badge { background-color: rgba(255, 255, 255, 0.92); color: var(--blog-card-color) !important; }
+.post.card.blog-card .card-footer { background-color: rgba(0, 0, 0, 0.08); }
+
+.blog-card-ocean { --blog-card-color: #35658f; }
+
+.blog-card-forest { --blog-card-color: #3f754d; }
+
+.blog-card-teal { --blog-card-color: #2f7774; }
+
+.blog-card-amber { --blog-card-color: #9a640e; }
+
+.blog-card-berry { --blog-card-color: #a64d5b; }
+
 .post-metadata { font-size: 14px; margin-top: -6px; }
 .post-metadata .tag:hover { background-color: #000000; color: dark !important; }
 

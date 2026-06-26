@@ -2,15 +2,18 @@
 {%- assign card_style  = '' -%}
 {%- assign text_style  = 'text-themed' -%}
 {%- assign badge_style = 'badge-dark' -%}
+{%- assign card_colors = 'ocean,forest,teal,amber,berry' | split: ',' -%}
+{%- assign title_seed = post.title | size -%}
+{%- assign date_seed = post.date | date: '%j' | plus: 0 -%}
+{%- assign color_seed = title_seed | plus: date_seed -%}
+{%- assign color_index = color_seed | modulo: card_colors.size -%}
+{%- assign card_color = card_colors[color_index] -%}
 
 {%- comment -%} Update Styles {%- endcomment -%}
 {%- if post.style == 'fill' -%}
-  {%- assign card_style = post.color | prepend: 'bg-' -%}
-  {%- if post.color != 'light' -%}
-    {%- assign text_style  = 'text-white' -%}
-    {%- assign badge_style = 'badge-light text-' -%}
-    {%- assign badge_style = badge_style | append: post.color -%}
-  {%- endif -%}
+  {%- assign card_style = card_color | prepend: 'blog-card blog-card-' -%}
+  {%- assign text_style  = 'text-white' -%}
+  {%- assign badge_style = 'blog-badge' -%}
 {%- else -%}
   {%- assign card_style = post.color | prepend: 'border border-' -%}
   {%- if post.color -%}
