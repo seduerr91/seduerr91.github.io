@@ -11,8 +11,8 @@
 <!-- List tags & related posts -->
 {% for tag in tags %}
 <div class="py-3">
-  <h4 id="{{ tag | slugify }}">{{ tag }}</h4>
-  <ol>
+  <h2 id="{{ tag | slugify }}">{{ tag }}</h2>
+  <ol class="tag-post-list">
   {% for post in site.posts %}
     {%- if post.tags contains tag -%}
       {%- if post.external_url -%}
@@ -20,12 +20,12 @@
       {%- else -%}
         {%- assign url = post.url | relative_url -%}
       {%- endif -%}
-    <a href="{{ url }}"><li>{{ post.title }}</li></a>
-    <small class="text-muted"> - {{ post.date | date_to_long_string }}</small>
-    <br/>
+    <li>
+      <a href="{{ url }}">{{ post.title }}</a>
+      <small class="text-muted">{{ post.date | date: "%B %-d, %Y" }}</small>
+    </li>
     {%- endif -%}
   {% endfor %}
   </ol>
 </div>
-<hr class="bg-light">
 {% endfor %}

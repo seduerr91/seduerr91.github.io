@@ -203,9 +203,12 @@ Then, start streaming by calling:
 POST /start?topic=Semiconductors&power_mode=true
 ```
 
-Finally, connect a WebSocket client to receive structured JSON in real time and render it in your dashboard. The demo GIF shows the pipeline ingesting an article and emitting a schema-compliant analysis with sentiment, entities, and impact.
+Finally, connect a WebSocket client to receive structured JSON in real time and render it in your dashboard. The demo shows the pipeline ingesting an article and emitting a schema-compliant analysis with sentiment, entities, and impact.
 
-![Demo GIF](..assets/gifs/cerebras_realtime_analysis.gif)
+<video class="post-video" controls autoplay muted loop playsinline preload="metadata" poster="/assets/gifs/cerebras_realtime_analysis-poster.jpg">
+  <source src="/assets/gifs/cerebras_realtime_analysis.mp4" type="video/mp4">
+  Your browser does not support the demo video.
+</video>
 
 ## How This Compares in Practice
 

@@ -27,7 +27,7 @@ $dark-900: #17191a;
   input {
     background-color: $dark-300;
     border-color: $dark-100;
-    color: $dark-900;
+    color: $text-white;
 
     &::placeholder {
       color: rgba($text-white, 0.64);
@@ -80,5 +80,71 @@ $dark-900: #17191a;
   // Timeline 
   .timeline-body .timeline-item:after{
     background-color: $dark-900;
+  }
+
+  .archive-header > p:last-child,
+  .ai-lead > p:not(.section-kicker),
+  .reading-lens-grid p,
+  .featured-post-body > p:last-child,
+  .topic-paths span,
+  .latest-date,
+  .archive-result-count,
+  .post-subscribe span,
+  .portfolio-case-label,
+  .featured-post-meta {
+    color: rgba(255, 255, 255, 0.68);
+  }
+
+  .section-kicker {
+    color: rgba(170, 203, 235, 0.7);
+  }
+
+  .featured-post,
+  .portfolio-case,
+  .post-navigation a {
+    background: $dark-600;
+    border-color: rgba(255, 255, 255, 0.13);
+  }
+
+  .archive-controls,
+  .archive-year-heading,
+  .reading-lens-grid,
+  .reading-lens-grid > div + div,
+  .topic-paths,
+  .topic-paths a,
+  .latest-list,
+  .latest-list a,
+  .related-post-list a,
+  .post-subscribe,
+  .ai-lead {
+    border-color: rgba(255, 255, 255, 0.13);
+  }
+
+  .archive-filter {
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+
+  .archive-search-symbol {
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  .ai-lead {
+    border-left-color: #4ba3f2;
+  }
+
+  .social-links a,
+  .footer-note a,
+  .section-link {
+    color: #75baff;
+  }
+
+  .footer-note.text-muted {
+    color: #adb5bd !important;
+  }
+
+  .social-links a:hover,
+  .footer-note a:hover,
+  .section-link:hover {
+    color: #a8d4ff;
   }
 }

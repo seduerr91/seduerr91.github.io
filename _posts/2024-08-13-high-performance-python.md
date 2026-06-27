@@ -1,6 +1,6 @@
 ---
 title: High Performance Python Summary
-tags: [Life]
+tags: [Engineering]
 style: fill
 color: success
 description: A summary of all 14 chapters of the book High Performance Python.

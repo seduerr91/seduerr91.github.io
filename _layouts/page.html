@@ -3,5 +3,10 @@ layout: default
 ---
 
 <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  {% unless content contains "<h1" %}
+    {% if page.title %}
+      <h1 class="page-title">{{ page.title }}</h1>
+    {% endif %}
+  {% endunless %}
   {{ content }}
 </div>

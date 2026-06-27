@@ -6,8 +6,6 @@ color: success
 description: Gaining valuable insights by questioning a 10-k report
 ---
 
-# An Account Executives Approach to Cold Calling
-
 [Ben Riall](https://www.linkedin.com/in/ben-riall-ab24a246) works for Adobe as an executive account manager. He has started and successfully excited a company, has written a book, and currently creates an online course. 
 
 With thirty big accounts a year, he is very very careful on who to engage with. And he makes sure he know everything. Therefore, he reads business and annual reports ([10-k](https://www.investopedia.com/terms/1/10-k.asp)), and looks for certain aspects such as: ’Does the target company grow in digital experiences (or is this a strategic initiative)?’, because then he has a reason to contact someone in that enterprise. In such a target company there are 10 people that are relevant to contact.
@@ -24,7 +22,7 @@ Questions he would ask are:
 
 So how can we parse and get answers to these questions? 
 
-# Better Retrieval via "Dense Passage Retrieval"
+## Better Retrieval via "Dense Passage Retrieval"
 
 The Retriever has a huge impact on the performance of our overall search pipeline. It can be sparse or dense.
 

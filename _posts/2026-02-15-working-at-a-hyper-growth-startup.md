@@ -6,8 +6,6 @@ color: success
 description: Reflections on intense weeks, staying sane, and protecting time while working in hyper-growth.
 ---
 
-# Working at a Hyper Growth Startup
-
 ![[office](https://source.unsplash.com/BC_lzmF2R94/1600x900)](https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 *Photo by [Marvin Meyer](https://unsplash.com/@silverkblack) on [Unsplash](https://unsplash.com)*

@@ -6,8 +6,6 @@ color: success
 description: Techniques to evaluate AI systems effectively
 ---
 
-# AI Evaluation Pipeline Study Guide
-
 ## Overview
 
 AI application success depends on the ability to differentiate good outcomes from bad outcomes. This requires a reliable evaluation pipeline. This guide covers comprehensive evaluation techniques for open-ended AI tasks.

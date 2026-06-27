@@ -33,6 +33,15 @@ permalink: /cv/
   <div class="cv-section">
     <h2>Professional Experience</h2>
     <div class="cv-item">
+      <h3>CEREBRAS - Senior Member of Technical Staff</h3>
+      <p>October 2025 - Present</p>
+      <ul>
+        <li><strong>Ecosystem Engineer:</strong> Contribute to open-source software on behalf of Cerebras, represent the company at conferences, and grow the developer community.</li>
+        <li><strong>Reliability Engineer:</strong> Build data pipelines and executive dashboards, and implement observability platforms.</li>
+        <li><strong>Inference AI Lead:</strong> Orchestrate AI initiatives across the Cerebras Inference organization.</li>
+      </ul>
+    </div>
+    <div class="cv-item">
       <h3>CORDIAL - Lead Developer AI & Automation</h3>
       <p>January 2024 - May 2025</p>
       <ul>

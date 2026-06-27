@@ -6,13 +6,11 @@ style: fill
 color: success
 ---
 
-# Main Shift in AI in early 2024
-
 Recently, a significant shift has occurred from text generation (e.g., generating subject lines or database queries) to drive agentic decision-making. In this paradigm, the AI encounters a problem, is equipped with tools to address it, and independently determines a course of action to achieve an objective and resolve the problem.
 It is worth noting that such agentic endeavors are currently limited by slow processing and response times. Increasing tokens-per-minute (TPM) is a key objective for many companies, and the success of agent interaction has been demonstrated in tests that employed GPT-4 for the task of generating a newsletter from the crawled subreddit LocalLLama.
 Nonetheless, advancements in the areas of increasing TPM, hosting local LLMs, continuous improvements in models (such as Gemini Ultra or the next GPT iteration), and enhanced opportunities for retrieval augmented generation, wider context spans (e.g., Gemini's 1.5M tokens), and fine-tuning LLMs (e.g., PEFT and Lightning AI) are poised to overcome these limitations in the foreseeable future.
 
-# Technical Perspective: CompilerCrew & Memory
+## Technical Perspective: CompilerCrew & Memory
 
 The following layers are considered important for an agentic state-of-the-art AI architecture:
 

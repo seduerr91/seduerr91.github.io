@@ -2,33 +2,84 @@
 layout: page
 ---
 
-<h1><b>{{ page.title }}</b></h1>
+<article class="post-article">
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
 
-<p class="post-metadata text-muted">
-  {{ page.date | date_to_long_string }} -  
-  <b>
-  {%- assign words = content | number_of_words -%}
-  {%- if words < 360 -%}
-    less than 1 min read time
-  {%- else -%}
-    {{ words | divided_by: 180 }} mins read time
-  {%- endif -%}
-  </b>
+    <p class="post-metadata text-muted">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+      <span aria-hidden="true">·</span>
+      {%- assign words = content | number_of_words -%}
+      {%- if words < 360 -%}
+        less than 1 min read
+      {%- else -%}
+        {{ words | divided_by: 180 }} min read
+      {%- endif -%}
 
-  <br>
+      {%- if page.tags != empty -%}
+        <br>
+        <span class="sr-only">Tags:</span>
+        {% for tag in page.tags %}
+          <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}">
+            <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
+          </a>
+        {% endfor %}
+      {%- endif -%}
+    </p>
+  </header>
 
-  {%- if page.tags != empty -%}
-    Tags: 
-    {% for tag in page.tags %}
-    <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}">
-      <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
+
+{% if page.collection == "posts" %}
+  {% assign primary_tag = page.tags | first %}
+  {% assign related_count = 0 %}
+  <aside class="related-posts" aria-labelledby="related-posts-title">
+    <div class="archive-year-heading">
+      <h2 id="related-posts-title">Related writing</h2>
+    </div>
+    <div class="related-post-list">
+      {% for related in site.posts %}
+        {% if related.url != page.url and related.tags contains primary_tag and related_count < 3 %}
+          <a href="{{ related.url | relative_url }}">
+            <span>{{ related.date | date: "%Y" }}</span>
+            <strong>{{ related.title }}</strong>
+            <span aria-hidden="true">→</span>
+          </a>
+          {% assign related_count = related_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </aside>
+{% endif %}
+
+<nav class="post-navigation" aria-label="Article navigation">
+  {% if page.previous %}
+    <a class="post-navigation-previous" href="{{ page.previous.url | relative_url }}">
+      <span>Previous</span>
+      <strong>{{ page.previous.title }}</strong>
     </a>
-    {% endfor %}
-  {%- endif -%}
+  {% endif %}
+  {% if page.next %}
+    <a class="post-navigation-next" href="{{ page.next.url | relative_url }}">
+      <span>Next</span>
+      <strong>{{ page.next.title }}</strong>
+    </a>
+  {% endif %}
+</nav>
 
-</p>
-
-{{ content }}
+<aside class="post-subscribe">
+  <strong>Keep reading</strong>
+  {% if page.collection == "ai_daily" %}
+    <span>Follow the AI Daily digest without checking the archive.</span>
+    <a href="{{ '/feed/ai-daily.xml' | relative_url }}">AI Daily RSS</a>
+  {% else %}
+    <span>New essays are available in the site feed.</span>
+    <a href="{{ '/feed.xml' | relative_url }}">Subscribe via RSS</a>
+  {% endif %}
+</aside>
 
 {% if page.comments %}
 <div class="pt-5">

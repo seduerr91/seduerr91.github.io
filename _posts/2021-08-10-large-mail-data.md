@@ -1,12 +1,10 @@
 ---
-title: Using a lot of mails.
+title: Working With Large-Scale Email Data
 tags: [Persuaide, engineering]
 style: fill
 color: success
-description: Using a lot of mails.
+description: Sourcing, parsing, and preparing public email datasets for language-model experiments.
 ---
-
-# ✉️ Sourcing Large Scale Email Data
 
 In order to write intro & extroverted mail texts, we need mail data as a base. The problem about mails is that they are usually highly personal  or proprietary which is why there is little available. While you can crawl a forum or a chat to get data it is hard to collect mail data. 
 There is some publicly available mail datasets since the leakage of the Enron email dataset upon its scandal in 2001 or the leakage of Hillary Clinton’s personal emails in the context of the 2016 US presidential elections, but there quality, timeliness and quantity is rather little. 
@@ -18,7 +16,7 @@ Out of preference, the author uses Python Pandas on a Google Colab Infrastructur
 
 ![Screenshot-2021-09-12-at-22-01-21.png](https://i.postimg.cc/tCWCn07r/Screenshot-2021-09-12-at-22-01-21.png)](https://postimg.cc/KRcyCHPL)
 
-# An exemplary email 📃
+## An exemplary email 📃
 
 
 Before exploring the structure of the entire dataset, we look on a single mail to get an overview. 
@@ -30,7 +28,7 @@ We do not see much value in evaluating the message signature (msig) since it is 
 
 ![Screenshot-2021-09-12-at-22-03-00.png](https://i.postimg.cc/WzMLzvSg/Screenshot-2021-09-12-at-22-03-00.png)](https://postimg.cc/2L8X9gsS)
 
-# Getting a Data Overview
+## Getting a Data Overview
 
 Before writing the first line of code, we take a brief look at all the different columns names (i.e. headers) available and get a bird’s eye view of the data we are dealing with.
 (1) Starting from the highest nesting level ‘Available Columns’ allows us to filter the language we are interested in (en) and allows us to get the groups (i.e., domains in which text is written) that we are actually interested in (e.g., arts, history, business, money). This step drastically reduces the amount of relevant mails to process (since we exclude major topics such as os). Obviously, we want to consider the text_plain as the core of our dataset.
@@ -40,7 +38,7 @@ Before writing the first line of code, we take a brief look at all the different
 ![Screenshot-2021-09-12-at-22-04-01.png](https://i.postimg.cc/T3NSR1GB/Screenshot-2021-09-12-at-22-04-01.png)](https://postimg.cc/68Rzc98h)
 
 
-# Parsing .json
+## Parsing .json
 
 At this level the coding section starts, and albeit the introduction part is left out (importing packages, connecting to Google Drive), and reading the json files in, and concatenating them to a pandas dataframe.
 Yet, we only have the nested structure of the json files, so they need to be flattened. 
@@ -52,7 +50,7 @@ The parsing happened up to a nesting level of 6, since that was considered to be
 
 ![Screenshot-2021-09-12-at-22-04-35.png](https://i.postimg.cc/DZn1HQHh/Screenshot-2021-09-12-at-22-04-35.png)](https://postimg.cc/p9c9njPc)
 
-# 💿 Sentence-level Email Data 
+## 💿 Sentence-level Email Data
 
 The objective is to get properly written email styled sentences that are below 512 tokens length. These shall be linguistically and semantically correct under the consideration of the following aspects:
 
@@ -66,7 +64,7 @@ The objective is to get properly written email styled sentences that are below 5
 
 Therefore, replacements, regex cleanups, and the splitting into sentences based on the statistical model of SpaCy is conducted. Since we are dealing with millions of sentences, it helps to parallelize and batch this process.
 
-# 💥 Some Data Augmentation Secrets
+## 💥 Some Data Augmentation Secrets
 
 Lastly, we are going to add some natural language processing sugar to our already almost picture perfect email dataset.
 Up until now, we have not accounted for spelling errors, and semantic and syntactic correctness in our dataset.

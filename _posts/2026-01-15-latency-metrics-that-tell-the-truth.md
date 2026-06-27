@@ -4,9 +4,12 @@ tags: [Performance, Monitoring, Engineering, APIs]
 style: fill
 color: success
 description: A practical guide to latency metrics that reflect real user experience - p50, p95, p99, and why averages lie.
+image: https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop
+card_image: https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=420&auto=format&fit=crop
+card_image_2x: https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=760&auto=format&fit=crop
+featured: true
+featured_order: 1
 ---
-
-# Latency Metrics That Actually Tell the Truth
 
 ![analytics](https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 

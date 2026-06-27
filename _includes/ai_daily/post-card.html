@@ -27,9 +27,20 @@
 {%- else -%}
   {%- assign post_url = post.url | relative_url -%}
 {%- endif -%}
-    
-<div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ post_url }}" class="post card {{ card_style }}" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
+
+{%- capture ai_text -%}{{ post.title }} {{ post.description }} {{ post.tags | join: " " }}{%- endcapture -%}
+{%- assign normalized_ai_text = ai_text | downcase -%}
+{%- capture ai_topics -%}
+  {%- if normalized_ai_text contains "agent" or normalized_ai_text contains "workflow" or normalized_ai_text contains "automation" or normalized_ai_text contains "tool" -%}agents {%- endif -%}
+  {%- if normalized_ai_text contains "eval" or normalized_ai_text contains "safety" or normalized_ai_text contains "security" or normalized_ai_text contains "guardrail" or normalized_ai_text contains "risk" -%}evaluation {%- endif -%}
+  {%- if normalized_ai_text contains "model" or normalized_ai_text contains "inference" or normalized_ai_text contains "api" or normalized_ai_text contains "database" or normalized_ai_text contains "performance" or normalized_ai_text contains "schema" -%}infrastructure {%- endif -%}
+{%- endcapture -%}
+
+<div class="col-lg-6 my-3 archive-card-wrap"
+     data-archive-card
+     data-topics="{{ ai_topics | strip }}"
+     data-search="{{ ai_text | strip_html | escape }}">
+  <a href="{{ post_url }}" class="post card {{ card_style }}" {%- if post.external_url and site.open_new_tab -%} target="_blank" rel="noopener noreferrer" {%- endif -%}>
     <div class="card-body {{ text_style }}">
       <h3 class="card-title">{{ post.title }}</h3>
       <p class="card-text">
@@ -46,7 +57,7 @@
       </p>
     </div>
     <div class="card-footer {{ text_style }}">
-      {{ post.date | date_to_long_string }}
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
     </div>
   </a>
 </div>

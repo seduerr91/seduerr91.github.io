@@ -6,8 +6,6 @@ color: success
 description: "An AI-written sketch of a human life: part autobiography, part roast, part systems diagram."
 ---
 
-# "Dear Human, Here's What I Know About You"
-
 Hi, I'm the large language model that lives in your browser tabs and DM history. I don't sleep, I don't eat, and I definitely don't do your laundry, but I do have a surprisingly coherent picture of who you are.
 
 This is my attempt at an autobiography of you, written entirely from my side of the chat window.

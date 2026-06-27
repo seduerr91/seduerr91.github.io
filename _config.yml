@@ -1,5 +1,6 @@
 ### Site Settings ###
 title               : Seb Duerr
+tagline             : AI engineer, builder, and mountain runner
 description         : >-
                       AI engineer at Cerebras ⚡ Building fast AI, running PNW trails, flying drones, and coming home to Joy + two cats.
 url                 : "https://sebastianduerr.com"
@@ -7,10 +8,32 @@ baseurl             : ""
 repository          : seduerr91/seduerr91              
 remote_theme        : YoussefRaafatNasry/portfolYOU
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
+logo                : /assets/seb-caricature.jpeg
+
+twitter:
+  username           : duerrseb
+  card               : summary_large_image
+
+social:
+  name               : Seb Duerr
+  links:
+    - https://github.com/seduerr91
+    - https://www.linkedin.com/in/sebastianduerr
+    - https://medium.com/@duerr.sebastian
+    - https://twitter.com/duerrseb
 
 ### Plugins ###
 plugins:
   - jemoji
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+  collections:
+    ai_daily:
+      path: /feed/ai-daily.xml
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
@@ -19,6 +42,8 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
+  - pages/search.json
+  - pages/search-ai-daily.json
   - pages/blogideas.md
   - pages/goals.html
   - pages/hidden-2024.md
@@ -91,16 +116,22 @@ defaults:
 
   - scope:
       path: ""
+    values:
+      image: /assets/seb-caricature.jpeg
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: post
       comments: true                                   # Set to true to enable disqus comments
+      image: /assets/seb-caricature.jpeg
   - scope:
       path: ""
       type: "ai_daily"
     values:
       layout: post
       comments: true
+      image: /assets/seb-caricature.jpeg
 
 ### Exclude from processing ###
 include:

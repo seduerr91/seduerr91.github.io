@@ -1,20 +1,47 @@
-<div class="container-fluid justify-content-center">
-
-    {%- assign unfocused_color = "6c757d" -%}
-  
-    {% for account in site.author %}
-  
-      {%- assign service_name = account[0] -%}
-      {%- assign service_data = site.data.social-media[service_name] -%}
-      {%- if service_data -%}    
-      <a class="social mx-1"  href="{{ service_data.url }}{{ account[1] }}"
-         style="color: #{{ unfocused_color }}"
-         onMouseOver="this.style.color='#{{ service_data.color }}'"
-         onMouseOut="this.style.color='#{{ unfocused_color }}'">
-        <i class="{{ service_data.icon }} fa-1x"></i>
-      </a>
-      {%- endif -%}
-    
-    {% endfor %}
-  
-  </div>
+<nav class="social-links" aria-label="Social links">
+  {% if site.author.github %}
+    <a
+      aria-label="GitHub"
+      href="https://github.com/{{ site.author.github }}"
+      rel="me noopener noreferrer"
+      title="GitHub"
+    >
+      <img src="{{ '/assets/social/github.png' | relative_url }}" alt="" width="22" height="22">
+    </a>
+  {% endif %}
+  {% if site.author.linkedin %}
+    <a
+      aria-label="LinkedIn"
+      href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
+      rel="me noopener noreferrer"
+      title="LinkedIn"
+    >
+      <img src="{{ '/assets/social/linkedin.png' | relative_url }}" alt="" width="22" height="22">
+    </a>
+  {% endif %}
+  {% if site.author.medium %}
+    <a
+      aria-label="Medium"
+      href="https://medium.com/@{{ site.author.medium }}"
+      rel="me noopener noreferrer"
+      title="Medium"
+    >
+      <img src="{{ '/assets/social/medium.png' | relative_url }}" alt="" width="22" height="22">
+    </a>
+  {% endif %}
+  {% if site.author.kaggle %}
+    <a
+      aria-label="Kaggle"
+      href="https://www.kaggle.com/{{ site.author.kaggle }}"
+      rel="me noopener noreferrer"
+      title="Kaggle"
+    >
+      <img src="{{ '/assets/social/kaggle.png' | relative_url }}" alt="" width="22" height="22">
+    </a>
+  {% endif %}
+  {% if site.author.email %}
+    <a aria-label="Email" href="mailto:{{ site.author.email }}" title="Email">
+      <img src="{{ '/assets/social/email.png' | relative_url }}" alt="" width="22" height="22">
+    </a>
+  {% endif %}
+</nav>

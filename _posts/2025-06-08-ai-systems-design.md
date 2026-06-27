@@ -6,8 +6,6 @@ color: success
 description: Building AI systems with monitoring and feedback
 ---
 
-# AI Engineering Architecture and User Feedback Study Guide
-
 ## Overview
 This chapter explores how to combine various AI engineering techniques into production-ready applications. It covers system architecture design and user feedback collection for continuous improvement through data flywheels.
 

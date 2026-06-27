@@ -6,8 +6,6 @@ color: success
 description: An exploration of diverse and enriching activities designed to strengthen bonds with friends and loved ones, with a personal touch.
 ---
 
-## Enjoying Time with Friends: Activities That Foster Bonding and Fun
-
 When I’m with friends, I thrive on creating moments that are not only enjoyable but also enrich our collective experiences. Being surrounded by likeminded individuals who share my interests in technology, languages, and cultural exploration offers numerous possibilities for cultivating deeper friendships while engaging in stimulating activities. Here's a table summarizing the vibrant activities we partake in:
 
 | Activity Type              | Description                                                             | Friends Involved        |

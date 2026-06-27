@@ -6,8 +6,6 @@ color: success
 description: How Google authentication, Go, AI, and DigitalOcean came together in a fast and focused reading app.
 ---
 
-# Building KeyTakes: A Lean Stack for an AI Reading App
-
 Books contain an incredible amount of leverage. One idea can change how you work, make decisions, or look at the world.
 
 The problem is time.

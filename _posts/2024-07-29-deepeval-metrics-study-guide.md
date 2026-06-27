@@ -6,8 +6,6 @@ color: success
 description: A complete guide to the evaluation metrics available in DeepEval.
 --- 
 
-## Introduction to DeepEval Metrics
-
 DeepEval provides a powerful and extensible suite of metrics for evaluating Large Language Models (LLMs) and LLM-powered applications. These metrics are essential for ensuring the quality, safety, and performance of systems in both development and production. This guide consolidates the key information about each metric to serve as a quick reference for interview preparation.
 
 Metrics in DeepEval can be broadly categorized into:

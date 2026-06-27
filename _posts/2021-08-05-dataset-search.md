@@ -1,12 +1,10 @@
 ---
-title: Finding a base datasets 
+title: Finding a Base Dataset
 tags: [Persuaide, engineering]
 style: fill
 color: success
-description: Finding a dataset for your purpose.
+description: How to find a useful base dataset for a text-to-text machine learning task.
 ---
-
-## 🔎 Dataset Search
 
 In order to teach new downstream tasks to deep neural network models like T5, we need to find datasets that are in line with the input and output the model is used for. 
 T5 is a text-to-text model which means that it has seen a lot of inputs, and a lot  of outputs, and infers the differences between them. 
@@ -39,5 +37,3 @@ Length of individual data point: Another consideration is the length of a given 
 - Cleanliness of dataset (‘garbage in, garbage out’): Last but not least it is crucial to feed the deep neural network with clean data in the process of fine-tuning. Certainly  some errors may help to allow the deep neural network to generalize also to erroneous writing. However, it shall not learn certain bad styles which is why I recommend to use APIs such as GingerIT to augment the data and avoid traditional pitfalls like wrong inflections of verbs or an incorrect number of a nouns ;).  
 
 In the course of this case study, we will work with mail data to be able to change the character of a text from introvert to extrovert an the reverse. Therefore, we will need a dataset composed oof mails as a base.
-
- 

@@ -6,8 +6,6 @@ color: success
 description: A reflection on making the most of an unexpected summer off after being laid off.
 ---
 
-# The Best Summer After a Layoff: How I Turned a Setback Into Transformation
-
 ![mountain lake](https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop)
 
 *Photo by [Kalen Emsley](https://unsplash.com/@kalenemsley) on [Unsplash](https://unsplash.com)*

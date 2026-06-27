@@ -21,6 +21,11 @@
   .navbar-nav .nav-link {
     @include themed(color, rgba($text-black, 0.5), rgba($text-white, 0.5));
   }
+
+  .navbar-toggler,
+  .theme-toggle {
+    @include themed(color, $text-black, $text-white);
+  }
 }
 
 .text-themed {
@@ -30,4 +35,3 @@
 .bg-themed {
   @include themed(background-color, $light, $dark);
 }
-

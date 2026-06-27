@@ -6,8 +6,6 @@ color: success
 description: Memorizing Pickle Tips
 ---
 
-## Tips to get better at Pickleball
-
 ### No. 1 Skill: Hit the kitchen from everywhere (drop shot, reset, dinks)
 
 [Video](https://www.youtube.com/watch?v=LExK3HvgODU)

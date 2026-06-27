@@ -6,8 +6,6 @@ style: fill
 color: success
 ---
 
-# Objective
-
 I want to become/grow as an AI Engineer. Therefore, I want to reiterate and grow my engineering skills. 
 
 My objective is two achieve this with three aspects:

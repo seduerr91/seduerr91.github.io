@@ -1,21 +1,85 @@
-<div id="particles-js"></div>
-<div class="row justify-content-center align-items-center p-4 landing-content">
-  <div class="col-lg-8 col-md-10 text-center mt-4">
-    <h1 class="landing-title text-themed wow animated slideInUp" data-wow-delay=".1s">{{ site.author.name }}</h1>
-    <p class="landing-tagline text-themed wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
-    <div class="landing-live-info text-themed wow animated slideInUp" data-wow-delay=".2s">
-      <div class="landing-live-line">
-        <span class="landing-live-prefix">Seattle</span>
-        <span id="clock-seattle" class="landing-live-value">Loading...</span>
-      </div>
-      <div class="landing-live-line">
-        <span class="landing-live-prefix">Frankfurt</span>
-        <span id="clock-frankfurt" class="landing-live-value">Loading...</span>
-      </div>
-      <div class="landing-live-line">
-        <span class="landing-live-prefix">Issaquah Weather</span>
-        <span id="weather-issaquah" class="landing-live-value">Loading weather...</span>
-      </div>
+<section class="landing-hero" aria-labelledby="landing-title">
+  <div class="landing-content">
+    <p class="landing-eyebrow">AI engineer · pilot · mountain runner</p>
+    <h1 id="landing-title" class="landing-title">{{ site.author.name }}</h1>
+    <p class="landing-tagline">{{ site.description }}</p>
+
+    <div class="landing-actions">
+      <a class="btn btn-primary" href="{{ '/blog/' | relative_url }}">Read the blog</a>
+      <a class="btn btn-outline-light" href="{{ '/public/' | relative_url }}">Explore my work</a>
+    </div>
+
+    <div class="landing-live-info" aria-label="Current local information">
+      <span><strong>Seattle</strong> <span id="clock-seattle">--:--</span></span>
+      <span aria-hidden="true">·</span>
+      <span><strong>Frankfurt</strong> <span id="clock-frankfurt">--:--</span></span>
+      <span aria-hidden="true">·</span>
+      <span><strong>Issaquah</strong> <span id="weather-issaquah">Weather loading</span></span>
     </div>
   </div>
-</div>
+</section>
+
+{% assign featured_posts = site.posts | where: "featured", true | sort: "featured_order" %}
+<section class="home-section" aria-labelledby="featured-heading">
+  <div class="home-section-heading">
+    <div>
+      <p class="section-kicker">A few favorites</p>
+      <h2 id="featured-heading">Featured writing</h2>
+    </div>
+    <a class="section-link" href="{{ '/blog/' | relative_url }}">All articles <span aria-hidden="true">→</span></a>
+  </div>
+
+  <div class="row">
+    {% for post in featured_posts limit: 3 %}
+      {% include home/featured-post.html post=post %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-section home-topics" aria-labelledby="topics-heading">
+  <div class="home-section-heading">
+    <div>
+      <p class="section-kicker">Recurring themes</p>
+      <h2 id="topics-heading">Explore by topic</h2>
+    </div>
+  </div>
+
+  <div class="topic-paths">
+    <a href="{{ '/blog/?filter=ai-engineering' | relative_url }}">
+      <strong>AI &amp; Engineering</strong>
+      <span>Inference, evaluations, systems, and the craft of building software.</span>
+    </a>
+    <a href="{{ '/blog/?filter=running-pnw' | relative_url }}">
+      <strong>Running &amp; PNW</strong>
+      <span>Mountain miles, race strategy, gear, and life outside.</span>
+    </a>
+    <a href="{{ '/blog/?filter=travel' | relative_url }}">
+      <strong>Travel</strong>
+      <span>Itineraries, places, and lessons gathered across countries.</span>
+    </a>
+    <a href="{{ '/blog/?filter=personal' | relative_url }}">
+      <strong>Personal</strong>
+      <span>Work, relationships, goals, reflection, and the shape of a good life.</span>
+    </a>
+  </div>
+</section>
+
+<section class="home-section home-latest" aria-labelledby="latest-heading">
+  <div class="home-section-heading">
+    <div>
+      <p class="section-kicker">Fresh notes</p>
+      <h2 id="latest-heading">Latest posts</h2>
+    </div>
+    <a class="section-link" href="{{ '/feed.xml' | relative_url }}">Subscribe via RSS</a>
+  </div>
+
+  <div class="latest-list">
+    {% for post in site.posts limit: 4 %}
+      <a href="{{ post.url | relative_url }}">
+        <span class="latest-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <strong>{{ post.title }}</strong>
+        <span aria-hidden="true">→</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>

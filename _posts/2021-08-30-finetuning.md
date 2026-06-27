@@ -11,7 +11,7 @@ In this article, I show how to invoke creativity in your text generation through
 ![Imgur](https://i.imgur.com/v6DFBE0.png)
 
 
-This project was concluded with the help of Javier of [Narrativa](www.narrativa.com) a Spanish deep learning company that helps companies, such as the Wall Street Journal, to create texts with the help of AI. In this article, we explain how we finetune the architecture T5 with the dataset PAWS (both from Google) to get the capability of creating paraphrases (or pawphrases since we are using the PAWS dataset :smile:). With this, we can create paraphrases for any given textual input. 
+This project was concluded with the help of Javier of [Narrativa](https://www.narrativa.com) a Spanish deep learning company that helps companies, such as the Wall Street Journal, to create texts with the help of AI. In this article, we explain how we finetune the architecture T5 with the dataset PAWS (both from Google) to get the capability of creating paraphrases (or pawphrases since we are using the PAWS dataset :smile:). With this, we can create paraphrases for any given textual input.
 
 Find the code for the service in this [Github Repository](https://github.com/seduerr91/pawraphrase_public). In order to create your own __'pawrasphrase tool'__, follow these steps: 
 

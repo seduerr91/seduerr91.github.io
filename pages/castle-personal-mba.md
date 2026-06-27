@@ -1,4 +1,5 @@
 ---
+title: The Personal MBA
 name: The Personal MBA
 tags: [Mental Castle]
 style: fill
@@ -1456,4 +1457,4 @@ description: Budapest
   - Personal development: Every new concept learned opens doors to further exploration and opportunities, enhancing both personal and professional growth.
   - The journey as the reward: Progress and understanding are found in the ongoing process of learning, rather than just reaching a specific destination.
   - Self-reliance: Success and personal growth depend on individual initiative, decision-making, and responsibility for one's own actions and learning.
-  - Continuous improvement: Even successful individuals like Warren Buffett recognize the value in constantly seeking new knowledge and skills to improve themselves and their work. 
+  - Continuous improvement: Even successful individuals like Warren Buffett recognize the value in constantly seeking new knowledge and skills to improve themselves and their work.

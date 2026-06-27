@@ -1,31 +1,63 @@
-.social {
-  text-decoration: none !important;
+footer {
+  margin-top: 5rem;
 }
 
-#attribution {
-  opacity: 0.5;
-  a {
-    text-decoration: none;
-    font-weight: bold;
-  }
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  justify-content: center;
+  margin-bottom: 0.65rem;
 }
 
-@media only screen and (min-width: 768px) {
-  #attribution {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    position: fixed;
-    bottom: 120px;
-    right: 22px;
-  }
+.social-links a {
+  align-items: center;
+  background: #fff;
+  border: 1px solid rgba(17, 24, 39, 0.14);
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.08);
+  display: inline-flex;
+  height: 2.25rem;
+  justify-content: center;
+  text-decoration: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+  width: 2.25rem;
+}
+
+.social-links img {
+  display: block;
+  height: 1.375rem;
+  object-fit: contain;
+  width: 1.375rem;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  border-color: rgba(23, 105, 170, 0.55);
+  box-shadow: 0 3px 8px rgba(17, 24, 39, 0.16);
+  transform: translateY(-1px);
+}
+
+.footer-note a {
+  color: #1769aa;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.footer-note a:hover {
+  color: #0d4f86;
+}
+
+.footer-note {
+  display: block;
 }
 
 .github-footer {
-  font-size: 10px;
   color: #6c757d;
+  font-size: 10px;
+  margin-right: 2em;
+  margin-top: 4em;
+  text-align: right;
   text-decoration: underline;
   text-decoration-color: yellow;
-  text-align: right;
-  margin-top: 4em;
-  margin-right: 2em;
 }
