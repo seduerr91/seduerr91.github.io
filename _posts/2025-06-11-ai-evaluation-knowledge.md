@@ -6,8 +6,6 @@ color: success
 description: Comprehensive guide to AI evaluation methods
 ---
 
-# AI Evaluation Methodology Study Guide
-
 ## Introduction to AI Evaluation
 
 Evaluation has become the biggest hurdle in bringing AI applications to reality. The more AI is used, the more opportunity there is for catastrophic failure. Without proper quality control of AI outputs, the risk of AI might outweigh its benefits for many applications.

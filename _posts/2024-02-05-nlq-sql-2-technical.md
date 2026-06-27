@@ -6,8 +6,6 @@ style: fill
 color: success
 ---
 
-## Article 2 - Technical 
-
 TODO — -Write introductions where we give a high level overview over the individual steps. 
 
 Info: Makefile: We have make comments everywhere. They help to run the code faster. 

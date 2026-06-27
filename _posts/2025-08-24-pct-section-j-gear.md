@@ -8,7 +8,7 @@ description: A comprehensive guide to the gear and supplies needed for backpacki
 
 For backpacking Section J of the Pacific Crest Trail (PCT), which involves rugged and remote terrain, you typically need a comprehensive set of gear and supplies to ensure safety, comfort, and self-sufficiency. Based on general backpacking essentials and your interest in hiking and outdoor sports, here are the usual items you would need:
 
-### Backpacking Essentials for PCT Section J
+### Backpacking Essentials for the Pacific Crest Trail
 
 - **Backpack**: A durable and comfortable backpack with enough capacity.
 - **Shelter**: Lightweight tent & hiking sticks for the tent.

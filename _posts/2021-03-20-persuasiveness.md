@@ -46,7 +46,7 @@ We made textual persuasion measurable, and even provide the code for it. Stay tu
 
 #### Acknolegdements
 
-Thanks to my team at [Persuaide](persuai.de) where we working on technical persuasion. 
+Thanks to my team at [Persuaide](https://persuai.de) where we working on technical persuasion.
 
 #### Who am I?
 
@@ -54,4 +54,4 @@ I am Sebastian and an NLP Deep Learning Research Scientist. In my former life, I
 
 Drop me a message on [LinkedIn](https://www.linkedin.com/in/sebastianduerr/) if you want to get in touch or have any questions. 
 
-# Thank you!
+## Thank you!

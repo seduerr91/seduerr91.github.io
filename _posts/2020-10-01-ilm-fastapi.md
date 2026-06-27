@@ -83,7 +83,7 @@ This micro-service is build on the shoulders of the following giants:
 
 #### Acknolegdements
 
-Thanks to Javier and the team of [Narrativa](narrativa.com) that asked me to host the micro-service. Also, a big thanks to [HuggingFace](huggingface.co), the Team from Stanford around Mr. Donahue. Also, thanks to [WifiTribe](wifitribe.co) with which I am currently living as a Digital Nomad. It is a very amazing bunch of people. I am doing my research and education remotely.
+Thanks to Javier and the team of [Narrativa](https://www.narrativa.com) that asked me to host the micro-service. Also, a big thanks to [HuggingFace](https://huggingface.co), the Team from Stanford around Mr. Donahue. Also, thanks to [WifiTribe](https://wifitribe.co) with which I am currently living as a Digital Nomad. It is a very amazing bunch of people. I am doing my research and education remotely.
 
 #### Who am I?
 

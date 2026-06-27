@@ -6,8 +6,6 @@ color: success
 description: My favorite spots in the Republic of Ireland — Dublin, Kerry, Dingle, Cork, and more — structured as a one-week tour for the second week of May 2026.
 ---
 
-# Ireland for Marla: A Personal Guide to the Emerald Isle
-
 ![Ireland coast](https://images.unsplash.com/photo-1588963940468-9e6e4d202209?q=80&w=2671&auto=format&fit=crop)
 
 *Photo by [Jacek Dylag](https://unsplash.com/@dylag) on [Unsplash](https://unsplash.com)*

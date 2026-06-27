@@ -8,7 +8,7 @@ description: Mental castle on Software Engineering Philosophy inpired by the boo
 
 This mental castle is a walk through Onni, SLU, from the Pickleball Gym to the Fairview Postboxes.
 
-# Design Principles
+## Design Principles
 
 - `Pickleball Gym` Complexity is incremental: you have to sweat the small stuff.
 - `You need players` Working code isn’t enough.
@@ -21,7 +21,7 @@ This mental castle is a walk through Onni, SLU, from the Pickleball Gym to the F
 - `Stairs` Design it twice.
 - `Token` Comments should describe things that are not obvious from the code.
 
-# Red Flags
+## Red Flags
 
 - `Onni Hallway` Shallow Module: the interface for a class or method isn’t much simpler than its implementation.
 - `Renters Office` Information Leakage: a design decision is reflected in multiple modules.

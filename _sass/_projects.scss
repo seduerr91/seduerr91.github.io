@@ -14,3 +14,47 @@
     box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
   }
 }
+
+.portfolio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.portfolio-case-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1.5rem 0 3rem;
+}
+
+.portfolio-case {
+  border: 1px solid rgba(52, 58, 64, 0.16);
+  border-radius: 8px;
+  padding: 1.35rem;
+}
+
+.portfolio-case h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.portfolio-case p {
+  line-height: 1.65;
+}
+
+.portfolio-case-label {
+  color: #617184;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.55rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767.98px) {
+  .portfolio-case-grid {
+    grid-template-columns: 1fr;
+  }
+}

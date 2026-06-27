@@ -6,8 +6,6 @@ color: success
 description: A perspective by me. 
 ---
 
-# What should I do with the rest of my life? 
-
 Like many others, I ask myself this question quite a lot. I also ask other people, read books and watch Ted talks on this question. There is a theme, that I want to outline and answer for myself. This is a personal blog post, that may not give anybody any direction rather than me. It is intended for me as a resource to come back to in case I get lost or struggle with the decisions I make. 
 
 First, though, an evaluation of my status quo (as of August 2024): I am Seb, 32 years old, I swim, I pickle (I play Pickleball), I run 6 miles easily, I cycle, I hike frequently 15 miles and 5k feet elevation and I practice Yoga. From an average perspective, I consider myself **healthy**, I drink little to moderately, I have a coffee addiction, and I sleep 8 hours a night. I got the best **family** in the world: my wondeful **wife Joy**, two cute kittens **Sasha and Simba**, **many friends** in and from many countries. Besides, I get to work as an **AI engineer** working on persuasive messages, at a remote company from California that is really great. 

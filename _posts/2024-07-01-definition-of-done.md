@@ -6,8 +6,6 @@ color: success
 description: My take on when to call something done.
 ---
 
-# Definition of Done Manifesto: Ensuring Quality and Maintainability in Software Development
-
 In the fast-paced world of software development, ensuring that our code not only functions as expected but is also of the highest possible quality and maintainability is crucial. To this end, I created a stringent Definition of Done (DoD) Manifesto. This manifesto outlines the criteria a feature must meet before it can be considered "done." Below, we delve into each criterion and explain its importance in achieving our goals. Here is the list in brief:
 
 - [ ] > 90% coverage with unit tests.

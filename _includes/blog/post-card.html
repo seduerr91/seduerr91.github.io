@@ -27,9 +27,21 @@
 {%- else -%}
   {%- assign post_url = post.url | relative_url -%}
 {%- endif -%}
-    
-<div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ post_url }}" class="post card {{ card_style }}" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
+
+{%- assign normalized_tags = post.tags | join: " " | downcase -%}
+{%- capture broad_topics -%}
+  {%- if normalized_tags contains "ai" or normalized_tags contains "coding" or normalized_tags contains "engineer" or normalized_tags contains "python" or normalized_tags contains "software" or normalized_tags contains "technology" or normalized_tags contains "llm" or normalized_tags contains "nlp" -%}ai-engineering {%- endif -%}
+  {%- if normalized_tags contains "running" or normalized_tags contains "pnw" or normalized_tags contains "mountain" or normalized_tags contains "ultra" or normalized_tags contains "hiking" or normalized_tags contains "fitness" or normalized_tags contains "health" -%}running-pnw {%- endif -%}
+  {%- if normalized_tags contains "travel" or normalized_tags contains "itinerary" or normalized_tags contains "ireland" or normalized_tags contains "usa" -%}travel {%- endif -%}
+  {%- if normalized_tags contains "personal" or normalized_tags contains "life" or normalized_tags contains "goal" or normalized_tags contains "reflection" or normalized_tags contains "career" or normalized_tags contains "relationship" or normalized_tags contains "work" -%}personal {%- endif -%}
+{%- endcapture -%}
+{%- capture searchable_text -%}{{ post.title }} {{ post.description }} {{ post.tags | join: " " }}{%- endcapture -%}
+
+<div class="col-lg-6 my-3 archive-card-wrap"
+     data-archive-card
+     data-topics="{{ broad_topics | strip }}"
+     data-search="{{ searchable_text | strip_html | escape }}">
+  <a href="{{ post_url }}" class="post card {{ card_style }}" {%- if post.external_url and site.open_new_tab -%} target="_blank" rel="noopener noreferrer" {%- endif -%}>
     <div class="card-body {{ text_style }}">
       <h3 class="card-title">{{ post.title }}</h3>
       <p class="card-text">
@@ -46,7 +58,7 @@
       </p>
     </div>
     <div class="card-footer {{ text_style }}">
-      {{ post.date | date_to_long_string }}
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
     </div>
   </a>
 </div>

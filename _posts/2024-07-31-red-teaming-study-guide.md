@@ -6,8 +6,6 @@ color: success
 description: A complete guide to red teaming concepts and vulnerabilities.
 --- 
 
-# Red Teaming Study Guide
-
 This guide provides a summary of red teaming concepts and vulnerabilities.
 
 ## Introduction to DeepTeam

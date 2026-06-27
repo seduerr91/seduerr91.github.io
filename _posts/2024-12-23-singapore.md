@@ -6,8 +6,6 @@ color: success
 description: My Trip to Asia from Jan 19 - Feb 1
 ---
 
-## Overview
-
 ![o](https://plus.unsplash.com/premium_photo-1712254285399-f5f181730830?q=80&w=3750&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 | Location Departure              | Location Arrival                  | Date Departure     | Time Departure | Date Arrival       | Time Arrival | Flight Duration  | Days \ Hours in Location |

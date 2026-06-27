@@ -4,9 +4,16 @@ tags: [Running, Mountains, Personal, Ultra]
 style: fill
 color: warning
 description: On trail runs, suffering, and the strange clarity that comes only when your legs are burning and the world narrows to the next step.
+image: /assets/posts/mountain-running.webp
+card_image: /assets/posts/mountain-running-card.webp
+card_image_2x: /assets/posts/mountain-running-card-2x.webp
+featured: true
+featured_order: 2
 ---
 
-# Why I Run Mountains
+![Mountain lake](/assets/posts/mountain-running.webp)
+
+*Photo by [Kalen Emsley](https://unsplash.com/@kalenemsley) on [Unsplash](https://unsplash.com)*
 
 Every time it's the same. Being on a trail, somewhere between suffering and joy, surrounded by mountains that don't care whether one finishes or not.
 

@@ -6,11 +6,9 @@ color: info
 description: On lists, completion, and the uncomfortable truth that feeling alive requires pain, presence, and intentional work.
 ---
 
-# What Do I Want From Life?
+![Mountain lake](/assets/posts/mountain-running.webp)
 
-![mountain trail](https://images.unsplash.com/photo-1551632811-1dca363c7599?q=80&w=2070&auto=format&fit=crop)
-
-*Photo by [John Shorb](https://unsplash.com/@johnshorb) on [Unsplash](https://unsplash.com)*
+*Photo by [Kalen Emsley](https://unsplash.com/@kalenemsley) on [Unsplash](https://unsplash.com)*
 
 I've asked myself this question a lot. *What do I want from life?* Or maybe the better version: *What shall I do with the rest of my life?*
 

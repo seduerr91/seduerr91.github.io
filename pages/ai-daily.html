@@ -3,7 +3,51 @@ layout: default
 title: AI Daily
 weight: 2
 permalink: /ai-daily/
+description: A running digest of useful AI engineering updates from research, product announcements, and open-source cookbooks.
 ---
 
-{% include ai_daily/search.html %}
-{% include ai_daily/index.html %}
+{% assign ai_posts = site.ai_daily | sort: "date" | reverse %}
+{% assign latest_ai = ai_posts | first %}
+
+<header class="archive-header ai-daily-header">
+  <p class="section-kicker">A working engineer's reading log</p>
+  <h1>AI Daily</h1>
+  <p>I collect useful changes from AI cookbooks, engineering blogs, and open-source projects, then compress them into practical summaries. Start with the latest signal or choose a reading lens below.</p>
+</header>
+
+{% if latest_ai %}
+<section class="ai-lead" aria-labelledby="ai-lead-title">
+  <p class="section-kicker">Latest signal · {{ latest_ai.date | date: "%B %-d, %Y" }}</p>
+  <h2 id="ai-lead-title"><a href="{{ latest_ai.url | relative_url }}">{{ latest_ai.title }}</a></h2>
+  <p>{{ latest_ai.description }}</p>
+  <a class="section-link" href="{{ latest_ai.url | relative_url }}">Read the roundup <span aria-hidden="true">→</span></a>
+</section>
+{% endif %}
+
+<section class="reading-lenses" aria-labelledby="reading-lenses-title">
+  <div class="home-section-heading">
+    <div>
+      <p class="section-kicker">Read with a purpose</p>
+      <h2 id="reading-lenses-title">Three useful lenses</h2>
+    </div>
+  </div>
+  <div class="reading-lens-grid">
+    <div>
+      <h3>Agents &amp; workflows</h3>
+      <p>Tool use, orchestration, automation patterns, and the systems around autonomous work.</p>
+    </div>
+    <div>
+      <h3>Evaluation &amp; safety</h3>
+      <p>Quality measurement, guardrails, security, and the evidence needed to trust AI products.</p>
+    </div>
+    <div>
+      <h3>Models &amp; infrastructure</h3>
+      <p>Inference, APIs, databases, performance, and the technical foundations beneath the interface.</p>
+    </div>
+  </div>
+</section>
+
+<div data-archive data-filter-param="lens">
+  {% include ai_daily/search.html %}
+  {% include ai_daily/index.html %}
+</div>

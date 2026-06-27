@@ -6,8 +6,6 @@ style: fill
 color: success
 ---
 
-# The Pitch
-
 ## Cordial AI: Your Marketing Expert, Built to Guide
 
 The marketing landscape is complex and ever-changing.  To succeed in the modern world, marketers need intelligent, personalized strategies built on real-time data to connect with potential customers authentically. That's why Cordial developed its advanced AI, a supportive and powerful tool empowering businesses of all sizes to supercharge their marketing efforts.
@@ -48,7 +46,7 @@ With Cordial AI, marketers gain a marketing force multiplier. It leverages the p
 - Freed-up resources: Save time with AI-assisted workflows and insightful reporting.
 - Unleashed creativity: Let Cordial AI handle the analytical heavy lifting, leaving your team to focus on the innovative aspects of marketing.
 
-# Synthetic Agents
+## Synthetic Agents
 
 ## Cordial AI: Your Marketing Team of Autonomous Agents
 

@@ -46,8 +46,10 @@ function getTheme() {
 function setTheme(value) {
   document.documentElement.setAttribute(THEME_ATTR, value);
 
-  const particleColor = value === themes.DARK ? "#ffffff" : "#000000";
-  if (typeof particlesJS !== 'undefined') {
-    initParticles(particleColor);
+  const themeToggle = document.getElementById("theme-toggler");
+  if (themeToggle) {
+    const nextTheme = value === themes.DARK ? "light" : "dark";
+    themeToggle.setAttribute("aria-label", `Switch to ${nextTheme} theme`);
+    themeToggle.setAttribute("title", `Switch to ${nextTheme} theme`);
   }
 }

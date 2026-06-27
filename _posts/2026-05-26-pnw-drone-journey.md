@@ -6,8 +6,6 @@ color: success
 description: Learning to fly a tiny drone in the Pacific Northwest turned into a deeper lesson in airspace, privacy, and how to see home from above.
 ---
 
-# Chasing Clouds Above the Evergreen: My PNW Drone Journey
-
 There's a special kind of magic when a tiny drone lifts off over the Pacific Northwest. Low clouds brush the foothills, fir trees roll out like dark green waves, and the soft gray light makes almost everything look cinematic.
 
 In Issaquah, where mountains begin to rise behind cul-de-sacs and trailheads start at the end of quiet streets, I've been learning what it means to explore this landscape from the air: legally, safely, and with a lot of curiosity.

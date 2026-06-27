@@ -6,8 +6,6 @@ style: fill
 color: success
 ---
 
-## Differences between Software Engineers and Data Scientists
-
 The difference in the use of classes between engineers and data scientists in the Python programming language can largely be attributed to the nature of tasks and objectives each group tends to focus on, as well as the traditional backgrounds and training of individuals in these fields. However, it’s essential to clarify that these descriptions are general trends rather than strict rules, and there are many data scientists who do use classes extensively in their Python code.
 
 ### Engineering Perspective:

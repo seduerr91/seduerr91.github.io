@@ -115,3 +115,127 @@
     }
   }
 }
+
+.page-title {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.post-header {
+  margin-bottom: 2.2rem;
+}
+
+.post-header h1 {
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  line-height: 1.15;
+  margin-bottom: 0.8rem;
+}
+
+.post-content {
+  font-size: 1.02rem;
+  line-height: 1.78;
+}
+
+.post-video {
+  border-radius: 8px;
+  display: block;
+  height: auto;
+  margin: 1.5rem auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.post-content > p:first-child {
+  font-size: 1.12rem;
+}
+
+.related-posts {
+  margin-top: 4.5rem;
+}
+
+.related-post-list a {
+  align-items: center;
+  border-bottom: 1px solid rgba(52, 58, 64, 0.16);
+  color: inherit;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 3rem 1fr auto;
+  padding: 0.9rem 0;
+  text-decoration: none;
+}
+
+.related-post-list a:hover strong {
+  color: $primary;
+}
+
+.related-post-list span:first-child {
+  color: #687789;
+  font-size: 0.82rem;
+}
+
+.post-navigation {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 3rem;
+}
+
+.post-navigation a {
+  border: 1px solid rgba(52, 58, 64, 0.16);
+  border-radius: 8px;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.post-navigation a:hover {
+  border-color: $primary;
+}
+
+.post-navigation span {
+  color: #687789;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.post-navigation-next {
+  text-align: right;
+}
+
+.post-subscribe {
+  align-items: center;
+  border-bottom: 1px solid rgba(52, 58, 64, 0.16);
+  border-top: 1px solid rgba(52, 58, 64, 0.16);
+  display: grid;
+  gap: 0.5rem 1rem;
+  grid-template-columns: auto 1fr auto;
+  margin-top: 3rem;
+  padding: 1.2rem 0;
+}
+
+.post-subscribe span {
+  color: #617183;
+}
+
+@media (max-width: 767.98px) {
+  .post-content {
+    font-size: 1rem;
+  }
+
+  .post-navigation {
+    grid-template-columns: 1fr;
+  }
+
+  .post-navigation-next {
+    text-align: left;
+  }
+
+  .post-subscribe {
+    align-items: flex-start;
+    grid-template-columns: 1fr;
+  }
+}

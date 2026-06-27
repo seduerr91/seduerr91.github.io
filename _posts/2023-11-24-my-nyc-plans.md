@@ -6,8 +6,6 @@ style: fill
 color: success
 ---
 
-## Seb's NYC Adventure: A Packed Itinerary of Iconic Sights and Hidden Gems
-
 | Date                      | Morning                                          | Afternoon                                | Evening                                     |
 |:--------------------------|:-------------------------------------------------|:-----------------------------------------|:--------------------------------------------|
 | Saturday, March 9, 2024   | Paul/Lana, Arrival                               | Joy/Seb at JFK                           | Carnegie Hall Concert                       |

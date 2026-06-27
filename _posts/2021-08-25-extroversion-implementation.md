@@ -1,12 +1,10 @@
 ---
-title: Technical Implementation in SpaCy.
+title: Implementing Extroverted Writing Analysis in spaCy
 tags: [Persuaide, engineering]
 style: fill
 color: success
-description: Technical Implementation in SpaCy.
+description: A practical spaCy implementation for classifying and transforming writing styles.
 ---
-
-# Implementation in SpaCy, Inference as DNN
 
 In order to implement the four strategies, it is important to translate the presented strategies into code, respectively the cleaned dataset that we compiled earlier. By now, we expect the ardent reader to ask whether it is actually important to apply the changes to any dataset, and why a deep neural net is even needed. We believe it is a good choice for the following reasons:
 Firstly, can correct easily for grammar aspects which is harder ‘on the fly’ (those mentioned before by cleaning the dataset again).
@@ -14,7 +12,7 @@ Secondly, retraining and continuous improvement via a flywheel can be easier int
 Thirdly, language is inherently complex, and a deep neural net proves to better generalize than everything written down in grammar. While we can use thresholding with the CoLA corpus for instance in order to check the quality independently, which would cost a lot of extra time in inference. 
 In the following, we introduce how we use SpaCy the industry standard for NLP to implement the linguistic concepts presented earlier. We could have chosen NLTK, StanfordNLP (earlier CoreNLP), and like to admit that it was an arbitrary choice. However the authors are aware of SpaCy’s internal hashing logic, which allows to transform a vast number of sentences in parallel and with high processing speed.
 
-# Implementing the Dataset with SpaCy
+## Implementing the Dataset with SpaCy
 
 In the following, we explain how we sketch the core algorithms to implement the strategies to transition from extroverted to introverted and vice versa. We will highlight how SpaCy helps at this journey.
 SpaCy provides a plethora of features that are imminent important to text manipulation (I want to recommend the book Mastering SpaCy by Duygu Altinok) of which we will only highlight the applied ones. It also serves as the base of further useful concepts such as verb inflection.
@@ -24,7 +22,7 @@ On the right, you can find a sentence, with it’s tag_ & pos_ titles and the de
 
 ![Screenshot-2021-09-12-at-22-15-53.png](https://postimg.cc/wtzvyVKk)
 
-# Implementation of Extra-Intro Transformation Strategies
+## Implementation of Extra-Intro Transformation Strategies
 
 To conclude the changes, we used SpaCy to analyze changes by Moon (2002) on the tag_, pos_ and dep_ level. This way, we identified the word_types and nuances that need to be altered in order to change extroverted to introverted statements.
 ## Subjunctivation (e.g., This problem can be resolved. => This problem could be resolved.)
@@ -53,7 +51,7 @@ Use tag questions to increase uncertainty writing style of introverts by adding,
 - Match for words from dict (types: verb, noun, adjective on _pos level).
 - Replace if match, and inflect correctly by minding person and number.
 
-# Transformation Sugar & Helpers
+## Transformation Sugar & Helpers
 
 We implemented additional functions and subfunctions to increase the diversity in language and to remove repetitiveness. 
 
@@ -69,7 +67,7 @@ Also, we need some helper functions to correct / reduce complexity of the underl
 Verb_inflector to inflect verbs dependent on the person & number in the present statement.
 - Missing: Person_Number_inflector to account for plurals with nouns and adjectives.
 
-# Quality Gates: Round 2
+## Quality Gates: Round 2
 
 In order to ensure that all features such as casing, brackets, and grammatical structures are still working correctly, we run some features again in order to clean up the data. Mind that now, we run everything twice.
 This involves running again the inference of CoLA on the data (for semantic and syntactic correctness), and also send all sentences to GingerIt again, to account for grammatical correctness.

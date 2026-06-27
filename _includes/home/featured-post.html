@@ -1,0 +1,36 @@
+{% assign featured_post = include.post %}
+{% assign featured_image = featured_post.card_image | default: featured_post.image | default: site.logo %}
+{% assign featured_image_2x = featured_post.card_image_2x %}
+{% if featured_image contains '://' %}
+  {% assign featured_image_url = featured_image %}
+{% else %}
+  {% assign featured_image_url = featured_image | relative_url %}
+{% endif %}
+{% if featured_image_2x %}
+  {% if featured_image_2x contains '://' %}
+    {% assign featured_image_2x_url = featured_image_2x %}
+  {% else %}
+    {% assign featured_image_2x_url = featured_image_2x | relative_url %}
+  {% endif %}
+{% endif %}
+
+<div class="col-lg-4 mb-4">
+  <article class="featured-post">
+    <a class="featured-post-image" href="{{ featured_post.url | relative_url }}" aria-label="Read {{ featured_post.title }}">
+      <img
+        src="{{ featured_image_url }}"
+        {% if featured_image_2x_url %}srcset="{{ featured_image_url }} 420w, {{ featured_image_2x_url }} 760w"{% endif %}
+        sizes="(min-width: 992px) 350px, calc(100vw - 32px)"
+        width="420"
+        height="236"
+        alt=""
+        loading="lazy"
+      >
+    </a>
+    <div class="featured-post-body">
+      <p class="featured-post-meta">{{ featured_post.date | date: "%B %-d, %Y" }}</p>
+      <h3><a href="{{ featured_post.url | relative_url }}">{{ featured_post.title }}</a></h3>
+      <p>{{ featured_post.description }}</p>
+    </div>
+  </article>
+</div>
