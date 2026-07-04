@@ -137,6 +137,18 @@
   line-height: 1.78;
 }
 
+.strava-activity-embed {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 2rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.strava-activity-embed iframe {
+  max-width: 100%;
+}
+
 .post-video {
   border-radius: 8px;
   display: block;
