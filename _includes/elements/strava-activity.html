@@ -1,0 +1,13 @@
+<div class="strava-activity-embed" aria-label="Strava activity: {{ include.label }}">
+  <div
+    class="strava-embed-placeholder"
+    data-embed-type="activity"
+    data-embed-id="{{ include.id }}"
+    data-style="standard"
+    data-from-embed="false"
+    data-token="{{ include.token }}"
+  ></div>
+  <noscript>
+    <a href="https://www.strava.com/activities/{{ include.id }}">View {{ include.label }} on Strava</a>
+  </noscript>
+</div>
