@@ -58,15 +58,29 @@
 
     function selectFilter(value, shouldUpdateUrl) {
       activeFilter = value || "all";
+      var activeButton = null;
       filterButtons.forEach(function (button) {
         var isActive =
           button.getAttribute("data-archive-filter") === activeFilter;
         button.classList.toggle("is-active", isActive);
         button.setAttribute("aria-pressed", isActive ? "true" : "false");
+        if (isActive) {
+          activeButton = button;
+        }
       });
       applyFilters();
       if (shouldUpdateUrl) {
         updateUrl();
+      }
+      if (
+        activeButton &&
+        window.matchMedia("(max-width: 767.98px)").matches
+      ) {
+        activeButton.scrollIntoView({
+          behavior: shouldUpdateUrl ? "smooth" : "auto",
+          block: "nearest",
+          inline: "nearest",
+        });
       }
     }
 
