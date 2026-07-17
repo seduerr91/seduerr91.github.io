@@ -103,7 +103,7 @@ Pickleball has become another reason to get outside, meet people, and move witho
 - **Issaquah Highlands:** Convenient, social, and easy to fit into an evening close to home.
 - **Mercer Island:** A fun change of scenery and a good meeting point for friends coming from different directions.
 - **Snoqualmie Ridge:** Mountain views and a relaxed setting make even casual games feel like a small outing.
-- **Joy's School:** A familiar community spot where the people are as much a part of the experience as the games.
+- **Snoqualmie High School:** A familiar community spot where the people are as much a part of the experience as the games.
 - **Tibbetts Valley Park:** Central, accessible, and useful for an impromptu local session.
 - **Green Lake:** A lively Seattle option that pairs pickleball with a walk or run around the lake.
 

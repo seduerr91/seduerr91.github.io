@@ -17,9 +17,9 @@ When I’m with friends, I thrive on creating moments that are not only enjoyabl
 | Volunteering Together      | Engaging in community service projects for communal benefit.            | Altruistic associates   |
 | Indoor Rock Climbing       | Indoor climbing challenges to promote trust and collaboration.          | Adventurous accomplices |
 
-## Activities I Enjoy with Joy, My Wife
+## Activities I Enjoy with My Wife
 
-Time with Joy is treasured, filled with enriching activities that allow us to grow together. We aim to share experiences that reflect our love for culture, healthy living, and the fine arts. Here’s a glimpse at the special activities we enjoy as a couple:
+Time with my wife is treasured, filled with enriching activities that allow us to grow together. We aim to share experiences that reflect our love for culture, healthy living, and the fine arts. Here’s a glimpse at the special activities we enjoy as a couple:
 
 | Activity Type            | Description                                                                  | Benefit                                   |
 | ------------------------ | ---------------------------------------------------------------------------- | ----------------------------------------- |
@@ -29,4 +29,4 @@ Time with Joy is treasured, filled with enriching activities that allow us to gr
 | Themed Yoga Sessions     | Experimenting with eclectic yoga styles for physical and mental wellness.    | Deepening our connection & wellbeing      |
 | Dance Classes            | Diversifying our dance repertoire for enjoyment and physical activity.       | Strengthening our bond through dance      |
 
-Whether with friends or with Joy, I find that every activity has the potential to foster connection, creativity, and contentment in our lives. It’s not merely about what we do, but how we engage with the world and each other in these shared experiences.
+I find that every activity has the potential to foster connection, creativity, and contentment in our lives. It’s not merely about what we do, but how we engage with the world and each other in these shared experiences.

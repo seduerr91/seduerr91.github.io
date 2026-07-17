@@ -73,4 +73,4 @@ When Simba showed little interest in typical kitten candies, we explored alterna
 
 Our journey with Sasha and Simba has been rewarding and insightful. From essential training to advanced tricks, we’ve learned that patience, consistency, and the right motivators are key to successful kitten upbringing. By paying attention to their individual preferences and needs, we've ensured they grow up well-socialized, well-behaved, and exceedingly happy.
 
-If you’re embarking on a similar journey with your kittens, we hope our experiences can guide and inspire you. Here's to many joyful moments and clever tricks with our beloved tabbies. Stay tuned for more updates from Joy and Seb!
+If you’re embarking on a similar journey with your kittens, we hope our experiences can guide and inspire you. Here's to many joyful moments and clever tricks with our beloved tabbies.

@@ -31,7 +31,7 @@ Simultaneously, I optimized my living environment. I left the density of Seattle
 
 ### The Network
 
-No year is navigated alone. Joy was instrumental in the move to Issaquah, making our home life wonderful. Brian was a key partner in helping me run long distances.
+No year is navigated alone. My wife was instrumental in the move to Issaquah, making our home life wonderful. Brian was a key partner in helping me run long distances.
 
 Professionally, I was supported by great colleagues like Nam and Pragna, and a great boss, Justin. When the layoff hit, Justin, Chloe, and Jarret were there for me with referrals. Now, at Cerebras, I am grateful to be working with an amazing new team. Sarah, Ryan, Hagay, and Neeraj - are just a few great colleagues to name.
 
@@ -49,7 +49,7 @@ I also picked up out here **Pickleball**, which surprisingly connected me with p
 
 ### The Strategy for 2026
 
-As I look toward the next year, the strategy is clear. I wish for Joy to find more excitement in her work and to excel at horseback riding. For myself, the goals are:
+As I look toward the next year, the strategy is clear. I wish for my wife to excel at horseback riding. For myself, the goals are:
 
 *   **Run 1000 miles**
 *   **Obtain a Private Pilot License**

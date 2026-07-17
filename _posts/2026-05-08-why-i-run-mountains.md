@@ -81,7 +81,7 @@ And I start looking for the next run.
 
 Maybe I am. Maybe signing up for voluntary suffering is a form of insanity. But I've found something in the mountains that I can't find anywhere else — a kind of clarity that comes only when the noise is stripped away and all that's left is the trail, the breathing, and the next step.
 
-Joy tolerates my race schedule with patience and good humor. Simba and Sasha don't care where I've been as long as I come home. The mountains don't judge. And I come back from every run — every race, every early morning on the trail — a little more myself than when I left.
+My wife tolerates my race schedule with patience and good humor. Simba and Sasha don't care where I've been as long as I come home. The mountains don't judge. And I come back from every run — every race, every early morning on the trail — a little more myself than when I left.
 
 That's why I run mountains. Not for the fitness, though that's a bonus. Not for the medals, though they're nice on the shelf. But for the quiet. For the narrowing. For the ten feet of trail in front of me that is, for a few hours, the entire world.
 

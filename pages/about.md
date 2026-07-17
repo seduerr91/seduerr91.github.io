@@ -10,7 +10,7 @@ description: AI engineer at Cerebras, trail runner, drone pilot, traveler, and b
 
 I'm an AI engineer at **Cerebras**, where I help turn extremely fast AI inference into things developers can actually use.
 
-I am also a trail runner with an unreasonable annual mileage target, a newly licensed drone pilot, a frequent traveler, Joy's husband, and a member of a household managed by two cats.
+I am also a trail runner with an unreasonable annual mileage target, a newly licensed drone pilot, a frequent traveler, a husband, and a member of a household managed by two cats.
 
 Originally, I come from a tiny Bavarian village with more cows than people. Somehow, a winding path through banking, academia, startups, and way too many airports brought me to Issaquah, Washington, at the edge of the Cascade Mountains.
 
@@ -31,7 +31,7 @@ Originally, I come from a tiny Bavarian village with more cows than people. Some
 
 **From the air:** I fly a small drone and am slowly learning to see familiar landscapes from a completely different perspective. It is technical enough to be interesting and visual enough not to feel like more work.
 
-**At home:** Life with Joy and our cats, Simba and Sasha, is the center of everything. The rest can be intense. Home is warm, funny, and wonderfully ordinary.
+**At home:** Life with wife and our cats, Simba and Sasha, is the center of everything. The rest can be intense. Home is warm, funny, and wonderfully ordinary.
 
 I speak German, English, Spanish, and enough French to order coffee and apologize for my French.
 
@@ -59,11 +59,11 @@ A flatmate convinced me to apply for an exchange program in Budapest, which open
 
 Finance taught me a lot, but I kept coding on the side. Eventually, that led to MIT, founding a startup, building AI products for other companies, and joining Cerebras.
 
-During COVID, I met my wife Joy. We traveled for nearly a year before settling in Washington, where we got married and adopted two cats who now run the household.
+During COVID, I met my wonderful wife. We traveled for nearly a year before settling in Washington, where we got married and adopted two cats who now run the household.
 
 It's been a wonderfully non-linear path. I never could have planned any of it.
 
-These days, I spend my time trying to make AI systems faster and more useful, running through mountains, occasionally looking at those mountains through a drone camera, and building a good life with Joy.
+These days, I spend my time trying to make AI systems faster and more useful, running through mountains, occasionally looking at those mountains through a drone camera, and building a great life with wife.
 
 Many regards from the Pacific Northwest,
 
