@@ -140,7 +140,7 @@ It was the laughter and shared stories with friends. Some were old friends I had
 
 ### Home and Love
 
-It was finding a perfect new home with my partner, Joy, and the quiet moments spent cuddling our cats, Simba and Sasha. Amidst all the adventure, the most meaningful moments were often the simplest: morning coffee on the patio, evening walks through the neighborhood, the comfort of being home with the people (and cats) I love.
+It was finding a perfect new home with my partner, and the quiet moments spent cuddling our cats, Simba and Sasha. Amidst all the adventure, the most meaningful moments were often the simplest: morning coffee on the patio, evening walks through the neighborhood, the comfort of being home with the people (and cats) I love.
 
 ---
 

@@ -108,7 +108,7 @@ But when you manage to land in the present, even briefly, the effect is striking
 
 **Putting the phone away.** Not just during meals, but during walks, during commutes, during the in-between moments that we've learned to fill with scrolling. Those empty moments are where presence lives, if you let them.
 
-**Being with people fully.** When I'm talking to Joy, or a friend, or a colleague, I try to actually be there. Not formulating my response while they're still talking. Not checking my watch. Just listening. It's harder than it sounds, and it makes every interaction better.
+**Being with people fully.** When I'm talking to my wife, or a friend, or a colleague, I try to actually be there. Not formulating my response while they're still talking. Not checking my watch. Just listening. It's harder than it sounds, and it makes every interaction better.
 
 **Mountain running.** The combination of physical exertion, natural beauty, and mild danger is the most reliable presence-induction I've found. You can't be on a rocky trail at altitude and be somewhere else in your head. The mountain demands your attention, and in return, it gives you the present moment.
 

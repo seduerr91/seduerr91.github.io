@@ -56,11 +56,9 @@ But I do not need to keep moving simply to prove that I am adventurous. Eighty-f
 
 ## Find a Wonderful Wife
 
-My Joy is a wonderful wife.
-
 This is the goal on the list that matters most, and it is also the one least suited to being treated like an accomplishment. Finding the right person is not a box to check. Marriage is something we keep building together in ordinary days, difficult weeks, shared adventures, and all the small moments nobody else sees.
 
-Joy makes life warmer, funnier, and more grounded. Ambition is easier to carry when home feels like a place where I can put it down.
+My wife makes life warmer, funnier, and more grounded. Ambition is easier to carry when home feels like a place where I can put it down.
 
 Of everything on this list, this is the part I feel luckiest about.
 
@@ -134,7 +132,7 @@ There is a house with enough room to breathe and a yard that makes being home fe
 
 There is also a Golden Retriever.
 
-This dream is partly about property, but mostly about creating a home where life can expand: room for Joy, friends, family, animals, post-run recovery, summer evenings, and weekends that do not require going anywhere.
+This dream is partly about property, but mostly about creating a home where life can expand: room for my wife, friends, family, animals, post-run recovery, summer evenings, and weekends that do not require going anywhere.
 
 I have traveled enough to understand the value of having somewhere wonderful to stay.
 

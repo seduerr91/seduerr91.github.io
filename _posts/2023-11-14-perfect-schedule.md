@@ -32,7 +32,7 @@ The **Perfect Schedule** exemplified is as follows:
 - **Thursday**: Chase the sunrise with a run, focus on work, engage in an evening of pickleball, followed by domestic endeavors.
 - **Friday**: Ignite the day with a morning workout, and as twilight descends, revel in the companionship of friends.
 - **Saturday**: Embrace nature's trails with a hike or run, pickleball for pace, a sanctuary of study time, and weave words in writing. Season the day with a garnish of social interactions.
-- **Sunday**: Unleash serenity with Yoga alongside Joy, conduct the symphony of food prep, and indulge in another chapter of study.
+- **Sunday**: Unleash serenity with Yoga, conduct the symphony of food prep, and indulge in another chapter of study.
 
 **Health 2024: A Vision Forged in Well-being**
 
