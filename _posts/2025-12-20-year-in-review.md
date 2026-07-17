@@ -12,7 +12,7 @@ Coming out of 2024, I found myself in a state that required a strategic overhaul
 
 To turn the tide, I made several decisions that defined the trajectory of 2025. The most significant professional move was joining **Cerebras AI**, a dream job that aligned perfectly with my ambitions.
 
-Simultaneously, I optimized my living environment. I left the density of Seattle for the countryside of **Issaquah**, moving into a townhome with plenty of space. This decision, suggested by Joy, was transformative. With her and our cats, life became cozy and grounded. We also invested in e-bikes to explore the area and I committed to physical resilience by signing up for and training for a 50k race in September.
+Simultaneously, I optimized my living environment. I left the density of Seattle for the countryside of **Issaquah**, moving into a townhome with plenty of space. This decision was transformative. With her and our cats, life became cozy and grounded. We also invested in e-bikes to explore the area and I committed to physical resilience by signing up for and training for a 50k race in September.
 
 ### Collecting Experiences: A Year of Travel
 
