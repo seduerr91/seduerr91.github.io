@@ -26,7 +26,7 @@ If you want the detailed food side, I wrote that up separately in [Backpacking M
 | Carry fewer clothes | A small amount of detergent or concentrated soap is better than hauling extra shirts and pants |
 | Bring real sleep items | A sleeping pad and a good pillow matter more than backup outfits |
 | Prefer battery over solar | For a four-day section, a power bank is simpler and more reliable than a solar panel |
-| Keep food calorie-dense | If the pack is already heavy, every ounce should work |
+| Keep food simple | I would rather carry meals I actually want to eat than force maximum calories |
 
 ## Core Gear
 
@@ -41,6 +41,7 @@ If you want the detailed food side, I wrote that up separately in [Backpacking M
 | Headlamp | Absolutely | Better than a handheld flashlight, especially for camp chores and early starts |
 | Power | Phone + power bank | For four days, I would choose a power bank over a solar panel |
 | Navigation | Phone with FarOut, Gaia, or CalTopo offline | A small paper backup is still reasonable |
+| Emergency communication | Satellite messaging on phone or inReach | Worth having in remote terrain |
 | Water | Bottles or soft flasks plus a filter | Carry enough capacity for longer dry stretches |
 | Stove | Lightweight stove, pot, spoon, lighter | Keep the kitchen simple |
 | Repair | Tape, small patch kit, cord, needle, mini knife | Just enough to solve common trail problems |
@@ -82,7 +83,10 @@ That lets you:
 | Item | My Take |
 |---|---|
 | Sleeping pad | Bring it |
+| Inflatable mattress | Not necessary if you prefer a simpler pad setup |
 | Pillow | Bring one if neck pain is real for you |
+| Sit pad | Nice lightweight luxury |
+| Camp chair | Usually not worth the weight for a 4-day section |
 
 For me, a sleeping pad plus a good pillow is a much better use of weight than extra clothes or big camp luxuries.
 
@@ -94,17 +98,17 @@ For actual meal ideas, I would use the grocery-store approach in [Backpacking Me
 
 | Category | Recommendation | Notes |
 |---|---|---|
-| Dinners | Knorr sides, ramen upgrades, mashed potatoes, couscous | Cheap, light, and easy to scale with oil and protein |
+| Dinners | Knorr sides, ramen upgrades, mashed potatoes, couscous | Cheap, simple, and easy to scale up or down |
 | Breakfast | Oatmeal, bagels, instant coffee | Fast and reliable |
 | Lunch | Tortillas, salami, cheese, tuna | Easy to eat without stopping long |
-| Snacks | Nuts, M&M's, jerky, bars, dried fruit | Calorie-dense and easy to keep moving with |
-| Fats | Olive oil packets, peanut butter, nuts, sausage | These do huge calorie work |
+| Snacks | Nuts, M&M's, jerky, bars, dried fruit | Easy to graze on without a long break |
+| Fats | Olive oil packets, peanut butter, nuts, sausage | Optional if you want to scale meals upward |
 
 ### Drinks and Caffeine
 
 | Item | Why Bring It |
 |---|---|
-| Instant Alanie | Energy drinks |
+| Instant coffee | Morning caffeine without much hassle |
 | Tea bags | Great for cold mornings or evening wind-down |
 | Caffeine pills | Very weight-efficient backup if you want stimulation without carrying extra drink weight |
 | Liquid IV or electrolytes | Helpful on hot days and long climbs |
@@ -179,7 +183,7 @@ For Section J, I would prioritize:
 - A sleeping pad plus a pillow that protects your neck
 - A headlamp
 - A power bank
-- Calorie-dense food
+- Simple food you actually want to carry
 - Fewer clothes
 
 That setup is lighter, simpler, and more realistic than trying to pack for every possible scenario.
