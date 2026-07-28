@@ -8,6 +8,10 @@ description: Loop-friendly 20-40 mile backpacking and fastpacking routes near Is
 
 # Single-Night Backpacking Loop Ideas Near Issaquah
 
+![A runner overlooking a mountain lake](/assets/posts/mountain-running.webp)
+
+*Photo by [Kalen Emsley](https://unsplash.com/@kalenemsley) on [Unsplash](https://unsplash.com)*
+
 The companion piece to my longer [Pacific Northwest Weekend Backpacking Loop Ideas Near Issaquah](/blog/pacific-northwest-weekend-backpacking-loop-ideas-near-issaquah) list is this one: shorter loops that still feel like a real mountain weekend, but can fit into a single overnight.
 
 I prioritized:
@@ -34,6 +38,19 @@ The other important reality is that the **closer** you get to Issaquah, the fewe
 ## Closer But Less Clean Options
 
 If the main question is "what is actually close to Issaquah for a one-night backpack," these are the options I would look at before driving all the way to White Pass or Goat Rocks.
+
+![image](https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
+*Photo by [Kenton Cool](https://unsplash.com/@kentoncool) on [Unsplash](https://unsplash.com)*
+
+### Closer Options at a Glance
+
+| Option | Drive from Issaquah | Area | Route Style | Typical Distance | Overnight Permit? | Planning Links |
+|---|---|---|---|---|---|---|
+| Talapus and Olallie Lakes | `~45 min` | Snoqualmie Pass / Alpine Lakes | Out-and-back | `6-10 mi`, depending on camp and extras | Free self-issue wilderness permit | [Trailhead](https://www.fs.usda.gov/r06/mbs/recreation/talapus-lake-trailhead) / [Trail 1039](https://www.fs.usda.gov/r06/mbs/recreation/trails/talapus-lake-trail-1039) / [WTA](https://www.wta.org/go-hiking/hikes/talapus-and-olallie-lakes) |
+| Mason / Pratt / Rainbow / Island Lakes | `~50 min` | Snoqualmie Pass / Alpine Lakes | Basin network / custom loop or lollipop | `10-18 mi`, depending on links | Free self-issue wilderness permit | [Ira Spring TH](https://www.fs.usda.gov/r06/mbs/recreation/ira-spring-trailhead) / [Mason Trail](https://www.fs.usda.gov/r06/mbs/recreation/trails/ira-spring-mason-lake-trail-1038) / [Pratt TH](https://www.fs.usda.gov/r06/mbs/recreation/pratt-lake-trailhead) |
+| Pete Lake / Waptus Pass / Waptus Lake | `~1 hr 20 min` | Salmon La Sac / Alpine Lakes | Lollipop or loop-like training route | `18-24 mi`, depending on turnaround or linkups | Free self-issue wilderness permit | [Pete Lake](https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/trails/pete-lake-trail) / [Waptus Pass](https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/trails/waptus-pass-trail) / [Salmon La Sac TH](https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/salmon-la-sac-trailhead) |
+| Greenwater Lakes / Echo Lake / Arch Rock | `~1 hr 15 min` | Norse Peak Wilderness / Greenwater | Out-and-back or custom loop network | `11-16 mi`, depending on Echo and connectors | No overnight permit | [Greenwater Trail](https://www.fs.usda.gov/r06/mbs/recreation/trails/greenwater-lakes-trail-1176) / [Trailhead](https://www.fs.usda.gov/r06/mbs/recreation/greenwater-lakes-trailhead) / [Arch Rock](https://www.fs.usda.gov/r06/mbs/recreation/trails/arch-rock-trail-1187) |
 
 ### Talapus and Olallie Lakes
 
