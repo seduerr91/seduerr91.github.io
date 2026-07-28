@@ -10,7 +10,7 @@ description: I filed my N-400 on December 31, 2025, and this is the study and in
 
 As of June 2026, I am waiting for my naturalization interview notice. I filed Form N-400 on December 31, 2025.
 
-I originally thought I needed to study `120` civics questions. After checking the current USCIS guidance, that is not quite right for my case. USCIS applies the **2025 civics test** to N-400 filings on or after **October 20, 2025**, and that official question bank has `128` questions. Because I filed on **December 31, 2025**, this is the version I need to prepare for.
+USCIS applies the **2025 civics test** to N-400 filings on or after **October 20, 2025**, and that official question bank has `128` questions. Because I filed on **December 31, 2025**, this is the version I need to prepare for.
 
 The good news is that the interview is not just a giant memory game. The process is very structured, and a lot of the preparation is really about being organized, calm, and consistent.
 
