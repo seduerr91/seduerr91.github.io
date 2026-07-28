@@ -24,6 +24,16 @@ The basic idea is simple:
 - Keep lunch easy enough to eat without a long stop
 - Accept that a short trip does not always need full calorie replacement
 
+At a normal grocery store, I usually think in three buckets: carbohydrate bases, protein add-ins, and breakfast staples.
+
+![Backpacking carbohydrate bases from a grocery store](/assets/backpacking-meals/carbs.jpeg)
+
+*Carbohydrate bases: ramen, rice sides, mashed potatoes, tortillas, and easy dinner foundations.*
+
+![Backpacking protein options from a grocery store](/assets/backpacking-meals/proteins.jpeg)
+
+*Protein add-ins: tuna, chicken packets, jerky, bacon bits, and sausage that upgrade simple meals fast.*
+
 ## Quick Planning Targets
 
 | Category | Target |
@@ -193,6 +203,10 @@ Cook the mac and cheese, then stir in the chicken, bacon bits, and extra cheese 
 Cook the ramen, drain slightly, then stir in parmesan, bacon bits, and olive oil.
 
 ## Breakfasts
+
+![Backpacking breakfast staples from a grocery store](/assets/backpacking-meals/breakfast.jpeg)
+
+*Breakfast staples: oatmeal, dried fruit, nuts, powdered milk, and simple morning calories that pack down well.*
 
 ### 10. Oatmeal Deluxe
 

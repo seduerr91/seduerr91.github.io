@@ -19,6 +19,8 @@ I prioritized:
 
 Not every route here is casual backpacking. The `20s` are normal strong one-nighters. The `30s` are closer to fastpacking weekends unless you move efficiently.
 
+The other important reality is that the **closer** you get to Issaquah, the fewer clean marquee loops you find. The closest overnight options are usually better as short out-and-backs, lollipops, or basin networks than as perfect big loops.
+
 ## Best One-Night Loops Compared
 
 | Route | Drive from Issaquah | Planning Links | Distance | Overnight Permit? | Parking Fee / Pass | Best Use |
@@ -28,6 +30,85 @@ Not every route here is casual backpacking. The `20s` are normal strong one-nigh
 | Loowit Trail via Climbers Bivouac | `~3.5 hr` | [Loowit 216](https://www.fs.usda.gov/r06/giffordpinchot/recreation/trails/trail-216-loowit) / [Ape Canyon TH](https://www.fs.usda.gov/r06/giffordpinchot/recreation/trailhead-ape-canyon) / [Monitor Ridge / Climbers Bivouac](https://www.fs.usda.gov/r06/giffordpinchot/recreation/monitor-ridge-climbing-route) | `~34 mi` | No | `$5/day` or Recreation Pass at common access points | Best volcanic fastpack |
 | Mount Margaret Backcountry Loop | `~3.5 hr` | [Mount Margaret Backcountry](https://www.fs.usda.gov/r06/giffordpinchot/recreation/mount-margaret-backcountry) / [Norway Pass TH](https://www.fs.usda.gov/r06/giffordpinchot/recreation/trailhead-norway-pass) | `~26-30 mi` | Yes, advance camping permit | `$5/day` or Recreation Pass | Best blast-zone camp tour |
 | Copper Ridge / Chilliwack Loop | `~4 hr` | [Copper Ridge / Chilliwack](https://www.nps.gov/noca/planyourvisit/copper-ridge-trail.htm) / [North Cascades permits](https://www.nps.gov/noca/planyourvisit/permits.htm) / [Hannegan TH](https://www.fs.usda.gov/r06/mbs/recreation/hannegan-trailhead) | `34.2 mi` | Yes, North Cascades backcountry permit | Check current trailhead page | Best North Cascades ridge walk |
+
+## Closer But Less Clean Options
+
+If the main question is "what is actually close to Issaquah for a one-night backpack," these are the options I would look at before driving all the way to White Pass or Goat Rocks.
+
+### Talapus and Olallie Lakes
+
+This is probably the closest true overnight backpacking answer that still feels obvious and practical.
+
+The Forest Service lists Talapus and Olallie as a `6.2`-mile round trip just to the lakes, and both the Forest Service and WTA explicitly frame it as a beginner-friendly backpacking destination. It is not a big loop, but it is absolutely one of the easiest near-home overnighters to use when the goal is simply getting one night out.
+
+Planning links:
+
+- [Talapus Lake Trailhead](https://www.fs.usda.gov/r06/mbs/recreation/talapus-lake-trailhead)
+- [Talapus Lake Trail 1039](https://www.fs.usda.gov/r06/mbs/recreation/trails/talapus-lake-trail-1039)
+- [WTA: Talapus and Olallie Lakes](https://www.wta.org/go-hiking/hikes/talapus-and-olallie-lakes)
+
+What I like about it:
+
+- Very close to Issaquah
+- Easy logistics
+- Real camps at Olallie
+- Good first overnighter or low-friction backup plan
+
+### Mason Lake / Pratt / Rainbow / Island Lakes Network
+
+This is the best nearby option if I want more mountain feel without driving far.
+
+The Ira Spring trail reaches Mason Lake quickly, and the Forest Service notes that from the Mount Defiance junction you can continue toward Rainbow and Island Lakes. The Pratt Lake side connects into the same general basin network, which makes this area much better for building a custom one-night route than for chasing one canonical loop.
+
+Planning links:
+
+- [Ira Spring Trailhead](https://www.fs.usda.gov/r06/mbs/recreation/ira-spring-trailhead)
+- [Ira Spring (Mason Lake) Trail 1038](https://www.fs.usda.gov/r06/mbs/recreation/trails/ira-spring-mason-lake-trail-1038)
+- [Pratt Lake Trailhead](https://www.fs.usda.gov/r06/mbs/recreation/pratt-lake-trailhead)
+- [Mount Defiance Trail 1009](https://www.fs.usda.gov/r06/mbs/recreation/trails/mount-defiance-trail-1009)
+- [Pratt Lake Trail 1007](https://www.fs.usda.gov/r06/mbs/recreation/trails/pratt-lake-trail-1007)
+
+What I like about it:
+
+- Still very close to Issaquah
+- Feels more alpine and varied than Talapus alone
+- Easy to scale up or down depending on fitness and weather
+
+### Pete Lake / Waptus Pass / Waptus Lake Lollipop
+
+This is probably the best closer big-mile overnight if I still want something that feels substantial.
+
+Pete Lake itself is mellow, but the Forest Service trail network linking Pete Lake Trail, Waptus Pass Trail, and Salmon La Sac access gives a strong near-home backpacking zone that can be turned into a bigger lollipop or loop-like route. It is not as photogenic mile-for-mile as White Pass, but it is much closer and much more practical for a spontaneous one-night mission.
+
+Planning links:
+
+- [Pete Lake Trail](https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/trails/pete-lake-trail)
+- [Waptus Pass Trail](https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/trails/waptus-pass-trail)
+- [Salmon La Sac Trailhead](https://www.fs.usda.gov/r06/okanogan-wenatchee/recreation/salmon-la-sac-trailhead)
+
+What I like about it:
+
+- Closer than the Glacier Peak and Goat Rocks options
+- Enough trail network to build a real one-night effort
+- Easier to treat as a training route rather than a major travel weekend
+
+### Greenwater Lakes / Echo Lake / Arch Rock
+
+This is the best south-of-Issaquah wild-card if I want a quieter, closer overnight zone.
+
+The Forest Service notes that Greenwater Lakes continues all the way to Echo Lake, with camping near the north end of Echo, and Arch Rock provides a connector from the south side of the basin toward the PCT side of Norse Peak Wilderness. That makes it one of the better nearby areas for custom overnight routes, even if it is less famous than the Snoqualmie Pass basin options.
+
+Planning links:
+
+- [Greenwater Lakes Trail 1176](https://www.fs.usda.gov/r06/mbs/recreation/trails/greenwater-lakes-trail-1176)
+- [Greenwater Lakes Trailhead](https://www.fs.usda.gov/r06/mbs/recreation/greenwater-lakes-trailhead)
+- [Arch Rock Trail 1187](https://www.fs.usda.gov/r06/mbs/recreation/trails/arch-rock-trail-1187)
+
+What I like about it:
+
+- Closer than the destination loops in this article
+- Real camping at Echo Lake
+- More solitude than the most obvious Snoqualmie Pass choices
 
 ## The Best Actual One-Night Pick
 
@@ -156,6 +237,7 @@ If I were choosing based on the kind of weekend I wanted:
 ## Key Takeaways
 
 - The best true one-night loop near Issaquah is probably White Pass to Pilot Ridge.
+- The closest overnight answers near Issaquah are usually Talapus/Olallie, Mason/Pratt basin routes, Pete Lake/Waptus, or Greenwater/Echo rather than the cleaner destination loops.
 - Goat Rocks is the prettiest option in the mileage range if you can tolerate crowds.
 - Loowit is the coolest single-night fastpack, but it is also the most serious terrain-to-mile ratio.
 - Mount Margaret is a strong backup when you want designated camps and a permit-based itinerary.
