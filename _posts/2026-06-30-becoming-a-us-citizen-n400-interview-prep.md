@@ -1,16 +1,16 @@
 ---
-title: "Becoming a U.S. Citizen: My N-400 Interview Prep Guide"
+title: "Becoming a U.S. Citizen: An N-400 Interview Prep Guide"
 tags: [Citizenship, Immigration, Learning, United States]
 style: fill
 color: success
-description: I filed my N-400 on December 31, 2025, and this is the study and interview prep guide I am building while I wait for the next step.
+description: A practical study and interview prep guide for the N-400 naturalization process.
 ---
 
-# Becoming a U.S. Citizen: My N-400 Interview Prep Guide
+# Becoming a U.S. Citizen: An N-400 Interview Prep Guide
 
-As of June 2026, I am waiting for my naturalization interview notice. I filed Form N-400 on December 31, 2025.
+This is a practical study and interview prep guide for the naturalization process.
 
-USCIS applies the **2025 civics test** to N-400 filings on or after **October 20, 2025**, and that official question bank has `128` questions. Because I filed on **December 31, 2025**, this is the version I need to prepare for.
+This guide is organized around the **2025 civics test** question bank, which has `128` questions.
 
 The good news is that the interview is not just a giant memory game. The process is very structured, and a lot of the preparation is really about being organized, calm, and consistent.
 
@@ -183,7 +183,7 @@ A strong honest answer to "Are you willing to support and defend the Constitutio
 
 If I am waiting for the interview notice, this is the study rhythm I want:
 
-1. Week 1: Review the full N-400, fix my timeline notes, and gather documents.
+1. Week 1: Review the full N-400, gather documents, and clean up any notes.
 2. Week 2: Start daily civics study and practice spoken answers to common interview questions.
 3. Week 3: Add English reading and writing practice, plus one full mock interview.
 4. Every week after that: Repeat civics, re-check documents, and keep answers short and consistent.

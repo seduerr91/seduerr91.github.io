@@ -20,7 +20,7 @@ I took time to summarize the books that I consider the most valuable when it com
 
 - **Object Oriented Python**: bring me to a nice trip through mu beautiful hometown of Wuerzburg, Germany.
 - **Algorithms and Data Structures**: Reminds me of the magnificent streets when strolling through the world's most liveable city: Vienna, Austria.
-- **Machine Learning**: In Vienna, I loved in Schottenfeldgasse, 1070. With Silvio, Blue and Barry.
+- **Machine Learning**: In Vienna, I loved a flat in the seventh district. With Silvio, Blue and Barry.
 - **Deep Learning**: Detailed and `deep` appreciation for my parents home in Eichelsee, Germany.
 - **Golang Syntax**: A drive from our current home in Snoqualmie to Bellevue, Washington State.
 - **Cloud Infrastructure**: Discovering the Unescco world heritage town of Bamberg, Germany.

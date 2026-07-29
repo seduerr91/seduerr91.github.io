@@ -11,8 +11,7 @@ description: Selected AI engineering work, open-source contributions, product ou
 I build AI products at the boundary between models and real software: provider integrations, evaluation systems, production services, developer examples, and the infrastructure that makes fast inference useful.
 
 <div class="portfolio-actions">
-  <a class="btn btn-primary" href="mailto:{{ site.author.email }}">Get in touch</a>
-  <a class="btn btn-outline-primary" href="{{ '/cv/' | relative_url }}">View CV</a>
+  <a class="btn btn-primary" href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
   <a class="btn btn-outline-primary" href="https://github.com/{{ site.author.github }}">GitHub</a>
 </div>
 

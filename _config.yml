@@ -37,7 +37,6 @@ feed:
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
-  - pages/cv.md
   - pages/public.md
   - pages/tags.html
   - pages/404.html
@@ -81,7 +80,6 @@ author:
   image             : /assets/seb-caricature.jpeg
 #  behance           : your_username
 # dribbble          : your_username
-  email             : duerr.sebastian@gmail.com
   facebook          : seduerr
   github            : seduerr91
   gitlab            : seduerr

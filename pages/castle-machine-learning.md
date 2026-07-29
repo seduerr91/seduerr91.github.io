@@ -3,10 +3,10 @@ title: Machine Learning
 tags: [Mental Castle]
 style: fill
 color: success
-description: Schottenfeldgasse 55-3
+description: Vienna
 ---
 
-A walk through Schottenfeldgasse 55/3 in the name of Machine Learning.
+A walk through Vienna in the name of Machine Learning.
 
 ## `Us` General Concepts
 

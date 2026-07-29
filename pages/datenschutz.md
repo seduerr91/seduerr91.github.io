@@ -8,8 +8,7 @@ Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der V
 ## VERANTWORTLICHER
 
 Inh.: Sebastian Duerr <br>
-Schottenfeldgasse 55/3, AT-1070 Wien<br>
-duerr.sebastian@gmail.com
+Wien, Oesterreich
 
 ### Arten der verarbeiteten Daten
 

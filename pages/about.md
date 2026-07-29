@@ -19,7 +19,6 @@ Originally, I come from a tiny Bavarian village with more cows than people. Some
 </div>
 
 <div class="my-4" style="text-align: center;">
-{% include elements/button.html link="/cv/" text="CV" style="primary" %}
 {% include elements/button.html link="/public/" text="Portfolio" style="primary" %}
 </div>
 

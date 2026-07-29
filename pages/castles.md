@@ -13,7 +13,7 @@ Everything I want to know in engineering.
 | [Object Oriented Development in Python](/pages/castle-object-oriented-python) | City of Wuerzburg             |
 | [Algorithms and Data Structures](/pages/castle-algorithms-and-data-structures)       | City of Vienna                |
 | [Software Philosophy](/pages/castle-software-philosophy)                      | City of Seattle            |
-| [Machine Learning](/pages/castle-machine-learning)                            | Schottenfeldgasse 55, Vienna  |
+| [Machine Learning](/pages/castle-machine-learning)                            | City of Vienna                |
 | [Deep Learning](/pages/castle-deep-learning)                         | Brueckenstr, Eichelsee        |
 | [Golang Syntax](/pages/castle-golang)                                         | Commute Bellevue              |
 | [Systems Design](/pages/castle-systems-design)                                         | WholeFoods SLU        |
