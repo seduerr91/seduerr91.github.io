@@ -6,8 +6,6 @@ color: success
 description: "A low-key smart-fridge idea: battery-friendly camera nodes, a small server, and a privacy-first inventory system that knows what is in the fridge."
 ---
 
-# Project FridgeLog: The Privacy-Preserving Smart Fridge I Want to Build
-
 I want to build a fridge inventory system that is useful enough to check from my phone, simple enough to prototype at home, and private enough that it does not feel like I installed a surveillance product in my kitchen.
 
 The core idea is straightforward:

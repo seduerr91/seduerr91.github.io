@@ -6,8 +6,6 @@ color: success
 description: Loop-friendly 2-3 day backpacking and fastpacking routes near Issaquah for long-mile weekends.
 ---
 
-# Pacific Northwest Weekend Backpacking Loop Ideas Near Issaquah
-
 If you want a Friday-evening-to-Sunday itinerary with real mileage but simple logistics, Washington has several excellent options within driving distance of Issaquah.
 
 I prioritized:

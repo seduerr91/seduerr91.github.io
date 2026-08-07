@@ -6,8 +6,6 @@ color: success
 description: A practical guide to fitting one night of sleeping gear, food, water, and safety essentials into a 22-liter running vest.
 ---
 
-# How to Pack a 22L Running Vest for an Overnight
-
 A `22L` running vest is where overnight fastpacking starts to feel realistic instead of extreme.
 
 You still need to care about volume, weight, and weather, but `22L` gives you enough room to stop playing pure survival Tetris.

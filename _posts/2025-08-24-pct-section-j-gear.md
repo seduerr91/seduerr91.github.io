@@ -6,8 +6,6 @@ color: success
 description: A lighter, more practical four-day gear guide for PCT Section J with food, clothing, and comfort tradeoffs.
 ---
 
-# Backpacking Gear for PCT Section J
-
 For a four-day carry on PCT Section J, I would optimize hard for low weight and low friction.
 
 The older version of this article was too generic and too heavy. For this kind of trip, I would rather bring fewer clothes, skip bulky luxuries, and spend the saved weight on the items that actually improve the experience: a reliable shelter, a good sleeping setup, enough calories, a headlamp, and power.

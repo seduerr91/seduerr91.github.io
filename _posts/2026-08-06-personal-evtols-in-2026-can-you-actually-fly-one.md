@@ -6,8 +6,6 @@ color: info
 description: A practical look at the personal eVTOLs you can order in 2026, what FAA rules actually allow, and which ones feel real versus aspirational.
 ---
 
-# Personal eVTOLs in 2026: Can You Actually Fly One?
-
 Watching videos about personal flying vehicles makes it seem like we will all be commuting through the sky within a few years.
 
 The reality is more nuanced.

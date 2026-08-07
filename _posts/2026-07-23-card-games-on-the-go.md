@@ -6,8 +6,6 @@ color: success
 description: A practical guide to Yaniv, Palace, Crazy Eights, Gin Rummy, Rummy 500, Egyptian Rat Screw, Durak, and President with one deck of cards.
 ---
 
-# Card Games on the Go With One Deck
-
 A single 54-card deck is one of the best travel tools ever invented.
 
 It fits in a jacket pocket, works in airports, cabins, hostels, and campsites, and can support very different moods: tactical, chaotic, social, quiet, loud, fast, and surprisingly competitive.

@@ -6,8 +6,6 @@ color: success
 description: Sleep, nutrition, and sport are the foundation that everything else in life and work compounds on top of.
 ---
 
-# Health Is the Highest-Leverage Investment You Can Make
-
 People often ask what the foundation of productivity, good decision-making, and long-term success is.
 
 It is not a new framework. It is not AI. It is not working longer hours.

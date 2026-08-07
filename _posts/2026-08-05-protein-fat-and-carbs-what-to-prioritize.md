@@ -6,8 +6,6 @@ color: success
 description: A practical way to prioritize protein, fat, and carbohydrates based on muscle gain, fat loss, training, and general health.
 ---
 
-# Protein, Fat, and Carbs: What to Prioritize and Why
-
 ![Illustration showing protein as bricks, carbs as electricity, and fat as plumbing in a house](/assets/posts/protein-fat-carbs-priority.svg)
 
 *A simple way to think about the big three: protein builds, carbs fuel, and fat keeps the system running well.*

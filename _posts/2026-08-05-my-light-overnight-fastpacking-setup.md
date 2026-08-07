@@ -6,8 +6,6 @@ color: success
 description: A light one-night fastpacking setup that still leaves room for decent sleep, a real pillow, and an enjoyable night outside.
 ---
 
-# My Light Overnight Fastpacking Setup Right Now
-
 ![A lightweight backpacking kit laid out neatly on a table](https://images.unsplash.com/photo-1645013283037-75b328ba9e8f?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=80&w=2400)
 
 *Photo by [Hendrik Morkel](https://unsplash.com/@hendrikmorkel) on [Unsplash](https://unsplash.com/photos/the-contents-of-a-backpack-laid-out-on-a-table-hI3kgQCgMlE)*

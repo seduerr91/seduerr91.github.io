@@ -6,8 +6,6 @@ color: success
 description: A practical study and interview prep guide for the N-400 naturalization process.
 ---
 
-# Becoming a U.S. Citizen: An N-400 Interview Prep Guide
-
 This is a practical study and interview prep guide for the naturalization process.
 
 This guide is organized around the **2025 civics test** question bank, which has `128` questions.

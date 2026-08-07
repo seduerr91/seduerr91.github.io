@@ -37,14 +37,13 @@ style: fill
 color: success
 description: One sentence that explains the article.
 ---
-
-# My Post Title
 ```
 
 Notes:
 
 - Do not add `layout:` for regular posts unless there is a strong reason. `_config.yml` already assigns `layout: post` to the `posts` collection.
-- Keep the H1 identical to the `title`.
+- Do not repeat the `title` as a Markdown H1. `_layouts/post.html` already renders `{{ page.title }}`, so adding `# My Post Title` at the top will display the title twice.
+- Start the article body directly with the intro paragraph, hero image, or first section instead.
 - `tags` use inline bracket syntax, for example `[Travel, AI]`.
 - `style: fill` and `color: success` are the repo's common defaults for regular posts.
 
@@ -67,7 +66,8 @@ description: "A summary of new posts from source-name on MM-DD"
 Notes:
 
 - `_config.yml` already assigns `layout: post` to the `ai_daily` collection.
-- These posts often start directly with a bold meta-summary instead of repeating the title as an H1.
+- Do not repeat the title as an H1 here either; the post layout already renders it.
+- These posts often start directly with a bold meta-summary instead of a heading.
 - If multiple sources are summarized, expand tags only when helpful, for example `[AI, Blogs, Cookbooks]`.
 
 ## Images
@@ -89,7 +89,7 @@ Example:
 
 Before finishing:
 
-1. Confirm the filename, date, slug, title, and opening heading all agree.
+1. Confirm the filename, date, slug, and title all agree, and that the body does not start with a duplicate H1 matching the title.
 2. Confirm front matter is valid YAML and bracket tags are closed.
 3. Run `bundle exec jekyll build` to catch rendering or front matter issues.
 4. Use `bundle exec jekyll serve` or `just run` if you need a local preview.

@@ -6,8 +6,6 @@ color: success
 description: "A personal plan for dealing with recurring neck pain after years at a computer, lots of running, and not enough mobility work."
 ---
 
-# How I’m Trying to Fix My Chronic Neck Pain
-
 For years I have had recurring neck pain.
 
 Some mornings I can barely turn my head properly to the left or right. Sometimes it improves as the day goes on, only to tighten up again after long hours at the computer.

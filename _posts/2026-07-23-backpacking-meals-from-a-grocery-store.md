@@ -6,8 +6,6 @@ color: success
 description: Lower-calorie, low-hassle backpacking meals you can build from Safeway or another regular grocery store.
 ---
 
-# Backpacking Meals From a Grocery Store
-
 This is actually one of my favorite ways to backpack.
 
 You can often eat better, cheaper, and lighter than if you buy only Mountain House meals, and a regular grocery store like Safeway has almost everything you need.

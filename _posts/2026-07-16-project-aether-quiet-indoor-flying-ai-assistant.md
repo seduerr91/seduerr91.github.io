@@ -6,8 +6,6 @@ color: success
 description: "A future side-project idea: a quiet helium blimp AI assistant that can follow me around the house, see, speak, and remember."
 ---
 
-# Project Aether: The Quiet Indoor Flying AI Assistant I Want to Build
-
 I do not have time to build this right now.
 
 But it is exactly the kind of project I know I will come back to.

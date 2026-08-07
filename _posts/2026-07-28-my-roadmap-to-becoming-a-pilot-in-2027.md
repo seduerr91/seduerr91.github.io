@@ -6,8 +6,6 @@ color: success
 description: A practical Washington-state roadmap for going from a Part 107 drone certificate to a private pilot certificate in 2027.
 ---
 
-# My Roadmap to Becoming a Pilot in 2027
-
 I want to become a pilot in `2027`.
 
 Right now, I only have the FAA drone certificate, which is a real start but obviously not the same thing as flying an airplane. The good news is that it is not starting from zero. I already have some weather, airspace, planning, and safety context. The next step is turning that into a real airplane training plan that fits western Washington instead of pretending I live in Arizona.

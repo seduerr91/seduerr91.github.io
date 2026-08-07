@@ -6,8 +6,6 @@ color: success
 description: AI changed the speed and volume of knowledge work, but not the principles that make work trustworthy.
 ---
 
-# What Stayed the Same in the Time of AI
-
 AI changed a lot, and it changed it quickly.
 
 The first draft is cheap now. Prototypes appear in hours instead of weeks. A single person can produce the amount of writing, code, design exploration, and research support that used to require a small team. The distance between an idea and a rough implementation has collapsed.

@@ -6,8 +6,6 @@ color: success
 description: Loop-friendly 20-40 mile backpacking and fastpacking routes near Issaquah that work as strong one-night adventures.
 ---
 
-# Single-Night Backpacking Loop Ideas Near Issaquah
-
 ![A runner overlooking a mountain lake](/assets/posts/mountain-running.webp)
 
 *Photo by [Kalen Emsley](https://unsplash.com/@kalenemsley) on [Unsplash](https://unsplash.com)*
