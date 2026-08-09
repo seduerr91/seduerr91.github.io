@@ -2,15 +2,27 @@
 title: "My Roadmap to Becoming a Pilot in 2027"
 tags: [Aviation, Goals, Learning, Pacific Northwest]
 style: fill
-color: success
-description: A practical Washington-state roadmap for going from a Part 107 drone certificate to a private pilot certificate in 2027.
+color: primary
+description: A practical roadmap for getting my private pilot certificate in 2027 as the first real step toward future personal VTOL flying.
 ---
 
 I want to become a pilot in `2027`.
 
-Right now, I only have the FAA drone certificate, which is a real start but obviously not the same thing as flying an airplane. The good news is that it is not starting from zero. I already have some weather, airspace, planning, and safety context. The next step is turning that into a real airplane training plan that fits western Washington instead of pretending I live in Arizona.
+Right now, I only have the FAA drone certificate, which is a real start but obviously not the same thing as flying an airplane. The good news is that it is not starting from zero. I already have some weather, airspace, planning, and safety context.
 
-This roadmap assumes my goal is a **Private Pilot Certificate, Airplane Single-Engine Land**, not an airline path yet. That is the right first milestone: it gets me into the cockpit, lets me carry passengers, and creates the foundation for instrument, commercial, or anything else later.
+The more honest version of this goal is that I do **not** only want a private pilot certificate for its own sake.
+
+I want to position myself for a world where personal **powered-lift / eVTOL** aircraft become genuinely usable.
+
+As of August 9, 2026, the FAA picture is much more real than it was a few years ago:
+
+- the FAA published the final [powered-lift integration rule](https://www.federalregister.gov/documents/2024/11/21/2024-24886/integration-of-powered-lift-pilot-certification-and-operations-miscellaneous-amendments-related-to) in November 2024
+- the FAA now has [powered-lift pilot training guidance](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_194-2.pdf)
+- [MOSAIC](https://www.faa.gov/aircraft/MOSAIC) is live in pieces, with pilot-related changes effective October 22, 2025 and light-sport category aircraft certification changes effective July 24, 2026
+
+That said, the ecosystem is still early. Specific aircraft still have to get certificated, training pipelines still have to mature, and infrastructure still has to exist in the places I would actually want to live and fly.
+
+So this roadmap still assumes my first major milestone is a **Private Pilot Certificate, Airplane Single-Engine Land**. Not because I have abandoned the VTOL idea, but because it is still the best real first move.
 
 ## What the FAA Path Actually Looks Like
 
@@ -29,6 +41,76 @@ For a private pilot certificate, the FAA minimum is `40` flight hours, but the F
 
 I also need at least a **third-class medical certificate before my first solo flight**, and the private pilot airplane knowledge test is the **PAR** exam: `60` questions, `2.0` hours, and a `70%` passing score.
 
+## Why This Still Matters Even If My Real Goal Is VTOL
+
+If personal powered-lift aircraft actually become practical, I do not want to be the person starting from zero at that moment.
+
+I want to already have:
+
+- aeronautical judgment
+- weather discipline
+- airspace fluency
+- radio comfort
+- actual cockpit habits
+- some understanding of aircraft systems and limitations
+
+The FAA's current powered-lift guidance is aimed at adding a **powered-lift category rating and specific type rating to an existing pilot certificate**, not creating a magical shortcut for non-pilots. That is a huge reason the private pilot path still feels right. Source: [AC 194-2](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_194-2.pdf).
+
+In other words: even if the aircraft eventually looks futuristic, the skill stack still looks like aviation.
+
+## What MOSAIC Actually Changed
+
+MOSAIC is important, but it does **not** mean I can casually buy any eVTOL and fly it next weekend.
+
+The useful summary is:
+
+- the final MOSAIC rule was published on **July 24, 2025**
+- sport-pilot and related rule changes became effective on **October 22, 2025**
+- light-sport category aircraft certification changes became effective on **July 24, 2026**
+- the FAA explicitly opened the door to **new types of LSA**, including **powered-lift** and **electric motors**
+
+That is a real shift. It expands what can eventually qualify inside the lighter end of the certification system. Sources: [FAA MOSAIC page](https://www.faa.gov/aircraft/MOSAIC), [FAA sport pilot page](https://www.faa.gov/licenses_certificates/airmen_certification/sport_pilot), [FAA light-sport category aircraft page](https://www.faa.gov/aircraft/gen_av/light_sport).
+
+But MOSAIC does **not** remove the need for:
+
+- aircraft certification
+- pilot training
+- operating rules
+- local infrastructure
+- safe landing and takeoff sites
+
+That last point matters a lot. VTOL means "no runway required." It does **not** mean "operate anywhere you feel like."
+
+## What Powered-Lift Changes
+
+The powered-lift framework is where this starts to feel less theoretical.
+
+Under the FAA's current rules, powered-lift operating in **vertical-lift mode** can use helicopter-like minimum altitude treatment under [14 CFR 91.119(d)](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRe4c59b5f5506932/section-91.119) through [14 CFR Part 194](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-L/part-194). That means the runway question really does change.
+
+But the replacement questions are:
+
+- where can I legally and safely take off and land?
+- what routes or altitudes has the FAA prescribed?
+- how hard is the surrounding airspace?
+- how accepted is this locally from a zoning, noise, and infrastructure perspective?
+
+This is why I think personal VTOL will feel more like **helicopter-style aviation plus new infrastructure** than like "a flying car that ignores the rest of aviation."
+
+## What the AIR ONE Example Tells Me
+
+The [AIR ONE official page](https://www.airev.aero/air-one) is a good reality check because it is one of the more interesting personal eVTOL concepts for individual ownership.
+
+As of August 9, 2026, AIR's own site says:
+
+- pilot requirement: **Private Pilot License**
+- certification path: **FAA Light Sport Aircraft (LSA) - MOSAIC**
+
+That is extremely revealing.
+
+Even one of the more consumer-facing personal eVTOL companies is not currently saying, "sport pilot only, no big deal." It is still pointing at a real pilot baseline.
+
+That is one of the strongest reasons I do not want to overfit my 2027 plan to hypothetical shortcuts.
+
 ## Why Washington Changes the Plan
 
 If I lived somewhere dry and predictable, I could try to speed-run the whole thing in one season. Western Washington is not that place.
@@ -41,6 +123,13 @@ That means the smarter plan is:
 - Use early fall as checkride buffer in case weather, maintenance, or scheduling gets in the way
 
 That is not slower. It is just more realistic.
+
+It is also worth separating two questions:
+
+1. Where should I get my private pilot certificate?
+2. Where would a future **personal VTOL lifestyle** actually be easiest?
+
+Those answers may not be the same.
 
 ## Phase 1: Late 2026, Make Aviation Real
 
@@ -110,6 +199,9 @@ I do not need a giant library at first. I mostly need the right FAA material and
 - [Airman Knowledge Testing Supplement](https://www.faa.gov/training_testing/testing/supplements)
 - [PAR Sample Questions](https://www.faa.gov/sites/faa.gov/files/training_testing/testing/test_questions/par_questions.pdf)
 - [Aviation Weather Center](https://aviationweather.gov/)
+- [AC 194-2 - Pilot Training and Certification for Powered-Lift Operations](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_194-2.pdf)
+- [AC 194-1 - Powered-Lift Operations](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_194-1.pdf)
+- [FAA AAM Infrastructure / Vertiports](https://www.faa.gov/airports/new_entrants/aam_infrastructure)
 
 ### Optional but Useful for Understanding How Airplanes Work
 
@@ -218,6 +310,18 @@ This is where the training starts to feel like actual flying rather than only le
 
 This is also where western Washington summer becomes a real advantage. I want to use the best weather window for the biggest training chunk.
 
+## A More Honest Long-Term Goal Stack
+
+If I am being honest with myself, the long-term stack I care about probably looks more like this:
+
+1. Get private pilot airplane in `2027`
+2. Keep flying enough to become genuinely comfortable, not just legal
+3. Decide whether instrument rating is worth it for the climate and kind of flying I want
+4. Track the powered-lift market and certification picture from `2027-2029`
+5. Be ready to add a powered-lift rating / type rating when a real aircraft and training pipeline exist
+
+That is much less cinematic than "flying car by next summer," but it is also much more likely to work.
+
 ## A Realistic 2027 Timeline
 
 | Time | Focus |
@@ -230,6 +334,102 @@ This is also where western Washington summer becomes a real advantage. I want to
 | `Jul-Sep 2027` | Cross-country, night, instrument reference, checkride prep |
 | `Oct-Nov 2027` | Buffer for weather, maintenance, and examiner scheduling |
 
+## Where This Might Be Easier Than Western Washington
+
+If I optimize for a future that includes personal aircraft and maybe someday personal VTOL, western Washington is probably not the easiest place to do it.
+
+The main Washington drawbacks are:
+
+- marine weather and lower ceilings
+- dense Seattle-area airspace on the west side
+- terrain and pass weather
+- still-early vertiport planning rather than a mature ecosystem
+
+WSDOT is clearly thinking about this world. It has already published a [Vertiports Land Use Compatibility Supplement](https://wsdot.wa.gov/sites/default/files/2025-05/Vertiports-Land-Use-Compatibility-Supplements.pdf) and an [Advanced Air Mobility Aircraft Plan](https://wsdot.wa.gov/sites/default/files/2025-06/Advanced-Air-Mobility-Aircraft-Plan-May2025.pdf). That is encouraging, but it also means Washington is still in the planning stage.
+
+If I wanted to bias toward sunshine, aviation access, and less density while still keeping great nature nearby, these states look especially worth watching:
+
+### 1. Idaho
+
+This might be the strongest overall alternative.
+
+Why:
+
+- Idaho's Aeronautics Division maintains **30+ backcountry airstrips**
+- the state openly leans into recreational and backcountry flying
+- places like Boise give much drier weather than western Washington
+- mountains, rivers, skiing, and wilderness are all still right there
+
+Sources: [Idaho Aeronautics](https://itd.idaho.gov/aero/), [Idaho backcountry airports](https://itd.idaho.gov/aero/backcountry-airports/), [NWS Boise climate summary](https://www.weather.gov/boi/climatesummary), [NWS Boise annual precipitation](https://www.weather.gov/boi/annual?station=101022&type=pcpn).
+
+My read: Idaho is probably the best blend of **real nature + real flying culture + drier conditions**.
+
+### 2. Utah
+
+Utah is a very strong candidate if I want sunshine and aviation energy.
+
+Why:
+
+- UDOT's Division of Aeronautics supports a statewide aviation system and highlights **46 public use airports**
+- the state actively promotes recreational flying through its [Fly Utah Passport Program](https://connect.udot.utah.gov/public/fly-utah-passport-program/)
+- Utah has excellent desert and mountain access depending on where I live
+- the climate is much more training-friendly than western Washington
+
+Sources: [UDOT Aeronautics](https://connect.udot.utah.gov/about-us/operations/aeronautics/), [Fly Utah Passport Program](https://connect.udot.utah.gov/public/fly-utah-passport-program/), [NWS Salt Lake climate portal](https://www.weather.gov/wrh/climate?wfo=slc).
+
+My read: Utah may be the best if I want **sunshine plus dramatic nature plus an aviation-positive state culture**.
+
+### 3. Arizona
+
+Arizona is maybe the easiest pure training environment on this list.
+
+Why:
+
+- a huge amount of VFR-friendly weather
+- a large statewide airport network; ADOT points to **67 publicly owned and operated airports**
+- lots of aviation activity and training culture
+
+The downside for me is that the nature is excellent but different. It is more desert and canyon country than lush mountain wilderness, and the summer heat can be brutal.
+
+Sources: [ADOT aeronautics / airports](https://azdot.gov/news/adot-program-supports-community-airports-across-arizona), [Arizona airport land use resources](https://azdot.gov/planning/airport-development/links-and-resources-airport-development).
+
+My read: Arizona is probably the easiest state for **flying volume**, but not necessarily my favorite lifestyle match.
+
+### 4. Montana
+
+Montana is compelling if I optimize for space, scenery, and general aviation identity.
+
+Why:
+
+- MDT maintains a statewide aviation system, airport directory, inspections, and active pilot services
+- the state feels culturally aviation-friendly
+- the nature is world-class
+
+But I would not confuse Montana with easy year-round flying. Winter is real, distances are long, and it is less of a "sunshine cheat code" than Idaho, Utah, or Arizona.
+
+Sources: [Montana aviation](https://mdt.mt.gov/aviation), [Montana airports](https://www.mdt.mt.gov/aviation/airports.aspx), [Montana aeronautics division](https://www.mdt.mt.gov/contact/organization/aeronautics.aspx).
+
+My read: Montana is a beautiful long-term aviation state, but not the clearest answer if the goal is simply to make training and regular flying easier.
+
+## My Current Location Take
+
+If I stay in Washington for now, the practical move is still:
+
+- train locally
+- finish the private certificate
+- keep watching powered-lift certification
+- think harder about geography only after I know that I truly love real flying, not just the idea of flying
+
+If I eventually optimize for the lifestyle I am imagining, I suspect the ranking looks something like:
+
+1. **Idaho**
+2. **Utah**
+3. **eastern Washington / Cle Elum or Yakima side**
+4. **Arizona**
+5. **Montana**
+
+That ranking is not about prestige. It is about where future small-aircraft or personal-VTOL life seems most likely to feel natural rather than constantly compromised.
+
 ## My Concrete To-Do List
 
 ### By September 2026
@@ -238,6 +438,7 @@ This is also where western Washington summer becomes a real advantage. I want to
 - Fly `1-2` times with my uncle-in-law for exposure
 - Decide which airport and school I would most likely use
 - Estimate a budget range rather than keeping the cost abstract
+- Read the latest FAA MOSAIC and powered-lift overview material so I stop reasoning from old headlines
 
 ### By November 2026
 
@@ -253,6 +454,7 @@ This is also where western Washington summer becomes a real advantage. I want to
 - Be comfortable reading charts and weather products
 - Start scoring `80-85%+` on practice tests
 - Know the basics of aircraft systems, performance, and weight and balance
+- Have a clearer written view on whether Washington is a long-term flying base or only the place I start training
 
 ### By June 2027
 
@@ -281,16 +483,17 @@ I do not need an A&P license. I just want more mechanical intuition.
 
 ## Final Take
 
-The path from drone pilot to airplane pilot is not small, but it is also not mysterious.
+The path from drone pilot to airplane pilot is not small, but it is also not mysterious. And the path from "I like the idea of personal eVTOL" to "I am actually positioned to use one" is even longer.
 
 For me, the smartest version of this plan is:
 
-- Use winter for theory
-- Use a couple of early flights to confirm I love it
-- Handle the medical and student certificate early
-- Train consistently in spring and summer
-- Aim for the private pilot checkride in late `2027`
+- use winter for theory
+- use a couple of early flights to confirm I love it
+- handle the medical and student certificate early
+- train consistently in spring and summer
+- aim for the private pilot checkride in late `2027`
+- treat that as the first real foundation for whatever powered-lift world becomes viable after that
 
-The key is not trying to do everything immediately. The key is turning "I want to become a pilot" into a seasonal plan with specific milestones.
+The key is not trying to do everything immediately. The key is turning "I want to become a pilot" into a seasonal plan with specific milestones while keeping the bigger dream in sight.
 
 That makes it feel less like a dream and more like a project.

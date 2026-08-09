@@ -1,183 +1,171 @@
 ---
-title: "My Light Overnight Fastpacking Setup Right Now"
+title: "My Light Overnight Fastpacking Setup in 2026"
 tags: [Backpacking, Fastpacking, Running, Gear]
 style: fill
 color: success
-description: A light one-night fastpacking setup that still leaves room for decent sleep, a real pillow, and an enjoyable night outside.
+description: A light one-night fastpacking setup that still leaves room for decent sleep, a comfy pillow, and an enjoyable night outside.
 ---
 
 ![A lightweight backpacking kit laid out neatly on a table](https://images.unsplash.com/photo-1645013283037-75b328ba9e8f?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=80&w=2400)
 
 *Photo by [Hendrik Morkel](https://unsplash.com/@hendrikmorkel) on [Unsplash](https://unsplash.com/photos/the-contents-of-a-backpack-laid-out-on-a-table-hI3kgQCgMlE)*
 
-This is my current light one-night setup when I want to move fast, sleep outside, and still have a night that feels good rather than stripped to the bone.
-
-The headline numbers for the main kit are:
-
-- `110.84 oz`
-- `3142.3 g`
-- `6.93 lb`
-
-That is the **core base weight** for the main gear list below.
-
-For me, the point of this setup is not to chase the smallest possible number.
-
-It is to stay light **while still protecting comfort and enjoyment**:
+This is my light one-night setup when I want to move fast, sleep outside, and still have a night that feels good rather than stripped to the bone. It is quite simple, and based on two iterations. The more I do short overnights, the more I want to pack for the exact trip in front of me instead of packing for every hypothetical problem.
+It's about staying light **while still protecting comfort and enjoyment**:
 
 - a real pillow
-- a pad I can actually sleep on
+- a pad I can comfortably sleep on
 - enough shelter to feel calm if conditions shift
 - enough small extras that the trip still feels fun
 
-It does **not** include:
-
-- worn clothing
-- food
-- water
-- toiletries and small extras unless listed
-- optional comfort items like a chair
-
 For me, this is the kind of setup that makes sense for:
 
-- one-night pushes
 - summer or mild shoulder-season conditions
 - decent weather windows
 - routes where I care more about moving than camp luxury
 
 It is not a deep-cold setup, and it is not the kit I would want for a long wet forecast.
 
-## The Big Picture
+## Item Breakdown
 
-The system is built around a few simple choices:
+These are the actual buckets I think about when I pack:
 
-- a small fastpack instead of a traditional backpack
-- a tarp plus bivy instead of a full tent
-- a light quilt and pad instead of a more conventional sleep setup
-- very limited spare clothing
-- no unnecessary duplicates
-- keeping a few comfort items that I know meaningfully improve the experience
+### Sleep Gear
 
-That keeps the weight low without turning the overnight into a deprivation contest.
+This is the core gear, and I got a mix of expensive professional gear, and affordable items that are almost as light as the very expensive ones.
 
-## Core Gear List
+![Sleep gear layout](/assets/backpacking-gear/1-Sleep%20Gear.jpeg)
+
+I want this category to stay simple but non-negotiable:
 
 | Item | Weight (oz) | Weight (g) | Notes |
 |---|---:|---:|---|
 | [Onewind Ultralight Tent Footprint / tarp](https://www.amazon.com/dp/B08R5W38TK?ref=ppx_yo2ov_dt_b_fed_asin_title) | `9.3` | `263.7` | Simple tarp / groundsheet piece |
-| [Minimal backup shoes](https://www.amazon.com/dp/B0G8HTW52P?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1&psc=1) | `5.9` | `167.3` | Very light extra footwear |
-| [Anker 10,000 mAh power bank](https://www.amazon.com/dp/B0CZ9LV3H2?ref=ppx_yo2ov_dt_b_fed_asin_title) | `7.47` | `211.8` | Enough power for a short trip |
-| Frelaxy ultralight liner | `9.07` | `257.1` | Sleep comfort and a little warmth margin |
 | [Hikenature Ultralight pad](https://www.amazon.com/dp/B0GMMMHTGG?ref=ppx_yo2ov_dt_b_fed_asin_title) | `15.0` | `425.2` | Main pad |
 | [Outdoor Research Helium Bivy](https://www.amazon.com/dp/B0D92YMJQW?ref=ppx_yo2ov_dt_b_fed_asin_title) | `15.8` | `447.9` | Bug and weather protection |
 | [NEMO Fillo pillow](http://amazon.com/dp/B0DK7PMPQX?ref=ppx_yo2ov_dt_b_fed_asin_title) | `9.2` | `260.8` | Worth it for sleep quality |
-| ROSE FEATHER down blanket / quilt | `17.5` | `496.1` | Main insulation |
-| [Outdoor Vitals Skyline 30](https://outdoorvitals.com/products/skyline-fastpack) | `21.6` | `612.3` | The pack tying everything together |
-| **Total** | **`110.84`** | **`3142.3`** | **`6.93 lb`** |
+| ROSE FEATHER quilt | `17.5` | `496.1` | Main insulation |
 
-I also use Smelly Proof reusable storage bags for odor control and organization, but I do not have a meaningful weight listed for them here.
+When starting camp: When it comes to finding a spot, I keep some distance to my friends in case they snore. Then, find a flat spot, clean it out, and also attach your headlamp so you'll be able to see later. 
 
-## Where the Weight Actually Goes
+Once a spot is found, put the tarp on the ground, and staking it in, so that it stays in place. Then start with food preparation, and while this keeps lay out the Bivy sack, blow up and put the pad, quilt, and pillow inside. Also, add toiletries like glasses, and the dry back with technology, at the top of the sack.
 
-The system is light, but it is not random. Most of the weight is still going where it should go:
+Another to do is: Keep my AirPods close for the night, start charging my devices (Apple Watch) right away, and switching into comfy shoes.
 
-### Shelter
+### Clothing
 
-| Item | Weight (oz) |
-|---|---:|
-| Tarp / footprint | `9.3` |
-| Bivy | `15.8` |
-| **Shelter subtotal** | **`25.1`** |
+I try to keep clothing brutally practical and tied to duration.
 
-### Sleep
+![Clothing layout](/assets/backpacking-gear/2-Clothing.jpeg)
 
-| Item | Weight (oz) |
-|---|---:|
-| Liner | `9.07` |
-| Pad | `15.0` |
-| Pillow | `9.2` |
-| Quilt / blanket | `17.5` |
-| **Sleep subtotal** | **`50.77`** |
+For a short fastpack, that usually means:
 
-### Carry and Power
+What I wear when I leave the car: 
+- Top: shirt + running hat + sun glasses
+- Legs: sport boxershort + running shorts
+- Feet: running shoes + toe socks 
+- Tracking: Watch + iPhone
+- Backpack + car keys in drybag
+- Chest flasks: water/electrolytes, Alanie
 
-| Item | Weight (oz) |
-|---|---:|
-| Skyline 30 | `21.6` |
-| Power bank | `7.47` |
-| **Carry + power subtotal** | **`29.07`** |
+In the pack:
+- rain protection (Houdini)
+- warming system (gloves + buff)
+- puffer jacket
+- one lightweight t-shirt for any day
+- exact sock count for any day
+- exact boxer count for any day ("flip")
 
-### Extra Footwear
+### One Day of Food
 
-| Item | Weight (oz) |
-|---|---:|
-| Minimal backup shoes | `5.9` |
+I tried hot food first but the setup is too heavy. Some dishes like potato mash, instant oats, and ramen noodles can be prepared with cold food. 
+Hence, the items I rely on:
+- Katadyn water filter
+- plastic water bottle bag
+- foldable bowl with lid
+- large spork
+- little towel
 
-That breakdown feels right to me. Sleep is still the biggest category, which usually means the setup is trying to support recovery and enjoyment, not just chase a spreadsheet number.
+![One day of food](/assets/backpacking-gear/3-1%20Day%20of%20food.jpeg)
 
-## What I Wear
+For nutrition, I pack two bags for each full day +1 of each in a smelly proof reusable plastic bag: 
 
-My worn setup is intentionally simple:
+Pack 1: Trail snacks on the run
+- 2x Alanie powder, 2x Electrolytes
+- Salami, candy bar, salt tablets, Ketones
 
-- socks
-- sport boxer
-- shorts with a smartphone pocket
-- two front soft flasks
+Pack 2: Meals at camp
+- 1x breakfast at 800 calories: instant oats, nuts, freeze-dried fruits, milk powder, salami+taco
+- Two main dishes at 1000 calories: 
+    - example dish 1: potato mash, chicken pouch, bacon cubes, 2x tacos, peanut butter, cholula
+    - example dish 2: ramen noodle pack, tuna puch, 2x tacos, peanut butter, cholula
+- And each an extra (2x tacos, peanut butter, powerbar) as backup.
 
-The idea is to wear the movement system and keep the pack focused on sleep, safety, and the few extras that actually matter.
+As one can see the actual food style, prefers simple grocery-store backpacking food over anything too fancy. I wrote that up separately in [Backpacking Meals From a Grocery Store](/blog/backpacking-meals-from-a-grocery-store).
 
-## What I Pack Beyond the Main Gear
+### Toiletries
 
-These are the small essentials that still come with me:
+This is where extra weight sneaks in if I am not paying attention.
 
-- headlamp
-- Apple Watch and charging cable
-- knife
-- dry bag
-- `2` additional pairs of socks
-- `1` more sport boxer
-- buff
-- gloves
-- Katadyn filter
-- toiletries:
-  wet toilet paper, toothbrush, contact lenses, sunscreen, sanitizer, tape
-- `4` stakes
+![Toiletries layout](/assets/backpacking-gear/4-Toiletries.jpeg)
+
+The goal here is tiny versions only:
+
+- chewing gum
+- one container: sun glasses + normal glasses + 2x contact lenses set (1 extra per day)
+- sunscreen
+- sanitizer
+- tape
+- wet toilet paper + extra bags for storing
+- mosquito spray
+
+### Pack and Seat
+
+This is the part that makes the whole thing feel fast instead of like regular backpacking.
+
+![Pack and pillow layout](/assets/backpacking-gear/5-Pack%20and%20Pillow.jpeg)
+
+The pack should stay small enough that it encourages discipline.
+
+## The Big Picture
+
+The system is built around a few simple choices:
+
+- a light fastpack
+- a tarp plus bivy
+- a light quilt and pad
+- limited spare clothing
+- no unnecessary duplicates
+
+That keeps the weight low without turning the overnight into a deprivation contest.
 
 This is where a lot of "light" kits secretly become heavy, so I try to keep this category disciplined without deleting the small things that make the trip run smoothly.
 
-## Food and Water
+## Camping Notes That Improved the Experience
 
-For a single night, I would add:
+- Sleep away from other people if possible. It makes a huge difference for snoring, random noise, and general camp chaos.
+- Keep AirPods next to me when I sleep.
+- Flip the mattress so the black side is on the ground.
+- Pack differently for different trips: a family hike with cooking is a different system than a one-night or two-night fastpack.
 
-- `3` meals
-- normal moving-day snacks
-- water based on the route and refill spacing
+These are small things, but they changed the quality of the overnight more than a lot of gear purchases.
 
-For the actual food style, I still prefer simple grocery-store backpacking food over anything too fancy. I wrote that up separately in [Backpacking Meals From a Grocery Store](/blog/backpacking-meals-from-a-grocery-store).
+## What I Intentionally Leave Out
 
-## Optional Extras
+- no sleeping bag liner
+- no hiking poles for this setup
+- no hot cooking kit
+- no Kindle, because the iPhone is enough
+- no games
+- no oversized toiletry or first-aid clutter
 
-If I want more comfort, these are the first things that get added:
-
-- REI ultralight chair
-- trekking poles
-
-The chair is obviously luxury. The poles are more defensible, especially if the terrain is steep or the tarp setup benefits from them. I like having this category because it reminds me that I am optimizing for a good trip, not just the lightest possible list.
-
-## What I Like About This Setup
-
-- It is light enough to actually move well with
-- The pack size still feels sane
-- The tarp + bivy system gives me weather and bug flexibility
-- The sleep setup is compact without being absurd
-- It still includes a few quality-of-life pieces I genuinely appreciate
-- It keeps the trip feeling more like fast movement with a night outside than like hauling a traditional camp
+The more I trim these categories, the more this setup actually feels like fastpacking instead of regular backpacking squeezed into a smaller bag.
 
 ## What This Setup Is Not
 
 This is not the setup I would choose for:
 
 - a cold alpine forecast
-- multi-night food carries
 - sustained rain
 - trips where I want a lot of camp comfort
 - trips where I expect to spend more time sitting than moving
@@ -188,6 +176,6 @@ In those conditions, I would scale up rather than pretend every trip should be s
 
 What I like most about this setup is that it feels **intentionally light**, not accidentally incomplete.
 
-At roughly `6.93 lb` for the core kit, it is light enough to feel fast, but still complete enough that I can sleep, recover, and actually enjoy the night.
+At roughly `10 lb` it is light enough to feel fast, but still complete enough that I can sleep, recover, and actually enjoy the night.
 
 That is the balance I care about most: light enough to move well, comfortable enough to want to do it again.
