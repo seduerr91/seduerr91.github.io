@@ -244,6 +244,17 @@ If I were starting today, I would do it in this order:
 
 That would give me a much better path into world models than jumping straight from LLM habits into random papers.
 
+## Follow-Ups I Would Keep Open
+
+If I wanted to stay current after reading an overview like this, I would keep a few living bibliographies open instead of relying on random social posts.
+
+- [`tsinghua-fib-lab/World-Model`](https://github.com/tsinghua-fib-lab/World-Model): this is probably the best research map to keep bookmarked right now. It is tied to the 2025 ACM Computing Surveys paper *Understanding World or Predicting Future? A Comprehensive Survey of World Models* and organizes work across model-based RL, self-supervised learning, LLM and MLLM approaches, interactive 3D environments, robotics, driving, and social simulation.
+- [`knightnemo/Awesome-World-Models`](https://github.com/knightnemo/Awesome-World-Models): a broader community-curated list that is useful when I want faster coverage across embodied AI, autonomous driving, generative modeling, and agent systems.
+- [`JiahuaDong/Awesome-World-Models`](https://github.com/JiahuaDong/Awesome-World-Models): a more survey-shaped collection that is helpful when I want a cleaner conceptual map of the field instead of only a long feed of papers.
+- [`alexzhang13/world-models-papers`](https://github.com/alexzhang13/world-models-papers): a smaller, more opinionated list, but especially useful if I want the classical latent-dynamics / model-based RL definition of world models rather than the much looser "LLMs have world models" discourse.
+
+If I were following this space specifically for drones, robotics, and embodied systems, I would filter those lists toward robotics, driving, interactive 3D, and aerial or physical-world simulation rather than treating "world models" as one giant undifferentiated topic.
+
 ## A Simple Architecture Intuition
 
 Most explanations of world models boil down to a few moving parts:

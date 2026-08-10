@@ -430,6 +430,19 @@ If I eventually optimize for the lifestyle I am imagining, I suspect the ranking
 
 That ranking is not about prestige. It is about where future small-aircraft or personal-VTOL life seems most likely to feel natural rather than constantly compromised.
 
+## Adult-Beginner Follow-Ups I Want to Keep Open
+
+One thing I have realized is that I do not only need FAA references. I also need a few good "what does this actually look like as a grown adult beginner?" resources.
+
+- [FAA: Become a Pilot](https://www.faa.gov/pilots/become): the official starting point for certificate types, medical requirements, testing, and the basic path.
+- [EAA: Learn to Fly](https://www.eaa.org/eaa/learn-to-fly): probably the best beginner-friendly overview I have found in one place.
+- [EAA: Becoming a Private Pilot - Step by Step](https://www.eaa.org/eaa/learn-to-fly/comparing-pilot-types/how-to-become-a-private-pilot): a clean walkthrough of what private pilot training actually involves.
+- [EAA Eagle Flights](https://www.eaa.org/eaa/learn-to-fly/introductory-flights-for-free/eaa-eagle-flights-program): especially interesting because it is built specifically for adults who want a no-pressure introductory flight plus some mentorship.
+- [EAA Learn to Fly Week](https://www.eaa.org/ltfweek): recorded beginner webinars on topics like medicals, choosing a school, using simulators well, saving time and money, and checkride prep.
+- [Magenta Debrief: Flying in midlife](https://magentadebrief.com/flying-in-midlife-how-to-become-a-pilot-in-your-40s-50s-and-beyond/): not U.S.-specific FAA guidance, but one of the better pieces I have seen on the time, energy, money, and family realities of learning later.
+
+If I keep reading in this area, I suspect the highest-leverage shift will be moving from "future powered-lift curiosity" back toward "adult beginner pilot craft" and simply getting closer to the real training rhythm.
+
 ## My Concrete To-Do List
 
 ### By September 2026
