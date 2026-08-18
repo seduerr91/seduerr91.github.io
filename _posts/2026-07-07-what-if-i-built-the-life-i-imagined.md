@@ -44,13 +44,13 @@ The drone is not the end of that goal. It is the beginning.
 
 ## Travel the World
 
-I have visited 85 countries.
+I have visited 82 countries.
 
 At some point, "travel the world" stopped being a distant ambition and became a description of what I had actually done. Those countries gave me friendships, stories, mistakes, meals, languages, missed connections, long train rides, and a much broader understanding of how differently people can build good lives.
 
 There will always be more places to visit. That is one of the wonderful and slightly dangerous things about travel: the list expands faster than it shrinks.
 
-But I do not need to keep moving simply to prove that I am adventurous. Eighty-five countries is enough evidence. The next phase can involve traveling more deliberately and appreciating the home I return to.
+But I do not need to keep moving simply to prove that I am adventurous. Eighty-two countries is enough evidence. The next phase can involve traveling more deliberately and appreciating the home I return to.
 
 **Status: achieved, and still curious.**
 
@@ -104,7 +104,7 @@ The goal is not to optimize every meal and every minute. It is to remain capable
 
 This one needs work.
 
-I have collected plenty of raw material. Eighty-five countries, startup life, AI engineering, ultrarunning, drone flying, immigration, and the general absurdity of being a person should provide enough stories.
+I have collected plenty of raw material. Eighty-two countries, startup life, AI engineering, ultrarunning, drone flying, immigration, and the general absurdity of being a person should provide enough stories.
 
 Having experiences is not the same as telling them well, though. Good storytelling requires timing, structure, attention, and the ability to understand what an audience finds interesting rather than reciting every detail in chronological order.
 
