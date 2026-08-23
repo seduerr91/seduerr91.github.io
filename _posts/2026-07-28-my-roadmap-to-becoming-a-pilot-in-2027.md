@@ -185,57 +185,94 @@ This is also where the gap between drone knowledge and airplane knowledge become
 - Human factors and aeromedical issues
 - The feel of flying the airplane, not just managing rules around it
 
-## The Books and Resources I Should Use
+## What I Should Study: Books, PDFs, and Question Guides
 
-I do not need a giant library at first. I mostly need the right FAA material and a structured way to work through it.
+I do not need a giant aviation library. I need a small set of current sources and a repeatable way to turn them into knowledge.
 
-### Core FAA Material
+The useful distinction is:
 
-- [Pilot’s Handbook of Aeronautical Knowledge](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak)
-- [Airplane Flying Handbook](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook)
-- [Private Pilot Airplane ACS](https://www.faa.gov/training_testing/testing/acs)
-- [Aviation Weather Handbook](https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook)
-- [Aeronautical Chart Users' Guide](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/)
-- [Airman Knowledge Testing Supplement](https://www.faa.gov/training_testing/testing/supplements)
-- [PAR Sample Questions](https://www.faa.gov/sites/faa.gov/files/training_testing/testing/test_questions/par_questions.pdf)
-- [Aviation Weather Center](https://aviationweather.gov/)
-- [AC 194-2 - Pilot Training and Certification for Powered-Lift Operations](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_194-2.pdf)
-- [AC 194-1 - Powered-Lift Operations](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_194-1.pdf)
-- [FAA AAM Infrastructure / Vertiports](https://www.faa.gov/airports/new_entrants/aam_infrastructure)
+- **Learn the theory:** a readable textbook or ground-school course
+- **Verify it:** the current FAA handbook, ACS, regulation, or AIM section
+- **Test it:** practice questions with explanations, not answer memorization
 
-### Optional but Useful for Understanding How Airplanes Work
+The FAA publishes representative PAR sample questions, not the exact live question bank. A good practice bank should therefore teach the concept, explain every answer, and point back to an FAA source.
 
-- [Aviation Maintenance Technician Handbook - General](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation)
-- [Aviation Maintenance Technician Handbook - Airframe](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation)
-- [Aviation Maintenance Technician Handbook - Powerplant](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation)
+### My Minimum-Viable Study Library
 
-I do not need to become a mechanic, but I do want to understand systems better than "engine goes brrr."
+These are direct PDF links, current as checked on **August 23, 2026**. Some of the FAA files are large, but each link goes straight to the hosted document.
 
-## My Suggested Study Order
+| Resource | What I should use it for |
+|---|---|
+| [Pilot's Handbook of Aeronautical Knowledge, FAA-H-8083-25C (PDF)](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/faa-h-8083-25c.pdf) + [2025 MOSAIC addendum (PDF)](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/PHAK_Addendum_%28MOSAIC%29.pdf) | My main theory reference: aerodynamics, systems, instruments, performance, weather, airports, airspace, and navigation |
+| [Airplane Flying Handbook, FAA-H-8083-3C (PDF)](https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/airplane_handbook/00_afh_full.pdf) + [2025 MOSAIC addendum (PDF)](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/AFH_Addendum_%28MOSAIC%29.pdf) | How maneuvers and flight operations work; best read alongside actual lessons rather than cover to cover first |
+| [Aviation Weather Handbook, FAA-H-8083-28B (PDF)](https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-28B.pdf) | Current weather theory, hazards, observations, forecasts, and weather tools |
+| [Private Pilot Airplane ACS, FAA-S-ACS-6C (PDF)](https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf) | The master checklist for what I must know, consider, and do for the knowledge test and checkride |
+| [ACS Companion Guide for Pilots, FAA-G-ACS-2 (PDF)](https://www.faa.gov/training_testing/testing/acs/acs_companion_guide_pilots.pdf) | How the FAA testing process and ACS codes work, plus test-day and practical-test guidance |
+| [PAR sample questions (PDF)](https://www.faa.gov/sites/faa.gov/files/training_testing/testing/test_questions/par_questions.pdf) | The official starter question set and the best way to learn how questions connect to ACS codes |
+| [Private Pilot Airman Knowledge Testing Supplement, FAA-CT-8080-2H (PDF)](https://www.faa.gov/sites/faa.gov/files/training_testing/testing/supplements/sport_rec_private_akts.pdf) | The sectional excerpts, charts, graphs, and figures referenced by PAR questions |
+| [Aeronautical Chart Users' Guide, July 2026 edition (PDF)](https://aeronav.faa.gov/user_guide/cug-complete_20260709.pdf) | Learning sectional symbols and chart conventions; I should always verify that I have the [current edition](https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/aero_guide/) before using it for real flying |
+| [Risk Management Handbook, FAA-H-8083-2A (PDF)](https://www.faa.gov/sites/faa.gov/files/2022-06/risk_management_handbook_2A.pdf) | PAVE, personal minimums, risk assessment, workload, and decision-making beyond test memorization |
 
-If I try to study everything at once, I will just create a pile of tabs and feel productive without actually progressing.
+The two sources I should treat as live rather than frozen books are the [current Aeronautical Information Manual](https://www.faa.gov/air_traffic/publications/) and the current [14 CFR regulations](https://www.ecfr.gov/current/title-14). A dated book or PDF can be excellent for study, but current rules and procedures win whenever they disagree.
 
-A better order is:
+### What I Would Actually Buy
 
-1. Pilot's Handbook of Aeronautical Knowledge
-2. Aviation Weather Handbook
-3. Chart Users' Guide
-4. Airplane Flying Handbook
-5. Private Pilot ACS
-6. Testing supplement and sample PAR questions
+Most of the official library is free, so I should buy books only where they make studying easier.
 
-### The Highest-Value PHAK Chapters for Me
+1. **Best single readable textbook:** [The Complete Private Pilot, 14th edition](https://asa2fly.com/the-complete-private-pilot-fourteenth-edition/). It turns the FAA material into a coherent course and ends chapters with review questions.
+2. **Best question-and-answer book for the checkride:** [Private Pilot Oral Exam Guide, 15th edition](https://asa2fly.com/private-pilot-oral-exam-guide-fifteenth-edition/). It is mapped to the ACS and is more useful once I have basic theory knowledge.
+3. **Best targeted radio book:** [Say Again, Please, 7th edition](https://asa2fly.com/say-again-please-seventh-edition/). This is optional, but worthwhile if radio calls are one of the intimidating parts.
+4. **Optional paper reference:** [2027 FAR/AIM](https://asa2fly.com/2027-far-aim-softcover/). A physical copy is easy to tab, but I still need the current eCFR and FAA AIM updates.
+5. **The POH/AFM for my exact training airplane:** only after I know the school, aircraft model, and ideally the model year. A random Cessna 172 manual is not automatically the manual for the airplane I will fly.
 
-- Aeronautical Decision-Making
-- Aircraft Systems
-- Flight Instruments
-- Weight and Balance
-- Aircraft Performance
-- Weather Theory
-- Aviation Weather Services
-- Airport Operations
-- Airspace
-- Navigation
+My lean shopping list is therefore **one readable textbook plus the oral exam guide**. I can add the radio book if I need it. I do not need to buy paper copies of every free FAA handbook.
+
+For written-test prep, I should choose **one** current course or question system, ideally the one my instructor recommends. ASA Prepware, Gleim, Sporty's, King Schools, and Pilot Institute all occupy this category. Buying several overlapping banks would mostly create duplicate work. I also need to confirm that the course or my instructor will provide the required knowledge-test endorsement before I schedule the PAR.
+
+### Free Question-Based Ways to Start
+
+Yes, there are good question-driven resources I can use before paying for a full course:
+
+- [FAA PAR sample questions](https://www.faa.gov/sites/faa.gov/files/training_testing/testing/test_questions/par_questions.pdf): official questions with ACS codes; use the testing supplement beside them.
+- [Sporty's free Private Pilot Study Buddy](https://www.sportys.com/learn-to-fly/faa-private-pilot-test-prep.html): topic practice and timed practice tests with a much larger question set.
+- [MIT OpenCourseWare Private Pilot Ground School](https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/): free lectures, notes, and an organized conceptual introduction. It is from 2019, so I should learn concepts from it but verify regulations, procedures, and test details against current FAA sources.
+- [AOPA pre-solo courses and quizzes](https://www.aopa.org/training-and-safety/students/presolo/courses/pre-solo-courses-and-quizzes): short scenario-oriented material on airport markings, preflight responsibilities, airspace, weather, and early solo knowledge.
+- The [Private Pilot ACS](https://www.faa.gov/training_testing/testing/acs/private_airplane_acs_6.pdf) itself: every line ending in a `.K` code is a theory prompt I should be able to explain, not just recognize in a multiple-choice list.
+
+Free questions are enough to begin and diagnose weak areas. They do **not** automatically provide the instructor endorsement required to take the FAA knowledge test.
+
+### My Seven-Day Theory Jump-Start
+
+I can start now without pretending that one week is a complete ground school. For every question below, I should first answer from memory, then verify it in the linked FAA material, and finally explain it aloud in plain language.
+
+| Day | Reading | Questions I should be able to answer |
+|---|---|---|
+| `1` | PHAK Chapters 1-2 + [14 CFR 91.3](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-A/section-91.3) | What makes the pilot in command responsible for a flight? What is the difference between a hazard and a risk? How would I use PAVE and IMSAFE for a real Washington winter flight? |
+| `2` | PHAK Chapters 4-6 | Why can an airplane stall at any airspeed or attitude? What changes angle of attack? Why does load factor increase in a level steep turn? What creates the left-turning tendencies? |
+| `3` | PHAK Chapters 7-8 | Why can a magneto-equipped engine keep running after an electrical failure? Which instruments use pitot pressure, static pressure, or gyroscopic principles? What indications would different blockages create? |
+| `4` | PHAK Chapters 12-13 + Aviation Weather Handbook | What makes air stable or unstable? What do a shrinking temperature/dew-point spread and falling pressure suggest? Can I decode a METAR and TAF and describe the actual operational risk? |
+| `5` | PHAK Chapters 14-15 + Chart Users' Guide | What are the entry, communication, equipment, visibility, and cloud-clearance rules for each airspace class? Can I point to the airspace around my likely training airport on a current sectional and explain every nearby symbol? |
+| `6` | PHAK Chapters 10-11 and 16 | How does an aft center of gravity affect stability and stall recovery? Why does high density altitude hurt performance? How do wind, variation, and deviation turn a true course into a compass heading? |
+| `7` | Private Pilot ACS + PAR sample questions + testing supplement | Complete every FAA sample question. For each miss, find the ACS code, explain why each wrong choice is wrong, and write down the exact FAA chapter or regulation that resolves it. |
+
+### The Study Loop I Want to Keep Using
+
+For each topic:
+
+1. Answer `10-20` questions without notes.
+2. Explain each answer aloud instead of accepting that I merely recognized it.
+3. Verify the explanation in an FAA source.
+4. Record the ACS code and make one short correction note for every miss.
+5. Repeat missed concepts after `1`, `3`, and `7` days.
+6. Add a scenario: "What would this mean for an actual flight from my local airport?"
+
+After the seven-day start, I should work topic by topic through a readable textbook or ground school, use the PHAK and weather handbook for depth, read the Airplane Flying Handbook alongside flight lessons, and let the ACS drive final review. Before scheduling the written, I want repeated practice-test scores around `85-90%` with no major weak category, even though the FAA passing score is `70%`.
+
+### Optional Mechanical Deep Dives
+
+If I still want more aircraft knowledge after the private-pilot foundation is underway, the FAA also hosts the [Aviation Maintenance Technician Handbook—General (PDF)](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/amtg_handbook.pdf), [Airframe (PDF)](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-31B_Aviation_Maintenance_Technician_Handbook.pdf), and [Powerplant (PDF)](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/amt_powerplant_handbook.pdf).
+
+I do not need to become a mechanic or read those enormous books in sequence. The better use is to look up a system after I encounter it in the POH, on a preflight, or during a lesson. That gets me beyond "engine goes brrr" without turning private-pilot study into an A&P curriculum.
 
 ## Phase 3: Administrative Setup Before Solo Matters
 

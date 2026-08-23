@@ -1,20 +1,22 @@
 ---
-title: "Ireland for Marla: A Personal Guide to the Emerald Isle"
-tags: [Travel, Ireland, Personal, Recommendations]
+title: "A Personal Guide to Ireland: One Week on the Emerald Isle"
+tags: [Travel, Ireland, Recommendations]
 style: fill
 color: success
-description: My favorite spots in the Republic of Ireland — Dublin, Kerry, Dingle, Cork, and more — structured as a one-week tour for the second week of May 2026.
+description: A flexible one-week guide to Dublin, Kerry, Dingle, Cork, Wicklow, and the places in Ireland I would revisit in a heartbeat.
 ---
 
 ![Ireland coast](https://images.unsplash.com/photo-1588963940468-9e6e4d202209?q=80&w=2671&auto=format&fit=crop)
 
 *Photo by [Jacek Dylag](https://unsplash.com/@dylag) on [Unsplash](https://unsplash.com)*
 
-Marla is heading to Ireland in the second week of May 2026, and she asked for recommendations. I've been lucky enough to spend time in the Republic of Ireland, and these are the places that stuck with me — the ones I'd go back to in a heartbeat.
+Planning a first trip to Ireland is harder than it looks. The country is compact on a map, but every coastal road, small town, mountain pass, and welcoming pub gives you another reason to slow down.
 
-May is a beautiful time to visit. The days are long (sunset around 9 PM), the countryside is impossibly green, the tourist crowds haven't peaked yet, and the weather — well, it's Ireland. Pack layers and a rain jacket and you'll be fine.
+I've been lucky enough to spend time in the Republic of Ireland, and these are the places that stuck with me — the ones I'd go back to in a heartbeat.
 
-I've structured this as a one-week itinerary, but it's meant to be flexible. Ireland rewards wandering. If a pub has a fire going and a session starting, cancel your plans and stay.
+Late spring, especially May, is a beautiful time to visit. The days are long, the countryside is impossibly green, the peak summer crowds have not arrived yet, and the weather — well, it's Ireland. Pack layers and a rain jacket and you'll be fine.
+
+I've structured this as an ambitious one-week itinerary, but it's meant to be flexible rather than followed like a checklist. If you have more time, slow it down and add extra nights in Kerry, Dingle, or Wicklow. Ireland rewards wandering. If a pub has a fire going and a session starting, cancel your plans and stay.
 
 ---
 
@@ -68,7 +70,7 @@ Start early in the day. Stop often. Don't rush it. The point isn't completing th
 
 ### The Dingle Peninsula
 
-I absolutely recommend the Dingle Peninsula. In some ways, I prefer it to the Ring of Kerry — it's less crowded, more intimate, and every bit as beautiful. Dingle town is a charming fishing village with excellent seafood and a famous dolphin named Fungie (though he's been less reliable in recent years).
+I absolutely recommend the Dingle Peninsula. In some ways, I prefer it to the Ring of Kerry — it's less crowded, more intimate, and every bit as beautiful. Dingle town is a charming fishing village with excellent seafood, colorful streets, and plenty of character.
 
 **Horseback riding on the beach.** This was a highlight. Riding a horse along the sand with the Atlantic on one side and green hills on the other — it's the kind of experience that makes you understand why people write songs about Ireland. Book in advance; the good stables fill up.
 
@@ -118,9 +120,9 @@ Glendalough itself — the monastic settlement in the valley — is worth a visi
 
 ---
 
-## Practical Notes for May 2026
+## Practical Notes
 
-**Weather:** Expect anything. Sunshine and rain, often in the same hour. Layers are essential. A good rain jacket is non-negotiable. Comfortable waterproof shoes will save your trip.
+**Weather:** Expect anything. Sunshine and rain can arrive in the same hour. Layers are essential. A good rain jacket is non-negotiable, and comfortable waterproof shoes can save your trip. Late spring brings long days; autumn and winter require a little more respect for limited daylight.
 
 **Driving:** If you're renting a car, remember: drive on the left. The roads in Kerry and Dingle are narrow — sometimes single-track with passing places. Take it slow, pull over for locals, and don't stress. It's part of the experience.
 
@@ -146,16 +148,6 @@ Glendalough itself — the monastic settlement in the valley — is worth a visi
 | 6 | Cork / Limerick | English Market, UCC, King John's Castle |
 | 7 | Wicklow | Powerscourt Gardens, Wicklow Mountains, Glendalough |
 
----
-
-Marla, this is the Ireland I fell in love with. Not the postcard version — the real one. The one where it rains on you and then the sun comes out and there's a rainbow and you're laughing because of course that happened. The one where you end up in a pub talking to a stranger for three hours about everything and nothing. The one where you round a corner on a coastal road and the view is so beautiful you have to pull over and just stand there.
-
-Go. Have the best time. And tell me all about it when you get back.
-
-— Seb
-
----
-
 ## Running Spots in Dublin
 
 If you're like me and need to get a run in even on vacation, Dublin has some great routes:
@@ -165,3 +157,13 @@ If you're like me and need to get a run in even on vacation, Dublin has some gre
 **Phoenix Park.** One of the largest enclosed public parks in any European capital. Herds of wild deer roam the grounds. Wide paths, rolling hills, and you can do loops of varying distances. It's about 11 km around the perimeter if you're feeling ambitious. The deer make it feel like you're running through a nature documentary.
 
 **Herbert Park to Bushy Park along the canal.** This one's more of a trail run. Start at Herbert Park in Ballsbridge, follow the Grand Canal towpath west, and end up in Bushy Park in Terenure. It's green, mostly flat, and the canal gives it a different feel from the coastal runs. About 6 km each way. The path can be a bit uneven in places, which keeps it interesting.
+
+---
+
+## Final Take
+
+This is the Ireland I fell in love with. Not only the postcard version, but the real one. The one where it rains on you and then the sun comes out and there's a rainbow and you're laughing because of course that happened. The one where you end up in a pub talking to a stranger for three hours about everything and nothing. The one where you round a corner on a coastal road and the view is so beautiful you have to pull over and just stand there.
+
+The best version of this trip will not be the one that follows every line of the itinerary. It will be the one that leaves enough room for a longer lunch, an unexpected trail, a conversation with a stranger, or a place you decide not to leave yet.
+
+Go. Have the best time. And if this guide sends you somewhere unforgettable, tell me all about it when you get back.
