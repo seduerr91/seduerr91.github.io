@@ -189,3 +189,5 @@ AI does not become transformative because it is present everywhere. Electricity 
 The useful question is no longer, "Where can we add AI?"
 
 It is, "What would we design differently if useful intelligence could be available at every step?"
+
+That is the question I explore in the follow-up: [*What Would We Design If Intelligence Were Everywhere?*](/blog/what-would-we-design-if-intelligence-were-everywhere).
