@@ -34,11 +34,4 @@ layout: default
   <div class="book-detail-body markdown-body">
     {{ content }}
   </div>
-
-  <footer class="book-detail-footer">
-    <a href="{{ '/books/' | relative_url }}">Browse all book summaries</a>
-    {% if page.keytakes_url %}
-      <a href="{{ page.keytakes_url }}" rel="noopener noreferrer">Original summary page <span aria-hidden="true">↗</span></a>
-    {% endif %}
-  </footer>
 </article>

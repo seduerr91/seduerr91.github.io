@@ -24,25 +24,30 @@ catalog.fetch("books").each do |book|
   next unless File.file?(source_path)
 
   source = File.read(source_path)
-  content_start = source.index(/^## Brief\s*$/)
-  raise "Missing Brief section in #{source_path}" unless content_start
+  hook_match = source.match(/^## Hook\s*$\n+(.*?)(?=^## Overview\s*$)/m)
+  summary_match = source.match(/^## Summary\s*$\n+(.*?)(?=^## Key ideas\s*$)/m)
+  raise "Missing Hook section in #{source_path}" unless hook_match
+  raise "Missing Summary section in #{source_path}" unless summary_match
 
-  content = source[content_start..]
-  content = content.sub(/\A## Brief\s*\n+.*?(?=^## Hook\s*$)/m, "")
   description = book["brief"].to_s.strip
   if description.empty? || description == "No brief stored"
     description = "A book summary of #{book.fetch('title')} by #{book.fetch('author')}."
   end
+  hook = hook_match[1].strip.gsub(/\s+/, " ")
+  hook = description if hook == "_No hook is stored._"
+  summary = summary_match[1].strip
+  summary = description if summary.empty?
+  content = "## Summary\n\n#{summary}\n"
   cover = book["cover_url"].to_s
 
   fields = {
     "title" => book.fetch("title"),
     "book_author" => book.fetch("author"),
     "brief" => book["brief"].to_s == "No brief stored" ? "" : book["brief"].to_s,
+    "hook" => hook,
     "description" => description,
     "cover" => cover,
     "image" => cover.empty? ? "/assets/seb-caricature.jpeg" : cover,
-    "keytakes_url" => book["book_url"].to_s,
     "reading_time_minutes" => book["reading_time_minutes"],
     "summary_updated_at" => book["summary_updated_at"].to_s
   }
@@ -52,7 +57,7 @@ catalog.fetch("books").each do |book|
     "#{key}: #{rendered}"
   end.join("\n")
 
-  File.write(output_path, "---\n#{front_matter}\n---\n\n#{content.lstrip}")
+  File.write(output_path, "---\n#{front_matter}\n---\n\n#{content}")
   File.delete(source_path) if move_sources
   imported_count += 1
 end

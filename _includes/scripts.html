@@ -5,5 +5,5 @@
 {% endif %}
 
 {% if page.url == '/books/' %}
-<script src="{{ '/assets/js/books.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/books.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 {% endif %}
