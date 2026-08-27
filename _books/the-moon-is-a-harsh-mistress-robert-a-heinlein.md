@@ -1,6 +1,7 @@
 ---
 title: "The Moon Is a Harsh Mistress"
 book_author: "Robert A. Heinlein"
+genre: "Science Fiction"
 brief: ""
 hook: "In 2075, a lunar penal colony revolts against Earth's oppression with the help of a self-aware computer, fighting to establish a free society based on the hard-learned truth that there ain't no such thing as a free lunch."
 description: "A book summary of The Moon Is a Harsh Mistress by Robert A. Heinlein."

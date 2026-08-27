@@ -1,6 +1,7 @@
 ---
 title: "Atomic Habits"
 book_author: "James Clear"
+genre: "Personal Development"
 brief: "Tiny behavior changes that compound into remarkable results."
 hook: "If you get 1 percent better each day for one year, you end up thirty-seven times better by the time you are done. Atomic Habits reveals how tiny changes in behavior can compound into remarkable results through a proven system for building good habits and breaking bad ones."
 description: "Tiny behavior changes that compound into remarkable results."

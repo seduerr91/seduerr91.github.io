@@ -1,6 +1,7 @@
 ---
 title: "The Beginning of Infinity"
 book_author: "David Deutsch"
+genre: "Philosophy"
 brief: ""
 hook: "David Deutsch argues that human progress is infinite because all problems are soluble with the right knowledge, positioning us at the very start of an endless journey of discovery."
 description: "A book summary of The Beginning of Infinity by David Deutsch."

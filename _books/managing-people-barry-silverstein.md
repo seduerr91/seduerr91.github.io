@@ -1,6 +1,7 @@
 ---
 title: "Managing People"
 book_author: "Barry Silverstein"
+genre: "Leadership & Management"
 brief: ""
 hook: "Management is a skill most people are required to learn on the fly, but *Managing People* offers a practical, research-backed manual to master that learning curve through five simple rules."
 description: "A book summary of Managing People by Barry Silverstein."

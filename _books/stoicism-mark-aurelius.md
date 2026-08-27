@@ -1,6 +1,7 @@
 ---
 title: "Stoicism"
 book_author: "Mark Aurelius"
+genre: "Philosophy"
 brief: ""
 hook: "What if the secret to inner peace was written by a Roman Emperor solely for himself, never meant to be published?"
 description: "A book summary of Stoicism by Mark Aurelius."

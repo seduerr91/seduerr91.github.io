@@ -1,6 +1,7 @@
 ---
 title: "The Magic of Thinking Big"
 book_author: "David Schwartz"
+genre: "Personal Development"
 brief: ""
 hook: "Success is not determined by the size of your brain, but by the size of your thinking."
 description: "A book summary of The Magic of Thinking Big by David Schwartz."

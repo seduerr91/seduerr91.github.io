@@ -1,6 +1,7 @@
 ---
 title: "Count Zero"
 book_author: "William Gibson"
+genre: "Science Fiction"
 brief: ""
 hook: "In a future where multinational corporations wield more power than governments and artificial intelligences fracture into digital deities, William Gibson's Count Zero explores the blurred boundaries between humanity, technology, and myth."
 description: "A book summary of Count Zero by William Gibson."

@@ -1,6 +1,7 @@
 ---
 title: "What got you here won't get you there"
 book_author: "Marshall Goldsmith"
+genre: "Leadership & Management"
 brief: ""
 hook: "The very behaviors that propelled your career success are now the obstacles preventing you from reaching the next level of leadership."
 description: "A book summary of What got you here won't get you there by Marshall Goldsmith."

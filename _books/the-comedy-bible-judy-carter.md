@@ -1,6 +1,7 @@
 ---
 title: "The Comedy Bible"
 book_author: "Judy Carter"
+genre: "Personal Development"
 brief: ""
 hook: "Judy Carter offers a step-by-step workbook designed to transform your sense of humor into a professional career, guiding you from the first draft of a joke to the final negotiation of a comedy contract."
 description: "A book summary of The Comedy Bible by Judy Carter."

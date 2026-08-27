@@ -1,6 +1,7 @@
 ---
 title: "The Last Colony"
 book_author: "John Scalzi"
+genre: "Science Fiction"
 brief: ""
 hook: "Retired soldiers John Perry and Jane Sagan are recruited to lead a new colony, only to discover they are pawns in a deadly game of galactic politics between the Colonial Union and a vast alien alliance."
 description: "A book summary of The Last Colony by John Scalzi."

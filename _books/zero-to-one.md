@@ -1,6 +1,7 @@
 ---
 title: "Zero to One"
 book_author: "Peter Thiel"
+genre: "Business & Strategy"
 brief: "How to build companies that create truly new value instead of copies."
 hook: "Progress is not merely adding more of the same; it is the singular act of creating something new. To build the future, you must stop copying the past and learn to think for yourself."
 description: "How to build companies that create truly new value instead of copies."

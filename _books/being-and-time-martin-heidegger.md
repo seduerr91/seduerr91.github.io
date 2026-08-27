@@ -1,6 +1,7 @@
 ---
 title: "Being and Time"
 book_author: "Martin Heidegger"
+genre: "Philosophy"
 brief: "This foundational philosophical text explores the concept of time as a horizon for understanding the meaning of being, making it essential for grappling with the existential dimensions of time."
 hook: "Martin Heidegger's *Being and Time* revolutionizes philosophy by arguing that to understand what it means to be, we must first analyze the human experience of time and our embeddedness in the world."
 description: "This foundational philosophical text explores the concept of time as a horizon for understanding the meaning of being, making it essential for grappling with the existential dimensions of time."

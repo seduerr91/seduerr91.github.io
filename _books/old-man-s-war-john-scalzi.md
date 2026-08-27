@@ -1,6 +1,7 @@
 ---
 title: "Old Man's War"
 book_author: "John Scalzi"
+genre: "Science Fiction"
 brief: ""
 hook: "Humanity has reached the stars, but habitable planets are scarce and alien species are hostile, forcing the Colonial Defense Forces to recruit Earth's elderly for a brutal interstellar war that promises a second chance at youth."
 description: "A book summary of Old Man's War by John Scalzi."

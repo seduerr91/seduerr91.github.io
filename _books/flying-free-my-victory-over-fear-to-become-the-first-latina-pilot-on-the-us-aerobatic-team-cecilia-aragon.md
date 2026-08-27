@@ -1,6 +1,7 @@
 ---
 title: "Flying Free: My Victory Over Fear to Become the First Latina Pilot on the US Aerobatic Team"
 book_author: "Cecilia Aragon"
+genre: "Memoir & Biography"
 brief: "This inspirational memoir details Aragon's journey from a fearful, bullied child to a champion pilot, offering a message of breaking free from societal norms."
 hook: "In just six years, Cecilia Aragon transformed from a timid, phobic graduate school dropout too scared to take an elevator into the first Latina pilot on the US Aerobatic Team, proving that fear can be conquered with logic and persistence."
 description: "This inspirational memoir details Aragon's journey from a fearful, bullied child to a champion pilot, offering a message of breaking free from societal norms."

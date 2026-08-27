@@ -1,6 +1,7 @@
 ---
 title: "The Slight Edge"
 book_author: "Jeff Olson"
+genre: "Personal Development"
 brief: ""
 hook: "Success is not a destination you reach in a day; it is a direction you choose through the small, easy-to-ignore habits repeated every day."
 description: "A book summary of The Slight Edge by Jeff Olson."

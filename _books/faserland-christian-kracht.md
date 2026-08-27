@@ -1,6 +1,7 @@
 ---
 title: "Faserland"
 book_author: "Christian Kracht"
+genre: "Literary Fiction"
 brief: ""
 hook: "Christian Kracht's debut novel takes you on a dizzying journey from the northern tip of Germany to the depths of Switzerland, exposing the hollow core of a generation lost in excess, brands, and the shadows of history."
 description: "A book summary of Faserland by Christian Kracht."

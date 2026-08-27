@@ -1,6 +1,7 @@
 ---
 title: "Country Driving"
 book_author: "Peter Hessler"
+genre: "Travel & Outdoors"
 brief: ""
 hook: "Peter Hessler drives through the heart of China's transformation, revealing how the rise of the automobile and the expansion of roads are reshaping a nation from the isolated farms of the north to the bustling factories of the south."
 description: "A book summary of Country Driving by Peter Hessler."

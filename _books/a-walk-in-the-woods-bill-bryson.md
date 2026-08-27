@@ -1,6 +1,7 @@
 ---
 title: "A Walk in the Woods"
 book_author: "Bill Bryson"
+genre: "Travel & Outdoors"
 brief: "A humorous and informative account of attempting to hike the Appalachian Trail, providing entertaining stories and trail insights."
 hook: "After two decades abroad, Bill Bryson attempted to reclaim his heritage by hiking the Appalachian Trail, an ill-advised quest that turned into a hilarious, educational, and perilous adventure."
 description: "A humorous and informative account of attempting to hike the Appalachian Trail, providing entertaining stories and trail insights."

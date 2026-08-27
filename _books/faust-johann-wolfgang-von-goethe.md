@@ -1,6 +1,7 @@
 ---
 title: "Faust"
 book_author: "Johann Wolfgang von Goethe"
+genre: "Literary Fiction"
 brief: "Goethe's tragic play in two parts chronicles the journey of the scholar Faust, who makes a pact with the devil Mephistopheles in exchange for unlimited knowledge and worldly pleasures."
 hook: "Johann Wolfgang von Goethe's monumental drama Faust explores the perilous yet essential human drive for transcendence through the story of a scholar who bets his soul on a moment of absolute fulfillment."
 description: "Goethe's tragic play in two parts chronicles the journey of the scholar Faust, who makes a pact with the devil Mephistopheles in exchange for unlimited knowledge and worldly pleasures."

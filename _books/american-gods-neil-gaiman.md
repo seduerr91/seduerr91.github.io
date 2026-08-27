@@ -1,6 +1,7 @@
 ---
 title: "American Gods"
 book_author: "Neil Gaiman"
+genre: "Fantasy"
 brief: ""
 hook: "In a land where belief creates gods, ancient deities brought by immigrants are starving for attention while new gods of technology and media rise to claim the American soul."
 description: "A book summary of American Gods by Neil Gaiman."

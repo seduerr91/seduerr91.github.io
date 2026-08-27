@@ -1,6 +1,7 @@
 ---
 title: "Harry Potter and the Philosopher's Stone"
 book_author: "J. K. Rowling"
+genre: "Fantasy"
 brief: ""
 hook: "A mistreated orphan discovers he is a wizard and must navigate the hidden world of Hogwarts to protect a magical stone from the dark wizard who killed his parents."
 description: "A book summary of Harry Potter and the Philosopher's Stone by J. K. Rowling."

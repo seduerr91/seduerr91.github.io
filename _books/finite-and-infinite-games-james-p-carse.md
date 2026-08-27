@@ -1,6 +1,7 @@
 ---
 title: "Finite and Infinite Games"
 book_author: "James P. Carse"
+genre: "Philosophy"
 brief: ""
 hook: "There are at least two kinds of games: finite games played for the purpose of winning, and infinite games played for the purpose of continuing the play."
 description: "A book summary of Finite and Infinite Games by James P. Carse."

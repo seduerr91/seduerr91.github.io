@@ -1,6 +1,7 @@
 ---
 title: "The Diamond Age"
 book_author: "Neal Stephenson"
+genre: "Science Fiction"
 brief: ""
 hook: "In a future transformed by ubiquitous nanotechnology, a stolen interactive book becomes the unlikely key to education and survival for a young girl born into a destitute underclass."
 description: "A book summary of The Diamond Age by Neal Stephenson."

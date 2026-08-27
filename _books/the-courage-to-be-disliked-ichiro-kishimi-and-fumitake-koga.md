@@ -1,6 +1,7 @@
 ---
 title: "The Courage to Be Disliked"
 book_author: "Ichiro Kishimi and Fumitake Koga"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Drawing on the provocative principles of Adlerian psychology, this book argues that your past does not define you and that true freedom is found not in pleasing others, but in the courage to live authentically and risk being disliked."
 description: "A book summary of The Courage to Be Disliked by Ichiro Kishimi and Fumitake Koga."

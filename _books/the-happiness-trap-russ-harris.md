@@ -1,6 +1,7 @@
 ---
 title: "The Happiness Trap"
 book_author: "Russ Harris"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Popular myths about happiness claim that we should naturally feel good and have total control over our emotions, but Russ Harris argues that these very expectations create a vicious cycle of struggle and suffering."
 description: "A book summary of The Happiness Trap by Russ Harris."

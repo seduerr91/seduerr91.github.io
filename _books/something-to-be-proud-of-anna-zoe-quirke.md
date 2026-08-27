@@ -1,6 +1,7 @@
 ---
 title: "Something to Be Proud Of"
 book_author: "Anna Zoe Quirke"
+genre: "Literary Fiction"
 brief: "This YA novel about organizing an accessible Pride event aligns with the query by celebrating identity, inclusion, and taking pride in who you are."
 hook: "In a world that often feels like it wasn't designed for them, two teens launch a battle for accessibility, acceptance, and truly joyful queer spaces."
 description: "This YA novel about organizing an accessible Pride event aligns with the query by celebrating identity, inclusion, and taking pride in who you are."

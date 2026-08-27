@@ -1,6 +1,7 @@
 ---
 title: "The Dispossessed"
 book_author: "Ursula K. Le Guin"
+genre: "Science Fiction"
 brief: ""
 hook: "Ursula K. Le Guin's award-winning novel challenges the limits of political idealism by juxtaposing a barren anarchist society against a wealthy capitalist world, revealing that true freedom requires the courage to bridge the gap between isolation and connection."
 description: "A book summary of The Dispossessed by Ursula K. Le Guin."

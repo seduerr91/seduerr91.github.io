@@ -1,6 +1,7 @@
 ---
 title: "Siddhartha"
 book_author: "Hermann Hesse"
+genre: "Literary Fiction"
 brief: "This classic novel follows the spiritual journey of self-discovery of a man named Siddhartha during the time of the Gautama Buddha."
 hook: "Set against the backdrop of ancient India during the time of the Gautama Buddha, Hermann Hesse's lyrical novel follows a young Brahmin who abandons his life of privilege to embark on an uncompromising quest for spiritual enlightenment, discovering that true wisdom cannot be taught, only experienced."
 description: "This classic novel follows the spiritual journey of self-discovery of a man named Siddhartha during the time of the Gautama Buddha."

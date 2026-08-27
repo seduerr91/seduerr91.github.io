@@ -1,6 +1,7 @@
 ---
 title: "Win Bigley"
 book_author: "Scott Adams"
+genre: "History & Society"
 brief: ""
 hook: "Facts matter less than you think. In this eye-opening analysis of the 2016 election, Scott Adams reveals that we are emotional creatures who rationalize our decisions after the fact-and shows you how to master the persuasion techniques that drive human behavior."
 description: "A book summary of Win Bigley by Scott Adams."

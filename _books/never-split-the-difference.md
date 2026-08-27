@@ -1,6 +1,7 @@
 ---
 title: "Never Split the Difference"
 book_author: "Chris Voss"
+genre: "Psychology & Relationships"
 brief: "Negotiation tactics rooted in empathy and tactical listening."
 hook: "Forget everything you know about logic and compromise. The secret to winning any negotiation lies in empathy, psychology, and the strategic use of 'No.'"
 description: "Negotiation tactics rooted in empathy and tactical listening."

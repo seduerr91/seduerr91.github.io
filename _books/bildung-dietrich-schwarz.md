@@ -1,6 +1,7 @@
 ---
 title: "Bildung"
 book_author: "Dietrich Schwarz"
+genre: "History & Society"
 brief: ""
 hook: "Can a single book contain everything one needs to know to be a cultured citizen? Dietrich Schwanitz argues that true education requires both a foundational knowledge of European history and arts, and the practical skills to navigate the world of language and thought."
 description: "A book summary of Bildung by Dietrich Schwarz."

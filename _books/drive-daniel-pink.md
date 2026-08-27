@@ -1,6 +1,7 @@
 ---
 title: "Drive"
 book_author: "Daniel Pink"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Decades of scientific research reveal that the secret to high performance and satisfaction isn't chasing a bigger paycheck, but the deeply human need to direct our own lives, learn, and create."
 description: "A book summary of Drive by Daniel Pink."

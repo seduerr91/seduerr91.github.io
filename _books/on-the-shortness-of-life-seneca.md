@@ -1,6 +1,7 @@
 ---
 title: "On the Shortness of LIfe"
 book_author: "Seneca"
+genre: "Philosophy"
 brief: ""
 hook: "People frantically guard their property, yet squander their time as if they had an endless supply. Seneca argues that it is not that we have a short time to live, but that we waste a lot of it."
 description: "A book summary of On the Shortness of LIfe by Seneca."

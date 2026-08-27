@@ -1,6 +1,7 @@
 ---
 title: "Product Analytics"
 book_author: "Joanne Rodrigues-Craig"
+genre: "Business & Strategy"
 brief: ""
 hook: "To truly grow your business, you must move beyond simply predicting what customers will do and start understanding *why* they do it-this guide combines data science with social science to help you change consumer behavior at scale."
 description: "A book summary of Product Analytics by Joanne Rodrigues-Craig."

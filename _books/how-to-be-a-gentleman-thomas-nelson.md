@@ -1,6 +1,7 @@
 ---
 title: "How to be a Gentleman"
 book_author: "Thomas Nelson"
+genre: "Personal Development"
 brief: ""
 hook: "Being a gentleman isn't about following outdated rules; it's about using timeless principles of respect and consideration to navigate the modern world with grace and integrity."
 description: "A book summary of How to be a Gentleman by Thomas Nelson."

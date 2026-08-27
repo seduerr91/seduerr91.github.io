@@ -1,6 +1,7 @@
 ---
 title: "The Boys in the Light: An Extraordinary WWII Story of Survival, Faith and Brotherhood"
 book_author: "Nina Willner"
+genre: "History & Society"
 brief: "Published in 2025, this book tells the true story of the author's father surviving the Holocaust and his rescue by American soldiers, highlighting resilience and faith during World War II."
 hook: "In the darkest shadows of Nazi Germany, a starving teenage escapee and his best friend stumble into the path of an American tank crew, forging an unbreakable bond of brotherhood that illuminates the power of the human spirit amidst the horrors of World War II."
 description: "Published in 2025, this book tells the true story of the author's father surviving the Holocaust and his rescue by American soldiers, highlighting resilience and faith during World War II."

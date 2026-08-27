@@ -1,6 +1,7 @@
 ---
 title: "Snow Crash"
 book_author: "Neal Stephenson"
+genre: "Science Fiction"
 brief: ""
 hook: "In a future where the government has collapsed and corporate franchises rule, a pizza delivery hacker and a teenage skateboarder must stop a linguistic virus capable of programming the human mind."
 description: "A book summary of Snow Crash by Neal Stephenson."

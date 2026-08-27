@@ -2,10 +2,12 @@
 
 require "fileutils"
 require "json"
+require "yaml"
 
 source_dir = File.expand_path("../assets/books", __dir__)
 output_dir = File.expand_path("../_books", __dir__)
 catalog_path = File.join(source_dir, "catalog.json")
+genres_path = File.expand_path("../_data/book_genres.yml", __dir__)
 move_sources = ARGV.delete("--move")
 
 unless ARGV.empty?
@@ -14,6 +16,7 @@ unless ARGV.empty?
 end
 
 catalog = JSON.parse(File.read(catalog_path))
+genre_by_slug = YAML.safe_load(File.read(genres_path)).fetch("books")
 FileUtils.mkdir_p(output_dir)
 imported_count = 0
 
@@ -43,6 +46,7 @@ catalog.fetch("books").each do |book|
   fields = {
     "title" => book.fetch("title"),
     "book_author" => book.fetch("author"),
+    "genre" => genre_by_slug.fetch(book.fetch("slug")),
     "brief" => book["brief"].to_s == "No brief stored" ? "" : book["brief"].to_s,
     "hook" => hook,
     "description" => description,

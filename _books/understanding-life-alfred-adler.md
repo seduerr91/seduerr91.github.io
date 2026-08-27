@@ -1,6 +1,7 @@
 ---
 title: "Understanding Life"
 book_author: "Alfred Adler"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Alfred Adler's seminal work argues that our deepest struggles and greatest triumphs stem not from instinctual drives, but from our lifelong quest to overcome inferiority through social contribution and cooperation."
 description: "A book summary of Understanding Life by Alfred Adler."

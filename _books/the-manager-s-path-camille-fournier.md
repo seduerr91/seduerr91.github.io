@@ -1,6 +1,7 @@
 ---
 title: "The Manager's Path"
 book_author: "Camille Fournier"
+genre: "Leadership & Management"
 brief: ""
 hook: "Navigating the transition from skilled engineer to respected leader requires a new roadmap, and Camille Fournier provides the essential guide for every step of that journey."
 description: "A book summary of The Manager's Path by Camille Fournier."

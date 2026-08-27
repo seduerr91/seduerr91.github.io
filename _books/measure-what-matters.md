@@ -1,6 +1,7 @@
 ---
 title: "Measure What Matters"
 book_author: "John Doerr"
+genre: "Leadership & Management"
 brief: "A practical guide to running teams with OKRs."
 hook: "Learn how Google, Intel, and the Gates Foundation achieved explosive growth by mastering a simple but powerful goal-setting system called OKRs."
 description: "A practical guide to running teams with OKRs."

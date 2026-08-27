@@ -1,6 +1,7 @@
 ---
 title: "Ray Dalio Principles"
 book_author: "Ray Dalio"
+genre: "Leadership & Management"
 brief: "A systematic framework for embracing reality, learning from mistakes, and building effective organizations."
 hook: "Ray Dalio's Principles offers a systematic approach to success by treating life and work as machines that can be engineered for better outcomes through radical truth and transparency."
 description: "A systematic framework for embracing reality, learning from mistakes, and building effective organizations."

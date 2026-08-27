@@ -1,6 +1,7 @@
 ---
 title: "Stories of Your Life and Others"
 book_author: "Ted Chiang"
+genre: "Science Fiction"
 brief: ""
 hook: "Ted Chiang's award-winning collection uses the rigorous tools of science fiction to explore the deepest questions of language, time, faith, and what it means to be human."
 description: "A book summary of Stories of Your Life and Others by Ted Chiang."

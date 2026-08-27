@@ -1,6 +1,7 @@
 ---
 title: "The Honjin Murders"
 book_author: "Seishi Yokomizo"
+genre: "Mystery & Thriller"
 brief: ""
 hook: "In a snowy Japanese village in 1937, a brutal double homicide in a locked room on a wedding night challenges the limits of logic, revealing that the most terrifying puzzles are often rooted in the rigid traditions of the past."
 description: "A book summary of The Honjin Murders by Seishi Yokomizo."

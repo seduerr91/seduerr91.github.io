@@ -1,6 +1,7 @@
 ---
 title: "Slow Productivity: The Lost Art of Accomplishment Without Burnout"
 book_author: "Cal Newport"
+genre: "Personal Development"
 brief: ""
 hook: "Our modern obsession with busyness is destroying our ability to do meaningful work, but a slower, more deliberate approach offers a path to accomplishment without burnout."
 description: "A book summary of Slow Productivity: The Lost Art of Accomplishment Without Burnout by Cal Newport."

@@ -1,6 +1,7 @@
 ---
 title: "The Earned Life"
 book_author: "Marshall Goldsmith"
+genre: "Personal Development"
 brief: ""
 hook: "Are you stuck in the cycle of 'achievement addiction,' constantly delaying happiness for a future that never arrives? Discover how to align your daily actions with a higher purpose to minimize regret and live a truly earned life."
 description: "A book summary of The Earned Life by Marshall Goldsmith."

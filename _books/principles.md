@@ -1,6 +1,7 @@
 ---
 title: "Principles"
 book_author: "Ray Dalio"
+genre: "Leadership & Management"
 brief: "A system for making better decisions in work and life."
 hook: "Billionaire investor Ray Dalio argues that life, work, and the economy are just machines that can be understood and optimized by anyone willing to embrace reality and learn from pain."
 description: "A system for making better decisions in work and life."

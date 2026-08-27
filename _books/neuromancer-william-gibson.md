@@ -1,6 +1,7 @@
 ---
 title: "Neuromancer"
 book_author: "William Gibson"
+genre: "Science Fiction"
 brief: ""
 hook: "In a dystopian future where high-tech criminals and powerful artificial intelligences reign, a washed-up hacker must pull off the ultimate heist to reclaim his life and sanity."
 description: "A book summary of Neuromancer by William Gibson."

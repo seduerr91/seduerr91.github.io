@@ -1,6 +1,7 @@
 ---
 title: "You Can't Go Home Again"
 book_author: "Thomas Wolfe"
+genre: "Literary Fiction"
 brief: ""
 hook: "Thomas Wolfe's posthumous masterpiece follows the restless journey of George Webber, a young author who discovers that the passage of time and the upheaval of the modern world make a return to the past impossible."
 description: "A book summary of You Can't Go Home Again by Thomas Wolfe."

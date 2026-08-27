@@ -1,6 +1,7 @@
 ---
 title: "Day Hiking Snoqualmie"
 book_author: "Dan Nelson"
+genre: "Travel & Outdoors"
 brief: ""
 hook: "Discover the diverse landscapes of the Cascades just an hour from Seattle with a guide that balances comprehensive trail data with essential safety and etiquette tips for the modern outdoorsman."
 description: "A book summary of Day Hiking Snoqualmie by Dan Nelson."

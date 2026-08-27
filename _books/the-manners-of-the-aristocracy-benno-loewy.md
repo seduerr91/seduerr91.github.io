@@ -1,6 +1,7 @@
 ---
 title: "The Manners of the Aristocracy"
 book_author: "Benno Loewy"
+genre: "Personal Development"
 brief: "This guide covers the etiquette of dinners, weddings, hostess and guest duties, town and country visits, precedence of guests, and court behavior."
 hook: "True aristocratic etiquette is not merely a collection of rigid rules, but a sophisticated code designed to ensure the comfort of others and preserve the order of society."
 description: "This guide covers the etiquette of dinners, weddings, hostess and guest duties, town and country visits, precedence of guests, and court behavior."

@@ -1,6 +1,7 @@
 ---
 title: "The Human Division"
 book_author: "John Scalzi"
+genre: "Science Fiction"
 brief: ""
 hook: "Following a political schism between Earth and the space-faring Colonial Union, a ragtag team of diplomats must prevent an interstellar war while uncovering a conspiracy calculated to destroy human unity."
 description: "A book summary of The Human Division by John Scalzi."

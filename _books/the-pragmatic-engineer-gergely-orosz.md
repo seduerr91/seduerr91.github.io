@@ -1,6 +1,7 @@
 ---
 title: "The Pragmatic Engineer"
 book_author: "Gergely Orosz"
+genre: "Leadership & Management"
 brief: ""
 hook: "Navigating a software engineering career requires more than just coding skills; it demands strategic communication, continuous learning, and a pragmatic approach to people and problems."
 description: "A book summary of The Pragmatic Engineer by Gergely Orosz."

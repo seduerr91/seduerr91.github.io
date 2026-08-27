@@ -1,6 +1,7 @@
 ---
 title: "The Four Agreements"
 book_author: "Dan Ruiz"
+genre: "Personal Development"
 brief: ""
 hook: "You are living in a dream of fear and judgment created by others-but you can wake up by rewriting your agreements with reality."
 description: "A book summary of The Four Agreements by Dan Ruiz."

@@ -1,6 +1,7 @@
 ---
 title: "If on a winter's night a traveler"
 book_author: "Italo Calvino"
+genre: "Literary Fiction"
 brief: ""
 hook: "You open a new novel by Italo Calvino, eager to read, but you quickly discover the pages are out of order and your quest to finish a story has launched a labyrinthine exploration into the very nature of reading itself."
 description: "A book summary of If on a winter's night a traveler by Italo Calvino."

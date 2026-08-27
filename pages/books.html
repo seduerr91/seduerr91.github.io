@@ -32,6 +32,13 @@ description: Book summaries and ideas worth returning to.
     <p class="books-result-count" aria-live="polite" data-books-count>
       Showing {{ site.books | size }} books
     </p>
+
+    <div class="books-filter-row" role="group" aria-label="Filter books by genre">
+      <button class="books-filter is-active" type="button" data-books-genre="" aria-pressed="true">All</button>
+      {% for genre in site.data.book_genres.genres %}
+        <button class="books-filter" type="button" data-books-genre="{{ genre | slugify }}" aria-pressed="false">{{ genre }}</button>
+      {% endfor %}
+    </div>
   </div>
 
   <div class="books-grid" data-books-grid>
@@ -40,6 +47,7 @@ description: Book summaries and ideas worth returning to.
       <article
         class="book-card"
         data-book-card
+        data-genre="{{ book.genre | slugify }}"
         data-search="{{ book.title | append: ' ' | append: book.book_author | downcase | escape }}"
       >
         <a href="{{ book.url | relative_url }}" aria-label="Read the summary of {{ book.title | escape }} by {{ book.book_author | escape }}">
@@ -57,6 +65,7 @@ description: Book summaries and ideas worth returning to.
               >
             {% endif %}
           </div>
+          <span class="book-card-genre">{{ book.genre }}</span>
           <div class="book-card-copy">
             <h2>{{ book.title }}</h2>
             <p class="book-card-author">{{ book.book_author }}</p>

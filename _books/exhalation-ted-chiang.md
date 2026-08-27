@@ -1,6 +1,7 @@
 ---
 title: "Exhalation"
 book_author: "Ted Chiang"
+genre: "Science Fiction"
 brief: ""
 hook: "Ted Chiang's *Exhalation* is a masterful collection of science fiction stories that uses high concepts like time travel and artificial intelligence to explore the deepest questions of human existence, memory, and free will."
 description: "A book summary of Exhalation by Ted Chiang."

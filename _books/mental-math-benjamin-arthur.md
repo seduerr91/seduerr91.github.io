@@ -1,6 +1,7 @@
 ---
 title: "Mental Math"
 book_author: "Benjamin Arthur"
+genre: "Science & Technology"
 brief: ""
 hook: "Unlock the ability to perform lightning-fast calculations in your head by shifting your strategy from right-to-left to left-to-right and learning the 'mathemagician's' shortcuts for complex problems."
 description: "A book summary of Mental Math by Benjamin Arthur."

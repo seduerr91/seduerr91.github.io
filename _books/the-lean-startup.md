@@ -1,6 +1,7 @@
 ---
 title: "The Lean Startup"
 book_author: "Eric Ries"
+genre: "Business & Strategy"
 brief: "A build-measure-learn system for shipping products under uncertainty."
 hook: "A startup's scarcest resource is time to learn what customers actually need. Build less, measure honestly, and shorten that loop."
 description: "A build-measure-learn system for shipping products under uncertainty."

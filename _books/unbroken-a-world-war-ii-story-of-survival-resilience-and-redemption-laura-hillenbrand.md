@@ -1,6 +1,7 @@
 ---
 title: "Unbroken: A World War II Story of Survival, Resilience, and Redemption"
 book_author: "Laura Hillenbrand"
+genre: "Memoir & Biography"
 brief: "This #1 New York Times bestseller chronicles the harrowing true story of former Olympic runner Louis Zamperini, who survived a plane crash, 47 days at sea, and brutal imprisonment in Japanese POW camps during World War II."
 hook: "This is the harrowing true story of Louis Zamperini, an Olympic runner whose journey into extremity took him from a delinquent childhood to a plane crash, forty-seven days adrift in the Pacific, and two years of brutal torture in Japanese POW camps where his greatest battle became preserving his own dignity."
 description: "This #1 New York Times bestseller chronicles the harrowing true story of former Olympic runner Louis Zamperini, who survived a plane crash, 47 days at sea, and brutal imprisonment in Japanese POW camps during World War II."

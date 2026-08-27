@@ -1,6 +1,7 @@
 ---
 title: "Rework"
 book_author: "Jason Fried and David Heinemeier Hansson"
+genre: "Business & Strategy"
 brief: "A contrarian operating manual for building simpler businesses."
 hook: "Most business advice is bloated. To succeed in today’s fast-paced world, you don't need a massive plan or a huge team-you just need to start small, stay lean, and embrace imperfection."
 description: "A contrarian operating manual for building simpler businesses."

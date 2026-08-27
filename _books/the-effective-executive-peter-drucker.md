@@ -1,6 +1,7 @@
 ---
 title: "The Effective Executive"
 book_author: "Peter Drucker"
+genre: "Leadership & Management"
 brief: ""
 hook: "Effectiveness isn't a talent you're born with-it's a discipline you can learn to convert your intelligence into real results."
 description: "A book summary of The Effective Executive by Peter Drucker."

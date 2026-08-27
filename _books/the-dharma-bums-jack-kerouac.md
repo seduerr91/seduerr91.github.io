@@ -1,6 +1,7 @@
 ---
 title: "The Dharma Bums"
 book_author: "Jack Kerouac"
+genre: "Literary Fiction"
 brief: ""
 hook: "In the late 1950s, a restless generation sought meaning not in the suburbs, but in the raw truth of the open road and the silence of the mountains."
 description: "A book summary of The Dharma Bums by Jack Kerouac."

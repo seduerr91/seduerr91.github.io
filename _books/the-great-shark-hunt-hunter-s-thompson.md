@@ -1,6 +1,7 @@
 ---
 title: "The Great Shark Hunt"
 book_author: "Hunter S. Thompson"
+genre: "History & Society"
 brief: ""
 hook: "Hunter S. Thompson's *The Great Shark Hunt* drags readers into the frenzied heart of American life, exposing the hypocrisy and madness of the 1960s and 70s with a style that refuses to separate the reporter from the story."
 description: "A book summary of The Great Shark Hunt by Hunter S. Thompson."

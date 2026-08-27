@@ -1,6 +1,7 @@
 ---
 title: "Der Gelbe Bleistift"
 book_author: "Christian Kracht"
+genre: "Travel & Outdoors"
 brief: ""
 hook: "Christian Kracht's *Der Gelbe Bleistift* is a collection of travelogues that subverts the genre by focusing less on the destinations and more on the detached, stylized observations of a modern dandy flaneur through Asia."
 description: "A book summary of Der Gelbe Bleistift by Christian Kracht."

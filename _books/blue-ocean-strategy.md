@@ -1,6 +1,7 @@
 ---
 title: "Blue Ocean Strategy"
 book_author: "W. Chan Kim and Renee Mauborgne"
+genre: "Business & Strategy"
 brief: "How to create uncontested market space instead of fighting in crowded categories."
 hook: "Most companies fight over existing demand. Blue Ocean Strategy asks what would make the competition irrelevant instead."
 description: "How to create uncontested market space instead of fighting in crowded categories."

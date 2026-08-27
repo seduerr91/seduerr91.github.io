@@ -1,6 +1,7 @@
 ---
 title: "Twentieth-Century Boy"
 book_author: "Duncan Hannah"
+genre: "Memoir & Biography"
 brief: ""
 hook: "Painter Duncan Hannah arrived in 1970s New York as a beautiful, art-obsessed innocent and dove headfirst into a decade of punk rock, seedy parties, and dangerous excess, immortalizing it all in his meticulous journals."
 description: "A book summary of Twentieth-Century Boy by Duncan Hannah."

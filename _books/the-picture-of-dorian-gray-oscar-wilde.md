@@ -1,6 +1,7 @@
 ---
 title: "The Picture of Dorian Gray"
 book_author: "Oscar Wilde"
+genre: "Fantasy"
 brief: ""
 hook: "Oscar Wilde's only novel serves as a haunting Gothic parable that warns of the devastating costs of trading one's soul for eternal youth."
 description: "A book summary of The Picture of Dorian Gray by Oscar Wilde."

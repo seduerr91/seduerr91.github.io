@@ -1,6 +1,7 @@
 ---
 title: "Aristotle's Art of Rhetoric"
 book_author: "Aristotle, Robert C. Bartlett"
+genre: "Philosophy"
 brief: ""
 hook: "For over two millennia, Aristotle's treatise has defined the art of persuasion as a counterpart to logic, bridging the gap between truth and opinion in public life."
 description: "A book summary of Aristotle's Art of Rhetoric by Aristotle, Robert C. Bartlett."

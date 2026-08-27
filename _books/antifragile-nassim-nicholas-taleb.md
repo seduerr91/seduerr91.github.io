@@ -1,6 +1,7 @@
 ---
 title: "Antifragile"
 book_author: "Nassim Nicholas Taleb"
+genre: "Philosophy"
 brief: ""
 hook: "In a world defined by unpredictability and chaos, the true goal is not merely to survive stress, but to thrive because of it."
 description: "A book summary of Antifragile by Nassim Nicholas Taleb."

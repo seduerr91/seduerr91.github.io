@@ -1,6 +1,7 @@
 ---
 title: "Too Like the Lightning"
 book_author: "Ada Palmer"
+genre: "Science Fiction"
 brief: ""
 hook: "Set in a post-scarcity 25th century where nation-states have dissolved into ideological Hives, a convicted historian uncovers a miracle child who threatens to destabilize a fragile utopia."
 description: "A book summary of Too Like the Lightning by Ada Palmer."

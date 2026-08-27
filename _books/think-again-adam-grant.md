@@ -1,6 +1,7 @@
 ---
 title: "Think Again"
 book_author: "Adam Grant"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "In a world that rewards certainty, discover why the ability to rethink and unlearn is the crucial skill for adaptation, innovation, and success."
 description: "A book summary of Think Again by Adam Grant."

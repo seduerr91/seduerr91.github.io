@@ -1,6 +1,7 @@
 ---
 title: "Get Out of Your Mind and Into Your Life"
 book_author: "Steven C. Hayes"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Suffering is not caused by pain itself, but by the futile struggle to avoid it, and the path to a rich life begins by ending that internal war."
 description: "A book summary of Get Out of Your Mind and Into Your Life by Steven C. Hayes."

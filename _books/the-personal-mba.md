@@ -1,6 +1,7 @@
 ---
 title: "The Personal MBA"
 book_author: "Josh Kaufman"
+genre: "Business & Strategy"
 brief: "A self-directed tour of the core mental models behind business."
 hook: "You can master the fundamentals of business without stepping foot inside a classroom or taking on debt. The Personal MBA distills a lifetime of business knowledge into essential mental models and self-directed learning techniques that you can use to make better decisions, increase your income, and build a successful venture on your own terms."
 description: "A self-directed tour of the core mental models behind business."

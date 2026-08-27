@@ -1,6 +1,7 @@
 ---
 title: "Good to Great"
 book_author: "Jim Collins"
+genre: "Business & Strategy"
 brief: "What separates enduring companies from merely decent ones."
 hook: "Good is the enemy of great. Discover why the biggest barrier to success is often complacency, and learn the specific, disciplined habits that allow ordinary companies to become extraordinary."
 description: "What separates enduring companies from merely decent ones."

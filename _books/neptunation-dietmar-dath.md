@@ -1,6 +1,7 @@
 ---
 title: "Neptunation"
 book_author: "Dietmar Dath"
+genre: "Science Fiction"
 brief: ""
 hook: "Dietmar Dath's \"Neptunation\" is an intellectually demanding Space Opera that challenges readers to leave their preconceived notions of physics and politics behind, transforming the struggle of a lost socialist space mission into a profound exploration of consciousness, ideology, and the malleability of natural laws."
 description: "A book summary of Neptunation by Dietmar Dath."

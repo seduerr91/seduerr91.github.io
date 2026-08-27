@@ -1,6 +1,7 @@
 ---
 title: "The Innovator's Dilemma"
 book_author: "Clayton M. Christensen"
+genre: "Business & Strategy"
 brief: "Why great incumbents get disrupted and what they can do about it."
 hook: "Why do the world's best companies, led by smart managers and listening to their customers, still collapse when faced with disruptive change?"
 description: "Why great incumbents get disrupted and what they can do about it."

@@ -1,6 +1,7 @@
 ---
 title: "Thinking, Fast and Slow"
 book_author: "Daniel Kahneman"
+genre: "Psychology & Relationships"
 brief: "A tour of the mental shortcuts and biases that shape decisions."
 hook: "Your intuition is not always your friend. Learn why we are prone to systematic errors in judgment and how to engage 'slow thinking' to make better decisions."
 description: "A tour of the mental shortcuts and biases that shape decisions."

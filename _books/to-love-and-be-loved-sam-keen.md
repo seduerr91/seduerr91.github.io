@@ -1,6 +1,7 @@
 ---
 title: "To Love and Be Loved"
 book_author: "Sam Keen"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Sam Keen challenges our cultural obsession with romance by redefining love not as a feeling we fall into, but as a complex art we must master to feel rooted and secure in our lives."
 description: "A book summary of To Love and Be Loved by Sam Keen."

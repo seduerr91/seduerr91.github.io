@@ -1,6 +1,7 @@
 ---
 title: "1984"
 book_author: "George Orwell"
+genre: "Literary Fiction"
 brief: "A dystopian novel set in a totalitarian society ruled by Big Brother, exploring themes of mass surveillance, censorship, and the erosion of truth."
 hook: "George Orwell's dystopian masterpiece envisions a terrifying future where the government monitors every move, rewrites history, and demands absolute submission from its citizens."
 description: "A dystopian novel set in a totalitarian society ruled by Big Brother, exploring themes of mass surveillance, censorship, and the erosion of truth."

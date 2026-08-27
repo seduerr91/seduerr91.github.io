@@ -1,6 +1,7 @@
 ---
 title: "Wheat Belly"
 book_author: "William Davis"
+genre: "Health & Wellness"
 brief: ""
 hook: "Cardiologist William Davis claims that modern wheat is a genetically engineered appetite stimulant that acts like an opiate, and eliminating it is the key to reversing weight gain and chronic disease."
 description: "A book summary of Wheat Belly by William Davis."

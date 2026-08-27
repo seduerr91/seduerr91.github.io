@@ -1,6 +1,7 @@
 ---
 title: "Listening Well: The Art of Empathic Understanding"
 book_author: "William Miller"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Imagine mastering a communication skill so powerful that it can deepen personal relationships, bridge political divides, and even predict positive outcomes in therapy."
 description: "A book summary of Listening Well: The Art of Empathic Understanding by William Miller."

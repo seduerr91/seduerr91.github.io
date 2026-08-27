@@ -1,6 +1,7 @@
 ---
 title: "To Kill a Mockingbird"
 book_author: "Harper Lee"
+genre: "Literary Fiction"
 brief: ""
 hook: "Set in the exhausted heat of 1930s Alabama, Harper Lee's classic novel uses the eyes of a child to expose the rigid racial codes and hidden hypocrisies of the American South."
 description: "A book summary of To Kill a Mockingbird by Harper Lee."

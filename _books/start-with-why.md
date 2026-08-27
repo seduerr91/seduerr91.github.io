@@ -1,6 +1,7 @@
 ---
 title: "Start With Why"
 book_author: "Simon Sinek"
+genre: "Leadership & Management"
 brief: "Why mission-led storytelling shapes loyal teams and customers."
 hook: "Most companies explain what they do. Some explain how they do it. But very few can clearly articulate why they do it. Discover why this missing piece is the key to inspiring loyalty, trust, and innovation."
 description: "Why mission-led storytelling shapes loyal teams and customers."

@@ -1,6 +1,7 @@
 ---
 title: "The Ghost Brigades"
 book_author: "John Scalzi"
+genre: "Science Fiction"
 brief: ""
 hook: "In a universe where humanity is locked in a desperate struggle for survival, the Colonial Defense Forces creates elite soldiers born for war, raising profound questions about identity, consciousness, and the true cost of keeping the human race alive."
 description: "A book summary of The Ghost Brigades by John Scalzi."

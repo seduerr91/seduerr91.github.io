@@ -1,6 +1,7 @@
 ---
 title: "Extreme Ownership"
 book_author: "Jocko Willink and Leif Babin"
+genre: "Leadership & Management"
 brief: "This foundational book teaches how to take absolute responsibility for outcomes in leadership and life, drawing on combat experiences from Navy SEALs."
 hook: "In the chaos of battle and business, the most effective leaders do not make excuses-they take absolute responsibility for every outcome in their world."
 description: "This foundational book teaches how to take absolute responsibility for outcomes in leadership and life, drawing on combat experiences from Navy SEALs."

@@ -1,6 +1,7 @@
 ---
 title: "Fear and Loathing in Las Vegas"
 book_author: "Hunter S. Thompson"
+genre: "Travel & Outdoors"
 brief: ""
 hook: "We were somewhere around Barstow on the edge of the desert when the drugs began to take hold, launching a savage journey into the heart of a failed American Dream."
 description: "A book summary of Fear and Loathing in Las Vegas by Hunter S. Thompson."

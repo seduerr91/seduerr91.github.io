@@ -4,8 +4,10 @@
   const count = document.querySelector("[data-books-count]");
   const empty = document.querySelector("[data-books-empty]");
   const more = document.querySelector("[data-books-more]");
+  const genreButtons = Array.from(document.querySelectorAll("[data-books-genre]"));
   const pageSize = 24;
   let visibleLimit = pageSize;
+  let activeGenre = "";
 
   if (!search || cards.length === 0) return;
 
@@ -23,7 +25,9 @@
     let matches = 0;
 
     cards.forEach(function (card) {
-      const isMatch = normalize(card.dataset.search || "").includes(query);
+      const matchesSearch = normalize(card.dataset.search || "").includes(query);
+      const matchesGenre = !activeGenre || card.dataset.genre === activeGenre;
+      const isMatch = matchesSearch && matchesGenre;
       const isWithinLimit = query || matches < visibleLimit;
 
       card.hidden = !isMatch || !isWithinLimit;
@@ -39,6 +43,21 @@
   }
 
   search.addEventListener("input", filterBooks);
+
+  genreButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      activeGenre = button.dataset.booksGenre || "";
+      visibleLimit = pageSize;
+
+      genreButtons.forEach(function (genreButton) {
+        const isActive = genreButton === button;
+        genreButton.classList.toggle("is-active", isActive);
+        genreButton.setAttribute("aria-pressed", String(isActive));
+      });
+
+      filterBooks();
+    });
+  });
 
   more.addEventListener("click", function () {
     visibleLimit += pageSize;

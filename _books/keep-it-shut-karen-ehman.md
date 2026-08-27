@@ -1,6 +1,7 @@
 ---
 title: "Keep It Shut"
 book_author: "Karen Ehman"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Our words hold the immense power to either construct relationships or destroy them, making the choice of what to say and when to say nothing a vital spiritual and practical skill."
 description: "A book summary of Keep It Shut by Karen Ehman."

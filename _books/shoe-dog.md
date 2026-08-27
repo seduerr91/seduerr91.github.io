@@ -1,6 +1,7 @@
 ---
 title: "Shoe Dog"
 book_author: "Phil Knight"
+genre: "Memoir & Biography"
 brief: "The chaotic, human story behind the building of Nike."
 hook: "This is the inside story of how a shy, introvert sold shoes out of the trunk of his car, battled constant bankruptcy, and built one of the most iconic brands in history through sheer grit and a refusal to quit."
 description: "The chaotic, human story behind the building of Nike."

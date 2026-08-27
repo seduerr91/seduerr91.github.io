@@ -1,6 +1,7 @@
 ---
 title: "Meditations"
 book_author: "Marcus Aurelius"
+genre: "Philosophy"
 brief: ""
 hook: "Written as a series of private notes to himself by the Roman Emperor, Meditations offers a timeless blueprint for resilience, urging us to master our perceptions, serve the common good, and face mortality with clarity rather than fear."
 description: "A book summary of Meditations by Marcus Aurelius."

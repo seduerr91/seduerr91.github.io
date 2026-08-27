@@ -1,6 +1,7 @@
 ---
 title: "The Six Pillars of Self-Esteem"
 book_author: "Nathaniel Brandon"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Self-esteem is not a prize you win or a trait you are born with; it is the \"immune system of consciousness\" that you build through specific daily actions and practices."
 description: "A book summary of The Six Pillars of Self-Esteem by Nathaniel Brandon."

@@ -1,6 +1,7 @@
 ---
 title: "Manners and Rules of Good Society; Or, Solecisms to be Avoided"
 book_author: "Anonymous (Member of the Aristocracy)"
+genre: "Personal Development"
 brief: "A comprehensive guidebook on etiquette and social conduct from the late 19th century that provides the rules and manners expected in polite society."
 hook: "Master the intricate codes of aristocratic conduct to navigate polite society with grace and avoid the social pitfalls of the past."
 description: "A comprehensive guidebook on etiquette and social conduct from the late 19th century that provides the rules and manners expected in polite society."

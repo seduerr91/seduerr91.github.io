@@ -1,6 +1,7 @@
 ---
 title: "Etiquette in Society, in Business, in Politics, and at Home"
 book_author: "Emily Post"
+genre: "Personal Development"
 brief: "Considered the gold standard for etiquette guides, this book offers timeless advice on navigating social situations with grace and propriety."
 hook: "Often mistaken for a rigid code of aristocratic snobbery, Emily Post's seminal work reveals that true etiquette is simply the technique of human conduct founded upon ethics and consideration for others."
 description: "Considered the gold standard for etiquette guides, this book offers timeless advice on navigating social situations with grace and propriety."

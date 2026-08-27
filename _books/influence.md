@@ -1,6 +1,7 @@
 ---
 title: "Influence"
 book_author: "Robert B. Cialdini"
+genre: "Psychology & Relationships"
 brief: "The psychology behind why people say yes."
 hook: "Why do we say yes to requests we really want to refuse? Discover the six psychological triggers that secretly control your behavior."
 description: "The psychology behind why people say yes."

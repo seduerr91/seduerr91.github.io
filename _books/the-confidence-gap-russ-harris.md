@@ -1,6 +1,7 @@
 ---
 title: "The confidence gap"
 book_author: "Russ Harris"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "True confidence is not the absence of fear, but the ability to take action in spite of it, reshaping your relationship with anxiety rather than trying to eliminate it."
 description: "A book summary of The confidence gap by Russ Harris."

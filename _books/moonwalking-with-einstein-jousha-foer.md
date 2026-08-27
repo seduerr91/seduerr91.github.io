@@ -1,6 +1,7 @@
 ---
 title: "Moonwalking with Einstein"
 book_author: "Jousha Foer"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "An average journalist trained for just one year and won the U.S. Memory Championship, proving that anyone can master the lost art of remembering."
 description: "A book summary of Moonwalking with Einstein by Jousha Foer."

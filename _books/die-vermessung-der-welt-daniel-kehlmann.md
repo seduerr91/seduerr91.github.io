@@ -1,6 +1,7 @@
 ---
 title: "Die Vermessung der Welt"
 book_author: "Daniel Kehlmann"
+genre: "Literary Fiction"
 brief: ""
 hook: "Daniel Kehlmann's best-selling novel reimagines the lives of two brilliant but polar opposites, Carl Friedrich Gauss and Alexander von Humboldt, to explore the Enlightenment's obsession with measuring the infinite."
 description: "A book summary of Die Vermessung der Welt by Daniel Kehlmann."

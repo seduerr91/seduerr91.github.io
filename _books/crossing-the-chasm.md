@@ -1,6 +1,7 @@
 ---
 title: "Crossing the Chasm"
 book_author: "Geoffrey A. Moore"
+genre: "Business & Strategy"
 brief: "How technology products move from early adopters into the mainstream market."
 hook: "Why do breakthrough technologies often stall after exciting early adopters? The answer lies in the \"chasm\"-a dangerous gap between visionary users and the pragmatic majority that must be crossed to achieve market dominance."
 description: "How technology products move from early adopters into the mainstream market."

@@ -1,6 +1,7 @@
 ---
 title: "Built to Last"
 book_author: "Jim Collins and Jerry I. Porras"
+genre: "Business & Strategy"
 brief: "How visionary companies preserve the core while stimulating progress."
 hook: "Discover why the world's most enduring companies succeed not by having a great idea, but by building a culture that preserves its core values while relentlessly stimulating progress."
 description: "How visionary companies preserve the core while stimulating progress."

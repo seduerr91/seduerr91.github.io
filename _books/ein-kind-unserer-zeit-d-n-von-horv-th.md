@@ -1,6 +1,7 @@
 ---
 title: "Ein Kind unserer Zeit"
 book_author: "Ödön von Horváth"
+genre: "Literary Fiction"
 brief: ""
 hook: "Through the eyes of a young volunteer soldier who eagerly trades his individuality for the uniform of a totalitarian state, this novel reveals the terrifying ease with which desperation can be weaponized by propaganda, ultimately asking whether a murderer can simply be a child of his time."
 description: "A book summary of Ein Kind unserer Zeit by Ödön von Horváth."

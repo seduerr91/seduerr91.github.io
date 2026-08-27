@@ -1,6 +1,7 @@
 ---
 title: "Kafka on the Shore"
 book_author: "Haruki Murakami"
+genre: "Literary Fiction"
 brief: ""
 hook: "Two parallel narratives collide in a metaphysical dreamscape where a boy flees an Oedipal curse and an old man searches for lost cats, revealing that the only way to escape fate is to walk through the storm of the subconscious."
 description: "A book summary of Kafka on the Shore by Haruki Murakami."

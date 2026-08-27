@@ -1,6 +1,7 @@
 ---
 title: "The Hard Thing About Hard Things"
 book_author: "Ben Horowitz"
+genre: "Leadership & Management"
 brief: "Brutally practical lessons from building and running hard companies."
 hook: "There is no recipe for running a company; when the dream turns into a nightmare, you need the courage to make the hard calls, tell the truth, and put your people first."
 description: "Brutally practical lessons from building and running hard companies."

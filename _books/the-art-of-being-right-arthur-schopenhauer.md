@@ -1,6 +1,7 @@
 ---
 title: "The Art of Being Right"
 book_author: "Arthur Schopenhauer"
+genre: "Philosophy"
 brief: "Written by Arthur Schopenhauer, this treatise details 38 stratagems for defeating an opponent in a debate, contrasting logical truth with the darker art of dialectic."
 hook: "Arthur Schopenhauer pulls back the curtain on the darker side of debate, revealing that winning an argument often depends on cunning rather than truth."
 description: "Written by Arthur Schopenhauer, this treatise details 38 stratagems for defeating an opponent in a debate, contrasting logical truth with the darker art of dialectic."

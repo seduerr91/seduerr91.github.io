@@ -1,6 +1,7 @@
 ---
 title: "1979"
 book_author: "Christian Kracht"
+genre: "Literary Fiction"
 brief: ""
 hook: "In a world obsessed with aesthetics and hedonism, one wealthy drifter discovers that the ultimate escape from a meaningless existence is the terrifying surrender of the self to totalitarian ideology."
 description: "A book summary of 1979 by Christian Kracht."

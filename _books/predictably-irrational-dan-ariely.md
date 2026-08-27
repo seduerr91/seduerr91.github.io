@@ -1,6 +1,7 @@
 ---
 title: "Predictably Irrational"
 book_author: "Dan Ariely"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Our choices are irrational, but not randomly so. The same biases quietly shape what we buy, value, postpone, and give away."
 description: "A book summary of Predictably Irrational by Dan Ariely."

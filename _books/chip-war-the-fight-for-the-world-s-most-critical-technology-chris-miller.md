@@ -1,6 +1,7 @@
 ---
 title: "Chip War: The Fight for the World's Most Critical Technology"
 book_author: "Chris Miller"
+genre: "History & Society"
 brief: "This authoritative book explores the geopolitics of the microchip industry and its critical role in global power dynamics."
 hook: "Semiconductors have become the new oil, determining the balance of military and economic power while the world's most advanced chips are produced almost entirely on a single island facing geopolitical annihilation."
 description: "This authoritative book explores the geopolitics of the microchip industry and its critical role in global power dynamics."

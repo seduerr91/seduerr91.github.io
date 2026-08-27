@@ -1,6 +1,7 @@
 ---
 title: "Zoe's Tale"
 book_author: "John Scalzi"
+genre: "Science Fiction"
 brief: ""
 hook: "Everyone knows the history of the war, but they do not know Zoe Boutin Perry's tale of how she saved humanity while discovering who she truly is."
 description: "A book summary of Zoe's Tale by John Scalzi."

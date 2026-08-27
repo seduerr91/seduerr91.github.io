@@ -1,6 +1,7 @@
 ---
 title: "Karlmann"
 book_author: "M. Kleeberg"
+genre: "Literary Fiction"
 brief: ""
 hook: "On his wedding day in July 1985, as Boris Becker wins Wimbledon, Karlmann \"Charly\" Renn feels like a winner, unaware that the true operating secrets of his ordinary male life are about to be dissected with unrelenting precision."
 description: "A book summary of Karlmann by M. Kleeberg."

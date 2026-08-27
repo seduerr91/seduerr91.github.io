@@ -1,6 +1,7 @@
 ---
 title: "The Worry (Less) Book: Feel Strong, Find Calm, and Tame Your Anxiety!"
 book_author: "Rachel Brian"
+genre: "Health & Wellness"
 brief: "Playfully presented and expertly vetted, this guide helps readers of all ages understand their anxiety and learn how to tame it effectively."
 hook: "Anxiety is not a sign of weakness but a natural biological response that, when understood and managed, can stop holding you back from living a full life."
 description: "Playfully presented and expertly vetted, this guide helps readers of all ages understand their anxiety and learn how to tame it effectively."

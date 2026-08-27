@@ -25,6 +25,7 @@ layout: default
       {% endif %}
 
       <p class="book-detail-meta">
+        {% if page.genre %}<span>{{ page.genre }}</span>{% endif %}
         {% if page.reading_time_minutes %}<span>{{ page.reading_time_minutes }} minute read</span>{% endif %}
         {% if page.summary_updated_at %}<span>Updated {{ page.summary_updated_at | date: "%B %-d, %Y" }}</span>{% endif %}
       </p>

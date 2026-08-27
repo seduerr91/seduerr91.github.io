@@ -1,6 +1,7 @@
 ---
 title: "The Mind"
 book_author: "John Brockman"
+genre: "Science & Technology"
 brief: ""
 hook: "This anthology assembles the world's leading scientists to tackle the deepest riddles of human consciousness, from the biological machinery of the brain to the social forces that shape our behavior."
 description: "A book summary of The Mind by John Brockman."

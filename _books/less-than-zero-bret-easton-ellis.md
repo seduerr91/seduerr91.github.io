@@ -1,6 +1,7 @@
 ---
 title: "Less Than Zero"
 book_author: "Bret Easton Ellis"
+genre: "Literary Fiction"
 brief: ""
 hook: "Bret Easton Ellis's debut novel offers a chilling, detached look at the morally empty lives of wealthy Los Angeles teenagers in the 1980s."
 description: "A book summary of Less Than Zero by Bret Easton Ellis."

@@ -1,6 +1,7 @@
 ---
 title: "How to Win Friends and Influence People"
 book_author: "Dale Carnegie"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Since 1936, Dale Carnegie's classic guide has taught millions that the secret to success lies not in technical skill, but in the ability to connect with, appreciate, and understand the people around you."
 description: "A book summary of How to Win Friends and Influence People by Dale Carnegie."

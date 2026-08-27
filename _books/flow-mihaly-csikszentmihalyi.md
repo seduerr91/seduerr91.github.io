@@ -1,6 +1,7 @@
 ---
 title: "Flow"
 book_author: "Mihaly Csikszentmihalyi"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Imagine a state where time vanishes, self-consciousness dissolves, and you are so completely absorbed in a task that nothing else matters-this is Flow, the key to optimal experience and genuine happiness."
 description: "A book summary of Flow by Mihaly Csikszentmihalyi."

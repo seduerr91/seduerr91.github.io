@@ -1,6 +1,7 @@
 ---
 title: "An economist goes to the game"
 book_author: "Paul Oyer"
+genre: "Business & Strategy"
 brief: ""
 hook: "Stanford economist Paul Oyer reveals how the fundamental principles of economics govern every aspect of the sports world, from the strategies athletes use on the field to the massive financial decisions made by team owners and governments."
 description: "A book summary of An economist goes to the game by Paul Oyer."

@@ -1,6 +1,7 @@
 ---
 title: "Mona Lisa Overdrive"
 book_author: "William Gibson"
+genre: "Science Fiction"
 brief: ""
 hook: "In a world where cities behave like ecosystems and identities can be manufactured for profit, William Gibson's Mona Lisa Overdrive weaves together the desperate lives of four characters to reveal a future where the line between flesh and data has effectively vanished."
 description: "A book summary of Mona Lisa Overdrive by William Gibson."

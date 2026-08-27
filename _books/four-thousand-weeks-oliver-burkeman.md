@@ -1,6 +1,7 @@
 ---
 title: "Four Thousand Weeks"
 book_author: "Oliver Burkeman"
+genre: "Personal Development"
 brief: ""
 hook: "If you live to be eighty, you will have had approximately four thousand weeks, a constraint that makes life valuable and which we must embrace rather than futilely fight against."
 description: "A book summary of Four Thousand Weeks by Oliver Burkeman."

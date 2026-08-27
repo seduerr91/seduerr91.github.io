@@ -1,6 +1,7 @@
 ---
 title: "The Way of the Superior Man"
 book_author: "David Deida"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Are you waiting for life to get easier before you truly start living? This book challenges you to stop waiting, embrace your true purpose now, and navigate relationships with a radical new understanding of masculine and feminine energy."
 description: "A book summary of The Way of the Superior Man by David Deida."

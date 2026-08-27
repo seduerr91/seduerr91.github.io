@@ -1,6 +1,7 @@
 ---
 title: "Learned Optimism"
 book_author: "Martin Seligman"
+genre: "Psychology & Relationships"
 brief: ""
 hook: "Pessimism is not a permanent sentence; it is a habit you can break to improve your health, success, and happiness."
 description: "A book summary of Learned Optimism by Martin Seligman."

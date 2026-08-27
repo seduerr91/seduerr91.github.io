@@ -1,6 +1,7 @@
 ---
 title: "The End of All Things"
 book_author: "John Scalzi"
+genre: "Science Fiction"
 brief: ""
 hook: "The End of All Things serves as a thrilling conclusion to the Old Man's War series, forcing humanity to choose between extinction and a radical new era of cooperation with former enemies."
 description: "A book summary of The End of All Things by John Scalzi."

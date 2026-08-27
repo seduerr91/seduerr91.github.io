@@ -42,6 +42,38 @@
   text-align: center;
 }
 
+.books-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.books-filter {
+  background: transparent;
+  border: 1px solid rgba(52, 58, 64, 0.22);
+  border-radius: 999px;
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.7rem;
+}
+
+.books-filter:hover,
+.books-filter:focus-visible,
+.books-filter.is-active {
+  background: #1769aa;
+  border-color: #1769aa;
+  color: #fff;
+  outline: none;
+}
+
+.books-filter:focus-visible {
+  box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.25);
+}
+
 .books-grid {
   display: grid;
   gap: 1.25rem;
@@ -124,6 +156,26 @@
   font-size: clamp(3rem, 7vw, 5rem);
   font-weight: 700;
   opacity: 0.65;
+}
+
+.book-card-genre {
+  background: rgba(8, 18, 29, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.63rem;
+  font-weight: 700;
+  left: 0.75rem;
+  letter-spacing: 0.03em;
+  max-width: calc(100% - 1.5rem);
+  overflow: hidden;
+  padding: 0.3rem 0.55rem;
+  position: absolute;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  top: 0.75rem;
+  white-space: nowrap;
+  z-index: 3;
 }
 
 .book-card-copy {
@@ -318,6 +370,10 @@
   .books-more {
     border-color: rgba(255, 255, 255, 0.22);
   }
+
+  .books-filter {
+    border-color: rgba(255, 255, 255, 0.18);
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -327,6 +383,20 @@
 }
 
 @media (max-width: 767.98px) {
+  .books-filter-row {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow-x: auto;
+    padding: 0 15px 0.45rem;
+    scrollbar-width: thin;
+  }
+
+  .books-filter {
+    flex: 0 0 auto;
+  }
+
   .books-grid {
     gap: 0.85rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -338,6 +408,14 @@
 
   .book-card-copy h2 {
     font-size: 0.92rem;
+  }
+
+  .book-card-genre {
+    font-size: 0.56rem;
+    left: 0.55rem;
+    max-width: calc(100% - 1.1rem);
+    padding: 0.25rem 0.45rem;
+    top: 0.55rem;
   }
 
   .book-card-author {

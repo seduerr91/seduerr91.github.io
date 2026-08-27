@@ -1,6 +1,7 @@
 ---
 title: "Sapiens"
 book_author: "Yuval Noah Harari"
+genre: "History & Society"
 brief: ""
 hook: "How did an insignificant ape come to dominate the planet and create complex civilizations ruled by imaginary concepts?"
 description: "A book summary of Sapiens by Yuval Noah Harari."

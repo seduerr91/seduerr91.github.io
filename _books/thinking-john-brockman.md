@@ -1,6 +1,7 @@
 ---
 title: "Thinking"
 book_author: "John Brockman"
+genre: "Science & Technology"
 brief: ""
 hook: "Edited by John Brockman, this cutting-edge collection brings together the world's leading psychologists, neuroscientists, and philosophers to unlock the mysteries of rational thought, intuition, and the biological machinery that drives our decisions."
 description: "A book summary of Thinking by John Brockman."

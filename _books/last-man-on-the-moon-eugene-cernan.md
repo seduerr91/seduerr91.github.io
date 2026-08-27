@@ -1,6 +1,7 @@
 ---
 title: "Last Man on the Moon"
 book_author: "Eugene Cernan"
+genre: "Memoir & Biography"
 brief: ""
 hook: "As the commander of Apollo 17, Eugene Cernan left the final footprint on the lunar surface, closing a remarkable chapter in human history, but his journey there was forged in obsession, tragedy, and an unrelenting drive to excel."
 description: "A book summary of Last Man on the Moon by Eugene Cernan."

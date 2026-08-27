@@ -1,6 +1,7 @@
 ---
 title: "The Martian"
 book_author: "Andy Weir"
+genre: "Science Fiction"
 brief: ""
 hook: "Six days into a mission on Mars, astronaut Mark Watney becomes the first person to be stranded on the red planet, forced to rely on nothing but his ingenuity, engineering skills, and a dark sense of humor to survive a series of seemingly insurmountable life-threatening crises."
 description: "A book summary of The Martian by Andy Weir."

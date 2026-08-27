@@ -1,6 +1,7 @@
 ---
 title: "High Output Management"
 book_author: "Andrew Grove"
+genre: "Leadership & Management"
 brief: "A manager's handbook for leverage, decision-making, and execution."
 hook: "A manager's output is not what they do personally, but the output of their entire team and the teams around them."
 description: "A manager's handbook for leverage, decision-making, and execution."

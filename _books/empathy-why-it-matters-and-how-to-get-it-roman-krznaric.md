@@ -1,6 +1,7 @@
 ---
 title: "Empathy: Why It Matters, and How to Get It"
 book_author: "Roman Krznaric"
+genre: "Psychology & Relationships"
 brief: "This book explains how to boost empathy through six life-enhancing habits to improve relationships and tackle social problems."
 hook: "Empathy is not merely a soft skill but a fiery, radical force capable of sparking a revolution of human relationships and reshaping society."
 description: "This book explains how to boost empathy through six life-enhancing habits to improve relationships and tackle social problems."

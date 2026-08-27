@@ -1,6 +1,7 @@
 ---
 title: "The 7 Habits of Highly Effective People"
 book_author: "Stephen R. Covey"
+genre: "Personal Development"
 brief: "Timeless principles for personal leadership and effectiveness."
 hook: "Most people read this book looking for quick fixes, but Stephen Covey offers a complete paradigm shift: moving from dependence to interdependence by rebuilding your character 'from the inside out.'"
 description: "Timeless principles for personal leadership and effectiveness."

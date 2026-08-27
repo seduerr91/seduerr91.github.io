@@ -1,6 +1,7 @@
 ---
 title: "The New York Trilogy"
 book_author: "Paul Auster"
+genre: "Mystery & Thriller"
 brief: ""
 hook: "Paul Auster's most famous work uses the structure of detective fiction to explore the frustrating, ambiguous nature of identity and the elusive quest for meaning in a chaotic world."
 description: "A book summary of The New York Trilogy by Paul Auster."
