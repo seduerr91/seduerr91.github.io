@@ -1,0 +1,73 @@
+---
+layout: default
+title: Books
+weight: 3
+permalink: /books/
+nav_collection: books
+description: Book summaries and ideas worth returning to.
+---
+
+<header class="archive-header books-header">
+  <p class="section-kicker">The reading shelf</p>
+  <h1>Books</h1>
+  <p>{{ site.books | size }} book summaries, collected for the ideas worth remembering.</p>
+</header>
+
+<section class="books-library" aria-labelledby="books-library-title">
+  <h2 class="sr-only" id="books-library-title">Book summaries</h2>
+
+  <div class="books-controls">
+    <label class="sr-only" for="books-search">Search books by title or author</label>
+    <div class="books-search-wrap">
+      <input
+        class="form-control books-search"
+        id="books-search"
+        type="search"
+        placeholder="Search by title or author"
+        autocomplete="off"
+        data-books-search
+      >
+      <span class="books-search-symbol" aria-hidden="true">⌕</span>
+    </div>
+    <p class="books-result-count" aria-live="polite" data-books-count>
+      Showing {{ site.books | size }} books
+    </p>
+  </div>
+
+  <div class="books-grid" data-books-grid>
+    {% assign sorted_books = site.books | sort_natural: "title" %}
+    {% for book in sorted_books %}
+      <article
+        class="book-card"
+        data-book-card
+        data-search="{{ book.title | append: ' ' | append: book.author | downcase | escape }}"
+      >
+        <a href="{{ book.url | relative_url }}" aria-label="Read the summary of {{ book.title | escape }} by {{ book.author | escape }}">
+          <div class="book-card-cover">
+            <div class="book-cover-fallback" aria-hidden="true">
+              <span>{{ book.title }}</span>
+            </div>
+            {% if book.cover and book.cover != empty %}
+              <img
+                src="{{ book.cover }}"
+                alt="Cover of {{ book.title | escape }}"
+                loading="lazy"
+                decoding="async"
+                onerror="this.hidden=true"
+              >
+            {% endif %}
+          </div>
+          <div class="book-card-copy">
+            <h2>{{ book.title }}</h2>
+            <p>{{ book.author }}</p>
+            {% if book.reading_time_minutes %}
+              <span>{{ book.reading_time_minutes }} min summary</span>
+            {% endif %}
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+
+  <p class="books-empty" data-books-empty hidden>No books match that search.</p>
+</section>

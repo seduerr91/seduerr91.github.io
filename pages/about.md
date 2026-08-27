@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-weight: 3
+weight: 4
 description: AI engineer at Cerebras, trail runner, drone pilot, traveler, and builder living in the Pacific Northwest.
 ---
 

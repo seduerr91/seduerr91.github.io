@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<article class="book-detail">
+  <a class="book-back-link" href="{{ '/books/' | relative_url }}"><span aria-hidden="true">←</span> All books</a>
+
+  <header class="book-detail-hero">
+    <figure class="book-detail-cover">
+      <div class="book-cover-fallback" aria-hidden="true">
+        <span>{{ page.title }}</span>
+      </div>
+      {% if page.cover and page.cover != empty %}
+        <img src="{{ page.cover }}" alt="Cover of {{ page.title | escape }}" onerror="this.hidden=true">
+      {% endif %}
+    </figure>
+
+    <div class="book-detail-intro">
+      <p class="section-kicker">Book summary</p>
+      <h1>{{ page.title }}</h1>
+      <p class="book-detail-author">by {{ page.author }}</p>
+
+      {% if page.brief and page.brief != empty %}
+        <p class="book-detail-brief">{{ page.brief }}</p>
+      {% endif %}
+
+      <p class="book-detail-meta">
+        {% if page.reading_time_minutes %}<span>{{ page.reading_time_minutes }} minute read</span>{% endif %}
+        {% if page.summary_updated_at %}<span>Updated {{ page.summary_updated_at | date: "%B %-d, %Y" }}</span>{% endif %}
+      </p>
+    </div>
+  </header>
+
+  <div class="book-detail-body markdown-body">
+    {{ content }}
+  </div>
+
+  <footer class="book-detail-footer">
+    <a href="{{ '/books/' | relative_url }}">Browse all book summaries</a>
+    {% if page.keytakes_url %}
+      <a href="{{ page.keytakes_url }}" rel="noopener noreferrer">Original summary page <span aria-hidden="true">↗</span></a>
+    {% endif %}
+  </footer>
+</article>

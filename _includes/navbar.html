@@ -49,6 +49,11 @@
           {%- assign nav_key = html_page.nav_id | default: html_page.title | downcase -%}
           {%- assign has_children = false -%}
           {%- assign child_active = false -%}
+          {%- assign collection_active = false -%}
+
+          {%- if html_page.nav_collection and page.collection == html_page.nav_collection -%}
+            {%- assign collection_active = true -%}
+          {%- endif -%}
 
           {%- capture dropdown_links -%}{%- endcapture -%}
           {%- for child_page in filtered_pages -%}
@@ -78,7 +83,7 @@
             {%- endif -%}
           {%- endfor -%}
 
-          {%- if page.url == html_page.url or child_active -%}
+          {%- if page.url == html_page.url or child_active or collection_active -%}
             {%- assign active_status = "active" -%}
           {%- else -%}
             {%- assign active_status = "" -%}

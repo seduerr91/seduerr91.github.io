@@ -110,6 +110,9 @@ disqus: duerr                          # Your website Shortname on disqus
 collections:
   ai_daily:
     output: true
+  books:
+    output: true
+    permalink: /books/:name/
 defaults:
 
   - scope:
@@ -129,6 +132,13 @@ defaults:
     values:
       layout: post
       comments: true
+      image: /assets/seb-caricature.jpeg
+  - scope:
+      path: ""
+      type: "books"
+    values:
+      layout: book
+      comments: false
       image: /assets/seb-caricature.jpeg
 
 ### Exclude from processing ###
