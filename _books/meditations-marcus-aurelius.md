@@ -1,6 +1,6 @@
 ---
 title: "Meditations"
-author: "Marcus Aurelius"
+book_author: "Marcus Aurelius"
 brief: ""
 description: "A book summary of Meditations by Marcus Aurelius."
 cover: "https://covers.openlibrary.org/b/id/211529-L.jpg"

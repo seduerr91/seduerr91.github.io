@@ -1,6 +1,6 @@
 ---
 title: "The Earned Life"
-author: "Marshall Goldsmith"
+book_author: "Marshall Goldsmith"
 brief: ""
 description: "A book summary of The Earned Life by Marshall Goldsmith."
 cover: "https://covers.openlibrary.org/b/id/13345273-L.jpg"

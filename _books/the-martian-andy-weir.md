@@ -1,6 +1,6 @@
 ---
 title: "The Martian"
-author: "Andy Weir"
+book_author: "Andy Weir"
 brief: ""
 description: "A book summary of The Martian by Andy Weir."
 cover: "https://covers.openlibrary.org/b/id/11447888-L.jpg"

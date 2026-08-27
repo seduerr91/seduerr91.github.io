@@ -1,6 +1,6 @@
 ---
 title: "What got you here won't get you there"
-author: "Marshall Goldsmith"
+book_author: "Marshall Goldsmith"
 brief: ""
 description: "A book summary of What got you here won't get you there by Marshall Goldsmith."
 cover: "https://covers.openlibrary.org/b/id/749692-L.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Atomic Habits"
-author: "James Clear"
+book_author: "James Clear"
 brief: "Tiny behavior changes that compound into remarkable results."
 description: "Tiny behavior changes that compound into remarkable results."
 cover: "https://covers.openlibrary.org/b/id/12539702-L.jpg"

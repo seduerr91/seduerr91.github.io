@@ -1,6 +1,6 @@
 ---
 title: "Ein Kind unserer Zeit"
-author: "Ödön von Horváth"
+book_author: "Ödön von Horváth"
 brief: ""
 description: "A book summary of Ein Kind unserer Zeit by Ödön von Horváth."
 cover: "https://covers.openlibrary.org/b/id/11962787-L.jpg"

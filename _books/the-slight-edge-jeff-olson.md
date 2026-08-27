@@ -1,6 +1,6 @@
 ---
 title: "The Slight Edge"
-author: "Jeff Olson"
+book_author: "Jeff Olson"
 brief: ""
 description: "A book summary of The Slight Edge by Jeff Olson."
 cover: "https://covers.openlibrary.org/b/id/7285715-L.jpg"

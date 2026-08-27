@@ -1,6 +1,6 @@
 ---
 title: "The Pragmatic Engineer"
-author: "Gergely Orosz"
+book_author: "Gergely Orosz"
 brief: ""
 description: "A book summary of The Pragmatic Engineer by Gergely Orosz."
 cover: "https://covers.openlibrary.org/b/id/14541654-L.jpg"

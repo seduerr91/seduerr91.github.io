@@ -1,6 +1,6 @@
 ---
 title: "Shoe Dog"
-author: "Phil Knight"
+book_author: "Phil Knight"
 brief: "The chaotic, human story behind the building of Nike."
 description: "The chaotic, human story behind the building of Nike."
 cover: "https://covers.openlibrary.org/b/id/8858487-L.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Faust"
-author: "Johann Wolfgang von Goethe"
+book_author: "Johann Wolfgang von Goethe"
 brief: "Goethe's tragic play in two parts chronicles the journey of the scholar Faust, who makes a pact with the devil Mephistopheles in exchange for unlimited knowledge and worldly pleasures."
 description: "Goethe's tragic play in two parts chronicles the journey of the scholar Faust, who makes a pact with the devil Mephistopheles in exchange for unlimited knowledge and worldly pleasures."
 cover: "https://covers.openlibrary.org/b/id/6499459-L.jpg"

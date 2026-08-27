@@ -37,7 +37,7 @@ catalog.fetch("books").each do |book|
 
   fields = {
     "title" => book.fetch("title"),
-    "author" => book.fetch("author"),
+    "book_author" => book.fetch("author"),
     "brief" => book["brief"].to_s == "No brief stored" ? "" : book["brief"].to_s,
     "description" => description,
     "cover" => cover,

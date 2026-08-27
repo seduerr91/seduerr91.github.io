@@ -1,6 +1,6 @@
 ---
 title: "Four Thousand Weeks"
-author: "Oliver Burkeman"
+book_author: "Oliver Burkeman"
 brief: ""
 description: "A book summary of Four Thousand Weeks by Oliver Burkeman."
 cover: "https://covers.openlibrary.org/b/id/11990973-L.jpg"

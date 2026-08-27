@@ -1,6 +1,6 @@
 ---
 title: "The Innovator's Dilemma"
-author: "Clayton M. Christensen"
+book_author: "Clayton M. Christensen"
 brief: "Why great incumbents get disrupted and what they can do about it."
 description: "Why great incumbents get disrupted and what they can do about it."
 cover: "https://covers.openlibrary.org/b/id/9274687-L.jpg"

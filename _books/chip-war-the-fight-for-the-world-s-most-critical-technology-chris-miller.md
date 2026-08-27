@@ -1,6 +1,6 @@
 ---
 title: "Chip War: The Fight for the World's Most Critical Technology"
-author: "Chris Miller"
+book_author: "Chris Miller"
 brief: "This authoritative book explores the geopolitics of the microchip industry and its critical role in global power dynamics."
 description: "This authoritative book explores the geopolitics of the microchip industry and its critical role in global power dynamics."
 cover: "https://covers.openlibrary.org/b/id/12968901-L.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Last Man on the Moon"
-author: "Eugene Cernan"
+book_author: "Eugene Cernan"
 brief: ""
 description: "A book summary of Last Man on the Moon by Eugene Cernan."
 cover: "https://covers.openlibrary.org/b/id/177351-L.jpg"

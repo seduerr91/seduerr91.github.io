@@ -40,9 +40,9 @@ description: Book summaries and ideas worth returning to.
       <article
         class="book-card"
         data-book-card
-        data-search="{{ book.title | append: ' ' | append: book.author | downcase | escape }}"
+        data-search="{{ book.title | append: ' ' | append: book.book_author | downcase | escape }}"
       >
-        <a href="{{ book.url | relative_url }}" aria-label="Read the summary of {{ book.title | escape }} by {{ book.author | escape }}">
+        <a href="{{ book.url | relative_url }}" aria-label="Read the summary of {{ book.title | escape }} by {{ book.book_author | escape }}">
           <div class="book-card-cover">
             <div class="book-cover-fallback" aria-hidden="true">
               <span>{{ book.title }}</span>
@@ -59,7 +59,7 @@ description: Book summaries and ideas worth returning to.
           </div>
           <div class="book-card-copy">
             <h2>{{ book.title }}</h2>
-            <p>{{ book.author }}</p>
+            <p>{{ book.book_author }}</p>
             {% if book.reading_time_minutes %}
               <span>{{ book.reading_time_minutes }} min summary</span>
             {% endif %}

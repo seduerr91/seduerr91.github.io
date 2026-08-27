@@ -1,6 +1,6 @@
 ---
 title: "The Personal MBA"
-author: "Josh Kaufman"
+book_author: "Josh Kaufman"
 brief: "A self-directed tour of the core mental models behind business."
 description: "A self-directed tour of the core mental models behind business."
 cover: "https://covers.openlibrary.org/b/id/6713257-L.jpg"

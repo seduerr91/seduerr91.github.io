@@ -1,6 +1,6 @@
 ---
 title: "The Four Agreements"
-author: "Dan Ruiz"
+book_author: "Dan Ruiz"
 brief: ""
 description: "A book summary of The Four Agreements by Dan Ruiz."
 cover: "https://covers.openlibrary.org/b/id/924521-L.jpg"

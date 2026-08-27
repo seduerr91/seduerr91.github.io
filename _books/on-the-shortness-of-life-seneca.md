@@ -1,6 +1,6 @@
 ---
 title: "On the Shortness of LIfe"
-author: "Seneca"
+book_author: "Seneca"
 brief: ""
 description: "A book summary of On the Shortness of LIfe by Seneca."
 cover: "https://covers.openlibrary.org/b/id/111250-L.jpg"

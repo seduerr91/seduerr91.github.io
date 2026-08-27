@@ -1,6 +1,6 @@
 ---
 title: "The Manager's Path"
-author: "Camille Fournier"
+book_author: "Camille Fournier"
 brief: ""
 description: "A book summary of The Manager's Path by Camille Fournier."
 cover: "https://covers.openlibrary.org/b/id/8667291-L.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Mona Lisa Overdrive"
-author: "William Gibson"
+book_author: "William Gibson"
 brief: ""
 description: "A book summary of Mona Lisa Overdrive by William Gibson."
 cover: "https://covers.openlibrary.org/b/id/3327832-L.jpg"

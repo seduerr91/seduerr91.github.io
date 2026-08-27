@@ -1,6 +1,6 @@
 ---
 title: "Listening Well: The Art of Empathic Understanding"
-author: "William Miller"
+book_author: "William Miller"
 brief: ""
 description: "A book summary of Listening Well: The Art of Empathic Understanding by William Miller."
 cover: "https://covers.openlibrary.org/b/id/9221474-L.jpg"

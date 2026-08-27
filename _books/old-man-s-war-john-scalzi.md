@@ -1,6 +1,6 @@
 ---
 title: "Old Man's War"
-author: "John Scalzi"
+book_author: "John Scalzi"
 brief: ""
 description: "A book summary of Old Man's War by John Scalzi."
 cover: "https://covers.openlibrary.org/b/id/524402-L.jpg"

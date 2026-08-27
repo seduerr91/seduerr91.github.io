@@ -1,6 +1,6 @@
 ---
 title: "Etiquette in Society, in Business, in Politics, and at Home"
-author: "Emily Post"
+book_author: "Emily Post"
 brief: "Considered the gold standard for etiquette guides, this book offers timeless advice on navigating social situations with grace and propriety."
 description: "Considered the gold standard for etiquette guides, this book offers timeless advice on navigating social situations with grace and propriety."
 cover: "https://covers.openlibrary.org/b/id/1990980-L.jpg"

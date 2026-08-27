@@ -1,6 +1,6 @@
 ---
 title: "The Picture of Dorian Gray"
-author: "Oscar Wilde"
+book_author: "Oscar Wilde"
 brief: ""
 description: "A book summary of The Picture of Dorian Gray by Oscar Wilde."
 cover: "https://covers.openlibrary.org/b/id/14314858-L.jpg"

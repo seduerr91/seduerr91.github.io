@@ -1,6 +1,6 @@
 ---
 title: "Keep It Shut"
-author: "Karen Ehman"
+book_author: "Karen Ehman"
 brief: ""
 description: "A book summary of Keep It Shut by Karen Ehman."
 cover: "https://covers.openlibrary.org/b/id/7359850-L.jpg"

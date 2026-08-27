@@ -1,6 +1,6 @@
 ---
 title: "The Hard Thing About Hard Things"
-author: "Ben Horowitz"
+book_author: "Ben Horowitz"
 brief: "Brutally practical lessons from building and running hard companies."
 description: "Brutally practical lessons from building and running hard companies."
 cover: "https://covers.openlibrary.org/b/id/7279515-L.jpg"

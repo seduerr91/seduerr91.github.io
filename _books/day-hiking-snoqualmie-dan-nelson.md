@@ -1,6 +1,6 @@
 ---
 title: "Day Hiking Snoqualmie"
-author: "Dan Nelson"
+book_author: "Dan Nelson"
 brief: ""
 description: "A book summary of Day Hiking Snoqualmie by Dan Nelson."
 cover: "https://covers.openlibrary.org/b/id/13436858-L.jpg"

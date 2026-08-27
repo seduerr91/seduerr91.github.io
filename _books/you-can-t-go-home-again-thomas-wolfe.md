@@ -1,6 +1,6 @@
 ---
 title: "You Can't Go Home Again"
-author: "Thomas Wolfe"
+book_author: "Thomas Wolfe"
 brief: ""
 description: "A book summary of You Can't Go Home Again by Thomas Wolfe."
 cover: "https://covers.openlibrary.org/b/id/40604-L.jpg"

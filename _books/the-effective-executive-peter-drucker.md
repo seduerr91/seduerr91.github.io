@@ -1,6 +1,6 @@
 ---
 title: "The Effective Executive"
-author: "Peter Drucker"
+book_author: "Peter Drucker"
 brief: ""
 description: "A book summary of The Effective Executive by Peter Drucker."
 cover: "https://covers.openlibrary.org/b/id/4941284-L.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "The Ghost Brigades"
-author: "John Scalzi"
+book_author: "John Scalzi"
 brief: ""
 description: "A book summary of The Ghost Brigades by John Scalzi."
 cover: "https://covers.openlibrary.org/b/id/524706-L.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Die Vermessung der Welt"
-author: "Daniel Kehlmann"
+book_author: "Daniel Kehlmann"
 brief: ""
 description: "A book summary of Die Vermessung der Welt by Daniel Kehlmann."
 cover: "https://covers.openlibrary.org/b/id/1165201-L.jpg"

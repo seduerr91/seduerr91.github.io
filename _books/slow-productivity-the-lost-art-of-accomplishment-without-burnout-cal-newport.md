@@ -1,6 +1,6 @@
 ---
 title: "Slow Productivity: The Lost Art of Accomplishment Without Burnout"
-author: "Cal Newport"
+book_author: "Cal Newport"
 brief: ""
 description: "A book summary of Slow Productivity: The Lost Art of Accomplishment Without Burnout by Cal Newport."
 cover: "https://covers.openlibrary.org/b/id/14545976-L.jpg"

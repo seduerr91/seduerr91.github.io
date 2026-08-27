@@ -1,6 +1,6 @@
 ---
 title: "The Honjin Murders"
-author: "Seishi Yokomizo"
+book_author: "Seishi Yokomizo"
 brief: ""
 description: "A book summary of The Honjin Murders by Seishi Yokomizo."
 cover: "https://covers.openlibrary.org/b/id/10307314-L.jpg"

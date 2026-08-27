@@ -1,6 +1,6 @@
 ---
 title: "The Mind"
-author: "John Brockman"
+book_author: "John Brockman"
 brief: ""
 description: "A book summary of The Mind by John Brockman."
 cover: "https://covers.openlibrary.org/b/id/12398640-L.jpg"

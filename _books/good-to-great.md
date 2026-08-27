@@ -1,6 +1,6 @@
 ---
 title: "Good to Great"
-author: "Jim Collins"
+book_author: "Jim Collins"
 brief: "What separates enduring companies from merely decent ones."
 description: "What separates enduring companies from merely decent ones."
 cover: "https://covers.openlibrary.org/b/id/53111-L.jpg"

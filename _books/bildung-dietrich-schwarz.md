@@ -1,6 +1,6 @@
 ---
 title: "Bildung"
-author: "Dietrich Schwarz"
+book_author: "Dietrich Schwarz"
 brief: ""
 description: "A book summary of Bildung by Dietrich Schwarz."
 cover: "https://covers.openlibrary.org/b/id/1005708-L.jpg"

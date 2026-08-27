@@ -1,6 +1,6 @@
 ---
 title: "Karlmann"
-author: "M. Kleeberg"
+book_author: "M. Kleeberg"
 brief: ""
 description: "A book summary of Karlmann by M. Kleeberg."
 cover: ""

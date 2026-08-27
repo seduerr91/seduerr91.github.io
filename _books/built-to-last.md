@@ -1,6 +1,6 @@
 ---
 title: "Built to Last"
-author: "Jim Collins and Jerry I. Porras"
+book_author: "Jim Collins and Jerry I. Porras"
 brief: "How visionary companies preserve the core while stimulating progress."
 description: "How visionary companies preserve the core while stimulating progress."
 cover: "https://covers.openlibrary.org/b/id/684195-L.jpg"

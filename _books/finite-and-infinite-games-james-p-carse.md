@@ -1,6 +1,6 @@
 ---
 title: "Finite and Infinite Games"
-author: "James P. Carse"
+book_author: "James P. Carse"
 brief: ""
 description: "A book summary of Finite and Infinite Games by James P. Carse."
 cover: "https://covers.openlibrary.org/b/id/6609213-L.jpg"

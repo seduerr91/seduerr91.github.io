@@ -1,6 +1,6 @@
 ---
 title: "Count Zero"
-author: "William Gibson"
+book_author: "William Gibson"
 brief: ""
 description: "A book summary of Count Zero by William Gibson."
 cover: "https://covers.openlibrary.org/b/id/284322-L.jpg"

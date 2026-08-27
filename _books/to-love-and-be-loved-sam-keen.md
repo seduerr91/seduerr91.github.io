@@ -1,6 +1,6 @@
 ---
 title: "To Love and Be Loved"
-author: "Sam Keen"
+book_author: "Sam Keen"
 brief: ""
 description: "A book summary of To Love and Be Loved by Sam Keen."
 cover: "https://covers.openlibrary.org/b/id/367928-L.jpg"

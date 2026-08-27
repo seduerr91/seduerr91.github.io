@@ -1,6 +1,6 @@
 ---
 title: "Antifragile"
-author: "Nassim Nicholas Taleb"
+book_author: "Nassim Nicholas Taleb"
 brief: ""
 description: "A book summary of Antifragile by Nassim Nicholas Taleb."
 cover: "https://covers.openlibrary.org/b/id/9180157-L.jpg"

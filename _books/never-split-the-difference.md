@@ -1,6 +1,6 @@
 ---
 title: "Never Split the Difference"
-author: "Chris Voss"
+book_author: "Chris Voss"
 brief: "Negotiation tactics rooted in empathy and tactical listening."
 description: "Negotiation tactics rooted in empathy and tactical listening."
 cover: "https://covers.openlibrary.org/b/id/8365942-L.jpg"

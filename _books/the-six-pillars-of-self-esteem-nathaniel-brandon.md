@@ -1,6 +1,6 @@
 ---
 title: "The Six Pillars of Self-Esteem"
-author: "Nathaniel Brandon"
+book_author: "Nathaniel Brandon"
 brief: ""
 description: "A book summary of The Six Pillars of Self-Esteem by Nathaniel Brandon."
 cover: "https://covers.openlibrary.org/b/id/14421079-L.jpg"

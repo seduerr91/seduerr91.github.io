@@ -1,6 +1,6 @@
 ---
 title: "Principles"
-author: "Ray Dalio"
+book_author: "Ray Dalio"
 brief: "A system for making better decisions in work and life."
 description: "A system for making better decisions in work and life."
 cover: "https://covers.openlibrary.org/b/id/8315355-L.jpg"

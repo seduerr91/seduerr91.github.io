@@ -1,6 +1,6 @@
 ---
 title: "The 7 Habits of Highly Effective People"
-author: "Stephen R. Covey"
+book_author: "Stephen R. Covey"
 brief: "Timeless principles for personal leadership and effectiveness."
 description: "Timeless principles for personal leadership and effectiveness."
 cover: "https://covers.openlibrary.org/b/id/10079937-L.jpg"

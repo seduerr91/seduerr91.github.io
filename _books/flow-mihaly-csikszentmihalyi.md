@@ -1,6 +1,6 @@
 ---
 title: "Flow"
-author: "Mihaly Csikszentmihalyi"
+book_author: "Mihaly Csikszentmihalyi"
 brief: ""
 description: "A book summary of Flow by Mihaly Csikszentmihalyi."
 cover: "https://covers.openlibrary.org/b/id/11041932-L.jpg"

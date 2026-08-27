@@ -1,6 +1,6 @@
 ---
 title: "A Walk in the Woods"
-author: "Bill Bryson"
+book_author: "Bill Bryson"
 brief: "A humorous and informative account of attempting to hike the Appalachian Trail, providing entertaining stories and trail insights."
 description: "A humorous and informative account of attempting to hike the Appalachian Trail, providing entertaining stories and trail insights."
 cover: "https://covers.openlibrary.org/b/id/12722649-L.jpg"

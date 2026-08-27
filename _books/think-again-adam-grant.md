@@ -1,6 +1,6 @@
 ---
 title: "Think Again"
-author: "Adam Grant"
+book_author: "Adam Grant"
 brief: ""
 description: "A book summary of Think Again by Adam Grant."
 cover: "https://covers.openlibrary.org/b/id/10470266-L.jpg"

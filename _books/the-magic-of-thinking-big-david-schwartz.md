@@ -1,6 +1,6 @@
 ---
 title: "The Magic of Thinking Big"
-author: "David Schwartz"
+book_author: "David Schwartz"
 brief: ""
 description: "A book summary of The Magic of Thinking Big by David Schwartz."
 cover: "https://covers.openlibrary.org/b/id/480539-L.jpg"

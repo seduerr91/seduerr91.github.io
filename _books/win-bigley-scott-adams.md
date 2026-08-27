@@ -1,6 +1,6 @@
 ---
 title: "Win Bigley"
-author: "Scott Adams"
+book_author: "Scott Adams"
 brief: ""
 description: "A book summary of Win Bigley by Scott Adams."
 cover: ""

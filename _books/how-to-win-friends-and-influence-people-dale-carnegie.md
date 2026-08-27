@@ -1,6 +1,6 @@
 ---
 title: "How to Win Friends and Influence People"
-author: "Dale Carnegie"
+book_author: "Dale Carnegie"
 brief: ""
 description: "A book summary of How to Win Friends and Influence People by Dale Carnegie."
 cover: "https://covers.openlibrary.org/b/id/13314878-L.jpg"

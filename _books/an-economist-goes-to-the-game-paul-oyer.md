@@ -1,6 +1,6 @@
 ---
 title: "An economist goes to the game"
-author: "Paul Oyer"
+book_author: "Paul Oyer"
 brief: ""
 description: "A book summary of An economist goes to the game by Paul Oyer."
 cover: "https://covers.openlibrary.org/b/id/14676395-L.jpg"

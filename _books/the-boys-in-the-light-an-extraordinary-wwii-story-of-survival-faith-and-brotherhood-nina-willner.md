@@ -1,6 +1,6 @@
 ---
 title: "The Boys in the Light: An Extraordinary WWII Story of Survival, Faith and Brotherhood"
-author: "Nina Willner"
+book_author: "Nina Willner"
 brief: "Published in 2025, this book tells the true story of the author's father surviving the Holocaust and his rescue by American soldiers, highlighting resilience and faith during World War II."
 description: "Published in 2025, this book tells the true story of the author's father surviving the Holocaust and his rescue by American soldiers, highlighting resilience and faith during World War II."
 cover: ""

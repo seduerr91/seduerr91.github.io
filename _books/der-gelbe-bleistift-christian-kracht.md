@@ -1,6 +1,6 @@
 ---
 title: "Der Gelbe Bleistift"
-author: "Christian Kracht"
+book_author: "Christian Kracht"
 brief: ""
 description: "A book summary of Der Gelbe Bleistift by Christian Kracht."
 cover: "https://covers.openlibrary.org/b/id/1011021-L.jpg"

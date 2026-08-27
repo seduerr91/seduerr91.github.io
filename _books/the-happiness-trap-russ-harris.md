@@ -1,6 +1,6 @@
 ---
 title: "The Happiness Trap"
-author: "Russ Harris"
+book_author: "Russ Harris"
 brief: ""
 description: "A book summary of The Happiness Trap by Russ Harris."
 cover: "https://covers.openlibrary.org/b/id/7916587-L.jpg"

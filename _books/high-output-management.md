@@ -1,6 +1,6 @@
 ---
 title: "High Output Management"
-author: "Andrew Grove"
+book_author: "Andrew Grove"
 brief: "A manager's handbook for leverage, decision-making, and execution."
 description: "A manager's handbook for leverage, decision-making, and execution."
 cover: "https://covers.openlibrary.org/b/id/421244-L.jpg"

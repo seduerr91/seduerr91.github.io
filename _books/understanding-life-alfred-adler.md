@@ -1,6 +1,6 @@
 ---
 title: "Understanding Life"
-author: "Alfred Adler"
+book_author: "Alfred Adler"
 brief: ""
 description: "A book summary of Understanding Life by Alfred Adler."
 cover: ""

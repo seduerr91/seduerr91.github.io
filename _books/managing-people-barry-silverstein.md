@@ -1,6 +1,6 @@
 ---
 title: "Managing People"
-author: "Barry Silverstein"
+book_author: "Barry Silverstein"
 brief: ""
 description: "A book summary of Managing People by Barry Silverstein."
 cover: "https://covers.openlibrary.org/b/id/46584-L.jpg"

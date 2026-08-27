@@ -1,6 +1,6 @@
 ---
 title: "To Kill a Mockingbird"
-author: "Harper Lee"
+book_author: "Harper Lee"
 brief: ""
 description: "A book summary of To Kill a Mockingbird by Harper Lee."
 cover: "https://covers.openlibrary.org/b/id/14351077-L.jpg"

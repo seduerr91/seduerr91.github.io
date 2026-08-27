@@ -1,6 +1,6 @@
 ---
 title: "The Courage to Be Disliked"
-author: "Ichiro Kishimi and Fumitake Koga"
+book_author: "Ichiro Kishimi and Fumitake Koga"
 brief: ""
 description: "A book summary of The Courage to Be Disliked by Ichiro Kishimi and Fumitake Koga."
 cover: "https://covers.openlibrary.org/b/id/15179268-L.jpg"

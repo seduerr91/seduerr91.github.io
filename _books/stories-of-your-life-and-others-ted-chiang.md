@@ -1,6 +1,6 @@
 ---
 title: "Stories of Your Life and Others"
-author: "Ted Chiang"
+book_author: "Ted Chiang"
 brief: ""
 description: "A book summary of Stories of Your Life and Others by Ted Chiang."
 cover: "https://covers.openlibrary.org/b/id/524046-L.jpg"

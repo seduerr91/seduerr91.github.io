@@ -1,6 +1,6 @@
 ---
 title: "Neuromancer"
-author: "William Gibson"
+book_author: "William Gibson"
 brief: ""
 description: "A book summary of Neuromancer by William Gibson."
 cover: "https://covers.openlibrary.org/b/id/283860-L.jpg"

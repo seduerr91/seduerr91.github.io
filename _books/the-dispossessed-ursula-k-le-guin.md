@@ -1,6 +1,6 @@
 ---
 title: "The Dispossessed"
-author: "Ursula K. Le Guin"
+book_author: "Ursula K. Le Guin"
 brief: ""
 description: "A book summary of The Dispossessed by Ursula K. Le Guin."
 cover: "https://covers.openlibrary.org/b/id/6979680-L.jpg"

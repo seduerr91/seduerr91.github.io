@@ -1,6 +1,6 @@
 ---
 title: "Rework"
-author: "Jason Fried and David Heinemeier Hansson"
+book_author: "Jason Fried and David Heinemeier Hansson"
 brief: "A contrarian operating manual for building simpler businesses."
 description: "A contrarian operating manual for building simpler businesses."
 cover: "https://covers.openlibrary.org/b/id/6679955-L.jpg"

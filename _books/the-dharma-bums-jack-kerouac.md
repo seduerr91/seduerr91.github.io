@@ -1,6 +1,6 @@
 ---
 title: "The Dharma Bums"
-author: "Jack Kerouac"
+book_author: "Jack Kerouac"
 brief: ""
 description: "A book summary of The Dharma Bums by Jack Kerouac."
 cover: "https://covers.openlibrary.org/b/id/9253514-L.jpg"

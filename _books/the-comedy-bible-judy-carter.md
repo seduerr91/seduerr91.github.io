@@ -1,6 +1,6 @@
 ---
 title: "The Comedy Bible"
-author: "Judy Carter"
+book_author: "Judy Carter"
 brief: ""
 description: "A book summary of The Comedy Bible by Judy Carter."
 cover: "https://covers.openlibrary.org/b/id/471162-L.jpg"

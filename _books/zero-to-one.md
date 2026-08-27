@@ -1,6 +1,6 @@
 ---
 title: "Zero to One"
-author: "Peter Thiel"
+book_author: "Peter Thiel"
 brief: "How to build companies that create truly new value instead of copies."
 description: "How to build companies that create truly new value instead of copies."
 cover: "https://covers.openlibrary.org/b/id/9002334-L.jpg"

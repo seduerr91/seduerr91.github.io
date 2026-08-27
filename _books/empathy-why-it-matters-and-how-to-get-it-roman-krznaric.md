@@ -1,6 +1,6 @@
 ---
 title: "Empathy: Why It Matters, and How to Get It"
-author: "Roman Krznaric"
+book_author: "Roman Krznaric"
 brief: "This book explains how to boost empathy through six life-enhancing habits to improve relationships and tackle social problems."
 description: "This book explains how to boost empathy through six life-enhancing habits to improve relationships and tackle social problems."
 cover: "https://covers.openlibrary.org/b/id/8953599-L.jpg"

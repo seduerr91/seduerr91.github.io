@@ -1,6 +1,6 @@
 ---
 title: "The Moon Is a Harsh Mistress"
-author: "Robert A. Heinlein"
+book_author: "Robert A. Heinlein"
 brief: ""
 description: "A book summary of The Moon Is a Harsh Mistress by Robert A. Heinlein."
 cover: "https://covers.openlibrary.org/b/id/14631258-L.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Wheat Belly"
-author: "William Davis"
+book_author: "William Davis"
 brief: ""
 description: "A book summary of Wheat Belly by William Davis."
 cover: "https://covers.openlibrary.org/b/id/10424093-L.jpg"

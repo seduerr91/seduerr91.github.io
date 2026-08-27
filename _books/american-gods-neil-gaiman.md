@@ -1,6 +1,6 @@
 ---
 title: "American Gods"
-author: "Neil Gaiman"
+book_author: "Neil Gaiman"
 brief: ""
 description: "A book summary of American Gods by Neil Gaiman."
 cover: "https://covers.openlibrary.org/b/id/8494659-L.jpg"

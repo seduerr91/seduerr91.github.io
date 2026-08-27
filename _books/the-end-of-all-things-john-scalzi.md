@@ -1,6 +1,6 @@
 ---
 title: "The End of All Things"
-author: "John Scalzi"
+book_author: "John Scalzi"
 brief: ""
 description: "A book summary of The End of All Things by John Scalzi."
 cover: "https://covers.openlibrary.org/b/id/8737397-L.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Less Than Zero"
-author: "Bret Easton Ellis"
+book_author: "Bret Easton Ellis"
 brief: ""
 description: "A book summary of Less Than Zero by Bret Easton Ellis."
 cover: "https://covers.openlibrary.org/b/id/94214-L.jpg"

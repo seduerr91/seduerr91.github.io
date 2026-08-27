@@ -1,6 +1,6 @@
 ---
 title: "Crossing the Chasm"
-author: "Geoffrey A. Moore"
+book_author: "Geoffrey A. Moore"
 brief: "How technology products move from early adopters into the mainstream market."
 description: "How technology products move from early adopters into the mainstream market."
 cover: "https://covers.openlibrary.org/b/id/684159-L.jpg"

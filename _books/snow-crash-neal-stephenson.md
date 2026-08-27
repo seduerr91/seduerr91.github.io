@@ -1,6 +1,6 @@
 ---
 title: "Snow Crash"
-author: "Neal Stephenson"
+book_author: "Neal Stephenson"
 brief: ""
 description: "A book summary of Snow Crash by Neal Stephenson."
 cover: "https://covers.openlibrary.org/b/id/392508-L.jpg"

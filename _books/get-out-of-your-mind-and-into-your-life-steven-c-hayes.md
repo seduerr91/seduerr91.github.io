@@ -1,6 +1,6 @@
 ---
 title: "Get Out of Your Mind and Into Your Life"
-author: "Steven C. Hayes"
+book_author: "Steven C. Hayes"
 brief: ""
 description: "A book summary of Get Out of Your Mind and Into Your Life by Steven C. Hayes."
 cover: "https://covers.openlibrary.org/b/id/821585-L.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "The Diamond Age"
-author: "Neal Stephenson"
+book_author: "Neal Stephenson"
 brief: ""
 description: "A book summary of The Diamond Age by Neal Stephenson."
 cover: "https://covers.openlibrary.org/b/id/8598269-L.jpg"

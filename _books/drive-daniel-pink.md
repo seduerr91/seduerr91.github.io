@@ -1,6 +1,6 @@
 ---
 title: "Drive"
-author: "Daniel Pink"
+book_author: "Daniel Pink"
 brief: ""
 description: "A book summary of Drive by Daniel Pink."
 cover: "https://covers.openlibrary.org/b/id/6404786-L.jpg"

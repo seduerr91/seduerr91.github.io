@@ -1,6 +1,6 @@
 ---
 title: "Neptunation"
-author: "Dietmar Dath"
+book_author: "Dietmar Dath"
 brief: ""
 description: "A book summary of Neptunation by Dietmar Dath."
 cover: "https://covers.openlibrary.org/b/id/10122269-L.jpg"

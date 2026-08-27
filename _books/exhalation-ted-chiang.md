@@ -1,6 +1,6 @@
 ---
 title: "Exhalation"
-author: "Ted Chiang"
+book_author: "Ted Chiang"
 brief: ""
 description: "A book summary of Exhalation by Ted Chiang."
 cover: "https://covers.openlibrary.org/b/id/8793546-L.jpg"

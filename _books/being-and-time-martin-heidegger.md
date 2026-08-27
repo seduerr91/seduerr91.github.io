@@ -1,6 +1,6 @@
 ---
 title: "Being and Time"
-author: "Martin Heidegger"
+book_author: "Martin Heidegger"
 brief: "This foundational philosophical text explores the concept of time as a horizon for understanding the meaning of being, making it essential for grappling with the existential dimensions of time."
 description: "This foundational philosophical text explores the concept of time as a horizon for understanding the meaning of being, making it essential for grappling with the existential dimensions of time."
 cover: ""

@@ -1,6 +1,6 @@
 ---
 title: "Country Driving"
-author: "Peter Hessler"
+book_author: "Peter Hessler"
 brief: ""
 description: "A book summary of Country Driving by Peter Hessler."
 cover: "https://covers.openlibrary.org/b/id/6417692-L.jpg"

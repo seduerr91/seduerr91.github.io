@@ -1,6 +1,6 @@
 ---
 title: "Product Analytics"
-author: "Joanne Rodrigues-Craig"
+book_author: "Joanne Rodrigues-Craig"
 brief: ""
 description: "A book summary of Product Analytics by Joanne Rodrigues-Craig."
 cover: "https://covers.openlibrary.org/b/id/15168940-L.jpg"

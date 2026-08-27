@@ -1,6 +1,6 @@
 ---
 title: "The Beginning of Infinity"
-author: "David Deutsch"
+book_author: "David Deutsch"
 brief: ""
 description: "A book summary of The Beginning of Infinity by David Deutsch."
 cover: "https://covers.openlibrary.org/b/id/8622269-L.jpg"

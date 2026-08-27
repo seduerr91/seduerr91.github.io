@@ -1,6 +1,6 @@
 ---
 title: "1979"
-author: "Christian Kracht"
+book_author: "Christian Kracht"
 brief: ""
 description: "A book summary of 1979 by Christian Kracht."
 cover: "https://covers.openlibrary.org/b/id/2244643-L.jpg"

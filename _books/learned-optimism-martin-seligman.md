@@ -1,6 +1,6 @@
 ---
 title: "Learned Optimism"
-author: "Martin Seligman"
+book_author: "Martin Seligman"
 brief: ""
 description: "A book summary of Learned Optimism by Martin Seligman."
 cover: "https://covers.openlibrary.org/b/id/746945-L.jpg"

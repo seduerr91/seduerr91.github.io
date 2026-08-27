@@ -1,6 +1,6 @@
 ---
 title: "Harry Potter and the Philosopher's Stone"
-author: "J. K. Rowling"
+book_author: "J. K. Rowling"
 brief: ""
 description: "A book summary of Harry Potter and the Philosopher's Stone by J. K. Rowling."
 cover: "https://covers.openlibrary.org/b/id/15155833-L.jpg"

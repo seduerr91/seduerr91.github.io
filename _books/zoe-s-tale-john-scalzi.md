@@ -1,6 +1,6 @@
 ---
 title: "Zoe's Tale"
-author: "John Scalzi"
+book_author: "John Scalzi"
 brief: ""
 description: "A book summary of Zoe's Tale by John Scalzi."
 cover: "https://covers.openlibrary.org/b/id/5081229-L.jpg"

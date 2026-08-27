@@ -1,6 +1,6 @@
 ---
 title: "Start With Why"
-author: "Simon Sinek"
+book_author: "Simon Sinek"
 brief: "Why mission-led storytelling shapes loyal teams and customers."
 description: "Why mission-led storytelling shapes loyal teams and customers."
 cover: "https://covers.openlibrary.org/b/id/6395237-L.jpg"

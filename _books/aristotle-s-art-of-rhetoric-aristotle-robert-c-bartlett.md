@@ -1,6 +1,6 @@
 ---
 title: "Aristotle's Art of Rhetoric"
-author: "Aristotle, Robert C. Bartlett"
+book_author: "Aristotle, Robert C. Bartlett"
 brief: ""
 description: "A book summary of Aristotle's Art of Rhetoric by Aristotle, Robert C. Bartlett."
 cover: "https://covers.openlibrary.org/b/id/13549436-L.jpg"

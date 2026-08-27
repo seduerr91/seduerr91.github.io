@@ -1,6 +1,6 @@
 ---
 title: "The Way of the Superior Man"
-author: "David Deida"
+book_author: "David Deida"
 brief: ""
 description: "A book summary of The Way of the Superior Man by David Deida."
 cover: "https://covers.openlibrary.org/b/id/865059-L.jpg"

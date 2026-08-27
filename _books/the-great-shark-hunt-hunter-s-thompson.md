@@ -1,6 +1,6 @@
 ---
 title: "The Great Shark Hunt"
-author: "Hunter S. Thompson"
+book_author: "Hunter S. Thompson"
 brief: ""
 description: "A book summary of The Great Shark Hunt by Hunter S. Thompson."
 cover: "https://covers.openlibrary.org/b/id/4634781-L.jpg"

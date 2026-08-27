@@ -1,6 +1,6 @@
 ---
 title: "The confidence gap"
-author: "Russ Harris"
+book_author: "Russ Harris"
 brief: ""
 description: "A book summary of The confidence gap by Russ Harris."
 cover: "https://covers.openlibrary.org/b/id/13053065-L.jpg"

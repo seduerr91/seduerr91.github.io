@@ -1,6 +1,6 @@
 ---
 title: "1984"
-author: "George Orwell"
+book_author: "George Orwell"
 brief: "A dystopian novel set in a totalitarian society ruled by Big Brother, exploring themes of mass surveillance, censorship, and the erosion of truth."
 description: "A dystopian novel set in a totalitarian society ruled by Big Brother, exploring themes of mass surveillance, censorship, and the erosion of truth."
 cover: "https://covers.openlibrary.org/b/id/14351142-L.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Mental Math"
-author: "Benjamin Arthur"
+book_author: "Benjamin Arthur"
 brief: ""
 description: "A book summary of Mental Math by Benjamin Arthur."
 cover: "https://covers.openlibrary.org/b/id/10276815-L.jpg"

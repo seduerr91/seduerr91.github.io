@@ -1,6 +1,6 @@
 ---
 title: "Stoicism"
-author: "Mark Aurelius"
+book_author: "Mark Aurelius"
 brief: ""
 description: "A book summary of Stoicism by Mark Aurelius."
 cover: ""

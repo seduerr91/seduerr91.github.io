@@ -1,6 +1,6 @@
 ---
 title: "The Lean Startup"
-author: "Eric Ries"
+book_author: "Eric Ries"
 brief: "A build-measure-learn system for shipping products under uncertainty."
 description: "A build-measure-learn system for shipping products under uncertainty."
 cover: "https://covers.openlibrary.org/b/id/7104760-L.jpg"

@@ -1,6 +1,6 @@
 ---
 title: "Measure What Matters"
-author: "John Doerr"
+book_author: "John Doerr"
 brief: "A practical guide to running teams with OKRs."
 description: "A practical guide to running teams with OKRs."
 cover: "https://covers.openlibrary.org/b/id/10706481-L.jpg"

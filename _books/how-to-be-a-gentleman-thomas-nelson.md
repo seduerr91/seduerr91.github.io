@@ -1,6 +1,6 @@
 ---
 title: "How to be a Gentleman"
-author: "Thomas Nelson"
+book_author: "Thomas Nelson"
 brief: ""
 description: "A book summary of How to be a Gentleman by Thomas Nelson."
 cover: ""

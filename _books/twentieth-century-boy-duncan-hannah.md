@@ -1,6 +1,6 @@
 ---
 title: "Twentieth-Century Boy"
-author: "Duncan Hannah"
+book_author: "Duncan Hannah"
 brief: ""
 description: "A book summary of Twentieth-Century Boy by Duncan Hannah."
 cover: ""

@@ -1,6 +1,6 @@
 ---
 title: "If on a winter's night a traveler"
-author: "Italo Calvino"
+book_author: "Italo Calvino"
 brief: ""
 description: "A book summary of If on a winter's night a traveler by Italo Calvino."
 cover: "https://covers.openlibrary.org/b/id/12007967-L.jpg"

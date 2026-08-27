@@ -1,6 +1,6 @@
 ---
 title: "Influence"
-author: "Robert B. Cialdini"
+book_author: "Robert B. Cialdini"
 brief: "The psychology behind why people say yes."
 description: "The psychology behind why people say yes."
 cover: "https://covers.openlibrary.org/b/id/431011-L.jpg"

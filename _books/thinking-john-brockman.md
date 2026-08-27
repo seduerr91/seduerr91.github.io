@@ -1,6 +1,6 @@
 ---
 title: "Thinking"
-author: "John Brockman"
+book_author: "John Brockman"
 brief: ""
 description: "A book summary of Thinking by John Brockman."
 cover: "https://covers.openlibrary.org/b/id/12771091-L.jpg"

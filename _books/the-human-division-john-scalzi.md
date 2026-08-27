@@ -1,6 +1,6 @@
 ---
 title: "The Human Division"
-author: "John Scalzi"
+book_author: "John Scalzi"
 brief: ""
 description: "A book summary of The Human Division by John Scalzi."
 cover: "https://covers.openlibrary.org/b/id/12525091-L.jpg"

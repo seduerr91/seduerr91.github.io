@@ -1,6 +1,6 @@
 ---
 title: "Kafka on the Shore"
-author: "Haruki Murakami"
+book_author: "Haruki Murakami"
 brief: ""
 description: "A book summary of Kafka on the Shore by Haruki Murakami."
 cover: ""

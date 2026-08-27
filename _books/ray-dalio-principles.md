@@ -1,6 +1,6 @@
 ---
 title: "Ray Dalio Principles"
-author: "Ray Dalio"
+book_author: "Ray Dalio"
 brief: "A systematic framework for embracing reality, learning from mistakes, and building effective organizations."
 description: "A systematic framework for embracing reality, learning from mistakes, and building effective organizations."
 cover: ""

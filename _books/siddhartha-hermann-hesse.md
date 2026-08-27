@@ -1,6 +1,6 @@
 ---
 title: "Siddhartha"
-author: "Hermann Hesse"
+book_author: "Hermann Hesse"
 brief: "This classic novel follows the spiritual journey of self-discovery of a man named Siddhartha during the time of the Gautama Buddha."
 description: "This classic novel follows the spiritual journey of self-discovery of a man named Siddhartha during the time of the Gautama Buddha."
 cover: "https://covers.openlibrary.org/b/id/6562535-L.jpg"

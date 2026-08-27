@@ -1,6 +1,6 @@
 ---
 title: "Predictably Irrational"
-author: "Dan Ariely"
+book_author: "Dan Ariely"
 brief: ""
 description: "A book summary of Predictably Irrational by Dan Ariely."
 cover: "https://covers.openlibrary.org/b/id/2314080-L.jpg"

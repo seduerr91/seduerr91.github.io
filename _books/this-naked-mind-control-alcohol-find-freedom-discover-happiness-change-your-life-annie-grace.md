@@ -1,6 +1,6 @@
 ---
 title: "This Naked Mind: Control Alcohol, Find Freedom, Discover Happiness & Change Your Life"
-author: "Annie Grace"
+book_author: "Annie Grace"
 brief: "This book uses science and psychology to dismantle the subconscious beliefs that drive alcohol dependence, offering a path to freedom without willpower or stigma."
 description: "This book uses science and psychology to dismantle the subconscious beliefs that drive alcohol dependence, offering a path to freedom without willpower or stigma."
 cover: "https://covers.openlibrary.org/b/id/14810515-L.jpg"

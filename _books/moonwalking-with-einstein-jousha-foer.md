@@ -1,6 +1,6 @@
 ---
 title: "Moonwalking with Einstein"
-author: "Jousha Foer"
+book_author: "Jousha Foer"
 brief: ""
 description: "A book summary of Moonwalking with Einstein by Jousha Foer."
 cover: "https://covers.openlibrary.org/b/id/14426425-L.jpg"

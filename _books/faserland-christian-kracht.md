@@ -1,6 +1,6 @@
 ---
 title: "Faserland"
-author: "Christian Kracht"
+book_author: "Christian Kracht"
 brief: ""
 description: "A book summary of Faserland by Christian Kracht."
 cover: "https://covers.openlibrary.org/b/id/1003328-L.jpg"

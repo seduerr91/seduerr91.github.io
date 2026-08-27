@@ -1,6 +1,6 @@
 ---
 title: "Sapiens"
-author: "Yuval Noah Harari"
+book_author: "Yuval Noah Harari"
 brief: ""
 description: "A book summary of Sapiens by Yuval Noah Harari."
 cover: "https://covers.openlibrary.org/b/id/8634250-L.jpg"

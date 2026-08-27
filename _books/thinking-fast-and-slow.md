@@ -1,6 +1,6 @@
 ---
 title: "Thinking, Fast and Slow"
-author: "Daniel Kahneman"
+book_author: "Daniel Kahneman"
 brief: "A tour of the mental shortcuts and biases that shape decisions."
 description: "A tour of the mental shortcuts and biases that shape decisions."
 cover: "https://covers.openlibrary.org/b/id/13290711-L.jpg"

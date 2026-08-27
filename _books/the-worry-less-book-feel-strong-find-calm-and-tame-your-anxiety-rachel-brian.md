@@ -1,6 +1,6 @@
 ---
 title: "The Worry (Less) Book: Feel Strong, Find Calm, and Tame Your Anxiety!"
-author: "Rachel Brian"
+book_author: "Rachel Brian"
 brief: "Playfully presented and expertly vetted, this guide helps readers of all ages understand their anxiety and learn how to tame it effectively."
 description: "Playfully presented and expertly vetted, this guide helps readers of all ages understand their anxiety and learn how to tame it effectively."
 cover: ""

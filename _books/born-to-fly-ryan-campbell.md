@@ -1,6 +1,6 @@
 ---
 title: "Born to Fly"
-author: "Ryan Campbell"
+book_author: "Ryan Campbell"
 brief: "This book recounts Ryan Campbell's remarkable journey as a teenager who became the youngest person to fly solo around the world in a single-engine aircraft, detailing his adventures, fundraising efforts, and the challenges he faced over 70 days."
 description: "This book recounts Ryan Campbell's remarkable journey as a teenager who became the youngest person to fly solo around the world in a single-engine aircraft, detailing his adventures, fundraising efforts, and the challenges he faced over 70 days."
 cover: ""

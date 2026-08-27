@@ -1,6 +1,6 @@
 ---
 title: "Fear and Loathing in Las Vegas"
-author: "Hunter S. Thompson"
+book_author: "Hunter S. Thompson"
 brief: ""
 description: "A book summary of Fear and Loathing in Las Vegas by Hunter S. Thompson."
 cover: "https://covers.openlibrary.org/b/id/13396-L.jpg"

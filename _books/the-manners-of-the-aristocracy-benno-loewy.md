@@ -1,6 +1,6 @@
 ---
 title: "The Manners of the Aristocracy"
-author: "Benno Loewy"
+book_author: "Benno Loewy"
 brief: "This guide covers the etiquette of dinners, weddings, hostess and guest duties, town and country visits, precedence of guests, and court behavior."
 description: "This guide covers the etiquette of dinners, weddings, hostess and guest duties, town and country visits, precedence of guests, and court behavior."
 cover: "https://covers.openlibrary.org/b/id/6360370-L.jpg"

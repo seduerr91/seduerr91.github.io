@@ -1,6 +1,6 @@
 ---
 title: "Too Like the Lightning"
-author: "Ada Palmer"
+book_author: "Ada Palmer"
 brief: ""
 description: "A book summary of Too Like the Lightning by Ada Palmer."
 cover: "https://covers.openlibrary.org/b/id/8600692-L.jpg"

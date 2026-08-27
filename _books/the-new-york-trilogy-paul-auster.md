@@ -1,6 +1,6 @@
 ---
 title: "The New York Trilogy"
-author: "Paul Auster"
+book_author: "Paul Auster"
 brief: ""
 description: "A book summary of The New York Trilogy by Paul Auster."
 cover: "https://covers.openlibrary.org/b/id/1013756-L.jpg"
