@@ -1,39 +1,12 @@
 ---
-title: Essential Gear for Your Next Run in the Pacific Northwest
+title: Snoqualmie Seven - My Favorites in I90 Corridor
 tags: [running, pnw, gear, health]
 style: fill
 color: success
-description: A checklist of essential items to bring on your runs in the beautiful but unpredictable Pacific Northwest.
+description: A checklist of essential hikes in the beautiful but unpredictable Pacific Northwest.
 ---
 
-Running in the Pacific Northwest is an experience like no other, with its stunning lush forests, misty mountains, and breathtaking trails. However, the weather can be as unpredictable as it is beautiful. Being prepared is key to a safe and enjoyable run. Here’s a checklist of essential items to bring with you.
-
-## The PNW Running Checklist
-
-### The Essentials
-
-*   **Running Vest:** A good running vest is crucial for carrying all your gear comfortably without it bouncing around.
-*   **Water Bottle:** Hydration is key, even on cool, misty days. A collapsible bottle can save space as you drink.
-*   **Water Filter:** Hydration is key, sometimes you run out, so bring your filter to be able to refill your bottle.
-*   **Gel/Snacks:** Keep your energy levels up, especially on longer runs. A quick-access gel can be a lifesaver.
-*   **iPhone & AirPods:** For music, podcasts, or navigation. Always make sure your phone is fully charged before you head out.
-*   **Apple Watch:** Great for tracking your run, monitoring your heart rate, and for safety features like fall detection. Make it track your heart rate.
-
-### Comfort & Safety
-
-*   **Tape for Foot (Prep):** Prevent blisters before they start. Applying tape to hot spots is a pro-move for long distances.
-*   **Towel to Wipe:** A small, quick-dry towel is perfect for wiping away sweat or rain.
-*   **Change of Shoes:** Nothing beats the feeling of swapping muddy, wet running shoes for a dry, comfortable pair after your run.
-
-### Snack & Gel
-
-*   **Gel/Snacks:** Keep your energy levels up, especially on longer runs. A quick-access gel can be a lifesaver.
-*   **Spike your drinks with skratch (lime lemon)**
-
-### Leave No Trace
-
-*   **Mini Trash Bag:** Pack out what you pack in. A small bag for your gel wrappers and other trash is essential.
-*   **Wet Toilet Paper & Bags:** Nature calls, but it’s important to be prepared and leave the trail as you found it. Pack wet wipes and a separate bag to carry them out.
+Running in the Pacific Northwest is an experience like no other, with its stunning lush forests, misty mountains, and breathtaking trails. However, the weather can be as unpredictable as it is beautiful. Being prepared is key to a safe and enjoyable run. Here’s a checklist of essential items to bring with you. The following seven are my favorites:
 
 ## The "Snoq Seven": My Favorite I-90 Corridor Hikes
 
@@ -102,11 +75,42 @@ A strenuous climb that rewards with 360-degree views of the Cascades, including 
 
 Not to be confused with its Oregon counterpart, the Mount Defiance in the I-90 corridor is a tough but rewarding hike. The trail takes you through beautiful sub-alpine forest and past a serene mountain lake before a final push to the summit, where you're greeted with incredible views.
 
+
+## The PNW Running Checklist
+
+### The Essentials
+
+*   **Running Vest:** A good running vest is crucial for carrying all your gear comfortably without it bouncing around.
+*   **Water Bottle:** Hydration is key, even on cool, misty days. A collapsible bottle can save space as you drink.
+*   **Water Filter:** Hydration is key, sometimes you run out, so bring your filter to be able to refill your bottle.
+*   **Gel/Snacks:** Keep your energy levels up, especially on longer runs. A quick-access gel can be a lifesaver.
+*   **iPhone & AirPods:** For music, podcasts, or navigation. Always make sure your phone is fully charged before you head out.
+*   **Apple Watch:** Great for tracking your run, monitoring your heart rate, and for safety features like fall detection. Make it track your heart rate.
+
+### Comfort & Safety
+
+*   **Tape for Foot (Prep):** Prevent blisters before they start. Applying tape to hot spots is a pro-move for long distances.
+*   **Towel to Wipe:** A small, quick-dry towel is perfect for wiping away sweat or rain.
+*   **Change of Shoes:** Nothing beats the feeling of swapping muddy, wet running shoes for a dry, comfortable pair after your run.
+*   **Houdini Rain Jacket:** A small, super light way quick-dry jacket is perfect against the rain.
+*   **Hat:** A small, super light way quick-dry hat to help you with sun, run, and branches coming your way.
+
+### Liquid + Solids
+
+*   **Liquid sources of energy**: I often bring electrolytes, Alani powder, and Ketones IQ for some energy on the way.
+*   **Snacks:** Keep your calorie count in check, especially on longer runs. Quick-access snacks can be a lifesaver: Honey energy waffles, Chomps Salami, Boulder bars, are my go to snacks. Sometimes I bring goldfish, trailmix, and m&ms - largely when I am with my wife!
+
+
+### Leave No Trace
+
+*   **Mini Trash Bag:** Pack out what you pack in. A small bag for your gel wrappers and other trash is essential.
+*   **Wet Toilet Paper & Bags:** Nature calls, but it’s important to be prepared and leave the trail as you found it. Pack wet wipes and a separate bag to carry them out.
+
 ## Friends' Favorite Seven
 
 While I have my own "Snoq Seven," my hiking buddies have their own preferred collections of challenging trails. **Efan** gravitates toward the more technical and demanding routes, with his favorites including Defiance, Granite, Mailbox, Navaho Peak, Kendall Catwalk, Humpback, and Cedar Butte to Olallie Lake - a mix that showcases his appetite for both elevation gain and rugged terrain. 
 
-**Kam**'s choices, like Denny Creek to Melakwa Lake and Mason Lake to Olallie, show a love for routes that connect beautiful water features, while still tackling significant climbs like Tiger Mountain and Cathedral Rock. He also loves Navaho Peak, Rattlensake Rdige, and McClellum Butte. 
+**Kamilleron**'s choices, like Denny Creek to Melakwa Lake and Mason Lake to Olallie, show a love for routes that connect beautiful water features, while still tackling significant climbs like Tiger Mountain and Cathedral Rock. He also loves Navaho Peak, Rattlensake Rdige, and McClellum Butte. 
 
 **Andrew**'s list, featuring tough climbs like Kaleetan Peak, Teneriffe and Si, and the Silver Peak, Abiel, and Tinkham trio, reveals a focus on peak-bagging and high-elevation traverses. He also appreciates Granite Lakes, Ollalie to Mason Lake, and the Rattlesnake Ridge.
 
