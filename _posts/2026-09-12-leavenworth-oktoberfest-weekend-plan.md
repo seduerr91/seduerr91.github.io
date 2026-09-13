@@ -8,9 +8,7 @@ description: A flexible Leavenworth weekend plan for twelve friends, with Oktobe
 
 Twelve of us are heading to Leavenworth for Oktoberfest weekend, with an Airbnb, a hot tub, card games, and people connected to Norway, Hawai‘i, Germany, the mainland United States, Korea, Japan, China, and India. That is already enough for a very good weekend.
 
-![Pretzel bites beside a cold beer](https://images.unsplash.com/photo-1606693690292-7a9ea9cda0fb?q=80&w=2400&auto=format&fit=crop)
-
-*Photo by [Mariah Hewines](https://unsplash.com/@mariahhewines) on [Unsplash](https://unsplash.com/photos/brown-and-white-labeled-bottle-I6af9U79jPo)*
+![Leavenworth in spring](/assets/posts/leavenworth.jpeg)
 
 ## The Weekend at a Glance
 
