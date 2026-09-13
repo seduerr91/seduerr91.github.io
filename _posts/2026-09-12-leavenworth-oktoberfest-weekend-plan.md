@@ -8,6 +8,10 @@ description: A flexible Leavenworth weekend plan for twelve friends, with Oktobe
 
 Twelve of us are heading to Leavenworth for Oktoberfest weekend, with an Airbnb, a hot tub, card games, and people connected to Norway, Hawai‘i, Germany, the mainland United States, Korea, Japan, China, and India. That is already enough for a very good weekend.
 
+![Pretzel bites beside a cold beer](https://images.unsplash.com/photo-1606693690292-7a9ea9cda0fb?q=80&w=2400&auto=format&fit=crop)
+
+*Photo by [Mariah Hewines](https://unsplash.com/@mariahhewines) on [Unsplash](https://unsplash.com/photos/brown-and-white-labeled-bottle-I6af9U79jPo)*
+
 ## The Weekend at a Glance
 
 | Day | Shared plan | Flexible pieces |
@@ -86,6 +90,14 @@ These work well as parallel Saturday morning activities, but both need advance r
 
 Since the toddler is too young for horseback riding, the family group can visit the Reindeer Farm while interested adults or older kids ride horses. Everyone can meet downtown afterward for Oktoberfest rather than trying to fit both animal activities into one morning.
 
+![A curious reindeer with snow-dusted antlers](https://images.unsplash.com/photo-1761432744502-4b602423aab9?q=80&w=2400&auto=format&fit=crop)
+
+*Photo by [Shavr IK](https://unsplash.com/@shavr) on [Unsplash](https://unsplash.com/photos/close-up-of-a-reindeer-with-large-antlers-PD40Qwm1kMo)*
+
+![Two people horseback riding through mountain scenery](https://images.unsplash.com/photo-1768347442171-796685a21178?q=80&w=2400&auto=format&fit=crop)
+
+*Photo by [Ali Kazal](https://unsplash.com/@lureofadventure) on [Unsplash](https://unsplash.com/photos/two-people-horseback-riding-by-a-forest-and-mountains-UldMFqZE7cc)*
+
 ### Saturday Oktoberfest highlights
 
 Anyone with Saturday admission or a weekend pass can rejoin Oktoberfest. The parade moves through town at **11:45 a.m.**, the gates open at noon, and the ceremonial keg tapping is at **2 p.m.** in Front Street Park. The Alphorns play at 1:30 p.m., the costume contest begins at 5:45 p.m., and the evening bands continue until closing.
@@ -159,7 +171,7 @@ For this short weekend, Colchuck would consume most of Saturday and divide the g
 ### Sunday bakery stop
 
 [Argonaut Coffee and Biscuits](https://maps.app.goo.gl/HmEgs1nguRmS5Gru5) is a “fancy bakery.” It is currently open Friday through Sunday from **8 a.m. to 3 p.m.**, with breads, pastries, sandwiches, coffee, and pantry items. Inventory is first come, first served.
-If we leave the Airbnb at 10 a.m., we should order before packing or accept whatever remains. 
+If we leave the Airbnb at 10 a.m., we should order before packing or accept whatever remains.
 
 ## The Practical Checklist
 
