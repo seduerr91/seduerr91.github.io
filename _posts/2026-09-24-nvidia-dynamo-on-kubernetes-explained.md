@@ -3,39 +3,78 @@ title: "NVIDIA Dynamo on Kubernetes: What Each Piece Does"
 tags: [AI, Kubernetes, MLOps]
 style: fill
 color: primary
-description: "Understand how Dynamo, model workers, AI Runway, Argo CD, Headlamp, and monitoring fit together when deploying an AI inference service on Kubernetes."
+description: "Follow a language model from stored weights to a working API, and understand where NVIDIA Dynamo, Kubernetes, deployment tools, and monitoring fit in the complete serving stack."
 ---
 
-Suppose you have a Kubernetes cluster with GPUs. You want to deploy a language model, expose an endpoint, and let an application use it to summarize documents.
+Getting a language model to produce an answer is one milestone. Turning it into a service that other people can depend on is another.
 
-Then the tool names start arriving: NVIDIA Dynamo, vLLM, AI Runway, Argo CD, Headlamp, Prometheus, Grafana, Loki.
+Imagine an internal application that summarizes documents. A user uploads a report, clicks a button, and expects the summary to start appearing within a few seconds. Behind that button, something has to load the model, find GPU capacity, accept the request, generate the answer, and return it. The service also needs a way to survive failures, receive updates, and explain why it was slow yesterday afternoon.
 
-Which one runs the model? Which one creates the deployment? And which one do you open when an answer takes too long?
+That is when the tool names start arriving: NVIDIA Dynamo, vLLM, Kubernetes, Helm, AI Runway, Argo CD, Headlamp, Prometheus, Grafana, Loki.
 
-The key is that **these tools do not form one long chain that every request passes through**. Some create and maintain the service. Some handle inference requests. Others help you understand what is happening.
+The confusing part is not just the number of tools. It is that they operate at different levels. Some run the model. Some decide where a request should go. Some create the deployment. Others give an engineer a way to see what is happening.
 
-This article separates those jobs, using one model service in a Kubernetes cluster as the example.
+**These tools do not form one long chain that every request passes through, and you do not need all of them to serve a model.**
 
-## The Stack at a Glance
+The easiest way to understand the stack is to follow one service from its model files to its first request, then look at how we change it and keep it healthy. We will use the document-summary application throughout.
+
+## The Whole Stack at a Glance
 
 *Inference* means using an already-trained model to produce an answer. *Model serving* means making that inference available to applications over a network.
 
-For a Dynamo-based deployment, the responsibilities look like this:
+**[NVIDIA Dynamo](https://github.com/ai-dynamo/dynamo) is a framework for distributed inference serving.** It coordinates requests and model workers, with capabilities such as cache-aware routing and separating different stages of inference. It does not train the model, replace Kubernetes, or replace the runtime that performs the model computation.
 
-| Piece | Its job |
+For a small service, a model-serving runtime such as vLLM can expose an API directly. Dynamo becomes useful when you need its serving coordination capabilities. Kubernetes provides the infrastructure on which those components run.
+
+Here is the larger picture, starting with what the user sees:
+
+| Layer | Pieces and responsibilities |
 | --- | --- |
-| Kubernetes | Run and maintain the containers, networking, and resource allocations |
-| Dynamo Operator | Turn a Dynamo deployment description into Kubernetes workloads |
-| Dynamo Frontend and routing | Accept inference requests and direct work to model workers |
-| Model workers using vLLM, SGLang, or TensorRT-LLM | Run the model computation on GPUs |
-| AI Runway, optional | Provide a model-oriented deployment UI and higher-level API |
-| Git and Argo CD, optional | Record desired configuration and synchronize it to the cluster |
-| Headlamp, optional | Provide a UI for inspecting live Kubernetes resources |
-| Prometheus, Loki, and Grafana | Collect, store, and display operational evidence |
+| Application and access | The document-summary application calls an inference endpoint; its access layer supplies appropriate authentication, TLS, and traffic controls |
+| Inference coordination | Dynamo Frontend and routing accept requests and direct work to model workers |
+| Model execution | Workers using vLLM, SGLang, or TensorRT-LLM load the model and run its computation |
+| Model and software artifacts | A container registry supplies the runtime image; model storage supplies weights, tokenizer files, and model configuration |
+| Compute infrastructure | GPU machines, drivers, networking, and storage provide the physical capacity |
+| Workload management | Kubernetes schedules and maintains containers; the Dynamo Operator manages Dynamo serving deployments |
+| Deployment workflow | Helm packages Kubernetes configuration; optional AI Runway and Argo CD provide higher-level deployment and Git synchronization workflows |
+| Live inspection | Headlamp or kubectl show Kubernetes resources, events, and container logs |
+| Monitoring | Prometheus holds metrics, Loki holds collected logs, and Grafana provides dashboards and exploration |
 
-Think of an inference service as a factory. The model workers operate the machines. Dynamo coordinates the flow of orders. Kubernetes keeps the underlying workloads running. The deployment tools maintain the plan, and the monitoring tools show how the factory is performing.
+The main request path is much shorter than that table. This example uses Dynamo's native frontend arrangement; other supported gateway integrations can place the routing decision at the gateway:
 
-The analogy helps with orientation. The actual boundaries matter more.
+```text
+Document-summary application
+	|
+	v
+Access layer / gateway, where configured
+	|
+	v
+Dynamo Frontend and routing
+	|
+	v
+Model workers using a serving runtime
+	|
+	v
+GPUs execute the model
+```
+
+The answer returns through the serving endpoint to the application. Kubernetes keeps the workloads running underneath this path. Deployment controllers maintain their configuration alongside it. Monitoring collects evidence about how it behaves.
+
+That distinction is the organizing idea for everything that follows: **running a request, deploying the service, and observing the service are three different jobs.**
+
+## Before Deployment: The Model and the Software
+
+There are two things to obtain before a worker can do useful work.
+
+The first is the **model**: its weights, the numerical parameters learned during training, together with files such as its tokenizer and configuration. The tokenizer translates text into the tokens the model processes. These files might come from a model repository, object storage, or a volume available to the workers.
+
+The second is the **software that runs the model**, usually distributed as a container image. That image contains the serving runtime and the libraries it needs. Depending on how you package the service, the model files may be included in the image or downloaded or mounted separately.
+
+The distinction matters during both deployment and debugging. A container can start successfully but fail to load the model because the files are inaccessible, the runtime does not support the model, or there is not enough GPU memory. Downloading an image is not the same as having a ready inference service.
+
+For repeatable deployments, identify both the runtime image and the model revision precisely. An immutable image digest does not freeze model files fetched later from a moving branch. The deployment configuration also needs to record how the worker runs, including the relevant runtime options and resource requirements.
+
+With those inputs available, we can move down to the infrastructure that runs them.
 
 ## 1. Kubernetes Provides the Foundation
 
@@ -63,6 +102,8 @@ The word *graph* refers to the connected serving components. It does not mean th
 Kubernetes learns this resource type through a **Custom Resource Definition**, or **CRD**. The distinction is useful: the CRD defines the type; your deployment object describes one instance of it.
 
 The **Dynamo Operator** watches these deployment objects and creates or updates the Kubernetes resources they require. An operator is a controller that repeatedly works to make the running system match its declared configuration. This is called **reconciliation**.
+
+This is a different job from the NVIDIA GPU Operator mentioned earlier. The GPU Operator prepares the GPU software infrastructure on the nodes. The Dynamo Operator manages the inference workloads that use it.
 
 For our document-summary service:
 
@@ -109,13 +150,25 @@ Generating an answer has two main stages:
 - **Prefill:** process the input prompt and build the model's attention state.
 - **Decode:** use that state to generate output tokens, or pieces of text, one at a time.
 
-The saved attention state is called the **key-value cache**, or **KV cache**. Reusing suitable cached state can avoid repeating some prompt-processing work. **KV-cache-aware routing** considers where reusable state exists when selecting a worker.
+The saved attention state is called the **key-value cache**, or **KV cache**. This is state created while processing a request, not the model's trained weights. Reusing suitable cached state for matching prompt prefixes can avoid repeating some prompt-processing work. **KV-cache-aware routing** considers where reusable state exists when selecting a worker.
 
 In a simple deployment, the same worker handles prefill and decode. In a **disaggregated deployment**, separate worker pools handle them. That can help tune capacity for the two stages independently, but also introduces state-transfer and coordination costs.
 
+For our application, a long report followed by a short summary creates a different balance of work from a short question followed by a long answer. The first has more input to process; the second has more output to generate. That is why treating all requests as equivalent can hide the actual capacity problem.
+
 Dynamo also has planning and scaling capabilities for supported configurations. These are not all enabled merely by installing the operator. The chosen deployment determines which components and behaviors you use.
 
-NVIDIA's [vLLM deployment examples](https://github.com/ai-dynamo/dynamo/blob/main/examples/backends/vllm/deploy/README.md) show these different arrangements. For understanding the architecture, start with a frontend and combined prefill/decode workers. Add the split only when you need to reason about it.
+For understanding the architecture, start with a frontend and combined prefill/decode workers. Add the split when measurements justify its extra complexity.
+
+### Workers Also Need to Find and Communicate With Each Other
+
+The simple request diagram leaves out some internal plumbing:
+
+- **Service discovery** tells components which workers are available and how to reach them. Dynamo supports Kubernetes-native discovery and alternatives such as etcd, a distributed key-value store.
+- **Request and event transport** carries work and signals between components, including information about cached state. Some configurations use a messaging system such as NATS; it is not a universal prerequisite.
+- **State transfer** moves data between workers in arrangements such as disaggregated serving. NIXL, NVIDIA's transfer library, supports high-speed movement of KV-cache data in supported backends. It is not another model server or dashboard.
+
+NVIDIA's [architecture guide](https://docs.nvidia.com/dynamo/design-docs/overall-architecture) explains these paths in more detail. Their implementations and requirements vary by release and backend, so use a matching deployment example rather than combining dependency lists from different versions.
 
 ## 4. AI Runway and Argo CD Manage Deployment Intent
 
@@ -157,6 +210,24 @@ For a direct Dynamo deployment, the path is:
 If you use AI Runway and Argo CD together, choose which configuration Git owns.
 
 One arrangement is to store the parent `ModelDeployment` in Git. Argo CD manages that object, AI Runway manages the generated Dynamo deployment, and the Dynamo Operator manages the resulting workloads.
+
+Read that as an ownership chain, not a request path:
+
+```text
+Git: ModelDeployment configuration
+	|
+	v
+Argo CD: synchronizes the ModelDeployment
+	|
+	v
+AI Runway: manages the DynamoGraphDeployment
+	|
+	v
+Dynamo Operator: manages serving workloads
+	|
+	v
+Kubernetes: runs the Pods
+```
 
 Avoid independently managing the same generated configuration with multiple tools. A manual change to a worker Pod, for example, may be replaced by its controller. A UI change to a Git-managed field may be overwritten by a later Argo CD sync.
 
@@ -210,6 +281,8 @@ For a slow document-summary service, a useful investigation is:
 
 Each tool contributes a different piece of evidence.
 
+For more detailed request-level investigation, **distributed tracing** can record time spent across participating components. That requires configuring trace export and a collector and storage backend; it does not appear just because a Grafana dashboard exists. Be deliberate about collecting prompts or responses, since our document-summary service may handle sensitive material.
+
 ## What You Actually Put in the Cluster
 
 It helps to distinguish infrastructure shared across model services from the resources for one particular model.
@@ -218,22 +291,32 @@ It helps to distinguish infrastructure shared across model services from the res
 
 **Per-model resources** include the deployment object and the frontend, workers, and supporting Kubernetes resources created for that service. With AI Runway, the higher-level `ModelDeployment` sits above those resources.
 
-For the document-summary example, the practical decisions are:
+For the document-summary example, the pieces now fit together:
 
-1. Choose a model-serving backend and a suitable Dynamo deployment arrangement.
-2. Declare the model, images, GPU requirements, and worker configuration.
-3. Submit that declaration directly or through a chosen deployment workflow.
-4. Provide the network access, credentials, and model-storage access the deployment needs.
-5. Verify readiness, send a request, and connect metrics and logs.
+1. Select a model that summarizes your documents well and fits the available hardware. Choose a compatible serving runtime, such as vLLM.
+2. Record the model revision, runtime image, GPU requirements, and worker settings in the deployment configuration. Arrange access to the model files.
+3. Submit the configuration through your chosen workflow. The controllers create the serving workloads, and Kubernetes schedules them.
+4. Wait for the workers to load the model and become ready. Expose the frontend through the appropriate network and access controls.
+5. Configure the application to call that endpoint, then test with representative documents and traffic. Inspect response quality as well as latency, errors, and capacity.
 
 Use the installation instructions for your chosen release for exact dependencies and resource schemas. The architecture above is a map of responsibilities, not a version-specific installation recipe.
 
-## Keep These Three Paths Separate
+## Start With One Working Service
 
-**The deployment path** turns a declaration into running resources. Git, Argo CD, AI Runway, the Kubernetes API, and the Dynamo Operator participate according to the workflow you choose.
+You do not need to adopt every tool in the table at once. For a first Dynamo deployment, start with a supported backend, a frontend, and workers that handle both prefill and decode. Provide the GPU infrastructure and supporting services required by that release, then use a direct deployment workflow you can inspect.
 
-**The request path** turns a prompt into an answer. The Dynamo Frontend, routing, and model workers do that work.
+Check three things before adding more layers: the workers can load the intended model, an application can reach the endpoint through the intended access controls, and you can see enough metrics and logs to investigate a failed or slow request. A successful test prompt proves that the path works; it does not yet prove that the service can handle your expected traffic.
 
-**The observation path** turns runtime evidence into something you can investigate. Headlamp exposes Kubernetes state; Prometheus and Loki hold metrics and logs; Grafana helps you explore them.
+Then add capabilities to solve specific problems. Argo CD can make configuration changes reviewable and repeatable through Git. AI Runway can provide a model-oriented deployment interface. Headlamp can make cluster inspection easier. More advanced Dynamo arrangements can address serving bottlenecks once measurements show where they are.
 
-When a new tool enters the picture, ask which of those jobs it owns. The stack becomes easier to understand once deployment, inference, and observation stop looking like the same process.
+The goal is not to install the most complete-looking collection of tools. It is to give each responsibility a clear home.
+
+## Back to the Summarize Button
+
+Return to the person waiting for a document summary. Their application reaches the inference endpoint. Dynamo directs the request to suitable workers. A serving runtime executes the model on GPUs, and the answer streams back. Kubernetes maintains the workloads that make this possible.
+
+The rest of the stack makes that experience manageable over time. Deployment tools turn reviewed intent into running resources. Inspection tools show what exists now. Metrics and logs help explain what happened and whether the service is meeting its users' needs.
+
+When something goes wrong, those boundaries give you a place to start. A worker that never becomes ready points you toward infrastructure, configuration, or model loading. A ready service with a growing queue calls for a look at demand and serving capacity. A fast but inaccurate summary needs attention to the model, prompt, and application evaluation, not just the Kubernetes deployment.
+
+**A model produces an answer. A serving stack makes that answer available, repeatable, and operable.** NVIDIA Dynamo owns the inference coordination part of that system. Once you can place the other tools around it, the architecture stops being a list of product names and becomes a service you can reason about from beginning to end.
