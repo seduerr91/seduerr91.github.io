@@ -1,0 +1,114 @@
+---
+name: create-blog-article
+description: 'Use when creating, writing, or updating a blog article or post in this seduerr91.github.io Jekyll repo. Covers choosing _posts vs _ai_daily, naming files, matching front matter conventions, enforcing human tone without em-dashes, targeting an 8-minute read time (~1,450 to 1,600 words), adding images with credit, and validating the build locally.'
+---
+
+# Create Blog Article
+
+This repo is a Jekyll site (`seduerr91.github.io`).
+
+- Use `_posts/` for normal long-form blog articles.
+- Use `_ai_daily/` only for the recurring AI roundup format.
+
+## Writing Style, Tone, and Length Rules
+
+Every article in `_posts/` must follow these editorial rules:
+
+1. **Human tone:** Write in a natural, grounded, first-person voice. Sound like a real person sharing practical notes or a personal story, not a travel brochure or an AI-generated report. Prefer clear prose and clean tables over massive walls of nested bullet points and bolded buzzwords.
+2. **No em-dashes (`—`):** Never use em-dashes (`—`) or double hyphens (`--`) in prose. Use commas, periods, colons, parentheses, or split the thought into two sentences.
+3. **Target an ~8-minute read time (never over-bloat):**
+   - `_layouts/post.html` calculates read time as `{{ content | number_of_words | divided_by: 180 }} min read`.
+   - An **8-minute read** equals **1,440 to 1,619 words** in the rendered body content.
+   - Unless the user asks for a short note, aim for roughly **1,450 to 1,580 words** for full-length guides and essays, and verify the rendered read time in `_site/`.
+
+## Choose the Target Collection
+
+For a normal article, create:
+
+`_posts/YYYY-MM-DD-slug.md`
+
+For an AI roundup, create:
+
+`_ai_daily/YYYY-MM-DD-ai-blogs-update.md`
+
+Prefer the requested date. If none is given, use today's date. Avoid future dates unless the user is intentionally scheduling a post, because default Jekyll and GitHub Pages setups hide future-dated entries until that day.
+
+## Standard Post Workflow
+
+1. Read 1 to 2 nearby examples in `_posts/` that match the topic or style.
+2. Pick a lowercase kebab-case slug from the title.
+3. Create the file in `_posts/`.
+4. Use this front matter pattern:
+
+```md
+---
+title: My Post Title
+tags: [Tag1, Tag2]
+style: fill
+color: success
+description: One sentence that explains the article.
+---
+```
+
+Notes:
+
+- Do not add `layout:` for regular posts unless there is a strong reason. `_config.yml` already assigns `layout: post` to the `posts` collection.
+- Do not repeat the `title` as a Markdown H1. `_layouts/post.html` already renders `{{ page.title }}`, so adding `# My Post Title` at the top will display the title twice.
+- Start the article body directly with the intro paragraph, hero image, or first section instead.
+- `tags` use inline bracket syntax, for example `[Travel, AI]`.
+- `style: fill` and `color: success` are the repo's common defaults for regular posts.
+
+## AI Daily Roundup Workflow
+
+Use `_ai_daily/` only when the article is a daily or batch summary of outside AI posts.
+
+Use this pattern:
+
+```md
+---
+title: Specific roundup title
+tags: [AI, Blogs]
+style: fill
+color: primary
+description: "A summary of new posts from source-name on MM-DD"
+---
+```
+
+Notes:
+
+- `_config.yml` already assigns `layout: post` to the `ai_daily` collection.
+- Do not repeat the title as an H1 here either; the post layout already renders it.
+- These posts often start directly with a bold meta-summary instead of a heading.
+- If multiple sources are summarized, expand tags only when helpful, for example `[AI, Blogs, Cookbooks]`.
+
+## Images
+
+- Many posts use a hero image near the top of the article.
+- Existing posts often use an Unsplash image URL directly, followed by a short credit line.
+- If you add a local image, place it under `assets/posts/` and reference it with an absolute site path such as `/assets/posts/topic/image.jpg`.
+- Prefer absolute asset paths over fragile relative paths.
+
+Example:
+
+```md
+![Ireland coast](https://images.unsplash.com/photo-1588963940468-9e6e4d202209?q=80&w=2671&auto=format&fit=crop)
+
+*Photo by [Photographer Name](https://unsplash.com/@handle) on [Unsplash](https://unsplash.com)*
+```
+
+## Validation
+
+Before finishing:
+
+1. Confirm the filename, date, slug, and title all agree, and that the body does not start with a duplicate H1 matching the title.
+2. Check that the body contains **zero `—` characters** (`rg '—' _posts/YYYY-MM-DD-slug.md`).
+3. Confirm the word count hits the target read time (around 1,450 to 1,580 body words for an 8-minute read).
+4. Confirm front matter is valid YAML and bracket tags are closed.
+5. Run `bundle exec jekyll build` to catch rendering or front matter issues and verify the generated `min read` string in `_site/blog/<slug>/index.html`.
+6. Use `bundle exec jekyll serve` or `just run` if you need a local preview.
+
+## Repo-Specific Reminders
+
+- The site permalink for standard posts is `/blog/:title`, so the filename slug matters.
+- Keep descriptions concise; most existing posts use a short single-sentence summary.
+- When uncertain about formatting, copy the structure from a nearby recent post instead of inventing a new pattern.

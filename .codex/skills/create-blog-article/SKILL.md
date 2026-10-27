@@ -1,16 +1,27 @@
 ---
 name: create-blog-article
-description: Use when creating or updating a blog article in this `seduerr91.github.io` Jekyll repo. Covers choosing `_posts` vs `_ai_daily`, naming files, matching local front matter conventions, adding images with credit, and validating the result locally.
+description: 'Use when creating, writing, or updating a blog article or post in this seduerr91.github.io Jekyll repo. Covers choosing _posts vs _ai_daily, naming files, matching front matter conventions, enforcing human tone without em-dashes, targeting an 8-minute read time (~1,450 to 1,600 words), adding images with credit, and validating the build locally.'
 ---
 
 # Create Blog Article
 
-This repo is a Jekyll site.
+This repo is a Jekyll site (`seduerr91.github.io`).
 
 - Use `_posts/` for normal long-form blog articles.
 - Use `_ai_daily/` only for the recurring AI roundup format.
 
-## Choose the target collection
+## Writing Style, Tone, and Length Rules
+
+Every article in `_posts/` must follow these editorial rules:
+
+1. **Human tone:** Write in a natural, grounded, first-person voice. Sound like a real person sharing practical notes or a personal story, not a travel brochure or an AI-generated report. Prefer clear prose and clean tables over massive walls of nested bullet points and bolded buzzwords.
+2. **No em-dashes (`—`):** Never use em-dashes (`—`) or double hyphens (`--`) in prose. Use commas, periods, colons, parentheses, or split the thought into two sentences.
+3. **Target an ~8-minute read time (never over-bloat):**
+   - `_layouts/post.html` calculates read time as `{{ content | number_of_words | divided_by: 180 }} min read`.
+   - An **8-minute read** equals **1,440 to 1,619 words** in the rendered body content.
+   - Unless the user asks for a short note, aim for roughly **1,450 to 1,580 words** for full-length guides and essays, and verify the rendered read time in `_site/`.
+
+## Choose the Target Collection
 
 For a normal article, create:
 
